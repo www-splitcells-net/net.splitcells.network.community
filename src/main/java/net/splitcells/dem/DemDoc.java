@@ -10,6 +10,7 @@ import java.util.function.Consumer;
  * For this {@link net.splitcells.dem.environment.config.framework.Option} needs an API to handle this case in a standard way.
  * Currently, ifs via static flags are used in order to trigger access to hard coded values for runtime improvements,
  * but in such a case, such values cannot be set dynamically during {@link Dem#ensuredInitialized()} (Class, Consumer)}.
+ * This would also make it possible to create API projects like header files in C.
  */
 public class DemDoc extends Dem {
 }
