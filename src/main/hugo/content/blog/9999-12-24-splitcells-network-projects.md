@@ -6,6 +6,9 @@ tags: [project]
 ---
 # Status
 
+* Deprecating GitHub.
+* Deprecating Twitter.
+
 # Standard Projects
 
 * Accessibility
