@@ -14,13 +14,13 @@ tags: [project]
 
 * Accessibility
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
-  * [Host Link]((https://github.com/www-splitcells-net/net.splitcells.network/projects/19)): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/19): The host of this project is deprecated.
 * Compatibility, Portability and Adaptibility
   * Description:Make code easy portable, translatable and adaptable to other languages and environments.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3): The host of this project is deprecated.
 * Cooperation & Symbiosis
   * Description:Tit for tat
-  * [Host Link]((https://github.com/www-splitcells-net/net.splitcells.network/projects/15)): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/15): The host of this project is deprecated.
 * Compatibility, Portability and Adaptibility
   * Description:Make code easy portable, translatable and adaptable to other languages and environments.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3): The host of this project is deprecated.
