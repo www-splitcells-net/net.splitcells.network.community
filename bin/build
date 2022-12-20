@@ -10,6 +10,6 @@ then
   cd themes
   git clone https://github.com/HelloRusk/HugoTeX
 fi
-mkdir -p $projectPath/target/site.hugo
+mkdir -p $projectPath/target/site.hugo/net.splitcells.network.community.via.hugo/
 cd $projectPath/src/main/hugo
-  hugo --destination $projectPath/target/site.hugo
+  hugo --destination $projectPath/target/site.hugo/net.splitcells.network.community.via.hugo/

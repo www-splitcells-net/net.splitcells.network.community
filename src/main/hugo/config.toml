@@ -1,4 +1,4 @@
-baseURL = "TODO"
+baseURL = "https://splitcells-net.srht.site/net.splitcells.network.community.via.hugo/"
 languageCode = "en-us"
 title = "Hugo Based Ticket System"
 theme = "HugoTeX"
