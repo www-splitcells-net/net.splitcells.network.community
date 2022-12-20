@@ -6,6 +6,7 @@ tags: [project]
 ---
 # Status
 
+* [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
 * Deprecating GitHub.
 * Deprecating Twitter.
 
