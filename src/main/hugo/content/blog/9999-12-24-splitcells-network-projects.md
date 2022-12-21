@@ -4,36 +4,37 @@ date: 9999-12-24
 author: Mārtiņš Avots
 tags: [project]
 ---
-# Status
+# Overview And Status
 
+* [Active Tickets](../../tags/active/)
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
 * Deprecating GitHub.
 * Deprecating Twitter.
 
 # Standard Projects
+Projects that are being worked cyclically, and probably will never be finished.
 
-* Accessibility
+* Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/19): The host of this project is deprecated.
-* Compatibility, Portability and Adaptibility
+* Deploy and execute the software.
+* Improve compatibility, portability and adaptability:
   * Description: Make code easy portable, translatable and adaptable to other languages and environments.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3): The host of this project is deprecated.
-* Cooperation & Symbiosis
+* Foster cooperation and symbiosis:
   * Description: Tit for tat
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/15): The host of this project is deprecated.
-* Compatibility, Portability and Adaptibility
-  * Description: Make code easy portable, translatable and adaptable to other languages and environments.
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3): The host of this project is deprecated.
-* Documentation
+* Document project:
   * Description: Nobody reads this xD
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/6): The host of this project is deprecated.
-* Features
+* Improve, add or remove features:
   * Description: To the moon!
+  * Tags: feature
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/16): The host of this project is deprecated.
-* Maintenance 
+* Maintain project:
   * Description: Improve quality and fix bugs.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/8): The host of this project is deprecated.
-* Performance Engineering 
+* Engineer performance: 
   * Description: We have a need for speed.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/18): The host of this project is deprecated.
 * Webserver Development
