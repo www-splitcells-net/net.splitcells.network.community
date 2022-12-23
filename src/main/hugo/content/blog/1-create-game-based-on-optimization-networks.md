@@ -79,7 +79,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Test with random allocations. -> Not needed for now, I hope.
             * [x] Check why linear initialization has non-linear supply and demand selection.
             * [x] During addition and removal, rating events should be calculated by the rater.
-        * [ ] positionCluster
+        * [ ] positionCluster CURRENT
         * [ ] isAlive
         * [ ] oneliness
         * [ ] dies
