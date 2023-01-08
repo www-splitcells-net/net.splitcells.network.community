@@ -38,7 +38,6 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: Improve quality and fix bugs.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/8): The host of this project is deprecated.
   * Update dependencies.
-  * [#72 Improve Software Quality](./src/main/md/net/splitcells/network/tickets/open/72.md)
   * [#212 Process project status badges weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/212)
     (See status page [here](https://github.com/www-splitcells-net/net.splitcells.network#project-status).)
   * [#214 Deploy website weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/214)
