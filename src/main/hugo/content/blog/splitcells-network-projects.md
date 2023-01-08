@@ -8,8 +8,6 @@ tags: [project]
 
 * [Active Tickets](../../tags/active/)
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
-* Deprecating GitHub.
-* Deprecating Twitter.
 
 # Standard Projects
 Projects that are being worked cyclically, and probably will never be finished.
@@ -31,6 +29,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Document project:
   * Description: Nobody reads this xD
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/6): The host of this project is deprecated.
+  * [#215 Review advertisement, introductions and info linked by README weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/215)
 * Improve, add or remove features:
   * Description: To the moon!
   * Tags: feature
@@ -40,7 +39,9 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/8): The host of this project is deprecated.
   * Update dependencies.
   * [#72 Improve Software Quality](./src/main/md/net/splitcells/network/tickets/open/72.md)
-  * Improve Test Coverage. See the [Project Status chapter](#project-status).
+  * [#212 Process project status badges weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/212)
+    (See status page [here](https://github.com/www-splitcells-net/net.splitcells.network#project-status).)
+  * [#214 Deploy website weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/214)
 * Engineer performance: 
   * Description: We have a need for speed.
   * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/18): The host of this project is deprecated.
