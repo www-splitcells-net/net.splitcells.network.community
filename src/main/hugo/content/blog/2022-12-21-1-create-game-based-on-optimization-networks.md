@@ -2,7 +2,7 @@
 title: Create game based on optimization networks.
 date: 2022-12-21
 author: Mārtiņš Avots
-tags: [feature, active]
+tags: [feature, feature_active, active]
 ---
 
 The original GitHub issue id is `#170`.
