@@ -21,6 +21,6 @@ tags: [maintenance]
 * [ ] Use spaces instead of tabs.
   Tabs are better for semantics, as in this case one character has one meaning.
   On the other hand, spaces are more portable,
-  as tabs have often a special meaning on keyboards (changing currently selected input field)
+  as tabs have often a special meaning on keyboards (i.e. changing currently selected input field)
   and are easier to transport across input fields.
   Furthermore, spaces allow aligning code vertically.
