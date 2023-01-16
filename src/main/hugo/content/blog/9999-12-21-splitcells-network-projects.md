@@ -12,38 +12,38 @@ tags: [project]
 # Standard Projects
 Projects that are being worked cyclically, and probably will never be finished.
 
-* Improve accessibility:
+* Accessibility: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/19): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/19)
   * Review advertisement, introductions and info linked by README,
     because that is the primary material for newcomers.
-* Deploy and execute the software.
-* Improve compatibility, portability and adaptability:
+* Compatibility, portability and adaptability:
   * Description: Make code easy portable, translatable and adaptable to other languages and environments.
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3): The host of this project is deprecated.
-* Foster cooperation and symbiosis:
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/3)
+* Cooperation and symbiosis:
   * Description: Tit for tat
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/15): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/15)
   * Migrate inactive tickets into source code repository,
     so that they each one acts as trigger at one fitting position.
 * Document project:
   * Description: Nobody reads this xD
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/6): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/6)
   * [#215 Review advertisement, introductions and info linked by README weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/215)
-* Improve, add or remove features:
+* Features: Removal, Addition and Improvements
   * Description: To the moon!
   * Tags: [feature](../../tags/feature/), [feature_active](../../tags/feature_active/)
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/16): The host of this project is deprecated.
-* Maintain project:
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/16)
+* Maintenance project:
   * Description: Improve quality and fix bugs.
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/8): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/8)
+  * Tags: [maintenance](../../tags/Maintenance), [maintenance_active](../../tags/maintenance)
   * Update dependencies.
   * [#212 Process project status badges weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/212)
     (See status page [here](https://github.com/www-splitcells-net/net.splitcells.network#project-status).)
   * [#214 Deploy website weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/214)
-* Engineer performance: 
+* Performance Engineering 
   * Description: We have a need for speed.
-  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/18): The host of this project is deprecated.
+  * [Host Link](https://github.com/www-splitcells-net/net.splitcells.network/projects/18)
 * Webserver Development
   * [Host Link](https://todo.sr.ht/~splitcells-net/net.splitcells.network?search=label%3A%22active%22)
 # Notes

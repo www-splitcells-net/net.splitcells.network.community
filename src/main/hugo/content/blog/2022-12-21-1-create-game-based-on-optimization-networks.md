@@ -81,7 +81,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] During addition and removal, rating events should be calculated by the rater.
         * [ ] positionCluster CURRENT
            * [x] Test negative coordinates.
-           * [ ] Implement overlapping position groups.
+           * [x] Implement overlapping position groups.
+           * [x] Ensure that center position is the groups name.
+           * [ ] Add constraint to problem.
         * [ ] isAlive
         * [ ] oneliness
         * [ ] dies
