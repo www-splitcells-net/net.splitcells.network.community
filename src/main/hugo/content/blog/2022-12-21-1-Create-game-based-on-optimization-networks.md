@@ -79,12 +79,12 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Test with random allocations. -> Not needed for now, I hope.
             * [x] Check why linear initialization has non-linear supply and demand selection.
             * [x] During addition and removal, rating events should be calculated by the rater.
-        * [ ] positionCluster CURRENT
+        * [x] positionCluster
            * [x] Test negative coordinates.
            * [x] Implement overlapping position groups.
            * [x] Ensure that center position is the groups name.
-           * [ ] Add constraint to problem.
-        * [ ] isAlive
+           * [x] Add constraint to problem.
+        * [ ] isAlive CURRENT
         * [ ] oneliness
         * [ ] dies
         * [ ] survives
