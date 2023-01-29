@@ -84,8 +84,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
            * [x] Implement overlapping position groups.
            * [x] Ensure that center position is the groups name.
            * [x] Add constraint to problem.
-        * [ ] isAlive CURRENT
-        * [ ] oneliness
+        * [x] isAlive
+          * [x] Implement line removal.
+          * [x] Only add cost to center position.
+        * [ ] loneliness CURRENT
         * [ ] dies
         * [ ] survives
         * [ ] goodCompany
