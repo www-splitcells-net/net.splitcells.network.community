@@ -88,6 +88,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
           * [x] Implement line removal.
           * [x] Only add cost to center position.
         * [ ] loneliness CURRENT
+          * [x] Implement meta data for GroupId.
+          * [x] Set cluster position's center position in meta data.
         * [ ] dies
         * [ ] survives
         * [ ] goodCompany
