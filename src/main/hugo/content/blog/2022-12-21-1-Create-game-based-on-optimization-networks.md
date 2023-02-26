@@ -87,21 +87,28 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] isAlive
           * [x] Implement line removal.
           * [x] Only add cost to center position.
-        * [ ] loneliness CURRENT
+        * [x] loneliness
           * [x] Implement meta data for GroupId.
           * [x] Set cluster position's center position in meta data.
-        * [ ] dies
-        * [ ] survives
-        * [ ] goodCompany
-        * [ ] crowded
-        * [ ] isDead
-        * [ ] reviavlCondition
-        * [ ] becomesAlive
-        * [ ] unchanged
-    * [ ] Check constraints via tests.
-    * [ ] Check constraints via test run.
+          * [x] Addition of center position.
+          * [x] Create rater base class, that allows a slower but simplified rater implementation.
+            Use this base class for the loneliness implementation. ->
+            This is done via GroupRouter.
+        * [x] dies
+        * [x] goodCompany
+        * [x] survives
+        * [x] crowded
+        * [x] reviavlCondition
+        * [x] becomesAlive
+    * [x] Check constraints via tests.
+    * [ ] Check constraints via test run. CURRENT
+      * [ ] Adjust supply and demand format for easier optimization later on.
+    * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
+* [x] Create easy to use debug view of state via web server, that is active by default in dev-Config.
+  * [x] `Cin.configure(env);`
+  * This is provided via `GelDev#process` and the port 8448 is used for this by default.
 * [ ] Implement game of life with 2 players.
 * [ ] Implement game of life with 2 players, where each player has choices and wants to maximize its liveness.
 * [x] Find a name: crisis network = cin
