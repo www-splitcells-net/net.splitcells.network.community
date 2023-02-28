@@ -106,11 +106,13 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
-* [ ] Create easy to use debug view of state via web server, that is active by default in dev-Config.
+* [ ] Make layout of Gel's game data nice. CURRENT
+* [x] Create easy to use debug view of state via web server, that is active by default in dev-Config.
+  -> The standard layout view `http://localhost:8448/net/splitcells/website/layout.html` is good enough.
   * [x] `Cin.configure(env);`
   * This is provided via `GelDev#process` and the port 8448 is used for this by default.
-  * [ ] Fix layout refresh error.
-  * [ ] Refresh layout automatically.
+  * [x] Fix layout refresh error.
+  * [x] Create tree view of layout.
 * [ ] Implement game of life with 2 players.
 * [ ] Implement game of life with 2 players, where each player has choices and wants to maximize its liveness.
 * [x] Find a name: crisis network = cin
