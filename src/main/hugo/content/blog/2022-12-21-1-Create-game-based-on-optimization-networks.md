@@ -102,11 +102,18 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] becomesAlive
     * [x] Check constraints via tests.
     * [ ] Check constraints via test run. CURRENT
-      * [ ] Adjust supply and demand format for easier optimization later on.
+      * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
+        Thereby, creating duplicate GroupId descriptions is avoided.
+      * [ ] `The following is required, but not present: path`
+        * This happens during the allocation of the second line.
+        * This is not caused by changing the time step GroupId from `no-time-step-group` to a time step group.
+        * [ ] This is maybe caused by `PlayerValuePersistenceClassifier`s rating update code,
+          where for every line update, all line ratings are updated, regardless,
+          if the rating of already present lines is changing or not. 
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
-* [ ] Make layout of Gel's game data nice. CURRENT
+* [x] Make layout of Gel's game data nice.
 * [x] Create easy to use debug view of state via web server, that is active by default in dev-Config.
   -> The standard layout view `http://localhost:8448/net/splitcells/website/layout.html` is good enough.
   * [x] `Cin.configure(env);`
