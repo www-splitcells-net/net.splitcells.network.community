@@ -104,8 +104,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Check constraints via test run. CURRENT
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
         Thereby, creating duplicate GroupId descriptions is avoided.
-      * [ ] `The following is required, but not present: path`
-        * This happens during the allocation of the second line.
+      * [ ] `The following is required, but not true: path: [conway-s-game-of-life, Propagation, ForAll, 6, Propagation, ForAll, 0, Propagation, ForAll, isDead, ForAll, .lines, allocations/linesProcessing, linesProcessing, demands-free], line.index(): 0`
+        * This happens because an allocation is removed multiple times.
         * This is not caused by changing the time step GroupId from `no-time-step-group` to a time step group.
         * [ ] This is maybe caused by `PlayerValuePersistenceClassifier`s rating update code,
           where for every line update, all line ratings are updated, regardless,
