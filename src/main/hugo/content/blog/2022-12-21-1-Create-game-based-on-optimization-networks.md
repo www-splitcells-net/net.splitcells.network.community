@@ -98,18 +98,25 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] goodCompany
         * [x] survives
         * [x] crowded
-        * [x] reviavlCondition
+        * [x] revivalCondition
         * [x] becomesAlive
     * [x] Check constraints via tests.
-    * [ ] Check constraints via test run. CURRENT
+    * [ ] Check constraints via test run.
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
         Thereby, creating duplicate GroupId descriptions is avoided.
-      * [ ] `The following is required, but not true: path: [conway-s-game-of-life, Propagation, ForAll, 6, Propagation, ForAll, 0, Propagation, ForAll, isDead, ForAll, .lines, allocations/linesProcessing, linesProcessing, demands-free], line.index(): 0`
+      * [x] `The following is required, but not true: path: [conway-s-game-of-life, Propagation, ForAll, 6, Propagation, ForAll, 0, Propagation, ForAll, isDead, ForAll, .lines, allocations/linesProcessing, linesProcessing, demands-free], line.index(): 0`
         * This happens because an allocation is removed multiple times.
         * This is not caused by changing the time step GroupId from `no-time-step-group` to a time step group.
-        * [ ] This is maybe caused by `PlayerValuePersistenceClassifier`s rating update code,
+        * [x] This is maybe caused by `PlayerValuePersistenceClassifier`s rating update code,
           where for every line update, all line ratings are updated, regardless,
-          if the rating of already present lines is changing or not. 
+          if the rating of already present lines is changing or not.
+      * [x] Improve runtime performance, because the calculation of the next state given a current state with about 200 hundred variables
+        takes 2 minutes via the linear initialization.
+        -> It is enough for now to set `StaticFlags#ENFORCING_UNIT_CONSISTENCY` to false.
+      * [x] Require all Raters to have an implementation of toSimpleDescription.
+      * [ ] Require all Raters based on rater factories to have an explicitly programmed description,
+        in order to always have useful reports.
+      * [ ] Create solver able to calculate the next state.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
