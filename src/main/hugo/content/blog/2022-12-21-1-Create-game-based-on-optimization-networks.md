@@ -69,7 +69,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Clean up GUI and make it usable and somewhat nice.
 * [ ] Implement game of life.
     * [ ] Run game.
-    * [x] Visualize state.
+    * [x] Visualize state via file.
     * [ ] Make it easy to move camera anywhere in state visualization, in order to traverse big worlds.
     * [ ] Implement constraints.
         * [x] Support multiple outgoing groups for one line of incoming group in constraint node.
@@ -101,6 +101,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] revivalCondition
         * [x] becomesAlive
     * [x] Check constraints via tests.
+    * [ ] Visualize state of running instance.
+      * [ ] Render state at any time.
+      * [ ] Does not work in Firefox. CURRENT
     * [ ] Check constraints via test run.
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
         Thereby, creating duplicate GroupId descriptions is avoided.
@@ -114,7 +117,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
         takes 2 minutes via the linear initialization.
         -> It is enough for now to set `StaticFlags#ENFORCING_UNIT_CONSISTENCY` to false.
       * [x] Require all Raters to have an implementation of toSimpleDescription.
-      * [ ] Require all Raters based on rater factories to have an explicitly programmed description,
+      * [x] Require all Raters based on rater factories to have an explicitly programmed description,
         in order to always have useful reports.
       * [ ] Create solver able to calculate the next state.
     * [ ] Support problem instances with more than 1 time step.
@@ -132,6 +135,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Find a name: crisis network = cin
     * [ ] Document reasoning for name.
 * [ ] Run private server with public world result state.
+* [ ] Serve all JavaScript dependencies locally.
+  * [ ] Consider https://vitejs.dev/
 # Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
