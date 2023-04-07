@@ -101,8 +101,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] revivalCondition
         * [x] becomesAlive
     * [x] Check constraints via tests.
-    * [ ] Visualize state of running instance.
-      * [ ] Render state at any time. CURRENT
+    * [x] Visualize state of running instance.
+      * [x] Render state at any time. CURRENT
       * [x] Does not work in Firefox.
     * [ ] Check constraints via test run.
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
