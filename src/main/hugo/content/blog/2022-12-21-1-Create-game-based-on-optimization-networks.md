@@ -102,7 +102,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] becomesAlive
     * [x] Check constraints via tests.
     * [x] Visualize state of running instance.
-      * [x] Render state at any time. CURRENT
+      * [x] Render state at any time.
       * [x] Does not work in Firefox.
     * [ ] Check constraints via test run.
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
@@ -120,6 +120,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [x] Require all Raters based on rater factories to have an explicitly programmed description,
         in order to always have useful reports.
       * [ ] Create solver able to calculate the next state.
+      * [ ] Add constraint to disallow changes to values, that are not of the next time. CURRENT
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
