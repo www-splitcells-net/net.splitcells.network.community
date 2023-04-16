@@ -52,7 +52,8 @@ Projects that are being worked cyclically, and probably will never be finished.
   A simplified and therefore easily portable folder structure is preferred. 
 * Generally speaking all tickets should be reachable via this blog.
 * This blog is only used for complex or important tickets, that may create lasting requirements.
-  It may also be used for tickets, were its reasoning is important or complex and therefore needs to be documented.
+  It may also be used for tickets, were its reasoning is important or complex and therefore needs to be documented,
+  but does not make sense to be placed inside the source code repo.
   Other tickets are linked from this blog.
 * A dedicated Git repo is used in order to avoid problems caused by polluting other repos.
   As this repo is about any ticket related to network projects,
