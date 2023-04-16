@@ -59,3 +59,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   As this repo is about any ticket related to network projects,
   this also avoids commits to other Git repos,
   which contains tickets unrelated to the other Git repos.
+* Git-bug is not used,
+  because it is not possible to read and edit its content via git and text editors.
+  Instead, the program git-bug itself is required.
+  Git-bug could be used in the future in order to mirror tickets to another platform.
