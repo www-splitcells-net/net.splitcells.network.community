@@ -120,9 +120,13 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [x] Require all Raters based on rater factories to have an explicitly programmed description,
         in order to always have useful reports.
       * [ ] Create solver able to calculate the next state.
-      * [ ] Improve performance by setting `Table.GET_LINE_VIA_STREAM` to true. CURRENT
-        * [ ] Fix errors caused by this.
+      * [x] Improve performance by setting `Table.GET_LINE_VIA_STREAM` to true.
+        * [x] Fix errors caused by this.
       * [ ] Add constraint to disallow changes to values, that are not of the next time.
+        There are to possible solutions. 
+        * [ ] TemplateAdherence
+        * [ ] CommitmentAdherence CURRENT
+      * 
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
