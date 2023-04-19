@@ -123,9 +123,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [x] Improve performance by setting `Table.GET_LINE_VIA_STREAM` to true.
         * [x] Fix errors caused by this.
       * [ ] Add constraint to disallow changes to values, that are not of the next time.
-        There are to possible solutions. 
+        There are multiple possible solutions. 
         * [ ] TemplateAdherence
         * [ ] CommitmentAdherence CURRENT
+          * [ ] Use this as the basis for proposal algorithm.
       * 
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
