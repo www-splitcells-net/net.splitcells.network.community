@@ -126,8 +126,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
         There are multiple possible solutions. 
         * [ ] TemplateAdherence
         * [ ] CommitmentAdherence CURRENT
-          * [ ] Use this as the basis for proposal algorithm.
-      * 
+          * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
+            * [ ] Implement proposal API for constraint nodes.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
