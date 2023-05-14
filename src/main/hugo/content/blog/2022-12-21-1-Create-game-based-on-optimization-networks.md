@@ -125,9 +125,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [ ] Add constraint to disallow changes to values, that are not of the next time.
         There are multiple possible solutions. 
         * [ ] TemplateAdherence
-        * [ ] CommitmentAdherence CURRENT
+        * [ ] CommitmentAdherence
           * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
-            * [ ] Implement proposal API for constraint nodes.
+            * [x] Implement proposal API for constraint nodes.
+            * [ ] Implement isDead and isAlive correctly. CURRENT
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
