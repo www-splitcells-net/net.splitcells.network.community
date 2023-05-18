@@ -128,7 +128,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [ ] CommitmentAdherence
           * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
             * [x] Implement proposal API for constraint nodes.
-            * [ ] Implement isDead and isAlive correctly. CURRENT
+            * [ ] Implement IsDead and IsAlive correctly.
+              * [x] Implement IsAlive like IsDead. CURRENT
+              * [x] Time step determination does not seem to be working.
+              * [x] Position clustering does not seem to be working.  -> Seems to be fine.
+                * [ ] `no-time-step-group` should not be propagated by constraint nodes to its children.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
@@ -146,6 +150,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [ ] Run private server with public world result state.
 * [ ] Serve all JavaScript dependencies locally.
   * [ ] Consider https://vitejs.dev/
+* [ ] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
+  in order to have reasonable runtime performance.
 # Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
