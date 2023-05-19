@@ -42,10 +42,15 @@ Games are inherently suitable for this and have the advantage of being advertiza
 
 # Tasks
 * [ ] Document goals of this game.
-    * [ ] Gamification
+  * [ ] Use gamification as a source for motivation.
     * [ ] Alternative or counterpart to test recursion:
-    create meaning full tests by combining test problems and thereby creating bigger and
-    more complex problems and test data.
+      create meaning full tests by combining test problems and thereby creating bigger and
+      more complex problems and test data.
+    * [ ] The goal is to create optimization algorithm based on reconstruction and deconstruction cycle.
+      This is the reason why the game consists of a reconstruction step, that is basically a city building game,
+      and a deconstruction step, that is basically a war game.
+    * [ ] Reason why the game is called crisis network: bringing optimization systems to their limits and beyond,
+      in order to learn from it, is a crisis for such optimization system as undesirable states are thereby reached.
 * [x] Create a very simple renderer for it.
 * [x] Provide unsecured local website for testing.
   -> Not needed.
@@ -128,11 +133,12 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [ ] CommitmentAdherence
           * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
             * [x] Implement proposal API for constraint nodes.
-            * [ ] Implement IsDead and IsAlive correctly.
-              * [x] Implement IsAlive like IsDead. CURRENT
+            * [ ] Implement IsDead and IsAlive correctly. CURRENT
+              * [x] Implement `IsAlive#testAliveWithMultiple`.
+              * [x] Implement IsAlive like IsDead. 
               * [x] Time step determination does not seem to be working.
-              * [x] Position clustering does not seem to be working.  -> Seems to be fine.
-                * [ ] `no-time-step-group` should not be propagated by constraint nodes to its children.
+            * [x] Position clustering does not seem to be working.
+              * [ ] `no-time-step-group` should not be propagated by constraint nodes to its children.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
