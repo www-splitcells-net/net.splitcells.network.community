@@ -133,12 +133,13 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [ ] CommitmentAdherence
           * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
             * [x] Implement proposal API for constraint nodes.
-            * [ ] Implement IsDead and IsAlive correctly. CURRENT
+            * [x] Implement IsDead and IsAlive correctly.
               * [x] Implement `IsAlive#testAliveWithMultiple`.
               * [x] Implement IsAlive like IsDead. 
               * [x] Time step determination does not seem to be working.
             * [x] Position clustering does not seem to be working.
-              * [ ] `no-time-step-group` should not be propagated by constraint nodes to its children.
+              * [x] `no-time-step-group` should not be propagated by constraint nodes to its children.
+            * [ ] `World#hasGoodCompany` does not seem to be working correctly. CURRENT
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
