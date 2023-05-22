@@ -139,7 +139,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
               * [x] Time step determination does not seem to be working.
             * [x] Position clustering does not seem to be working.
               * [x] `no-time-step-group` should not be propagated by constraint nodes to its children.
-            * [ ] `World#hasGoodCompany` does not seem to be working correctly. CURRENT
+            * [x] `World#hasGoodCompany` does not seem to be working correctly. CURRENT
+            * [ ] `World#revivalCondition` does not seem to be working correctly. CURRENT
+            * [ ] Apply all tests for this only onto complete world instance.
+              * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
