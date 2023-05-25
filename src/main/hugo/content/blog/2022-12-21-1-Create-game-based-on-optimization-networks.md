@@ -129,8 +129,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [x] Fix errors caused by this.
       * [ ] Add constraint to disallow changes to values, that are not of the next time.
         There are multiple possible solutions. 
-        * [ ] TemplateAdherence
-        * [ ] CommitmentAdherence
+        * [x] TemplateAdherence -> Is not relevant for now.
+        * [ ] CommitmentAdherence CURRENT
           * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
             * [x] Implement proposal API for constraint nodes.
             * [x] Implement IsDead and IsAlive correctly.
@@ -140,9 +140,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Position clustering does not seem to be working.
               * [x] `no-time-step-group` should not be propagated by constraint nodes to its children.
             * [x] `World#hasGoodCompany` does not seem to be working correctly.#
-            * [ ] `World#revivalCondition` does not seem to be working correctly.
-            * [ ] Apply all tests for this only onto complete world instance.
-              * [ ] Document the reasoning in guidelines for optimization programming.
+            * [x] `World#revivalCondition` does not seem to be working correctly.
+    * [ ] Apply all tests for this only onto complete world instance.
+      * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
