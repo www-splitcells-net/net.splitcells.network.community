@@ -139,8 +139,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
               * [x] Time step determination does not seem to be working.
             * [x] Position clustering does not seem to be working.
               * [x] `no-time-step-group` should not be propagated by constraint nodes to its children.
-            * [x] `World#hasGoodCompany` does not seem to be working correctly. CURRENT
-            * [ ] `World#revivalCondition` does not seem to be working correctly. CURRENT
+            * [x] `World#hasGoodCompany` does not seem to be working correctly.#
+            * [ ] `World#revivalCondition` does not seem to be working correctly.
             * [ ] Apply all tests for this only onto complete world instance.
               * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step.
@@ -170,6 +170,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [ ] Large moving entities with large and diverse capabilities and with supply chain requirements (i.e. something like vehicles, aircraft or aircraft carrier).
 * [ ] Make this a blockchain game and thereby trigger people.
 * [ ] Run public server.
-* [ ] Create a world presenter.
-    * [ ] https://www.theatrejs.com/
+  * [ ] Create service infrastructure in order to run webserver in the background via a nice and sustainable API.
+* [x] Create a world presenter.
+    * [x] https://www.theatrejs.com/
 * [ ] Visualize optimization and table network overview.
