@@ -162,6 +162,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
   * [ ] Consider https://vitejs.dev/
 * [ ] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
   in order to have reasonable runtime performance.
+* [x] Make web server for debugging more mature.
+  Currently, it takes a long time to start and the code is an hack.
 # Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
@@ -170,7 +172,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [ ] Large moving entities with large and diverse capabilities and with supply chain requirements (i.e. something like vehicles, aircraft or aircraft carrier).
 * [ ] Make this a blockchain game and thereby trigger people.
 * [ ] Run public server.
-  * [ ] Create service infrastructure in order to run webserver in the background via a nice and sustainable API.
+    * [ ] Create service infrastructure in order to run webserver in the background via a nice and sustainable API.
 * [x] Create a world presenter.
     * [x] https://www.theatrejs.com/
 * [ ] Visualize optimization and table network overview.
