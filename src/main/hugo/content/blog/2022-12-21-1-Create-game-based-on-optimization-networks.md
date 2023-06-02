@@ -109,7 +109,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [x] Visualize state of running instance.
       * [x] Render state at any time.
       * [x] Does not work in Firefox.
-    * [ ] Check constraints via test run.
+    * [x] Check constraints via test run.
       * [x] All GroupdIds should be created based on parent GroupIds, except the root ones.
         Thereby, creating duplicate GroupId descriptions is avoided.
       * [x] `The following is required, but not true: path: [conway-s-game-of-life, Propagation, ForAll, 6, Propagation, ForAll, 0, Propagation, ForAll, isDead, ForAll, .lines, allocations/linesProcessing, linesProcessing, demands-free], line.index(): 0`
@@ -124,14 +124,14 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [x] Require all Raters to have an implementation of toSimpleDescription.
       * [x] Require all Raters based on rater factories to have an explicitly programmed description,
         in order to always have useful reports.
-      * [ ] Create solver able to calculate the next state.
+      * [x] Create solver able to calculate the next state.
       * [x] Improve performance by setting `Table.GET_LINE_VIA_STREAM` to true.
         * [x] Fix errors caused by this.
-      * [ ] Add constraint to disallow changes to values, that are not of the next time.
+      * [x] Add constraint to disallow changes to values, that are not of the next time.
         There are multiple possible solutions. 
         * [x] TemplateAdherence -> Is not relevant for now.
-        * [ ] CommitmentAdherence CURRENT
-          * [ ] Use this as the basis for proposal algorithm inside constraint based repair.
+        * [x] CommitmentAdherence
+          * [x] Use this as the basis for proposal algorithm inside constraint based repair.
             * [x] Implement proposal API for constraint nodes.
             * [x] Implement IsDead and IsAlive correctly.
               * [x] Implement `IsAlive#testAliveWithMultiple`.
@@ -143,7 +143,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] `World#revivalCondition` does not seem to be working correctly.
     * [ ] Apply all tests for this only onto complete world instance.
       * [ ] Document the reasoning in guidelines for optimization programming.
-    * [ ] Support problem instances with more than 1 time step.
+    * [ ] Support problem instances with more than 1 time step in a loop.
+     * [x] Update renderer in such a way, that it updates the viewed time to the latest one automatically.
+     * [ ] There is probably a problem with time steps. CURRENT
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
 * [x] Make layout of Gel's game data nice.
@@ -164,6 +166,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
   in order to have reasonable runtime performance.
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
+* Write article explaining and demonstrating this.
 # Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
