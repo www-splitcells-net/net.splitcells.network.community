@@ -145,7 +145,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step in a loop.
      * [x] Update renderer in such a way, that it updates the viewed time to the latest one automatically.
-     * [ ] There is probably a problem with time steps. CURRENT
+     * [ ] There is probably a problem with time steps. CURRENT 
+       * [ ] The constraint init seems to be ignored.
+       * [ ] A error was found: `at net.splitcells.gel.data.table.Table.toCSV(Table.java:209)`
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
 * [x] Make layout of Gel's game data nice.
