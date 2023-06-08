@@ -66,7 +66,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [x] Provide config for the web server project, where every feature is enabled. This general workflow/app thing would be good in the future for all projects. This could be done via workflow or app classes like the class Dem.  -> This is not needed for now.
         * [x] Document this in general Java project guidelines.  -> This is not needed for now.
     * [x] Fix layout issue. Otherwise it is hard to find the correct paths via GUI: https://todo.sr.ht/~splitcells-net/net.splitcells.network/108
-    * [ ] Create dynamic 3D world viewer (currently only Git repo worlds are rendered).
+    * [x] Create dynamic 3D world viewer (currently only Git repo worlds are rendered).
     * [ ] Make game usable on Steam Deck.
         * [ ] Integrate controller via Web Gamepad API, which makes should make it possible to move the camera through the world.
         * [ ] Make it possible to switch between views of 3D world, tables and constraints.
@@ -145,7 +145,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step in a loop.
      * [x] Update renderer in such a way, that it updates the viewed time to the latest one automatically.
-     * [ ] There is probably a problem with time steps. CURRENT 
+     * [ ] There is probably a problem with time steps.
+       * [ ] Improve runtime performance, because it the runtime is too extreme. CURRENT
+         * [ ] Improve lookup via `Line#value`.
        * [ ] The constraint init seems to be ignored.
        * [ ] A error was found: `at net.splitcells.gel.data.table.Table.toCSV(Table.java:209)`
     * [ ] Load state from cin log repo.
@@ -163,8 +165,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Document reasoning for name.
 * [ ] Run private server with public world result state.
 * [ ] Serve all JavaScript dependencies locally.
-  * [ ] Consider https://vitejs.dev/
-* [ ] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
+  * [ ] Consider https://vitejs.dev/ 
+* [x] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
   in order to have reasonable runtime performance.
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
