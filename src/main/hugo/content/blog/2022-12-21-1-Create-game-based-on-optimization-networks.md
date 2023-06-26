@@ -150,7 +150,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [ ] Remove constraint nodes in order to check, what causes the issue.
          * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
            instead of column based value storage, which in turn can avoid copying values,
-           when lines are transferred from one database to a another one.
+           when lines are transferred from one database to a another one. CURRENT
          * [ ] Speed up constraint nodes by improving free or used demand and supply handling.
          * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
            * [x] Rename Allocations to Assignments.
