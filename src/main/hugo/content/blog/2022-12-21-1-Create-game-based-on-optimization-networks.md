@@ -146,8 +146,23 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Support problem instances with more than 1 time step in a loop.
      * [x] Update renderer in such a way, that it updates the viewed time to the latest one automatically.
      * [ ] There is probably a problem with time steps.
-       * [ ] Improve runtime performance, because it the runtime is too extreme. CURRENT
-         * [ ] Improve lookup via `Line#value`.
+       * [ ] Improve runtime performance, because it the runtime is too extreme.
+         * [ ] Remove constraint nodes in order to check, what causes the issue.
+         * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
+           instead of column based value storage, which in turn can avoid copying values,
+           when lines are transferred from one database to a another one.
+         * [ ] Speed up constraint nodes by improving free or used demand and supply handling.
+         * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
+           * [x] Rename Allocations to Assignments.
+           * [x] Provide Allocations interface for assignments, where only one assignment per demand and supply is allowed.
+           * [x] Provide fast Allocations interface implementation as an alternative to Assignments implementation. -> This not needed for now.
+         * [x] Improve lookup via `Line#value`.
+           * [x] Provide faster alternative to `Database#add`, where the target database header needs to be an exact prefix of the line's header.
+           * [x] Improve performance of `Allocations#remove`.
+           * [x] Improve performance of `Allocations#allocate`.
+         * [ ] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
+         * [ ] Set `INLINE_STANDARD_FACTORIES` to true.
+         * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
        * [ ] The constraint init seems to be ignored.
        * [ ] A error was found: `at net.splitcells.gel.data.table.Table.toCSV(Table.java:209)`
     * [ ] Load state from cin log repo.
