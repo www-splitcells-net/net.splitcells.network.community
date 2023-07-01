@@ -156,6 +156,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
              Therefore, columns are read only.
            * [x] DatabaseTest should test all database implementations.
            * [ ] Fix broken Constraint node paths in webserver layout. CURRENT
+           * [ ] Improve dynamic lookup performance. See `ConstraintAI#registerBeforeRemoval`.
            * [ ] Speed up LookupTable.
            * [ ] Speed up LookupI.
            * [ ] Speed up LookupColumn.
