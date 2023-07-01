@@ -151,10 +151,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
            instead of column based value storage, which in turn can avoid copying values,
            when lines are transferred from one database to a another one. CURRENT
-           * [ ] Line based value storage -> LineWithValues
-           * [ ] Column access values via list of lines shared by database to all of its columns.
+           * [x] Line based value storage -> LineWithValues
+           * [x] Column access values via list of lines shared by database to all of its columns.
              Therefore, columns are read only.
-           * [ ] DatabaseTest should test all database implementations.
+           * [x] DatabaseTest should test all database implementations.
+           * [ ] Fix broken Constraint node paths in webserver layout. CURRENT
            * [ ] Speed up LookupTable.
            * [ ] Speed up LookupI.
            * [ ] Speed up LookupColumn.
