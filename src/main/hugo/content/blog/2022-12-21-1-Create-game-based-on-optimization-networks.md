@@ -155,6 +155,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
            * [ ] Column access values via list of lines shared by database to all of its columns.
              Therefore, columns are read only.
            * [ ] DatabaseTest should test all database implementations.
+           * [ ] Speed up LookupTable.
+           * [ ] Speed up LookupI.
+           * [ ] Speed up LookupColumn.
          * [ ] Speed up constraint nodes by improving free or used demand and supply handling.
          * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
            * [x] Rename Allocations to Assignments.
