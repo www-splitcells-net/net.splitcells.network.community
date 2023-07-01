@@ -150,7 +150,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [ ] Remove constraint nodes in order to check, what causes the issue.
          * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
            instead of column based value storage, which in turn can avoid copying values,
-           when lines are transferred from one database to a another one. CURRENT
+           when lines are transferred from one database to a another one.
            * [x] Line based value storage -> LineWithValues
            * [x] Column access values via list of lines shared by database to all of its columns.
              Therefore, columns are read only.
