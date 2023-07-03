@@ -183,8 +183,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [x] Improve performance of `Allocations#remove`.
          * [x] Improve performance of `Allocations#allocate`.
        * [x] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
-       * [ ] Set `INLINE_STANDARD_FACTORIES` to true.
-       * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
+       * [x] Set `INLINE_STANDARD_FACTORIES` to true. -> Does not have a great effect.
+       * [ ] Reimplement the constraint of the problem, so that the result creates is faster. CURRENT
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
 * [x] Make layout of Gel's game data nice.
