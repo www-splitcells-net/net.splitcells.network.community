@@ -182,7 +182,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [x] Provide faster alternative to `Database#add`, where the target database header needs to be an exact prefix of the line's header.
          * [x] Improve performance of `Allocations#remove`.
          * [x] Improve performance of `Allocations#allocate`.
-       * [ ] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
+       * [x] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
        * [ ] Set `INLINE_STANDARD_FACTORIES` to true.
        * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
     * [ ] Load state from cin log repo.
