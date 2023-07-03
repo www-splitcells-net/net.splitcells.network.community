@@ -151,6 +151,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
            instead of column based value storage, which in turn can avoid copying values,
            when lines are transferred from one database to a another one.
+           -> The bad runtime performance is cause is dominated by constraints' rating functions.
+           These need to be improved instead.
            * [x] Line based value storage -> LineWithValues
            * [x] Column access values via list of lines shared by database to all of its columns.
              Therefore, columns are read only.
@@ -158,8 +160,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
            * [ ] Fix broken Constraint node paths in webserver layout. CURRENT
            * [ ] Improve dynamic lookup performance. See `ConstraintAI#registerBeforeRemoval`.
            * [ ] Speed up LookupTable.
+               * [ ] Use indexes for value access.
            * [ ] Speed up LookupI.
+             * [ ] Use indexes for value access.
            * [ ] Speed up LookupColumn.
+             * [ ] Use indexes for value access.
          * [ ] Speed up constraint nodes by improving free or used demand and supply handling.
          * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
            * [x] Rename Allocations to Assignments.
