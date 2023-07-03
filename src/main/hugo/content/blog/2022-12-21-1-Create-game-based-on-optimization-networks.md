@@ -145,40 +145,46 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step in a loop.
      * [x] Update renderer in such a way, that it updates the viewed time to the latest one automatically.
-     * [ ] There is probably a problem with time steps.
-       * [ ] Improve runtime performance, because it the runtime is too extreme.
-         * [ ] Remove constraint nodes in order to check, what causes the issue.
-         * [ ] Implement a faster database implementation, which speed up is based on line based value storage,
-           instead of column based value storage, which in turn can avoid copying values,
-           when lines are transferred from one database to a another one.
-           -> The bad runtime performance is cause is dominated by constraints' rating functions.
-           These need to be improved instead.
-           * [x] Line based value storage -> LineWithValues
-           * [x] Column access values via list of lines shared by database to all of its columns.
-             Therefore, columns are read only.
-           * [x] DatabaseTest should test all database implementations.
-           * [ ] Fix broken Constraint node paths in webserver layout. CURRENT
-           * [ ] Improve dynamic lookup performance. See `ConstraintAI#registerBeforeRemoval`.
-           * [ ] Speed up LookupTable.
-               * [ ] Use indexes for value access.
-           * [ ] Speed up LookupI.
-             * [ ] Use indexes for value access.
-           * [ ] Speed up LookupColumn.
-             * [ ] Use indexes for value access.
-         * [ ] Speed up constraint nodes by improving free or used demand and supply handling.
-         * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
-           * [x] Rename Allocations to Assignments.
-           * [x] Provide Allocations interface for assignments, where only one assignment per demand and supply is allowed.
-           * [x] Provide fast Allocations interface implementation as an alternative to Assignments implementation. -> This not needed for now.
-         * [x] Improve lookup via `Line#value`.
-           * [x] Provide faster alternative to `Database#add`, where the target database header needs to be an exact prefix of the line's header.
-           * [x] Improve performance of `Allocations#remove`.
-           * [x] Improve performance of `Allocations#allocate`.
-         * [ ] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
-         * [ ] Set `INLINE_STANDARD_FACTORIES` to true.
-         * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
+     * [x] There is probably a problem with time steps.
+       -> This is irrelevant by now, because the constraint tree is to be reimplemented.
        * [ ] The constraint init seems to be ignored.
        * [ ] A error was found: `at net.splitcells.gel.data.table.Table.toCSV(Table.java:209)`
+     * [ ] Improve runtime performance, because it the runtime is too extreme.
+       * [x] Remove constraint nodes in order to check, what causes the issue.
+         -> This had strangely enough no effect,
+         even though I removed one of the most costly duplicate constraint nodes
+         for the overlapping time steps and position clustering raters.
+       * [x] Implement a faster database implementation, which speed up is based on line based value storage,
+         instead of column based value storage, which in turn can avoid copying values,
+         when lines are transferred from one database to a another one.
+         -> The bad runtime performance is cause is dominated by constraints' rating functions.
+         These need to be improved instead.
+         * [x] Line based value storage -> LineWithValues
+         * [x] Column access values via list of lines shared by database to all of its columns.
+           Therefore, columns are read only.
+         * [x] DatabaseTest should test all database implementations.
+         * [x] Fix broken Constraint node paths in webserver layout.
+         * [ ] Improve dynamic lookup performance. See `ConstraintAI#registerBeforeRemoval`.
+         * [ ] Speed up LookupTable.
+             * [ ] Use indexes for value access.
+         * [ ] Speed up LookupI.
+           * [ ] Use indexes for value access.
+         * [ ] Speed up LookupColumn.
+           * [ ] Use indexes for value access.
+       * [x] Speed up constraint nodes by improving free or used demand and supply handling.
+         -> Will be ignored for now, as other performance improvements shows,
+         that the bad runtime is dominated by the concrete constraint tree.
+       * [x] Implement faster allocations database for faster constraint nodes. -> This is not needed, because the bulk of slowness is not caused by the slow allocations implementation.  
+         * [x] Rename Allocations to Assignments.
+         * [x] Provide Allocations interface for assignments, where only one assignment per demand and supply is allowed.
+         * [x] Provide fast Allocations interface implementation as an alternative to Assignments implementation. -> This not needed for now.
+       * [x] Improve lookup via `Line#value`.
+         * [x] Provide faster alternative to `Database#add`, where the target database header needs to be an exact prefix of the line's header.
+         * [x] Improve performance of `Allocations#remove`.
+         * [x] Improve performance of `Allocations#allocate`.
+       * [ ] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
+       * [ ] Set `INLINE_STANDARD_FACTORIES` to true.
+       * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
 * [x] Make layout of Gel's game data nice.
