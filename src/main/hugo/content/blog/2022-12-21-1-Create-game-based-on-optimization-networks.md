@@ -184,7 +184,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
          * [x] Improve performance of `Allocations#allocate`.
        * [x] Ensure, that `StaticFlags#logStaticFlags` is always executed and printed.
        * [x] Set `INLINE_STANDARD_FACTORIES` to true. -> Does not have a great effect.
-       * [ ] Reimplement the constraint of the problem, so that the result creates is faster. CURRENT
+       * [ ] Reimplement the constraint of the problem, so that the result creates is faster.
     * [ ] Load state from cin log repo.
     * [ ] Save state to cin log repo.
 * [x] Make layout of Gel's game data nice.
@@ -198,7 +198,13 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [ ] Implement game of life with 2 players, where each player has choices and wants to maximize its liveness.
 * [x] Find a name: crisis network = cin
     * [ ] Document reasoning for name.
-* [ ] Run private server with public world result state.
+* [ ] Run the game on public server for people to watch. This also helps to make the software deployable in general.
+  * [ ] Make program deployable. CURRENT
+    * [ ] Make webserver working while the jar contain all resources/files needed,
+      instead of the files being available on the filesystem.
+    * [ ] Make website deployable as a dynamic server.
+    * [ ] Publish server as a user program: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
+    * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] Serve all JavaScript dependencies locally.
   * [ ] Consider https://vitejs.dev/ 
 * [x] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
