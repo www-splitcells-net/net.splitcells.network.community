@@ -12,5 +12,4 @@ tags: [accessibility, active]
         * [ ] ProjectRendererI#renderer and transformer
             * [ ] FileStructureTransformer
 * [ ] Make website deployable as a dynamic server.
-* [ ] Publish server as a user program: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
