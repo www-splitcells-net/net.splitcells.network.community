@@ -200,8 +200,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Document reasoning for name.
 * [ ] Run the game on public server for people to watch. This also helps to make the software deployable in general.
   * [ ] Make program deployable. CURRENT
-    * [ ] Make webserver working while the jar contain all resources/files needed,
-      instead of the files being available on the filesystem.
+    * [ ] Add support for jar based filesystem to webserver,
+      instead of the files being available on the hosts filesystem.
+      * [ ] ProjectsRendererExtension
+      * [ ] ProjectRenderer
     * [ ] Make website deployable as a dynamic server.
     * [ ] Publish server as a user program: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
     * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
