@@ -17,6 +17,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/5)
   * Review advertisement, introductions and info linked by README,
     because that is the primary material for newcomers.
+  * Tags: [accessibility](../../tags/accessibility/)
 * Compatibility, portability and adaptability:
   * Description: Make code easy portable, translatable and adaptable to other languages and environments.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/4)

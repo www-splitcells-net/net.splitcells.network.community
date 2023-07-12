@@ -199,14 +199,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Find a name: crisis network = cin
     * [ ] Document reasoning for name.
 * [ ] Run the game on public server for people to watch. This also helps to make the software deployable in general.
-  * [ ] Make program deployable. CURRENT
-    * [ ] Add support for jar based filesystem to webserver,
-      instead of the files being available on the hosts filesystem.
-      * [ ] ProjectsRendererExtension
-      * [ ] ProjectRenderer
-    * [ ] Make website deployable as a dynamic server.
-    * [ ] Publish server as a user program: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
-    * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+  * [ ] https://github.com/www-splitcells-net/net.splitcells.network/issues/249 CURRENT
 * [ ] Serve all JavaScript dependencies locally.
   * [ ] Consider https://vitejs.dev/ 
 * [x] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
