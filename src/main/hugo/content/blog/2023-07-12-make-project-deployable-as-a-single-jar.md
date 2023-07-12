@@ -1,6 +1,6 @@
 ---
 title: Make the project deployable as a single jar.
-date: 2022-12-21
+date: 2023-07-12
 author: Mārtiņš Avots
 tags: [accessibility, active]
 ---
@@ -11,5 +11,8 @@ tags: [accessibility, active]
         * [ ] ProjectRenderer#projectRenderer
         * [ ] ProjectRendererI#renderer and transformer
             * [ ] FileStructureTransformer
+              * [ ] newInputStream CURRENT
+              * [ ] XslTransformer
+              * [ ] PathBasedUriResolver
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
