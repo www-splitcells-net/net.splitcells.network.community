@@ -7,9 +7,9 @@ tags: [accessibility, active]
 * [ ] Add support for jar based filesystem to webserver,
   instead of the files being available on the hosts filesystem.
     * [ ] ProjectsRendererExtension
-    * [ ] ProjectRenderer
-      * [ ] ProjectRenderer#projectRenderer
-      * [ ] ProjectRendererI#renderer and transformer
+    * [x] ProjectRenderer
+      * [x] ProjectRenderer#projectRenderer
+      * [x] ProjectRendererI#renderer and transformer
         * [x] FileStructureTransformer CURRENT
           * [x] newInputStream
             * [x] Use temporary folders for filesystem testing.
