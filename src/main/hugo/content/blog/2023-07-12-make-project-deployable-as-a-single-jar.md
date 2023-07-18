@@ -8,11 +8,13 @@ tags: [accessibility, active]
   instead of the files being available on the hosts filesystem.
     * [ ] ProjectsRendererExtension
     * [ ] ProjectRenderer
-        * [ ] ProjectRenderer#projectRenderer
-        * [ ] ProjectRendererI#renderer and transformer
-            * [ ] FileStructureTransformer
-              * [ ] newInputStream CURRENT
-              * [ ] XslTransformer
-              * [ ] PathBasedUriResolver
+      * [ ] ProjectRenderer#projectRenderer
+      * [ ] ProjectRendererI#renderer and transformer
+        * [x] FileStructureTransformer CURRENT
+          * [x] newInputStream
+            * [x] Use temporary folders for filesystem testing.
+            * [x] XslTransformer
+              * [x] PathBasedUriResolver
+    * [ ] LayoutUtils 
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
