@@ -6,8 +6,8 @@ tags: [accessibility, active]
 ---
 * [ ] Add support for jar based filesystem to webserver,
   instead of the files being available on the hosts filesystem.
-    * [ ] ProjectsRendererExtension
-    * [ ] ProjectRenderer
+    * [x] ProjectsRendererExtension
+    * [x] ProjectRenderer
       * [x] ProjectRenderer#projectRenderer
       * [x] ProjectRendererI#renderer and transformer
         * [x] FileStructureTransformer CURRENT
@@ -16,5 +16,7 @@ tags: [accessibility, active]
             * [x] XslTransformer
               * [x] PathBasedUriResolver
     * [x] LayoutUtils 
+    * [ ] Projects
+      * [ ] Use Projects via one FileSystem.  
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
