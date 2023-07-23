@@ -17,6 +17,7 @@ tags: [accessibility, active]
               * [x] PathBasedUriResolver
     * [x] LayoutUtils 
     * [ ] Projects
-      * [ ] Use Projects via one FileSystem.  
+      * [ ] Use Projects via FileSystem Options.
+        * [ ] Provide FileSystem implementation based on resources of class loader.
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
