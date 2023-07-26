@@ -18,6 +18,13 @@ tags: [accessibility, active]
     * [x] LayoutUtils 
     * [ ] Projects
       * [ ] Use Projects via FileSystem Options.
-        * [ ] Provide FileSystem implementation based on resources of class loader.
+        * [X] Provide FileSystem implementation based on resources of class loader.
+        * [ ] FileSystemViaClass
+        * [ ] ProjectsViaJar
+          * [ ] Move this to system project.
+        * [ ] Make this alternative via taggable via config.
+        * [ ] Provide source file structure inside jar in order to make this file access more similar to access
+          to files via git repos.
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+* [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
