@@ -10,7 +10,7 @@ tags: [accessibility, active]
     * [x] ProjectRenderer
       * [x] ProjectRenderer#projectRenderer
       * [x] ProjectRendererI#renderer and transformer
-        * [x] FileStructureTransformer CURRENT
+        * [x] FileStructureTransformer
           * [x] newInputStream
             * [x] Use temporary folders for filesystem testing.
             * [x] XslTransformer
@@ -22,9 +22,10 @@ tags: [accessibility, active]
         * [ ] FileSystemViaClass
         * [ ] ProjectsViaJar
           * [ ] Move this to system project.
+          * [ ] `maven.execute net.splitcells.website.ProjectsViaJar`
         * [ ] Make this alternative via taggable via config.
         * [ ] Provide source file structure inside jar in order to make this file access more similar to access
-          to files via git repos.
+          to files via git repos. CURRENT
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
