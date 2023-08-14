@@ -18,12 +18,14 @@ tags: [accessibility, active]
     * [x] LayoutUtils 
     * [ ] Projects
       * [ ] Use Projects via FileSystem Options.
-        * [X] Provide FileSystem implementation based on resources of class loader.
-        * [ ] FileSystemViaClass
+        * [x] Provide FileSystem implementation based on resources of class loader.
+        * [x] FileSystemViaClass
         * [ ] ProjectsViaJar
           * [x] Move this to system project.
-          * [ ] `maven.execute net.splitcells.system.WebsiteViaJar` CURRENT
+          * [ ] `maven.execute net.splitcells.system.WebsiteViaJar`
           * [x] Use dedicated resource folder in jar.
+          * [ ] Add all projects via new file system API.
+            * [ ] Split network project into root project and file project. CURRENT
         * [ ] Make this alternative via taggable via config.
         * [x] Provide source file structure inside jar in order to make this file access more similar to access
           to files via git repos. CURRENT
