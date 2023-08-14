@@ -21,10 +21,11 @@ tags: [accessibility, active]
         * [X] Provide FileSystem implementation based on resources of class loader.
         * [ ] FileSystemViaClass
         * [ ] ProjectsViaJar
-          * [ ] Move this to system project.
-          * [ ] `maven.execute net.splitcells.website.ProjectsViaJar`
+          * [x] Move this to system project.
+          * [ ] `maven.execute net.splitcells.system.WebsiteViaJar` CURRENT
+          * [x] Use dedicated resource folder in jar.
         * [ ] Make this alternative via taggable via config.
-        * [ ] Provide source file structure inside jar in order to make this file access more similar to access
+        * [x] Provide source file structure inside jar in order to make this file access more similar to access
           to files via git repos. CURRENT
 * [ ] Make website deployable as a dynamic server.
 * [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
