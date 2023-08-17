@@ -16,19 +16,19 @@ tags: [accessibility, active]
             * [x] XslTransformer
               * [x] PathBasedUriResolver
     * [x] LayoutUtils 
-    * [ ] Projects
-      * [ ] Use Projects via FileSystem Options.
+    * [x] Projects
+      * [x] Use Projects via FileSystem Options.
         * [x] Provide FileSystem implementation based on resources of class loader.
         * [x] FileSystemViaClass
-        * [ ] ProjectsViaJar
+        * [x] ProjectsViaJar
           * [x] Move this to system project.
-          * [ ] `maven.execute net.splitcells.system.WebsiteViaJar`
+          * [x] `maven.execute net.splitcells.system.WebsiteViaJar`
           * [x] Use dedicated resource folder in jar.
-          * [ ] Add all projects via new file system API.
-            * [ ] Split network project into root project and file project. CURRENT
-        * [ ] Make this alternative via taggable via config.
+          * [x] Add all projects via new file system API.
+            * [x] Split network project into root project and file project.
         * [x] Provide source file structure inside jar in order to make this file access more similar to access
           to files via git repos. CURRENT
+  * [ ] Make it taggable to use local file system, instead of the jar based file system.
 * [ ] Make website deployable as a dynamic server.
-* [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+* [ ] **CURRENT** Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
