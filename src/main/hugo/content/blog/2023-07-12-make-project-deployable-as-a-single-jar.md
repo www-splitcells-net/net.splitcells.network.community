@@ -23,6 +23,7 @@ tags: [accessibility, active]
         * [x] ProjectsViaJar
           * [x] Move this to system project.
           * [x] `maven.execute net.splitcells.system.WebsiteViaJar`
+            * [ ] **CURRENT** Does not work via shell, but works via IDE.
           * [x] Use dedicated resource folder in jar.
           * [x] Add all projects via new file system API.
             * [x] Split network project into root project and file project.
@@ -30,5 +31,5 @@ tags: [accessibility, active]
           to files via git repos. CURRENT
   * [ ] Make it taggable to use local file system, instead of the jar based file system.
 * [ ] Make website deployable as a dynamic server.
-* [ ] **CURRENT** Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+* [ ] CURRENT Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
