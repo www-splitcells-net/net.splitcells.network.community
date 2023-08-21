@@ -22,8 +22,9 @@ tags: [accessibility, active]
         * [x] FileSystemViaClass
         * [x] ProjectsViaJar
           * [x] Move this to system project.
-          * [x] `maven.execute net.splitcells.system.WebsiteViaJar`
-            * [ ] **CURRENT** Does not work via shell, but works via IDE.
+          * [x] `maven.execute net.splitcells.distro.Distro`
+            * [ ] Does not work via shell, but works via IDE.
+            * [ ] **CURRENT** `src/main/**/*` are not loaded. There is probably a file walk error.
           * [x] Use dedicated resource folder in jar.
           * [x] Add all projects via new file system API.
             * [x] Split network project into root project and file project.
