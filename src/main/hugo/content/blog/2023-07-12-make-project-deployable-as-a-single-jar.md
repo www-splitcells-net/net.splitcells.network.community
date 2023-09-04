@@ -4,7 +4,7 @@ date: 2023-07-12
 author: Mārtiņš Avots
 tags: [accessibility, active]
 ---
-* [ ] Add support for jar based filesystem to webserver,
+* [x] Add support for jar based filesystem to webserver,
   instead of the files being available on the hosts filesystem.
     * [x] ProjectsRendererExtension
     * [x] ProjectRenderer
@@ -32,7 +32,6 @@ tags: [accessibility, active]
           to files via git repos. CURRENT
   * [ ] **CURRENT** Make personal website runnable again.
   * [ ] Make it taggable to use local file system, instead of the jar based file system.
-  * [ ] Test server by running as a fat jar.
-* [ ] Make website deployable as a dynamic server.
-* [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
-* [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
+  * [x] Make it possible to run server a fat jar.
+* [x] Make website deployable as a dynamic server.
+* [x] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
