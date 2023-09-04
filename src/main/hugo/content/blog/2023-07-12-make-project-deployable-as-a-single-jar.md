@@ -34,5 +34,5 @@ tags: [accessibility, active]
   * [ ] Make it taggable to use local file system, instead of the jar based file system.
   * [ ] Test server by running as a fat jar.
 * [ ] Make website deployable as a dynamic server.
-* [ ] CURRENT Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+* [ ] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] Create dedicated deployment project and clean up the dependencies of `net.splitcells.website.server`.
