@@ -30,8 +30,7 @@ tags: [accessibility, active]
             * [x] Split network project into root project and file project.
         * [x] Provide source file structure inside jar in order to make this file access more similar to access
           to files via git repos. CURRENT
-  * [ ] **CURRENT** Make personal website runnable again.
-  * [ ] Make it taggable to use local file system, instead of the jar based file system.
+  * [x] Make personal website runnable again.
   * [x] Make it possible to run server a fat jar.
 * [x] Make website deployable as a dynamic server.
 * [x] Remove the need of private module for website deployment: https://github.com/www-splitcells-net/net.splitcells.network/issues/199
