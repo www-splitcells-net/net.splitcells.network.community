@@ -45,6 +45,7 @@ tags: [feature, active]
         * [ ] Provide application icon.
     * [ ] Support Flatpak via jreleaser. -> Do this only, when there are normal releases for the software.
         * [ ] https://docs.flathub.org/docs/for-app-authors/requirements/
+    * [ ] Provide application downloads.
 * [ ] Provide functions for schools.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
