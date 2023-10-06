@@ -46,8 +46,11 @@ tags: [feature, active]
         * [x] https://docs.flathub.org/docs/for-app-authors/requirements/
 * [ ] Provide generic editor.
     * [ ] Provide front menu, that present main application.
-        * [ ] Create config to define menu items.
+        * [x] Create config to define menu items.
         * [ ] Render front menu.
+            * [ ] Image
+            * [ ] Link
+            * [ ] Description
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
     * [ ] Provide editor to define constraints.
