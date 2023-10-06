@@ -45,17 +45,20 @@ tags: [feature, active]
         * -> This will be done via the following issue: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
         * [x] https://docs.flathub.org/docs/for-app-authors/requirements/
 * [ ] Provide generic editor.
-    * [x] Provide front menu, that present main application.
+    * [ ] Provide front menu, that present main application.
         * [x] Create config to define menu items.
-        * [ ] Render front menu.
+        * [x] Render front menu.
             * [x] Title 
             * [x] Image
             * [x] Link
             * [x] Description
+        * [ ] Define default front page.
+        * [ ] Reset front page for personal site.
     * [ ] Provide editor to define constraints.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
+* [ ] Deploy application as server.
 # Tasks to be planned
 * [ ] User should be able to define part of the solution.
 # Ideas
