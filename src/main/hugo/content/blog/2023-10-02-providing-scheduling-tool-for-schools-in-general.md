@@ -52,9 +52,9 @@ tags: [feature, active]
             * [x] Image
             * [x] Link
             * [x] Description
+    * [ ] Provide editor to define constraints.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
-    * [ ] Provide editor to define constraints.
 * [ ] Provide application downloads.
 # Tasks to be planned
 * [ ] User should be able to define part of the solution.
