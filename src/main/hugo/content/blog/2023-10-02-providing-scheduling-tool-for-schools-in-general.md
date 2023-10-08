@@ -52,8 +52,9 @@ tags: [feature, active]
             * [x] Image
             * [x] Link
             * [x] Description
-        * [ ] Define default front page.
-        * [ ] Reset front page for personal site.
+        * [x] Define default front page.
+        * [x] Reset front page for personal site.
+        * [ ] Add front menu item for editor.
     * [ ] Provide editor to define constraints.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
