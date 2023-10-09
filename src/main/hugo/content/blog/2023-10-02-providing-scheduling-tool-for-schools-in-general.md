@@ -56,6 +56,10 @@ tags: [feature, active]
         * [x] Reset front page for personal site.
         * [ ] Add front menu item for editor.
     * [ ] Provide editor to define constraints.
+        * [ ] Create grammar.
+            * [ ] Define demand attributes
+            * [ ] Define supply attributes
+            * [ ] Define constraints.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
