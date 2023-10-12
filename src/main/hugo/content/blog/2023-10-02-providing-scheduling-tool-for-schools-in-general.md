@@ -56,10 +56,20 @@ tags: [feature, active]
         * [x] Reset front page for personal site.
         * [ ] Add front menu item for editor.
     * [ ] Provide editor to define constraints.
-        * [ ] Create grammar.
-            * [ ] Define demand attributes
-            * [ ] Define supply attributes
-            * [ ] Define constraints.
+        * [x] Create grammar.
+            * [x] Define demand attributes
+            * [x] Define supply attributes
+            * [x] Define constraints.
+        * [ ] Parse problem definition.
+            * [x] Parse demand attributes.
+            * [x] Parse supply attributes.
+            * [x] Parse constraints' root.
+            * [ ] Parse complete constraint root.
+            * [ ] Use Perspective as an intermediate representation,
+                in order to avoid syntax specifics for data to constraint mapping.
+                * [ ] Make grammar an abstract perspective grammar.
+                * [ ] Parse perspective grammar.
+                * [ ] Create Perspective transformer framework.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
