@@ -12,7 +12,7 @@
         <dependency>
             <groupId>net.splitcells</groupId>
             <artifactId>system</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 </project>
