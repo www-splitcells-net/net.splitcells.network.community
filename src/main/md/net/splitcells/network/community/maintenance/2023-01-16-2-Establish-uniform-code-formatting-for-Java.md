@@ -1,10 +1,4 @@
----
-title: Establish uniform code formatting for Java.
-date: 2023-01-16
-author: Mārtiņš Avots
-tags: [maintenance]
----
-
+# Establish uniform code formatting for Java.
 * [ ] Consider [Google's style guide](https://google.github.io/styleguide/javaguide.html)
 * [ ] Document Google's style guide [source code](https://github.com/google/styleguide).
   * [ ] Consider [fmt-maven-plugin](https://github.com/spotify/fmt-maven-plugin) for auto formatter via build.

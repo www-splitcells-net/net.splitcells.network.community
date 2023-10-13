@@ -1,13 +1,6 @@
----
-title: Create game based on optimization networks.
-date: 2022-12-21
-author: Mārtiņš Avots
-tags: [feature, feature_active, active]
----
-
+# Create game based on optimization networks.
 The original GitHub issue id is `#170`.
-
-# Context
+## Context
 The initial idea for the optimization framework long ago was
 to create a modeller for complex optimization systems or complex systems in general,
 so one could study these.
@@ -40,7 +33,7 @@ It occurred, that such structure basically is a world,
 where on can place and connect things.
 Games are inherently suitable for this and have the advantage of being advertizable.
 
-# Tasks
+## Tasks
 * [ ] Document goals of this game.
   * [ ] Use gamification as a source for motivation.
     * [ ] Alternative or counterpart to test recursion:
@@ -207,7 +200,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
 * Write article explaining and demonstrating this.
-# Ideas For Future Tickets
+## Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
 * [ ] Create table editor.

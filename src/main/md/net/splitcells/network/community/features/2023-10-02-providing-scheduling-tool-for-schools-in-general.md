@@ -1,12 +1,6 @@
----
-title: Provide scheduling tool for schools in general.
-date: 2023-07-12
-author: Mārtiņš Avots
-tags: [feature, active]
----
+# Provide scheduling tool for schools in general.
 * Ticket: https://github.com/www-splitcells-net/net.splitcells.network/issues/252
-
-# Tasks
+## Tasks
 * [x] Provide runnable application with GUI.
     * [x] Place MathJax files into dedicated repo, because it is too big.
     * [x] https://github.com/www-splitcells-net/net.splitcells.network/issues/249
@@ -74,9 +68,9 @@ tags: [feature, active]
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
-# Tasks to be planned
+## Tasks to be planned
 * [ ] User should be able to define part of the solution.
-# Ideas
+## Ideas
 * [ ] Find teacher/school for testing?
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder

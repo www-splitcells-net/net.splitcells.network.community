@@ -1,23 +1,13 @@
----
-title: Splitcells Network Projects
-date: 9999-12-24
-author: Mārtiņš Avots
-tags: [project]
----
-# Overview And Status
-
-* [Active Tickets](../../tags/active/)
+# Splitcells Network Projects
+## Overview And Status
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
-
-# Standard Projects
+## Standard Projects
 Projects that are being worked cyclically, and probably will never be finished.
-
 * Accessibility: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/5)
   * Review advertisement, introductions and info linked by README,
     because that is the primary material for newcomers.
-  * Tags: [accessibility](../../tags/accessibility/)
 * Compatibility, portability and adaptability:
   * Description: Make code easy portable, translatable and adaptable to other languages and environments.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/4)
@@ -32,12 +22,10 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [#215 Review advertisement, introductions and info linked by README weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/215)
 * Features: Removal, Addition and Improvements
   * Description: To the moon!
-  * Tags: [feature](../../tags/feature/), [feature_active](../../tags/feature_active/)
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/7)
 * Maintenance project:
   * Description: Improve quality and fix bugs.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/3)
-  * Tags: [maintenance](../../tags/Maintenance), [maintenance_active](../../tags/maintenance)
   * Update dependencies.
   * [#212 Process project status badges weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/212)
     (See GitHub status page [here](https://github.com/www-splitcells-net/net.splitcells.network#project-status)
@@ -48,9 +36,11 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/6)
 * Webserver Development
   * [Host Link](https://todo.sr.ht/~splitcells-net/net.splitcells.network?search=label%3A%22active%22)
-# Notes
+## Notes
 * This is a ticket system in the form of a blog.
-  A simplified and therefore easily portable folder structure is preferred. 
+* Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
+    A simplified and therefore easily portable folder structure is preferred.
+    Most notably, links between documents cannot be correct in the source code and in the rendered website.
 * Generally speaking all tickets should be reachable via this blog.
 * This blog is only used for complex or important tickets, that may create lasting requirements.
   It may also be used for tickets, were its reasoning is important or complex and therefore needs to be documented,

@@ -1,9 +1,4 @@
----
-title: Make the project deployable as a single jar.
-date: 2023-07-12
-author: Mārtiņš Avots
-tags: [accessibility, active]
----
+# Make the project deployable as a single jar.
 * [x] Add support for jar based filesystem to webserver,
   instead of the files being available on the hosts filesystem.
     * [x] ProjectsRendererExtension
