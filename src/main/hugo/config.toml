@@ -1,0 +1,12 @@
+baseURL = "https://splitcells-net.srht.site/net.splitcells.network.community.via.hugo/"
+languageCode = "en-us"
+title = "Hugo Based Ticket System"
+theme = "HugoTeX"
+buildFuture = true
+
+[outputs]
+section = ["HTML", "RSS"]
+
+[author]
+  name = "Splitcells Network"
+  abstract = 'This is the core ticket system for Splitcells Network based on a Hugo blog.'
