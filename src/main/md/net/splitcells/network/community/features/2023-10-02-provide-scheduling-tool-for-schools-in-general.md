@@ -59,7 +59,7 @@
             * [x] Parse supply attributes.
             * [x] Parse constraints' root.
             * [ ] Parse complete constraint root.
-            * [ ] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
+            * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
