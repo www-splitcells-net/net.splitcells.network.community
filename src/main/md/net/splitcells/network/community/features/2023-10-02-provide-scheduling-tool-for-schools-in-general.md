@@ -59,11 +59,7 @@
             * [x] Parse supply attributes.
             * [x] Parse constraints' root.
             * [ ] Parse complete constraint root.
-            * [ ] Use Perspective as an intermediate representation,
-                in order to avoid syntax specifics for data to constraint mapping.
-                * [ ] Make grammar an abstract perspective grammar.
-                * [ ] Parse perspective grammar.
-                * [ ] Create Perspective transformer framework.
+            * [ ] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
