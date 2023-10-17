@@ -1,4 +1,6 @@
 # Provide scheduling tool for schools in general.
+* Goal: The goal is to provide a minimum viable product, that demonstrates,
+     how such a tool would look and work like.
 * Ticket: https://github.com/www-splitcells-net/net.splitcells.network/issues/252
 ## Tasks
 * [x] Provide runnable application with GUI.
@@ -54,11 +56,11 @@
             * [x] Define demand attributes
             * [x] Define supply attributes
             * [x] Define constraints.
-        * [ ] Parse problem definition.
+        * [x] Parse problem definition.
             * [x] Parse demand attributes.
             * [x] Parse supply attributes.
             * [x] Parse constraints' root.
-            * [ ] Parse complete constraint definition.
+            * [x] Parse complete constraint definition.
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
     * [ ] Provide way to upload problem data.
     * [ ] Provide way to download solution.
