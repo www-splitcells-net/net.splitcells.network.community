@@ -64,6 +64,7 @@
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
             * [ ] Parse multiple constraint paths.
     * [ ] Provide way to upload problem data.
+    * [ ] Test complete optimization on simplest parsed problem, without webserver.
     * [ ] Provide way to download solution.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
