@@ -56,13 +56,13 @@
             * [x] Define demand attributes
             * [x] Define supply attributes
             * [x] Define constraints.
-        * [ ] Parse problem definition.
+        * [x] Parse problem definition.
             * [x] Parse demand attributes.
             * [x] Parse supply attributes.
             * [x] Parse constraints' root.
             * [x] Parse complete constraint definition.
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
-            * [ ] Parse multiple constraint paths.
+            * [x] Parse multiple constraint paths.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
     * [ ] Provide way to download solution.
