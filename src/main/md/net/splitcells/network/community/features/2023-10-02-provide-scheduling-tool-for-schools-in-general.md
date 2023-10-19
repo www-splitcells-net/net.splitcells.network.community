@@ -41,7 +41,7 @@
         * -> This will be done via the following issue: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
         * [x] https://docs.flathub.org/docs/for-app-authors/requirements/
 * [ ] Provide generic editor.
-    * [ ] Provide front menu, that present main application.
+    * [x] Provide front menu, that present main application.
         * [x] Create config to define menu items.
         * [x] Render front menu.
             * [x] Title 
@@ -50,7 +50,8 @@
             * [x] Description
         * [x] Define default front page.
         * [x] Reset front page for personal site.
-        * [ ] Add front menu item for editor.
+        * [x] Create dedicated UI project for Gel.
+        * [x] Add front menu item for editor.
     * [ ] Provide editor to define constraints.
         * [x] Create grammar.
             * [x] Define demand attributes
