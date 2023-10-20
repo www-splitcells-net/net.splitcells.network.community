@@ -64,6 +64,11 @@
             * [x] Parse complete constraint definition.
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
             * [x] Parse multiple constraint paths.
+        * [ ] Upload data via HTML form.
+            * [ ] Extend webserver.
+            * [ ] Provide form for uploading an optimization problem.
+            * [ ] Implement form.
+            * [ ] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
     * [ ] Provide way to download solution.
