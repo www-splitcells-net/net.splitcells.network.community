@@ -65,15 +65,23 @@
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
             * [x] Parse multiple constraint paths.
         * [ ] Upload data via HTML form.
-            * [ ] Extend webserver.
+            * [x] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
                 * [ ] Give visual feedback for click.
                 * [ ] Show current status.
                 * [ ] Add result link to solution chapter.
+                * [ ] Create processor, that parses and solves given problem.
+                * [ ] Create processor, that provides calculated solutions for a limited time. 
+                    By using a processor an ID can be used to identify the solution to be retrieved without
+                    showing the id in the webserver layout.
+                    This makes it possible to hide or isolate output created by different users.
             * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
     * [ ] Provide way to download solution.
+* [ ] Improve logging system.
+    * [ ] Log all requests in detail.
+    * [ ] Ensure, that logs are present in application.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
 ## Tasks to be planned
