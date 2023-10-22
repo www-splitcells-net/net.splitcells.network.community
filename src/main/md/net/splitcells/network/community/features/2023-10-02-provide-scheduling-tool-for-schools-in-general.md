@@ -67,8 +67,10 @@
         * [ ] Upload data via HTML form.
             * [ ] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
-            * [ ] Implement form.
-            * [ ] Clean up HTTP server.
+                * [ ] Give visual feedback for click.
+                * [ ] Show current status.
+                * [ ] Add result link to solution chapter.
+            * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
     * [ ] Provide way to download solution.
