@@ -68,6 +68,7 @@
             * [x] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
                 * [ ] Give visual feedback for click.
+                * [ ] Respond to form with JSON document. CURRENT
                 * [ ] Show current status.
                 * [ ] Add result link to solution chapter.
                 * [ ] Create processor, that parses and solves given problem.
@@ -84,6 +85,7 @@
     * [ ] Ensure, that logs are present in application.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
+* [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 ## Tasks to be planned
 * [ ] User should be able to define part of the solution.
 ## Ideas
