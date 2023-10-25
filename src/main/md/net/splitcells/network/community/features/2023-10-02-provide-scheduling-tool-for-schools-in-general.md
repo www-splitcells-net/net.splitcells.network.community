@@ -68,8 +68,8 @@
             * [x] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
                 * [ ] Give visual feedback for click.
-                * [ ] Respond to form with JSON document. CURRENT
-                    * [ ] BinaryProcessor should use single byte array for request and response,
+                * [x] Respond to form with JSON document. CURRENT
+                    * [x] BinaryProcessor should use single byte array for request and response,
                         because putting multiple binary arrays into one string and extracting the byte arrays from that string is easy via base64. 
                 * [ ] Show current status.
                 * [ ] Add result link to solution chapter.
