@@ -78,6 +78,7 @@
                     By using a processor an ID can be used to identify the solution to be retrieved without
                     showing the id in the webserver layout.
                     This makes it possible to hide or isolate output created by different users.
+                * [ ] Create mini framework for forms.
             * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
