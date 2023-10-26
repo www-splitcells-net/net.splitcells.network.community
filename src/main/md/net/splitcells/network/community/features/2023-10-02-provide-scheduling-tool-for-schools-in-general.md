@@ -67,8 +67,8 @@
         * [ ] Upload data via HTML form.
             * [x] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
-                * [ ] Give visual feedback for click.
-                * [x] Respond to form with JSON document. CURRENT
+                * [ ] Give visual feedback for click. CURRENT
+                * [x] Respond to form with JSON document.
                     * [x] BinaryProcessor should use single byte array for request and response,
                         because putting multiple binary arrays into one string and extracting the byte arrays from that string is easy via base64. 
                 * [ ] Show current status.
@@ -79,6 +79,7 @@
                     showing the id in the webserver layout.
                     This makes it possible to hide or isolate output created by different users.
                 * [ ] Create mini framework for forms.
+                * [x] Test webserver's processor.
             * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
     * [ ] Test complete optimization on simplest parsed problem, without webserver.
