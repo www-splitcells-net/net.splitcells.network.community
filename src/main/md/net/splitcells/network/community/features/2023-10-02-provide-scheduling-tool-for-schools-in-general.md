@@ -73,11 +73,9 @@
                         because putting multiple binary arrays into one string and extracting the byte arrays from that string is easy via base64. 
                 * [x] Show current status.
                 * [x] Create processor, that parses and solves given problem.
-                * [ ] Create processor, that provides calculated solutions for a limited time. 
-                    By using a processor an ID can be used to identify the solution to be retrieved without
-                    showing the id in the webserver layout.
-                    This makes it possible to hide or isolate output created by different users.
                 * [ ] Create mini framework for forms. CURRENT
+                    * [ ] Upload data via Tabulator.
+                    * [ ] Download data via Tabulator.
                 * [x] Test webserver's processor.
             * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
