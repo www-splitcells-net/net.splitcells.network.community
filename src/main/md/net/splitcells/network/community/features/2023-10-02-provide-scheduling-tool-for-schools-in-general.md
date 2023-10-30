@@ -84,9 +84,9 @@
                             * [ ] Buttons for actions on current page.
                 * [x] Test webserver's processor.
             * [x] Clean up HTTP server.
-    * [ ] Provide way to upload problem data.
-    * [ ] Test complete optimization on simplest parsed problem, without webserver.
-    * [ ] Provide way to download solution.
+    * [x] Provide way to upload problem data.
+    * [x] Test complete optimization on simplest parsed problem, without webserver.
+    * [x] Provide way to download solution.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
     * [ ] Ensure, that logs are present in application.
