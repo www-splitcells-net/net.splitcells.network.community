@@ -76,7 +76,7 @@
                 * [x] Create processor, that parses and solves given problem.
                 * [ ] Create mini framework for forms. CURRENT
                     * [ ] Upload data via Tabulator.
-                    * [ ] Download data via Tabulator.
+                    * [x] Download data via Tabulator.
                     * [ ] Make button more visible as such. Differentiating between links/task resulting in a different page
                         and the same page.
                         * [ ] Create website styling guidelines.
