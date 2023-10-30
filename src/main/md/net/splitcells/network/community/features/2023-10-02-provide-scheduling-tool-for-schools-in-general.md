@@ -72,7 +72,7 @@
                     * [x] BinaryProcessor should use single byte array for request and response,
                         because putting multiple binary arrays into one string and extracting the byte arrays from that string is easy via base64.
                         -> BinaryProcessor was renamed to Processor and is generic.
-                        The Processor used for the webserver not retrieves a single wrapped Perspective and
+                        The Processor used for the webserver now retrieves a single wrapped Perspective and
                         returns a single wrapped Perspective.
                 * [x] Show current status.
                 * [ ] Block submit button, if already active.
