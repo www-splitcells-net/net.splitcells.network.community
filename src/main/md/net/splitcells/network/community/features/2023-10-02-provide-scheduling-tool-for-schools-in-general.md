@@ -72,10 +72,16 @@
                     * [x] BinaryProcessor should use single byte array for request and response,
                         because putting multiple binary arrays into one string and extracting the byte arrays from that string is easy via base64. 
                 * [x] Show current status.
+                * [ ] Block submit button, if already active.
                 * [x] Create processor, that parses and solves given problem.
                 * [ ] Create mini framework for forms. CURRENT
                     * [ ] Upload data via Tabulator.
                     * [ ] Download data via Tabulator.
+                    * [ ] Make button more visible as such. Differentiating between links/task resulting in a different page
+                        and the same page.
+                        * [ ] Create website styling guidelines.
+                            * [ ] Buttons linking to other pages.
+                            * [ ] Buttons for actions on current page.
                 * [x] Test webserver's processor.
             * [x] Clean up HTTP server.
     * [ ] Provide way to upload problem data.
