@@ -82,11 +82,11 @@
                 * [ ] Create mini framework for forms. CURRENT
                     * [x] Upload data via Tabulator. -> Will be done later, when the feature is useful.
                     * [x] Download data via Tabulator.
-                    * [ ] Make button more visible as such. Differentiating between links/task resulting in a different page
+                    * [x] Make button more visible as such. Differentiating between links/task resulting in a different page
                         and the same page.
-                        * [ ] Create website styling guidelines.
-                            * [ ] Buttons linking to other pages.
-                            * [ ] Buttons for actions on current page.
+                        * [x] Create website styling guidelines.
+                            * [x] Buttons linking to other pages.
+                            * [x] Buttons for actions on current page.
                 * [x] Test webserver's processor.
             * [x] Clean up HTTP server.
     * [x] Provide way to upload problem data.
