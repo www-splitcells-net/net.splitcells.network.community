@@ -75,10 +75,12 @@
                         The Processor used for the webserver now retrieves a single wrapped Perspective and
                         returns a single wrapped Perspective.
                 * [x] Show current status.
-                * [ ] Block submit button, if already active.
+                * [x] Block submit button, if already active.
+                * [x] Minimize chapter content and add buttons to chapter titles in order to hide and show its content.
+                    Otherwise, the content of the form can be irritating because of the big text areas.
                 * [x] Create processor, that parses and solves given problem.
                 * [ ] Create mini framework for forms. CURRENT
-                    * [ ] Upload data via Tabulator.
+                    * [x] Upload data via Tabulator. -> Will be done later, when the feature is useful.
                     * [x] Download data via Tabulator.
                     * [ ] Make button more visible as such. Differentiating between links/task resulting in a different page
                         and the same page.
@@ -93,11 +95,15 @@
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
     * [ ] Ensure, that logs are present in application.
+* [ ] Provide good error messages.
+    * [ ] Expand code guidelines.
+    * [ ] Use alternative to Optionals.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 ## Tasks to be planned
 * [ ] User should be able to define part of the solution.
+* [ ] Use JQuery instead of own functions.
 ## Ideas
 * [ ] Find teacher/school for testing?
 * [ ] Consider making program runnable in Browser via Javascript.
