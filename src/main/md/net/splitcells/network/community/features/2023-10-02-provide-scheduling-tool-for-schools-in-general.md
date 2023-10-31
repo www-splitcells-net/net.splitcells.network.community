@@ -40,7 +40,7 @@
         * -> Do this only, when there are normal releases for the software.
         * -> This will be done via the following issue: https://github.com/www-splitcells-net/net.splitcells.network/issues/195
         * [x] https://docs.flathub.org/docs/for-app-authors/requirements/
-* [ ] Provide generic editor.
+* [x] Provide generic editor.
     * [x] Provide front menu, that present main application.
         * [x] Create config to define menu items.
         * [x] Render front menu.
@@ -52,7 +52,7 @@
         * [x] Reset front page for personal site.
         * [x] Create dedicated UI project for Gel.
         * [x] Add front menu item for editor.
-    * [ ] Provide editor to define constraints.
+    * [x] Provide editor to define constraints.
         * [x] Create grammar.
             * [x] Define demand attributes
             * [x] Define supply attributes
@@ -64,7 +64,7 @@
             * [x] Parse complete constraint definition.
             * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
             * [x] Parse multiple constraint paths.
-        * [ ] Upload data via HTML form.
+        * [x] Upload data via HTML form.
             * [x] Extend webserver.
             * [ ] Provide form for uploading an optimization problem.
                 * [x] Give visual feedback for click.
@@ -79,7 +79,7 @@
                 * [x] Minimize chapter content and add buttons to chapter titles in order to hide and show its content.
                     Otherwise, the content of the form can be irritating because of the big text areas.
                 * [x] Create processor, that parses and solves given problem.
-                * [ ] Create mini framework for forms. CURRENT
+                * [x] Create mini framework for forms. CURRENT
                     * [x] Upload data via Tabulator. -> Will be done later, when the feature is useful.
                     * [x] Download data via Tabulator.
                     * [x] Make button more visible as such. Differentiating between links/task resulting in a different page
