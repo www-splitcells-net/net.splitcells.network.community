@@ -66,7 +66,7 @@
             * [x] Parse multiple constraint paths.
         * [x] Upload data via HTML form.
             * [x] Extend webserver.
-            * [ ] Provide form for uploading an optimization problem.
+            * [x] Provide form for uploading an optimization problem.
                 * [x] Give visual feedback for click.
                 * [x] Respond to form with JSON document.
                     * [x] BinaryProcessor should use single byte array for request and response,
@@ -79,7 +79,7 @@
                 * [x] Minimize chapter content and add buttons to chapter titles in order to hide and show its content.
                     Otherwise, the content of the form can be irritating because of the big text areas.
                 * [x] Create processor, that parses and solves given problem.
-                * [x] Create mini framework for forms. CURRENT
+                * [x] Create mini framework for forms.
                     * [x] Upload data via Tabulator. -> Will be done later, when the feature is useful.
                     * [x] Download data via Tabulator.
                     * [x] Make button more visible as such. Differentiating between links/task resulting in a different page
@@ -92,6 +92,8 @@
     * [x] Provide way to upload problem data.
     * [x] Test complete optimization on simplest parsed problem, without webserver.
     * [x] Provide way to download solution.
+* [ ] Redeploy website as last deployment was kaput.
+    * [ ] Fix loading of class resources located inside nested jars. CURRENT
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
     * [ ] Ensure, that logs are present in application.
