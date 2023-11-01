@@ -100,6 +100,7 @@
 * [ ] Provide good error messages.
     * [ ] Expand code guidelines.
     * [ ] Use alternative to Optionals.
+    * [ ] Support error reports.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 * [ ] Provide application downloads.
 * [ ] Deploy application as server.
