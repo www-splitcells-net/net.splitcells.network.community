@@ -92,7 +92,7 @@
     * [x] Provide way to upload problem data.
     * [x] Test complete optimization on simplest parsed problem, without webserver.
     * [x] Provide way to download solution.
-* [x] Redeploy website as last deployment was kaput.
+* [x] Redeploy website as last deployment was kaputt.
 * [ ] Fix loading of class resources located inside nested jars. CURRENT
     * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
         the jars.
