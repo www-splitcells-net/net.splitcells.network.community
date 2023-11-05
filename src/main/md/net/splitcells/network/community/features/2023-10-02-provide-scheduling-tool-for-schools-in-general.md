@@ -109,7 +109,7 @@
     * [ ] Support error reports.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 * [ ] Provide application downloads.
-* [ ] Deploy application as server.
+* [ ] Deploy application on public server.
 ## Tasks to be planned
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
