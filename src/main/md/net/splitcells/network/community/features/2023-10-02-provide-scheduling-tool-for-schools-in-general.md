@@ -94,11 +94,17 @@
     * [x] Provide way to download solution.
 * [ ] Redeploy website as last deployment was kaput.
     * [ ] Fix loading of class resources located inside nested jars. CURRENT
+        * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
+            the jars.
+        * [ ] Use resource list file inside FileSystemViaClassResources.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
     * [ ] Ensure, that logs are present in application.
 * [ ] Provide good error messages.
-    * [ ] Expand code guidelines.
+    * [ ] Expand code guidelines regarding error messages.
+        * [ ] Pojos and other static types are not needed,
+            as stability regarding the error message format is not guaranteed in order to make error reporting
+            easy to create and adjust.
     * [ ] Use alternative to Optionals.
     * [ ] Support error reports.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.

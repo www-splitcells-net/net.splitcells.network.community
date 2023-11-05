@@ -30,7 +30,8 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [#212 Process project status badges weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/212)
     (See GitHub status page [here](https://github.com/www-splitcells-net/net.splitcells.network#project-status)
     and website status page [here](https://splitcells.net/net/splitcells/network/status.html).)
-  * [#214 Deploy website weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/214)
+* Deployment project
+  * [Host Link](https://github.com/orgs/www-splitcells-net/projects/10/views/1)
 * Performance Engineering 
   * Description: We have a need for speed.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/6)
