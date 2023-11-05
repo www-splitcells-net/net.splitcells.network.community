@@ -99,7 +99,7 @@
         * [ ] Use resource list file inside FileSystemViaClassResources.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
-    * [ ] Ensure, that logs are present in application.
+    * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
 * [ ] Provide good error messages.
     * [ ] Expand code guidelines regarding error messages.
         * [ ] Pojos and other static types are not needed,
