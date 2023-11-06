@@ -98,9 +98,9 @@
         the jars.
     * [ ] Use resource list file inside FileSystemViaClassResources.
 * [ ] Improve logging system.
-    * [ ] Log all requests in detail.
+    * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
-    * [ ] Log as CommonMark document, so that logs look nice on websites like GitHub.
+    * [x] Log as CommonMark document, so that logs look nice on websites like GitHub.
         Do this by creating an alternative implementation of Domsole based on the default impl, which is Pdsui.
     * [ ] Fix strange log framework class naming.
         The naming is strange, because there is a bigger concept/idea behind that framework.
