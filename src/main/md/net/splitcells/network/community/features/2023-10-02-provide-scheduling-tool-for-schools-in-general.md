@@ -100,6 +100,12 @@
 * [ ] Improve logging system.
     * [ ] Log all requests in detail.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
+    * [ ] Log as CommonMark document, so that logs look nice on websites like GitHub.
+        Do this by creating an alternative implementation of Domsole based on the default impl, which is Pdsui.
+    * [ ] Fix strange log framework class naming.
+        The naming is strange, because there is a bigger concept/idea behind that framework.
+        In this concept, the log is the basis for an interactive user interface.
+        This is obsolete, because such a concept is compatible with a log framework.
 * [ ] Provide good error messages.
     * [ ] Expand code guidelines regarding error messages.
         * [ ] Pojos and other static types are not needed,
