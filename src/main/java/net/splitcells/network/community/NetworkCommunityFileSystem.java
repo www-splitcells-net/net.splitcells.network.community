@@ -5,9 +5,9 @@ import net.splitcells.dem.resource.FileSystemView;
 
 import static net.splitcells.dem.resource.FileSystemViaClassResources.fileSystemViaClassResources;
 
-public class FileSystem extends OptionI<FileSystemView> {
-    public FileSystem() {
-        super(() -> fileSystemViaClassResources(net.splitcells.system.FileSystem.class
+public class NetworkCommunityFileSystem extends OptionI<FileSystemView> {
+    public NetworkCommunityFileSystem() {
+        super(() -> fileSystemViaClassResources(NetworkCommunityFileSystem.class
                 , "net.splitcells", "network.community"));
     }
 }
