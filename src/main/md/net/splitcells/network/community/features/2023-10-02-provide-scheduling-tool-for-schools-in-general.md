@@ -93,10 +93,14 @@
     * [x] Test complete optimization on simplest parsed problem, without webserver.
     * [x] Provide way to download solution.
 * [x] Redeploy website as last deployment was kaputt.
-* [ ] Fix loading of class resources located inside nested jars. CURRENT
+* [ ] Fix loading of class resources located inside nested jars.
+    * [ ] Try using Spring's PathMatchingResourcePatternResolver.
+        * [ ] Find error via trace logging. CURRENT
+            * Test command: `java -Dnet.splitcells.dem.resource.FileSystemViaClassResourcesAndSpring.IS_TRACING=true -jar target/network.distro-0.0.1-SNAPSHOT-spring-boot.jar
+              `
     * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
         the jars.
-    * [ ] Use resource list file inside FileSystemViaClassResources.
+    * [ ] Consider using resource list file inside FileSystemViaClassResources.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
