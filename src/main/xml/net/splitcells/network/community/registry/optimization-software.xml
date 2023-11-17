@@ -32,5 +32,9 @@
                 <url>https://github.com/jMetal/jMetal</url>
             </link>
         </item>
+        <itme>
+            <text>OR-Tools - Google Optimization Tools</text>
+            <url>https://github.com/google/or-tools</url>
+        </itme>
     </list>
 </article>
