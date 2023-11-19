@@ -95,9 +95,10 @@
 * [x] Redeploy website as last deployment was kaputt.
 * [ ] Fix loading of class resources located inside nested jars.
     * [ ] Try using Spring's PathMatchingResourcePatternResolver.
-        * [ ] Find error via trace logging. CURRENT
+        * [ ] Find error via trace logging.
             * Test command: `java -Dnet.splitcells.dem.resource.FileSystemViaClassResourcesAndSpring.IS_TRACING=true -jar target/network.distro-0.0.1-SNAPSHOT-spring-boot.jar
-              `
+              ` -> Works with spring-boot jar.
+            * [ ] Write System properties in Java via file, as these seem not to be passed to RCP application via `eclipse.ini`. CURRENT
     * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
         the jars.
     * [ ] Consider using resource list file inside FileSystemViaClassResources.
