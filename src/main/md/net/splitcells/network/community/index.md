@@ -19,7 +19,6 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Document project:
   * Description: Nobody reads this xD
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/9)
-  * [#215 Review advertisement, introductions and info linked by README weekly.](https://github.com/www-splitcells-net/net.splitcells.network/issues/215)
 * Features: Removal, Addition and Improvements
   * Description: To the moon!
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/7)
