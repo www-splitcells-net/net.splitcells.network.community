@@ -125,6 +125,7 @@
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
 ## Ideas
+* [ ] `ProjectsRendererI#build` should not write to local file system.
 * [ ] Find teacher/school for testing?
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder
