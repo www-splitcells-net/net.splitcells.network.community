@@ -98,8 +98,9 @@
         * [x] Find error via trace logging. -> PathMatchingResourcePatternResolver does not support pattern matching for resource paths with Equinox class loaders. 
             * Test command: `java -Dnet.splitcells.dem.resource.FileSystemViaClassResourcesAndSpring.IS_TRACING=true -jar target/network.distro-0.0.1-SNAPSHOT-spring-boot.jar
               ` -> Works with spring-boot jar. 
-    * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
-        the jars. FileSystemViaClassResourcesImpl can read this file in order to list all resources. CURRENT
+    * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside the jars.
+         FileSystemViaClassResourcesImpl can read this file in order to list all resources.
+         A custom Maven plugin is ok, because building a project based on the Splitcells Network already needs custom parents and boms. CURRENT
     * [ ] Consider using resource list file inside FileSystemViaClassResources.
 * [ ] Provide line for text areas in form.
 * [ ] Improve logging system.
