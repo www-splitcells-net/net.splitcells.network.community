@@ -94,14 +94,14 @@
     * [x] Provide way to download solution.
 * [x] Redeploy website as last deployment was kaputt.
 * [ ] Fix loading of class resources located inside nested jars.
-    * [ ] Try using Spring's PathMatchingResourcePatternResolver.
-        * [ ] Find error via trace logging.
+    * [x] Try using Spring's PathMatchingResourcePatternResolver. -> This tool does not work as intended.
+        * [x] Find error via trace logging. -> PathMatchingResourcePatternResolver does not support pattern matching for resource paths with Equinox class loaders. 
             * Test command: `java -Dnet.splitcells.dem.resource.FileSystemViaClassResourcesAndSpring.IS_TRACING=true -jar target/network.distro-0.0.1-SNAPSHOT-spring-boot.jar
-              ` -> Works with spring-boot jar.
-            * [ ] Write System properties in Java via file, as these seem not to be passed to RCP application via `eclipse.ini`. CURRENT
+              ` -> Works with spring-boot jar. 
     * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside
-        the jars.
+        the jars. FileSystemViaClassResourcesImpl can read this file in order to list all resources. CURRENT
     * [ ] Consider using resource list file inside FileSystemViaClassResources.
+* [ ] Provide line for text areas in form.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
