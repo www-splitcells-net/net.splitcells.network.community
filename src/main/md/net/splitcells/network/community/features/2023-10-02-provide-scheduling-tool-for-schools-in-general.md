@@ -93,15 +93,21 @@
     * [x] Test complete optimization on simplest parsed problem, without webserver.
     * [x] Provide way to download solution.
 * [x] Redeploy website as last deployment was kaputt.
-* [ ] Fix loading of class resources located inside nested jars.
+* [x] Fix loading of class resources located inside nested jars.
     * [x] Try using Spring's PathMatchingResourcePatternResolver. -> This tool does not work as intended.
         * [x] Find error via trace logging. -> PathMatchingResourcePatternResolver does not support pattern matching for resource paths with Equinox class loaders. 
             * Test command: `java -Dnet.splitcells.dem.resource.FileSystemViaClassResourcesAndSpring.IS_TRACING=true -jar target/network.distro-0.0.1-SNAPSHOT-spring-boot.jar
               ` -> Works with spring-boot jar. 
-    * [ ] Create custom Maven plugin in order to create a list of all resources and to store this file inside the jars.
+    * [x] Create custom Maven plugin in order to create a list of all resources and to store this file inside the jars.
          FileSystemViaClassResourcesImpl can read this file in order to list all resources.
          A custom Maven plugin is ok, because building a project based on the Splitcells Network already needs custom parents and boms. CURRENT
-    * [ ] Consider using resource list file inside FileSystemViaClassResources.
+    * [x] Consider using resource list file inside FileSystemViaClassResources.
+* [ ] Speed up resource loading in RCP application.
+    * [ ] Provide read method that optionally returns byte content of file in order to not do file check and read separately.
+        * [ ] Use this method in extensions instead.
+    * [ ] Speed up isFile and isDirectory via internal cache.
+        * [ ] Annotate resource list generated via plugin with info, if the path is file or folder.
+    * [ ] Use binary tree for FileSystemViaClassResourcesImpl instead of string list.
 * [ ] Provide line for text areas in form.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
