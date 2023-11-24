@@ -102,13 +102,11 @@
          FileSystemViaClassResourcesImpl can read this file in order to list all resources.
          A custom Maven plugin is ok, because building a project based on the Splitcells Network already needs custom parents and boms. CURRENT
     * [x] Consider using resource list file inside FileSystemViaClassResources.
-* [ ] Speed up resource loading in RCP application.
-    * [ ] Provide read method that optionally returns byte content of file in order to not do file check and read separately.
-        * [ ] Use this method in extensions instead.
-    * [ ] Speed up isFile and isDirectory via internal cache.
-        * [ ] Annotate resource list generated via plugin with info, if the path is file or folder.
-    * [ ] Use binary tree for FileSystemViaClassResourcesImpl instead of string list.
-* [ ] Provide line for text areas in form.
+* [x] Speed up resource loading in RCP application.
+    * [x] Provide read method that optionally returns byte content of file in order to not do file check and read separately.
+    * [x] Speed up isFile and isDirectory via internal cache.
+        * [x] Annotate resource list generated via plugin with info, if the path is file or folder.
+* [ ] Provide line numbering for text areas in form.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
@@ -137,3 +135,4 @@
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder
 * [ ] Consider htmx for complex UI in the future: https://htmx.org/
+* [ ] Cache projectPath of ProjectsRendererI.
