@@ -128,7 +128,7 @@
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
-## Tasks to be planned
+## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
 ## Ideas
