@@ -133,7 +133,7 @@
 * [ ] Use JQuery instead of own functions.
 ## Ideas
 * [ ] `ProjectsRendererI#build` should not write to local file system.
-* [ ] Find teacher/school for testing?
+* [ ] Find teacher/school for testing? There is currently a problem with the contact person.
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder
 * [ ] Consider htmx for complex UI in the future: https://htmx.org/
