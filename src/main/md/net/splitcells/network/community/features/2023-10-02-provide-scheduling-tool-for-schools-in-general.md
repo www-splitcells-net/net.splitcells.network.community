@@ -100,7 +100,7 @@
               ` -> Works with spring-boot jar. 
     * [x] Create custom Maven plugin in order to create a list of all resources and to store this file inside the jars.
          FileSystemViaClassResourcesImpl can read this file in order to list all resources.
-         A custom Maven plugin is ok, because building a project based on the Splitcells Network already needs custom parents and boms. CURRENT
+         A custom Maven plugin is ok, because building a project based on the Splitcells Network already needs custom parents and boms.
     * [x] Consider using resource list file inside FileSystemViaClassResources.
 * [x] Speed up resource loading in RCP application.
     * [x] Provide read method that optionally returns byte content of file in order to not do file check and read separately.
@@ -110,7 +110,7 @@
     * [x] Add CodeMirror to NOTICE file.
     * [x] Synchronize CodeMirror editor with textarea during end of form submission in both directions.
 * [ ] Improve logging system.
-    * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
+    * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable. CURRENT
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
     * [x] Log as CommonMark document, so that logs look nice on websites like GitHub.
         Do this by creating an alternative implementation of Domsole based on the default impl, which is Pdsui.
