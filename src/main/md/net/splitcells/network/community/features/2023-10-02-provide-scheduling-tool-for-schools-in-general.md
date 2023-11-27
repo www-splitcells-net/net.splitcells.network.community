@@ -106,9 +106,9 @@
     * [x] Provide read method that optionally returns byte content of file in order to not do file check and read separately.
     * [x] Speed up isFile and isDirectory via internal cache.
         * [x] Annotate resource list generated via plugin with info, if the path is file or folder.
-* [ ] Provide line numbering for text areas in form.
-    * [ ] Add CodeMirror to NOTICE file.
-    * [ ] Synchronize CodeMirror editor with textarea during end of form submission in both directions.
+* [x] Provide line numbering for text areas in form.
+    * [x] Add CodeMirror to NOTICE file.
+    * [x] Synchronize CodeMirror editor with textarea during end of form submission in both directions.
 * [ ] Improve logging system.
     * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
