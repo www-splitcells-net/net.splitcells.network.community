@@ -109,8 +109,8 @@
 * [x] Provide line numbering for text areas in form.
     * [x] Add CodeMirror to NOTICE file.
     * [x] Synchronize CodeMirror editor with textarea during end of form submission in both directions.
-* [ ] Improve logging system.
-    * [ ] Log all requests in detail, in order to make it easier to support users by making user actions more traceable. CURRENT
+* [x] Improve logging system.
+    * [x] Log all requests in detail, in order to make it easier to support users by making user actions more traceable. CURRENT
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
     * [x] Log as CommonMark document, so that logs look nice on websites like GitHub.
         Do this by creating an alternative implementation of Domsole based on the default impl, which is Pdsui.
