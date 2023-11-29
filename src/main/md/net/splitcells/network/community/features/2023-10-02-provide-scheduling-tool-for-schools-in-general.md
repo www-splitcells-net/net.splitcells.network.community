@@ -118,13 +118,13 @@
         The naming is strange, because there is a bigger concept/idea behind that framework.
         In this concept, the log is the basis for an interactive user interface.
         This is obsolete, because such a concept is compatible with a log framework.
-* [ ] Provide good error messages.
-    * [ ] Expand code guidelines regarding error messages.
-        * [ ] Pojos and other static types are not needed,
+* [x] Provide good error messages.
+    * [x] Expand code guidelines regarding error messages.
+        * [x] Pojos and other static types are not needed,
             as stability regarding the error message format is not guaranteed in order to make error reporting
             easy to create and adjust.
-    * [ ] Use alternative to Optionals.
-    * [ ] Support error reports.
+    * [x] Use alternative to Optionals. -> This will be done, when there is a greater need.
+    * [x] Support error reports. -> This will be done, when there is a greater need.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
