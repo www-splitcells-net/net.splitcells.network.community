@@ -126,6 +126,7 @@
     * [x] Use alternative to Optionals. -> This will be done, when there is a greater need.
     * [x] Support error reports. -> This will be done, when there is a greater need.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
+    * [ ] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
 ## Tasks to be planned in other tickets
