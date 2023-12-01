@@ -131,7 +131,7 @@
             Such a method can be useful for parsers in order to construct constraint trees.
     * [ ] Switch constraint parser to infrastructure for generic constraint generation.
         * [ ] Create and use rater parser.
-        * 
+        * [ ] Create and use attribute parser.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
 ## Tasks to be planned in other tickets
