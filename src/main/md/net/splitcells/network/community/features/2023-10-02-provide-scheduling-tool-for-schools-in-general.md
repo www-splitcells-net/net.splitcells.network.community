@@ -126,7 +126,10 @@
     * [x] Use alternative to Optionals. -> This will be done, when there is a greater need.
     * [x] Support error reports. -> This will be done, when there is a greater need.
 * [ ] Support a school scheduling problem as a presentable example with a link to a preload.
-    * [ ] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
+    * [x] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
+        * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
+            Such a method can be useful for parsers in order to construct constraint trees.
+    * [ ] Create rater parser.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
 ## Tasks to be planned in other tickets
