@@ -110,7 +110,7 @@
     * [x] Add CodeMirror to NOTICE file.
     * [x] Synchronize CodeMirror editor with textarea during end of form submission in both directions.
 * [x] Improve logging system.
-    * [x] Log all requests in detail, in order to make it easier to support users by making user actions more traceable. CURRENT
+    * [x] Log all requests in detail, in order to make it easier to support users by making user actions more traceable.
     * [x] Ensure, that logs are present in application. -> The logs are stored at `./net.splitcells.network.distro.log`.
     * [x] Log as CommonMark document, so that logs look nice on websites like GitHub.
         Do this by creating an alternative implementation of Domsole based on the default impl, which is Pdsui.
@@ -129,6 +129,10 @@
     * [x] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
         * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
             Such a method can be useful for parsers in order to construct constraint trees.
+  * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions.
+      * [ ] Create and use result class. CURRENT
+      * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
+      * [ ] Show error in editor form.
     * [ ] Switch constraint parser to infrastructure for generic constraint generation.
         * [ ] Create and use rater parser.
         * [ ] Create and use attribute parser.
