@@ -35,6 +35,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 
 ## Tasks
 * [ ] Document goals of this game.
+  * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html 
   * [ ] Use gamification as a source for motivation.
     * [ ] Alternative or counterpart to test recursion:
       create meaning full tests by combining test problems and thereby creating bigger and
