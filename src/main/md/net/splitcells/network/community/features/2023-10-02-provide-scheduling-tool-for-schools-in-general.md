@@ -130,7 +130,9 @@
         * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
             Such a method can be useful for parsers in order to construct constraint trees.
   * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions.
-      * [ ] Create and use result class. CURRENT
+      * [x] Create and use result class. CURRENT
+      * [ ] User result class for SolutionCalculator.
+      * [ ] Create error messages for SolutionCalculator.
       * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
       * [ ] Show error in editor form.
     * [ ] Switch constraint parser to infrastructure for generic constraint generation.
