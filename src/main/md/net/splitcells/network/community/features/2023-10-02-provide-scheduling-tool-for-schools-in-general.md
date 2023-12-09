@@ -131,6 +131,7 @@
             Such a method can be useful for parsers in order to construct constraint trees.
   * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions.
       * [x] Create and use result class. CURRENT
+      * [x] User result class for ProblemParser.
       * [ ] User result class for SolutionCalculator.
       * [ ] Create error messages for SolutionCalculator.
       * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
