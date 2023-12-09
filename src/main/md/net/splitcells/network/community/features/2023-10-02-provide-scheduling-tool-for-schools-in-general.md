@@ -133,6 +133,7 @@
       * [x] Create and use result class. CURRENT
       * [x] User result class for ProblemParser.
       * [x] User result class for SolutionCalculator.
+      * [ ] Fix JSON for form update, when errors are present.
       * [ ] Fix `forEach` constraint.
       * [ ] Show error messages for SolutionCalculator.
       * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
