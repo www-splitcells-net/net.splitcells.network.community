@@ -132,8 +132,9 @@
   * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions.
       * [x] Create and use result class. CURRENT
       * [x] User result class for ProblemParser.
-      * [ ] User result class for SolutionCalculator.
-      * [ ] Create error messages for SolutionCalculator.
+      * [x] User result class for SolutionCalculator.
+      * [ ] Fix `forEach` constraint.
+      * [ ] Show error messages for SolutionCalculator.
       * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
       * [ ] Show error in editor form.
     * [ ] Switch constraint parser to infrastructure for generic constraint generation.
