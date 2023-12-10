@@ -129,20 +129,20 @@
     * [x] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
         * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
             Such a method can be useful for parsers in order to construct constraint trees.
-  * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions.
-      * [x] Create and use result class. CURRENT
+  * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions. CURRENT
+      * [x] Create and use result class.
       * [x] User result class for ProblemParser.
       * [x] User result class for SolutionCalculator.
-      * [ ] Fix JSON for form update, when errors are present.
-      * [ ] Fix `forEach` constraint.
-      * [ ] Show error messages for SolutionCalculator.
+      * [x] Fix JSON for form update, when errors are present.
+      * [x] Fix `forEach` constraint.
+      * [x] Show error messages for SolutionCalculator.
       * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
-      * [ ] Show error in editor form.
-    * [ ] Switch constraint parser to infrastructure for generic constraint generation.
-        * [ ] Create and use rater parser.
-        * [ ] Create and use attribute parser.
+      * [x] Show error in editor form.
+    * [x] Switch constraint parser to infrastructure for generic constraint generation.
+        * [x] Create and use rater parser.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
+    * [ ] Implement privacy warning pop up.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
