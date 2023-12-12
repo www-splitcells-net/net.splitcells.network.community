@@ -125,18 +125,18 @@
             easy to create and adjust.
     * [x] Use alternative to Optionals. -> This will be done, when there is a greater need.
     * [x] Support error reports. -> This will be done, when there is a greater need.
-* [ ] Support a school scheduling problem as a presentable example with a link to a preload.
+* [ ] Support a school scheduling problem as a presentable example with a link to a preload. CURRENT
     * [x] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
         * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
             Such a method can be useful for parsers in order to construct constraint trees.
-  * [ ] Explicitly handle parsing errors via a result object, instead of using exceptions. CURRENT
+  * [x] Explicitly handle parsing errors via a result object, instead of using exceptions.
       * [x] Create and use result class.
       * [x] User result class for ProblemParser.
       * [x] User result class for SolutionCalculator.
       * [x] Fix JSON for form update, when errors are present.
       * [x] Fix `forEach` constraint.
       * [x] Show error messages for SolutionCalculator.
-      * [ ] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
+      * [x] Make a distinction between internal consistency error for errors with technical details, execution error for generic errors and user explainable errors. 
       * [x] Show error in editor form.
     * [x] Switch constraint parser to infrastructure for generic constraint generation.
         * [x] Create and use rater parser.
