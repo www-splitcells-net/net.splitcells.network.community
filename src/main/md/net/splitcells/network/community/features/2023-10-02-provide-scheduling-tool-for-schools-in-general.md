@@ -143,7 +143,7 @@
         * [x] Create and use rater parser.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
-    * [ ] Implement privacy warning pop up.
+    * [ ] Implement privacy warning pop up, only for server.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
@@ -152,5 +152,5 @@
 * [ ] Find teacher/school for testing? There is currently a problem with the contact person.
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder
-* [ ] Consider htmx for complex UI in the future: https://htmx.org/
-* [ ] Cache projectPath of ProjectsRendererI.
+* [x] Consider htmx for complex UI in the future: https://htmx.org/ -> This is not relevant for now.
+* [x] Cache projectPath of ProjectsRendererI. -> This is not relevant for now.
