@@ -141,8 +141,10 @@
       * [x] Show syntax errors.
     * [x] Switch constraint parser to infrastructure for generic constraint generation.
         * [x] Create and use rater parser.
-    * [ ] Use result for RaterParser, in order to have nicer error messages.
-    * [ ] Explain to user invalidly entered constraint types.
+  * [ ] Use result for RaterParser, in order to have nicer error messages.
+  * [ ] Explain to user invalidly entered constraint types.
+  * [x] Create endpoint providing problem description, so it can be used in tests without code duplication.
+      -> This will not be done,as this otherwise implise
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
     * [ ] Implement privacy warning pop up, only for server.
