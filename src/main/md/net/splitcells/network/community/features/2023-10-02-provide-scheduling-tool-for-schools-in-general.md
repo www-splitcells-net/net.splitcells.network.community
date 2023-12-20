@@ -144,7 +144,8 @@
   * [ ] Use result for RaterParser, in order to have nicer error messages.
   * [ ] Explain to user invalidly entered constraint types.
   * [x] Create endpoint providing problem description, so it can be used in tests without code duplication.
-  * [ ] Test default school course scheduling problem.
+  * [x] Test default school course scheduling problem.
+  * [ ] Output rating and reasoning.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
     * [ ] Implement privacy warning pop up, only for server.
