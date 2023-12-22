@@ -148,6 +148,7 @@
   * [ ] Solve example problem.
   * [ ] Automatically test default school course scheduling problem.
   * [x] Output rating and reasoning.
+* [ ] Make new editor maximize by default for better usage.
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
     * [ ] Implement privacy warning pop up, only for server.
