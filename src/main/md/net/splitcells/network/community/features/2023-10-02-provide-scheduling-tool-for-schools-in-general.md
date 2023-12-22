@@ -152,6 +152,7 @@
 * [ ] Provide application downloads.
 * [ ] Deploy application on public server.
     * [ ] Implement privacy warning pop up, only for server.
+* [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
