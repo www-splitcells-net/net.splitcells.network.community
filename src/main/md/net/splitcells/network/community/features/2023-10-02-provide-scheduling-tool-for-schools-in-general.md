@@ -145,7 +145,7 @@
   * [x] Explain to user invalidly entered constraint types.
   * [x] Create endpoint providing problem description, so it can be used in tests without code duplication.
   * [x] Test default school course scheduling problem.
-  * [ ] Solve example problem.
+  * [x] Solve example problem.
   * [ ] Automatically test default school course scheduling problem.
   * [x] Output rating and reasoning.
 * [ ] Make new editor maximize by default for better usage.
