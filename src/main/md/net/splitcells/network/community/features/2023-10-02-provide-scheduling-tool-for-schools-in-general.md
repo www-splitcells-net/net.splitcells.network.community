@@ -155,17 +155,21 @@
 * [ ] Deploy application on public server.
     * [ ] Implement privacy warning pop up, only for server.
 * [ ] Add missing points of this ticket to the changelogs.
-* [ ] Prepare publication.
+## Tasks to be planned in other tickets
+* [ ] Prepare publication, so it is advertisable to teachers.
     * [ ] Clean up personal website.
     * [ ] Create announcement.
     * [ ] Create document describing objectives regarding school scheduling.
+        * [ ] In English for general public
+        * [ ] In German for schools
+            * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
     * [ ] Create a demonstration video.
-## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 * [ ] Use JQuery instead of own functions.
 ## Ideas
 * [ ] `ProjectsRendererI#build` should not write to local file system.
-* [ ] Find teacher/school for testing? There is currently a problem with the contact person.
+* [ ] Find teacher/school for testing
+    * [ ] There is currently a problem with the currently main contact person.
 * [ ] Consider making program runnable in Browser via Javascript.
     * [ ] https://github.com/mirkosertic/Bytecoder
 * [x] Consider htmx for complex UI in the future: https://htmx.org/ -> This is not relevant for now.
