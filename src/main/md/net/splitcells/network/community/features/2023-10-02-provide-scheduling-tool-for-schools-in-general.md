@@ -158,6 +158,7 @@
     * [ ] Create weekly deployment task.
     * [ ] Create application builder.
         * [ ] Cache m2.
+        * [ ] Avoid building RCP application, in order to avoid build error.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
