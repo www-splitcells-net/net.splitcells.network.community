@@ -156,6 +156,8 @@
 * [ ] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [ ] Create weekly deployment task.
+    * [ ] Create application builder.
+        * [ ] Cache m2.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
