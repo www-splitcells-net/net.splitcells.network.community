@@ -154,7 +154,7 @@
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
 * [ ] Deploy default distro application on public server.
-    * [ ] Implement privacy warning pop up, only for server.
+    * [x] Implement privacy warning pop up, only for server.
     * [ ] Create weekly deployment task.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
