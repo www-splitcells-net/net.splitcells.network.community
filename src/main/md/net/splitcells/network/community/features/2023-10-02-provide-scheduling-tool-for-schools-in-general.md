@@ -149,11 +149,11 @@
   * [x] Automatically test default school course scheduling problem.
   * [x] Output rating and reasoning.
 * [ ] Clean up application.
-    * [ ] Make new editor maximized by default for better usage.
+    * [x] Make new editor maximized by default for better usage. Do this for telemetry too.
     * [ ] Fix application on Windows.
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
-* [ ] Deploy application on public server.
+* [ ] Deploy default distro application on public server.
     * [ ] Implement privacy warning pop up, only for server.
     * [ ] Create weekly deployment task.
 * [ ] Add missing points of this ticket to the changelogs.
