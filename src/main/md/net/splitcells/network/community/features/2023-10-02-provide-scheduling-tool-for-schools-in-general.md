@@ -161,6 +161,7 @@
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
         * [ ] Remove developer specific `net.splitcells.martins.avots.support.system` folder.
+        * [ ] Fix `Cross-Origin Request Blocked` error.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
