@@ -157,9 +157,10 @@
     * [x] Implement privacy warning pop up, only for server.
     * [ ] Create weekly deployment task.
     * [ ] Create application builder.
-        * [ ] Cache m2.
-        * [ ] Avoid building RCP application, in order to avoid build error.
-        * [ ] Create dedicated location for build container data.
+        * [x] Cache m2.
+        * [x] Avoid building RCP application, in order to avoid build error.
+        * [x] Create dedicated location for build container data.
+        * [ ] Remove developer specific `net.splitcells.martins.avots.support.system` folder.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
