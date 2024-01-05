@@ -161,7 +161,7 @@
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
         * [ ] Fix `Cross-Origin Request Blocked` error.
-        * [ ] Adapt generic live server specific configuration to deployment.
+        * [ ] Adapt live server specific configuration to deployment.
             * [ ] Add privacy policy.
             * [ ] Add Impressum.
 * [ ] Add missing points of this ticket to the changelogs.
