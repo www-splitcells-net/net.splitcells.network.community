@@ -160,7 +160,6 @@
         * [x] Cache m2.
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
-        * [ ] Remove developer specific `net.splitcells.martins.avots.support.system` folder.
         * [ ] Fix `Cross-Origin Request Blocked` error.
         * [ ] Adapt generic live server specific configuration to deployment.
             * [ ] Add privacy policy.
