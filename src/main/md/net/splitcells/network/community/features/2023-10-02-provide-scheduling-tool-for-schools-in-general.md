@@ -164,6 +164,7 @@
         * [ ] Create live server configuration specific to deployment.
             * [ ] Add privacy policy.
             * [ ] Add Impressum.
+        * [ ] Error is not shown when empty form is submitted.  
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
