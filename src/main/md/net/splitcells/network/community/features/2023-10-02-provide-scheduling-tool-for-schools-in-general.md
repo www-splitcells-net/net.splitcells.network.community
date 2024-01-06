@@ -156,6 +156,8 @@
 * [ ] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [ ] Create weekly deployment task.
+        * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
+            in order to ensure, that all programs of ssh sessions are closed.
     * [ ] Create application builder.
         * [x] Cache m2.
         * [x] Avoid building RCP application, in order to avoid build error.
@@ -164,7 +166,8 @@
         * [ ] Create live server configuration specific to deployment.
             * [ ] Add privacy policy.
             * [ ] Add Impressum.
-        * [ ] Error is not shown when empty form is submitted.  
+        * [ ] Error is not shown when empty form is submitted.
+        * [ ] Fix build error.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
