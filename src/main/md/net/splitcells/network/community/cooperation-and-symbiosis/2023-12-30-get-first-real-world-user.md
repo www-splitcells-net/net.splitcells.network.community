@@ -8,7 +8,9 @@ some things have to be adjusted in the project.
 * [ ] Adjust the project, so that it can be used for school related scheduling by normal users.
     It is important, that the software can be explained and introduced easily to German teachers.
     Keep in mind, that every German document still needs an international English version as well.
+    * [ ] Create internationalization standard for documentations, based on file suffixes. 
     * [ ] Clean up personal website.
+        * [ ] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
     * [ ] Create document describing objectives regarding school scheduling.
         * [ ] Make current objectives document a set of documents.
         * [ ] Add school scheduling as an additional sub goal, that is used in order to have real world experience.
