@@ -164,9 +164,9 @@
         * [x] Create dedicated location for build container data.
         * [ ] Fix `Cross-Origin Request Blocked` error.
         * [ ] Create live server configuration specific to deployment.
-            * [ ] Create working config. CURRENT
+            * [x] Create working config.
             * [x] Add privacy policy.
-            * [ ] Adjust privacy policy to upload functionality.
+            * [ ] Adjust privacy policy to upload functionality. CURRENT
                 * [ ] Provide English version.
                 * [ ] Provide German version.
                 * [ ] Content adjustment
