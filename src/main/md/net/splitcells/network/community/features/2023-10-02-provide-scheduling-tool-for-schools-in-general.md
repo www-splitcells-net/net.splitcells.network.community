@@ -177,7 +177,7 @@
                     * [ ] Check Hetzner's log tools available to Hetzner customers.
                 * [ ] Adjust pop-up for editor.
                     * [ ] Make it's content configurable.
-            * [ ] Add Impressum.
+            * [x] Add Impressum.
         * [ ] Error is not shown when empty form is submitted.
         * [x] Fix build error.
 * [ ] Add missing points of this ticket to the changelogs.
