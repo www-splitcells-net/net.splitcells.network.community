@@ -183,7 +183,6 @@
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
-* [ ] Use JQuery instead of own functions.
 ## Ideas
 * [ ] `ProjectsRendererI#build` should not write to local file system.
 * [ ] Find teacher/school for testing
