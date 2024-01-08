@@ -164,10 +164,21 @@
         * [x] Create dedicated location for build container data.
         * [ ] Fix `Cross-Origin Request Blocked` error.
         * [ ] Create live server configuration specific to deployment.
-            * [ ] Add privacy policy.
+            * [x] Add privacy policy.
+            * [ ] Adjust privacy policy to upload functionality.
+                * [ ] Provide English version.
+                * [ ] Provide German version.
+                * [ ] Content adjustment
+                    * [ ] Disallow upload of private data.
+                    * [ ] No logs or uploaded data is stored permanently. It is immediately deleted after processing.
+                    * [ ] Error logs are only stored for 7 days.
+                    * [ ] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
+                    * [ ] Check Hetzner's log tools available to Hetzner customers.
+                * [ ] Adjust pop-up for editor.
+                    * [ ] Make it's content configurable.
             * [ ] Add Impressum.
         * [ ] Error is not shown when empty form is submitted.
-        * [ ] Fix build error.
+        * [x] Fix build error.
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
