@@ -8,6 +8,17 @@ some things have to be adjusted in the project.
 * [ ] Adjust the project, so that it can be used for school related scheduling by normal users.
     It is important, that the software can be explained and introduced easily to German teachers.
     Keep in mind, that every German document still needs an international English version as well.
+    * [ ] Adjust privacy policy to upload functionality.
+        * [ ] Provide English version.
+        * [ ] Provide German version.
+        * [ ] Content adjustment
+            * [ ] Disallow upload of private data.
+            * [ ] No logs or uploaded data is stored permanently. It is immediately deleted after processing.
+            * [ ] Error logs are only stored for 7 days.
+            * [ ] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
+            * [ ] Check Hetzner's log tools available to Hetzner customers. 
+        * [ ] Adjust pop-up for editor.
+            * [ ] Make it's content configurable.
     * [ ] Create internationalization standard for documentations, based on file suffixes. 
     * [ ] Clean up personal website.
         * [ ] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
