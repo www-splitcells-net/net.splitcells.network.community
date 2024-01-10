@@ -166,16 +166,16 @@
         * [ ] Create live server configuration specific to deployment.
             * [x] Create working config.
             * [x] Add privacy policy.
-            * [ ] Adjust privacy policy to upload functionality. CURRENT
-                * [ ] Provide English version.
-                * [ ] Provide German version.
-                * [ ] Content adjustment
-                    * [ ] Disallow upload of private data.
-                    * [ ] No logs or uploaded data is stored permanently. It is immediately deleted after processing.
-                    * [ ] Error logs are only stored for 7 days.
-                    * [ ] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
-                    * [ ] Check Hetzner's log tools available to Hetzner customers.
-                * [ ] Adjust pop-up for editor.
+            * [ ] Adjust privacy policy to upload functionality.
+                * [x] Provide English version.
+                * [x] Provide German version.
+                * [x] Content adjustment
+                    * [x] Disallow upload of private data. -> Not done, as this is not useful.
+                    * [x] No logs or uploaded data is stored permanently. It is immediately deleted after processing.
+                    * [x] Error logs are only stored for 7 days.
+                    * [x] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
+                    * [x] Check Hetzner's log tools available to Hetzner customers.
+                * [ ] Adjust pop-up for editor. CURRENT
                     * [ ] Make it's content configurable.
             * [x] Add Impressum.
         * [ ] Error is not shown when empty form is submitted.
