@@ -176,7 +176,9 @@
                     * [x] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
                     * [x] Check Hetzner's log tools available to Hetzner customers.
                 * [ ] Adjust pop-up for editor. CURRENT
-                    * [ ] Make it's content configurable.
+                    * [ ] Make it's content configurable by creating API in XSL in order to access any file system data.
+                    * [ ] Provide mechanism to define default global privacy policy notification.
+                    * [ ] Provide mechanism to customize privacy policy notification for a page.
             * [x] Add Impressum.
         * [ ] Error is not shown when empty form is submitted.
         * [x] Fix build error.
