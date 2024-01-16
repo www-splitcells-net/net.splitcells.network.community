@@ -178,7 +178,7 @@
                 * [ ] Adjust pop-up for editor. CURRENT
                     * [ ] Make it's content configurable by creating API in XSL in order to access any file system data.
                         * [ ] Use PathBasedUriResolver's configFiles API and adapt it to a general state API.
-                            * [ ] Use `/net.splitcells.website.server/` as base.
+                            * [x] Use `/net.splitcells.website.server/` as base.
                             * [ ] Use `/net.splitcells.website.server/source-code/` for source code.
                             * [ ] Use `/net.splitcells.website.server/configuration/` for future external configurations.
                             * [ ] Use union file system.
