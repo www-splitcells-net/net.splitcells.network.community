@@ -179,6 +179,7 @@
                     * [ ] Make it's content configurable by creating API in XSL in order to access any file system data.
                     * [ ] Provide mechanism to define default global privacy policy notification.
                     * [ ] Provide mechanism to customize privacy policy notification for a page.
+                    * [ ] Use `<default-content-source>net/splitcells/website/server/legal/privacy-policy/upload-for-processing-notification</default-content-source>` in editor.
             * [x] Add Impressum.
         * [ ] Error is not shown when empty form is submitted.
         * [x] Fix build error.
