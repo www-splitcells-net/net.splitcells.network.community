@@ -180,7 +180,6 @@
                         * [ ] Use PathBasedUriResolver's configFiles API and adapt it to a general state API.
                             * [x] Use `/net.splitcells.website.server/` as base.
                             * [ ] Use `/net.splitcells.website.server/source-code/` for source code.
-                            * [ ] Use `/net.splitcells.website.server/configuration/` for future external configurations.
                             * [ ] Use union file system.
                     * [ ] Provide mechanism to define default global privacy policy notification.
                     * [ ] Provide mechanism to customize privacy policy notification for a page.
