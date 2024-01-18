@@ -180,7 +180,10 @@
                         * [ ] Use PathBasedUriResolver's configFiles API and adapt it to a general state API.
                             * [x] Use `/net.splitcells.website.server/` as base.
                             * [ ] Use `/net.splitcells.website.server/source-code/` for source code.
-                            * [ ] Use union file system.
+                            * [x] Use `/net.splitcells.website.server/configuration/` for future external configurations. -> This is not needed yet.
+                            * [x] Use union file system view. -> This is not needed yet,
+                              because no external configuration is provided via file system API to XSL rendering.
+                              Nevertheless, the union file system view is implemented.
                     * [ ] Provide mechanism to define default global privacy policy notification.
                     * [ ] Provide mechanism to customize privacy policy notification for a page.
                     * [ ] Use `<content-of>net/splitcells/website/server/legal/privacy-policy/upload-for-processing-notification</content-of>` in editor.
