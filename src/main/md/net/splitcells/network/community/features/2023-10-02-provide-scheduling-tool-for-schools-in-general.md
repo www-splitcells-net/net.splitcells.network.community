@@ -175,7 +175,7 @@
                     * [x] Error logs are only stored for 7 days.
                     * [x] Server is hosted at Hetzner and note its privacy policy: https://www.hetzner.com/de/legal/privacy-policy
                     * [x] Check Hetzner's log tools available to Hetzner customers.
-                * [ ] Adjust pop-up for editor. CURRENT
+                * [x] Adjust pop-up for editor.
                     * [x] Make it's content configurable by creating API in XSL in order to access any file system data.
                         * [x] Use PathBasedUriResolver's configFiles API and adapt it to a general state API.
                             * [x] Use `/net.splitcells.website.server/` as base.
