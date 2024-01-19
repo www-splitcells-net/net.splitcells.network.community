@@ -179,8 +179,8 @@
                     * [ ] Make it's content configurable by creating API in XSL in order to access any file system data.
                         * [ ] Use PathBasedUriResolver's configFiles API and adapt it to a general state API.
                             * [x] Use `/net.splitcells.website.server/` as base.
-                            * [ ] Use `/net.splitcells.website.server/source-code/` for source code.
-                                * [ ] Register ProjectsRendererI to ProjectRendererI, so that source code fs is available to user.
+                            * [x] Use `/net.splitcells.website.server/source-code/` for source code.
+                                * [x] Register ProjectsRendererI to ProjectRendererI, so that source code fs is available to user.
                             * [x] Use `/net.splitcells.website.server/configuration/` for future external configurations. -> This is not needed yet.
                             * [x] Use union file system view. -> This is not needed yet,
                               because no external configuration is provided via file system API to XSL rendering.
