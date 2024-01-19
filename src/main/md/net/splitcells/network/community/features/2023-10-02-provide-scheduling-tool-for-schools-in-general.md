@@ -162,11 +162,11 @@
         * [x] Cache m2.
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
-        * [ ] Fix `Cross-Origin Request Blocked` error.
-        * [ ] Create live server configuration specific to deployment.
+        * [ ] Fix `Cross-Origin Request Blocked` error. CURRENT
+        * [x] Create live server configuration specific to deployment.
             * [x] Create working config.
             * [x] Add privacy policy.
-            * [ ] Adjust privacy policy to upload functionality.
+            * [x] Adjust privacy policy to upload functionality.
                 * [x] Provide English version.
                 * [x] Provide German version.
                 * [x] Content adjustment
