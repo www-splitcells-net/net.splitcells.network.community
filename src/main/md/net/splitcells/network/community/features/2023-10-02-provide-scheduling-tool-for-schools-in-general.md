@@ -151,6 +151,7 @@
 * [ ] Clean up application.
     * [x] Make new editor maximized by default for better usage. Do this for telemetry too.
     * [ ] Fix application on Windows.
+        * [ ] Fix path errors in file system and website server.
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
 * [ ] Deploy default distro application on public server.
