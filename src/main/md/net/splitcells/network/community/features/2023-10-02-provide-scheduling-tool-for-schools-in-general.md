@@ -152,6 +152,10 @@
     * [x] Make new editor maximized by default for better usage. Do this for telemetry too.
     * [ ] Fix application on Windows.
         * [ ] Fix path errors in file system and website server.
+    * [ ] Ensure that the browser does not load page from internet.
+        * [ ] This is observed for the links at the README. Replace `splitcells.net` with localhost and port.
+        * [ ] Always check the current browser URL and replace the domain, if pattern is known.
+        * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
 * [ ] Deploy default distro application on public server.
