@@ -160,14 +160,12 @@
 * [ ] Provide application downloads.
 * [ ] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
-    * [ ] Create weekly deployment task.
-        * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
-            in order to ensure, that all programs of ssh sessions are closed.
+    * [x] Create weekly deployment task.
     * [ ] Create application builder.
         * [x] Cache m2.
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
-        * [ ] Fix `Cross-Origin Request Blocked` error. CURRENT
+        * [ ] Fix `Cross-Origin Request Blocked` error at live server. CURRENT
         * [x] Create live server configuration specific to deployment.
             * [x] Create working config.
             * [x] Add privacy policy.
