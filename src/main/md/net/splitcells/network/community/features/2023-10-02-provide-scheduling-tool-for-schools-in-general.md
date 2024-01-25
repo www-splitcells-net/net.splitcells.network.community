@@ -197,7 +197,9 @@
         * [x] Error is not shown when empty form is submitted.
         * [x] Fix build error.
     * [ ] Deploy latest version.  CURRENT
-* [ ] Add missing points of this ticket to the changelogs.
+* [x] Add missing points of this ticket to the changelogs.
+  -> That is not that important, given the inconsistency of the changelogs completeness.
+  Keep in mind, that there is only one developer working on this right now and there are no users of the software.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
 ## Ideas
