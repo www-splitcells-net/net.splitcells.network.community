@@ -125,7 +125,7 @@
             easy to create and adjust.
     * [x] Use alternative to Optionals. -> This will be done, when there is a greater need.
     * [x] Support error reports. -> This will be done, when there is a greater need.
-* [x] Support a colloquium planning problem as a presentable example with a link to a preload. CURRENT
+* [x] Support a colloquium planning problem as a presentable example with a link to a preload.
     * [x] Create infrastructure for generic constraint type and rating function parsing, as otherwise, this will not scale well in the future.
         * [x] Add a method to Query interface, that creates a constraint given a constraint type name and a list of rating functions.
             Such a method can be useful for parsers in order to construct constraint trees.
@@ -161,7 +161,7 @@
 * [ ] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
-    * [ ] Create application builder.
+    * [x] Create application builder.
         * [x] Cache m2.
         * [x] Avoid building RCP application, in order to avoid build error.
         * [x] Create dedicated location for build container data.
@@ -194,8 +194,9 @@
                     * [x] Provide mechanism to customize privacy policy notification for a page. -> Not needed right now.
                     * [x] Use `<content-of>net/splitcells/website/server/legal/privacy-policy/upload-for-processing-notification</content-of>` in editor.
             * [x] Add Impressum.
-        * [ ] Error is not shown when empty form is submitted.
+        * [x] Error is not shown when empty form is submitted.
         * [x] Fix build error.
+    * [ ] Deploy latest version.  CURRENT
 * [ ] Add missing points of this ticket to the changelogs.
 ## Tasks to be planned in other tickets
 * [ ] User should be able to define part of the solution.
