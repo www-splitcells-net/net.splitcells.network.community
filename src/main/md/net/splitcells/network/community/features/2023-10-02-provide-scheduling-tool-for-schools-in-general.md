@@ -158,7 +158,7 @@
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
-* [ ] Deploy default distro application on public server.
+* [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
     * [x] Create application builder.
@@ -196,7 +196,8 @@
             * [x] Add Impressum.
         * [x] Error is not shown when empty form is submitted.
         * [x] Fix build error.
-    * [ ] Deploy latest version.  CURRENT
+    * [x] Deploy latest version.
+* [ ] Add link to live server on personal website. CURRENT
 * [x] Add missing points of this ticket to the changelogs.
   -> That is not that important, given the inconsistency of the changelogs completeness.
   Keep in mind, that there is only one developer working on this right now and there are no users of the software.
