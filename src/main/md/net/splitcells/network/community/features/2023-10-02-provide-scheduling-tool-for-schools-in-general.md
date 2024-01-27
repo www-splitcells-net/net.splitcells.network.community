@@ -198,6 +198,7 @@
         * [x] Fix build error.
     * [x] Deploy latest version.
 * [ ] Add link to live server on personal website. CURRENT
+* [x] Use port 80 for HTTP of live server.
 * [x] Add missing points of this ticket to the changelogs.
   -> That is not that important, given the inconsistency of the changelogs completeness.
   Keep in mind, that there is only one developer working on this right now and there are no users of the software.
