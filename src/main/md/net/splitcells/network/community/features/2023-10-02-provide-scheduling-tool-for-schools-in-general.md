@@ -203,12 +203,10 @@
   -> That is not that important, given the inconsistency of the changelogs completeness.
   Keep in mind, that there is only one developer working on this right now and there are no users of the software.
 ## Tasks to be planned in other tickets
-* [ ] User should be able to define part of the solution.
+* [x] User should be able to define part of the solution. -> An ticket was created: https://github.com/www-splitcells-net/net.splitcells.network/issues/287
 ## Ideas
-* [ ] `ProjectsRendererI#build` should not write to local file system.
-* [ ] Find teacher/school for testing
-    * [ ] There is currently a problem with the currently main contact person.
-* [ ] Consider making program runnable in Browser via Javascript.
-    * [ ] https://github.com/mirkosertic/Bytecoder
+* [x] `ProjectsRendererI#build` should not write to local file system. -> Created TODO inside ProjectsRendererI's source code.
+* [x] Find teacher/school for testing -> An issue was created for this: https://github.com/www-splitcells-net/net.splitcells.network/issues/284
+* [x] Consider making program runnable in Browser via Javascript. -> An issue was created for this: https://github.com/www-splitcells-net/net.splitcells.network/issues/288
 * [x] Consider htmx for complex UI in the future: https://htmx.org/ -> This is not relevant for now.
 * [x] Cache projectPath of ProjectsRendererI. -> This is not relevant for now.
