@@ -158,6 +158,9 @@
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [ ] Provide application downloads.
+    * [ ] For Linux
+    * [ ] For Windows
+    * Consider Mac in the future.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
