@@ -197,7 +197,7 @@
         * [x] Error is not shown when empty form is submitted.
         * [x] Fix build error.
     * [x] Deploy latest version.
-* [ ] Add link to live server on personal website. CURRENT
+* [x] Add link to live server on personal website.
 * [x] Use port 80 for HTTP of live server.
 * [x] Add missing points of this ticket to the changelogs.
   -> That is not that important, given the inconsistency of the changelogs completeness.
