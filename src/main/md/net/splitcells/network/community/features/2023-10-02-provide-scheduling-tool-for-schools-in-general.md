@@ -162,9 +162,10 @@
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [ ] Add dependencies
     * [ ] Extend license notice
+    * [ ] Use bat files as launchers on Windows.
 * [ ] Provide application downloads.
     * [ ] For Linux
-    * [ ] For Windows
+    * [ ] For Windows 
     * Consider Mac in the future.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
