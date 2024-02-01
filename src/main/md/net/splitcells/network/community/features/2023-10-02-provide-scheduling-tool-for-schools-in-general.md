@@ -160,6 +160,8 @@
 * [ ] Use Electron instead of Eclipse, because Eclipse has many issues. ON_HOLD
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues. CURRENT
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
+    * [ ] Add dependencies
+    * [ ] Extend license notice
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows
