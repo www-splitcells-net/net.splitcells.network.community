@@ -157,7 +157,9 @@
         * [ ] Always check the current browser URL and replace the domain, if pattern is known.
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
-* [ ] Use Electron instead of Eclipse, because Eclipse has many issues. CURRENT
+* [ ] Use Electron instead of Eclipse, because Eclipse has many issues. ON_HOLD
+* [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues. CURRENT
+    * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows
