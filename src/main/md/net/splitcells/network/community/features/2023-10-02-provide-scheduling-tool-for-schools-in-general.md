@@ -163,10 +163,12 @@
     * [x] Add dependencies
     * [ ] Extend license notice
     * [ ] Use bat files as launchers on Windows.
-    * [ ] Synchronize URL bar and currently opened page.
-    * [ ] Implement reset button.
-    * [ ] Implement refresh button.
-    * [ ] Implement refresh button.
+    * [x] Synchronize URL bar and currently opened page.
+    * [x] Implement reset button.
+    * [x] Implement refresh button.
+    * [x] Implement load URL button.
+    * [ ] Implement go back in history button.
+    * [ ] Implement go forward in history button.
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows 
