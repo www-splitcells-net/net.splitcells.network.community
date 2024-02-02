@@ -157,12 +157,16 @@
         * [ ] Always check the current browser URL and replace the domain, if pattern is known.
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
-* [ ] Use Electron instead of Eclipse, because Eclipse has many issues. ON_HOLD
+* [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues. CURRENT
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
-    * [ ] Add dependencies
+    * [x] Add dependencies
     * [ ] Extend license notice
     * [ ] Use bat files as launchers on Windows.
+    * [ ] Synchronize URL bar and currently opened page.
+    * [ ] Implement reset button.
+    * [ ] Implement refresh button.
+    * [ ] Implement refresh button.
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows 
