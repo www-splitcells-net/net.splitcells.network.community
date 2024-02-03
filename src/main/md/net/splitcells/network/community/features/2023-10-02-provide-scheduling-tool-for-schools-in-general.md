@@ -169,6 +169,7 @@
     * [x] Implement load URL button.
     * [ ] Implement go back in history button.
     * [ ] Implement go forward in history button.
+    * [ ] Avoid privacy pop up in editor.
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows 
