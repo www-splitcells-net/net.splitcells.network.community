@@ -170,7 +170,7 @@
     * [x] Implement go back in history button.
     * [x] Implement go forward in history button. -> Could not get it working. On the first look it's a bug in JavaFx.
     * [x] Avoid privacy pop up in editor.
-    * [ ] Add main page to menu.
+    * [x] Add main page to menu.
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows 
