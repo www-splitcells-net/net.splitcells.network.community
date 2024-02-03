@@ -161,7 +161,7 @@
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues. CURRENT
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
-    * [ ] Extend license notice
+    * [x] Extend license notice
     * [ ] Use bat files as launchers on Windows.
     * [x] Synchronize URL bar and currently opened page.
     * [x] Implement reset button.
