@@ -167,9 +167,9 @@
     * [x] Implement reset button.
     * [x] Implement refresh button.
     * [x] Implement load URL button.
-    * [ ] Implement go back in history button.
-    * [ ] Implement go forward in history button.
-    * [ ] Avoid privacy pop up in editor.
+    * [x] Implement go back in history button.
+    * [x] Implement go forward in history button. -> Could not get it working. On the first look it's a bug in JavaFx.
+    * [x] Avoid privacy pop up in editor.
     * [ ] Add main page to menu.
 * [ ] Provide application downloads.
     * [ ] For Linux
