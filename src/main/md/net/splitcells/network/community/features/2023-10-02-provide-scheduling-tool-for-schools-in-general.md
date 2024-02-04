@@ -171,8 +171,9 @@
     * [x] Implement go forward in history button. -> Could not get it working. On the first look it's a bug in JavaFx.
     * [x] Avoid privacy pop up in editor.
     * [x] Add main page to menu.
+    * [ ] Enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
-    * [ ] For Linux
+    * [ ] For Linux CURRENT
     * [ ] For Windows 
     * Consider Mac in the future.
 * [x] Deploy default distro application on public server.
