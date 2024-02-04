@@ -158,15 +158,14 @@
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
-* [ ] Fix legal info.
+* [ ] Fix legal info. CURRENT
     * [ ] Missing link to privacy policy
     * [ ] Missing link to impressum
     * [ ] Incorrect privacy policy pop up text
-* [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues. CURRENT
+* [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
     * [x] Extend license notice
-    * [ ] Use bat files as launchers on Windows.
     * [x] Synchronize URL bar and currently opened page.
     * [x] Implement reset button.
     * [x] Implement refresh button.
@@ -175,10 +174,11 @@
     * [x] Implement go forward in history button. -> Could not get it working. On the first look it's a bug in JavaFx.
     * [x] Avoid privacy pop up in editor.
     * [x] Add main page to menu.
-    * [ ] Enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
+    * [ ] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
-    * [ ] For Linux CURRENT
-    * [ ] For Windows 
+    * [ ] For Linux
+    * [ ] For Windows
+        * [ ] Use bat files as launchers on Windows.
     * Consider Mac in the future.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
