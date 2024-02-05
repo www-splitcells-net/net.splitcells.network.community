@@ -159,7 +159,10 @@
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [ ] Deploy correct distribution. CURRENT
-    * [ ] Create common way to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies. 
+    * [ ] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
+        * [ ] Create dedicated network worker repo.
+        * [ ] Move all generic commands of distro project to network worker.
+    * [ ] Use new framework to build correct distribution.
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
