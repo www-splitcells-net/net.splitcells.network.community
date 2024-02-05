@@ -158,10 +158,8 @@
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
-* [ ] Fix legal info. CURRENT
-    * [ ] Missing link to privacy policy
-    * [ ] Missing link to impressum
-    * [ ] Incorrect privacy policy pop up text
+* [ ] Deploy correct distribution. CURRENT
+    * [ ] Create common way to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies. 
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
