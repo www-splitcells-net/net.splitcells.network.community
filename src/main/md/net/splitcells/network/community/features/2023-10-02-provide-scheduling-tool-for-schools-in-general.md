@@ -160,6 +160,7 @@
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [ ] Deploy correct distribution. CURRENT
     * [ ] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
+        * [ ] Rename existing network worker project, in order to reflect its focus on Java.
         * [ ] Create dedicated network worker repo.
         * [ ] Move all generic commands of distro project to network worker.
     * [ ] Use new framework to build correct distribution.
