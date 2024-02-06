@@ -164,7 +164,7 @@
         * [x] Create dedicated network worker repo.
         * [x] Move all generic commands of distro project to network worker.
         * [ ] Process `build.on.server.via.podman`
-        * [ ] Rename `execute.via.podman` to `execute` in order to support any tool used for executing tasks.
+        * [x] Rename `execute.via.podman` to `execute` in order to support any tool used for executing tasks.
     * [ ] Use new framework to build correct distribution.
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
