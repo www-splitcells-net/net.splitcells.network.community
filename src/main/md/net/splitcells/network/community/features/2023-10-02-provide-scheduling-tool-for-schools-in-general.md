@@ -166,7 +166,7 @@
         * [x] Process `build.on.server.via.podman`
         * [x] Rename `execute.via.podman` to `execute` in order to support any tool used for executing tasks.
     * [x] Use new framework to build correct distribution.
-* [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
+* [x] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
     * [x] Extend license notice
@@ -178,7 +178,7 @@
     * [x] Implement go forward in history button. -> Could not get it working. On the first look it's a bug in JavaFx.
     * [x] Avoid privacy pop up in editor.
     * [x] Add main page to menu.
-    * [ ] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
+    * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
     * [ ] For Linux
     * [ ] For Windows
