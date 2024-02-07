@@ -152,10 +152,10 @@
     * [x] Make new editor maximized by default for better usage. Do this for telemetry too.
     * [ ] Fix application on Windows.
         * [ ] Fix path errors in file system and website server.
-    * [ ] Ensure that the browser does not load page from internet.
+    * [x] Ensure that the browser does not load page from internet.
         * This is observed for the links at the README. Replace `splitcells.net` with localhost and port.
         * [x] Always check the current browser URL and replace the domain, if pattern is known.
-        * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
+        * [x] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [x] Deploy correct distribution.
