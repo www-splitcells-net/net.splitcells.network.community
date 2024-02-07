@@ -154,7 +154,7 @@
         * [ ] Fix path errors in file system and website server.
     * [ ] Ensure that the browser does not load page from internet.
         * This is observed for the links at the README. Replace `splitcells.net` with localhost and port.
-        * [ ] Always check the current browser URL and replace the domain, if pattern is known.
+        * [x] Always check the current browser URL and replace the domain, if pattern is known.
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
