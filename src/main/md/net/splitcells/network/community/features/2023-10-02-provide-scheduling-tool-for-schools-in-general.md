@@ -158,14 +158,14 @@
         * [ ] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
-* [ ] Deploy correct distribution. CURRENT
-    * [ ] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
+* [x] Deploy correct distribution.
+    * [x] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
         * [x] Rename existing network worker project, in order to reflect its focus on Java.
         * [x] Create dedicated network worker repo.
         * [x] Move all generic commands of distro project to network worker.
-        * [ ] Process `build.on.server.via.podman`
+        * [x] Process `build.on.server.via.podman`
         * [x] Rename `execute.via.podman` to `execute` in order to support any tool used for executing tasks.
-    * [ ] Use new framework to build correct distribution.
+    * [x] Use new framework to build correct distribution.
 * [ ] Use JavaFX instead of Eclipse, because Eclipse has many issues.
     * Electron is a worse alternative than JavaFX, because it avoids an additional stack.
     * [x] Add dependencies
