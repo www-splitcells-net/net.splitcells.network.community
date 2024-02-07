@@ -180,7 +180,9 @@
     * [x] Add main page to menu.
     * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
-    * [ ] For Linux
+    * [ ] For Linux CURRENT
+        * [ ] Create project to optionally provide the runnable applications as a download.
+            * [ ] Add this project to static public server distro, so that users can easily download the software.
     * [ ] For Windows
         * [ ] Use bat files as launchers on Windows.
     * Consider Mac in the future.
