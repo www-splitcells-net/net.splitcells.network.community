@@ -148,21 +148,13 @@
   * [x] Solve example problem.
   * [x] Automatically test default school course scheduling problem.
   * [x] Output rating and reasoning.
-* [ ] Clean up application.
+* [x] Clean up application.
     * [x] Make new editor maximized by default for better usage. Do this for telemetry too.
-    * [ ] Fix application on Windows.
-        * [ ] Fix path errors in file system and website server.
     * [x] Ensure that the browser does not load page from internet.
         * This is observed for the links at the README. Replace `splitcells.net` with localhost and port.
         * [x] Always check the current browser URL and replace the domain, if pattern is known.
         * [x] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
-    * [ ] Make it easier for uniformed user to start using the software by improving the documents in the UI.
-* [ ] Clean up personal website.
-    * [ ] Make it easier for uniformed visitors to understand and use the website's features.
-        * [ ] Fix `About This Site`
-        * [ ] Make a better description and title for the changelog.
-        * [ ] Mark Network documentation as developer documentation.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [x] Deploy correct distribution.
     * [x] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
@@ -191,6 +183,8 @@
             * [ ] Add this project to static public server distro, so that users can easily download the software.
     * [ ] For Windows
         * [ ] Use bat files as launchers on Windows.
+        * [ ] Fix application on Windows.
+            * [ ] Fix path errors in file system and website server.
     * Consider Mac in the future.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
