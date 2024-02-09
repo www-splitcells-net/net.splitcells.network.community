@@ -200,7 +200,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
   in order to have reasonable runtime performance.
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
-* Write article explaining and demonstrating this.
+* [x] Write article explaining and demonstrating this. -> This was moved to an other ticket.
+* [ ] Try out different errors in editor, because the error message is not always goods.
+    * [ ] Problem definition
+    * [ ] Demand definition
+    * [ ] Supply definition
 ## Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
