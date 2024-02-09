@@ -157,6 +157,9 @@
         * [x] Always check the current browser URL and replace the domain, if pattern is known.
         * [x] Always check the current browser URL and replace the complete URL, if pattern is unknown.
     * [x] Provide telemetry data on UI.
+    * [ ] Make it easier for uniformed user to start using the software by improving the documents in the UI.
+* [ ] Clean up personal website.
+    * [ ] Make it easier for uniformed visitors to understand and use the website's features.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [x] Deploy correct distribution.
     * [x] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
