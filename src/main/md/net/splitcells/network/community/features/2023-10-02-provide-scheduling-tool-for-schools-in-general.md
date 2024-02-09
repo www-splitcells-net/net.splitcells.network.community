@@ -160,6 +160,9 @@
     * [ ] Make it easier for uniformed user to start using the software by improving the documents in the UI.
 * [ ] Clean up personal website.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features.
+        * [ ] Fix `About This Site`
+        * [ ] Make a better description and title for the changelog.
+        * [ ] Mark Network documentation as developer documentation.
 * [x] Use Electron instead of Eclipse, because Eclipse has many issues. -> JavaFX is a better choice.
 * [x] Deploy correct distribution.
     * [x] Create framework to build a custom distribution, in order to avoid writing duplicate build scripts with inconsistencies.
