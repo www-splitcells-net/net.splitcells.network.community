@@ -179,6 +179,7 @@
     * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
     * [ ] For Linux CURRENT
+        * [ ] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
         * [ ] Create share project to optionally provide the runnable applications as a download.
         * [ ] Add share project to static public server distro, so that users can easily download the software.
     * [ ] For Windows
