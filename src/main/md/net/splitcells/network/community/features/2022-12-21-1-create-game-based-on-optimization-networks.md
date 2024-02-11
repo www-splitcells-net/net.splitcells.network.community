@@ -34,6 +34,8 @@ where on can place and connect things.
 Games are inherently suitable for this and have the advantage of being advertizable.
 
 ## Tasks
+* [ ] Deploy game on live server.
+    * [ ] Define service builder interface in order to run and coordinate multiple Dem processes. 
 * [ ] Document goals of this game.
   * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html 
   * [ ] Use gamification as a source for motivation.
