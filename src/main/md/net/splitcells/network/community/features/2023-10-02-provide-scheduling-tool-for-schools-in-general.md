@@ -180,8 +180,8 @@
 * [ ] Provide application downloads.
     * [ ] For Linux CURRENT
         * [ ] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
-            * [ ] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
-            * [ ] Bundle Jars of app in dedicated folder.
+            * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
+            * [x] Bundle Jars of app in dedicated folder.
             * [ ] Bundle JRE.
             * [ ] Provide shell script for starting program.
             * [ ] Test application.
