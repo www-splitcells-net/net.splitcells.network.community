@@ -182,7 +182,7 @@
         * [ ] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
             * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
             * [x] Bundle Jars of app in dedicated folder.
-            * [ ] Bundle JRE.
+            * [x] Bundle JRE.
             * [ ] Provide shell script for starting program.
             * [ ] Test application.
             * [ ] Make share project generic to the application version or type.
