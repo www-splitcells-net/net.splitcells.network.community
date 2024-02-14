@@ -192,7 +192,8 @@
                     * [ ] JavaFX side scans currently opened document for the dedicated element periodically.
                       Anytime a download is found an appropriate file safe dialog is offered and after that,
                       the dedicated elements' content are deleted.
-                * [ ] Avoid privacy pop up.
+                    * [ ] Introduce GUI user config in distro and use this for JavaFX distro.
+                * [x] Avoid privacy pop up. -> Building everything again, fixed the problem.
             * [ ] Make share project generic to the application version or type.
             * [ ] Add share project to distro.
             * [ ] Deploy the zipped app to static website.
