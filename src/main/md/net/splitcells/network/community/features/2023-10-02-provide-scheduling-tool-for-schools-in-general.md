@@ -183,8 +183,9 @@
             * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
             * [x] Bundle Jars of app in dedicated folder.
             * [x] Bundle JRE.
-            * [ ] Provide shell script for starting program.
+            * [x] Provide shell script for starting program.
             * [ ] Test application.
+                * [ ] Support file downloads.
             * [ ] Make share project generic to the application version or type.
             * [ ] Add share project to distro.
             * [ ] Deploy the zipped app to static website.
