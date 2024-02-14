@@ -186,6 +186,13 @@
             * [x] Provide shell script for starting program.
             * [ ] Test application.
                 * [ ] Support file downloads.
+                    * [ ] Create isDownloadingViaHtmlElement option.
+                    * [ ] If isDownloadingViaHtmlElement is enabled, client side downloads are encoded via base64 and stored in a dedicated hidden HTML element.
+                      Don't forget to store the download's default file name.
+                    * [ ] JavaFX side scans currently opened document for the dedicated element periodically.
+                      Anytime a download is found an appropriate file safe dialog is offered and after that,
+                      the dedicated elements' content are deleted.
+                * [ ] Avoid privacy pop up.
             * [ ] Make share project generic to the application version or type.
             * [ ] Add share project to distro.
             * [ ] Deploy the zipped app to static website.
