@@ -35,7 +35,15 @@ Games are inherently suitable for this and have the advantage of being advertiza
 
 ## Tasks
 * [ ] Deploy game on live server.
-    * [ ] Define service builder interface in order to run and coordinate multiple Dem processes. 
+    * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
+    * [ ] Create launcher class for execution or configuration of the game.
+        * [ ] Clean up existing configs.
+            * [ ] What is `net.splitcells.website.Projects` used for?
+            * [ ] Consider `net.splitcells.cin.WorldService`, which contains former working code.
+            * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
+        * [ ] Only use web server as resource option.
+        * [ ] Use GelDev as basis.
+## Tasks to be checked and reevaluated.
 * [ ] Document goals of this game.
   * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html 
   * [ ] Use gamification as a source for motivation.
