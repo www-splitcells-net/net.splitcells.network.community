@@ -194,8 +194,8 @@
                       the dedicated elements' content are deleted.
                     * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
                 * [x] Avoid privacy pop up. -> Building everything again, fixed the problem.
-            * [ ] Make share project generic to the application version or type.
-            * [ ] Add share project to distro.
+            * [x] Make share project generic to the application version or type.
+            * [x] Add share project to distro.
             * [ ] Deploy the zipped app to static website.
             * [ ] Deploy the zipped app to live server.
         * [ ] Create share project to optionally provide the runnable applications as a download.
