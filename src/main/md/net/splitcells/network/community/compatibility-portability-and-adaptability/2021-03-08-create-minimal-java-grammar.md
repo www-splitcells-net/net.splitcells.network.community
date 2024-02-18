@@ -1,4 +1,12 @@
 # Create minimal Java grammar for this project in order to make code less complex
+- [ ] Recheck this ticket.
+- [ ] Check grammar for all repos.
+    - [ ] Create equivalent to repo process, but for projects.
+    - [ ] Create `net.splitcells.project.process` project, in order to process such projects.
+    - [ ] Move `net.splitcells.project.files.standard` content into `net.splitcells.project.process` and 
+      delete original.
+      This way a generic project exists for such things and
+      improves the existing project name, which is too long.
 - [x] Create alternative implementations for all `Domable#toDom` instances.
 - [x] Fix grammar error, that causes ANTLR4 to not show, what the grammar error. -> Found a workaround: The rule `(.)*? Keysymbol_at Keyword_JavaLegacyArtifact (.)*? EOF` breaks every error message. Disabling this rule for a file in question creates normal error messages.
     - [x] Print out lexer's tokens result on error. Maybe that is enough? https://stackoverflow.com/questions/70701595/is-there-a-way-to-extract-tokens-in-order-with-antlr
