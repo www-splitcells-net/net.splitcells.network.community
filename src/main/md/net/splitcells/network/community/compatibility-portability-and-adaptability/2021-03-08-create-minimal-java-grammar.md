@@ -1,5 +1,5 @@
 # Create minimal Java grammar for this project in order to make code less complex
-- [ ] Recheck this ticket.
+- [ ] Recheck this ticket and clean it up.
 - [ ] Check grammar for all repos.
     - [ ] Create equivalent to repo process, but for projects.
     - [ ] Create `net.splitcells.project.process` project, in order to process such projects.
