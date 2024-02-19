@@ -196,7 +196,7 @@
                 * [x] Avoid privacy pop up. -> Building everything again, fixed the problem.
             * [x] Make share project generic to the application version or type.
             * [x] Add share project to distro.
-            * [ ] Deploy the zipped app to static website.
+            * [x] Deploy the zipped app to static website.
             * [ ] Deploy the zipped app to live server.
         * [x] Create share project to optionally provide the runnable applications as a download.
         * [x] Add share project to static public server distro, so that users can easily download the software.
