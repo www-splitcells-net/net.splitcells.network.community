@@ -185,7 +185,7 @@
             * [x] Bundle JRE.
             * [x] Provide shell script for starting program.
             * [ ] Test application.
-                * [ ] Support file downloads.
+                * [ ] Support file downloads in GUI for results.
                     * [x] Create isDownloadingViaHtmlElement option.
                     * [ ] If isDownloadingViaHtmlElement is enabled, client side downloads are encoded via base64 and stored in a dedicated hidden HTML element.
                       Don't forget to store the download's default file name.
@@ -198,13 +198,16 @@
             * [x] Add share project to distro.
             * [ ] Deploy the zipped app to static website.
             * [ ] Deploy the zipped app to live server.
-        * [ ] Create share project to optionally provide the runnable applications as a download.
-        * [ ] Add share project to static public server distro, so that users can easily download the software.
+        * [x] Create share project to optionally provide the runnable applications as a download.
+        * [x] Add share project to static public server distro, so that users can easily download the software.
+          -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/linux/network.distro.javafx-0.0.1-SNAPSHOT-zip.zip`.
     * [ ] For Windows
         * [ ] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
             * [ ] Fix path errors in file system and website server.
     * Consider Mac in the future.
+    * [ ] Clean up upload cache for static website, so it does not cause storage problems.
+    * [ ] Create download page.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
