@@ -197,11 +197,11 @@
             * [x] Make share project generic to the application version or type.
             * [x] Add share project to distro.
             * [x] Deploy the zipped app to static website.
-            * [ ] Deploy the zipped app to live server.
+            * [x] Deploy the zipped app to live server.
         * [x] Create share project to optionally provide the runnable applications as a download.
         * [x] Add share project to static public server distro, so that users can easily download the software.
           -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/linux/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
-        * [ ] Fix live server build.
+        * [x] Fix live server build.
     * [ ] For Windows
         * [ ] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
