@@ -178,7 +178,7 @@
     * [x] Add main page to menu.
     * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
 * [ ] Provide application downloads.
-    * [x] For Linux
+    * [x] Create app for Linux.
         * [x] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
             * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
             * [x] Bundle Jars of app in dedicated folder.
@@ -195,13 +195,14 @@
         * [x] Add share project to static public server distro, so that users can easily download the software.
           -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/linux/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
         * [x] Fix live server build.
-    * [ ] For Windows
+    * [ ] Create app for Windows.
         * [x] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
             * [ ] Fix path errors in file system and website server.
-    * Consider Mac in the future.
-    * [ ] Clean up upload cache for static website, so it does not cause storage problems.
-    * [ ] Create download page.
+    * [ ] Create app for Mac.
+    * [x] Clean up upload cache for static website, so it does not cause storage problems.
+    * [ ] Create download page. CURRENT
+        * [ ] Mark Mac version as untested.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
