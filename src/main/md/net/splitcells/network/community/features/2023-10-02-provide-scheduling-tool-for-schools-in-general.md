@@ -184,8 +184,9 @@
             * [x] Bundle Jars of app in dedicated folder.
             * [x] Bundle JRE.
             * [x] Provide shell script for starting program.
-            * [ ] Test application.
+            * [x] Test application.
                 * [x] Avoid privacy pop up. -> Building everything again, fixed the problem.
+                * [x] Bundling jre automatically does not work.
             * [x] Make share project generic to the application version or type.
             * [x] Add share project to distro.
             * [x] Deploy the zipped app to static website.
