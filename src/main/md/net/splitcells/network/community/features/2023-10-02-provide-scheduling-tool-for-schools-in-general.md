@@ -248,8 +248,8 @@
   -> That is not that important, given the inconsistency of the changelogs completeness.
   Keep in mind, that there is only one developer working on this right now and there are no users of the software.
 * [ ] Clean up private static website.
-    * [ ] Newsfeed -> Technical Newsfeed
-    * [ ] Fix and symbol at Newsfeed description.
+    * [x] Newsfeed -> Technical Newsfeed
+    * [x] Fix apostrophe symbol at Newsfeed description.
     * [ ] Clean up article `About this site`.
 ## Tasks to be planned in other tickets
 * [x] User should be able to define part of the solution. -> An ticket was created: https://github.com/www-splitcells-net/net.splitcells.network/issues/287
