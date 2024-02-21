@@ -185,14 +185,6 @@
             * [x] Bundle JRE.
             * [x] Provide shell script for starting program.
             * [ ] Test application.
-                * [ ] Support file downloads in GUI for results.
-                    * [x] Create isDownloadingViaHtmlElement option.
-                    * [ ] If isDownloadingViaHtmlElement is enabled, client side downloads are encoded via base64 and stored in a dedicated hidden HTML element.
-                      Don't forget to store the download's default file name.
-                    * [ ] JavaFX side scans currently opened document for the dedicated element periodically.
-                      Anytime a download is found an appropriate file safe dialog is offered and after that,
-                      the dedicated elements' content are deleted.
-                    * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
                 * [x] Avoid privacy pop up. -> Building everything again, fixed the problem.
             * [x] Make share project generic to the application version or type.
             * [x] Add share project to distro.
