@@ -193,13 +193,13 @@
             * [x] Deploy the zipped app to live server.
         * [x] Create share project to optionally provide the runnable applications as a download.
         * [x] Add share project to static public server distro, so that users can easily download the software.
-          -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/linux/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
+          -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
         * [x] Fix live server build.
     * [ ] Create app for Windows.
         * [x] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
             * [ ] Fix path errors in file system and website server.
-    * [ ] Create app for Mac.
+    * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [ ] Create download page. CURRENT
         * [ ] Mark Mac version as untested.
