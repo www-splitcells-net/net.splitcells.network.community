@@ -201,8 +201,8 @@
             * [ ] Fix path errors in file system and website server.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
-    * [ ] Create download page. CURRENT
-        * [ ] Mark Mac version as untested.
+    * [x] Create download page.
+        * [x] Mark Mac version as untested.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
