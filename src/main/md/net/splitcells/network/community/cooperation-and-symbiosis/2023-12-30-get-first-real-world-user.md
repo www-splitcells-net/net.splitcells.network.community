@@ -25,6 +25,10 @@ some things have to be adjusted in the project.
 * [ ] Talk to current main contact person.
 * [ ] Consider talking to schools directly.
 ## Considerations
+* [ ] Error message are not good for some inputs
+    * [ ] Problem definition is incorrect.
+    * [ ] Demand data is incorrect.
+    * [ ] Supply data is incorrect.
 * [ ] Support file downloads in GUI for results.
     * [x] Create isDownloadingViaHtmlElement option.
     * [ ] If isDownloadingViaHtmlElement is enabled, client side downloads are encoded via base64 and stored in a dedicated hidden HTML element.
