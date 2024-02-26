@@ -247,11 +247,11 @@
 * [x] Add missing points of this ticket to the changelogs.
   -> That is not that important, given the inconsistency of the changelogs completeness.
   Keep in mind, that there is only one developer working on this right now and there are no users of the software.
-* [ ] Clean up private static website.
+* [x] Clean up private static website.
     * [x] Newsfeed -> Technical Newsfeed
     * [x] Fix apostrophe symbol at Newsfeed description.
-    * [ ] Clean up article `About this site`.
-    * [ ] Indicate that list of downloads is a list of downloads.
+    * [x] Clean up article `About this site`.
+    * [x] Indicate that list of downloads is a list of downloads.
 ## Tasks to be planned in other tickets
 * [x] User should be able to define part of the solution. -> An ticket was created: https://github.com/www-splitcells-net/net.splitcells.network/issues/287
 ## Ideas
