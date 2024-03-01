@@ -37,24 +37,24 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [ ] Deploy game on live server.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
     * [ ] Create launcher class for execution or configuration of the game.
+        * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start.
         * [ ] Clean up existing configs.
             * [ ] What is `net.splitcells.website.Projects` used for?
             * [ ] Consider `net.splitcells.cin.WorldService`, which contains former working code.
             * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
-        * [ ] Only use web server as resource option.
-        * [ ] Use GelDev as basis.
-## Tasks to be checked and reevaluated.
+      * [ ] Only use web server as resource option.
+          * [ ] Use service builder interface.
+      * [ ] Use GelDev as basis.
 * [ ] Document goals of this game.
-  * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html 
-  * [ ] Use gamification as a source for motivation.
+  * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html
+  * [ ] Add documentation at game project.
+    * [ ] Use gamification as a source for motivation.
     * [ ] Alternative or counterpart to test recursion:
       create meaning full tests by combining test problems and thereby creating bigger and
       more complex problems and test data.
-    * [ ] The goal is to create optimization algorithm based on reconstruction and deconstruction cycle.
-      This is the reason why the game consists of a reconstruction step, that is basically a city building game,
-      and a deconstruction step, that is basically a war game.
     * [ ] Reason why the game is called crisis network: bringing optimization systems to their limits and beyond,
-      in order to learn from it, is a crisis for such optimization system as undesirable states are thereby reached.
+      in order to learn from it.
+      This is a crisis for such optimization system as undesirable states are thereby reached.
 * [x] Create a very simple renderer for it.
 * [x] Provide unsecured local website for testing.
   -> Not needed.
@@ -76,6 +76,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [ ] Make it possible to switch between views of 3D world, tables and constraints.
         * [ ] Make game easily installable on Steam Deck via Flatpak: #195
     * [ ] Clean up GUI and make it usable and somewhat nice.
+        * [ ] Visualize currently selected object via bigger box around the selected object.
+          Instead of a normal box, one could use a wireframe of such a box.
 * [ ] Implement game of life.
     * [ ] Run game.
     * [x] Visualize state via file.
@@ -198,23 +200,14 @@ Games are inherently suitable for this and have the advantage of being advertiza
   * This is provided via `GelDev#process` and the port 8448 is used for this by default.
   * [x] Fix layout refresh error.
   * [x] Create tree view of layout.
-* [ ] Implement game of life with 2 players.
 * [ ] Implement game of life with 2 players, where each player has choices and wants to maximize its liveness.
-* [x] Find a name: crisis network = cin
-    * [ ] Document reasoning for name.
 * [ ] Run the game on public server for people to watch. This also helps to make the software deployable in general.
-  * [ ] https://github.com/www-splitcells-net/net.splitcells.network/issues/249 CURRENT
-* [ ] Serve all JavaScript dependencies locally.
-  * [ ] Consider https://vitejs.dev/ 
+  * [x] https://github.com/www-splitcells-net/net.splitcells.network/issues/249
 * [x] Make it easy to execute software in IDE with ENFORCING_UNIT_CONSISTENCY_KEY set to false,
   in order to have reasonable runtime performance.
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
 * [x] Write article explaining and demonstrating this. -> This was moved to an other ticket.
-* [ ] Try out different errors in editor, because the error message is not always goods.
-    * [ ] Problem definition
-    * [ ] Demand definition
-    * [ ] Supply definition
 ## Ideas For Future Tickets
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
