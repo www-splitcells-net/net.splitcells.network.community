@@ -45,6 +45,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
       * [ ] Only use web server as resource option.
           * [ ] Use service builder interface.
       * [ ] Use GelDev as basis.
+      * [ ] Do not block web server start via game.
 * [ ] Document goals of this game.
   * [x] Add game to main objectives of the Splitcells Network Project. -> https://splitcells.net/net/splitcells/network/objectives.html
   * [ ] Add documentation at game project.
@@ -78,6 +79,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Clean up GUI and make it usable and somewhat nice.
         * [ ] Visualize currently selected object via bigger box around the selected object.
           Instead of a normal box, one could use a wireframe of such a box.
+        * [ ] Build renderer via npm and thereby make deployment clean.
 * [ ] Implement game of life.
     * [ ] Run game.
     * [x] Visualize state via file.
