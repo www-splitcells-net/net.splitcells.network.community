@@ -38,16 +38,19 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
         * [ ] Discourage starting program via Dem process with a given runnable,
           because such a program definition is not declarative and therefore combining multiple services or module into one is harder.
+            * [ ] Deprecate such `Dem#process` and create a copy with a longer name, in order to discourage its use.
+              Note, that such a method is needed for non service things,
+              like executing a test.
         * [ ] Enable all services etc. of a module via one single point of entry like a method,
           where no extra arguments are required for the service to be working with a sane configuration.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
+        * [ ] Only use web server as resource option.
+            * [ ] See `GelDev#configureForWebserver`.
         * [ ] Clean up existing configs.
             * [ ] What is `net.splitcells.website.Projects` used for?
             * [ ] Consider `net.splitcells.cin.WorldService`, which contains former working code.
             * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
-      * [ ] Only use web server as resource option.
-          * [ ] See `GelDev#configureForWebserver`.
       * [ ] Use GelDev as basis.
       * [ ] Do not block web server start via game.
 * [ ] Document goals of this game.
