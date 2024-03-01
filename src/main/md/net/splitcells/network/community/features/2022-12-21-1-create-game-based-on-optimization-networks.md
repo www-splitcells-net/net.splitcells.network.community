@@ -43,6 +43,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
               like executing a test.
         * [ ] Enable all services etc. of a module via one single point of entry like a method,
           where no extra arguments are required for the service to be working with a sane configuration.
+          Maybe a general module class/interface is needed.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
         * [ ] Only use web server as resource option.
