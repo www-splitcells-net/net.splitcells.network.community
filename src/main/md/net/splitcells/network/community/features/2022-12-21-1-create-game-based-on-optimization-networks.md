@@ -48,6 +48,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
             * [ ] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
             * [ ] Provide configurations.
+            * [ ] Visualize cell dependencies.
+                * [ ] Provide way for cells to declare their option dependencies. The dependency order will not be enforced yet.
+                * [ ] Visualize as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
+                  but dynamically.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroModule`, in order to ease the start.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
