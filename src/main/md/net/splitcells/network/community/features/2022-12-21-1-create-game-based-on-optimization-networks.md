@@ -36,15 +36,20 @@ Games are inherently suitable for this and have the advantage of being advertiza
 ## Tasks
 * [ ] Deploy game on live server.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
-        * [ ] Discourage starting program via Dem process with a given runnable,
+        * [x] Discourage starting program via Dem process with a given runnable,
           because such a program definition is not declarative and therefore combining multiple services or module into one is harder.
-            * [ ] Deprecate such `Dem#process` and create a copy with a longer name, in order to discourage its use.
+          -> This is not needed because `Dem#process` and `Dem#serve` are both equally valid use cases..
+            * [x] Deprecate such `Dem#process` and create a copy with a longer name, in order to discourage its use.
               Note, that such a method is needed for non service things,
-              like executing a test.
+              like executing a test. -> `Dem#process` is needed in order to calculate something with a given config. So it is not deprecated.
         * [ ] Enable all services etc. of a module via one single point of entry like a method,
           where no extra arguments are required for the service to be working with a sane configuration.
           Maybe a general module class/interface is needed.
+            * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
+            * [ ] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
+            * [ ] Provide configurations.
     * [ ] Create launcher class for execution or configuration of the game.
+        * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroModule`, in order to ease the start.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
         * [ ] Only use web server as resource option.
             * [ ] See `GelDev#configureForWebserver`.
