@@ -46,14 +46,15 @@ Games are inherently suitable for this and have the advantage of being advertiza
           where no extra arguments are required for the service to be working with a sane configuration.
           Maybe a general module class/interface is needed.
             * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
-            * [ ] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
-            * [ ] Provide configurations.
+            * [x] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
+            * [x] Provide file system via cells by default.
+            * [ ] Provide configurations for all modules.
             * [ ] Visualize cell dependencies.
-                * [ ] Provide way for cells to declare their option dependencies. The dependency order will not be enforced yet.
+                * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
                 * [ ] Visualize as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
                   but dynamically.
     * [ ] Create launcher class for execution or configuration of the game.
-        * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroModule`, in order to ease the start.
+        * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the start.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
         * [ ] Only use web server as resource option.
             * [ ] See `GelDev#configureForWebserver`.
@@ -96,7 +97,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Clean up GUI and make it usable and somewhat nice.
         * [ ] Visualize currently selected object via bigger box around the selected object.
           Instead of a normal box, one could use a wireframe of such a box.
-        * [ ] Build renderer via npm and thereby make deployment clean.
+          * [ ] Build renderer via npm and thereby make deployment clean.
+    * [ ] Consider alternative visualization.
+        * [ ] Optional additional Wireframe showing activity.
+        * [ ] View that looks like cell scans as an alternative artistic view.
 * [ ] Implement game of life.
     * [ ] Run game.
     * [x] Visualize state via file.
