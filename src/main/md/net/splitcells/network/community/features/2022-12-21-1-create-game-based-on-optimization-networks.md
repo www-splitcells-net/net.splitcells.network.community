@@ -48,7 +48,17 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
             * [x] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
             * [x] Provide file system via cells by default.
-            * [ ] Provide configurations for all modules.
+            * [ ] Provide configurations for all modules and thereby understand all requirements.
+                * [x] New properties should be not be added to interface directly,
+                  but should be added via the `Cell#accept` dynamically.
+                  For one, we want to avoid bloating the Cell interface.
+                  Furthermore, a mechanism is required whereby the values of the new properties can be replaced.
+                  For instance, a filesystem associated with a cell is a file system based on class resources by default.
+                  When a developer wants to edit the data of the filesystem, it would be efficient,
+                  if the developer could edit the source files and test the edit without an application restart. -> This is documented.
+                * [x] Provide a FileSystemView for every Cell by default.
+                * [ ] Create Cell version of WebsiteViaJar.
+                * [ ] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
                 * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
                 * [ ] Visualize as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
