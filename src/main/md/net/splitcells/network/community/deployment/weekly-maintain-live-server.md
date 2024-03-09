@@ -1,4 +1,4 @@
-# Maintain live server weekly
+# Weekly maintain live server.
 ## Service
 * The server is publicly available at http://live.splitcells.net:8080
 * Update server.
@@ -8,8 +8,10 @@
     * `bin/build.on.server.via.podman` 
 * Improve deployment and its processes.
 ## Tasks
-* [ ] Make unattended-upgrades work.
+* [x] Make unattended-upgrades work.
+* [ ] Automatically restart server after update installation.
+    * [ ] Deploy server software as systemd user service.
 * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
   in order to ensure, that all programs of ssh sessions are closed..
-* [ ] Create double checking for every config step.
+* [x] Create double checking for every config step. -> Check description is present in config script.
 * [ ] Manage upgrading major OS versions.
