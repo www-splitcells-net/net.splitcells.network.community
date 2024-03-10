@@ -19,6 +19,7 @@
                 - [x] Test whether `Rater#argumentation(GroupId, Table)` is used at all.
                   -> No it is not really used. So We can replace the method in one go or commit.
                   We could even delete it with no issue, but it may have a need, that is forgotten, so we just convert it instead.
+                  `Rater#argumentation(GroupId, Table)` does not have anything to do with `Constraint#naturalArgumentation()` and co.
                 - [x] Create test for argumentation. -> Is not needed
                 - [ ] Remove `Rater#argumentation(GroupId, Table)` from Rater interface.
                 - [ ] Convert all `Rater#argumentation(GroupId, Table)` overrides to normal methods, that use Perspective instead.
