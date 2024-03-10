@@ -15,11 +15,13 @@
     - [ ] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
         - [ ] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
         - [ ] Remove other `toDom` usage.
-            - [ ] Update `Rater#argumentation`.
-                - [ ] Create test for argumentation.
-                - [ ] Create alternative argumentation implementation.
-                - [ ] Use alternative implementation.
-                - [ ] Remove original implementation.
+            - [ ] Update `Rater#argumentation(GroupId, Table)`.
+                - [x] Test whether `Rater#argumentation(GroupId, Table)` is used at all.
+                  -> No it is not really used. So We can replace the method in one go or commit.
+                  We could even delete it with no issue, but it may have a need, that is forgotten, so we just convert it instead.
+                - [x] Create test for argumentation. -> Is not needed
+                - [ ] Remove `Rater#argumentation(GroupId, Table)` from Rater interface.
+                - [ ] Convert all `Rater#argumentation(GroupId, Table)` overrides to normal methods, that use Perspective instead.
             - [ ] Update `Solution#createAnalysis`.
             - [ ] Update `SolutionView#createAnalysis`.
             - [ ] Update `SolutionView#toLinesFodsAnalysis`.
