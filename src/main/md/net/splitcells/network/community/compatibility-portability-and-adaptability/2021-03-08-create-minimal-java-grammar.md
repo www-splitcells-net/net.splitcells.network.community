@@ -23,10 +23,15 @@
                 - [ ] Remove `Rater#argumentation(GroupId, Table)` from Rater interface.
                 - [ ] Convert all `Rater#argumentation(GroupId, Table)` overrides to normal methods, that use Perspective instead.
             - [ ] Update `Solution#createAnalysis`.
+                - [ ] Create a test for this.
             - [ ] Update `SolutionView#createAnalysis`.
+              - [ ] Create a test for this.
             - [ ] Update `SolutionView#toLinesFodsAnalysis`.
+                - [ ] Create a test for this.
             - [ ] Update `History#toAnalysisFods`.
+                - [ ] Create a test for this.
             - [ ] Update `ProjectsRendererI#createLayout`.
+                - [ ] Create a test for this.
     - [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
