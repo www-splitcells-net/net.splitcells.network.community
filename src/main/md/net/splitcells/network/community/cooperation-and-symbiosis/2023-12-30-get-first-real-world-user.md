@@ -37,3 +37,5 @@ some things have to be adjusted in the project.
       Anytime a download is found an appropriate file safe dialog is offered and after that,
       the dedicated elements' content are deleted.
     * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
+## Ideas
+* [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
