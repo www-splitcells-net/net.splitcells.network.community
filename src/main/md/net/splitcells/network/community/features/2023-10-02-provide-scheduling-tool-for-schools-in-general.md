@@ -199,8 +199,9 @@
         * [x] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
             * [ ] Fix path errors in file system and website server.
-                * [ ] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
-                * [ ] `WebsiteViaJarTest#testServingWebsiteToFolder()` does not work.
+                * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
+                * [ ] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
+                    * [ ] Make website layout OS independent.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
