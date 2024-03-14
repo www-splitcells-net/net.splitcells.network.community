@@ -111,6 +111,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [ ] Consider alternative visualization.
         * [ ] Optional additional Wireframe showing activity.
         * [ ] View that looks like cell scans as an alternative artistic view.
+        * [ ] Consider camera grain and texture grain.
+        * [ ] Create style guide for visualization.
 * [ ] Implement game of life.
     * [ ] Run game.
     * [x] Visualize state via file.
