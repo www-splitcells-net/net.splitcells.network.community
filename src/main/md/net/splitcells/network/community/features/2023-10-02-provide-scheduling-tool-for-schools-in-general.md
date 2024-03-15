@@ -205,6 +205,7 @@
                 * [ ] Add app icon for main window.
                 * [ ] Fix the refresh button.
                 * [ ] Fix page shown at `http://localhost:8443/net/splitcells/network/hub/README.html`.
+                * [ ] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
