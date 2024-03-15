@@ -200,8 +200,11 @@
         * [ ] Fix application on Windows.
             * [ ] Fix path errors in file system and website server.
                 * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
-                * [ ] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
-                    * [ ] Make website layout OS independent.
+                * [x] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
+                    * [x] Make website layout OS independent.
+                * [ ] Add app icon for main window.
+                * [ ] Fix the refresh button.
+                * [ ] Fix page shown at `http://localhost:8443/net/splitcells/network/hub/README.html`.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
