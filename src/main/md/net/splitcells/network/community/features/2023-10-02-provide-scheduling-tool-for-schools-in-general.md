@@ -202,12 +202,12 @@
                 * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
                 * [x] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
                     * [x] Make website layout OS independent.
-                * [x] Add app icon for main window.
-                * [x] Fix the refresh button.
-                * [x] Fix page shown at `http://localhost:8443/net/splitcells/network/hub/README.html`.
-                * [x] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
-                * [x] Do start application as big as the computer display.
-                * [ ] Avoid oversized footer in web view.
+            * [x] Add app icon for main window.
+            * [x] Fix the refresh button.
+            * [x] Fix page shown at `http://localhost:8443/net/splitcells/network/hub/README.html`.
+            * [x] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
+            * [x] Do start application as big as the computer display.
+            * [ ] Avoid oversized footer in web view.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
