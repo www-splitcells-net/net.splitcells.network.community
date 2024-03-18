@@ -198,7 +198,7 @@
     * [ ] Create app for Windows.
         * [x] Use bat files as launchers on Windows.
         * [ ] Fix application on Windows.
-            * [ ] Fix path errors in file system and website server.
+            * [x] Fix path errors in file system and website server.
                 * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
                 * [x] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
                     * [x] Make website layout OS independent.
