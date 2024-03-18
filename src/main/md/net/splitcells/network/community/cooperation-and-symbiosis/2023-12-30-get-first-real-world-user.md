@@ -9,6 +9,8 @@ some things have to be adjusted in the project.
     It is important, that the software can be explained and introduced easily to German teachers,
     that can speak and read English.
     Keep in mind, that every German document still needs an international English version as well.
+    * [ ] Make static website more advertisable.
+        * [ ] Remove `Local Instances` sub menu.
     * [ ] Create internationalization standard for documentations, based on file suffixes.
     * [ ] Create document describing objectives regarding school scheduling.
         * [ ] Make current objectives document a set of documents.
