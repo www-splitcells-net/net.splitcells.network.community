@@ -23,6 +23,9 @@ some things have to be adjusted in the project.
     * [ ] Make static website more advertisable.
         * [ ] Remove `Local Instances` sub menu.
         * [ ] Fix rendering of graphs (i.e. `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`).
+        * [ ] Fix link at main logo: `https://splitcells.net/net/splitcells/network/hubREADME.html`
+        * [ ] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
+        * [ ] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
     * [ ] Create demonstration video for web server.
     * [ ] Create demo video for local users.
 * [ ] Talk to current main contact person.
