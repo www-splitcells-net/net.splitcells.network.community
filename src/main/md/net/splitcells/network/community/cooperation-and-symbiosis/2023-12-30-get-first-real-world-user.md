@@ -9,8 +9,6 @@ some things have to be adjusted in the project.
     It is important, that the software can be explained and introduced easily to German teachers,
     that can speak and read English.
     Keep in mind, that every German document still needs an international English version as well.
-    * [ ] Make static website more advertisable.
-        * [ ] Remove `Local Instances` sub menu.
     * [ ] Create internationalization standard for documentations, based on file suffixes.
     * [ ] Create document describing objectives regarding school scheduling.
         * [ ] Make current objectives document a set of documents.
@@ -22,6 +20,9 @@ some things have to be adjusted in the project.
           * [ ] Make a better description and title for the changelog.
           * [ ] Mark Network documentation as developer documentation.
 * [ ] Announce project publicly.
+    * [ ] Make static website more advertisable.
+        * [ ] Remove `Local Instances` sub menu.
+        * [ ] Fix rendering of graphs (i.e. `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`).
     * [ ] Create demonstration video for web server.
     * [ ] Create demo video for local users.
 * [ ] Talk to current main contact person.
