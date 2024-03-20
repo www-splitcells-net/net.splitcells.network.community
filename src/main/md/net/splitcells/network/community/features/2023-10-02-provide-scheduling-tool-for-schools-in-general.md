@@ -209,7 +209,7 @@
             * [x] Do start application as big as the computer display.
             * [x] Avoid oversized footer in web view.
             * [ ] App build on Linux misses some jars for Windows.
-        * [ ] Remove untested tag on download page.
+        * [ ] Remove untested tag on download page for Windows version.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
