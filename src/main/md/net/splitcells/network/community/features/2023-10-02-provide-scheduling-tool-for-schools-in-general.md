@@ -177,7 +177,7 @@
     * [x] Avoid privacy pop up in editor.
     * [x] Add main page to menu.
     * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
-* [x] Provide application downloads.
+* [ ] Provide application downloads.
     * [x] Create app for Linux.
         * [x] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
             * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
@@ -195,9 +195,9 @@
         * [x] Add share project to static public server distro, so that users can easily download the software.
           -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
         * [x] Fix live server build.
-    * [x] Create app for Windows.
+    * [ ] Create app for Windows.
         * [x] Use bat files as launchers on Windows.
-        * [x] Fix application on Windows.
+        * [ ] Fix application on Windows.
             * [x] Fix path errors in file system and website server.
                 * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
                 * [x] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
@@ -208,6 +208,8 @@
             * [x] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
             * [x] Do start application as big as the computer display.
             * [x] Avoid oversized footer in web view.
+            * [ ] App build on Linux misses some jars in
+        * [ ] Remove untested tag on download page.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
