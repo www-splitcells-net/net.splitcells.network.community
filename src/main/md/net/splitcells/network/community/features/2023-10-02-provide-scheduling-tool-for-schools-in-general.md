@@ -208,7 +208,7 @@
             * [x] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
             * [x] Do start application as big as the computer display.
             * [x] Avoid oversized footer in web view.
-            * [ ] App build on Linux misses some jars in
+            * [ ] App build on Linux misses some jars for Windows.
         * [ ] Remove untested tag on download page.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
