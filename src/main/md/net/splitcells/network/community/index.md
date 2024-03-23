@@ -26,7 +26,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: Improve quality and fix bugs.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/3)
 * Deployment project
-  * [Host Link](https://github.com/orgs/www-splitcells-net/projects/10/views/1)
+  * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8588)
 * Performance Engineering 
   * Description: We have a need for speed.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/6)
