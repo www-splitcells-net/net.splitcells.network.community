@@ -195,9 +195,9 @@
         * [x] Add share project to static public server distro, so that users can easily download the software.
           -> The download URL is `http://localhost:8443/net/splitcells/network/distro/downloads/net.splitcells.network.distro.javafx-0.0.1-SNAPSHOT-linux-zip.zip`.
         * [x] Fix live server build.
-    * [ ] Create app for Windows.
+    * [x] Create app for Windows.
         * [x] Use bat files as launchers on Windows.
-        * [ ] Fix application on Windows.
+        * [x] Fix application on Windows.
             * [x] Fix path errors in file system and website server.
                 * [x] Make `FileSystemViaClassResourcesTest` in IDE on Windows working. It works in Bash with Maven on Windows.
                 * [x] Make `WebsiteViaJarTest#testServingWebsiteToFolder()` working on Windows.
@@ -208,12 +208,13 @@
             * [x] Fix `launcher.bat`. Everything else of the app zip seems to work, as the following command works in Git Bash on Windows: `java --module-path './javafx-lib' --add-modules javafx.controls,javafx.web -cp './deployable-jars/*' net.splitcells.network.distro.javafx.JavaFxGuiLauncher`
             * [x] Do start application as big as the computer display.
             * [x] Avoid oversized footer in web view.
-            * [ ] App build on Linux misses some jars for Windows.
-        * [ ] Remove untested tag on download page for Windows version.
+            * [x] App build on Linux misses some jars for Windows.
+    * [x] Remove untested tag on download page for Windows version.
     * [x] Create app for Mac.
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
         * [x] Mark Mac version as untested.
+    * [ ] Redeploy software and server.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
