@@ -15,6 +15,8 @@
         * [x] Create user service.
         * [x] Make user service reachable via network.
         * [ ] Start user service on server start automatically.
+        * [ ] Build image during build command and execute image during execute command.
+          Currently, the build command builds the Java part and the execute command builds the container image.
 * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
   in order to ensure, that all programs of ssh sessions are closed.
 * [x] Create double checking for every config step. -> Check description is present in config script.
