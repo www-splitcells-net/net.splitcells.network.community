@@ -1,4 +1,5 @@
 # Weekly maintain live server.
+* Issue: https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/8
 ## Service
 * The server is publicly available at http://live.splitcells.net:8080
 * Update server.
@@ -11,7 +12,10 @@
 * [x] Make unattended-upgrades work.
 * [ ] Automatically restart server after update installation.
     * [ ] Deploy server software as systemd user service.
+        * [x] Create user service.
+        * [x] Make user service reachable via network.
+        * [ ] Start user service on server start automatically.
 * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
-  in order to ensure, that all programs of ssh sessions are closed..
+  in order to ensure, that all programs of ssh sessions are closed.
 * [x] Create double checking for every config step. -> Check description is present in config script.
 * [ ] Manage upgrading major OS versions.
