@@ -31,7 +31,9 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: We have a need for speed.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/6)
 * Webserver Development
-  * [Host Link](https://todo.sr.ht/~splitcells-net/net.splitcells.network?search=label%3A%22active%22)
+    * Description: Organizing and presenting data is the foundation of a good day
+    * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
+    * [Deprecated Host Link](https://todo.sr.ht/~splitcells-net/net.splitcells.network?search=label%3A%22active%22)
 ## Notes
 * This is a ticket system in the form of a blog.
 * Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
