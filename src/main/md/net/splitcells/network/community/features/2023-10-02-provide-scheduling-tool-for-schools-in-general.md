@@ -177,7 +177,7 @@
     * [x] Avoid privacy pop up in editor.
     * [x] Add main page to menu.
     * [x] Document how to enable JavaFX via JVM parameters: `--module-path "projects/net.splitcells.network.distro.javafx/target/lib" --add-modules javafx.controls,javafx.web`
-* [ ] Provide application downloads.
+* [x] Provide application downloads.
     * [x] Create app for Linux.
         * [x] Create zip containing runnable program at `net.splitcells.network.distro.javafx`.
             * [x] Bundle JavaFX files in dedicated folder and enable JavaFX modules.
@@ -214,7 +214,7 @@
     * [x] Clean up upload cache for static website, so it does not cause storage problems.
     * [x] Create download page.
         * [x] Mark Mac version as untested.
-    * [ ] Redeploy software and server.
+    * [x] Redeploy software and server.
 * [x] Deploy default distro application on public server.
     * [x] Implement privacy warning pop up, only for server.
     * [x] Create weekly deployment task.
