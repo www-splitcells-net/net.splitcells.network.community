@@ -1,5 +1,5 @@
 # Get first real world user
-[\#284](https://github.com/www-splitcells-net/net.splitcells.network/issues/284) is the GitHub issue.
+[\#c11](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/11) is the issue.
 ## Goal
 Mārtiņš Avots wants to have a first real word user of the software,
 but before this can be accomplish,
@@ -7,11 +7,12 @@ some things have to be adjusted in the project.
 ## Tasks
 * [ ] Announce project publicly.
     * [ ] Make static website more advertisable.
-        * [ ] Remove `Local Instances` sub menu.
-        * [ ] Fix rendering of graphs (i.e. `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`).
-        * [ ] Fix link at main logo: `https://splitcells.net/net/splitcells/network/hubREADME.html`
-        * [ ] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
+        * [x] Remove `Local Instances` sub menu.
+        * [x] Fix rendering of graphs (i.e. `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`).
+        * [x] Fix link at main logo: `https://splitcells.net/net/splitcells/network/hubREADME.html`
+        * [x] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
         * [ ] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
+        * [ ] Redeploy website.
     * [ ] Create demonstration video for web server.
     * [ ] Create demo video for local users.
     * [ ] Talk to current main contact person.
