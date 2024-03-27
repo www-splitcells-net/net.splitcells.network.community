@@ -57,7 +57,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
                   When a developer wants to edit the data of the filesystem, it would be efficient,
                   if the developer could edit the source files and test the edit without an application restart. -> This is documented.
                 * [x] Provide a FileSystemView for every Cell by default.
-                * [ ] Create Cell version of WebsiteViaJar.
+                * [ ] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
+                    * [ ] ServerService does not work correctly.
+                        * [ ] Does not open port.
+                          `server.listen();` has no effect, although the server config seems to be correct.
+                        * [ ] Does block Dem init.
                 * [ ] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
                 * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
@@ -88,6 +92,15 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Provide unsecured local website for testing.
   -> Not needed.
   Adjustments to the standard website deployment, create a #client good enough for testing.
+* [ ] Create detailed visualization of table structure and their performance.
+    * [ ] Every table, lookup and similar need a unique path. See Discoverable interface.
+      We need a mechanism that ensure the uniqueness. Therefore we need an additional API,
+      where objects register themselves as children with names at a tree structure.
+      An element of such a tree would support the Discoverable interface.
+      In other words, the application should be kind of presentable as a single tree of data.
+    * [ ] Show lookup tables in visualization. Currently only Databases and Solutions are visible.
+    * [ ] Create execution statistics.
+    * [ ] Find out runtime penalty caused by too many look up tables.
 * [ ] Create GUI for web server, where one can access and interact with all tables.
     * [x] Create very simple initial HTML renderer for table.
     * [x] Create complete page renderer for table.

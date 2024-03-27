@@ -34,6 +34,7 @@ some things have to be adjusted in the project.
           * [ ] Make a better description and title for the changelog.
           * [ ] Mark Network documentation as developer documentation.
 * [ ] Consider talking to schools directly.
+* [ ] Encrypt communication to server with certificate from Let's encrypt.
 ## Considerations
 * [ ] Error message are not good for some inputs
     * [ ] Problem definition is incorrect.
