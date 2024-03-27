@@ -59,9 +59,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
                 * [x] Provide a FileSystemView for every Cell by default.
                 * [ ] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
                     * [ ] ServerService does not work correctly.
-                        * [ ] Does not open port.
+                        * [x] Does not open port.
                           `server.listen();` has no effect, although the server config seems to be correct.
-                        * [ ] Does block Dem init.
+                          -> This was caused by a hidden error.
                 * [ ] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
                 * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
