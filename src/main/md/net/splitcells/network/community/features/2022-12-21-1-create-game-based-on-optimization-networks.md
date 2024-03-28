@@ -58,10 +58,11 @@ Games are inherently suitable for this and have the advantage of being advertiza
                   if the developer could edit the source files and test the edit without an application restart. -> This is documented.
                 * [x] Provide a FileSystemView for every Cell by default.
                 * [ ] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
-                    * [ ] ServerService does not work correctly.
+                    * [x] ServerService does not start correctly.
                         * [x] Does not open port.
                           `server.listen();` has no effect, although the server config seems to be correct.
                           -> This was caused by a hidden error.
+                    * [ ] Add all configs and resources to SystemCell.
                 * [ ] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
                 * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
