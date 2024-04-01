@@ -14,7 +14,7 @@
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
         * [x] Make user service reachable via network.
-        * [ ] Start user service on server start automatically.
+        * [x] Start user service on server start automatically.
         * [ ] Build image during build command and execute image during execute command.
           Currently, the build command builds the Java part and the execute command builds the container image.
 * [ ] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,

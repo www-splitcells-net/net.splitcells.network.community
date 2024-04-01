@@ -48,7 +48,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
             * [x] Make entrypoint base an option as well, as it is otherwise hard to declare dependencies between instances of such entry points.
             * [x] Provide file system via cells by default.
-            * [ ] Provide configurations for all modules and thereby understand all requirements.
+            * [x] Provide configurations for all modules and thereby understand all requirements.
                 * [x] New properties should be not be added to interface directly,
                   but should be added via the `Cell#accept` dynamically.
                   For one, we want to avoid bloating the Cell interface.
@@ -57,17 +57,22 @@ Games are inherently suitable for this and have the advantage of being advertiza
                   When a developer wants to edit the data of the filesystem, it would be efficient,
                   if the developer could edit the source files and test the edit without an application restart. -> This is documented.
                 * [x] Provide a FileSystemView for every Cell by default.
-                * [ ] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
+                * [x] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
                     * [x] ServerService does not start correctly.
                         * [x] Does not open port.
                           `server.listen();` has no effect, although the server config seems to be correct.
                           -> This was caused by a hidden error.
-                    * [ ] Add all configs and resources to SystemCell.
-                * [ ] Deprecate original WebsiteViaJar.
+                    * [x] Add all configs and resources to SystemCell.
+                * [x] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
                 * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will not be enforced yet.
                 * [ ] Visualize as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
                   but dynamically.
+            * [ ] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
+              when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
+                * [ ] Use DistroCell.
+                * [ ] Deprecate all old style Distro classes of `net.splitcells.network.distro`.
+                * [ ] Deprecate all old style Distro classes of `net.splitcells.network.martins.avots.distro`.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the start.
         * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the start. -> The class CinDevDistro is used for that.
