@@ -229,6 +229,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
             * [ ] Maybe this is caused by too many lookups?
                 * [ ] LookupColumn
                 * [x] LookupTable -> As there are only LookupTables this does not seem to cause the problem.
+            * [ ] Create statistics about runtime of Databases and Tables excluding the runtime of their subscriptions.
+            * [ ] Find out runtime problems via new Table statistics.
     * [ ] Apply all tests for this only onto complete world instance.
         * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step in a loop.
