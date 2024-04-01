@@ -6,13 +6,13 @@ but before this can be accomplish,
 some things have to be adjusted in the project.
 ## Tasks
 * [ ] Announce project publicly.
-    * [ ] Make static website more advertisable.
+    * [x] Make static website and live server more advertisable.
         * [x] Remove `Local Instances` sub menu.
         * [x] Fix rendering of graphs (i.e. `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`).
         * [x] Fix link at main logo: `https://splitcells.net/net/splitcells/network/hubREADME.html`
         * [x] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
-        * [ ] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
-        * [ ] Redeploy website.
+        * [x] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
+        * [x] Redeploy website.
     * [ ] Create demonstration video for web server.
     * [ ] Create demo video for local users.
     * [ ] Talk to current main contact person.
