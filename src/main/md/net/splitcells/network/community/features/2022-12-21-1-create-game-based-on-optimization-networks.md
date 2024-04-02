@@ -112,15 +112,6 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Provide unsecured local website for testing.
   -> Not needed.
   Adjustments to the standard website deployment, create a #client good enough for testing.
-* [ ] Create detailed visualization of table structure and their performance.
-    * [ ] Every table, lookup and similar need a unique path. See Discoverable interface.
-      We need a mechanism that ensure the uniqueness. Therefore we need an additional API,
-      where objects register themselves as children with names at a tree structure.
-      An element of such a tree would support the Discoverable interface.
-      In other words, the application should be kind of presentable as a single tree of data.
-    * [ ] Show lookup tables in visualization. Currently only Databases and Solutions are visible.
-    * [ ] Create execution statistics.
-    * [ ] Find out runtime penalty caused by too many look up tables.
 * [ ] Create GUI for web server, where one can access and interact with all tables.
     * [x] Create very simple initial HTML renderer for table.
     * [x] Create complete page renderer for table.
@@ -230,7 +221,8 @@ Games are inherently suitable for this and have the advantage of being advertiza
                 * [ ] LookupColumn
                 * [x] LookupTable -> As there are only LookupTables this does not seem to cause the problem.
             * [ ] Create statistics about runtime of Databases and Tables excluding the runtime of their subscriptions.
-            * [ ] Find out runtime problems via new Table statistics.
+                * [ ] Create statistics recorder based on tuple of path of subject, method, type of recording as a string, count and total runtime.
+            * [ ] Find out runtime problems via new Table statistics
     * [ ] Apply all tests for this only onto complete world instance.
         * [ ] Document the reasoning in guidelines for optimization programming.
     * [ ] Support problem instances with more than 1 time step in a loop.
