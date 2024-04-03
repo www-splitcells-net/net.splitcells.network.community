@@ -24,9 +24,7 @@ some things have to be adjusted in the project.
       -> There is currently no effective way to enforce this or to use such a convention and therefore it is not documented.
       If, for instance, there is a need for internationalization of the website's menu as well,
       such a file suffix could be introduced, in order to determine, which language should be used for the menu rendering.
-    * [ ] Create document describing objectives regarding school scheduling.
-        * [ ] Make current objectives document a set of documents.
-        * [ ] Add school scheduling as an additional sub goal, that is used in order to have real world experience.
+    * [ ] Create document describing objectives regarding school scheduling. -> The document is located at `net/splitcells/network/objectives/school-organization-project`.
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
