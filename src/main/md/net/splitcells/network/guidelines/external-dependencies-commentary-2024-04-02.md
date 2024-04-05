@@ -5,6 +5,8 @@
 * [ ] https://research.swtch.com/xz-timeline
 * [ ] Remove Spring Boot dependency.
 * [ ] Create guidelines for dependencies.
+* [ ] [The Open Source Software Supply Chain Isn't REAL!!](https://www.youtube.com/watch?v=yt0S_xN5b94&t=319s&pp=ygUndGhlIG9wZW4gc291cmNlIHN1cHBseSBjaGFpbiBzaW4ndCByZWFs)
+* https://www.softwaremaxims.com/blog/not-a-supplier
 ## Disclaimer no Linux expert
 ## The attack on xz
 >  That is the cause for this commentary.
@@ -18,3 +20,4 @@
 * [ ] Custom adaptable and injectable API ar important. The absent makes dependency problems bigger.
 * [ ] There will not be a fix for such attacks for now,
   but a TODO regarding this in the dependency guidelines is required. 
+* [ ] Limited backward compatibility
