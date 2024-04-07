@@ -25,6 +25,9 @@ some things have to be adjusted in the project.
       If, for instance, there is a need for internationalization of the website's menu as well,
       such a file suffix could be introduced, in order to determine, which language should be used for the menu rendering.
     * [ ] Create document describing objectives regarding school scheduling. -> The document is located at `src/main/md/net/splitcells/network/community/projects/2024-04-06-school-organization-project.de.md` of this repo.
+        * [ ] German version
+        * [ ] English version
+        * [ ] Links to these from `About this site` at personal website.
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
