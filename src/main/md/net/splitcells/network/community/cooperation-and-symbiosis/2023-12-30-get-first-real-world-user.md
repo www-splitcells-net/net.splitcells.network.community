@@ -28,6 +28,7 @@ some things have to be adjusted in the project.
         * [ ] German version
         * [ ] English version
         * [ ] Links to these from `About this site` at personal website.
+        * [ ] Shrink project goals back to initial goals of the past.
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
