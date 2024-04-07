@@ -5,8 +5,14 @@ Anstatt dass Arbeiter für die Herstellung eines Produktes von Anfang bis zum En
 spezialisieren sich Arbeiter stattdessen mehr auf Teile der Wertschöpfungskette.
 Mit der damit höheren Produktivität geht ein erhöhter Koordinationsaufwand einher,
 da Arbeitsschritte in der Regel von einem immer kleiner werdenden Anteil der Arbeiter erledigt werden kann.
-* [ ] Providing optimization capacities to normal users.
+
+Ziel des Projektes ist es eine Software für Nutzer bereitszustellen,
+um Prozesse zu modelieren und zu optimieren.
+* [ ] Describe exemplary aspects of optimization potential.
+    * [ ] Maximize potential of participants by giving them tasks, that fit their skills.
+    * [ ] Consider and balance interests of all participants in a process. Use friday example.
 ## Ziel des Projektes
+
 * [ ] Searching for schools as users
 ## Schulplanung
 * [ ] Wiederaufgreifen eines Studium-Projektes
