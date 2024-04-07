@@ -1,6 +1,8 @@
 # Projekt zur Organization von Schulen
 ## Einführung
-* [ ] An aspect of industrialization is specialization.
+Die Arbeitsteilung ist eine der bekanntesten Aspekte der Industrialisierung.
+Anstatt dass Arbeiter für die Herstellung eines Produktes von Anfang bis zum Ende zuständig sind,
+spezialisieren sich Arbeiter stattdessen mehr auf Teile der Wertschöpfungskette.
 * [ ] Rising cost of communication between specialist and the rise of IT.
 * [ ] Providing optimization capacities to normal users.
 ## Ziel des Projektes
