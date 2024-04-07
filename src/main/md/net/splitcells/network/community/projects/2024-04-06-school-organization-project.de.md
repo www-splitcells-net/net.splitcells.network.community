@@ -1,9 +1,10 @@
 # Projekt zur Organization von Schulen
-## Einführung
+## Einleitung
 Die Arbeitsteilung ist eine der bekanntesten Aspekte der Industrialisierung.
 Anstatt dass Arbeiter für die Herstellung eines Produktes von Anfang bis zum Ende zuständig sind,
 spezialisieren sich Arbeiter stattdessen mehr auf Teile der Wertschöpfungskette.
-* [ ] Rising cost of communication between specialist and the rise of IT.
+Mit der damit höheren Produktivität geht ein erhöhter Koordinationsaufwand einher,
+da Arbeitsschritte in der Regel von einem immer kleiner werdenden Anteil der Arbeiter erledigt werden kann.
 * [ ] Providing optimization capacities to normal users.
 ## Ziel des Projektes
 * [ ] Searching for schools as users
