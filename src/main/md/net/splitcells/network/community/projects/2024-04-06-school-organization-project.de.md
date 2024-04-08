@@ -4,15 +4,17 @@ Die Arbeitsteilung ist eine der bekanntesten Aspekte der Industrialisierung.
 Anstatt dass Arbeiter für die Herstellung eines Produktes von Anfang bis zum Ende zuständig sind,
 spezialisieren sich Arbeiter stattdessen mehr auf Teile der Wertschöpfungskette.
 Mit der damit höheren Produktivität geht ein erhöhter Koordinationsaufwand einher,
-da Arbeitsschritte in der Regel von einem immer kleiner werdenden Anteil der Arbeiter erledigt werden kann.
+da jeder Arbeitsschritt für sich von einem immer kleiner werdenden Anteil der Arbeiter erledigt werden kann.
+Der anwachsende Koordinationsaufwand führte zu einer neuen Branche der mechanisierten Datenverarbeitung,
+um mit der anwachsenden Datenverarbeitung mitzuhalten.
 
-Ziel des Projektes ist es eine Software für Nutzer bereitszustellen,
-um Prozesse zu modelieren und zu optimieren.
-* [ ] Describe exemplary aspects of optimization potential.
-    * [ ] Maximize potential of participants by giving them tasks, that fit their skills.
-    * [ ] Consider and balance interests of all participants in a process. Use friday example.
+Im Geiste dieser Arbeitsteilung ist das Ziel des Projektes, eine gemeinnützige Software bereitzustellen,
+mit welcher fachkundige Nutzer Prozesspläne modellieren und optimieren. 
+Die Software stellt dazu spezialisierte Modellierungs und Optimierungs-Kapazitäten verständlich bereit.
 ## Ziel des Projektes
-
+* [ ] Describe exemplary aspects of optimization potential.
+  * [ ] Maximize potential of participants by giving them tasks, that fit their skills.
+  * [ ] Consider and balance interests of all participants in a process. Use friday example.
 * [ ] Searching for schools as users
 ## Schulplanung
 * [ ] Wiederaufgreifen eines Studium-Projektes
