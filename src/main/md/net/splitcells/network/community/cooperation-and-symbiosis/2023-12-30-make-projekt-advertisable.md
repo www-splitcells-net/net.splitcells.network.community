@@ -1,9 +1,7 @@
-# Get first real world user
+# Make project advertisable.
 [\#c11](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/11) is the issue.
 ## Goal
-Mārtiņš Avots wants to have a first real word user of the software,
-but before this can be accomplish,
-some things have to be adjusted in the project.
+The goal is, to create some advertisement material and to do some polishing work.
 ## Tasks
 * [ ] Announce project publicly.
     * [x] Make static website and live server more advertisable.
@@ -52,3 +50,7 @@ some things have to be adjusted in the project.
     * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
 ## Ideas
 * [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
+* [ ] Allow the user to persist his projects.
+* [ ] Enable the user to define parts of the solution manually.
+* [ ] Implement school course scheduling.
+* [ ] Implement sport lesson assignments.
