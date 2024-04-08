@@ -1,4 +1,4 @@
-# Make project advertisable.
+# Make project advertisable
 [\#c11](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/11) is the issue.
 ## Goal
 The goal is, to create some advertisement material and to do some polishing work.
