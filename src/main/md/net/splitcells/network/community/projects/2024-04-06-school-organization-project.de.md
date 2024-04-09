@@ -12,7 +12,7 @@ Im Geiste dieser Arbeitsteilung ist das Ziel des Projektes, eine gemeinnützige 
 mit welcher fachkundige Nutzer Prozesspläne modellieren und optimieren. 
 Die Software stellt dazu spezialisierte Modellierungs und Optimierungs-Kapazitäten verständlich bereit.
 ## Ziel des Projektes
-An Schulen kommen immer wiederkehrende Planungsaufgaben,
+An Schulen gibt es immer wiederkehrende Planungsaufgaben,
 wie das Planen der mündlichen Prüfung für das Abitur,
 welche in einem zeitlichen Rahmen durchgeführt werden soll.
 
@@ -21,7 +21,7 @@ durch welche Prüfer eine Prüfung gehalten wird,
 sondern auch, wo und wann diese stattfindet.
 Auch ein Raumwechsel zwischen den hintereinanderliegenden Prüfungen eines Prüfers will vermieden werden und
 die Zeit zwischen den mündlichen Prüfungen eines Schülers sollte auch maximiert werden.
-Kurzum müssen einiges an Interessen ausgeglichen werden.
+Kurzum müssen eine Menge an Interessen ausgeglichen werden.
 
 Das Ziel ist es, mit der hier bereitgestellten Software Schulen bei Planungsüroblemen zu unterstützen.
 Dabei beschränkt sich das Projekt nicht nur auf den jetzigen Stand der Software,
