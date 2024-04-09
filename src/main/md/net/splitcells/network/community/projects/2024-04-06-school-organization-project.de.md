@@ -25,7 +25,7 @@ Kurzum müssen eine Menge an Interessen ausgeglichen werden.
 
 Das Ziel ist es, mit der hier bereitgestellten Software Schulen bei Planungsüroblemen zu unterstützen.
 Dabei beschränkt sich das Projekt nicht nur auf den jetzigen Stand der Software,
-sondern geht hier auch darum, das Programm so zu erweitern,
+sondern geht es hier auch darum, das Programm so zu erweitern,
 dass dieses ein vernünftiges Maß an Nutzbarkeit erreicht.
 Da die Entwicklungs-Kapazitäten wie alles im Leben beschränkt sind,
 gilt hier die wohlbekannte Devise: Wer zuerst kommt, malt zuerst.
