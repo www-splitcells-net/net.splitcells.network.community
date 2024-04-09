@@ -27,6 +27,8 @@ Das Ziel ist es, mit der hier bereitgestellten Software Schulen bei Planungsüro
 Dabei beschränkt sich das Projekt nicht nur auf den jetzigen Stand der Software,
 sondern geht hier auch darum, das Programm so zu erweitern,
 dass dieses ein vernünftiges Maß an Nutzbarkeit erreicht.
+Da die Entwicklungs-Kapazitäten wie alles im Leben beschränkt sind,
+gilt hier die wohlbekannte Devise: Wer zuerst kommt, malt zuerst.
 ## Schulplanung
 * [ ] Wiederaufgreifen eines Studium-Projektes
 * [ ] Demonstration: Plannung von Kolloquien bzw. mündlichen Prüfungen: http://live.splitcells.net/net/splitcells/gel/ui/editor.html
