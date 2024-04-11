@@ -29,6 +29,8 @@ The goal is, to create some advertisement material and to do some polishing work
         * [ ] Shrink project goals back to initial goals of the past.
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
+        * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
+          Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
         * [x] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
         * [x] Make a better description and title for the changelog.
@@ -37,6 +39,7 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
 ## Considerations
+* [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
     * [ ] Problem definition is incorrect.
     * [ ] Demand data is incorrect.
