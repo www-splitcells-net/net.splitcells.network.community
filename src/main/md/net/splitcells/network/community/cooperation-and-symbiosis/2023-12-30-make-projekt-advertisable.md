@@ -30,9 +30,10 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
     * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
-          * [ ] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
-          * [ ] Make a better description and title for the changelog.
-          * [ ] Mark Network documentation as developer documentation.
+        * [x] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
+        * [x] Make a better description and title for the changelog.
+        * [ ] Mark Network documentation as developer documentation.
+          -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
 ## Considerations
@@ -56,5 +57,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Correct file name of `school-course-scheduling-problem.txt` according to its content.
     * [ ] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.+
       Consider `ColloquiumPlanningTest` for inspirations.
+    * [ ] Limit size of text editor regardless of its content.
+    * [ ] Limit size of Tabulator tables regardless of its content. Use paging.
 * [ ] Implement school course scheduling.
 * [ ] Implement sport lesson assignments.
