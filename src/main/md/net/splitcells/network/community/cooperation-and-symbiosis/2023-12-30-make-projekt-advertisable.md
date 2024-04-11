@@ -52,5 +52,9 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
 * [ ] Allow the user to persist his projects.
 * [ ] Enable the user to define parts of the solution manually.
+* [ ] Improve handling of colloquium planning problem.  
+    * [ ] Correct file name of `school-course-scheduling-problem.txt` according to its content.
+    * [ ] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.+
+      Consider `ColloquiumPlanningTest` for inspirations.
 * [ ] Implement school course scheduling.
 * [ ] Implement sport lesson assignments.
