@@ -1,4 +1,4 @@
-# Projekt zur Organization von Schulen
+# Projekt zur Planungs-Unterstützung von Schulen
 ## Einleitung
 Die Arbeitsteilung ist eine der bekanntesten Aspekte der Industrialisierung.
 Anstatt dass Arbeiter für die Herstellung eines Produktes von Anfang bis zum Ende zuständig sind,
