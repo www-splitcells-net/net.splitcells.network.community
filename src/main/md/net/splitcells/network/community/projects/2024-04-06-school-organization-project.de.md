@@ -42,11 +42,12 @@ des Server-Programmes bereitgestellt.
 Hiermit kann dieses Programm nicht nur online sondern auch lokal und ohne Internet-Anbindung genutzt werden.
 
 Zurzeit wird zusätzlich zur Kolloquiums-Planung an zwei weiteren Organisations-Aufgaben gearbeitet.
-Zum einen wird eine Sportkurs-Planung erstellt,
+Zum einen wird eine Sportkurs-Planung gearbeitet,
 bei der unter anderem festgestellt wird,
 welche Sportkurse überhaupt zustande kommen.
 Zum anderen wird an dem Erstellen eines vollständigen Stundenplans gewerkelt.
 Bei diesem wird festgelegt, welcher Schüler wann an welchen Unterrichtsstunden teilnimmt und
 von welchen Lehrkräften diese gehalten werden.
 ## Details
-Das Programm wird in Englisch unter einer Open-Source-Lizenz durch Mārtiņš Avots gemeinnützig entwickelt.
+Das Programm steht in Englisch zur Verfügung und
+wird unter einer Open-Source-Lizenz durch Mārtiņš Avots gemeinnützig entwickelt.

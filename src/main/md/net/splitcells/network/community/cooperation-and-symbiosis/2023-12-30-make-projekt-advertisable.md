@@ -24,7 +24,7 @@ The goal is, to create some advertisement material and to do some polishing work
       such a file suffix could be introduced, in order to determine, which language should be used for the menu rendering.
     * [ ] Create document describing objectives regarding school scheduling. -> The document is located at `src/main/md/net/splitcells/network/community/projects/2024-04-06-school-organization-project.de.md` of this repo.
         * [x] German version
-        * [ ] English version
+        * [x] English version
         * [ ] Links to these from `About this site` at personal website.
         * [ ] Shrink project goals back to initial goals of the past.
     * [ ] Create help page for editor.
