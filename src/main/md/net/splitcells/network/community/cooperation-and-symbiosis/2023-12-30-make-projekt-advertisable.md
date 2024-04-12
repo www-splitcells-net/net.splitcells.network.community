@@ -59,7 +59,7 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Enable the user to define parts of the solution manually.
 * [ ] Improve handling of colloquium planning problem.  
     * [ ] Correct file name of `school-course-scheduling-problem.txt` according to its content.
-    * [ ] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.+
+    * [x] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.+
       Consider `ColloquiumPlanningTest` for inspirations.
     * [ ] Limit size of text editor regardless of its content.
     * [ ] Limit size of Tabulator tables regardless of its content. Use paging.
