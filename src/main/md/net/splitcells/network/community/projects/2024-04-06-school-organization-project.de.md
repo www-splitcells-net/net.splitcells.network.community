@@ -15,7 +15,6 @@ Die Software stellt dazu spezialisierte Modellierungs und Optimierungs-Kapazitä
 An Schulen gibt es immer wiederkehrende Planungsaufgaben,
 wie das Planen der mündlichen Prüfung für das Abitur,
 welche in einem zeitlichen Rahmen durchgeführt werden soll.
-
 Dabei muss nicht nur bestimmt werden,
 durch welche Prüfer eine Prüfung gehalten wird,
 sondern auch, wo und wann diese stattfindet.

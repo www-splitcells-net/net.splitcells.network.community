@@ -12,3 +12,20 @@ In the spirit of this division of labor,
 the goal of the project is to provide a non-profit software,
 that domain experts use to model and optimize schedules.
 For this, the software provides specialized modeling and optimization capacities in an understandable manner.
+## Project's objectives
+There are always recurring planning tasks at schools,
+such as planning a colloquium,
+which has to be carried out within a given time frame.
+
+Not only must it be determined
+by which examiners a test is held,
+but also where and when these take place.
+A change of rooms between an examiner's consecutive trials should be avoided, in order to save time.
+Maximizing the time between a student's exams reduces their stress.
+In short, a multitude of interests have to be balanced.
+
+The aim is to use the provided software to support schools with planning problems.
+The project is not only limited to the current status of the software,
+but also about expanding the program and making it more usable.
+Since development capacities are limited, like everything in life,
+the well-known motto applies here: First Come, First Served
