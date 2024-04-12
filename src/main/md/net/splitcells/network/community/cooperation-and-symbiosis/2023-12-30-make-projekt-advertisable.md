@@ -22,11 +22,11 @@ The goal is, to create some advertisement material and to do some polishing work
       -> There is currently no effective way to enforce this or to use such a convention and therefore it is not documented.
       If, for instance, there is a need for internationalization of the website's menu as well,
       such a file suffix could be introduced, in order to determine, which language should be used for the menu rendering.
-    * [ ] Create document describing objectives regarding school scheduling. -> The document is located at `src/main/md/net/splitcells/network/community/projects/2024-04-06-school-organization-project.de.md` of this repo.
+    * [x] Create document describing objectives regarding school scheduling. -> The document is located at `src/main/md/net/splitcells/network/community/projects/2024-04-06-school-organization-project.de.md` of this repo.
         * [x] German version
         * [x] English version
-        * [ ] Links to these from `About this site` at personal website.
-        * [ ] Shrink project goals back to initial goals of the past.
+        * [x] Links to these from `About this site` at personal website.
+        * [x] Shrink project goals back to initial goals of the past.
     * [ ] Create help page for editor.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
         * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
