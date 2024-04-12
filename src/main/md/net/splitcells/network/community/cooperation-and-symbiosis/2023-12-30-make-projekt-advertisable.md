@@ -32,10 +32,10 @@ The goal is, to create some advertisement material and to do some polishing work
         * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
           Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
           Consider it the main thing, representing the project for users like a virtual assistant.
-    * [ ] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
+    * [x] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
         * [x] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
         * [x] Make a better description and title for the changelog.
-        * [ ] Mark Network documentation as developer documentation.
+        * [x] Mark Network documentation as developer documentation.
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
