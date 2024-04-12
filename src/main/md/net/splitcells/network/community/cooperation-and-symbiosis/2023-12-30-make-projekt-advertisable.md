@@ -54,6 +54,8 @@ The goal is, to create some advertisement material and to do some polishing work
       the dedicated elements' content are deleted.
     * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
 ## Ideas
+* [ ] Improve menu and logo links.
+  Navigating to the front page is quite hard, when one is knees deep in the website.
 * [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
 * [ ] Allow the user to persist his projects.
 * [ ] Enable the user to define parts of the solution manually.
