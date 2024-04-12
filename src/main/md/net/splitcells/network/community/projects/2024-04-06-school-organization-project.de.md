@@ -21,22 +21,33 @@ durch welche Prüfer eine Prüfung gehalten wird,
 sondern auch, wo und wann diese stattfindet.
 Auch ein Raumwechsel zwischen den hintereinanderliegenden Prüfungen eines Prüfers will vermieden werden und
 die Zeit zwischen den mündlichen Prüfungen eines Schülers sollte auch maximiert werden.
-Kurzum müssen eine Menge an Interessen ausgeglichen werden.
+Kurzum muss eine Vielzahl an Interessen ausgeglichen werden.
 
-Das Ziel ist es, mit der hier bereitgestellten Software Schulen bei Planungsüroblemen zu unterstützen.
+Das Ziel ist es, mit der hier bereitgestellten Software Schulen bei Planungsproblemen zu unterstützen.
 Dabei beschränkt sich das Projekt nicht nur auf den jetzigen Stand der Software,
 sondern geht es hier auch darum, das Programm so zu erweitern,
 dass dieses ein vernünftiges Maß an Nutzbarkeit erreicht.
 Da die Entwicklungs-Kapazitäten wie alles im Leben beschränkt sind,
 gilt hier die wohlbekannte Devise: Wer zuerst kommt, malt zuerst.
 ## Schulplanung
-* [ ] Wiederaufgreifen eines Studium-Projektes
-* [ ] Demonstration: Plannung von Kolloquien bzw. mündlichen Prüfungen: http://live.splitcells.net/net/splitcells/gel/ui/editor.html
-* [ ] Zusätzliche Planungs-Aufgaben in Bearbeitung
-    * [ ] Rein theoretischer Natur
-    * [ ] Erstellen eines Stundenplanes
-    * [ ] Zuweisung von Schülern zu Sportkursen
+Während eines Informatik-Studiums wurden mehrere Optimierer für Schulplanungs-Aufgaben erstellt.
+In diesem Projekt werden diese wiederhergestellt und mit neuen Funktionen erweitert.
+
+Auf dem [Live-Server](http://live.splitcells.net/net/splitcells/gel/ui/editor.html) wird dazu
+eine Demonstration bereitgestellt,
+bei der eine Zeit- und Raum-Planung für eine fiktive mündliche Prüfung im Abitur erstellt wird.
+Der Live-Server zeigt damit,
+wie eine Optimierung in der Cloud durchgeführt werden könnte.
+Es wird auch ein [Download](https://splitcells.net/net/splitcells/network/distro/downloads/index.html)
+des Server-Programmes bereitgestellt.
+Hiermit kann dieses Programm nicht nur online sondern auch lokal und ohne Internet-Anbindung genutzt werden.
+
+Zurzeit wird zusätzlich zur Kolloquiums-Planung an zwei weiteren Organisations-Aufgaben gearbeitet.
+Zum einen wird eine Sportkurs-Planung erstellt,
+bei der unter anderem festgestellt wird,
+welche Sportkurse überhaupt zustande kommen.
+Zum anderen wird an dem Erstellen eines vollständigen Stundenplans gewerkelt.
+Bei diesem wird festgelegt, welcher Schüler wann an welchen Unterrichtsstunden teilnimmt und
+von welchen Lehrkräften diese gehalten werden.
 ## Details
-* [ ] Software in English
-* [ ] Open Source
-* [ ] Gemeinnütziges Projekt einer Privatperson
+Das Programm wird in Englisch unter einer Open-Source-Lizenz durch Mārtiņš Avots gemeinnützig entwickelt.
