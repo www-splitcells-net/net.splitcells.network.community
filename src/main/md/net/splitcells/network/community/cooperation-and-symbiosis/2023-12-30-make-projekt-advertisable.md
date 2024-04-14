@@ -59,11 +59,21 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
 * [ ] Allow the user to persist his projects.
 * [ ] Enable the user to define parts of the solution manually.
-* [ ] Improve handling of colloquium planning problem.  
+* [ ] Improve handling of colloquium planning problem.
+    * [ ] Create real GUI worthy a program being used by users.
+      Currently, the editor's GUI is more like a form,
+      because in its current state it is more a proof of concept than a real GUI.
+        * [ ] Transform editor to a classic IDE with tabs for each major input data.
+          Use current error text box as console.
+            * [ ] Do not donate messages in first text box an error message by default.
+              Maybe color the text box in the error case instead.
+              Coloring is important in order to get the users attention.
+        * [ ] Limit size of text editor regardless of its content.
+        * [ ] Limit size of Tabulator tables regardless of its content. Use paging.
+    * [ ] Solve the problem completely.
+    * [ ] Create a demo button, where the visualization of a faulty solution is demonstrated.
     * [ ] Correct file name of `school-course-scheduling-problem.txt` according to its content.
-    * [x] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.+
+    * [x] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.
       Consider `ColloquiumPlanningTest` for inspirations.
-    * [ ] Limit size of text editor regardless of its content.
-    * [ ] Limit size of Tabulator tables regardless of its content. Use paging.
 * [ ] Implement school course scheduling.
 * [ ] Implement sport lesson assignments.
