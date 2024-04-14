@@ -4,7 +4,7 @@
 ----
 # AssertJ considered unfit
 AssertJ is well-know in the Java world for providing fluent assertions.
-It makes it easy and understandable way to write assertions:
+It it is an easy and understandable way to write assertions:
 ````
 [...]
 import static org.assertj.core.api.Assertions.assertThat;
