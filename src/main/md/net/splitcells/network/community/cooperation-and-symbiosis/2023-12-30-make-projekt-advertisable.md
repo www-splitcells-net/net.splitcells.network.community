@@ -70,10 +70,14 @@ The goal is, to create some advertisement material and to do some polishing work
               Coloring is important in order to get the users attention.
         * [ ] Limit size of text editor regardless of its content.
         * [ ] Limit size of Tabulator tables regardless of its content. Use paging.
+        * [ ] Create and implement the concept of page commands. These need to be visible on mobile view as well.
     * [ ] Solve the problem completely.
     * [ ] Create a demo button, where the visualization of a faulty solution is demonstrated.
     * [ ] Correct file name of `school-course-scheduling-problem.txt` according to its content.
     * [x] Re enable `SolutionCalculatorTest#testDemonstrationExample()`.
       Consider `ColloquiumPlanningTest` for inspirations.
+    * [ ] Always make main and front menu accessible.
+    * [ ] Document the concept of front menu in front menu document.
+    * [ ] Document the concept of main menu in main menu document.
 * [ ] Implement school course scheduling.
 * [ ] Implement sport lesson assignments.
