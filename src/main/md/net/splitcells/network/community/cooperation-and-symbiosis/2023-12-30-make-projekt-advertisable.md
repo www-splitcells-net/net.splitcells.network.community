@@ -78,6 +78,7 @@ The goal is, to create some advertisement material and to do some polishing work
       Consider `ColloquiumPlanningTest` for inspirations.
     * [ ] Always make main and front menu accessible.
     * [ ] Document the concept of front menu in front menu document.
+      It is important to understand, why the distinction between front and main menu exists.
     * [ ] Document the concept of main menu in main menu document.
 * [ ] Implement school course scheduling.
 * [ ] Implement sport lesson assignments.
