@@ -39,6 +39,10 @@ The goal is, to create some advertisement material and to do some polishing work
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
+    * Use https://github.com/shred/acme4j
+    * [ ] Reuse certificates across restarts.
+    * [ ] Add ACME-Client to webserver as an extension dynamically.
+      Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
