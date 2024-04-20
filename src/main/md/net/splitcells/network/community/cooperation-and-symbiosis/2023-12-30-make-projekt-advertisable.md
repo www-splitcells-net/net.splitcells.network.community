@@ -44,6 +44,9 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
     * [ ] Persist access data via H2 database.
+    * [ ] Log ACME protocol progress for easier debugging.
+    * [ ] Improve CommonMark log for properties.
+    * [ ] Do not show stacktrace if an invalid path is requested from webserver.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
