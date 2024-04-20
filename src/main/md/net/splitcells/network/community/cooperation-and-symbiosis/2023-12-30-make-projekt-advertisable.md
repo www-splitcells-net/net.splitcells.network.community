@@ -47,6 +47,8 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Log ACME protocol progress for easier debugging.
     * [ ] Improve CommonMark log for properties.
     * [ ] Do not show stacktrace if an invalid path is requested from webserver.
+    * [ ] Only log once, if a path outside of `/net/splitcells/**` is requested at the webserver,
+      in order to minimize logging.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
