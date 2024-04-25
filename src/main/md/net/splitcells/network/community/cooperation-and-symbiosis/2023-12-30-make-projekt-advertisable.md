@@ -45,9 +45,12 @@ The goal is, to create some advertisement material and to do some polishing work
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
     * [ ] Persist access data via H2 database.
     * [ ] Log ACME protocol progress for easier debugging.
-    * [ ] Improve CommonMark log for properties.
-    * [ ] Do not show stacktrace if an invalid path is requested from webserver.
-    * [ ] Only log once, if a path outside of `/net/splitcells/**` is requested at the webserver,
+        * [ ] Improve CommonMark log for properties for normal users.
+        * [ ] Use compressed logging on server, so that one line represents one log message.
+        * [ ] Do not show stacktrace if an invalid path is requested from webserver.
+        * [ ] Only log once, if a path outside of `/net/splitcells/**` is requested at the webserver,
+        * [x] Correct rolling log file path.
+        * [ ] Ensure that time based rolling is working.
       in order to minimize logging.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
