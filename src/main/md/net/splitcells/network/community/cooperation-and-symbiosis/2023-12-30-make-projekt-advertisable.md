@@ -52,7 +52,8 @@ The goal is, to create some advertisement material and to do some polishing work
           -> This will be done, if there is a real need. For now this is just a nice to have.
         * [x] Correct rolling log file path.
         * [ ] Ensure that time based rolling is working.
-        * [ ] Create shell command to easily download logs from server over SSH.
+        * [x] Create shell command to easily download logs from server over SSH.
+          -> `ssh.download.file --remote-file-address martins-avots@live.splitcells.net:home/martins-avots/.local/state/net.splitcells.martins.avots.distro/.local/net.splitcells.martins.avots.distro.LiveDistro/logs --target-file=./logs`
       in order to minimize logging.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
