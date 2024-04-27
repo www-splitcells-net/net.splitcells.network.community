@@ -41,21 +41,21 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
     * Use https://github.com/shred/acme4j
     * [ ] Reuse certificates across restarts.
-    * [ ] Add ACME-Client to webserver as an extension dynamically.
+    * [x] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
     * [ ] Persist access data via H2 database.
-    * [ ] Log ACME protocol progress for easier debugging.
+    * [x] Log ACME protocol progress for easier debugging.
         * [x] Improve CommonMark log for properties for normal users.
         * [x] Use compressed logging on server, so that one line represents one log message.
         * [x] Do not show stacktrace if an invalid path is requested from webserver.
         * [x] Only log once, if a path outside of `/net/splitcells/**` is requested at the webserver.
           -> This will be done, if there is a real need. For now this is just a nice to have.
         * [x] Correct rolling log file path.
-        * [ ] Ensure that time based rolling is working.
+        * [x] Ensure that time based rolling is working. -> This is not important for now.
         * [x] Create shell command to easily download logs from server over SSH.
           -> `ssh.download.file --remote-file-address martins-avots@live.splitcells.net:.local/state/net.splitcells.martins.avots.distro/.local/net.splitcells.martins.avots.distro.LiveDistro/logs/execution-current.txt --target-file=./execution-current.txt`
-        * [ ] Ensure that `waiting for` messages are logged. Also log that the number of status checks are logged as well.
-        * [ ] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
+        * [x] Ensure that `waiting for` messages are logged. Also log that the number of status checks are logged as well.
+        * [x] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
       in order to minimize logging.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
