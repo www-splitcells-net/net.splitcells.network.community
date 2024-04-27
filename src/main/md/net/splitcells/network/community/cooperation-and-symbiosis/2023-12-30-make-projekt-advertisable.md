@@ -28,6 +28,9 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Links to these from `About this site` at personal website.
         * [x] Shrink project goals back to initial goals of the past.
     * [ ] Create help page for editor.
+        * [ ] Create documentation guidelines.
+            * [ ] Each document is specific to certain groups.
+            * [ ] All documentation structure is centered around most uninformed user.
         * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
         * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
           Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
@@ -43,10 +46,9 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Reuse certificates across restarts.
     * [x] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
-    * [ ] Persist access data via H2 database.
-        * [ ] Create portable file storage concept:
-            * [ ] Use local file system for bootstrapping like the database file.
-            * [ ] Any other file is stored inside database.
+    * [ ] Persist certificates and user keys.
+        * [ ] Create portable file storage concept.
+        * [ ] Implement portable file storage concept.
     * [x] Log ACME protocol progress for easier debugging.
         * [x] Improve CommonMark log for properties for normal users.
         * [x] Use compressed logging on server, so that one line represents one log message.
