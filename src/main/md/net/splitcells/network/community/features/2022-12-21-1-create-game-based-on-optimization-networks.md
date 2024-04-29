@@ -290,7 +290,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Write article explaining and demonstrating this. -> This was moved to an other ticket.
 
 ## Ideas For Future Tickets
-
+* [ ] Use certain easy to create medias.
+    * [ ] Draw images in form of music notes on sheets: https://www.youtube.com/watch?v=-ICh9zhr87Y
+    * [ ] Use piezo contact microphones to create environment etc. sounds via contact on metals and heating these up: https://www.youtube.com/watch?v=_anGFyEfOpU
 * [ ] Create constraint renderer.
 * [ ] Create constraint editor.
 * [ ] Create table editor.
