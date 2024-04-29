@@ -62,7 +62,7 @@ The goal is, to create some advertisement material and to do some polishing work
           -> `ssh.download.file --remote-file-address martins-avots@live.splitcells.net:.local/state/net.splitcells.martins.avots.distro/.local/net.splitcells.martins.avots.distro.LiveDistro/logs/execution-current.txt --target-file=./execution-current.txt`
         * [x] Ensure that `waiting for` messages are logged. Also log that the number of status checks are logged as well.
         * [x] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
-      in order to minimize logging.
+    * [ ] Make domain and contact email configurable.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
