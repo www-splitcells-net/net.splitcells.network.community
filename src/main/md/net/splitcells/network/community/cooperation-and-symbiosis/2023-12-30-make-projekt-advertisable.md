@@ -63,6 +63,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Ensure that `waiting for` messages are logged. Also log that the number of status checks are logged as well.
         * [x] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
     * [ ] Make domain and contact email configurable.
+    * [ ] Make ACME-Server configurable.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
