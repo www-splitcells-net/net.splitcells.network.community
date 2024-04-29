@@ -42,12 +42,13 @@ The goal is, to create some advertisement material and to do some polishing work
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
-    * Use https://github.com/shred/acme4j
+    * [x] Use https://github.com/shred/acme4j
+    * [ ] Enable SSL.
     * [ ] Reuse certificates across restarts.
     * [x] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
     * [ ] Persist certificates and user keys.
-        * [ ] Create portable file storage concept.
+        * [x] Create portable file storage concept.
         * [ ] Implement portable file storage concept.
     * [x] Log ACME protocol progress for easier debugging.
         * [x] Improve CommonMark log for properties for normal users.
