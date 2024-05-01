@@ -43,8 +43,8 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Consider talking to schools directly.
 * [ ] Encrypt communication to server with certificate from Let's encrypt.
     * [x] Use https://github.com/shred/acme4j
-    * [ ] Enable SSL.
-    * [ ] Reuse certificates across restarts.
+    * [x] Enable SSL.
+    * [x] Reuse certificates across restarts.
     * [x] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
     * [ ] Persist certificates and user keys.
@@ -62,8 +62,10 @@ The goal is, to create some advertisement material and to do some polishing work
           -> `ssh.download.file --remote-file-address martins-avots@live.splitcells.net:.local/state/net.splitcells.martins.avots.distro/.local/net.splitcells.martins.avots.distro.LiveDistro/logs/execution-current.txt --target-file=./execution-current.txt`
         * [x] Ensure that `waiting for` messages are logged. Also log that the number of status checks are logged as well.
         * [x] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
-    * [ ] Make domain and contact email configurable.
-    * [ ] Make ACME-Server configurable.
+    * [x] Make domain and contact email configurable.
+    * [x] Make ACME-Server configurable.
+    * [ ] Use standard SSL port 443 in order to easy usage via browser.
+    * [ ] Use self signed certificate for bootstrap step.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
