@@ -64,7 +64,8 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Server is probably not waiting long enough for Let'sEncrypt to do its challenge.
     * [x] Make domain and contact email configurable.
     * [x] Make ACME-Server configurable.
-    * [ ] Use standard SSL port 443 in order to easy usage via browser.
+    * [x] Use standard SSL port 443 in order to easy usage via browser.
+      -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
     * [ ] Use self signed certificate for bootstrap step.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
