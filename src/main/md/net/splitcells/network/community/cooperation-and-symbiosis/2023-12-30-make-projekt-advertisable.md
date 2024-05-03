@@ -66,7 +66,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Make ACME-Server configurable.
     * [x] Use standard SSL port 443 in order to easy usage via browser.
       -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
-    * [ ] Use self signed certificate for bootstrap step.
+    * [x] Use self signed certificate for bootstrap step.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
