@@ -71,15 +71,20 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Use self signed certificate for bootstrap step.
 * [ ] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
   Otherwise, it could be hard to convey the goal of the project to none IT users.
-    * [ ] Add actions to menu, in order to save space.
+    * [x] Add actions to menu, in order to save space.
     * [ ] Show menu in mobile view.
     * [ ] Create a editor with tabs for input and results.
     * [ ] Create a console for output messages.
     * [ ] Make row and column definition of output table configurable. 
     * [ ] The default example problem (colloquium problem) should return a timetable.
-    * [ ] Move documentation to secondary column.
+    * [x] Move documentation to secondary column.
     * [ ] Show secondary column of editor by default, but still provide a fullscreen view.
       In other words, show the secondary column of the editor and simultaneously avoid wasting space by the background.
+    * [ ] Point to things via a modeless message window, that could be done by the users at start of editor.
+      This is for users, that have no idea, what can be done with the editor. 
+        * [ ] Create an support project, that has guidelines on how to provide support in app to the users via
+          non interactive assistant.
+          In the future, there may be dedicated code for that.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
