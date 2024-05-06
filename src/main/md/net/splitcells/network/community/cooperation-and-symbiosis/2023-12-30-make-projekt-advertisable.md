@@ -85,8 +85,11 @@ The goal is, to create some advertisement material and to do some polishing work
         * [ ] Create an support project, that has guidelines on how to provide support in app to the users via
           non interactive assistant.
           In the future, there may be dedicated code for that.
-    * [ ] Try out editor and find visual errors.
-    * [ ] Create visual indication, when error or result tabs are updated.
+    * [x] Try out editor and find visual errors.
+    * [x] Create visual indication important tabs, that were updated.
+        * [x] Errors
+        * [x] Solution
+    * [x] Indicate via button style, which tab is currently opened.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
