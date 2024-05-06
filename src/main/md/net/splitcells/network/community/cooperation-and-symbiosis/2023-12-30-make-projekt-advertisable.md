@@ -74,6 +74,9 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Create a console for output messages.
     * [ ] Make row and column definition of output table configurable. 
     * [ ] The default example problem (colloquium problem) should return a timetable.
+    * [ ] Move documentation to secondary column.
+    * [ ] Show secondary column of editor by default, but still provide a fullscreen view.
+      In other words, show the secondary column of the editor and simultaneously avoid wasting space by the background.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
