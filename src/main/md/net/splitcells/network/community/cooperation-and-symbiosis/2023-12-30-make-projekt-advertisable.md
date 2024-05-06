@@ -73,18 +73,20 @@ The goal is, to create some advertisement material and to do some polishing work
   Otherwise, it could be hard to convey the goal of the project to none IT users.
     * [x] Add actions to menu, in order to save space.
     * [ ] Show menu in mobile view.
-    * [ ] Create a editor with tabs for input and results.
-    * [ ] Create a console for output messages.
+    * [x] Create a editor with tabs for input and results.
+    * [x] Create a console for output messages. -> The console is now shown like the input as a tab in the editor. 
     * [ ] Make row and column definition of output table configurable. 
     * [ ] The default example problem (colloquium problem) should return a timetable.
     * [x] Move documentation to secondary column.
-    * [ ] Show secondary column of editor by default, but still provide a fullscreen view.
+    * [x] Show secondary column of editor by default, but still provide a fullscreen view.
       In other words, show the secondary column of the editor and simultaneously avoid wasting space by the background.
     * [ ] Point to things via a modeless message window, that could be done by the users at start of editor.
       This is for users, that have no idea, what can be done with the editor. 
         * [ ] Create an support project, that has guidelines on how to provide support in app to the users via
           non interactive assistant.
           In the future, there may be dedicated code for that.
+    * [ ] Try out editor and find visual errors.
+    * [ ] Create visual indication, when error or result tabs are updated.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
