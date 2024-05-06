@@ -41,7 +41,8 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Mark Network documentation as developer documentation.
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
-* [ ] Encrypt communication to server with certificate from Let's encrypt.
+* [ ] Encrypt communication to server with certificate from Let's encrypt in order to avoid browser warning and
+  in order to secure data sent to the server by the users.
     * [x] Use https://github.com/shred/acme4j
     * [x] Enable SSL.
     * [x] Reuse certificates across restarts.
@@ -50,6 +51,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Persist certificates and user keys.
         * [x] Create portable file storage concept.
         * [ ] Implement portable file storage concept.
+        * [ ] Check validity of stored certificates on startup.
     * [x] Log ACME protocol progress for easier debugging.
         * [x] Improve CommonMark log for properties for normal users.
         * [x] Use compressed logging on server, so that one line represents one log message.
