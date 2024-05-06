@@ -72,7 +72,7 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
   Otherwise, it could be hard to convey the goal of the project to none IT users.
     * [x] Add actions to menu, in order to save space.
-    * [ ] Show menu in mobile view.
+    * [x] Show menu in mobile view.
     * [x] Create a editor with tabs for input and results.
     * [x] Create a console for output messages. -> The console is now shown like the input as a tab in the editor. 
     * [ ] Make row and column definition of output table configurable. 
