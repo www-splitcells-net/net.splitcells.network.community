@@ -80,16 +80,19 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Move documentation to secondary column.
     * [x] Show secondary column of editor by default, but still provide a fullscreen view.
       In other words, show the secondary column of the editor and simultaneously avoid wasting space by the background.
-    * [ ] Point to things via a modeless message window, that could be done by the users at start of editor.
-      This is for users, that have no idea, what can be done with the editor. 
-        * [ ] Create an support project, that has guidelines on how to provide support in app to the users via
+    * [x] Point to things via a modeless message window, that could be done by the users at start of editor.
+      This is for users, that have no idea, what can be done with the editor.
+      -> This is made obsolete, by error and update indicators for now.  
+        * [x] Create an support project, that has guidelines on how to provide support in app to the users via
           non interactive assistant.
           In the future, there may be dedicated code for that.
+          -> This is made obsolete, by error and update indicators for now.
     * [x] Try out editor and find visual errors.
     * [x] Create visual indication important tabs, that were updated.
         * [x] Errors
         * [x] Solution
     * [x] Indicate via button style, which tab is currently opened.
+    * [ ] If an error appears show error message as a header to the currently selected tab.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
