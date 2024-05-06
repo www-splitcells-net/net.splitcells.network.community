@@ -67,7 +67,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Use standard SSL port 443 in order to easy usage via browser.
       -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
     * [x] Use self signed certificate for bootstrap step.
-* [ ] Transform the editor to a lightweight IDE.
+* [ ] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
     * [ ] Add actions to menu, in order to save space.
     * [ ] Show menu in mobile view.
     * [ ] Create a editor with tabs for input and results.
