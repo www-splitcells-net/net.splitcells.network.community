@@ -67,6 +67,13 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Use standard SSL port 443 in order to easy usage via browser.
       -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
     * [x] Use self signed certificate for bootstrap step.
+* [ ] Transform the editor to a lightweight IDE.
+    * [ ] Add actions to menu, in order to save space.
+    * [ ] Show menu in mobile view.
+    * [ ] Create a editor with tabs for input and results.
+    * [ ] Create a console for output messages.
+    * [ ] Make row and column definition of output table configurable. 
+    * [ ] The default example problem (colloquium problem) should return a timetable.
 ## Considerations
 * [ ] Regulary test editor or other UI functionality.
 * [ ] Error message are not good for some inputs
