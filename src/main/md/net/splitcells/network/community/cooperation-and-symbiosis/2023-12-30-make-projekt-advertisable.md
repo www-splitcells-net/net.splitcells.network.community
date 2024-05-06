@@ -70,6 +70,7 @@ The goal is, to create some advertisement material and to do some polishing work
       -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
     * [x] Use self signed certificate for bootstrap step.
 * [ ] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
+  Otherwise, it could be hard to convey the goal of the project to none IT users.
     * [ ] Add actions to menu, in order to save space.
     * [ ] Show menu in mobile view.
     * [ ] Create a editor with tabs for input and results.
