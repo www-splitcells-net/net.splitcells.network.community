@@ -42,7 +42,7 @@ The goal is, to create some advertisement material and to do some polishing work
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
 * [ ] Allow controlling access to live server via username and password.
-    * [ ] Provide optional basic authentication in web server.
+    * [x] Provide optional basic authentication in web server.
     * [ ] Provide user dictionary option for web server
     * [ ] Parse username and password from filesystem.
     * [ ] Make authentication disable able via a config file. 
