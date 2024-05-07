@@ -21,7 +21,7 @@
                 * [ ] `worker.service` is command to execute command in detached mode.
             * [ ] Create `worker.build` command, in order to prepare the execution by creating the files needed for the execution.
             * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
-* [ ] `apt upgrade` packages are seemingly not installed by this process.
+* [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
   This is required for Linux kernel updates. 
 * [ ] Make default file storage locations more sane regarding Linux home folder standard.
     * [ ] Migrate files on live server accordingly.
