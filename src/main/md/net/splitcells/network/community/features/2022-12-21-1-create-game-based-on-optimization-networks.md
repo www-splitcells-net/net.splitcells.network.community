@@ -40,6 +40,9 @@ Games are inherently suitable for this and have the advantage of being advertiza
 
 * [ ] Deploy game on live server.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
+        * [ ] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
+          Link from this ticket to this new ticket instead.
+        * [ ] Explain why `CellFileSystemViews` was created and for what it is used.
         * [x] Discourage starting program via Dem process with a given runnable,
           because such a program definition is not declarative and therefore combining multiple services or module into
           one is harder.
