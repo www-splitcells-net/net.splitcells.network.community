@@ -43,8 +43,8 @@ The goal is, to create some advertisement material and to do some polishing work
 * [ ] Consider talking to schools directly.
 * [ ] Allow controlling access to live server via username and password.
     * [x] Provide optional basic authentication in web server.
-    * [ ] Provide user dictionary option for web server.
-    * [ ] Parse username and password from filesystem.
+    * [x] Provide user dictionary option for web server.
+    * [x] Parse username and password from filesystem.
     * [ ] Make authentication disable able via a config file. 
 * [ ] Encrypt communication to server with certificate from Let's encrypt in order to avoid browser warning and
   in order to secure data sent to the server by the users.
