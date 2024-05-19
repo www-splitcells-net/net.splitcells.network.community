@@ -41,11 +41,11 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Mark Network documentation as developer documentation.
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
 * [ ] Consider talking to schools directly.
-* [ ] Allow controlling access to live server via username and password.
+* [x] Allow controlling access to live server via username and password.
     * [x] Provide optional basic authentication in web server.
     * [x] Provide user dictionary option for web server.
     * [x] Parse username and password from filesystem.
-    * [ ] Make authentication disable able via a config file. 
+    * [x] Make authentication disable able via a config file. -> This is not important for now.
 * [ ] Encrypt communication to server with certificate from Let's encrypt in order to avoid browser warning and
   in order to secure data sent to the server by the users.
     * [x] Use https://github.com/shred/acme4j
