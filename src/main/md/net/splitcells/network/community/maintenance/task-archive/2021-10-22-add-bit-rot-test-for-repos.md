@@ -1,0 +1,1 @@
+# Test whether repo commands can detect bit rot in git repos.
