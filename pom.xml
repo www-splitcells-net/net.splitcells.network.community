@@ -14,5 +14,10 @@
             <artifactId>system</artifactId>
             <version>${revision}</version>
         </dependency>
+        <dependency>
+            <groupId>net.splitcells</groupId>
+            <artifactId>website.server</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 </project>
