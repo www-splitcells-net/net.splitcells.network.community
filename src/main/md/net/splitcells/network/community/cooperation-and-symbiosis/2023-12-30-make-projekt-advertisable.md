@@ -46,17 +46,17 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Provide user dictionary option for web server.
     * [x] Parse username and password from filesystem.
     * [x] Make authentication disable able via a config file. -> This is not important for now.
-* [ ] Encrypt communication to server with certificate from Let's encrypt in order to avoid browser warning and
+* [x] Encrypt communication to server with certificate from Let's encrypt in order to avoid browser warning and
   in order to secure data sent to the server by the users.
     * [x] Use https://github.com/shred/acme4j
     * [x] Enable SSL.
     * [x] Reuse certificates across restarts.
     * [x] Add ACME-Client to webserver as an extension dynamically.
       Until now, all extensions were defined in the main implementation without a method to add new extensions publicly.
-    * [ ] Persist certificates and user keys.
+    * [x] Persist certificates and user keys.
         * [x] Create portable file storage concept.
-        * [ ] Implement portable file storage concept.
-        * [ ] Check validity of stored certificates on startup.
+        * [x] Implement portable file storage concept.
+        * [x] Check validity of stored certificates on startup.
     * [x] Log ACME protocol progress for easier debugging.
         * [x] Improve CommonMark log for properties for normal users.
         * [x] Use compressed logging on server, so that one line represents one log message.
@@ -81,7 +81,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Create a editor with tabs for input and results.
     * [x] Create a console for output messages. -> The console is now shown like the input as a tab in the editor. 
     * [ ] Make row and column definition of output table configurable. 
-    * [ ] The default example problem (colloquium problem) should return a timetable.
+    * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
     * [x] Move documentation to secondary column.
     * [x] Show secondary column of editor by default, but still provide a fullscreen view.
       In other words, show the secondary column of the editor and simultaneously avoid wasting space by the background.
