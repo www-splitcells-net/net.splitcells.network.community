@@ -6,6 +6,8 @@
     * Restart server, in order to ensure, that every process uses the newest packages.
 * Update deployed software. 
 * Improve deployment and its processes.
+* Test security
+* Test privacy policy
 ## Open Tasks
 * [ ] Automatically restart server after update installation.
     * [ ] Deploy server software as systemd user service.
@@ -26,6 +28,7 @@
 * [ ] Make default file storage locations more sane regarding Linux home folder standard.
     * [ ] Migrate files on live server accordingly.
 * [ ] Manage upgrading major OS versions.
+* [ ] The corresponding systemd service should only store logs up to 7 days.
 ## Done Tasks
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
