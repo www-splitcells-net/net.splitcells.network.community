@@ -31,7 +31,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [ ] Create documentation guidelines.
             * [ ] Each document is specific to certain groups.
             * [ ] All documentation structure is centered around most uninformed user.
-       yy * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
+        * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
         * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
           Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
           Consider it the main thing, representing the project for users like a virtual assistant.
