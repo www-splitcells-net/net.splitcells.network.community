@@ -31,7 +31,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [ ] Create documentation guidelines.
             * [ ] Each document is specific to certain groups.
             * [ ] All documentation structure is centered around most uninformed user.
-        * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
+       yy * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
         * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
           Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
           Consider it the main thing, representing the project for users like a virtual assistant.
@@ -84,6 +84,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Extend problem grammar.
         * [ ] Create advanced solution rendering function.
         * [ ] Integration new rendering function into editor.
+        * [ ] Render row and column headers.
     * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
     * [x] Move documentation to secondary column.
     * [x] Show secondary column of editor by default, but still provide a fullscreen view.
