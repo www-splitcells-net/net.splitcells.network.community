@@ -82,7 +82,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Create a console for output messages. -> The console is now shown like the input as a tab in the editor. 
     * [ ] Make row and column definition of output table configurable.
         * [x] Extend problem grammar.
-        * [ ] Create advanced solution rendering function.
+        * [x] Create advanced solution rendering function.
         * [ ] Integration new rendering function into editor.
         * [ ] Render row and column headers.
     * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
