@@ -83,8 +83,9 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Make row and column definition of output table configurable.
         * [x] Extend problem grammar.
         * [x] Create advanced solution rendering function.
-        * [ ] Integration new rendering function into editor.
+        * [x] Integration new rendering function into editor.
         * [ ] Render row and column headers.
+        * [ ] Make `testToReformattedTable` more complete.
     * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
     * [x] Move documentation to secondary column.
     * [x] Show secondary column of editor by default, but still provide a fullscreen view.
