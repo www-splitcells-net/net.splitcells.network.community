@@ -85,6 +85,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Create advanced solution rendering function.
         * [x] Integration new rendering function into editor.
         * [ ] Render row and column headers.
+            * [ ] Fix `gel.ui` tests.
         * [ ] Make `testToReformattedTable` more complete.
     * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
     * [x] Move documentation to secondary column.
