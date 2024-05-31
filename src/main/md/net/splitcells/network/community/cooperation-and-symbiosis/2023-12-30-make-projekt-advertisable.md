@@ -11,11 +11,9 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
         * [x] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
         * [x] Redeploy website.
-    * [ ] Advertise in local social media.
-    * [ ] Create demonstration video for web server.
-    * [ ] Create demo video for local users.
-    * [ ] Talk to current main contact person.
-* [ ] Adjust the project, so that it can be used for school related scheduling by normal users.
+    * [x] Advertise in local social media.
+    * [ ] Create demo video for users.
+* [x] Adjust the project, so that it can be used for school related scheduling by normal users.
     It is important, that the software can be explained and introduced easily to German teachers,
     that can speak and read English.
     Keep in mind, that every German document still needs an international English version as well.
@@ -28,20 +26,19 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] English version
         * [x] Links to these from `About this site` at personal website.
         * [x] Shrink project goals back to initial goals of the past.
-    * [ ] Create help page for editor.
-        * [ ] Create documentation guidelines.
-            * [ ] Each document is specific to certain groups.
-            * [ ] All documentation structure is centered around most uninformed user.
-        * [ ] Create a second document describing the currently implemented problems and problems soon to be implemented.
-        * [ ] Consider using a chat bot like support system, in order to avoid clutter in editor.
+    * [x] Create help page for editor.  -> This is not done, because this will be solved via a [no code editor](../features/2024-05-31-create-no-code-gel-editor.md).
+        * [x] Create documentation guidelines. -> Not done.
+            * [x] Each document is specific to certain groups. -> Not done.
+            * [x] All documentation structure is centered around most uninformed user. -> Not done.
+        * [x] Create a second document describing the currently implemented problems and problems soon to be implemented. -> Not done.
+        * [x] Consider using a chat bot like support system, in order to avoid clutter in editor.
           Maybe a general project/art concept like a `net.splitcells.network.support` might be useful here.
-          Consider it the main thing, representing the project for users like a virtual assistant.
+          Consider it the main thing, representing the project for users like a virtual assistant. -> Not done.
     * [x] Make it easier for uniformed visitors to understand and use the website's features on the static personal website.
         * [x] https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html
         * [x] Make a better description and title for the changelog.
         * [x] Mark Network documentation as developer documentation.
           -> Change this to `Splitcells Network Documentation` in order to avoid clutter.
-* [ ] Consider talking to schools directly.
 * [x] Allow controlling access to live server via username and password.
     * [x] Provide optional basic authentication in web server.
     * [x] Provide user dictionary option for web server.
