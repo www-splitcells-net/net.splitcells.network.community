@@ -9,6 +9,7 @@
     * [ ] Adjust original language,
       so that attributes are declared like variables and used as arguments
       for the constructor calls of demand and supply databases.
+    * [ ] Make `school-course-scheduling-problem-parsing-test.xml` complete.
 * [ ] Process optimization request based on new language.
 * [ ] Extend language tree in front end with language actions.
     * [ ] Create HTML data mockup.
