@@ -11,6 +11,7 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Fix main menu: `https://splitcells.net/net/splitcells/website/main-menu.html`
         * [x] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
         * [x] Redeploy website.
+    * [ ] Advertise in local social media.
     * [ ] Create demonstration video for web server.
     * [ ] Create demo video for local users.
     * [ ] Talk to current main contact person.
@@ -74,19 +75,19 @@ The goal is, to create some advertisement material and to do some polishing work
     * [x] Use standard SSL port 443 in order to easy usage via browser.
       -> The live server now forwards port 8080 to 443 and the program was extend to redirect HTTP calls to HTTPS.
     * [x] Use self signed certificate for bootstrap step.
-* [ ] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
+* [x] Transform the editor to a lightweight IDE, so that users intuitively understand, what this tool tries to provide.
   Otherwise, it could be hard to convey the goal of the project to none IT users.
     * [x] Add actions to menu, in order to save space.
     * [x] Show menu in mobile view.
     * [x] Create a editor with tabs for input and results.
     * [x] Create a console for output messages. -> The console is now shown like the input as a tab in the editor. 
-    * [ ] Make row and column definition of output table configurable.
+    * [x] Make row and column definition of output table configurable.
         * [x] Extend problem grammar.
         * [x] Create advanced solution rendering function.
         * [x] Integration new rendering function into editor.
-        * [ ] Render row and column headers.
-            * [ ] Fix `gel.ui` tests.
-        * [ ] Make `testToReformattedTable` more complete.
+        * [x] Render row and column headers.
+            * [x] Fix `gel.ui` tests.
+        * [x] Make `testToReformattedTable` more complete. -> This test is now renamed to `testToReformattedTableWithEmptyInput`.
     * [ ] The default example problem (colloquium problem) should return a timetable. -> This should create an output, that a teacher should understand intuitively.
     * [x] Move documentation to secondary column.
     * [x] Show secondary column of editor by default, but still provide a fullscreen view.
