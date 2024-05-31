@@ -39,10 +39,11 @@ Der Live-Server zeigt damit,
 wie eine Optimierung in der Cloud durchgeführt werden könnte.
 Es wird auch ein [Download](https://splitcells.net/net/splitcells/network/distro/downloads/index.html)
 des Server-Programmes bereitgestellt.
-Hiermit kann dieses Programm nicht nur online sondern auch lokal und ohne Internet-Anbindung genutzt werden.
+Hiermit kann dieses Programm nicht nur online,
+sondern auch lokal und ohne Internet-Anbindung genutzt werden.
 
 Zurzeit wird zusätzlich zur Kolloquiums-Planung an zwei weiteren Organisations-Aufgaben gearbeitet.
-Zum einen wird eine Sportkurs-Planung gearbeitet,
+Zum einen wird eine Sportkurs-Planung erstellt,
 bei der unter anderem festgestellt wird,
 welche Sportkurse überhaupt zustande kommen.
 Zum anderen wird an dem Erstellen eines vollständigen Stundenplans gewerkelt.
