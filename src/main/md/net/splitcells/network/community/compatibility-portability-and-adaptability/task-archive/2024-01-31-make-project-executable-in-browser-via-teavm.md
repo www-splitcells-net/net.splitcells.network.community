@@ -1,0 +1,1 @@
+# Make project executable in browser via TeaVM

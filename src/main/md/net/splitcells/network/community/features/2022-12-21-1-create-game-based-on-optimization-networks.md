@@ -1,6 +1,6 @@
 # Create game based on optimization networks.
 
-The original GitHub issue id is `#170`.
+The original GitHub issue id is [#170](https://github.com/www-splitcells-net/net.splitcells.network/issues/170).
 
 ## Context
 

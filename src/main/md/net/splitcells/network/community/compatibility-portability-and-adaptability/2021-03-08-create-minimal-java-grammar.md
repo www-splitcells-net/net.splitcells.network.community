@@ -1,4 +1,6 @@
 # Create minimal Java grammar for this project in order to make code less complex
+- [This is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
+- [This is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 - [ ] Recheck this ticket and clean it up.
 - [ ] Check grammar for all repos.
     - [ ] Create equivalent to repo process, but for projects.
