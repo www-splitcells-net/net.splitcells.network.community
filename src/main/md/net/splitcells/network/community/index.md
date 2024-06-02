@@ -13,9 +13,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/4)
 * Cooperation and symbiosis:
   * Description: Tit for tat
-  * [Host Link](https://github.com/orgs/www-splitcells-net/projects/8)
-  * Migrate inactive tickets into source code repository,
-    so that they each one acts as trigger at one fitting position.
+  * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8599)
 * Document project:
   * Description: Nobody reads this xD
   * [Host Link](https://github.com/orgs/www-splitcells-net/projects/9)
@@ -52,3 +50,5 @@ Projects that are being worked cyclically, and probably will never be finished.
   because it is not possible to read and edit its content via git and text editors.
   Instead, the program git-bug itself is required.
   Git-bug could be used in the future in order to mirror tickets to another platform.
+* Migrate inactive tickets into source code repository,
+  so that they each one acts as trigger at one fitting position.
