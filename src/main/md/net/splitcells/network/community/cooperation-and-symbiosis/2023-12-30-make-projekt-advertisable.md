@@ -15,6 +15,7 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Create presentation.
         * [x] Create dedicated presentation repo for future presentations.
         * [ ] The presentations repo, should contain all files required for offline viewing.
+        * [ ] Minimize presentation customization.
 * [x] Adjust the project, so that it can be used for school related scheduling by normal users.
     It is important, that the software can be explained and introduced easily to German teachers,
     that can speak and read English.
