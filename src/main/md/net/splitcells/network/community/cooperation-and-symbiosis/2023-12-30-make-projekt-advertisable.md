@@ -12,7 +12,9 @@ The goal is, to create some advertisement material and to do some polishing work
         * [x] Fix licensing on live server: `http://live.splitcells.net/net/splitcells/martins/avots/distro/legal/licensing.html`
         * [x] Redeploy website.
     * [x] Advertise in local social media.
-    * [ ] Create demo video for users.
+    * [ ] Create presentation.
+        * [x] Create dedicated presentation repo for future presentations.
+        * [ ] The presentations repo, should contain all files required for offline viewing.
 * [x] Adjust the project, so that it can be used for school related scheduling by normal users.
     It is important, that the software can be explained and introduced easily to German teachers,
     that can speak and read English.
