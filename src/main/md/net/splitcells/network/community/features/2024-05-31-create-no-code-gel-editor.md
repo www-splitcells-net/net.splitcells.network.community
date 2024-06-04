@@ -11,7 +11,7 @@
       for the constructor calls of demand and supply databases.
     * [x] Make `school-course-scheduling-problem.xml` complete.
     * [ ] Make `submit optimization` working. CURRENT
-        * [ ] Fix syntax error.
+        * [x] Fix syntax error.
         * [ ] Make `NoCodeProblemParser` complete.
         * [ ] Optimize example data.
 * [ ] Process optimization request based on new language.
