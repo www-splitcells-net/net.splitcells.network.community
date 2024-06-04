@@ -116,11 +116,11 @@ The goal is, to create some advertisement material and to do some polishing work
       Anytime a download is found an appropriate file safe dialog is offered and after that,
       the dedicated elements' content are deleted.
     * [x] Introduce GUI user config in distro and use this for JavaFX distro. -> That already did exist, but a better name was needed. The user config was renamed to local user config, in order to indicate that the user itself runs the software.
-* [ ] Improve menu and logo links.
-  Navigating to the front page is quite hard, when one is knees deep on the website.
+* [x] Improve menu and logo links.
+  Navigating to the front page is quite hard, when one is knees deep on the website. -> See [here](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/27).
 * [ ] Create web platform, where user can upload their data privately, in order to have one place to work on their problems on different user devices.
 * [ ] Allow the user to persist his projects.
-* [ ] Enable the user to define parts of the solution manually.
+* [x] Enable the user to define parts of the solution manually. -> See [here](../features/task-archive/2024-01-25-user-should-be-able-to-define-part-of-the-solution.md)
 * [ ] Improve handling of colloquium planning problem.
     * [ ] Create real GUI worthy a program being used by users.
       Currently, the editor's GUI is more like a form,
@@ -142,5 +142,5 @@ The goal is, to create some advertisement material and to do some polishing work
     * [ ] Document the concept of front menu in front menu document.
       It is important to understand, why the distinction between front and main menu exists.
     * [ ] Document the concept of main menu in main menu document.
-* [ ] Implement school course scheduling.
-* [ ] Implement sport lesson assignments.
+* [x] Implement school course scheduling. -> See [here](../features/task-archive/2021-03-07-solve-school-course-scheduling-problem.md).
+* [x] Implement sport lesson assignments. -> See [here](../features/task-archive/2021-03-07-solve-sport-lesson-assignment.md).
