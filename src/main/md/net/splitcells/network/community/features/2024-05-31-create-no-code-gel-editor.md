@@ -10,10 +10,11 @@
       so that attributes are declared like variables and used as arguments
       for the constructor calls of demand and supply databases.
     * [x] Make `school-course-scheduling-problem.xml` complete.
-    * [ ] Make `submit optimization` working. CURRENT
+    * [x] Make `submit optimization` working. CURRENT
         * [x] Fix syntax error.
-        * [ ] Make `NoCodeProblemParser` complete.
-        * [ ] Optimize example data.
+        * [x] Make `NoCodeProblemParser` complete.
+        * [x] Optimize example data.
+    * [ ] Test parsing of no-code constraints. Currently, it is assumed to be working.
 * [ ] Process optimization request based on new language.
 * [ ] Extend language tree in front end with language actions.
     * [ ] Create HTML data mockup.
