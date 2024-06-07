@@ -21,4 +21,10 @@
 * [ ] Extend language tree in front end with language actions. CURRENT
     * [ ] Create HTML mockup of language actions via Javascript.
     * [ ] Implement language actions as Javascript code.
+    * [ ] Create fragment rendering for webserver, where document is rendered without any layout.
+    * [ ] Implement generic help functionality.
+        * [ ] Make help pop up closeable.
+        * [ ] Do not open multiple help pop-ups.
+        * [x] Render help text via iframes for proof of concept.
+      * [ ] Use fragment rendering to render help text, instead of using iframes.
 * [ ] Clean up visual design of no-code editor.
