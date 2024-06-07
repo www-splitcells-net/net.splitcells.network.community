@@ -6,9 +6,11 @@
 # Tasks
 * [x] Create HTML data mockup.
 * [ ] Create backend language based on mockup.
-    * [ ] Adjust original language,
+    * [x] Adjust original language,
       so that attributes are declared like variables and used as arguments
       for the constructor calls of demand and supply databases.
+      -> There is no imminent need for the code editor
+      and therefore that original language has currently no priority.
     * [x] Make `school-course-scheduling-problem.xml` complete.
     * [x] Make `submit optimization` working. CURRENT
         * [x] Fix syntax error.
