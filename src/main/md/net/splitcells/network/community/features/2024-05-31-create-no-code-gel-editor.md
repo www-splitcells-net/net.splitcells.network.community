@@ -12,13 +12,13 @@
       -> There is no imminent need for the code editor
       and therefore that original language has currently no priority.
     * [x] Make `school-course-scheduling-problem.xml` complete.
-    * [x] Make `submit optimization` working. CURRENT
+    * [x] Make `submit optimization` working.
         * [x] Fix syntax error.
         * [x] Make `NoCodeProblemParser` complete.
         * [x] Optimize example data.
     * [ ] Test parsing of no-code constraints. Currently, it is assumed to be working.
 * [ ] Process optimization request based on new language.
-* [ ] Extend language tree in front end with language actions.
-    * [ ] Create HTML data mockup.
+* [ ] Extend language tree in front end with language actions. CURRENT
+    * [ ] Create HTML mockup of language actions via Javascript.
     * [ ] Implement language actions as Javascript code.
 * [ ] Clean up visual design of no-code editor.
