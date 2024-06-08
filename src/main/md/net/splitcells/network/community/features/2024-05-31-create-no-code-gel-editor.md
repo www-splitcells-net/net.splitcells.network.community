@@ -28,3 +28,6 @@
         * [x] Render help text via iframes for proof of concept.
       * [ ] Use fragment rendering to render help text, instead of using iframes.
 * [ ] Clean up visual design of no-code editor.
+* [ ] Make it possible for the user to store a problem definition.
+* [ ] Import no-code code.
+* [ ] Export no-code code.
