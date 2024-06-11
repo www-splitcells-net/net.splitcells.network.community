@@ -22,6 +22,22 @@
     * [x] Create HTML mockup of language actions via Javascript.
     * [ ] Implement language actions as Javascript code.
         * [x] Rename variable. 
+        * [ ] Choose different function call.
+        * [ ] Change function call argument.
+        * [ ] Remove function call.
+        * [ ] Remove variable.
+        * [ ] Set variable value.
+            * [ ] Literal Value
+            * [ ] Function call chain
+            * [ ] Variable reference.
+        * [ ] Add function call to function call chain.
+        * [ ] Create new things.
+            * [ ] Add object access via function call.
+            * [ ] Create variable.
+        * [ ] Limit function names, that can be chosen for new function calls.
+            * [ ] Object access
+            * [ ] Function call chains
+            * [ ] Function call arguments
     * [x] Create fragment rendering for webserver, where document is rendered without any layout.
       -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
     * [x] Make action menu closeable.
@@ -40,3 +56,4 @@
 * [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
+* [ ] Remove code duplication in `no-code-editor.js`.
