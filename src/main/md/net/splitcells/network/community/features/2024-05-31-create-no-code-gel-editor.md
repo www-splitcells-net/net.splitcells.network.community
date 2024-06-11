@@ -21,18 +21,18 @@
 * [ ] Extend language tree in front end with language actions. CURRENT
     * [x] Create HTML mockup of language actions via Javascript.
     * [ ] Implement language actions as Javascript code.
-        * [ ] Create help actions.
+        * [x] Create help actions.
             * [x] For Function calls
             * [x] For variable references
-            * [ ] For object access
-            * [ ] For literals
+            * [x] For variable access
+            * [x] For literals
         * [x] Rename variable. 
         * [ ] Choose different function call.
         * [ ] Change function call argument.
         * [ ] Remove function call.
         * [ ] Remove variable.
         * [ ] Set variable value.
-            * [ ] Literal Value
+            * [x] Literal Value
             * [ ] Function call chain
             * [ ] Variable reference.
         * [ ] Add function call to function call chain.
