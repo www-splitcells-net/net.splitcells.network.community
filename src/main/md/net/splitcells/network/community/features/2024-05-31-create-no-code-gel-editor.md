@@ -23,8 +23,9 @@
     * [ ] Implement language actions as Javascript code.
         * [ ] Create help actions.
             * [x] For Function calls
-            * [ ] For variable references
+            * [x] For variable references
             * [ ] For object access
+            * [ ] For literals
         * [x] Rename variable. 
         * [ ] Choose different function call.
         * [ ] Change function call argument.
