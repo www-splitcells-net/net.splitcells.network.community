@@ -34,7 +34,7 @@
         * [ ] Set variable value.
             * [x] Literal Value
             * [ ] Function call chain
-            * [ ] Variable reference.
+            * [x] Variable reference.
         * [ ] Add function call to function call chain.
         * [ ] Create new things.
             * [ ] Add object access via function call.
@@ -53,6 +53,17 @@
         * [x] Use fragment rendering to render help text, instead of using iframes, in order to have less visual noise in help text.
           -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
 * [ ] Clean up visual design of no-code editor.
+    * [ ] Remove whitespace between span elements via Javascript, in order to remove margins between these.
+    * [x] Use AST elements as menu buttons directly, instead of create a dedicated menu button for each AST element.
+        * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_names_enhance 
+        * [x] net_splitcells_gel_ui_editor_no_code_function_calls_enhance
+        * [x] net_splitcells_gel_ui_editor_no_code_variable_references_enhance
+        * [x] net_splitcells_gel_ui_editor_no_code_variable_access_enhance
+        * [x] net_splitcells_gel_ui_editor_no_code_literal_help_show
+        * [x] net_splitcells_gel_ui_editor_no_code_literal_set_pop_up
+        * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up
+        * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_help_show
+        * [x] net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name
 * [ ] Make it possible for the user to store a problem definition.
 * [ ] Import no-code code.
 * [ ] Export no-code code.
@@ -62,3 +73,8 @@
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
 * [ ] Clean up `no-code-editor.js`.
+* [ ] Ensure, that user cannot create invalid code.
+    * [ ] When a variable is renamed, every reference to it, needs to be renamed as well.
+    * [ ] Allow only certain variable names.
+* [ ] Visually mark no-code editor as interactable by the user.
+    * [ ] Text area styling via inward shadow for no-code editor area
