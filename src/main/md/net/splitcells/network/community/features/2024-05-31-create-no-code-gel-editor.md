@@ -52,8 +52,8 @@
         * [x] Render help text via iframes for proof of concept.
         * [x] Use fragment rendering to render help text, instead of using iframes, in order to have less visual noise in help text.
           -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
-* [ ] Clean up visual design of no-code editor.
-    * [ ] Remove whitespace between span elements via Javascript, in order to remove margins between these.
+* [x] Clean up visual design of no-code editor.
+    * [x] Remove whitespace between span elements via Javascript, in order to remove margins between these. -> Currently, the whitespace actually looks kind of good.
     * [x] Use AST elements as menu buttons directly, instead of create a dedicated menu button for each AST element.
         * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_names_enhance 
         * [x] net_splitcells_gel_ui_editor_no_code_function_calls_enhance
@@ -64,17 +64,28 @@
         * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up
         * [x] net_splitcells_gel_ui_editor_no_code_variable_definition_help_show
         * [x] net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name
-* [ ] Make it possible for the user to store a problem definition.
+    * [x] Consider remove round corners for default actions, as color gradiant seems to be enough, for marking something as an interactable thing. 
+      In this case, the gradient probably needs more contrast.
+      -> The roundness of all round corners was reduced, which make the round corners less extreme and makes it more natural to use such excessively.
+    * [x] When menu is opened, mark the currently selected thing.
+      Thereby, it is clear on second look, what object the actions of the menu would act upon.
+        * [x] Variable actions
+        * [x] Function actions
+        * [x] Literal actions
+* [x] Make it possible for the user to store a problem definition. -> This is the `Export no-code code.` functionality.
 * [ ] Import no-code code.
 * [ ] Export no-code code.
-* [ ] Remove code from `no-code-editor.js`, that is already present in `editor.js`.
+* [x] Remove code from `no-code-editor.js`, that is already present in `editor.js`.
+  -> For now this is not needed, as
 * [ ] Write documentation for all Help actions.
 * [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
-* [ ] Clean up `no-code-editor.js`.
 * [ ] Ensure, that user cannot create invalid code.
     * [ ] When a variable is renamed, every reference to it, needs to be renamed as well.
     * [ ] Allow only certain variable names.
 * [ ] Visually mark no-code editor as interactable by the user.
     * [ ] Text area styling via inward shadow for no-code editor area
+* [ ] Clean up the code of this project.
+    * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
+  * [x] Clean up `no-code-editor.js`.
