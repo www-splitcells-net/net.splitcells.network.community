@@ -89,3 +89,8 @@
 * [ ] Clean up the code of this project.
     * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
   * [x] Clean up `no-code-editor.js`.
+* [ ] Closing tasks
+    * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
+    * [ ] Link general doc from no-code editor and Gel introduction doc.
+    * [ ] Advertise no-code editor as main editor on live server.
+    * [ ] Create no-code editor demo video.
