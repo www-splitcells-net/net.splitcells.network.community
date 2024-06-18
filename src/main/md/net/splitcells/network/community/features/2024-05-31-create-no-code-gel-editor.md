@@ -29,8 +29,8 @@
         * [x] Rename variable. 
         * [ ] Choose different function call.
         * [x] Change function call argument.
-        * [ ] Remove function call. CURRENT
-        * [ ] Remove variable.
+        * [x] Remove function call.
+        * [ ] Remove variable. CURRENT
         * [ ] Set variable value.
             * [x] Literal Value
             * [ ] Function call chain
