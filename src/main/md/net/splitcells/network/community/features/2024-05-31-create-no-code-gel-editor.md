@@ -20,6 +20,7 @@
 * [ ] Process optimization request based on new language.
 * [ ] Extend language tree in front end with language actions.
     * [x] Create HTML mockup of language actions via Javascript.
+    * [ ] Delete language actions from GUI, when optimization problem is submitted.
     * [ ] Implement language actions as Javascript code.
         * [x] Create help actions.
             * [x] For Function calls
@@ -30,19 +31,20 @@
         * [ ] Choose different function call.
         * [x] Change function call argument.
         * [x] Remove function call.
-        * [ ] Remove variable. CURRENT
-        * [ ] Set variable value.
+        * [x] Remove variable.
+        * [x] Set variable value.
             * [x] Literal Value
-            * [ ] Function call chain
+            * [x] Function call chain.
             * [x] Variable reference.
-        * [ ] Add function call to function call chain.
+        * [x] Append function call to function call in chain.
         * [ ] Create new things.
             * [ ] Add object access via function call.
             * [ ] Create variable.
-        * [ ] Limit function names, that can be chosen for new function calls.
-            * [ ] Object access
-            * [ ] Function call chains
-            * [ ] Function call arguments
+                * [ ] Set literal as the variables value.
+                * [ ] Set function call as the variables value.
+        * [x] Limit function names, that can be chosen for new function calls.
+            * [x] Object access
+        * [ ] Automatically adjust arguments of currently changed or created function calls. CURRENT  
         * [x] Make NoCodeSolutionCalculator work with new HTML code as the problem definition.
     * [x] Create fragment rendering for webserver, where document is rendered without any layout.
       -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
