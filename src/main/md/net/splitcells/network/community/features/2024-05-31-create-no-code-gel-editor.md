@@ -18,7 +18,7 @@
         * [x] Optimize example data.
     * [ ] Test parsing of no-code constraints. Currently, it is assumed to be working.
 * [ ] Process optimization request based on new language.
-* [ ] Extend language tree in front end with language actions. CURRENT
+* [ ] Extend language tree in front end with language actions.
     * [x] Create HTML mockup of language actions via Javascript.
     * [ ] Implement language actions as Javascript code.
         * [x] Create help actions.
@@ -28,8 +28,8 @@
             * [x] For literals
         * [x] Rename variable. 
         * [ ] Choose different function call.
-        * [ ] Change function call argument.
-        * [ ] Remove function call.
+        * [x] Change function call argument.
+        * [ ] Remove function call. CURRENT
         * [ ] Remove variable.
         * [ ] Set variable value.
             * [x] Literal Value
@@ -43,6 +43,7 @@
             * [ ] Object access
             * [ ] Function call chains
             * [ ] Function call arguments
+        * [x] Make NoCodeSolutionCalculator work with new HTML code as the problem definition.
     * [x] Create fragment rendering for webserver, where document is rendered without any layout.
       -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
     * [x] Make action menu closeable.
