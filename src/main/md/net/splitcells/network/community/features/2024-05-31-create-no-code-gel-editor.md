@@ -44,7 +44,13 @@
                 * [ ] Set function call as the variables value.
         * [x] Limit function names, that can be chosen for new function calls.
             * [x] Object access
-        * [ ] Automatically adjust arguments of currently changed or created function calls. CURRENT  
+        * [ ] Automatically adjust arguments of currently changed or created function calls. CURRENT
+            * [x] Add undefined argument elements.
+            * [x] Add variable argument menu.
+            * [ ] Update undefined argument elements.
+            * [ ] Update variable argument menu.
+            * [ ] Implement undefined argument actions.
+            * [ ] Implement variable argument actions.
         * [x] Make NoCodeSolutionCalculator work with new HTML code as the problem definition.
     * [x] Create fragment rendering for webserver, where document is rendered without any layout.
       -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
