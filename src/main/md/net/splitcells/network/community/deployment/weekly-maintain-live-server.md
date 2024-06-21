@@ -29,6 +29,7 @@
     * [ ] Migrate files on live server accordingly.
 * [ ] Manage upgrading major OS versions.
 * [ ] The corresponding systemd service should only store logs up to 7 days.
+* [ ] Make private setup script public, in order to have a basis for default setup script for a server.
 ## Done Tasks
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,

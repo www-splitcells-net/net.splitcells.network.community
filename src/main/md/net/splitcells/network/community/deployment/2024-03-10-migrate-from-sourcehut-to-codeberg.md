@@ -4,7 +4,10 @@
 * [x] Move the issue description to community repo.
 * [x] Upload repos.
 * [x] Add Codemirror to server inventory for automatic uploads.
-* [ ] Enable Codemirror CI.
+* [ ] Enable Woodpecker CI for Forgejo.
+    * [x] https://forgejo.org/docs/next/admin/actions/#forgejo-runner
+    * [ ] Ensure, that runner services still run after logoff.
+    * [ ] Ensure, that runner services automatically starts after server reboot.
 * [x] Setup profile image.
 * [x] Setup organization image.
 * [x] Migrate from GitHub as default remote to Codeberg.
