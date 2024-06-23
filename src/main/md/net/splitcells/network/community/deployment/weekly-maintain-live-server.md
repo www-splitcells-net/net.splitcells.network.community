@@ -30,6 +30,7 @@
 * [ ] Manage upgrading major OS versions.
 * [ ] The corresponding systemd service should only store logs up to 7 days.
 * [ ] Make private setup script public, in order to have a basis for default setup script for a server.
+* [ ] Run Forgejo Runner via Podman in order to not require root rights for Forgejo Runner: https://code.forgejo.org/forgejo/runner/src/branch/main/scripts/systemd.md
 ## Done Tasks
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
