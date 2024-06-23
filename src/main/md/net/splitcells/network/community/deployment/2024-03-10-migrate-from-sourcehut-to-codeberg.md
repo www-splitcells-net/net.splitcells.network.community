@@ -17,6 +17,7 @@
     * [x] Consider moving tickets into community repo in order to archive these.
 * [x] Move issues from GitHub to Codeberg.
 * [x] Move GitHub projects to Codeberg.
+* [ ] Move all CI actions from GitHub to Codeberg. 
 # Documentation
 * [x] Move infrastructure doc to network hub repo, as this repo holds the project's inventory of public things like git repos.
     * [x] Adjust code.
