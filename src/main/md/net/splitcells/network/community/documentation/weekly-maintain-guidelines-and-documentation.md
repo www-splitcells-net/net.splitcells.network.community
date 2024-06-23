@@ -5,3 +5,4 @@
 * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
 * Consider Documentation from point of a user
 * Consider Documentation from point of a developer
+* Consider Documentation from point of a product owner.
