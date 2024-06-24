@@ -106,7 +106,7 @@
     * [x] Clean up `no-code-editor.js`.
     * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with a dedicated css class,
       that are placed in advance,
-      instead of determining the location, when the nodes or pop-ups are created.
+      instead of determining the location, when the nodes or pop-ups are created. CURRENT
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
