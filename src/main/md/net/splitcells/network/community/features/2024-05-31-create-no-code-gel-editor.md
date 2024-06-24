@@ -21,9 +21,6 @@
 * [ ] Extend language tree in front end with language actions.
     * [x] Create HTML mockup of language actions via Javascript.
     * [ ] Delete language actions from GUI, when optimization problem is submitted.
-    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with a dedicated css class,
-      that are placed in advance,
-      instead of determining the location, when the nodes or pop-ups are created.
     * [ ] Implement language actions as Javascript code.
         * [x] Create help actions.
             * [x] For Function calls
@@ -57,7 +54,7 @@
                 * [ ] Set as literal.
                 * [ ] Set as variable reference.
             * [ ] Implement variable argument actions.
-                * [ ] Set as function call.
+                * [x] Set as function call.
                 * [ ] Set as literal.
                 * [ ] Set as variable reference.
         * [x] Make NoCodeSolutionCalculator work with new HTML code as the problem definition.
@@ -106,7 +103,10 @@
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
     * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
-  * [x] Clean up `no-code-editor.js`.
+    * [x] Clean up `no-code-editor.js`.
+    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with a dedicated css class,
+      that are placed in advance,
+      instead of determining the location, when the nodes or pop-ups are created.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
