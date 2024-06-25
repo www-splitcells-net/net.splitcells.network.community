@@ -103,10 +103,12 @@
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
     * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
-    * [x] Clean up `no-code-editor.js`.
-    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with a dedicated css class,
+    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-update-target`,
       that are placed in advance,
-      instead of determining the location, when the nodes or pop-ups are created. CURRENT
+      instead of determining the location, when the nodes or pop-ups are created.
+    * [ ] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls. CURRENT
+    * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
+    * [ ] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
