@@ -106,8 +106,22 @@
     * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-update-target`,
       that are placed in advance,
       instead of determining the location, when the nodes or pop-ups are created.
-    * [ ] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls. CURRENT
+      For onclick attributes one can pass `document.getElementsByClassName([...])` etc. as arguments. 
+      The main goal is to avoid tree navigation via calls like `element.parentNode.parentNode` and
+      to make GUI code simpler.
+        * [ ] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call` CURRENT
+        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
+    * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
     * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
+        * [ ] Every function accessing HTML elements relative to each other should be generic code.
+          All other code should not have access HTML elements relative in order to keep it simple.
     * [ ] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
