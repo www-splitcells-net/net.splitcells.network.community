@@ -109,15 +109,20 @@
       For onclick attributes one can pass `document.getElementsByClassName([...])` etc. as arguments. 
       The main goal is to avoid tree navigation via calls like `element.parentNode.parentNode` and
       to make GUI code simpler.
-        * [ ] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call` CURRENT
-        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
-        * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
+        * [ ] `net_splitcells_gel_ui_editor_no_code_generic_enhance`: place span with `net-splitcells-no-code-update-target` css class. CURRENT
+        * [ ] `net_splitcells_gel_ui_editor_no_code_pop_ups_close`: remove empty spans with `net-splitcells-no-code-update-target` css class.
+        * [ ] Use `net-splitcells-no-code-update-target` for creating or updating an element.
+            * [ ] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
+        * [ ] Use `net-splitcells-no-code-menu-update-target` for new pop-ups.
+            * [ ] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
+            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
     * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
     * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
         * [ ] Every function accessing HTML elements relative to each other should be generic code.
