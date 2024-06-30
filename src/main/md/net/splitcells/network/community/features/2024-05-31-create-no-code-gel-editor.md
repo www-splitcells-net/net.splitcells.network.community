@@ -115,20 +115,24 @@
             * [x] Remove css class `net-splitcells-no-code-update-subject` from any element. 
         * [ ] Use `net-splitcells-no-code-insert-target` for creating or updating an element.
             * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append`
+            * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
             * [ ] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
         * [ ] Use `net-splitcells-no-code-menu-update-target` for new pop-ups.
             * [ ] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
         * [ ] Functions using `net-splitcells-no-code-insert-target` should avoid code duplication.
         * [ ] Document the new process.
             * [ ] `net-splitcells-no-code-insert-target`
             * [ ] `net-splitcells-no-code-update-subject`
+            * [ ] Note that this makes the menu independent of its position and therefore more portable.
+              But also note, that this independence is currently not really used.
+              This is currently only used in order to avoid calling parentNode,
+              which may or not be easier to get wrong than using css class.
     * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
     * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
         * [ ] Every function accessing HTML elements relative to each other should be generic code.
