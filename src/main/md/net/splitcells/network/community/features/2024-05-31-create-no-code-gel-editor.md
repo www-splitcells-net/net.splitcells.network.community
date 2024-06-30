@@ -103,7 +103,7 @@
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
     * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
-    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-update-target`,
+    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
       that are placed in advance,
       instead of determining the location, when the nodes or pop-ups are created.
       For onclick attributes one can pass `document.getElementsByClassName([...])` etc. as arguments. 
@@ -111,10 +111,10 @@
       to make GUI code simpler.
         * [x] `net_splitcells_gel_ui_editor_no_code_generic_enhance`: add css class `net-splitcells-no-code-update-subject` to currently selected element with menu opened.
         * [x] `net_splitcells_gel_ui_editor_no_code_pop_ups_close`
-            * [x] Remove empty spans with `net-splitcells-no-code-update-target` css class.
-            * [x] Remove css class `net-splitcells-no-code-update-subject` from any element.
-        * [ ] Use `net-splitcells-no-code-update-target` for creating or updating an element.
-            * [ ] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
+            * [x] Remove empty spans with `net-splitcells-no-code-insert-target` css class.
+            * [x] Remove css class `net-splitcells-no-code-update-subject` from any element. 
+        * [ ] Use `net-splitcells-no-code-insert-target` for creating or updating an element.
+            * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
@@ -125,6 +125,10 @@
             * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
+        * [ ] Functions using `net-splitcells-no-code-insert-target` should avoid code duplication.
+        * [ ] Document the new process.
+            * [ ] `net-splitcells-no-code-insert-target`
+            * [ ] `net-splitcells-no-code-update-subject`
     * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
     * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
         * [ ] Every function accessing HTML elements relative to each other should be generic code.
