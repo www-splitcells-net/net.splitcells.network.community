@@ -101,7 +101,7 @@
     * [x] Allow only certain variable names. -> Not needed right now.
 * [x] Visually mark no-code editor as interactable by the user.
     * [x] Text area styling via inward shadow for no-code editor area
-* [x] Clean up the code of this project.
+* [ ] Clean up the code of this project.
     * [x] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
     * [x] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
       that are placed in advance,
@@ -141,6 +141,8 @@
           All other code should not have access HTML elements relative in order to keep it simple.
     * [x] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
     * [x] Add privacy notification.
+    * [ ] Import editor specific css via XML document and no
+* [ ] Make solution formatting work. 
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
