@@ -102,7 +102,7 @@
 * [ ] Visually mark no-code editor as interactable by the user.
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
-    * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
+    * [x] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
     * [x] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
       that are placed in advance,
       instead of determining the location, when the nodes or pop-ups are created.
@@ -146,5 +146,6 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
 # Ideas
-* [ ] Add argumentation via pop-up to reformatted solution output.
-    * [ ] https://tabulator.info/docs/6.2/menu#cell-context
+* [ ] Expand reformatted solution output.
+    * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
+    * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
