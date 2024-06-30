@@ -97,8 +97,8 @@
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
 * [ ] Ensure, that user cannot create invalid code.
-    * [ ] When a variable is renamed, every reference to it, needs to be renamed as well.
-    * [ ] Allow only certain variable names.
+    * [x] When a variable is renamed, every reference to it, needs to be renamed as well.
+    * [x] Allow only certain variable names. -> Not needed right now.
 * [ ] Visually mark no-code editor as interactable by the user.
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
@@ -139,7 +139,8 @@
     * [x] Create documentation over overhaul architecture in `no-code-editor.js`.
         * [x] Every function accessing HTML elements relative to each other should be generic code.
           All other code should not have access HTML elements relative in order to keep it simple.
-    * [ ] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
+    * [x] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
+    * [x] Add privacy notification.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
