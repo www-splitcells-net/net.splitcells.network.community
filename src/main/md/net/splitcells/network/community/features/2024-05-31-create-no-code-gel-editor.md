@@ -49,14 +49,14 @@
             * [x] Add variable argument menu.
             * [x] Update undefined argument elements.
             * [x] Update variable argument menu.
-            * [ ] Implement undefined argument actions.
-                * [ ] Set as function call.
-                * [ ] Set as literal.
-                * [ ] Set as variable reference.
-            * [ ] Implement variable argument actions.
+            * [x] Implement undefined argument actions.
                 * [x] Set as function call.
-                * [ ] Set as literal.
-                * [ ] Set as variable reference.
+                * [x] Set as literal.
+                * [x] Set as variable reference.
+            * [x] Implement variable argument actions.
+                * [x] Set as function call.
+                * [x] Set as literal.
+                * [x] Set as variable reference.
         * [x] Make NoCodeSolutionCalculator work with new HTML code as the problem definition.
     * [x] Create fragment rendering for webserver, where document is rendered without any layout.
       -> This is not relevant for now, because it is a minor detail and also provides the advantage of making the help navigable.
