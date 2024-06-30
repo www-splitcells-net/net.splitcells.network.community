@@ -141,6 +141,12 @@
           All other code should not have access HTML elements relative in order to keep it simple.
     * [x] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
     * [x] Add privacy notification.
+* [ ] Document why no-code editor was created.
+    * [ ] No need for syntax documentation for simple functions.
+    * [ ] Uninformed user can experiment with language and thereby learn it better,
+      without having to fix syntax errors.
+      Instead by clicking on an element, the program can explain itself,
+      what can be done with the clicked thing.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
