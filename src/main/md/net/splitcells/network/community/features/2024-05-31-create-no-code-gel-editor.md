@@ -109,8 +109,10 @@
       For onclick attributes one can pass `document.getElementsByClassName([...])` etc. as arguments. 
       The main goal is to avoid tree navigation via calls like `element.parentNode.parentNode` and
       to make GUI code simpler.
-        * [ ] `net_splitcells_gel_ui_editor_no_code_generic_enhance`: place span with `net-splitcells-no-code-update-target` css class. CURRENT
-        * [ ] `net_splitcells_gel_ui_editor_no_code_pop_ups_close`: remove empty spans with `net-splitcells-no-code-update-target` css class.
+        * [x] `net_splitcells_gel_ui_editor_no_code_generic_enhance`: add css class `net-splitcells-no-code-update-subject` to currently selected element with menu opened.
+        * [x] `net_splitcells_gel_ui_editor_no_code_pop_ups_close`
+            * [x] Remove empty spans with `net-splitcells-no-code-update-target` css class.
+            * [x] Remove css class `net-splitcells-no-code-update-subject` from any element.
         * [ ] Use `net-splitcells-no-code-update-target` for creating or updating an element.
             * [ ] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
