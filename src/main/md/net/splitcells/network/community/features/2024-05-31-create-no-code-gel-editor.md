@@ -119,12 +119,12 @@
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append`
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_set`
             * [x] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
-        * [ ] Use `net-splitcells-no-code-menu-update-target` for new pop-ups.
+        * [x] Use `net-splitcells-no-code-menu-update-target` for new pop-ups.
             * [x] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
             * [x] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
             * [x] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
         * [ ] Var arg methods should use the same code for adding things as the rest.
         * [ ] Undefined methods should use the same code for adding things as the rest.
         * [ ] Document the new process.
