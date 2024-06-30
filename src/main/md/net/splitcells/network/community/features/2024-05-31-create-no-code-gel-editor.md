@@ -145,3 +145,6 @@
     * [ ] Link general doc from no-code editor and Gel introduction doc.
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
+# Ideas
+* [ ] Add argumentation via pop-up to reformatted solution output.
+    * [ ] https://tabulator.info/docs/6.2/menu#cell-context
