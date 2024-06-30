@@ -136,8 +136,8 @@
             * [x] `net-splitcells-no-code-update-subject`
             * [x] Note that this makes the menu independent of its position and therefore more portable and adaptable.
     * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
-    * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
-        * [ ] Every function accessing HTML elements relative to each other should be generic code.
+    * [x] Create documentation over overhaul architecture in `no-code-editor.js`.
+        * [x] Every function accessing HTML elements relative to each other should be generic code.
           All other code should not have access HTML elements relative in order to keep it simple.
     * [ ] Adjust functions and variables names starting with `net_splitcells_gel_ui` inside of `no-code-editor.js`.
 * [ ] Closing tasks
