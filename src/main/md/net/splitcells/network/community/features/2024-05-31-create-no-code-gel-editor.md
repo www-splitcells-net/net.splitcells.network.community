@@ -113,19 +113,20 @@
         * [x] `net_splitcells_gel_ui_editor_no_code_pop_ups_close`
             * [x] Remove empty spans with `net-splitcells-no-code-insert-target` css class.
             * [x] Remove css class `net-splitcells-no-code-update-subject` from any element. 
-        * [ ] Use `net-splitcells-no-code-insert-target` for creating or updating an element.
+        * [x] Use `net-splitcells-no-code-insert-target` for creating or updating an element.
             * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_add_function_call`
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_append`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_set`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
+            * [x] `net_splitcells_gel_ui_editor_no_code_function_call_set`
+            * [x] `net_splitcells_gel_ui_editor_no_code_help_via_dynamic_name`
         * [ ] Use `net-splitcells-no-code-menu-update-target` for new pop-ups.
-            * [ ] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
-            * [ ] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_literal_set_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_variable_references_set_pop_up`
+            * [x] `net_splitcells_gel_ui_editor_no_code_variable_definition_rename_pop_up`
             * [x] `net_splitcells_gel_ui_editor_no_code_function_call_set_pop_up`
             * [ ] `net_splitcells_gel_ui_editor_no_code_function_call_append_pop_up`
-        * [ ] Functions using `net-splitcells-no-code-insert-target` should avoid code duplication.
+        * [ ] Var arg methods should use the same code for adding things as the rest.
+        * [ ] Undefined methods should use the same code for adding things as the rest.
         * [ ] Document the new process.
             * [ ] `net-splitcells-no-code-insert-target`
             * [ ] `net-splitcells-no-code-update-subject`
