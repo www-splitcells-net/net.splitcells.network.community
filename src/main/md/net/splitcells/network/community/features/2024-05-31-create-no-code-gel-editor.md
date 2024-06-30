@@ -103,7 +103,7 @@
     * [ ] Text area styling via inward shadow for no-code editor area
 * [ ] Clean up the code of this project.
     * [ ] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
-    * [ ] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
+    * [x] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
       that are placed in advance,
       instead of determining the location, when the nodes or pop-ups are created.
       For onclick attributes one can pass `document.getElementsByClassName([...])` etc. as arguments. 
@@ -130,14 +130,11 @@
             * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_add_literal`
             * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_add_variable_reference`
             * [x] `net_splitcells_gel_ui_editor_no_code_var_arg_enhance_help_show`
-        * [ ] Implement undefined methods. Undefined methods should use the same code for adding things as the rest.
-        * [ ] Document the new process.
-            * [ ] `net-splitcells-no-code-insert-target`
-            * [ ] `net-splitcells-no-code-update-subject`
-            * [ ] Note that this makes the menu independent of its position and therefore more portable.
-              But also note, that this independence is currently not really used.
-              This is currently only used in order to avoid calling parentNode,
-              which may or not be easier to get wrong than using css class.
+        * [x] Implement undefined methods. Undefined methods should use the same code for adding things as the rest.
+        * [x] Document the new process.
+            * [x] `net-splitcells-no-code-insert-target`
+            * [x] `net-splitcells-no-code-update-subject`
+            * [x] Note that this makes the menu independent of its position and therefore more portable and adaptable.
     * [x] Fix `net_splitcells_gel_ui_editor_no_code_function_call_add_arguments` as it deletes new function calls.
     * [ ] Create documentation over overhaul architecture in `no-code-editor.js`.
         * [ ] Every function accessing HTML elements relative to each other should be generic code.
