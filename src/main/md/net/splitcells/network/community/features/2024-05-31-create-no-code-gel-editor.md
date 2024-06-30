@@ -155,6 +155,13 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
+* [ ] Test any no-code editor GUI action via Selenium.
+    * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
+        * [ ] Test Firefox if available on Linux
+        * [ ] Test Chrome if available on Linux
+        * [ ] If integration tests are active, at least for one browser or HTML/Javascript engine the tests have to be run,
+          as otherwise one cannot be sure, that at least the basic GUI logic works.
+    * [ ] Test GUI actions.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
