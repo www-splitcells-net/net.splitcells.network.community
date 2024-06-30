@@ -101,7 +101,7 @@
     * [x] Allow only certain variable names. -> Not needed right now.
 * [ ] Visually mark no-code editor as interactable by the user.
     * [ ] Text area styling via inward shadow for no-code editor area
-* [ ] Clean up the code of this project.
+* [x] Clean up the code of this project.
     * [x] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
     * [x] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
       that are placed in advance,
