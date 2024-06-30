@@ -99,8 +99,8 @@
 * [ ] Ensure, that user cannot create invalid code.
     * [x] When a variable is renamed, every reference to it, needs to be renamed as well.
     * [x] Allow only certain variable names. -> Not needed right now.
-* [ ] Visually mark no-code editor as interactable by the user.
-    * [ ] Text area styling via inward shadow for no-code editor area
+* [x] Visually mark no-code editor as interactable by the user.
+    * [x] Text area styling via inward shadow for no-code editor area
 * [x] Clean up the code of this project.
     * [x] Move editor specific CSS styling to dedicated css files inside the `gel.ui` project.
     * [x] Determine location new AST nodes or pop-ups via empty placeholder spans with the dedicated css class `net-splitcells-no-code-insert-target`,
@@ -146,6 +146,7 @@
     * [ ] Link general doc from no-code editor and Gel introduction doc.
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
+    * [ ] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
