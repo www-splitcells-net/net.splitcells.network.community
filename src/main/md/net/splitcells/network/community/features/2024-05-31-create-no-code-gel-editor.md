@@ -39,7 +39,7 @@
         * [x] Append function call to function call in chain.
         * [ ] Create new things.
             * [ ] Add object access via function call.
-            * [ ] Create variable. CURRENT
+            * [ ] Create variable.
                 * [ ] Set literal as the variables value.
                 * [ ] Set function call as the variables value.
         * [x] Limit function names, that can be chosen for new function calls.
@@ -156,7 +156,7 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
-* [ ] Test any no-code editor GUI action via Selenium.
+* [ ] Test any no-code editor GUI action via Selenium. CURRENT
     * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [ ] Test Firefox if available on Linux
         * [ ] Test Chrome if available on Linux
