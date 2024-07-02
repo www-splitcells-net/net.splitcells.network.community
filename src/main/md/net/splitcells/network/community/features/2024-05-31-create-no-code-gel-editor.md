@@ -158,6 +158,9 @@
     * [ ] Advertise code editor as the tough love edition.
 * [ ] Test any no-code editor GUI action via Selenium. CURRENT
     * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
+        * [ ] Make MVP in Gel's UI for no-code editor.
+        * [ ] Move MVP in Dem, in order to make it generally usable.
+        * [ ] Try out HtmlUnit as browser in test framework.
         * [ ] Test Firefox if available on Linux
         * [ ] Test Chrome if available on Linux
         * [ ] If integration tests are active, at least for one browser or HTML/Javascript engine the tests have to be run,
