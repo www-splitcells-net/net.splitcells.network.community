@@ -158,7 +158,7 @@
     * [ ] Advertise code editor as the tough love edition.
 * [ ] Test any no-code editor GUI action via Selenium. CURRENT
     * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
-        * [ ] Make MVP in Gel's UI for no-code editor.
+        * [x] Make MVP in Gel's UI for no-code editor.
         * [ ] Move MVP in Dem, in order to make it generally usable.
         * [ ] Fix Selenium logging by configuring SLF4J. Currently, a NOP logger is active.
           Therefore, nothing is logged.
