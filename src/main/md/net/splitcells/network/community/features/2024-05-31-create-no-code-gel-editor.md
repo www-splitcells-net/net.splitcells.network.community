@@ -160,6 +160,7 @@
     * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [x] Make MVP in Gel's UI for no-code editor.
         * [ ] Move MVP in Dem, in order to make it generally usable.
+            * [ ] Decide if Playwright replaces Selenium, as it seems to work better. 
         * [ ] Fix Selenium logging by configuring SLF4J. Currently, a NOP logger is active.
           Therefore, nothing is logged.
         * [ ] Try out HtmlUnit as browser in test framework.
