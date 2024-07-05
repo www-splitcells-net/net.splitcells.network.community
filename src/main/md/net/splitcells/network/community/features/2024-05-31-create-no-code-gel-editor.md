@@ -165,7 +165,7 @@
             * [ ] Make MVP executable inside tests by starting a webserver during the tests.
               Keep in mind, that the browser API needs to know, how to access server.
                 * [ ] Minimal web server config, that can be used for testing.
-                  Use WebsiteServerCell.
+                  Use Cell API and WebsiteServerCell for test config.
         * [ ] Fix Selenium logging by configuring SLF4J. Currently, a NOP logger is active.
           Therefore, nothing is logged.
         * [ ] Try out HtmlUnit as browser in test framework.
