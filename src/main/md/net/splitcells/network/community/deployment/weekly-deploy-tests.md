@@ -1,5 +1,6 @@
 # Weekly deploy tests.
 Tests are executed on servers in order to ensure, that the software works on different CPUs.
+* [ ] Execute full test via Codeberg every day.
 * [ ] Add `worker.` prefix to deploy commands, as the related commands are part of the Network Worker.
     * [ ] `deploy.build.at`
     * [ ] `deploy.test.extensively.at`
