@@ -29,8 +29,10 @@
         * [x] Live server
 * [x] Note, that Codeberg is used for developers that are part of the project or honorable users. -> Codeberg is the main repo and issue host.
 * [x] Note that persistent issues are not normally done via Codeberg and co. Instead, the community repo is used instead. Codeberg and co is only used for discussions and attachments in this context.
-* [ ] Coordinate all issue numbering in community repo. -> Document alls issue number prefixes and their meaning.
-* [ ] Create guidelines for community project and ensure, that community project is main entry point for the project's developers.
+* [x] Coordinate all issue numbering in community repo. -> Document all issue number prefixes and their meaning.
+  -> Issue number prefixes are abandoned as they have not much of use.
+  This is documented in the ticket guidelines. 
+* [x] Create guidelines for community project and ensure, that community project is main entry point for the project's developers.
 * [x] Create documentation on why multiple git hosters are used. -> GitHub is the backup system.
 * [ ] Blog the migration was done and why paid GitLab hosting was not done instead.
-* [ ] Deprecate GitLab by disabling pushes to it.
+* [x] Deprecate GitLab by disabling pushes to it.
