@@ -65,7 +65,7 @@ I fucked the patch submission up on my part, so the patch was never merged.
 Then about 1 and half year, [nothing happened](https://sourcehut.org/blog).
 Nothing *seems* to be improved furthermore.
 In my mind, that last not small and new thing was chat.sr.ht. That was announced 2021.
-[The most things being worked on is networking and it's infrastructure](https://sourcehut.org/blog):
+[The most things being worked on is networking and its infrastructure](https://sourcehut.org/blog):
 * 2024-06-12: [DDOS](https://sourcehut.org/blog/2024-06-12-infrastructure-updates/)
 * 2024-06-04: [DDOS and Kubernetes and technical debt](https://sourcehut.org/blog/2024-06-04-status-and-plans/)
 * 2024-01-19: [Network outage](https://sourcehut.org/blog/2024-01-19-outage-post-mortem/)
