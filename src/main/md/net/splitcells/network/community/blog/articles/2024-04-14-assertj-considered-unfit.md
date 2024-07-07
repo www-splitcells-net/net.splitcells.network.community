@@ -39,7 +39,7 @@ The following shows, how a list can be checked in AssertJ:
 [...]
 import static org.assertj.core.api.Assertions.assertThat;
 [...]
-assertThat(demands).as("A problem without demands cannot be optimized").isEmpty();
+assertThat(demands).as("A problem without demands cannot be optimized").isNotEmpty();
 [...]
 ````
 In the Network project test code is considered to be part of the production code.
@@ -50,6 +50,6 @@ This allows one, to avoid imports and to harvest the IDEs auto complete function
 Replacing the backend of the assertion API also becomes easier.
 ````
 [...]
-demands.requireEmpty("A problem without demands cannot be optimized");
+demands.requireNotEmpty("A problem without demands cannot be optimized");
 [...]
 ````
