@@ -20,7 +20,7 @@
 * [ ] Process optimization request based on new language.
 * [ ] Extend language tree in front end with language actions.
     * [x] Create HTML mockup of language actions via Javascript.
-    * [ ] Delete language actions from GUI, when optimization problem is submitted.
+    * [x] Delete language actions from GUI, when optimization problem is submitted.
     * [ ] Implement language actions as Javascript code.
         * [x] Create help actions.
             * [x] For Function calls
@@ -28,7 +28,7 @@
             * [x] For variable access
             * [x] For literals
         * [x] Rename variable. 
-        * [ ] Choose different function call.
+        * [x] Choose different function call.
         * [x] Change function call argument.
         * [x] Remove function call.
         * [x] Remove variable.
@@ -38,6 +38,13 @@
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
         * [ ] Create new things.
+            * [ ] Create menu for creating new top level elements to problem definition. CURRENT
+                * [ ] Add action menu bar to div with `net-splitcells-webserver-form-no-code-editor` css class
+                  via JS function `net_splitcells_gel_ui_editor_no_code_enhance` at the top of the no-code editor.
+                * [ ] Introduce new css class, in order to mark the menu as an action menu,
+                  with a different style as `net-splitcells-dem-lang-perspective-no-code-action-menu`.
+                  This annotation is used in order to delete the menu during the submission.
+                  Maybe use a general css class, that is not used for styling.
             * [ ] Add object access via function call.
             * [ ] Create variable.
                 * [ ] Set literal as the variables value.
@@ -156,26 +163,32 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
-* [ ] Test any no-code editor GUI action via Selenium. CURRENT
-    * [ ] Isolate Selenium dependency via simple browser API, that supports simple actions.
+* [x] Test some no-code editor GUI action via Selenium.
+    * [x] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [x] Make MVP in Gel's UI for no-code editor.
-        * [ ] Move MVP in Dem, in order to make it generally usable.
-            * [ ] Decide if Playwright replaces Selenium, as it seems to work better.
-            * [ ] Remove MVP from Gel's UI and clean up Gel's UI.
-            * [ ] Make MVP executable inside tests by starting a webserver during the tests.
+        * [x] Move MVP in Dem, in order to make it generally usable.
+            * [x] Decide if Playwright replaces Selenium, as it seems to work better.
+              Document the reasoning.
+              -> It was decided to use Playwright for now, because Playwright automatically downloads the browser engine,
+              that fits to the host, instead of using the hosts browser engine.
+            * [x] Remove MVP from Gel's UI and clean up Gel's UI.
+            * [x] Make MVP executable inside tests by starting a webserver during the tests.
               Keep in mind, that the browser API needs to know, how to access server.
-                * [ ] Minimal web server config, that can be used for testing.
+                * [x] Minimal web server config, that can be used for testing.
                   Use Cell API and WebsiteServerCell for test config.
-        * [ ] Fix Selenium logging by configuring SLF4J. Currently, a NOP logger is active.
-          Therefore, nothing is logged.
-        * [ ] Try out HtmlUnit as browser in test framework.
-            * [ ] The problem with that is, that some JavaScript frameworks need to be disabled for this to work. 
-        * [ ] Test Firefox if available on Linux
-        * [ ] Test Chrome if available on Linux
-        * [ ] If integration tests are active, at least for one browser or HTML/Javascript engine the tests have to be run,
+        * [x] Fix Selenium logging by configuring SLF4J. Currently, a NOP logger is active.
+          Therefore, nothing is logged. -> This is not relevant anymore, as Playwright is used instead of Selenium.
+        * [x] Try out HtmlUnit as browser in test framework. -> This is not relevant anymore, as Playwright is used instead of Selenium.
+            * [x] The problem with that is, that some JavaScript frameworks need to be disabled for this to work.
+              -> This is not relevant anymore, as Playwright is used instead of Selenium.
+        * [x] Test Firefox if available on Linux
+        * [x] Test Chrome if available on Linux -> Will be done, when this gets relevant.
+        * [x] If integration tests are active, at least for one browser or HTML/Javascript engine the tests have to be run,
           as otherwise one cannot be sure, that at least the basic GUI logic works.
-    * [ ] Test GUI actions.
+          -> Playwright does not have such a problem.
+    * [x] Test GUI actions.
 # Ideas
 * [ ] Expand reformatted solution output.
+    * [ ] Revive `get first user` ticket. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format

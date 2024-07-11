@@ -1,7 +1,13 @@
 # Weekly deploy tests.
 Tests are executed on servers in order to ensure, that the software works on different CPUs.
-* [ ] Execute full test via Codeberg every day automatically.
-    * [ ] Send e-mail on failure.
+# Services
+* [ ] Check daily full test.
+# Tasks
+* [ ] Execute full test via Codeberg every day automatically for all repos.
+    * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
+    * [ ] Test that code complies with custom Java subset grammar.
+    * [ ] Execute integration test.
+    * [ ] Test all CSV pages and also their charts.
 * [ ] Add `worker.` prefix to deploy commands, as the related commands are part of the Network Worker.
     * [ ] `deploy.build.at`
     * [ ] `deploy.test.extensively.at`

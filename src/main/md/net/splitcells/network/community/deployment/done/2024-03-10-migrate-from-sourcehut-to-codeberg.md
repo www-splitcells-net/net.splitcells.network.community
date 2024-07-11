@@ -34,5 +34,5 @@
   This is documented in the ticket guidelines. 
 * [x] Create guidelines for community project and ensure, that community project is main entry point for the project's developers.
 * [x] Create documentation on why multiple git hosters are used. -> GitHub is the backup system.
-* [ ] Blog the migration was done and why paid GitLab hosting was not done instead.
+* [x] Blog the migration was done and why paid GitLab hosting was not done instead.
 * [x] Deprecate GitLab by disabling pushes to it.

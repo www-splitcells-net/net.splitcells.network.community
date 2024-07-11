@@ -42,7 +42,7 @@ The billing UI and its documents is great.
 That's not really important, but it increases confidence.
 
 SoureHut had always an nerd vibe to me,
-because old things, that are hard to use by non exports are supported and focused on:
+because old things, that are hard to use by non experts are supported and focused on:
 * e-mail based pushes
 * mailing lists
 * [IRC-Chat](http://chat.sr.ht)
@@ -89,7 +89,7 @@ I have a project,
 that I would like to make popular in the future.
 Maybe this will never happen as there are sever problems with me and my project,
 but I would like to have users for my software in the future.
-Currently, I can not imagine normal users and even some developers using the SourceHut as communication and
+Currently, I can not imagine normal users and even some developers using the SourceHut as a communication and
 development platform.
 I also, do not see this changing in the future.
 
