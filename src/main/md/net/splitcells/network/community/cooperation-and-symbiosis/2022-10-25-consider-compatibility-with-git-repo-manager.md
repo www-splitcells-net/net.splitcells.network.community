@@ -38,6 +38,7 @@ error[E0554]: `#![feature]` may not be used on the stable release channel
 ```
 
 * [ ] Create good documentation for `repo.process`.
+    * [ ] There should be one main document, that provides overview of all documents and main goals of repo process. 
     * [x] Local Path Context is not working for CommonMark files in OS state interface repo. Strangely, the problem only appears at this repo.
     * [x] Create strategy for help text and documentation page. Maybe descriptions should always be CommonMark format.
       Execute command for documentation, but with an environment variable being set, which disables any effects. -> Use dedicated help commands. This may also enable documentation injection in the future. Such commands are placed in `src/doc/[source language]`. -> Use normal documentation files in this case instead, because it is

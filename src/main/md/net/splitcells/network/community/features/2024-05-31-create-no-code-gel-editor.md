@@ -38,7 +38,7 @@
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
         * [ ] Create new things.
-            * [ ] Create menu for creating new top level elements to problem definition. CURRENT
+            * [ ] Create menu for creating new top level elements to problem definition.
                 * [ ] Add action menu bar to div with `net-splitcells-webserver-form-no-code-editor` css class
                   via JS function `net_splitcells_gel_ui_editor_no_code_enhance` at the top of the no-code editor.
                 * [ ] Introduce new css class, in order to mark the menu as an action menu,
@@ -150,7 +150,7 @@
     * [x] Add privacy notification.
     * [x] Import editor specific css via XML document and not via global import.
       -> This is not relevant, because this Gel UI's css is a general no-code styling fitting for the webserver.
-* [ ] Make solution formatting work. 
+* [ ] Make solution formatting work.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
@@ -163,7 +163,10 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
-* [x] Test some no-code editor GUI action via Selenium.
+* [ ] Test some no-code editor GUI action via Selenium.
+    * [ ] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
+      Do not put jQuery into core repo, but import jQuery via the `website.content.binaries` instead.
+      Avoid adding jQuery to the build artifact of `website.content.binaries`. CURRENT 
     * [x] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [x] Make MVP in Gel's UI for no-code editor.
         * [x] Move MVP in Dem, in order to make it generally usable.
