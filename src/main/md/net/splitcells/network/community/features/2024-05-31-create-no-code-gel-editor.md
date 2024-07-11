@@ -165,8 +165,7 @@
     * [ ] Advertise code editor as the tough love edition.
 * [ ] Test some no-code editor GUI action via Selenium.
     * [ ] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
-      Do not put jQuery into core repo, but import jQuery via the `website.content.binaries` instead.
-      Avoid adding jQuery to the build artifact of `website.content.binaries`. CURRENT 
+      Add jQuery artifact via the [org.webjars.jquery](https://central.sonatype.com/artifact/org.webjars/jquery) Maven dependency. CURRENT 
     * [x] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [x] Make MVP in Gel's UI for no-code editor.
         * [x] Move MVP in Dem, in order to make it generally usable.
