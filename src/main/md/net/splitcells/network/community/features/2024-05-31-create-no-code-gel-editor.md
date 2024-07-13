@@ -37,7 +37,7 @@
             * [x] Function call chain.
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
-        * [ ] Create new things.
+        * [ ] Create new things. CURRENT
             * [ ] Create menu for creating new top level elements to problem definition.
                 * [ ] Add action menu bar to div with `net-splitcells-webserver-form-no-code-editor` css class
                   via JS function `net_splitcells_gel_ui_editor_no_code_enhance` at the top of the no-code editor.
@@ -166,7 +166,7 @@
 * [x] Test some no-code editor GUI action via Selenium. -> Only new UI functionality will be tested,
   as the rest works for now and in order to safe resources.
     * [x] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
-      Add jQuery artifact via the [org.webjars.jquery](https://central.sonatype.com/artifact/org.webjars/jquery) Maven dependency. CURRENT
+      Add jQuery artifact via the [org.webjars.jquery](https://central.sonatype.com/artifact/org.webjars/jquery) Maven dependency.
         * [x] Remove jQuery from `webiste.content.binaries`.
         * [x] Only import required js files in Gel's UI, so that the tests work. -> This is not needed yet.
         * [x] Add jQuery as a Maven project resource to `website.content.default`,
