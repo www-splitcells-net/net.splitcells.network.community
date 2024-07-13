@@ -163,12 +163,13 @@
     * [ ] Advertise no-code editor as main editor on live server.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
-* [ ] Test some no-code editor GUI action via Selenium.
-    * [ ] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
+* [x] Test some no-code editor GUI action via Selenium. -> Only new UI functionality will be tested,
+  as the rest works for now and in order to safe resources.
+    * [x] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
       Add jQuery artifact via the [org.webjars.jquery](https://central.sonatype.com/artifact/org.webjars/jquery) Maven dependency. CURRENT
-        * [x] Remove jquery from `webiste.content.binaries`.
-        * [ ] Only import required js files in Gel's UI, so that the tests work.
-        * [ ] Add jQuery as a Maven project resource to `website.content.default`,
+        * [x] Remove jQuery from `webiste.content.binaries`.
+        * [x] Only import required js files in Gel's UI, so that the tests work. -> This is not needed yet.
+        * [x] Add jQuery as a Maven project resource to `website.content.default`,
           in order to have a complete resource list file.
     * [x] Isolate Selenium dependency via simple browser API, that supports simple actions.
         * [x] Make MVP in Gel's UI for no-code editor.
