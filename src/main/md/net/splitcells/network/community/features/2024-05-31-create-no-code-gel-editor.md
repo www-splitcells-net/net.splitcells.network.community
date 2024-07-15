@@ -37,18 +37,13 @@
             * [x] Function call chain.
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
-        * [ ] Create new things. CURRENT
-            * [ ] Create menu for creating new top level elements to problem definition.
-                * [ ] Add action menu bar to div with `net-splitcells-webserver-form-no-code-editor` css class
-                  via JS function `net_splitcells_gel_ui_editor_no_code_enhance` at the top of the no-code editor.
-                * [ ] Introduce new css class, in order to mark the menu as an action menu,
-                  with a different style as `net-splitcells-dem-lang-perspective-no-code-action-menu`.
-                  This annotation is used in order to delete the menu during the submission.
-                  Maybe use a general css class, that is not used for styling.
+        * [ ] Create new top level elements. CURRENT
+          Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
             * [ ] Add object access via function call.
             * [ ] Create variable.
                 * [ ] Set literal as the variables value.
                 * [ ] Set function call as the variables value.
+            * [ ] Use [dragula](https://bevacqua.github.io/dragula/) in order to modify order of the top level elements.
         * [x] Limit function names, that can be chosen for new function calls.
             * [x] Object access
         * [x] Automatically adjust arguments of currently changed or created function calls.
