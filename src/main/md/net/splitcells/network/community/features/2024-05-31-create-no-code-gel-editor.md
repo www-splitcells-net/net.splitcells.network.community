@@ -38,11 +38,10 @@
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
         * [ ] Create new top level elements. CURRENT
-          Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
-            * [ ] Add object access via function call.
-            * [ ] Create variable.
-                * [ ] Set literal as the variables value.
-                * [ ] Set function call as the variables value.
+            * [ ] Create base for that: Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
+            * [ ] Add new variable access to top level.
+            * [ ] Add new variable definition to top level.
+                * [ ] Setting variable value does not work correctly. The wrapper element is missing in this case.
             * [ ] Use [dragula](https://bevacqua.github.io/dragula/) in order to modify order of the top level elements.
         * [x] Limit function names, that can be chosen for new function calls.
             * [x] Object access
