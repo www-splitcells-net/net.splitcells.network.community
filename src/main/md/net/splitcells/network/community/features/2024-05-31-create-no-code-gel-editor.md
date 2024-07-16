@@ -193,3 +193,4 @@
     * [ ] Revive `get first user` ticket. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
+* [ ] Use Perspective based parser as backend for editor and no-code editor.
