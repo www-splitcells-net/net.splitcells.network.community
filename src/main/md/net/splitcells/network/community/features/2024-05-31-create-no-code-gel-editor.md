@@ -188,6 +188,7 @@
           as otherwise one cannot be sure, that at least the basic GUI logic works.
           -> Playwright does not have such a problem.
     * [x] Test GUI actions.
+* [x] Disable integration tests during default build, in order to speed up builds for developers.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
