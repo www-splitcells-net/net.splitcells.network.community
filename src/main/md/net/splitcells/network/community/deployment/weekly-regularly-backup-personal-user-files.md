@@ -1,6 +1,6 @@
 # Regularly backup personal user files
 ## Service
-* Simple commands:
+* Simple and portable commands:
 ```
 chezmoi re-add
 chezmoi cd
