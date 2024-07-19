@@ -10,31 +10,31 @@ Projects that are being worked cyclically, and probably will never be finished.
     * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
     * Review advertisement, introductions and info linked by README,
       because that is the primary material for newcomers.
-    * [Link](./src/main/md/net/splitcells/network/community/accessibility)
+    * [Link](./src/main/md/net/splitcells/network/community/accessibility/index.md)
 * Compatibility, portability and adaptability:
     * Description: Make code easy portable, translatable and adaptable to other languages and environments.
-    * [Link](./src/main/md/net/splitcells/network/community/compatibility-portability-and-adaptability)
+    * [Link](./src/main/md/net/splitcells/network/community/compatibility-portability-and-adaptability/index.md)
 * Cooperation and symbiosis:
     * Description: Tit for tat
-    * [Link](./src/main/md/net/splitcells/network/community/cooperation-and-symbiosis)
+    * [Link](./src/main/md/net/splitcells/network/community/cooperation-and-symbiosis/index.md)
 * Documentation project:
     * Description: Nobody reads this xD
-    * [Link](./src/main/md/net/splitcells/network/community/documentation)
+    * [Link](./src/main/md/net/splitcells/network/community/documentation/index.md)
 * Features:
     * Description: To the moon!
-    * [Link](./src/main/md/net/splitcells/network/community/features)
+    * [Link](./src/main/md/net/splitcells/network/community/features/index.md)
 * Maintenance project:
     * Description: Improve quality and fix bugs.
-    * [Link](./src/main/md/net/splitcells/network/community/maintenance)
+    * [Link](./src/main/md/net/splitcells/network/community/maintenance/index.md)
 * Deployment project
     * Description: Administer deployments
-    * [Link](./src/main/md/net/splitcells/network/community/deployment)
+    * [Link](./src/main/md/net/splitcells/network/community/deployment/index.md)
 * Performance Engineering 
     * Description: We have a need for speed.
-    * [Link](./src/main/md/net/splitcells/network/community/performance-engineering)
+    * [Link](./src/main/md/net/splitcells/network/community/performance-engineering/index.md)
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
-    * [Link](./src/main/md/net/splitcells/network/community/webserver-development)
+    * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
 * Support
     * Description: Your issues need images? Here is the place for that. 
     * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
