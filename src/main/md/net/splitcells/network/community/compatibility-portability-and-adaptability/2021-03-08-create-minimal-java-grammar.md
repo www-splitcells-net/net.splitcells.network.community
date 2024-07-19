@@ -19,20 +19,22 @@
     - [ ] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
         - [ ] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
         - [ ] Remove other `toDom` usage.
-            - [ ] Update `Rater#argumentation(GroupId, Table)`.
+            - [x] Update `Rater#argumentation(GroupId, Table)`.
                 - [x] Test whether `Rater#argumentation(GroupId, Table)` is used at all.
                   -> No it is not really used. So We can replace the method in one go or commit.
                   We could even delete it with no issue, but it may have a need, that is forgotten, so we just convert it instead.
                   `Rater#argumentation(GroupId, Table)` does not have anything to do with `Constraint#naturalArgumentation()` and co.
                 - [x] Create test for argumentation. -> Is not needed
-                - [ ] Remove `Rater#argumentation(GroupId, Table)` from Rater interface.
-                - [ ] Convert all `Rater#argumentation(GroupId, Table)` overrides to normal methods, that use Perspective instead.
-            - [ ] Update `Solution#createAnalysis`.
-                - [ ] Create a test for this.
-            - [ ] Update `SolutionView#createAnalysis`.
-              - [ ] Create a test for this.
-            - [ ] Update `SolutionView#toLinesFodsAnalysis`.
-                - [ ] Create a test for this.
+                - [x] Remove `Rater#argumentation(GroupId, Table)` from Rater interface.
+                - [x] Convert all `Rater#argumentation(GroupId, Table)` overrides to normal methods, that use Perspective instead.
+            - [x] Update `Solution#createAnalysis`.
+                - [x] Convert `Constraint#toDom()`
+                    - [x] Remove method usage.
+                - [x] Convert `Constraint#graph()`
+            - [ ] Update `SolutionView#createAnalysis`. CURRENT
+                - [ ] Convert `SolutionView#toAnalysisFods()`.
+                - [ ] Convert `Table#toFods()`
+                - [ ] Convert `SolutionView#toLinesFodsAnalysis`.
             - [ ] Update `History#toAnalysisFods`.
                 - [ ] Create a test for this.
             - [ ] Update `ProjectsRendererI#createLayout`.
