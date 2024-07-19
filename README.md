@@ -1,7 +1,10 @@
 # Splitcells Network Community
 ## Goals
 This project stores, organizes and develops tasks and ideas for the Splitcells Network.
+## Details
 This is done via JavaDoc (in order to easily support automatic refactoring) or CommonMark.
+The project [Identity Generator on Codeberg](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/10112)
+is used in order to generate unique issue ids. 
 ## Overview And Status
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
 ## Standard Projects
