@@ -97,7 +97,7 @@
 * [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
-* [ ] Ensure, that user cannot create invalid code.
+* [x] Ensure, that user cannot create invalid code. -> It's currently good enough.
     * [x] When a variable is renamed, every reference to it, needs to be renamed as well.
     * [x] Allow only certain variable names. -> Not needed right now.
 * [x] Visually mark no-code editor as interactable by the user.
