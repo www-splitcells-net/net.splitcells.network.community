@@ -1,6 +1,7 @@
 # Create minimal Java grammar for this project in order to make code less complex
-- [This is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
-- [This is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
+- The issue numbers are `#26` and `#10`.
+    - [This is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
+    - [This is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 - [ ] Recheck this ticket and clean it up.
 - [ ] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
 - [ ] Check grammar for all repos.
