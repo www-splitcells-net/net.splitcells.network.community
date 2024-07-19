@@ -1,6 +1,6 @@
 # Splitcells Network Community
 ## Goals
-This projects stores, organizes and develops tasks and ideas for the Splitcells Network.
+This project stores, organizes and develops tasks and ideas for the Splitcells Network.
 This is done via JavaDoc (in order to easily support automatic refactoring) or CommonMark.
 ## Overview And Status
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
