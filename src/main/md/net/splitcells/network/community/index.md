@@ -4,26 +4,41 @@
 ## Standard Projects
 Projects that are being worked cyclically, and probably will never be finished.
 * Accessibility: Improve accessibility:
-  * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
-  * Review advertisement, introductions and info linked by README,
-    because that is the primary material for newcomers.
+    * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
+    * Review advertisement, introductions and info linked by README,
+      because that is the primary material for newcomers.
+    * [Link](./accessibility)
 * Compatibility, portability and adaptability:
-  * Description: Make code easy portable, translatable and adaptable to other languages and environments.
+    * Description: Make code easy portable, translatable and adaptable to other languages and environments.
+    * [Link](./compatibility-portability-and-adaptability)
 * Cooperation and symbiosis:
-  * Description: Tit for tat
-* Document project:
-  * Description: Nobody reads this xD
+    * Description: Tit for tat
+    * [Link](./cooperation-and-symbiosis)
+* Documentation project:
+    * Description: Nobody reads this xD
+    * [Link](./documentation)
 * Features:
-  * Description: To the moon!
+    * Description: To the moon!
+    * [Link](./features)
 * Maintenance project:
-  * Description: Improve quality and fix bugs.
+    * Description: Improve quality and fix bugs.
+    * [Link](./maintenance)
 * Deployment project
-  * Description: Administer deployments
+    * Description: Administer deployments
+    * [Link](./deployment)
 * Performance Engineering 
-  * Description: We have a need for speed.
+    * Description: We have a need for speed.
+    * [Link](./performance-engineering)
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
+    * [Link](./webserver-development)
+* Support
+    * Description: Your issues need images? Here is the place for that. 
     * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
+* Major Projects
+    * Description: This is an archive of readable descriptions of some major projects,
+      that can be used as advertisement for specific groups.
+    * [Link](./projects) 
 ## Notes
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
