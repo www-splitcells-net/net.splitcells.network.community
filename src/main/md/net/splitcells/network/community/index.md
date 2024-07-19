@@ -10,38 +10,38 @@ Projects that are being worked cyclically, and probably will never be finished.
     * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
     * Review advertisement, introductions and info linked by README,
       because that is the primary material for newcomers.
-    * [Link](./accessibility)
+    * [Link](./src/main/md/net/splitcells/network/community/accessibility)
 * Compatibility, portability and adaptability:
     * Description: Make code easy portable, translatable and adaptable to other languages and environments.
-    * [Link](./compatibility-portability-and-adaptability)
+    * [Link](./src/main/md/net/splitcells/network/community/compatibility-portability-and-adaptability)
 * Cooperation and symbiosis:
     * Description: Tit for tat
-    * [Link](./cooperation-and-symbiosis)
+    * [Link](./src/main/md/net/splitcells/network/community/cooperation-and-symbiosis)
 * Documentation project:
     * Description: Nobody reads this xD
-    * [Link](./documentation)
+    * [Link](./src/main/md/net/splitcells/network/community/documentation)
 * Features:
     * Description: To the moon!
-    * [Link](./features)
+    * [Link](./src/main/md/net/splitcells/network/community/features)
 * Maintenance project:
     * Description: Improve quality and fix bugs.
-    * [Link](./maintenance)
+    * [Link](./src/main/md/net/splitcells/network/community/maintenance)
 * Deployment project
     * Description: Administer deployments
-    * [Link](./deployment)
+    * [Link](./src/main/md/net/splitcells/network/community/deployment)
 * Performance Engineering 
     * Description: We have a need for speed.
-    * [Link](./performance-engineering)
+    * [Link](./src/main/md/net/splitcells/network/community/performance-engineering)
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
-    * [Link](./webserver-development)
+    * [Link](./src/main/md/net/splitcells/network/community/webserver-development)
 * Support
     * Description: Your issues need images? Here is the place for that. 
     * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
 * Major Projects
     * Description: This is an archive of readable descriptions of some major projects,
       that can be used as advertisement for specific groups.
-    * [Link](./projects) 
+    * [Link](./src/main/md/net/splitcells/network/community/projects) 
 ## Notes
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
