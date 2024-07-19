@@ -45,6 +45,9 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Community Guidelines
     * Description: We comment on guidelines.
     * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
+* Blog
+  * Description: Speaking to the void about the development process.
+  * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
 ## Notes
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
