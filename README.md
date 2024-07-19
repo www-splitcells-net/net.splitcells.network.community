@@ -41,7 +41,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Major Projects
     * Description: This is an archive of readable descriptions of some major projects,
       that can be used as advertisement for specific groups.
-    * [Link](./src/main/md/net/splitcells/network/community/projects) 
+    * [Link](./src/main/md/net/splitcells/network/community/projects/index.md) 
 ## Notes
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
