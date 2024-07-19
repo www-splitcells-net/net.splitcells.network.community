@@ -189,6 +189,7 @@
           -> Playwright does not have such a problem.
     * [x] Test GUI actions.
 * [x] Disable integration tests during default build, in order to speed up builds for developers.
+* [ ] Fix solution formatting. Currently, the solution is not formatted, even so it is configured as such by default.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
