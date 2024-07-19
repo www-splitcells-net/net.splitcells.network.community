@@ -17,11 +17,11 @@
         * [x] Make `NoCodeProblemParser` complete.
         * [x] Optimize example data.
     * [ ] Test parsing of no-code constraints. Currently, it is assumed to be working.
-* [ ] Process optimization request based on new language.
-* [ ] Extend language tree in front end with language actions.
+* [x] Process optimization request based on new language.
+* [x] Extend language tree in front end with language actions.
     * [x] Create HTML mockup of language actions via Javascript.
     * [x] Delete language actions from GUI, when optimization problem is submitted.
-    * [ ] Implement language actions as Javascript code.
+    * [x] Implement language actions as Javascript code.
         * [x] Create help actions.
             * [x] For Function calls
             * [x] For variable references
@@ -37,12 +37,12 @@
             * [x] Function call chain.
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
-        * [ ] Create new top level elements. CURRENT
-            * [ ] Create base for that: Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
-            * [ ] Add new variable access to top level.
-            * [ ] Add new variable definition to top level.
-                * [ ] Setting variable value does not work correctly. The wrapper element is missing in this case.
-            * [ ] Use [dragula](https://bevacqua.github.io/dragula/) in order to modify order of the top level elements.
+        * [x] Create new top level elements. CURRENT
+            * [x] Create base for that: Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
+            * [x] Add new variable access to top level.
+            * [x] Add new variable definition to top level.
+                * [x] Setting variable value does not work correctly. The wrapper element is missing in this case.
+            * [x] Use [dragula](https://bevacqua.github.io/dragula/) in order to modify order of the top level elements.
         * [x] Limit function names, that can be chosen for new function calls.
             * [x] Object access
         * [x] Automatically adjust arguments of currently changed or created function calls.
