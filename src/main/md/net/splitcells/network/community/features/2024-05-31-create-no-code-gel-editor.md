@@ -37,7 +37,7 @@
             * [x] Function call chain.
             * [x] Variable reference.
         * [x] Append function call to function call in chain.
-        * [x] Create new top level elements. CURRENT
+        * [x] Create new top level elements.
             * [x] Create base for that: Adding new things to the current no-code, will be done via new options for available at the menu's of the top level elements. 
             * [x] Add new variable access to top level.
             * [x] Add new variable definition to top level.
@@ -89,14 +89,10 @@
         * [x] Function actions
         * [x] Literal actions
 * [x] Make it possible for the user to store a problem definition. -> This is the `Export no-code code.` functionality.
-* [ ] Import no-code code.
-* [ ] Export no-code code.
+* [x] Import no-code code.
+* [x] Export no-code code.
 * [x] Remove code from `no-code-editor.js`, that is already present in `editor.js`.
   -> For now this is not needed, as
-* [ ] Write documentation for all Help actions.
-* [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
-  This information should be queried directly from `net.splitcells.gel.constraint.Query`,
-  in order to avoid to code the same list at multiple locations.
 * [x] Ensure, that user cannot create invalid code. -> It's currently good enough.
     * [x] When a variable is renamed, every reference to it, needs to be renamed as well.
     * [x] Allow only certain variable names. -> Not needed right now.
@@ -144,6 +140,10 @@
     * [x] Add privacy notification.
     * [x] Import editor specific css via XML document and not via global import.
       -> This is not relevant, because this Gel UI's css is a general no-code styling fitting for the webserver.
+* [ ] Write documentation for all Help actions.
+* [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
+  This information should be queried directly from `net.splitcells.gel.constraint.Query`,
+  in order to avoid to code the same list at multiple locations. CURRENT
 * [ ] Make solution formatting work.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
