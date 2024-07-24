@@ -143,8 +143,8 @@
 * [ ] Write documentation for all Help actions.
 * [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
-  in order to avoid to code the same list at multiple locations. CURRENT
-* [ ] Make solution formatting work.
+  in order to avoid to code the same list at multiple locations.
+* [x] Make solution formatting work.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
@@ -190,6 +190,10 @@
     * [x] Test GUI actions.
 * [x] Disable integration tests during default build, in order to speed up builds for developers.
 * [ ] Fix solution formatting. Currently, the solution is not formatted, even so it is configured as such by default.
+* [ ] Test if constraint parsing is really working.
+    * [ ] Constraints are not parsed. CURRENT 
+    * [ ] Test in general if constraints are parsed at NoCodeProblemParserTest.
+    * [ ] Test in more detail at NoCodeQueryParser.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
