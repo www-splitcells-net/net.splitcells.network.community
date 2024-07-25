@@ -179,10 +179,13 @@
     * [x] Constraints are not parsed. 
     * [x] Test in general if constraints are parsed at NoCodeProblemParserTest.
     * [x] Test in more detail at NoCodeQueryParser. -> This is not important for now.
-* [ ] Write documentation for all Help actions.
-* [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
+* [x] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
   This information should be queried directly from `net.splitcells.gel.constraint.Query`,
   in order to avoid to code the same list at multiple locations.
+  -> This is not attempted for now,
+  because there are a lot of conditions and cases, that each require a different function list.
+  As the no-code editor is not massively used, this feature is too costly and has not enough benefits for now.
+* [ ] Write documentation for all Help actions.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
