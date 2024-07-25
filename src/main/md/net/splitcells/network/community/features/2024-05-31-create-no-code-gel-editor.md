@@ -140,23 +140,7 @@
     * [x] Add privacy notification.
     * [x] Import editor specific css via XML document and not via global import.
       -> This is not relevant, because this Gel UI's css is a general no-code styling fitting for the webserver.
-* [ ] Write documentation for all Help actions.
-* [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
-  This information should be queried directly from `net.splitcells.gel.constraint.Query`,
-  in order to avoid to code the same list at multiple locations.
 * [x] Make solution formatting work.
-* [ ] Document why no-code editor was created.
-    * [ ] No need for syntax documentation for simple functions.
-    * [ ] Uninformed user can experiment with language and thereby learn it better,
-      without having to fix syntax errors.
-      Instead by clicking on an element, the program can explain itself,
-      what can be done with the clicked thing.
-* [ ] Closing tasks
-    * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
-    * [ ] Link general doc from no-code editor and Gel introduction doc.
-    * [ ] Advertise no-code editor as main editor on live server.
-    * [ ] Create no-code editor demo video.
-    * [ ] Advertise code editor as the tough love edition.
 * [x] Test some no-code editor GUI action via Selenium. -> Only new UI functionality will be tested,
   as the rest works for now and in order to safe resources.
     * [x] Move jQuery into `website.content.default`, in order to have simple tests via core repos.
@@ -195,6 +179,22 @@
     * [x] Constraints are not parsed. 
     * [x] Test in general if constraints are parsed at NoCodeProblemParserTest.
     * [x] Test in more detail at NoCodeQueryParser. -> This is not important for now.
+* [ ] Write documentation for all Help actions.
+* [ ] In no-code editor, the list of available functions etc. should be queried from webserver and not be coded into the front end.
+  This information should be queried directly from `net.splitcells.gel.constraint.Query`,
+  in order to avoid to code the same list at multiple locations.
+* [ ] Document why no-code editor was created.
+    * [ ] No need for syntax documentation for simple functions.
+    * [ ] Uninformed user can experiment with language and thereby learn it better,
+      without having to fix syntax errors.
+      Instead by clicking on an element, the program can explain itself,
+      what can be done with the clicked thing.
+* [ ] Closing tasks
+    * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
+    * [ ] Link general doc from no-code editor and Gel introduction doc.
+    * [ ] Advertise no-code editor as main editor on live server.
+    * [ ] Create no-code editor demo video.
+    * [ ] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
