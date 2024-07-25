@@ -189,10 +189,10 @@
           -> Playwright does not have such a problem.
     * [x] Test GUI actions.
 * [x] Disable integration tests during default build, in order to speed up builds for developers.
-* [ ] Fix solution formatting. Currently, the solution is not formatted, even so it is configured as such by default.
-    * [ ] Create a test for formatting parameters.
+* [x] Fix solution formatting. Currently, the solution is not formatted, even so it is configured as such by default.
+    * [x] Create a test for formatting parameters.
 * [x] Test if constraint parsing is really working.
-    * [x] Constraints are not parsed. CURRENT 
+    * [x] Constraints are not parsed. 
     * [x] Test in general if constraints are parsed at NoCodeProblemParserTest.
     * [x] Test in more detail at NoCodeQueryParser. -> This is not important for now.
 # Ideas
