@@ -196,17 +196,19 @@
     * [ ] `function-call/solution`
     * [ ] `function-call/columnAttributesForOutputFormat.xml`
     * [ ] `function-call/rowAttributesForOutputFormat.xml`
-    * [ ] `general/literal.xml`
-    * [ ] `general/undefined.xml`
-    * [ ] `general/variable-arguments.xml`
-    * [ ] `general/variable-definition.xml`
-    * [ ] `general/variable-reference.xml`
+    * [x] `general/literal.xml`
+    * [x] `general/undefined.xml`
+    * [x] `general/variable-arguments.xml`
+    * [x] `general/variable-definition.xml`
+    * [x] `general/variable-reference.xml`
+    * [ ] Create dedicated help document for variable accesses.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
       without having to fix syntax errors.
       Instead by clicking on an element, the program can explain itself,
       what can be done with the clicked thing.
+    * [ ] No-code a way to interact with complex things in the software.
 * [ ] Closing tasks
     * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Link general doc from no-code editor and Gel introduction doc.
