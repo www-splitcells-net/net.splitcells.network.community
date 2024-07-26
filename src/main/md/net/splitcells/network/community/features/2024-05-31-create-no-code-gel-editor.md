@@ -186,6 +186,21 @@
   because there are a lot of conditions and cases, that each require a different function list.
   As the no-code editor is not massively used, this feature is too costly and has not enough benefits for now.
 * [ ] Write documentation for all Help actions.
+    * [ ] `function-call/attribute.xml`
+    * [ ] `function-call/database.xml`
+    * [ ] `function-call/forEach.xml`
+    * [ ] `function-call/then.xml`
+    * [ ] `function-call/forAllCombinationsOf.xml`
+    * [ ] `function-call/minimalDistance.xml`
+    * [ ] `function-call/hasSize`
+    * [ ] `function-call/solution`
+    * [ ] `function-call/columnAttributesForOutputFormat.xml`
+    * [ ] `function-call/rowAttributesForOutputFormat.xml`
+    * [ ] `general/literal.xml`
+    * [ ] `general/undefined.xml`
+    * [ ] `general/variable-arguments.xml`
+    * [ ] `general/variable-definition.xml`
+    * [ ] `general/variable-reference.xml`
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
