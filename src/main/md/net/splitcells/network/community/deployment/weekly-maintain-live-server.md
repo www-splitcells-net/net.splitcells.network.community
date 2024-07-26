@@ -9,20 +9,25 @@
 * Test security
 * Test privacy policy
 ## Open Tasks
-* [ ] Automatically restart server after update installation.
+* [ ] jQuery is not available at live server.
+* [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
         * [x] Make user service reachable via network.
         * [x] Start user service on server start automatically.
-        * [ ] Build image during build command and execute image during execute command.
+        * [ ] Build image during build command and execute image during execute command with `net.splitcells.network/bin/worker.execute`,
+          instead of  `net.splitcells.network.worker/bin/worker.execute`.
           Currently, the build command builds the Java part and the execute command builds the container image.
-            * [ ] Merge `worker.execute.*` commands into one `worker.execute` command.
-                * [ ] `worker.execute` is command with file storage.
-                    * [ ] Use more descriptive names for `$1` amd `$2`.
-                * [ ] `worker.program` is command without file storage.
-                * [ ] `worker.service` is command to execute command in detached mode.
-            * [ ] Create `worker.build` command, in order to prepare the execution by creating the files needed for the execution.
+            * [x] Merge `worker.execute.*` commands into one `worker.execute` command.
+                * [x] `worker.execute` is command with file storage.
+                    * [x] Use more descriptive names for `$1` amd `$2`.
+                * [x] `worker.program` is command without file storage.
+                * [x] `worker.service` is command to execute command in detached mode.
+            * [ ] Add parameter to `worker.execute` in order to build a project at the current folder in a standardized way.
+                * [ ] Consolidate `worker.repo.build`.
             * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
+    * [ ] Delete obsolete `net.splitcells.network.worker` repo
+* [ ] Automatically restart server after update installation.
 * [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
   This is required for Linux kernel updates. 
 * [ ] Make default file storage locations more sane regarding Linux home folder standard.
