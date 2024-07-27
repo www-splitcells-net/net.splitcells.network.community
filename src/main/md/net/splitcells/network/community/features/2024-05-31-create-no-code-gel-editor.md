@@ -185,6 +185,11 @@
   -> This is not attempted for now,
   because there are a lot of conditions and cases, that each require a different function list.
   As the no-code editor is not massively used, this feature is too costly and has not enough benefits for now.
+* [ ] jQuery is not available at live server.
+    * [ ] Fix the issue.
+    * [ ] FileSystemViaClassResourcesImpl should reject file read requests for files, that are not in the resource list.
+      In other words. there should be a validation during the read access.
+  * [ ] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
     * [ ] `function-call/database.xml`

@@ -9,7 +9,7 @@
 * Test security
 * Test privacy policy
 ## Open Tasks
-* [ ] jQuery is not available at live server.
+* [ ] Pull source code from Codeberg instead of GitHub.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -26,6 +26,7 @@
             * [ ] Add parameter to `worker.execute` in order to build a project at the current folder in a standardized way.
                 * [ ] Consolidate `worker.repo.build`.
             * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
+            * [ ] Create flag in order to execute program as a persisten service.
     * [ ] Delete obsolete `net.splitcells.network.worker` repo
 * [ ] Automatically restart server after update installation.
 * [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
