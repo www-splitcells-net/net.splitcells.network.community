@@ -190,6 +190,8 @@
     * [ ] FileSystemViaClassResourcesImpl should reject file read requests for files, that are not in the resource list.
       In other words. there should be a validation during the read access.
   * [ ] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
+  * [ ] Add double-entry bookkeeping to programming guidelines.
+    Use FileSystemViaClassResourcesImpl and unknown configuration keys as an example.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
     * [ ] `function-call/database.xml`
