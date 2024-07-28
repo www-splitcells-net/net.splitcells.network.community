@@ -78,3 +78,17 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Use only project construct on hosters like Codeberg or GitHub,
   if there is a current need for that
   (i.e. issues on those hosts support image attachments or it is useful for other users.).
+# Format for Cyclic Tasks
+Some tasks are executed weekly.
+For such tickets the following CommonMark template is used:
+```
+# Weekly deploy static website.
+* Description: [Task description]
+* Issue number [\#...](link to issue, that defines the number).
+# Service
+[This is a list of tasks, that are executed cyclicly.]
+# Tasks
+[Open Tasks]
+# Completed Tasks
+[Tasks that are done and stored for documentation purposes.]
+```
