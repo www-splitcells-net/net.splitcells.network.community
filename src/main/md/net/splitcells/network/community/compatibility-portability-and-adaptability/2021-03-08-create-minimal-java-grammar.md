@@ -31,14 +31,33 @@
                 - [x] Convert `Constraint#toDom()`
                     - [x] Remove method usage.
                 - [x] Convert `Constraint#graph()`
-            - [ ] Update `SolutionView#createAnalysis`. CURRENT
-                - [ ] Convert `SolutionView#toAnalysisFods()`.
-                - [ ] Convert `Table#toFods()`
-                - [ ] Convert `SolutionView#toLinesFodsAnalysis`.
+            - [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
+                - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`. CURRENT
+                    - [ ] Ensure, that header is written correctly. See [example](#FODS-Header).
+                    - [ ] Render some Perspective properties as XML properties.
+                        - [ ] Encode the fact, that something is an attribute in the NameSpace.
+                          Add the attribute `isXmlAttribute`.
+                          In order to support some values in an XML namespace
+                        - [ ] style-name
+                        - [ ] XML_ATTRIBUTE
+                        - [ ] FODS_STYLE
+                            - [ ] name
+                            - [ ] family 
+                            - [ ] parent-style-name
+                        - [ ] FODS_FO
+                            - [ ] background-color
+                            - [ ] color
+                        - [ ] FODS_OFFICE  mimetype
+                        - [ ] FODS_TABLE name
+                - [ ] Convert `fodsStyling` via `fodsStyling2`.
+                - [ ] Convert `fodsStyling_style` via `fodsStyling_style2`.
+                - [ ] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
+          - [ ] Convert `History#toFods()`
             - [ ] Update `History#toAnalysisFods`.
                 - [ ] Create a test for this.
             - [ ] Update `ProjectsRendererI#createLayout`.
                 - [ ] Create a test for this.
+          - [ ] Convert `Solution#ViewtoFodsTableAnalysis`
     - [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
@@ -70,3 +89,13 @@ For this to work, the source code also have to comply with the grammar, when thi
 - [ ] Create basis for Translation. Use JavaParser for translation only instead of the Java grammer,
   in order to support some standard Java things/classes/method via name resolution
   without creating own wrapper interfaces and objects.
+
+# Quotes
+## FODS-Header
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+                 xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0"
+                 xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+                 office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+```

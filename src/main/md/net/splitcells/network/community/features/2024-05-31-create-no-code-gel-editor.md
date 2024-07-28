@@ -192,6 +192,9 @@
   * [ ] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
   * [ ] Add double-entry bookkeeping to programming guidelines.
     Use FileSystemViaClassResourcesImpl and unknown configuration keys as an example.
+  * [ ] Create Maven support doc regarding the reason for this bug.
+      * [ ] https://stackoverflow.com/a/67158497
+  * [ ] Create a documentation regarding double-entry bookkeeping and IT.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
     * [ ] `function-call/database.xml`
@@ -223,7 +226,7 @@
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
-* [ ] Expand reformatted solution output.
+<* [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format

@@ -27,7 +27,11 @@
                 * [ ] Consolidate `worker.repo.build`.
             * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
             * [ ] Create flag in order to execute program as a persisten service.
-    * [ ] Delete obsolete `net.splitcells.network.worker` repo
+    * [ ] Delete obsolete `net.splitcells.network.worker` repo.
+    * [ ] Use this command for existing test deployment commands as well.
+      This tests whether this new command is portable or not. 
+        * [ ] `deploy.build.at`
+        * [ ] `deploy.test.extensively.at`
 * [ ] Automatically restart server after update installation.
 * [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
   This is required for Linux kernel updates. 
