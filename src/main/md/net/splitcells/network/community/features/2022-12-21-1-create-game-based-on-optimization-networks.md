@@ -39,6 +39,10 @@ Games are inherently suitable for this and have the advantage of being advertiza
 ## Tasks
 
 * [ ] Deploy game on live server.
+    * [ ] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data.
+        * [ ] Create `net.splitcells.network.connect`.
+            * [ ] Its main purposes is to connect multiple `Dem#process`.
+            * [ ] Provides single point of entry for HTTP requests.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
         * [ ] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
           Link from this ticket to this new ticket instead.

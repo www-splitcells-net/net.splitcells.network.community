@@ -1,4 +1,6 @@
 # Blog about package manager versus dependency management.
+# TODOs
+* [ ] Absolute synchronous update death march
 * [ ] https://www.youtube.com/watch?v=ZJamU0yOdAw
 * [ ] https://www.ypsidanger.com/the-distribution-model-is-changing/
 * [ ] Eclipse IDE as a worst case scenario.
