@@ -2,7 +2,7 @@
 * Provide a no-code editor for gel,
   in order to ease the documentation of the programming language
   by avoiding or minimizing documentation regarding the language's syntax.
-* [\#c24](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/24) is the issue.
+* [\#24](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/24) is the issue.
 # Tasks
 * [x] Create HTML data mockup.
 * [x] Create backend language based on mockup.
@@ -192,8 +192,7 @@
   * [ ] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
   * [ ] Add double-entry bookkeeping to programming guidelines.
     Use FileSystemViaClassResourcesImpl and unknown configuration keys as an example.
-  * [ ] Create Maven support doc regarding the reason for this bug.
-      * [ ] https://stackoverflow.com/a/67158497
+  * [x] Create Maven support doc regarding the reason for this bug.
   * [ ] Create a documentation regarding double-entry bookkeeping and IT.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
