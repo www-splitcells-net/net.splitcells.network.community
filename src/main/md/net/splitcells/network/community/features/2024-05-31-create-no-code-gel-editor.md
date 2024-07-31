@@ -1,4 +1,4 @@
-# Create no-code gel editor
+# Create no-code gel editor.
 * Provide a no-code editor for gel,
   in order to ease the documentation of the programming language
   by avoiding or minimizing documentation regarding the language's syntax.
@@ -193,7 +193,8 @@
   * [x] Add double-entry bookkeeping to programming guidelines.
   * [x] Create Maven support doc regarding the reason for this bug.
   * [ ] Blog about double-entry bookkeeping and IT.
-    Use declarative programming as an example, where this is most important.
+      * [ ] Use declarative programming as an example, where this is most important.
+      * [ ] Use FileSystemViaClassResourcesImpl as an example.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
     * [ ] `function-call/database.xml`

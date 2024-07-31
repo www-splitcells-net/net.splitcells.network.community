@@ -2,7 +2,7 @@
 Tests are executed on servers in order to ensure, that the software works on different CPUs.
 The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/30).
 # Services
-* [ ] Check daily full test.
+* [ ] Check daily full test on network hub.
 # Tasks
 * [ ] Execute full test via Codeberg every day automatically for all repos.
     * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
