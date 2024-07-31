@@ -185,11 +185,13 @@
   -> This is not attempted for now,
   because there are a lot of conditions and cases, that each require a different function list.
   As the no-code editor is not massively used, this feature is too costly and has not enough benefits for now.
+* [x] The editor is not uploading the current no-code to the server.
+  Instead only, the initial no-code is submitted, even when the user changed the no-code in the editor.
 * [ ] jQuery is not available at live server.
     * [x] Fix the issue.
-    * [ ] FileSystemViaClassResourcesImpl should reject file read requests for files, that are not in the resource list.
+    * [x] FileSystemViaClassResourcesImpl should reject file read requests for files, that are not in the resource list.
       In other words. there should be a validation during the read access.
-  * [ ] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
+  * [x] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
   * [x] Add double-entry bookkeeping to programming guidelines.
   * [x] Create Maven support doc regarding the reason for this bug.
   * [ ] Blog about double-entry bookkeeping and IT.
@@ -226,10 +228,11 @@
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
-<* [ ] Expand reformatted solution output.
+* [ ] Expand reformatted solution output.
     * [ ] Revive `get first user` ticket. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
 * [ ] Use domain object based parser as backend for editor and no-code editor.
     * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
     * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+* [ ] Output parsed constraint tree in editors, in order to be able to double-check the results, of defining the constraints. 
