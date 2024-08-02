@@ -6,6 +6,8 @@
 * [ ] Speed up `RenderingValidatorForHtmlLinks` by caching `ProjectsRenderer#projectsPaths()`.
     * [ ] Refresh cache, when invalid links was found and recheck.
     * [ ] Check valid links, by rendering it internally.
+* [ ] Invalid-Link-Counter page, has old history file: `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`
+    * [ ] Check the last CSV entry is new enough. Otherwise, create a status warning exactly for this.
 # Completed Tasks
 * [x] Full and differential deployment does not always seem to update already uploaded files
   See https://splitcells.net/net/splitcells/network/community/blog/articles/2024-04-14-assertj-considered-unfit.html
