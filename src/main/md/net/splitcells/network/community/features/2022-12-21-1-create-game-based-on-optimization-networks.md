@@ -150,6 +150,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
         * [ ] View that scows everything build out of particles.
         * [ ] Consider camera grain and texture grain.
         * [ ] Create style guide for visualization.
+        * [ ] Camera with Tilt Shift
 * [ ] Implement game of life.
     * [ ] Run game.
     * [x] Visualize state via file.

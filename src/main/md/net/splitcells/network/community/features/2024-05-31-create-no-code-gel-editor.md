@@ -196,7 +196,7 @@
   * [x] Create Maven support doc regarding the reason for this bug.
   * [ ] Blog about double-entry bookkeeping and IT.
       * [ ] Use declarative programming as an example, where this is most important.
-      * [ ] Use FileSystemViaClassResourcesImpl as an example.
+      * [x] Use FileSystemViaClassResourcesImpl as an example. -> Make blog article shorter and don't use this example.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
     * [ ] `function-call/database.xml`
@@ -214,6 +214,7 @@
     * [x] `general/variable-definition.xml`
     * [x] `general/variable-reference.xml`
     * [ ] Create dedicated help document for variable accesses.
+    * [ ] Provide deletion action for variable accesses.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
