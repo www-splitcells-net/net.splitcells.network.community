@@ -32,6 +32,7 @@
       This tests whether this new command is portable or not. 
         * [ ] `deploy.build.at`
         * [ ] `deploy.test.extensively.at`
+    * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
 * [ ] Automatically restart server after update installation.
 * [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
   This is required for Linux kernel updates. 
