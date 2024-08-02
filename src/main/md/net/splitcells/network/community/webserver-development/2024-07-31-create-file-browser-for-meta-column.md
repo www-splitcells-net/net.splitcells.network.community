@@ -18,9 +18,12 @@
 * [x] Always show a way to navigate to somewhere like the root of the website. The navigation page should never be empty.
 * [x] Consider documents with a name of a folder at the same document as parent pages as well.
 * [ ] Make Menu link button in main column an action button, in order to signal, that this button does not lead to a different page.
-* [ ] Add explore button at window menu, that is only visible in minimal/mobile view.
+* [x] Add explore button at window menu, that is only visible in minimal/mobile view.
   This button links to the file browser in the meta column.
   This conveys to the user, that there are more interesting things available.
+  -> The element id `net-splitcells-website-file-browser` is used for that.
+* [ ] Fix big query of `@media (max-width: 54em) {` in `layout.default.css`.
+  The small one works.
 # Old Tasks
 * [ ] Better visually hint at possibility of page navigation via meta column through design.
     * [ ] Provide tree, that is a merge of `Parent Pages` and `Relevant Context Path`. It's important, that for each element in the tree, the item start with the file/folder name without its file suffix. Name this new chapter `Relevate pages to the current page` (RPCP).
