@@ -38,8 +38,8 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
     * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
-* Support
-    * Description: Your issues need images? Here is the place for that. 
+* Developer Support
+    * Description: Your issues need images? Here is the place for that, but only for developers of this project and not users. 
     * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
 * Major Projects
     * Description: This is an archive of readable descriptions of some major projects,
