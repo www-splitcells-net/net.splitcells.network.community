@@ -187,15 +187,15 @@
   As the no-code editor is not massively used, this feature is too costly and has not enough benefits for now.
 * [x] The editor is not uploading the current no-code to the server.
   Instead only, the initial no-code is submitted, even when the user changed the no-code in the editor.
-* [ ] jQuery is not available at live server.
+* [x] jQuery is not available at live server.
     * [x] Fix the issue.
     * [x] FileSystemViaClassResourcesImpl should reject file read requests for files, that are not in the resource list.
       In other words. there should be a validation during the read access.
   * [x] Provide performance flag, in order to disable this behaviour and warn, when it is not enabled.
   * [x] Add double-entry bookkeeping to programming guidelines.
   * [x] Create Maven support doc regarding the reason for this bug.
-  * [ ] Blog about double-entry bookkeeping and IT.
-      * [ ] Use declarative programming as an example, where this is most important.
+  * [x] Blog about double-entry bookkeeping and IT.
+      * [x] Use declarative programming as an example, where this is most important.
       * [x] Use FileSystemViaClassResourcesImpl as an example. -> Make blog article shorter and don't use this example.
 * [ ] Write documentation for all Help actions.
     * [ ] `function-call/attribute.xml`
