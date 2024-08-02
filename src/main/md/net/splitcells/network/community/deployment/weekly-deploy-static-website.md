@@ -1,6 +1,8 @@
 # Weekly deploy static website.
+* Issue number: [\#35](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/35)
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
+# Tasks
 # Completed Tasks
 * [x] Full and differential deployment does not always seem to update already uploaded files
   See https://splitcells.net/net/splitcells/network/community/blog/articles/2024-04-14-assertj-considered-unfit.html

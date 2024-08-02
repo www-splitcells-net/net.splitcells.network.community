@@ -17,6 +17,8 @@ in order to render the public version of the website.
           and controlled via `generation.style` variable in the `layout.xsl`.
         - [ ] `generation.style` variable was problem in error. Maybe this should be removed again? -> Do not use `generation.style` for now.
             - [x] Every menu's content needs to be determined via documents at certain locations, instead of hard coding this into the layout, in order to avoid duplicate layouts. Do this via files provided to the XSL transformer, instead of adding this information to every document, because this is currently the easiest way and migration to other better ways should be easy enough.
+* [ ] RenderingValidatorForHtmlLinks shows many invalid links.
+  `net.splitcells.martins.avots.distro` does not have such many errors.
 - [ ] Make `bare-minimal` version viable.
     - [ ] Test website with document `https://localhost:8447/net/splitcells/website/bare-minimal/net/splitcells/website/empty.html`
     - [ ] Most files are missing.
