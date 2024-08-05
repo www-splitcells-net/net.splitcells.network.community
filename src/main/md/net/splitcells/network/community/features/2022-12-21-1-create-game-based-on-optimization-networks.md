@@ -3,8 +3,8 @@
   (The original GitHub issue id is [#170](https://github.com/www-splitcells-net/net.splitcells.network/issues/170).)
 # Description
 This issue is currently on very low priority,
-as it requires extensive resource to implement even an MVP,
-because of a performance issue.
+as it requires extensive resources to implement even an MVP,
+because of performance and complexity issues.
 
 Restoring the features of the master thesis, is currently on a higher priority.
 Nevertheless, this is an important issue,
