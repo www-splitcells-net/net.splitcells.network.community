@@ -83,8 +83,8 @@ Some tasks are executed weekly.
 For such tickets the following CommonMark template is used:
 ```
 # Weekly deploy static website.
-* Description: [Task description]
 * Issue number: [\#...](link to issue, that defines the number)
+# Descript
 # Service
 [This is a list of tasks, that are executed cyclicly.]
 # Tasks

@@ -24,6 +24,8 @@
   -> The element id `net-splitcells-website-file-browser` is used for that.
 * [ ] Fix big query of `@media (max-width: 54em) {` in `layout.default.css`.
   The small one works.
+* [ ] Sort children of a folder by the fact if it is a file or folder first and than by name,
+  in order to easy navigation.
 # Old Tasks
 * [ ] Better visually hint at possibility of page navigation via meta column through design.
     * [ ] Provide tree, that is a merge of `Parent Pages` and `Relevant Context Path`. It's important, that for each element in the tree, the item start with the file/folder name without its file suffix. Name this new chapter `Relevate pages to the current page` (RPCP).

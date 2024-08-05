@@ -1,9 +1,17 @@
 # Create game based on optimization networks.
+* Issue number: TODO
+  (The original GitHub issue id is [#170](https://github.com/www-splitcells-net/net.splitcells.network/issues/170).)
+# Description
+This issue is currently on very low priority,
+as it requires extensive resource to implement even an MVP,
+because of a performance issue.
 
-The original GitHub issue id is [#170](https://github.com/www-splitcells-net/net.splitcells.network/issues/170).
+Restoring the features of the master thesis, is currently on a higher priority.
+Nevertheless, this is an important issue,
+as this feature is the most advanced and most forward seeing of any other features.
 
-## Context
-
+TODO Create an actual description of the issue.
+# Context
 The initial idea for the optimization framework long ago was
 to create a modeller for complex optimization systems or complex systems in general,
 so one could study these.
@@ -35,9 +43,8 @@ but which provided a way to merge all such small independents into one big struc
 It occurred, that such structure basically is a world,
 where on can place and connect things.
 Games are inherently suitable for this and have the advantage of being advertizable.
-
-## Tasks
-
+# Tasks
+* [ ] Record performance data and manage cache size via these.
 * [ ] Deploy game on live server.
     * [ ] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data.
         * [ ] Create `net.splitcells.network.connect`.
@@ -296,8 +303,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
 * [x] Make web server for debugging more mature.
   Currently, it takes a long time to start and the code is an hack.
 * [x] Write article explaining and demonstrating this. -> This was moved to an other ticket.
-
-## Ideas For Future Tickets
+# Ideas For Future Tickets
 * [ ] Use certain easy to create medias.
     * [ ] Draw images in form of music notes on sheets: https://www.youtube.com/watch?v=-ICh9zhr87Y
     * [ ] Use piezo contact microphones to create environment etc. sounds via contact on metals and heating these up: https://www.youtube.com/watch?v=_anGFyEfOpU

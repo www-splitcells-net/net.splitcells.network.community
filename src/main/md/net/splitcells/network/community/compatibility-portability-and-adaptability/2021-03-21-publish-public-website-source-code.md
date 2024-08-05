@@ -1,4 +1,5 @@
 # Publish public website source code
+- [ ] [Establish Cell API first](2024-08-06-establish-cell-api.md).
 - [ ] Make this ticket nice and note the difference to https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 - [ ] This repo is used in order to publish the website's source code: https://github.com/www-splitcells-net/net.splitcells.martins.avots.distro
 

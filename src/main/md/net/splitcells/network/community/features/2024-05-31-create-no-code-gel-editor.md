@@ -223,17 +223,23 @@
       what can be done with the clicked thing.
     * [ ] No-code a way to interact with complex things in the software.
 * [ ] Closing tasks
-    * [ ] Create a general no-code doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
+    * [ ] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
+    * [ ] Create a general code editor, which mainly says, that everything works like no-code editor except with a slightly different syntax. 
     * [ ] Link general doc from no-code editor and Gel introduction doc.
-    * [ ] Advertise no-code editor as main editor on live server.
+    * [ ] Add no-code editor as main program on the live server's front menu. 
+    * [ ] Write final evaluation.
+        * [ ] The no-code editor works, but is not ready for real world use.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
-* [ ] Expand reformatted solution output.
-    * [ ] Revive `get first user` ticket. 
+* [ ] Solve school course scheduling problem
+    * [ ] Update and enable issue 
+    * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems. 
+        * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
+            * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
+            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+* [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
+    * [ ] Expand reformatted solution output. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
-* [ ] Use domain object based parser as backend for editor and no-code editor.
-    * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
-    * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
-* [ ] Output parsed constraint tree in editors, in order to be able to double-check the results, of defining the constraints. 
+    * [ ] Output parsed constraint tree in editors, in order to be able to double-check the results, of defining the constraints.
