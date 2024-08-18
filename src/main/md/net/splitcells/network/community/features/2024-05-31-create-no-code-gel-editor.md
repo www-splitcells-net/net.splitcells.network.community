@@ -233,11 +233,7 @@
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Solve school course scheduling problem
-    * [ ] Update and enable issue 
-    * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems. 
-        * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
-            * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
-            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+    * [ ] Update and enable issue
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
     * [ ] Expand reformatted solution output. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 

@@ -84,7 +84,7 @@ For such tickets the following CommonMark template is used:
 ```
 # Weekly deploy static website.
 * Issue number: [\#...](link to issue, that defines the number)
-# Descript
+# Task Description
 # Service
 [This is a list of tasks, that are executed cyclicly.]
 # Tasks

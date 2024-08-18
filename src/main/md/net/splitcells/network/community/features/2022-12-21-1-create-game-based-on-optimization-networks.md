@@ -44,6 +44,7 @@ It occurred, that such structure basically is a world,
 where on can place and connect things.
 Games are inherently suitable for this and have the advantage of being advertizable.
 # Tasks
+* [ ] Clean up this issue as a whole.
 * [ ] Record performance data and manage cache size via these.
 * [ ] Deploy game on live server.
     * [ ] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data.
