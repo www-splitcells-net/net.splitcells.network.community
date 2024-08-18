@@ -232,8 +232,6 @@
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
-* [ ] Solve school course scheduling problem
-    * [ ] Update and enable issue
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
     * [ ] Expand reformatted solution output. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
