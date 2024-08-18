@@ -233,6 +233,8 @@
     * [ ] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
+    * [ ] Do this task, when the issue ["Solve school course scheduling problem"](2021-03-07-solve-school-course-scheduling-problem.md) is being worked on,
+      as it seems to be a fitting features for that issue.
     * [ ] Expand reformatted solution output. 
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
