@@ -1,5 +1,5 @@
 # Solve sport lesson assignment
-# Description
+# Task Description
 Exemplary solve the sport lesson assignment problem from Martins Avot's master thesis,
 in order to extend the programs modelling and optimization capabilities.
 Thereby make the project usable as a service by multiple users at once,
