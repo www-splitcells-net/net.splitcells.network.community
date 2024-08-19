@@ -201,11 +201,11 @@
     * [x] `function-call/attribute.xml`
     * [x] `function-call/database.xml`
     * [x] `function-call/forEach.xml`
-    * [ ] `function-call/then.xml`
-    * [ ] `function-call/forAllCombinationsOf.xml`
-    * [ ] `function-call/minimalDistance.xml`
-    * [ ] `function-call/hasSize`
-    * [ ] `function-call/solution`
+    * [x] `function-call/then.xml`
+    * [x] `function-call/forAllCombinationsOf.xml`
+    * [x] `function-call/minimalDistance.xml`
+    * [x] `function-call/hasSize`
+    * [x] `function-call/solution`
     * [ ] `function-call/columnAttributesForOutputFormat.xml`
     * [ ] `function-call/rowAttributesForOutputFormat.xml`
     * [x] `general/literal.xml`
