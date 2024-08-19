@@ -198,9 +198,9 @@
       * [x] Use declarative programming as an example, where this is most important.
       * [x] Use FileSystemViaClassResourcesImpl as an example. -> Make blog article shorter and don't use this example.
 * [ ] Write documentation for all Help actions.
-    * [ ] `function-call/attribute.xml`
-    * [ ] `function-call/database.xml`
-    * [ ] `function-call/forEach.xml`
+    * [x] `function-call/attribute.xml`
+    * [x] `function-call/database.xml`
+    * [x] `function-call/forEach.xml`
     * [ ] `function-call/then.xml`
     * [ ] `function-call/forAllCombinationsOf.xml`
     * [ ] `function-call/minimalDistance.xml`
@@ -215,6 +215,7 @@
     * [x] `general/variable-reference.xml`
     * [ ] Create dedicated help document for variable accesses.
     * [ ] Provide deletion action for variable accesses.
+    * [ ] Fix tree styling: http://localhost:8443/net/splitcells/gel/ui/no/code/editor/help/function-call/attribute.html
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
@@ -223,6 +224,7 @@
       what can be done with the clicked thing.
     * [ ] No-code a way to interact with complex things in the software.
 * [ ] Closing tasks
+    * [ ] For both editors link to assignment and constraint model explanation.
     * [ ] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
     * [ ] Create a general code editor, which mainly says, that everything works like no-code editor except with a slightly different syntax. 
     * [ ] Link general doc from no-code editor and Gel introduction doc.

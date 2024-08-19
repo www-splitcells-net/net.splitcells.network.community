@@ -16,7 +16,9 @@ if the service can only be used by one user at once.
         * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
-    * [ ] Add example of sport lesson assignment as an editor page to webserver. 
+    * [ ] Add example of sport lesson assignment as an editor page to webserver.
+* [ ] Make it easier to understand the solution.
+    * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
 * [ ] Improve user experience regarding the application's responsiveness.
     * [ ] Implement basic multi threading injection framework.
     * [ ] Support multiple users at once via multi threading injection.
