@@ -16,6 +16,8 @@ if the service can only be used by one user at once.
         * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+            * [ ] Use Java sum type in order to simplify handling of domain object, if needed.
+              This requires sum types to be added to the allowed Java grammar. 
     * [ ] Add example of sport lesson assignment as an editor page to webserver.
 * [ ] Make it easier to understand the solution.
     * [ ] Store and show positive reason, why a certain supply was assigned as certain value.

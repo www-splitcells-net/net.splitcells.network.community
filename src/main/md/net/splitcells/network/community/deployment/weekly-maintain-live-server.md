@@ -33,6 +33,8 @@
         * [ ] `deploy.build.at`
         * [ ] `deploy.test.extensively.at`
     * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
+* [ ] Automatically and continuously check, if the SSL certificate for HTTPS is still valid
+  and replace it automatically.
 * [ ] Automatically restart server after update installation.
 * [ ] `apt upgrade` packages are seemingly not installed by unattended-upgrades.
   This is required for Linux kernel updates. 
