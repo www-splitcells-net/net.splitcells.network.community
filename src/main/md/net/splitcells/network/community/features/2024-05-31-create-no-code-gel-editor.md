@@ -206,15 +206,16 @@
     * [x] `function-call/minimalDistance.xml`
     * [x] `function-call/hasSize`
     * [x] `function-call/solution`
-    * [ ] `function-call/columnAttributesForOutputFormat.xml`
-    * [ ] `function-call/rowAttributesForOutputFormat.xml`
+    * [x] `function-call/columnAttributesForOutputFormat.xml`
+    * [x] `function-call/rowAttributesForOutputFormat.xml`
     * [x] `general/literal.xml`
     * [x] `general/undefined.xml`
     * [x] `general/variable-arguments.xml`
     * [x] `general/variable-definition.xml`
     * [x] `general/variable-reference.xml`
-    * [ ] Create dedicated help document for variable accesses.
-    * [ ] Provide deletion action for variable accesses.
+    * [x] Create dedicated help document for variable accesses.
+    * [x] Provide deletion action for variable accesses.
+    * [ ] Opening the solution tab does not work anymore.
     * [ ] Fix tree styling: http://localhost:8443/net/splitcells/gel/ui/no/code/editor/help/function-call/attribute.html
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
