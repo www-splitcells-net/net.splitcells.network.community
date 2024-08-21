@@ -215,8 +215,11 @@
     * [x] `general/variable-reference.xml`
     * [x] Create dedicated help document for variable accesses.
     * [x] Provide deletion action for variable accesses.
-    * [ ] Opening the solution tab does not work anymore.
+    * [x] Opening the solution tab does not work anymore.
     * [ ] Fix tree styling: http://localhost:8443/net/splitcells/gel/ui/no/code/editor/help/function-call/attribute.html
+        * [ ] Create alternative rendering based on existing path context rendering.
+        * [ ] Deprecate `den.xsl` and find and fix usages, that do not work with the alternative rendering.
+        * [ ] Remove obsolete and deprecated `den.xsl` code.
 * [ ] Document why no-code editor was created.
     * [ ] No need for syntax documentation for simple functions.
     * [ ] Uninformed user can experiment with language and thereby learn it better,
