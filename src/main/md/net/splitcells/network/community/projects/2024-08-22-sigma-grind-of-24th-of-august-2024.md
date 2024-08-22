@@ -8,4 +8,12 @@
 * [ ] Create experimental persistence framework for table data based on Gel,
   in order test its future viability as a base persistence layer for data processing on scale.
   Use this for user authentication in the webserver.
-* [ ] Create overview of Splitcells Network architecture and its storage types.
+* [ ] Create overview of Splitcells Network Worker architecture and its storage types.
+    * [ ] OSI
+    * [ ] Filesystems
+    * [ ] Tables
+    * [ ] Network Worker
+    * [ ] Network Worker bootstrapping
+    * [ ] Network Bootstrapper
+    * [ ] Java
+    * [ ] Python 3 and Bash
