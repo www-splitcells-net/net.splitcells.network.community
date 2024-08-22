@@ -7,4 +7,5 @@
     * [ ] Model sport lesson assignment in new editor.
 * [ ] Create experimental persistence framework for table data based on Gel,
   in order test its future viability as a base persistence layer for data processing on scale.
+  Use this for user authentication in the webserver.
 * [ ] Create overview of Splitcells Network architecture and its storage types.
