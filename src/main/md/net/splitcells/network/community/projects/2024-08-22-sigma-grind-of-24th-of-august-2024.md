@@ -25,4 +25,6 @@
     * [ ] Worker commands.
     * [ ] Webserver deployment.
     * [ ] Create ticket for getting to this architecture.
+    * [ ] Codeberg
+    * [ ] Offline backups
 * [ ] Complete no-code editor ticket.
