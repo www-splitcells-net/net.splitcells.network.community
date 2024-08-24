@@ -31,7 +31,8 @@ if the service can only be used by one user at once.
     * [x] Support multiple users at once via multi threading injection.
     * [ ] Ensure, that logs are working in threads, too.
       Currently, it does not seem to be the case and therefore `Throwable#printStackTrace()` is used as a workaround.
-    * [ ] Use multiple threads for calculation of the ratings via the constraint nodes.
+    * [x] Use multiple threads for calculation of the ratings via the constraint nodes.
+      -> The performance get worse with constraint multithreading.
     * [ ] Use dedicated workers for lookup tables.
     * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
     * [ ] Check CPU and RAM usage.

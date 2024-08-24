@@ -1,6 +1,6 @@
 # Sigma Grind of 24th of August 2024
 > Time to break the mind into pieces as much as possible.
-
+# Tasks
 * [x] Improve user experience regarding the application's responsiveness by introducing multithreading to webserver and constraint tree.
 * [ ] Create a new single backend for the problem definition language with a new editor and deprecate existing editors.
   This backend focuses on being independent of the parsers and language grammars.
@@ -28,3 +28,19 @@
     * [ ] Codeberg
     * [ ] Offline backups
 * [ ] Complete no-code editor ticket.
+# Result
+Only multithreading was implemented.
+Conceptually, the framework multithreading and the code is as easy as imagined.
+Actually using the framework in aspects seemed to be as easy in the beginning and the code stayed simple throughout this grind.
+Unfortunately, the error analysis required a tremendous amount of time.
+The fixes where easy every time, but they required a lot of analysis work.
+
+2 errors found in Cin's TimeSteps and LonelinessTest caused by the multithreading were not fixed.
+Its analysis took too much time and the problem happens in only some scenarios during testing.
+These tests were disabled, because these test currently deprecated functionality.
+It is also suspected, that there is an error in the Rater implementations.
+This will be fixed, when the Cin project is restarted.
+See `2022-12-21-1-create-game-based-on-optimization-networks.md`.
+
+Furthermore, multithreading worsens the optimizers' performance.
+The webserver on the other hand now support multiple editor users at once.
