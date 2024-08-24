@@ -1,4 +1,5 @@
 # Solve sport lesson assignment
+* Issue number: [\#37](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/37)
 # Task Description
 Exemplary solve the sport lesson assignment problem from Martins Avot's master thesis,
 in order to extend the programs modelling and optimization capabilities.
@@ -22,9 +23,19 @@ if the service can only be used by one user at once.
 * [ ] Make it easier to understand the solution.
     * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
 * [ ] Improve user experience regarding the application's responsiveness.
-    * [ ] Implement basic multi threading injection framework.
+    * [x] Implement basic multi threading injection framework.
+        * [x] Note, that multi threading is achieved while avoiding amount of thread safe code.
+          Therefore, multiple instances of ProjectsRendererI are used,
+          even though most of that code is probably thread safe.
+          Code that is thread safe, because everything is read only is fine though.
     * [ ] Support multiple users at once via multi threading injection.
     * [ ] Use multiple threads for calculation of the ratings via the constraint nodes.
     * [ ] Use dedicated workers for lookup tables.
     * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
     * [ ] Check CPU and RAM usage.
+    * [ ] Related code improvements.
+        * [ ] Webserver instance should be contained inside `Dem#value` as a service and
+          by default be limited to given set of instances.
+          Otherwise, webserver instances cannot be configured, created and run declaratively.
+          This makes working with these essential resources unnecessary hard.
+          For instance, replacing or adapting the webserver becomes harder.
