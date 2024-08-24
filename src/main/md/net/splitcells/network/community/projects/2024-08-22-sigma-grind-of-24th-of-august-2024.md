@@ -28,7 +28,7 @@
     * [ ] Codeberg
     * [ ] Offline backups
 * [ ] Complete no-code editor ticket.
-# Result
+# Result Diary
 Only multithreading was implemented.
 Conceptually, the framework multithreading and the code is as easy as imagined.
 Actually using the framework in aspects seemed to be as easy in the beginning and the code stayed simple throughout this grind.
@@ -45,3 +45,10 @@ See `2022-12-21-1-create-game-based-on-optimization-networks.md`.
 
 Furthermore, multithreading worsens the optimizers' performance.
 The webserver on the other hand now support multiple editor users at once.
+
+Multithreading the optimizer causes problems on the live server.
+Therefore, it was disabled by default.
+Cin's TimeSteps and LonelinessTest were renabled.
+The constraints multithreading is at least executed during `DatabaseTest#testMultiThreadedQueryInitialization`,
+so its not dead code.
+The webservers multithreading stays enabled in live server.
