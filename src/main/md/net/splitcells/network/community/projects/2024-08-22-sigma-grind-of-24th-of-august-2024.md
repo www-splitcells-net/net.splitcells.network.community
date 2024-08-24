@@ -38,7 +38,8 @@ The fixes where easy every time, but they required a lot of analysis work.
 2 errors found in Cin's TimeSteps and LonelinessTest caused by the multithreading were not fixed.
 Its analysis took too much time and the problem happens in only some scenarios during testing.
 These tests were disabled, because these test currently deprecated functionality.
-It is also suspected, that there is an error in the Rater implementations.
+It is also suspected, that there is a general and not multithreaded related error in the Rater implementations.
+It may be the case, that in some allocation order the Rater implementation do not work.
 This will be fixed, when the Cin project is restarted.
 See `2022-12-21-1-create-game-based-on-optimization-networks.md`.
 
