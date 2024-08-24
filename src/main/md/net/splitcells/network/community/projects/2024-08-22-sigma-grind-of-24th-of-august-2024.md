@@ -1,6 +1,6 @@
 # Sigma Grind of 24th of August 2024
 > Time to break the mind into pieces as much as possible.
-# Tasks
+# Possible Tasks to be Done
 * [x] Improve user experience regarding the application's responsiveness by introducing multithreading to webserver and constraint tree.
 * [ ] Create a new single backend for the problem definition language with a new editor and deprecate existing editors.
   This backend focuses on being independent of the parsers and language grammars.
