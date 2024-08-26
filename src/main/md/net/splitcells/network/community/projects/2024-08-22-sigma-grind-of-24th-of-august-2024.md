@@ -44,9 +44,10 @@ This will be fixed, when the Cin project is restarted.
 See `2022-12-21-1-create-game-based-on-optimization-networks.md`.
 
 Furthermore, multithreading worsens the optimizers' performance.
-The webserver on the other hand now support multiple editor users at once.
+The webserver on the other hand now supports multiple editor users at once,
+while any number of them submit optimization problems.
 
-Multithreading the optimizer causes problems on the live server.
+Multithreading the optimizer also causes problems on the live server.
 Therefore, it was disabled by default.
 Cin's TimeSteps and LonelinessTest were renabled.
 The constraints multithreading is at least executed during `DatabaseTest#testMultiThreadedQueryInitialization`,
