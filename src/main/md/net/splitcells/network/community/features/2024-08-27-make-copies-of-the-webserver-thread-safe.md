@@ -13,7 +13,7 @@ The basis for the webserver thread safety was created [here](../projects/2024-08
     * [ ] The Whole XML class needs to be removed, as it is not thread safe.
     * [ ] Try improving the multithreaded webserver by trying an experimental handler fix for the multipart-bodies of forms:
       Use end handler and body handler by nesting these.
-    * [] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
+    * [ ] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
       See `Multipart Exception`.
 
 # Multipart Exception
