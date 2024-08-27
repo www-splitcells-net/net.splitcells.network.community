@@ -46,6 +46,7 @@
 * [ ] Run Forgejo Runner via Podman in order to not require root rights for Forgejo Runner: https://code.forgejo.org/forgejo/runner/src/branch/main/scripts/systemd.md
 * [ ] Execute runtime profiling for long-running instances and store these,
   in order to improve day to day performance via [Grafana and Pyroscope](https://grafana.com/docs/pyroscope/latest/get-started/).
+* [ ] Do not log already logged message, in order to simplify logs on live server.
 ## Done Tasks
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,

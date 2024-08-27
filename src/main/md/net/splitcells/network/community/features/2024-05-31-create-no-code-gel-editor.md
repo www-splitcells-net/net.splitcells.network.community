@@ -237,6 +237,10 @@
         * [ ] The no-code editor works, but is not ready for real world use.
     * [ ] Create no-code editor demo video.
     * [ ] Advertise code editor as the tough love edition.
+* [ ] Clean up errors.
+    * [ ] Exporting definition does not work in mobile for live server.
+    * [ ] Exporting solution does not work in mobile for live server.
+    * [ ] Renaming a variable, breaks the `Calculate solution.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
     * [ ] Do this task, when the issue ["Solve school course scheduling problem"](2021-03-07-solve-school-course-scheduling-problem.md) is being worked on,
@@ -245,3 +249,6 @@
     * [ ] Add argumentation via pop-up to reformatted solution output: https://tabulator.info/docs/6.2/menu#cell-context 
     * [ ] Color cells based on their ratings: https://tabulator.info/docs/6.2/format
     * [ ] Output parsed constraint tree in editors, in order to be able to double-check the results, of defining the constraints.
+* [ ] Consider using own table implementation for front end, in order to be able to annotate data to table.
+  Argumentation data would be such an example, where data is only marked with table cell background color and
+  made visible by a click of the user on the respective cell.
