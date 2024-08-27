@@ -1,10 +1,12 @@
 # Make copies of the webserver thread safe
 * Issue number: [\#38](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/38)
+* Main method: `net.splitcells.website.server.Server.serveToHttpAt`
 # Task Description
 If multiple ProjectsRenderer are created and each used by a dedicated thread,
 then these ProjectsRenderers still have problems with each other's thread.
 
 The basis for the webserver thread safety was created [here](../projects/2024-08-22-sigma-grind-of-24th-of-august-2024.md).
+
 # Tasks
 * [ ] First complete [this ticket](2024-05-31-create-no-code-gel-editor.md).
 * [ ] Multithreaded webserver sometimes has random errors, when optimization problems are submitted via the editors.
