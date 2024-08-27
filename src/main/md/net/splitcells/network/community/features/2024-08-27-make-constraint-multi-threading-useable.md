@@ -1,8 +1,8 @@
 # Make constraint multi-threading usable
 * Issue number: [\#39](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/39)
 # Task Description
-Currently, the multi-threading decreases the runtime performance by 100% percent is disabled,
-except for one test.
+Currently, the multi-threading decreases the runtime performance by 100% percent.
+Therefore, it is disabled for now, except for one test.
 
 The basis for the constraint multi-threading was created [here](../projects/2024-08-22-sigma-grind-of-24th-of-august-2024.md).
 # Tasks
