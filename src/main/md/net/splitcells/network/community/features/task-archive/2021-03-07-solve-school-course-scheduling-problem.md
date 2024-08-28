@@ -1,34 +1,37 @@
 # Solve school course scheduling problem
-- [This is the original issue](https://github.com/www-splitcells-net/net.splitcells.network/issues/8)
-- This is ticket is mainly used in order to improve constraint based repair and make the whole software package more usable for developers.
-- [ ] Ensure, quickly as possible, that a minimum viable version of this works and improve this in subsequent tickets.
-    - [x] Do this by creating new very simplified test data.
+* [This is the original issue](https://github.com/www-splitcells-net/net.splitcells.network/issues/8)
+* This is ticket is mainly used in order to improve constraint based repair and make the whole software package more usable for developers.
+* [ ] Make the network distribution an optimization platform where the problems can also be stored on the server can be interacted with.
+  A user authorization system is needed for this.
+  Make the whole platform also easy usable as a tool, in order to synchronize Git repos for instance.
+* [ ] Ensure, quickly as possible, that a minimum viable version of this works and improve this in subsequent tickets.
+    * [x] Do this by creating new very simplified test data.
       Tackle the complex test data in a later project from website server.
-        - [x] Ensure that problem parameters match result.
-    - [ ] Make it easy to retrieve analysis data.
-        - [ ] Make fods files downloadable via website.
-    - [x] Document that the reason for this is the fact the school optimization in on itself is not that good advertisable without additional things like a GUI. In other words, the Cin project is more usable right now, than the school optimization project.
-    - [x] Treat subsequent tickets to this topic as service tasks for now.
-    - [x] Blog about this decision.
-- [x] Ensure that Solution's name is based on the provided one and not the demand database.
+        * [x] Ensure that problem parameters match result.
+    * [ ] Make it easy to retrieve analysis data.
+        * [ ] Make fods files downloadable via website.
+    * [x] Document that the reason for this is the fact the school optimization in on itself is not that good advertisable without additional things like a GUI. In other words, the Cin project is more usable right now, than the school optimization project.
+    * [x] Treat subsequent tickets to this topic as service tasks for now.
+    * [x] Blog about this decision.
+* [x] Ensure that Solution's name is based on the provided one and not the demand database.
   This is a problem for `SchoolCourseSchedulingTest#defineTeacherAllocationForCourses`.
-- [x] Fix incorrectly implemented equals methods using `return identity().equals(castedArg.identity());` via helper function.
-- [x] Model Problem.
-- [x] Test rating with simple example problems. -> I think it's enough to solve the problem and then verify the solution manually.
-- [x] Create meaningful random instance.
-- [ ] Solve random instance via the repair based optimizer.
-    - [ ] Use custom initializers for constraint based repair in order to improve results.
-    - [ ] Render performance data in Graph and monitor results,
+* [x] Fix incorrectly implemented equals methods using `return identity().equals(castedArg.identity());` via helper function.
+* [x] Model Problem.
+* [x] Test rating with simple example problems. -> I think it's enough to solve the problem and then verify the solution manually.
+* [x] Create meaningful random instance.
+* [ ] Solve random instance via the repair based optimizer.
+    * [ ] Use custom initializers for constraint based repair in order to improve results.
+    * [ ] Render performance data in Graph and monitor results,
       in order to get a felling, how much needs to be done and how much effect a single action had.
       Do this by reimplementing the old problem specific initializers.
       (Currently done via https://localhost:8444/net/splitcells/martins/avots/website/test.html)
-- [ ] Document problem, because it seems to be hard to understand for third party.
-- [x] Implement Domsole, which can output a list of values, that can be easily graphed via LibreOffice and CLI tools.
+* [ ] Document problem, because it seems to be hard to understand for third party.
+* [x] Implement Domsole, which can output a list of values, that can be easily graphed via LibreOffice and CLI tools.
   This can be used in order to easily render histograms of the solution rating during the optimization.
-    - [x] Remove usage of Node logging interface. -> I removed some Node usage and deprecated the interface instead.
-    - [x] Replace Node logging interface with Perspective logging interface.
-    - [x] Create one ouput file for each logging context and enable creating csv files this way. -> UiRouter can be used as an alternative Domsole.
-    - [x] Fix XML outpout for Domsole. -> Will fix it, when it is used again or the code is cleaned up during maintenance.
+    * [x] Remove usage of Node logging interface. -> I removed some Node usage and deprecated the interface instead.
+    * [x] Replace Node logging interface with Perspective logging interface.
+    * [x] Create one ouput file for each logging context and enable creating csv files this way. -> UiRouter can be used as an alternative Domsole.
+    * [x] Fix XML outpout for Domsole. -> Will fix it, when it is used again or the code is cleaned up during maintenance.
 * [x] Allocations do not work for nested problems, because there is an equality problem. -> Allocations had an inconsistent path.
   ``Context of demand for removal should be part demands or used demands, but is not:
   Removal context is           Database[demands, Rails For School Scheduling, allocations],
