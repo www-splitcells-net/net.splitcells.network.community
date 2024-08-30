@@ -17,3 +17,5 @@ The basis for the constraint multi-threading was created [here](../projects/2024
     * [ ] Create integration test for multi-threading.
     * [ ] Consider grouping adding and removing allocations together for greater runtime performance.
 * [ ] Make editor working faster via multi-threading.
+    * [ ] Prevent lock up of edtior via multi-threading.
+* [ ] Consider analysis, that states which thread worked at which constraint node.
