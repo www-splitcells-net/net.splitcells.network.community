@@ -11,11 +11,10 @@ The basis for the constraint multi-threading was created [here](../projects/2024
 * [ ] First complete [this ticket](2024-05-31-create-no-code-gel-editor.md).
 * [ ] Try improving multi-threading of constraint nodes by grouping additions and removals together.
     * [ ] Do not reset rating cache too often
-    * [ ] Ensure calling rating at end of line group update or implicitly.
+    * [ ] Ensure calling `Constraint#rating` implicitly at end of line group update.
         * [ ] How to ensure the constraint node is synchronized to its parents, too?
+* [ ] Create integration test for multi-threading.
     * [ ] Document, that only test multi-threading in integration and fuzzy tests. Basic concurrency tests should be done in normal tests.
-    * [ ] Create integration test for multi-threading.
-    * [ ] Consider grouping adding and removing allocations together for greater runtime performance.
 * [ ] Improve constraint performance, by only using dedicated thread for constraint nodes,
   that have more than 2 children.
 * [ ] Consider analysis, that states which thread worked at which constraint node.
