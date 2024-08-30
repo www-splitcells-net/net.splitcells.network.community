@@ -6,6 +6,8 @@ Therefore, it is disabled for now, except for one test.
 
 The basis for the constraint multi-threading was created [here](../projects/2024-08-22-sigma-grind-of-24th-of-august-2024.md).
 # Tasks
+* [ ] Log warning about experimental feature via Dem, when ConstraintMultiThreading is true.
+* [ ] Every thread should have a name, so these are easier to understand in the debugger.
 * [ ] First complete [this ticket](2024-05-31-create-no-code-gel-editor.md).
 * [ ] Try improving multi-threading of constraint nodes by grouping additions and removals together.
     * [ ] Do not reset rating cache too often
@@ -14,3 +16,4 @@ The basis for the constraint multi-threading was created [here](../projects/2024
     * [ ] Document, that only test multi-threading in integration and fuzzy tests. Basic concurrency tests should be done in normal tests.
     * [ ] Create integration test for multi-threading.
     * [ ] Consider grouping adding and removing allocations together for greater runtime performance.
+* [ ] Make editor working faster via multi-threading.
