@@ -16,6 +16,8 @@ The basis for the constraint multi-threading was created [here](../projects/2024
     * [ ] Document, that only test multi-threading in integration and fuzzy tests. Basic concurrency tests should be done in normal tests.
     * [ ] Create integration test for multi-threading.
     * [ ] Consider grouping adding and removing allocations together for greater runtime performance.
+* [ ] Improve constraint performance, by only using dedicated thread for constraint nodes,
+  that have more than 2 children.
+* [ ] Consider analysis, that states which thread worked at which constraint node.
 * [ ] Make editor working faster via multi-threading.
     * [ ] Prevent lock up of edtior via multi-threading.
-* [ ] Consider analysis, that states which thread worked at which constraint node.
