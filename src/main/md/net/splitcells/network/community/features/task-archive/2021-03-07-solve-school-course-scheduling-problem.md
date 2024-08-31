@@ -1,6 +1,7 @@
 # Solve school course scheduling problem
 * [This is the original issue](https://github.com/www-splitcells-net/net.splitcells.network/issues/8)
 * This is ticket is mainly used in order to improve constraint based repair and make the whole software package more usable for developers.
+* [ ] Do [make constraint multi threading usable](2024-08-27-make-constraint-multi-threading-useable.md).
 * [ ] Make the network distribution an optimization platform where the problems can also be stored on the server can be interacted with.
   A user authorization system is needed for this.
   Make the whole platform also easy usable as a tool, in order to synchronize Git repos for instance.
