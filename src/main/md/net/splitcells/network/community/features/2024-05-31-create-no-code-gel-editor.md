@@ -216,7 +216,7 @@
     * [x] Create dedicated help document for variable accesses.
     * [x] Provide deletion action for variable accesses.
     * [x] Opening the solution tab does not work anymore.
-    * [ ] Fix tree styling: http://localhost:8443/net/splitcells/gel/ui/no/code/editor/help/function-call/attribute.html
+    * [x] Fix tree styling: http://localhost:8443/net/splitcells/gel/ui/no/code/editor/help/function-call/attribute.html
       -> Nested lists are used instead. Den tree (den-ast) styling is now deprecated in its current form.
         * [ ] Create alternative rendering based on existing path context rendering.
         * [ ] Deprecate `den.xsl` and find and fix usages, that do not work with the alternative rendering.
