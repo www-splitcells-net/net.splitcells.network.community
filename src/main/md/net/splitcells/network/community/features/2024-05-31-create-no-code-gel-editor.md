@@ -242,6 +242,7 @@
     * [ ] Exporting definition does not work in mobile for live server.
     * [ ] Exporting solution does not work in mobile for live server.
     * [ ] Renaming a variable, breaks the `Calculate solution.
+    * [ ] No-code editor does not work currently on live server.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
     * [ ] Do this task, when the issue ["Solve school course scheduling problem"](2021-03-07-solve-school-course-scheduling-problem.md) is being worked on,
