@@ -222,8 +222,8 @@
         * [o] Deprecate `den.xsl` and find and fix usages, that do not work with the alternative rendering.
         * [o] Remove obsolete and deprecated `den.xsl` code.
 * [ ] Document why no-code editor was created.
-    * [ ] No need for syntax documentation for simple functions.
-    * [ ] Uninformed user can experiment with language and thereby learn it better,
+    * [x] No need for syntax documentation for simple functions.
+    * [x] Uninformed user can experiment with language and thereby learn it better,
       without having to fix syntax errors.
       Instead by clicking on an element, the program can explain itself,
       what can be done with the clicked thing.
