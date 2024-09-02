@@ -197,7 +197,7 @@
   * [x] Blog about double-entry bookkeeping and IT.
       * [x] Use declarative programming as an example, where this is most important.
       * [x] Use FileSystemViaClassResourcesImpl as an example. -> Make blog article shorter and don't use this example.
-* [ ] Write documentation for all Help actions.
+* [x] Write documentation for all Help actions.
     * [x] `function-call/attribute.xml`
     * [x] `function-call/database.xml`
     * [x] `function-call/forEach.xml`
