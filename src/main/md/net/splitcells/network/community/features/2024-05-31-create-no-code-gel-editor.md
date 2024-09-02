@@ -221,13 +221,13 @@
         * [o] Create alternative rendering based on existing path context rendering.
         * [o] Deprecate `den.xsl` and find and fix usages, that do not work with the alternative rendering.
         * [o] Remove obsolete and deprecated `den.xsl` code.
-* [ ] Document why no-code editor was created.
+* [x] Document why no-code editor was created.
     * [x] No need for syntax documentation for simple functions.
     * [x] Uninformed user can experiment with language and thereby learn it better,
       without having to fix syntax errors.
       Instead by clicking on an element, the program can explain itself,
       what can be done with the clicked thing.
-    * [ ] No-code a way to interact with complex things in the software.
+    * [x] No-code is a way to interact with complex things in the software.
 * [ ] Closing tasks
     * [ ] For both editors link to assignment and constraint model explanation.
     * [ ] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
