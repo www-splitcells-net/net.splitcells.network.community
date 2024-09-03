@@ -229,9 +229,11 @@
       what can be done with the clicked thing.
     * [x] No-code is a way to interact with complex things in the software.
 * [ ] Clean up errors.
-    * [ ] Exporting definition does not work in mobile for live server.
-    * [ ] Exporting solution does not work in mobile for live server.
+    * [o] Exporting definition does not work in mobile for live server. -> This seems to be a Firefox specific error on iphone, which doesn't seem to be the fault of the webserver.
+    * [x] Exporting solution does not work in mobile for live server.
     * [ ] Renaming a variable, breaks the `Calculate solution.
+        * [ ] Errors are not sent to client.
+        * [ ] Do not search attribute by its name, but by its variable name, when it is used via variable reference.
     * [ ] No-code editor does not work currently on live server.
     * [ ] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
