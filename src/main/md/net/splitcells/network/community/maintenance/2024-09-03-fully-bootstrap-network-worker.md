@@ -5,7 +5,7 @@ The Network Worker was envisioned to be a software,
 that provides an easy integration UI of the operating system, software environment, the source code repos,
 its builds and running software.
 The first goal of this is to make it easy for the software developer,
-to run task on the source code repos for development and deployment purposes.
+to run tasks on the source code repos for development and deployment purposes.
 
 Currently, this goal is persuaded and achieved in limited amounts,
 which causes problems setting up and maintaining deployments and increases the time required for each
@@ -16,7 +16,7 @@ in order to easy and maintain DevOps.
 The main task for this is to ensure,
 that the main focus is laid on the concept of the global virtual network path system (GVNPS) in the Network Workers Shell UI.
 This path system should be used during most developer tasks in order
-to bootstrap the Network Worker and to easy DevOps 
+to bootstrap the Network Worker and to ease DevOps. 
 # Tasks
 * [ ] Document new focus of global virtual path system.
 * [ ] Define default project commands.
