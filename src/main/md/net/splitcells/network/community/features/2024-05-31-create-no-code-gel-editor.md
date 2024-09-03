@@ -228,6 +228,12 @@
       Instead by clicking on an element, the program can explain itself,
       what can be done with the clicked thing.
     * [x] No-code is a way to interact with complex things in the software.
+* [ ] Clean up errors.
+    * [ ] Exporting definition does not work in mobile for live server.
+    * [ ] Exporting solution does not work in mobile for live server.
+    * [ ] Renaming a variable, breaks the `Calculate solution.
+    * [ ] No-code editor does not work currently on live server.
+    * [ ] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
     * [ ] For both editors link to assignment and constraint model explanation.
     * [o] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
@@ -239,11 +245,6 @@
         * [ ] The no-code editor works, but is not ready for real world use.
     * [ ] Create no-code editor demo video.
     * [x] Advertise code editor as the tough love edition.
-* [ ] Clean up errors.
-    * [ ] Exporting definition does not work in mobile for live server.
-    * [ ] Exporting solution does not work in mobile for live server.
-    * [ ] Renaming a variable, breaks the `Calculate solution.
-    * [ ] No-code editor does not work currently on live server.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
     * [ ] Do this task, when the issue ["Solve school course scheduling problem"](2021-03-07-solve-school-course-scheduling-problem.md) is being worked on,
