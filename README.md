@@ -86,11 +86,14 @@ Projects that are being worked cyclically, and probably will never be finished.
 # Service
 [This is a list of tasks, that are executed cyclicly.]
 # Tasks
-[Open Tasks]
+[Open and Closed Tasks]
 * [ ] Task to be done.
 * [x] Completed task. -> Conclusion
 * [o] Task not to be done, as it was rejected. Such a task may not be deleted for documentation purposes.
    -> Reason for rejection. 
 # Completed Tasks
-[Tasks that are done and stored for documentation purposes.]
+[Tasks that are done and stored for documentation purposes.
+This is optional, so that one can easily see only the open tasks.]
+# Ideas
+[List followup tasks to this ticket here.]
 ```
