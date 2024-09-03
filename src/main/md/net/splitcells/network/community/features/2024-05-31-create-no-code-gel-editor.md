@@ -230,8 +230,9 @@
     * [x] No-code is a way to interact with complex things in the software.
 * [ ] Closing tasks
     * [ ] For both editors link to assignment and constraint model explanation.
-    * [ ] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
-    * [ ] Create a general code editor, which mainly says, that everything works like no-code editor except with a slightly different syntax. 
+    * [o] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
+    * [x] Create a general code editor doc, which mainly says, that everything works like no-code editor except with a slightly different syntax.
+      -> Both editors state, that they work like each other.
     * [ ] Link general doc from no-code editor and Gel introduction doc.
     * [ ] Add no-code editor as main program on the live server's front menu. 
     * [ ] Write final evaluation.

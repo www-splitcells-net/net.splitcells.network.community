@@ -44,3 +44,6 @@ if the service can only be used by one user at once.
           Otherwise, webserver instances cannot be configured, created and run declaratively.
           This makes working with these essential resources unnecessary hard.
           For instance, replacing or adapting the webserver becomes harder.
+* [ ] Add first administrative GUI in webserver.
+    * [ ] View log files in website only for administrator.
+    * [ ] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
