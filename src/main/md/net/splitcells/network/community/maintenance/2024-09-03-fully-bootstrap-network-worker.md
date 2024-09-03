@@ -24,10 +24,12 @@ to bootstrap the Network Worker and to easy DevOps
     * [ ] repo.diff
     * [ ] repo.commit.all
     * [ ] repo.commit.all.generic
+    * [ ] repo.push.at.all
 * [ ] Establish and use the global virtual network path system in shell.
-    * [ ] Provide project command to install OSI to ignored local folder in the source code repos,
-      in order to not pollute the user home's bin folder.
+    * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
+      in order to not pollute the user home's bin folder via OSI installation.
     * [ ] Use local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.
+* [ ] Integrate local folder and user home's bin based OSI installation into webserver.
