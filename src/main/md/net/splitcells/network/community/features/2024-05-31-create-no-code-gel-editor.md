@@ -234,7 +234,7 @@
     * [ ] Renaming a variable, breaks the `Calculate solution.
         * [ ] Errors are not sent to client.
         * [ ] Do not search attribute by its name, but by its variable name, when it is used via variable reference.
-        * [ ] CURRENT Fix handling of multipart body downloading of server from client.
+        * [ ] ***CURRENT*** Fix handling of multipart body downloading of server from client.
           There are currently too many errors.
     * [ ] No-code editor does not work currently on live server.
     * [ ] Test all no-code editor functions again by hand.
