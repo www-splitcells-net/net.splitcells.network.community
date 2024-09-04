@@ -233,11 +233,15 @@
     * [x] Exporting solution does not work in mobile for live server.
     * [ ] Renaming a variable, breaks the `Calculate solution.
         * [ ] Errors are not sent to client.
-        * [ ] Do not search attribute by its name, but by its variable name, when it is used via variable reference.
-        * [ ] ***CURRENT*** Fix handling of multipart body downloading of server from client.
+        * [ ] ***CURRENT*** Do not search attribute by its name, but by its variable name, when it is used via variable reference.
+        * [x] Fix handling of multipart body downloading of server from client.
           There are currently too many errors.
-            * [ ] Consider usages of `config.isSingleThreaded()`.
-            * [x] `routingContext.response().setChunked(true);` does not seem to cause the problem.
+            * [o] Consider usages of `config.isSingleThreaded()`.
+            * [x] `routingContext.response().setChunked(true);` does not seem to cause the problem. -> This was confirmed.
+            * [o] Consider using a `MultipartBodyHandler`.
+            * [o] Consider using `setMergeFormAttributes`.
+            * [o] Simplify webserver.
+            * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
     * [ ] No-code editor does not work currently on live server.
     * [ ] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
