@@ -19,6 +19,7 @@ This path system should be used during most developer tasks in order
 to bootstrap the Network Worker and to ease DevOps. 
 # Tasks
 * [ ] Document new focus on global virtual path system.
+* [ ] Add global virtual path system to main goals.
 * [ ] Define default project commands.
     * [ ] build
     * [ ] repo.diff
