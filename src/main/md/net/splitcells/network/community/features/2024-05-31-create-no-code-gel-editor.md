@@ -232,8 +232,9 @@
     * [o] Exporting definition does not work in mobile for live server. -> This seems to be a Firefox specific error on iphone, which doesn't seem to be the fault of the webserver.
     * [x] Exporting solution does not work in mobile for live server.
     * [ ] Renaming a variable, breaks the `Calculate solution.
-        * [ ] Errors are not sent to client.
         * [ ] ***CURRENT*** Do not search attribute by its name, but by its variable name, when it is used via variable reference.
+            * [x] Correctly pass variables to database creation.
+            * [ ] Correctly pass and use variables for query parser.
         * [x] Fix handling of multipart body downloading of server from client.
           There are currently too many errors.
             * [o] Consider usages of `config.isSingleThreaded()`.
@@ -242,6 +243,7 @@
             * [o] Consider using `setMergeFormAttributes`.
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
+    * [ ] Errors are not sent to client.
     * [ ] No-code editor does not work currently on live server.
     * [o] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
@@ -253,6 +255,11 @@
     * [x] Add no-code editor as main program on the live server's front menu. 
     * [ ] Write final evaluation.
         * [ ] The no-code editor works, but is not ready for real world use.
+        * [ ] No-code seems to have limited alternative capabilities for logical code compared to normal code.
+        * [ ] No-code is no alternative to language documentation.
+        * [ ] No-code has a potential as a base framework for generally stateful things like configuration and forms etc.,
+          which is already known in real world. See games, website and document editors.
+          No-code basically is more in the direction of a WYSIWYG.
     * [ ] Create no-code editor demo video.
     * [x] Advertise code editor as the tough love edition.
 # Ideas

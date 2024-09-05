@@ -1,2 +1,2 @@
 # No-Code Editor
-> Distracting myself from the main goal
+> Distracting myself from the main goal.

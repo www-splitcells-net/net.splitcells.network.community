@@ -15,7 +15,6 @@ The basis for the webserver thread safety was created [here](../projects/2024-08
       Use end handler and body handler by nesting these.
     * [ ] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
       See `Multipart Exception`.
-
 # Multipart Exception
 ````
 19:43:16.303 [vert.x-eventloop-thread-0] DEBUG io.vertx.ext.web.RoutingContext -- RoutingContext failure (500)

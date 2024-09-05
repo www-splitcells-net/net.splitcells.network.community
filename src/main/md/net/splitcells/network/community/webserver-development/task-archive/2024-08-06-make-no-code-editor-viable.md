@@ -5,6 +5,7 @@ The no-code editor is currently not realistically usable.
 * [ ] Delete function call does not working in function chain.
 * [ ] Pop-up do not always look correctly on mobile.
 * [ ] Enter does not work in input fields of pop-ups.
+* [ ] Prefill pop-up input fields with default values.
 * [ ] Disable drag and drop per default, as it creates problems.
     * [ ] Add button to temporarily enable drag and drop.
     * [ ] Add option to action menu in order to move element.
