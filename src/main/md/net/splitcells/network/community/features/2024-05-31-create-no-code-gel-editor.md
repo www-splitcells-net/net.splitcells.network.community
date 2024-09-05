@@ -243,7 +243,7 @@
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
     * [ ] No-code editor does not work currently on live server.
-    * [ ] Test all no-code editor functions again by hand.
+    * [o] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
     * [x] For both editors link to assignment and constraint model explanation.
     * [o] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
