@@ -33,6 +33,8 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Define default project commands.
     * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
     * [ ] build
+    * [ ] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
+      if something is done on one repo, or if its children are processed as well.
     * [ ] repo.diff
     * [ ] repo.commit.all
     * [ ] repo.commit.all.generic
