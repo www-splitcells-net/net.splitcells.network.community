@@ -20,12 +20,24 @@ to bootstrap the Network Worker and to ease DevOps.
 # Tasks
 * [ ] Document new focus on global virtual path system.
 * [ ] Add global virtual path system to main goals.
+* [ ] Unify project and repo projects.
+    * [ ] ***CURRENT*** Install every repository as a project repository and do not use dedicated file for that.
+    * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
+    * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
+    * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
+    * [ ] State in `net.splitcells.project.standard` to keep it minimal, except for abstract
+      info transfer commands like `project.render` and `repo.repair`.
+        * [ ] Consider removing `project.render.as.net.splitcells.website.py`.
+          Is it still used?
+          Can it be replaced by `project.render.py`?
 * [ ] Define default project commands.
+    * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
     * [ ] build
     * [ ] repo.diff
     * [ ] repo.commit.all
     * [ ] repo.commit.all.generic
     * [ ] repo.push.at.all
+    * [x] repo.gui
 * [ ] Establish and use the global virtual network path system in shell.
     * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
       in order to not pollute the user home's bin folder via the OSI installation.
