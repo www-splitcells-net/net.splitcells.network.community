@@ -32,8 +32,11 @@
                     - [x] Remove method usage.
                 - [x] Convert `Constraint#graph()`
             - [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
-                - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`. CURRENT
+              This is tested via `SolutionTest#testToFodsTableAnalysis2`.
+                - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
+                    - [ ] ***CURRENT*** Use `Perspective#toXmlString(XmlConfig)`.
                     - [ ] Ensure, that header is written correctly. See [example](#FODS-Header).
+                        - [ ] Create `Perspective#toXmlString` with config object, that is extensible.
                     - [ ] Render some Perspective properties as XML properties.
                         - [ ] Encode the fact, that something is an attribute in the NameSpace.
                           Add the attribute `isXmlAttribute`.
