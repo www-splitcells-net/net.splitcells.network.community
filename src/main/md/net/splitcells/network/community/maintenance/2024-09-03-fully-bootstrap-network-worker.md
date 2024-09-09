@@ -22,6 +22,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Add global virtual path system to main goals.
 * [ ] Unify project and repo projects.
     * [ ] ***CURRENT*** Install every repository as a project repository and do not use dedicated file for that.
+        * [ ] Define general variable resolver. - > The variable resolver is the state of the editor. It represents the editor in the backend.
     * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
     * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
@@ -48,3 +49,8 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.
 * [ ] Integrate local folder and user home's bin based OSI installation into webserver.
+* [ ] Clean up project paths.
+    * [ ] Document that project paths mainly indicate jurisdiction.
+    * [ ] Rename `net.splitcells.gel.*` to `net.splitcells.allocator.*`.
+    * [ ] Rename `net.splitcells.sep` to `net.splitcells.allocator.manager`.
+    * [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`.

@@ -34,7 +34,7 @@
             - [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
               This is tested via `SolutionTest#testToFodsTableAnalysis2`.
                 - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
-                    - [ ] ***CURRENT*** Use `Perspective#toXmlString(XmlConfig)`.
+                    - [ ] ***CURRENT*** Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
                     - [ ] Ensure, that header is written correctly. See [example](#FODS-Header).
                         - [ ] Create `Perspective#toXmlString` with config object, that is extensible.
                     - [ ] Render some Perspective properties as XML properties.
