@@ -22,8 +22,6 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Add global virtual path system to main goals.
 * [ ] Unify project and repo projects.
     * [ ] ***CURRENT*** Install every repository as a project repository and do not use dedicated file for that.
-        * [ ] Define general variable resolver. - > The variable resolver is the state of the editor. It represents the editor in the backend.
-        * [ ] Use editor state in code editor as well, as this is needed for the query parser as well there.
     * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
     * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
@@ -34,7 +32,7 @@ to bootstrap the Network Worker and to ease DevOps.
           Can it be replaced by `project.render.py`?
 * [ ] Define default project commands.
     * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
-    * [ ] build
+    * [x] build
     * [ ] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
     * [ ] repo.diff

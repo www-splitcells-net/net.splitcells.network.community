@@ -89,8 +89,8 @@ Projects that are being worked cyclically, and probably will never be finished.
 [Open and Closed Tasks]
 * [ ] Task to be done.
 * [x] Completed task. -> Conclusion
-* [o] Task not to be done, as it was rejected. Such a task may not be deleted for documentation purposes.
-   -> Reason for rejection. 
+* [x] Task not to be done, as it was rejected. Such a task may not be deleted for documentation purposes.
+   -> Reason for rejection. Things like `* [o]` are not used, as this can create some rendering issues, where renderers do not support different item types in a list. 
 # Completed Tasks
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]

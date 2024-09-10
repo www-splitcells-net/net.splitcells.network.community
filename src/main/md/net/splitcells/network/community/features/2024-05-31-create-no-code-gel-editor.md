@@ -231,10 +231,13 @@
 * [ ] Clean up errors.
     * [o] Exporting definition does not work in mobile for live server. -> This seems to be a Firefox specific error on iphone, which doesn't seem to be the fault of the webserver.
     * [x] Exporting solution does not work in mobile for live server.
-    * [ ] Renaming a variable, breaks the `Calculate solution.
-        * [ ] ***CURRENT*** Do not search attribute by its name, but by its variable name, when it is used via variable reference.
+    * [X] Renaming a variable, breaks the `Calculate solution.
+        * [X] Do not search attribute by its name, but by its variable name, when it is used via variable reference.
             * [x] Correctly pass variables to database creation.
-            * [ ] Correctly pass and use variables for query parser.
+            * [x] Correctly pass and use variables for query parser.
+                * [x] Define general variable resolver. - > The variable resolver is the state of the editor. It represents the editor in the backend.
+                * [o] Use editor state in code editor as well, as this is needed for the query parser as well there.
+                  -> The text editor works differently: variable and attribute name are the same there and therefore this is not a problem there.
         * [x] Fix handling of multipart body downloading of server from client.
           There are currently too many errors.
             * [o] Consider usages of `config.isSingleThreaded()`.
@@ -243,7 +246,7 @@
             * [o] Consider using `setMergeFormAttributes`.
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
-    * [ ] Errors are not sent to client.
+    * [ ] ***CURRENT*** Errors are not sent to client.
     * [ ] No-code editor does not work currently on live server.
     * [o] Test all no-code editor functions again by hand.
 * [ ] Closing tasks
