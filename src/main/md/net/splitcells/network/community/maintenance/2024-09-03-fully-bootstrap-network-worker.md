@@ -23,6 +23,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Unify project and repo projects.
     * [ ] ***CURRENT*** Install every repository as a project repository and do not use dedicated file for that.
         * [ ] Define general variable resolver. - > The variable resolver is the state of the editor. It represents the editor in the backend.
+        * [ ] Use editor state in code editor as well, as this is needed for the query parser as well there.
     * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
     * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
