@@ -228,7 +228,7 @@
       Instead by clicking on an element, the program can explain itself,
       what can be done with the clicked thing.
     * [x] No-code is a way to interact with complex things in the software.
-* [ ] Clean up errors.
+* [x] Clean up errors.
     * [o] Exporting definition does not work in mobile for live server. -> This seems to be a Firefox specific error on iphone, which doesn't seem to be the fault of the webserver.
     * [x] Exporting solution does not work in mobile for live server.
     * [X] Renaming a variable, breaks the `Calculate solution.
@@ -247,7 +247,7 @@
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
     * [x] Errors are not sent to client.
-    * [ ] ***CURRENT*** No-code editor does not work currently on live server.
+    * [x] No-code editor does not work currently on live server. -> Updating (with the fixes of `Clean up errors.`) and redeploying the software solved this issue.
     * [x] Test all no-code editor functions again by hand. -> Only some functions were tested. Fine-tuning will be done in `2024-08-06-make-no-code-editor-viable.md`.
 * [ ] Closing tasks
     * [x] For both editors link to assignment and constraint model explanation.
