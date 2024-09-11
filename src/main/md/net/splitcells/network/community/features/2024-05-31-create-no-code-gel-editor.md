@@ -256,7 +256,7 @@
       -> Both editors state, that they work like each other.
     * [x] Link general doc from no-code editor and Gel introduction doc.
     * [x] Add no-code editor as main program on the live server's front menu. 
-    * [ ] Write final evaluation.
+    * [ ] ***CURRENT*** Write final evaluation.
         * [ ] The no-code editor works, but is not ready for real world use.
         * [ ] No-code seems to have limited alternative capabilities for logical code compared to normal code.
         * [ ] No-code is no alternative to language documentation.
