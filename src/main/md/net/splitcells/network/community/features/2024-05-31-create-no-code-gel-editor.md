@@ -246,7 +246,7 @@
             * [o] Consider using `setMergeFormAttributes`.
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
-    * [x] Errors are not sent to client.
+    * [x] Errors are not sent to client. -> These were caused by OutOfMemoryError exception, because of lexer tokens, that match a zero length string.
     * [x] No-code editor does not work currently on live server. -> Updating (with the fixes of `Clean up errors.`) and redeploying the software solved this issue.
     * [x] Test all no-code editor functions again by hand. -> Only some functions were tested. Fine-tuning will be done in `2024-08-06-make-no-code-editor-viable.md`.
 * [ ] Closing tasks
