@@ -246,9 +246,9 @@
             * [o] Consider using `setMergeFormAttributes`.
             * [o] Simplify webserver.
             * [x] Use handler instead of blockingHandler for the route. -> This fixed the problem.
-    * [ ] ***CURRENT*** Errors are not sent to client.
-    * [ ] No-code editor does not work currently on live server.
-    * [o] Test all no-code editor functions again by hand.
+    * [x] Errors are not sent to client.
+    * [ ] ***CURRENT*** No-code editor does not work currently on live server.
+    * [x] Test all no-code editor functions again by hand. -> Only some functions were tested. Fine-tuning will be done in `2024-08-06-make-no-code-editor-viable.md`.
 * [ ] Closing tasks
     * [x] For both editors link to assignment and constraint model explanation.
     * [o] Create a general no-code editor doc like https://splitcells.net/net/splitcells/gel/test/functionality/n-queen-problem.html
