@@ -44,6 +44,8 @@ to bootstrap the Network Worker and to ease DevOps.
     * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
       in order to not pollute the user home's bin folder via the OSI installation.
     * [ ] Use this for local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
+* [ ] Consider that all worker commands of the network core, should be basically links to commands inside the worker project.
+  If not consider documenting this in the worker doc.
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.
