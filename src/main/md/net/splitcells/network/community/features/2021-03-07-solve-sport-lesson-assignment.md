@@ -1,11 +1,16 @@
 # Solve sport lesson assignment
 * Issue number: [\#37](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/37)
 # Task Description
-Exemplary solve the sport lesson assignment problem from Martins Avot's master thesis,
+Exemplary solve the sport lesson assignment problem from Martins Avots's master thesis,
 in order to extend the programs modelling and optimization capabilities.
+
 Thereby make the project usable as a service by multiple users at once,
 as a platform supporting many different optimization problems out of hand seems to be crippled,
 if the service can only be used by one user at once.
+Furthermore, in order to prepare the webserver for ["Solve school course scheduling problem"](task-archive/2021-03-07-solve-school-course-scheduling-problem.md),
+basic support for authentication and authorization is to be added to the server.
+For testing purposes the authentication and authorization system is used,
+to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Complete the issue ["Create no-code gel editor"](./2024-05-31-create-no-code-gel-editor.md) first.
 * [ ] Check sport lesson assignment model.
@@ -45,5 +50,10 @@ if the service can only be used by one user at once.
           This makes working with these essential resources unnecessary hard.
           For instance, replacing or adapting the webserver becomes harder.
 * [ ] Add first administrative GUI in webserver.
+    * [ ] Authorize
+    * [ ] Authenticate
+    * [ ] Persist authorization and authentication info of the users.
     * [ ] View log files in website only for administrator.
     * [ ] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
+    * [ ] Create default user profile page, were the user sees links to user specific pages.
+      For the administrator links to the CPU and RAM usage pages could be provided.
