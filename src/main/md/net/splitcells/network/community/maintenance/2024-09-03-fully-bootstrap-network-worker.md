@@ -35,6 +35,7 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] build
     * [ ] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
+    * [ ] Define `shell` that creates a shell with the current directory at the project folder.
     * [ ] repo.diff
     * [ ] repo.commit.all
     * [ ] repo.commit.all.generic

@@ -9,7 +9,15 @@
 * Test security
 * Test privacy policy
 ## Open Tasks
-* [ ] Automatic upgrade did not work, also the automatic update/upgrade task was running.
+* [ ] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
+  (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
+    * [ ] Create own automatic restart service, if this gets too complicated. It already cost too many hours.
+    * [ ] Check if unattended-upgrades is working with some fixes.
+        * [ ] If this works, persist fixes in private git repo.
+        * [x] Try solving the problem via Origins-Pattern of `"origin=*";` and `"o=*";`.
+        * [x] Expand `/etc/apt/apt.conf.d/20auto-upgrades` with `APT::Periodic::Enable "1";`.
+        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::SyslogEnable "true";Unattended-Upgrade::SyslogFacility "daemon";Unattended-Upgrade::Verbose "true";`.
+        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::Debug "false";`. 
 * [ ] Upgrade major version when available.
 * [ ] Pull source code from Codeberg instead of GitHub.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
@@ -49,6 +57,10 @@
 * [ ] Execute runtime profiling for long-running instances and store these,
   in order to improve day to day performance via [Grafana and Pyroscope](https://grafana.com/docs/pyroscope/latest/get-started/).
 * [ ] Do not log already logged message, in order to simplify logs on live server.
+* [ ] Do not output logs to standard output by default,
+  in order to have minimal OS logs.
+* [ ] Consider to migrate from Podman to Kubernetes, in order to support the most common deployment technology.
+  Also, supporting Kubernetes implicitly supports Podman and Docker as well regarding the container images.
 ## Done Tasks
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,

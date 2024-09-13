@@ -3,12 +3,12 @@
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
 # Tasks
-* [ ] Speed up `RenderingValidatorForHtmlLinks` by caching `ProjectsRenderer#projectsPaths()`.
-    * [ ] Refresh cache, when invalid links was found and recheck.
-    * [ ] Check valid links, by rendering it internally.
 * [ ] Invalid-Link-Counter page, has old history file: `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`
     * [ ] Check the last CSV entry is new enough. Otherwise, create a status warning exactly for this.
 # Completed Tasks
+* [x] Speed up `RenderingValidatorForHtmlLinks` by caching `ProjectsRenderer#projectsPaths()`. -> The cache already exists.
+  * [o] Refresh cache, when invalid links was found and recheck.
+  * [o] Check valid links, by rendering it internally.
 * [x] Full and differential deployment does not always seem to update already uploaded files
   See https://splitcells.net/net/splitcells/network/community/blog/articles/2024-04-14-assertj-considered-unfit.html
   It seems to affect HTML pages, but not files like `*.js` (see `https://splitcells.net/net/splitcells/gel/ui/no/code/editor/lib.js`).

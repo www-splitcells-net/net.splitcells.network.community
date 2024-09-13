@@ -34,7 +34,11 @@
             - [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
               This is tested via `SolutionTest#testToFodsTableAnalysis2`.
                 - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
-                    - [ ] ***CURRENT*** Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
+                    - [ ] Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
+                        - [ ] ***CURRENT*** Render splitcells.net namespaces correctly.
+                            - [ ] `xmlns:nt="http://splitcells.net/text.xsd"`
+                            - [ ] `xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"`
+                            - [ ] `xmlns:str="http://splitcells.net/string.xsd"`
                     - [ ] Ensure, that header is written correctly. See [example](#FODS-Header).
                         - [ ] Create `Perspective#toXmlString` with config object, that is extensible.
                     - [ ] Render some Perspective properties as XML properties.

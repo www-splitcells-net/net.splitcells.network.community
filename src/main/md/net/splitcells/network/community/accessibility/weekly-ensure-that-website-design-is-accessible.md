@@ -1,4 +1,5 @@
 # Ensure that the website design is accessible
+* Issue number: [\#43](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/43)
 # Task Description
 Starting with [2025](https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655.html)
 public website should be barrierefrei.
