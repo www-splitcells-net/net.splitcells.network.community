@@ -12,6 +12,9 @@
 * [ ] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
   (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
     * [ ] Create own automatic restart service, if this gets too complicated. It already cost too many hours.
+      Also keep in mind that unattended-upgrades config is very complex and therefore already an argument in itself to replace it with simple custom command.
+      Especially, when the debug log is so bad, because one does not see the concrete APT/dpkg actions in the log.
+      If this is done, document this reasoning.
     * [ ] Check if unattended-upgrades is working with some fixes.
         * [ ] If this works, persist fixes in private git repo.
         * [x] Try solving the problem via Origins-Pattern of `"origin=*";` and `"o=*";`.
