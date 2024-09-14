@@ -20,6 +20,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Pull all repos.
         * [ ] Push `net.splitcells.network.log`.
     * [ ] Run test service as a podman user service daily.
+    * [ ] Run on test server via own Podmand service, instead of via runners, because the logs are public in Codeberg.
+      These public logs could cause leaks of private SSH keys for Codeberg.
 * [ ] Add `worker.` prefix to deploy commands, as the related commands are part of the Network Worker.
     * [ ] `deploy.build.at`
     * [ ] `deploy.test.extensively.at`
