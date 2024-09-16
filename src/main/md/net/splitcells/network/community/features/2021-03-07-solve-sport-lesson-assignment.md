@@ -13,6 +13,7 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Complete the issue ["Create no-code gel editor"](./2024-05-31-create-no-code-gel-editor.md) first.
+* [ ] [Make webserver thread safe](./2024-08-27-make-copies-of-the-webserver-thread-safe.md).
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
