@@ -55,4 +55,5 @@ to bootstrap the Network Worker and to ease DevOps.
     * [ ] Document that project paths mainly indicate jurisdiction.
     * [ ] Rename `net.splitcells.gel.*` to `net.splitcells.allocator.*`.
     * [ ] Rename `net.splitcells.sep` to `net.splitcells.allocator.manager`.
-    * [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`.
+    * [ ] Rename `net.splitcells.dependency.manager` to `net.splitcells.dependency.manager`.
+    * [ ] Rename `net.splitcells.dependency.bom` to `net.splitcells.dependency.bom`.
