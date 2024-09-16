@@ -42,6 +42,10 @@ Want to add a new variable? You need extra code for that.
 Want to rename a variable? You need extra code for that.
 Want to move a variable definition to a different line? You need extra code for that.
 
+When I started working on no-code,
+I quickly noticed, that in my case there probably are not better visualizations aside from text with some visual guiding elements.
+Visualizing logic simply does not seem to be suitable for alternative representations,
+which is a lot different for rendering data sets.
 # The Conclusions
 > How it will go on.
 

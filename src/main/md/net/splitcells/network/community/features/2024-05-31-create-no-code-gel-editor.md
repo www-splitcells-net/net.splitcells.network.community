@@ -258,7 +258,7 @@
     * [x] Add no-code editor as main program on the live server's front menu. 
     * [ ] ***CURRENT*** Write final evaluation.
         * [x] The no-code editor works, but is not ready for real world use.
-        * [ ] No-code seems to have limited alternative capabilities for logical code compared to normal code.
+        * [x] No-code seems to have limited alternative capabilities for logical code compared to normal code.
         * [ ] No-code is only partially an alternative to language documentation.
         * [ ] No-code has a potential as a base framework for generally stateful things like configuration and forms etc.,
           which is already known in real world. See games, website and document editors.
