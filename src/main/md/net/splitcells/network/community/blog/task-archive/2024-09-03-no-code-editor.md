@@ -17,12 +17,12 @@ There were 2 primary purposes for no-code.
 2. Second, the developer could avoid some amount of documentation regarding the modelling language's grammar,
   that is syntax specific.
   Such documentation would also be relatively hard to change,
-  when the syntax changes compared to the no-code alternative,
+  when the syntax changes, compared to the no-code alternative,
   where the documentation can focus more on the contents of the modelling language.
 # The Results
 > How it ended.
 
-On a basic level the no-code editor works as intended.
+On a basic level, the no-code editor works as intended.
 On a more nuanced level, the no-code editor has quite a number of bugs,
 but proofs that the concept works.
 The reason for the high number of bugs is the fact,
@@ -36,7 +36,7 @@ or even with just a [basic HTML text input](https://developer.mozilla.org/en-US/
 When one does not know a ready to go no-code editor library,
 one has to create the no-code editor by himself.
 This requires one to implement every kind of editing action explicitly by hand.
-While all code editing actions are easily handle by a [simple input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input),
+While all code editing actions are easily handled by a [simple input element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input),
 every possible no-code editing action has to be explicitly implemented.
 Want to add a new variable? You need extra code for that.
 Want to rename a variable? You need extra code for that.
@@ -46,6 +46,12 @@ When I started working on no-code,
 I quickly noticed, that in my case there probably are not better visualizations aside from text with some visual guiding elements.
 Visualizing logic simply does not seem to be suitable for alternative representations,
 which is a lot different for rendering data sets.
+
+Even though there are not a lot of use cases for the no-code editor right now,
+WYSIWYG and no-code editors in general seem to be a nice feature.
+These can be used in order to make stateful logical things of the application interactable.
+Using no-code in order to edit or check the app's configuration sounds like a neat little trick,
+whereby the GUI can guide the user/admin and help to avoid incorrect settings.
 # The Conclusions
 > How it will go on.
 

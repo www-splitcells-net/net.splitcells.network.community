@@ -259,8 +259,8 @@
     * [ ] ***CURRENT*** Write final evaluation.
         * [x] The no-code editor works, but is not ready for real world use.
         * [x] No-code seems to have limited alternative capabilities for logical code compared to normal code.
-        * [ ] No-code is only partially an alternative to language documentation.
-        * [ ] No-code has a potential as a base framework for generally stateful things like configuration and forms etc.,
+        * [o] No-code is only partially an alternative to language documentation. -> This kind of seems not to be true.
+        * [x] No-code has a potential as a base framework for generally stateful things like configuration and forms etc.,
           which is already known in real world. See games, website and document editors.
           No-code basically is more in the direction of a WYSIWYG.
     * [ ] Create no-code editor demo video.
