@@ -256,14 +256,14 @@
       -> Both editors state, that they work like each other.
     * [x] Link general doc from no-code editor and Gel introduction doc.
     * [x] Add no-code editor as main program on the live server's front menu. 
-    * [ ] ***CURRENT*** Write final evaluation.
+    * [x] Write final evaluation.
         * [x] The no-code editor works, but is not ready for real world use.
         * [x] No-code seems to have limited alternative capabilities for logical code compared to normal code.
         * [o] No-code is only partially an alternative to language documentation. -> This kind of seems not to be true.
         * [x] No-code has a potential as a base framework for generally stateful things like configuration and forms etc.,
           which is already known in real world. See games, website and document editors.
           No-code basically is more in the direction of a WYSIWYG.
-    * [ ] Create no-code editor demo video.
+    * [ ] ***CURRENT*** Create no-code editor demo video.
     * [x] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
