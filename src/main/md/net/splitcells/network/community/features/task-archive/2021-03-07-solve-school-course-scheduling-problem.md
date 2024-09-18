@@ -4,13 +4,20 @@
 * [ ] Do [make constraint multi threading usable](2024-08-27-make-constraint-multi-threading-useable.md).
 * [ ] Make the network distribution an optimization platform where the problems can also be stored on the server can be interacted with.
   A user authorization system is needed for this.
-  Make the whole platform also easy usable as a tool, in order to synchronize Git repos for instance.
+    * [ ] Persist the users optimization problems via an optimization network editor.
+        * [ ] Ensure, that everything user related as a distinct `Discoverable#path`,
+          by introducing DiscoveryTree.
+          This is a tree node, that has a distinct `Discoverable#path` inside the tree in the current `Dem#process`.
+          It's main purpose is to provide generic access to objects via `Discoverable#path` and to be
+          a manager object, that one path resolves to only at most one object.
+            * [ ] Therefore, all Discoverable objects need to be registered at an appropriate DiscoveryTree.
+              Discoverable should therefore have a method, that returns the coresponding DiscoveryTree.
 * [ ] Ensure, quickly as possible, that a minimum viable version of this works and improve this in subsequent tickets.
     * [x] Do this by creating new very simplified test data.
       Tackle the complex test data in a later project from website server.
         * [x] Ensure that problem parameters match result.
     * [ ] Make it easy to retrieve analysis data.
-        * [ ] Make fods files downloadable via website.
+        * [ ] Make OFDS files downloadable via website.
     * [x] Document that the reason for this is the fact the school optimization in on itself is not that good advertisable without additional things like a GUI. In other words, the Cin project is more usable right now, than the school optimization project.
     * [x] Treat subsequent tickets to this topic as service tasks for now.
     * [x] Blog about this decision.
