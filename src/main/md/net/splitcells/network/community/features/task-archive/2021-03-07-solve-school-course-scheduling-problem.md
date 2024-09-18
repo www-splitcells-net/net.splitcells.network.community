@@ -17,7 +17,7 @@
       Tackle the complex test data in a later project from website server.
         * [x] Ensure that problem parameters match result.
     * [ ] Make it easy to retrieve analysis data.
-        * [ ] Make OFDS files downloadable via website.
+        * [ ] Make FODS files downloadable via website.
     * [x] Document that the reason for this is the fact the school optimization in on itself is not that good advertisable without additional things like a GUI. In other words, the Cin project is more usable right now, than the school optimization project.
     * [x] Treat subsequent tickets to this topic as service tasks for now.
     * [x] Blog about this decision.
