@@ -33,32 +33,35 @@
                 - [x] Convert `Constraint#graph()`
             - [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
               This is tested via `SolutionTest#testToFodsTableAnalysis2`.
-                - [ ] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
-                    - [ ] Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
-                        - [ ] ***CURRENT*** Render splitcells.net namespaces correctly.
-                            - [ ] `xmlns:nt="http://splitcells.net/text.xsd"`
-                            - [ ] `xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"`
-                            - [ ] `xmlns:str="http://splitcells.net/string.xsd"`
-                    - [ ] Ensure, that header is written correctly. See [example](#FODS-Header).
-                        - [ ] Create `Perspective#toXmlString` with config object, that is extensible.
-                    - [ ] Render some Perspective properties as XML properties.
-                        - [ ] Encode the fact, that something is an attribute in the NameSpace.
+                - [x] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
+                    - [x] Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
+                        - [x] Render splitcells.net namespaces correctly.
+                            - [x] `xmlns:nt="http://splitcells.net/text.xsd"`
+                            - [x] `xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"`
+                            - [x] `xmlns:str="http://splitcells.net/string.xsd"`
+                    - [x] Ensure, that header is written correctly. See [example](#FODS-Header).
+                        - [x] Create `Perspective#toXmlString` with config object, that is extensible.
+                    - [x] Render some Perspective properties as XML properties.
+                        - [x] Encode the fact, that something is an attribute in the NameSpace.
                           Add the attribute `isXmlAttribute`.
                           In order to support some values in an XML namespace
-                        - [ ] style-name
-                        - [ ] XML_ATTRIBUTE
-                        - [ ] FODS_STYLE
-                            - [ ] name
-                            - [ ] family 
-                            - [ ] parent-style-name
-                        - [ ] FODS_FO
-                            - [ ] background-color
-                            - [ ] color
-                        - [ ] FODS_OFFICE  mimetype
-                        - [ ] FODS_TABLE name
-                - [ ] Convert `fodsStyling` via `fodsStyling2`.
-                - [ ] Convert `fodsStyling_style` via `fodsStyling_style2`.
-                - [ ] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
+                          -> This is done via `Perspective#withXmlAttribute`
+                          which encodes XML attributes with Perspectives of the new XML_SYNTAX namespace.
+                          `isXmlAttribute` is not needed.
+                        - [x] style-name
+                        - [x] XML_ATTRIBUTE
+                        - [x] FODS_STYLE
+                            - [x] name
+                            - [x] family 
+                            - [x] parent-style-name
+                        - [x] FODS_FO
+                            - [x] background-color
+                            - [x] color
+                        - [x] FODS_OFFICE  mimetype
+                        - [x] FODS_TABLE name
+                - [x] Convert `fodsStyling` via `fodsStyling2`.
+                - [x] Convert `fodsStyling_style` via `fodsStyling_style2`.
+                - [x] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
           - [ ] Convert `History#toFods()`
             - [ ] Update `History#toAnalysisFods`.
                 - [ ] Create a test for this.
