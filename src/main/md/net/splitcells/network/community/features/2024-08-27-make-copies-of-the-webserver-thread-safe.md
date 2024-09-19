@@ -6,12 +6,13 @@ If multiple ProjectsRenderer are created and each used by a dedicated thread,
 then these ProjectsRenderers still have problems with each other's thread.
 
 The basis for the webserver thread safety was created [here](../projects/2024-08-22-sigma-grind-of-24th-of-august-2024.md).
-
+This issue is part of ["Solve sport lesson assignment"](2021-03-07-solve-sport-lesson-assignment.md).
 # Tasks
 * [ ] First complete [this ticket](2024-05-31-create-no-code-gel-editor.md).
-* [ ] This issue is part of ["Solve sport lesson assignment"](2021-03-07-solve-sport-lesson-assignment.md).
 * [ ] Multithreaded webserver sometimes has random errors, when optimization problems are submitted via the editors.
-    * [ ] The Whole XML class needs to be removed, as it is not thread safe.
+    * [ ] ***CURRENT*** The Whole XML class needs to be removed, as it is not thread safe.
+      See ["Create minimal Java grammar."](../compatibility-portability-and-adaptability/2021-03-08-create-minimal-java-grammar.md).#
+        * [ ] Blog about the fact that the XML of Java used incorrectly, because of arrogance.
     * [ ] Try improving the multithreaded webserver by trying an experimental handler fix for the multipart-bodies of forms:
       Use end handler and body handler by nesting these.
     * [ ] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
@@ -32,4 +33,4 @@ java.lang.IllegalStateException: Request has already been read
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-```
+````
