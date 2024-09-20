@@ -62,12 +62,11 @@
                 - [x] Convert `fodsStyling` via `fodsStyling2`.
                 - [x] Convert `fodsStyling_style` via `fodsStyling_style2`.
                 - [x] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
-          - [ ] Convert `History#toFods()`
-            - [ ] Update `History#toAnalysisFods`.
+            - [ ] Convert `Table#toFods()`
+            - [ ] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
                 - [ ] Create a test for this.
             - [ ] Update `ProjectsRendererI#createLayout`.
                 - [ ] Create a test for this.
-          - [ ] Convert `Solution#ViewtoFodsTableAnalysis`
     - [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
