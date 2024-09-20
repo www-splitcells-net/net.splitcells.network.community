@@ -31,7 +31,7 @@
                 * [x] Convert `Constraint#toDom()`
                     * [x] Remove method usage.
                 * [x] Convert `Constraint#graph()`
-            * [ ] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
+            * [x] Convert `SolutionView#toFodsTableAnalysis` via `toFodsTableAnalysis2`.
               This is tested via `SolutionTest#testToFodsTableAnalysis2`.
                 * [x] Convert `SolutionView#toLinesFodsAnalysis` via `toLinesFodsAnalysis2`.
                     * [x] Use `Perspective#toXmlString(XmlConfig)`. See `empty-0.xml` and `empty-1.xml`.
@@ -62,9 +62,9 @@
                 * [x] Convert `fodsStyling` via `fodsStyling2`.
                 * [x] Convert `fodsStyling_style` via `fodsStyling_style2`.
                 * [x] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
-            * [ ] Convert `Table#toFods()`
-                * [ ] The result is not operable in LibreOffice.
-                * [ ] The result `SolutionView#toLinesFodsAnalysis` of is not operable in LibreOffice as well.
+            * [x] Convert `Table#toFods()`
+                * [o] The result is not operable in LibreOffice. -> This was a user error.
+                * [o] The result `SolutionView#toLinesFodsAnalysis` of is not operable in LibreOffice as well. -> This was a user error.
                   This migrated method worked previously.
             * [ ] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
                 * [ ] Create a test for this.
