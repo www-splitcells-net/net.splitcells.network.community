@@ -66,10 +66,11 @@
                 * [o] The result is not operable in LibreOffice. -> This was a user error.
                 * [o] The result `SolutionView#toLinesFodsAnalysis` of is not operable in LibreOffice as well. -> This was a user error.
                   This migrated method worked previously.
-            * [ ] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
-                * [ ] Create a test for this.
+            * [x] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
+                * [x] Create a test for this.
             * [ ] Update `ProjectsRendererI#createLayout`.
                 * [ ] Create a test for this.
+            * [ ] Convert `FodsUtility#tableCell`
     * [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
