@@ -63,6 +63,9 @@
                 - [x] Convert `fodsStyling_style` via `fodsStyling_style2`.
                 - [x] Convert `attributesOfFodsAnalysis` via `attributesOfFodsAnalysis2`.
             - [ ] Convert `Table#toFods()`
+                - [ ] The result is not operable in LibreOffice.
+                - [ ] The result `SolutionView#toLinesFodsAnalysis` of is not operable in LibreOffice as well.
+                  This migrated method worked previously.
             - [ ] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
                 - [ ] Create a test for this.
             - [ ] Update `ProjectsRendererI#createLayout`.
