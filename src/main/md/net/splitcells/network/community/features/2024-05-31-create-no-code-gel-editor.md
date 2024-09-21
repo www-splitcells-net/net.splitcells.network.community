@@ -265,6 +265,7 @@
           No-code basically is more in the direction of a WYSIWYG.
         * [ ] ***CURRENT*** Mark article as done via file path.
     * [ ] Create no-code editor demo video.
+    * [ ] Add blog to global changelog automatically.
     * [x] Advertise code editor as the tough love edition.
 # Ideas
 * [ ] Create optimization platform, where users can persist and work on problems, solutions and data.
