@@ -70,7 +70,7 @@
                 * [x] Create a test for this.
             * [ ] Update `ProjectsRendererI#createLayout`.
                 * [ ] Create a test for this.
-            * [ ] Convert `FodsUtility#tableCell`
+            * [x] Convert `FodsUtility#tableCell`
     * [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
