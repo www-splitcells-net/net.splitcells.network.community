@@ -15,7 +15,7 @@
 * [x] Fix grammar error, that causes ANTLR4 to not show, what the grammar error. -> Found a workaround: The rule `(.)*? Keysymbol_at Keyword_JavaLegacyArtifact (.)*? EOF` breaks every error message. Disabling this rule for a file in question creates normal error messages.
     * [x] Print out lexer's tokens result on error. Maybe that is enough? https://stackoverflow.com/questions/70701595/is-there-a-way-to-extract-tokens-in-order-with-antlr
     * [x] Maybe try out ANTLR4 UI first.
-* [ ] Remove usage of `org.w3c, because of the problems associated with this lib.
+* [x] Remove usage of `org.w3c, because of the problems associated with this lib.
     * [x] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
         * [x] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
         * [x] Remove other `toDom` usage.
@@ -72,6 +72,9 @@
                 * [o] Create a test for this. -> Existing implicit tests are enough for now.
             * [x] Convert `FodsUtility#tableCell`
     * [x] Remove `Domable#toDom` API and implementation.
+    * [x] Remove Java's XML imports.
+        * [x] `org.w3c`
+    * [x] Disallow XML imports in Java grammar by default.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
 * [x] Ensure that Dem complies with new custom Java grammar.
