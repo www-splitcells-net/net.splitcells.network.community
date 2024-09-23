@@ -71,7 +71,7 @@
             * [x] Update `ProjectsRendererI#createLayout`.
                 * [o] Create a test for this. -> Existing implicit tests are enough for now.
             * [x] Convert `FodsUtility#tableCell`
-    * [ ] Remove `Domable#toDom` instances.
+    * [x] Remove `Domable#toDom` API and implementation.
 # Sub Tasks
 For this to work, the source code also have to comply with the grammar, when this issue is done.
 * [x] Ensure that Dem complies with new custom Java grammar.
