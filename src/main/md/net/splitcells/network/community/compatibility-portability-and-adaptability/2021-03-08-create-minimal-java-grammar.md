@@ -17,8 +17,8 @@
     * [x] Maybe try out ANTLR4 UI first.
 * [ ] Remove usage of `org.w3c, because of the problems associated with this lib.
     * [ ] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
-        * [ ] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
-        * [ ] Remove other `toDom` usage.
+        * [x] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
+        * [x] Remove other `toDom` usage.
             * [x] Update `Rater#argumentation(GroupId, Table)`.
                 * [x] Test whether `Rater#argumentation(GroupId, Table)` is used at all.
                   -> No it is not really used. So We can replace the method in one go or commit.
@@ -68,8 +68,8 @@
                   This migrated method worked previously.
             * [x] Convert `History#toAnalysisFods` via `toAnalysisFods2`.
                 * [x] Create a test for this.
-            * [ ] Update `ProjectsRendererI#createLayout`.
-                * [ ] Create a test for this.
+            * [x] Update `ProjectsRendererI#createLayout`.
+                * [o] Create a test for this. -> Existing implicit tests are enough for now.
             * [x] Convert `FodsUtility#tableCell`
     * [ ] Remove `Domable#toDom` instances.
 # Sub Tasks
