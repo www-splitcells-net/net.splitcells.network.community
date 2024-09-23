@@ -16,7 +16,7 @@
     * [x] Print out lexer's tokens result on error. Maybe that is enough? https://stackoverflow.com/questions/70701595/is-there-a-way-to-extract-tokens-in-order-with-antlr
     * [x] Maybe try out ANTLR4 UI first.
 * [ ] Remove usage of `org.w3c, because of the problems associated with this lib.
-    * [ ] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
+    * [x] Remove usage of `Domable#toDom` except inside `Domable#toDom` implementations.
         * [x] `toDom` is used in order to implement `toDom` like functions like `Constraint#graph`.
         * [x] Remove other `toDom` usage.
             * [x] Update `Rater#argumentation(GroupId, Table)`.
