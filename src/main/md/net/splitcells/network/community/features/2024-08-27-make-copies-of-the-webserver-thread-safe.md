@@ -8,16 +8,18 @@ then these ProjectsRenderers still have problems with each other's thread.
 The basis for the webserver thread safety was created [here](../projects/2024-08-22-sigma-grind-of-24th-of-august-2024.md).
 This issue is part of ["Solve sport lesson assignment"](2021-03-07-solve-sport-lesson-assignment.md).
 # Tasks
-* [ ] Multithreaded webserver sometimes has random errors, when optimization problems are submitted via the editors.
+* [x] Multithreaded webserver sometimes has random errors, when optimization problems are submitted via the editors.
     * [x] The Whole XML class needs to be removed, as it is not thread safe.
       See ["Create minimal Java grammar."](../compatibility-portability-and-adaptability/2021-03-08-create-minimal-java-grammar.md).#
         * [ ] Blog about the fact that the XML of Java used incorrectly, because of arrogance.
-    * [ ]  ***CURRENT*** Try improving the multithreaded webserver by trying an experimental handler fix for the multipart-bodies of forms:
-      Use end handler and body handler by nesting these. -> Multipart works now.
-    * [ ] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
+    * [x] Try improving the multithreaded webserver by trying an experimental handler fix for the multipart-bodies of forms:
+      Use end handler and body handler by nesting these. -> It now works.
+    * [o] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
       See `Multipart Exception`. -> Multipart works now.
-    * [ ] When multi threading is enabled, forms are not executed in parallel. -> The handler of the router needs to be a blocking handler.
-      `executeBlocking` does not to execute a request in a worker thread. 
+    * [o] When multi threading is enabled, forms are not executed in parallel. -> The handler of the router needs to be a blocking handler.
+      `executeBlocking` does not to execute a request in a worker thread.
+    * [x] BinaryProcessor does not execute requests in parallel. -> A synchronized modifier caused a problem.
+    * [x] Use `.useNormalizedPath(true)`.
 # Multipart Exception
 ````
 19:43:16.303 [vert.x-eventloop-thread-0] DEBUG io.vertx.ext.web.RoutingContext -- RoutingContext failure (500)
