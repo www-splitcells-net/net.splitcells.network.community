@@ -20,6 +20,9 @@ This issue is part of ["Solve sport lesson assignment"](2021-03-07-solve-sport-l
       `executeBlocking` does not to execute a request in a worker thread.
     * [x] BinaryProcessor does not execute requests in parallel. -> A synchronized modifier caused a problem.
     * [x] Use `.useNormalizedPath(true)`.
+# Conclusions
+Its hard for me to understand the Vert.x doc,
+which caused many misunderstandings and pain.
 # Multipart Exception
 ````
 19:43:16.303 [vert.x-eventloop-thread-0] DEBUG io.vertx.ext.web.RoutingContext -- RoutingContext failure (500)
