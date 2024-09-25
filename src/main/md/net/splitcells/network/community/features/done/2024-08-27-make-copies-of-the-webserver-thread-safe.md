@@ -11,7 +11,7 @@ This issue is part of ["Solve sport lesson assignment"](2021-03-07-solve-sport-l
 * [x] Multithreaded webserver sometimes has random errors, when optimization problems are submitted via the editors.
     * [x] The Whole XML class needs to be removed, as it is not thread safe.
       See ["Create minimal Java grammar."](../compatibility-portability-and-adaptability/2021-03-08-create-minimal-java-grammar.md).#
-        * [ ] Blog about the fact that the XML of Java used incorrectly, because of arrogance.
+        * [x] Blog about the fact that the XML of Java used incorrectly, because of arrogance.
     * [x] Try improving the multithreaded webserver by trying an experimental handler fix for the multipart-bodies of forms:
       Use end handler and body handler by nesting these. -> It now works.
     * [o] Only expect multipart, if the request is not read yet: `if (!routingContext.request().isEnded()) { routingContext.request().setExpectMultipart(true);}`.
