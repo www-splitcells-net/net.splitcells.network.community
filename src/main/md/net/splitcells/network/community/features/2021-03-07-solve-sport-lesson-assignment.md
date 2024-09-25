@@ -20,8 +20,8 @@ To make the administration GUI useful an update command of the webserver itself 
           Therefore, multiple instances of ProjectsRendererI are used,
           even though most of that code is probably thread safe.
           Code that is thread safe, because everything is read only is fine though.
-    * [ ] [Make webserver thread safe](./2024-08-27-make-copies-of-the-webserver-thread-safe.md), in order to support multiple users at once on public server.
-    * [ ] Document, that one of the goals of the threading injection framework,
+    * [x] [Make webserver thread safe](./2024-08-27-make-copies-of-the-webserver-thread-safe.md), in order to support multiple users at once on public server.
+    * [ ] ***CURRENT*** Document, that one of the goals of the threading injection framework,
       is to minimize the amount of code written specifically for multi-threading.
     * [x] Support multiple users at once via multi threading injection.
     * [ ] Ensure, that logs are working in threads, too.
