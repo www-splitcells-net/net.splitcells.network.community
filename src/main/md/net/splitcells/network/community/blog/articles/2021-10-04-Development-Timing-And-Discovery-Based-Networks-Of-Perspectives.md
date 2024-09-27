@@ -18,7 +18,7 @@ but other than one would expect,
 there is actually not much written down regarding this topic.
 
 There is a very short, incomplete and incorrect
-[documentation](http://splitcells.net/net/splitcells/dem/lang/perspective/index.html),
+[documentation](http://splitcells.net/net/splitcells/dem/lang/tree/index.html),
 that probably nobody understands and is of no use to other people.
 There is a private XML schema used for storing such ASTs,
 which I am extensively using in private documents.
@@ -57,8 +57,7 @@ In other words, I had better deals,
 but the situation is changing a little bit.
 This creates an opportunity for quality improvements.
 # Current State Of Implementation
-Currently, there is the Java class `net.splitcells.dem.lang.perspective.Perspective`,
-that implements the AST.
+Currently, there is the Java class `net.splitcells.dem.lang.perspective.Tree implements the AST.
 A node just consists of a namespace, a string value, child references
 and some helper functions.
 There is a simplified serialization,

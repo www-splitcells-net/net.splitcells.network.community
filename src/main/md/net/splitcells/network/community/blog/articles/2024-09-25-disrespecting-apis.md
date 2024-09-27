@@ -83,9 +83,9 @@ So when this new feature required the replacement of Java's XML API,
 I fast tracked this task and got it done.
 The previous code, currently would look like this:
 ```java
-perspective("html", HTML)
+tree("html", HTML)
     .withXmlAttribute("lang", "de", HTML)
-    .withChild(perspective("body", HTML).withChild(perspective("body-text")));
+    .withChild(tree("body", HTML).withChild(tree("body-text")));
 ```
 
 Furthermore, I can expand my own API a lot easier.

@@ -62,7 +62,7 @@
             * [x] Parse supply attributes.
             * [x] Parse constraints' root.
             * [x] Parse complete constraint definition.
-            * [x] Make grammar an abstract perspective grammar, in order to use this as the basis for perspective framework.
+            * [x] Make grammar an abstract tree grammar, in order to use this as the basis for tree framework.
             * [x] Parse multiple constraint paths.
         * [x] Upload data via HTML form.
             * [x] Extend webserver.

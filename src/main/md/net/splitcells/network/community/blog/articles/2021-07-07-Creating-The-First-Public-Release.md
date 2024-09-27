@@ -79,7 +79,7 @@ One can see, how this may have been a starting point for feature creep in a lot 
 * Furthermore, searches for good frameworks with no results, also seed the desire for creating further feature creep.
 
 That's basically, what happened a lot of times.
-Even with Gal itself: there are limited options, because of one's limited perspective
+Even with Gal itself: there are limited options, because of one's limited tree
 and therefore one constructs completely new programs, instead of using existing ones, in order to comply with demands.
 Each new subproject has its own feature creep, which does sidetrack one from the
 goal that really matters.
