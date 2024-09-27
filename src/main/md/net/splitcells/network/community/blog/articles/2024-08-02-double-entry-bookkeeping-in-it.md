@@ -23,7 +23,7 @@ especially as automated checking tools are not widely available or even expected
 
 The consequence is, that it gets harder and harder to check if a certain setting has
 the correct or any effect at all.
-Let's take a fictional property file excerpt for Spring Boot 2.x application.
+Let's take a fictional property file excerpt for a Spring Boot 2.x application.
 A keystore file is set, in order to be used as a certificate for SSL. 
 Which keystore file is used?
 ````

@@ -39,7 +39,7 @@ html.appendChild(body);
 I started to put more and more things into the utility class, until I placed nearly everything there.
 This simplified and more importantly **standardized** the code: 
 ```java
-final var body = rElement(HTML, "body")
+final var html = rElement(HTML, "html")
 final var body = element(HTML, "body")
 html.setAttributeNode(attribute("lang", "de"));
 body.appendChild(textNode("body-text"));
@@ -59,7 +59,7 @@ in order to create new XML documents.
 Java's XML code is intended to create 1 document object in order to create 1 XML.
 My way was not the intended way.
 The creation of new XML objects by one document is not thread safe and
-therefore create this race condition.
+therefore creates this race condition.
 You can argue, that Java's XML code is bad,
 but if you use it wrongly, it is your concern as well.
 

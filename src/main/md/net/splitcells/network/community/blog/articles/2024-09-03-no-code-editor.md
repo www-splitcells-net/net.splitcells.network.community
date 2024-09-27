@@ -61,7 +61,7 @@ because there are no real users of the software right now.
 Furthermore, the no-code editor feels more and more as a distraction for now,
 because the basic text editor already should be good enough for now.
 Instead, improving the no-code editor becomes a secondary task for now and
-working on solving the sport lesson assignment in order to restore some features lost 6 years ago is prioritized.
+working on solving the sport lesson assignment in order to restore some features lost 8 years ago is prioritized.
 
 However, I already have a no-code editor, it is kind of working and
 it shows potential.
