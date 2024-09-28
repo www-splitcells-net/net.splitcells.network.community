@@ -8,19 +8,7 @@
 * Improve deployment and its processes.
 * Test security
 * Test privacy policy
-## Open Tasks
-* [ ] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
-  (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
-    * [ ] Create own automatic restart service, if this gets too complicated. It already cost too many hours.
-      Also keep in mind that unattended-upgrades config is very complex and therefore already an argument in itself to replace it with simple custom command.
-      Especially, when the debug log is so bad, because one does not see the concrete APT/dpkg actions in the log.
-      If this is done, document this reasoning.
-    * [ ] Check if unattended-upgrades is working with some fixes.
-        * [ ] If this works, persist fixes in private git repo.
-        * [x] Try solving the problem via Origins-Pattern of `"origin=*";` and `"o=*";`.
-        * [x] Expand `/etc/apt/apt.conf.d/20auto-upgrades` with `APT::Periodic::Enable "1";`.
-        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::SyslogEnable "true";Unattended-Upgrade::SyslogFacility "daemon";Unattended-Upgrade::Verbose "true";`.
-        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::Debug "false";`. 
+## Open Tasks 
 * [ ] Upgrade major version when available.
 * [ ] Pull source code from Codeberg instead of GitHub.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
@@ -65,6 +53,19 @@
 * [ ] Consider to migrate from Podman to Kubernetes, in order to support the most common deployment technology.
   Also, supporting Kubernetes implicitly supports Podman and Docker as well regarding the container images.
 ## Done Tasks
+* [x] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
+  (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
+    * [o] Create own automatic restart service, if this gets too complicated. It already cost too many hours.
+      Also keep in mind that unattended-upgrades config is very complex and therefore already an argument in itself to replace it with simple custom command.
+      Especially, when the debug log is so bad, because one does not see the concrete APT/dpkg actions in the log.
+      If this is done, document this reasoning.
+      -> The unattended-upgrades usage is fixed, so this is not needed for now.
+    * [x] Check if unattended-upgrades is working with some fixes.
+        * [ ] If this works, persist fixes in private git repo.
+        * [x] Try solving the problem via Origins-Pattern of `"origin=*";` and `"o=*";`.
+        * [x] Expand `/etc/apt/apt.conf.d/20auto-upgrades` with `APT::Periodic::Enable "1";`.
+        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::SyslogEnable "true";Unattended-Upgrade::SyslogFacility "daemon";Unattended-Upgrade::Verbose "true";`.
+        * [x] Expand `/etc/apt/apt.conf.d/50unattended-upgrades` with `Unattended-Upgrade::Debug "false";`.
 * [x] Make unattended-upgrades work.
 * [x] Do not require `loginctl enable-linger` in order to run Podman container without ssh session,
   in order to ensure, that all programs of ssh sessions are closed.

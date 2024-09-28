@@ -95,7 +95,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   Furtheremore, the not supported rendering of check boxes still looks mostly ok.
   Using `[o]` has the benefit, that one does not need to note on all such tasks explicitly, that they were not done.
   -> Optional Reason for rejection.
-# Completed Tasks
+# Done Tasks
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]
 # Ideas
