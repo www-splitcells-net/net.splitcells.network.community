@@ -6,8 +6,10 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * Execute `net.splitcells.network.deploy.build.sh`.
 # Tasks
 * [ ] Only upload test coverage in daily Codeberg test.
+    * [ ] ***CURRENT*** Consider `export test_codecov=1`.
+    * [x] Disable test coverage report in CI.
 * [ ] Execute full test via Codeberg every day automatically for all repos.
-    * [ ] ***CURRENT*** Create and use a script file for the full test, that can be used by any runner/executor.
+    * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
         * [ ] Create commands for pulling all repos.
             * [x] Ensure that SSH is working for that.
             * [ ] Clean up pull commands.
