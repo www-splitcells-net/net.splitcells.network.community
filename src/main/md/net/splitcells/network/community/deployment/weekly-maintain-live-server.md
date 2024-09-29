@@ -4,13 +4,14 @@
 * The server is publicly available at http://live.splitcells.net
 * Update server.
     * Restart server, in order to ensure, that every process uses the newest packages.
-* Update deployed software. 
+    * Upgrade major version of OS when available.
+    * Update deployed software
 * Improve deployment and its processes.
 * Test security
-* Test privacy policy
-## Open Tasks 
-* [ ] Upgrade major version when available.
+* Test legalities and privacy policy. 
+## Open Tasks
 * [ ] Pull source code from Codeberg instead of GitHub.
+* [ ] Update certificates for ACME automatically, in order to avoid these expiring during production.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
