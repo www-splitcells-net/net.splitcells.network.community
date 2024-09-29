@@ -11,7 +11,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] The BOM repo has not that many dependencies yet and therefore not that many commits.
 * [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`.
 # Done Tasks
-* [ ] Split `net.splitcells.network.bom` into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
+* [o] Split `net.splitcells.network.bom` into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
   The latter only has commits regarding, why a dependency is used or not.
   The former is only used to update the versions of the latter and
-  thereby avoid mixing processing data and real source code. -> Split is not done.
+  thereby avoid mixing processing data and real source code.
+  -> Split is not done, as it makes things harder and the split is not needed for now.
