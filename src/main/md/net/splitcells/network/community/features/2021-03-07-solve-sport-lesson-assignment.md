@@ -14,22 +14,26 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
 * [ ] Complete the issue ["Create no-code gel editor"](./2024-05-31-create-no-code-gel-editor.md) first.
-* [ ] Improve user experience regarding the application's responsiveness.
+* [ ] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
         * [x] Note, that multi threading is achieved while avoiding amount of thread safe code.
           Therefore, multiple instances of ProjectsRendererI are used,
           even though most of that code is probably thread safe.
           Code that is thread safe, because everything is read only is fine though.
     * [x] [Make webserver thread safe](./2024-08-27-make-copies-of-the-webserver-thread-safe.md), in order to support multiple users at once on public server.
-    * [ ] ***CURRENT*** Document, that one of the goals of the threading injection framework,
+    * [x] Document, that one of the goals of the threading injection framework,
       is to minimize the amount of code written specifically for multi-threading.
     * [x] Support multiple users at once via multi threading injection.
-    * [ ] Ensure, that logs are working in threads, too.
-      Currently, it does not seem to be the case and therefore `Throwable#printStackTrace()` is used as a workaround.
+    * [o] Ensure, that logs are working in threads, too.
+      Currently, it does not seem to be the case and therefore `Throwable#printStackTrace()` is used as a workaround. -> This cannot be replicated anymore.
     * [x] Use multiple threads for calculation of the ratings via the constraint nodes.
       -> The performance get worse with constraint multithreading.
-    * [ ] Use dedicated workers for lookup tables.
-    * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
+    * [o] Use dedicated workers for lookup tables. -> This is not relevant to this issue.
+    * [ ] ***CURRENT*** Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
+        * [ ] Create general live tester, where testers are registered in Dem.
+          The tester should be disabled by default and is intended for stress testing the server.
+        * [ ] Create optimization test.
+        * [ ] Create different tester activity modes. Use most active mode, as long as there are not that many users, in order to find problems.
     * [ ] Check CPU and RAM usage.
     * [ ] Related code improvements.
         * [ ] Webserver instance should be contained inside `Dem#value` as a service and
