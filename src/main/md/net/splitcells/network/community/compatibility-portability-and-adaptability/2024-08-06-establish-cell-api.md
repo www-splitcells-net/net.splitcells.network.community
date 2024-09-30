@@ -81,3 +81,8 @@ created severe configuration costs.
         * [ ] Do not block web server start via game.
 * [ ] This is needed for [the issue "Publish public website source code"](2021-03-21-publish-public-website-source-code.md).
 * [ ] Remove configuration code of any other way.
+* [ ] Webserver instance should be contained inside `Dem#value` as a service and
+  by default be limited to given set of instances.
+  Otherwise, webserver instances cannot be configured, created and run declaratively.
+  This makes working with these essential resources unnecessary hard.
+  For instance, replacing or adapting the webserver becomes harder.

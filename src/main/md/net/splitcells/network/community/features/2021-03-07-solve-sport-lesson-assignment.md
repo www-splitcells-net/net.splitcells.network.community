@@ -38,12 +38,6 @@ To make the administration GUI useful an update command of the webserver itself 
         * [ ] Create optimization test.
         * [ ] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
     * [ ] Check CPU and RAM usage.
-    * [ ] Related code improvements.
-        * [ ] Webserver instance should be contained inside `Dem#value` as a service and
-          by default be limited to given set of instances.
-          Otherwise, webserver instances cannot be configured, created and run declaratively.
-          This makes working with these essential resources unnecessary hard.
-          For instance, replacing or adapting the webserver becomes harder.
 * [ ] Add first administrative GUI in webserver.
     * [ ] Authorize
     * [ ] Authenticate
