@@ -8,6 +8,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Only upload test coverage in daily Codeberg test.
     * [ ] ***CURRENT*** Consider `export test_codecov=1`.
     * [x] Disable test coverage report in CI.
+* [ ] Consider creating aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
 * [ ] Execute full test via Codeberg every day automatically for all repos.
     * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
         * [ ] Create commands for pulling all repos.
