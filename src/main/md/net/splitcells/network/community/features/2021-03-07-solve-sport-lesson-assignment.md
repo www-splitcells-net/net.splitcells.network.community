@@ -29,11 +29,14 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Use multiple threads for calculation of the ratings via the constraint nodes.
       -> The performance get worse with constraint multithreading.
     * [o] Use dedicated workers for lookup tables. -> This is not relevant to this issue.
-    * [ ] ***CURRENT*** Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
+    * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
+        * [ ] CURRENT Determine web address via Dem config and not via a constant.
+            * [ ] Document, that this currently works only for certain configs and note the solution to this.
+        * [ ] Use dynamic web address determination at HtmlClientImpl, too.
         * [ ] Create general live tester, where testers are registered in Dem.
           The tester should be disabled by default and is intended for stress testing the server.
         * [ ] Create optimization test.
-        * [ ] Create different tester activity modes. Use most active mode, as long as there are not that many users, in order to find problems.
+        * [ ] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
     * [ ] Check CPU and RAM usage.
     * [ ] Related code improvements.
         * [ ] Webserver instance should be contained inside `Dem#value` as a service and
