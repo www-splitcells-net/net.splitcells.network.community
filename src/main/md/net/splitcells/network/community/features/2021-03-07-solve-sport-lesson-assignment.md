@@ -30,13 +30,13 @@ To make the administration GUI useful an update command of the webserver itself 
       -> The performance get worse with constraint multithreading.
     * [o] Use dedicated workers for lookup tables. -> This is not relevant to this issue.
     * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
-        * [ ] CURRENT Determine web address via Dem config and not via a constant.
-            * [ ] Document, that this currently works only for certain configs and note the solution to this.
-        * [ ] Use dynamic web address determination at HtmlClientImpl, too.
-        * [ ] Create general live tester, where testers are registered in Dem.
+        * [x] Determine web address via Dem config and not via a constant. -> This is already available via ServerConfig.
+        * [x] Use dynamic web address determination at HtmlClientImpl, too.
+        * [ ] CURRENT Create general live tester, where testers are registered in Dem.
           The tester should be disabled by default and is intended for stress testing the server.
         * [ ] Create optimization test.
         * [ ] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
+        * [ ] Log all Service starts generically.
     * [ ] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
     * [ ] Authorize
