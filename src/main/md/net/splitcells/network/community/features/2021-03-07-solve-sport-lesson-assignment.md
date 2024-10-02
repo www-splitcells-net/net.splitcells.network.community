@@ -37,13 +37,16 @@ To make the administration GUI useful an update command of the webserver itself 
         * [ ] CURRENT Create optimization test.
             * [x] Make playwright work on server.
             * [ ] Execute optimization test via playwright.
-            * [ ] Abort live server build with error, if Podman execution aborts with an error.
+                * [ ] The browser cannot connect to server.
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
         * [ ] When there is not enough memory and podman restart the pod,
           the old pod cannot be killed.
           But a new pod is executed, which leads to a broken podman instance.
+          -> Consider docker swarm.
         * [x] Assign more RAM to container. -> Podman's container already get all available RAM.
+        * [ ] Move live test to optional system settings, in order to make live tests an optional standard functionality, that is easy to set up initially.
+        * [ ] Abort live server build with error, if Podman execution aborts with an error.
         * [ ] Log all Service starts generically.
     * [ ] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
