@@ -43,6 +43,7 @@ To make the administration GUI useful an update command of the webserver itself 
                   So, this is a podman issue.
                     * [ ] The problem is the same as https://github.com/containers/podman/discussions/22778
                     * [ ] The problem can be tested in the shell of the container via `curl live.splitcells.net`.
+                * [ ] `Xml#parse` has a race condition.
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
         * [ ] When there is not enough memory and podman restart the pod,
