@@ -32,10 +32,18 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
         * [x] Determine web address via Dem config and not via a constant. -> This is already available via ServerConfig.
         * [x] Use dynamic web address determination at HtmlClientImpl, too.
-        * [ ] CURRENT Create general live tester, where testers are registered in Dem.
+        * [x] Create general live tester, where testers are registered in Dem.
           The tester should be disabled by default and is intended for stress testing the server.
-        * [ ] Create optimization test.
-        * [ ] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
+        * [ ] CURRENT Create optimization test.
+            * [x] Make playwright work on server.
+            * [ ] Execute optimization test via playwright.
+            * [ ] Abort live server build with error, if Podman execution aborts with an error.
+        * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
+          -> Now the number of simultaneously executed tests is half the CPU cores.
+        * [ ] When there is not enough memory and podman restart the pod,
+          the old pod cannot be killed.
+          But a new pod is executed, which leads to a broken podman instance.
+        * [x] Assign more RAM to container. -> Podman's container already get all available RAM.
         * [ ] Log all Service starts generically.
     * [ ] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
