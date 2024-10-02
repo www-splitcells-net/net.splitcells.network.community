@@ -38,6 +38,9 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Make playwright work on server.
             * [ ] Execute optimization test via playwright.
                 * [ ] The browser cannot connect to server.
+                  This seems to be a firewall/network issue, as `apt install netutils-ping && ping splitcells.net` does not work as well in the container.
+                  This ping works outside the container and on the server.
+                  So, this is a podman issue.
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
         * [ ] When there is not enough memory and podman restart the pod,
