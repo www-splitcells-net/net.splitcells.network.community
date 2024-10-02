@@ -37,12 +37,12 @@ To make the administration GUI useful an update command of the webserver itself 
         * [ ] CURRENT Create optimization test.
             * [x] Make playwright work on server.
             * [ ] Execute optimization test via playwright.
-                * [ ] The browser cannot connect to server.
+                * [x] The browser cannot connect to server.
                   This seems to be a firewall/network issue, as `apt install netutils-ping && ping splitcells.net` does not work as well in the container.
                   This ping works outside the container and on the server.
                   So, this is a podman issue.
-                    * [ ] The problem is the same as https://github.com/containers/podman/discussions/22778
-                    * [ ] The problem can be tested in the shell of the container via `curl live.splitcells.net`.
+                    * [x] The problem is the same as https://github.com/containers/podman/discussions/22778
+                    * [x] The problem can be tested in the shell of the container via `curl live.splitcells.net`.
                 * [ ] `Xml#parse` has a race condition.
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
