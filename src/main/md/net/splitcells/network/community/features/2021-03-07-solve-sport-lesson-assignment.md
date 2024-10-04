@@ -14,7 +14,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
 * [ ] Complete the issue ["Create no-code gel editor"](./2024-05-31-create-no-code-gel-editor.md) first.
-* [ ] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
+* [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
         * [x] Note, that multi threading is achieved while avoiding amount of thread safe code.
           Therefore, multiple instances of ProjectsRendererI are used,
@@ -29,7 +29,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Use multiple threads for calculation of the ratings via the constraint nodes.
       -> The performance get worse with constraint multithreading.
     * [o] Use dedicated workers for lookup tables. -> This is not relevant to this issue.
-    * [ ] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
+    * [x] Continuously and automatically run test user in live distro, in order to test if server can endure many optimization runs.
         * [x] Determine web address via Dem config and not via a constant. -> This is already available via ServerConfig.
         * [x] Use dynamic web address determination at HtmlClientImpl, too.
         * [x] Create general live tester, where testers are registered in Dem.
@@ -47,10 +47,10 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
         * [x] Assign more RAM to container. -> Podman's container already get all available RAM.
-        * [ ] Move live test to optional system settings, in order to make live tests an optional standard functionality, that is easy to set up initially.
-        * [ ] Abort live server build with error, if Podman execution aborts with an error.
-        * [ ] Log all Service starts generically.
-    * [ ] Check CPU and RAM usage.
+        * [x] Move live test to optional system settings, in order to make live tests an optional standard functionality, that is easy to set up initially.
+        * [x] Abort live server build with error, if Podman execution aborts with an error.
+        * [x] Log all Service starts generically.
+    * [x] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
     * [ ] Authorize
     * [ ] Authenticate
