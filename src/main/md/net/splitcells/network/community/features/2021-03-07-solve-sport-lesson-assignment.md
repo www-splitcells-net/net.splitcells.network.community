@@ -62,6 +62,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
     * [ ] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
+    * [ ] CPU utilization is not visible in the layout anymore.
     * [ ] Document this in the web server's changelog.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
