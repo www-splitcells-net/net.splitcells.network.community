@@ -53,9 +53,10 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
     * [x] Create blocked page.
-    * [ ] CURRENT Authenticate
-    * [ ] Authorize
-    * [ ] Persist authorization and authentication info of the users.
+    * [x] Authenticate 
+    * [x] Authorize
+    * [x] Persist authentication info of the users.
+    * [ ] CURRENT Authorize based on persisted authorization data of the users. 
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
