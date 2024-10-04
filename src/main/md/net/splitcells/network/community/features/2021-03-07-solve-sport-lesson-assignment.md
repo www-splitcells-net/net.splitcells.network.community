@@ -52,12 +52,13 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Log all Service starts generically.
     * [x] Check CPU and RAM usage.
 * [ ] Add first administrative GUI in webserver.
+    * [x] Create blocked page.
+    * [ ] CURRENT Authenticate
     * [ ] Authorize
-    * [ ] Authenticate
     * [ ] Persist authorization and authentication info of the users.
-    * [ ] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
-        * [ ] CURRENT Renderers have to support a rights concept.
-        * [ ] View log files in website only for administrator. 
+    * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
+        * [x] Renderers have to support a rights concept.
+        * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
     * [ ] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
