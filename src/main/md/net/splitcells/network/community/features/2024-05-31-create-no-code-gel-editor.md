@@ -264,7 +264,7 @@
           which is already known in real world. See games, website and document editors.
           No-code basically is more in the direction of a WYSIWYG.
         * [x] Mark article as done via file path.
-    * [x] CURRENT Create no-code editor demo video.
+    * [ ] CURRENT Create no-code editor demo video.
     * [ ] Add blog to global changelog automatically.
     * [x] Advertise code editor as the tough love edition.
 # Ideas
