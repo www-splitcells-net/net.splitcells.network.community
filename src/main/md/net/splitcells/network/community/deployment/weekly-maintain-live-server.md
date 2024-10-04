@@ -53,6 +53,10 @@
   in order to have minimal OS logs.
 * [ ] Consider to migrate from Podman to Kubernetes, in order to support the most common deployment technology.
   Also, supporting Kubernetes implicitly supports Podman and Docker as well regarding the container images.
+* [ ] When there is not enough memory and podman restart the pod,
+  the old pod cannot be killed.
+  But a new pod is executed, which leads to a broken podman instance.
+  -> Consider docker swarm or even micro k8s.
 ## Done Tasks
 * [x] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
   (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.

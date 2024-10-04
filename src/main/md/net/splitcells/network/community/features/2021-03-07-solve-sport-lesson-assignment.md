@@ -34,9 +34,9 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Use dynamic web address determination at HtmlClientImpl, too.
         * [x] Create general live tester, where testers are registered in Dem.
           The tester should be disabled by default and is intended for stress testing the server.
-        * [ ] CURRENT Create optimization test.
+        * [x] CURRENT Create optimization test.
             * [x] Make playwright work on server.
-            * [ ] Execute optimization test via playwright.
+            * [x] Execute optimization test via playwright.
                 * [x] The browser cannot connect to server.
                   This seems to be a firewall/network issue, as `apt install netutils-ping && ping splitcells.net` does not work as well in the container.
                   This ping works outside the container and on the server.
@@ -46,10 +46,6 @@ To make the administration GUI useful an update command of the webserver itself 
                 * [x] `Xml#parse` has a race condition.
         * [x] Execute exactly 1 test at any given time. Provide option to execute exactly n tests at any given time.
           -> Now the number of simultaneously executed tests is half the CPU cores.
-        * [ ] When there is not enough memory and podman restart the pod,
-          the old pod cannot be killed.
-          But a new pod is executed, which leads to a broken podman instance.
-          -> Consider docker swarm.
         * [x] Assign more RAM to container. -> Podman's container already get all available RAM.
         * [ ] Move live test to optional system settings, in order to make live tests an optional standard functionality, that is easy to set up initially.
         * [ ] Abort live server build with error, if Podman execution aborts with an error.
