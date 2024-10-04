@@ -34,7 +34,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Use dynamic web address determination at HtmlClientImpl, too.
         * [x] Create general live tester, where testers are registered in Dem.
           The tester should be disabled by default and is intended for stress testing the server.
-        * [x] CURRENT Create optimization test.
+        * [x] Create optimization test.
             * [x] Make playwright work on server.
             * [x] Execute optimization test via playwright.
                 * [x] The browser cannot connect to server.
@@ -56,7 +56,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Authenticate
     * [ ] Persist authorization and authentication info of the users.
     * [ ] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
-        * [ ] Renderers have to support a rights concept.
+        * [ ] CURRENT Renderers have to support a rights concept.
         * [ ] View log files in website only for administrator. 
     * [ ] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
