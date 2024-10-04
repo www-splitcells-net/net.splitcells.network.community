@@ -55,16 +55,11 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Authorize
     * [ ] Authenticate
     * [ ] Persist authorization and authentication info of the users.
-    * [ ] View log files in website only for administrator.
     * [ ] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
+        * [ ] Renderers have to support a rights concept.
+        * [ ] View log files in website only for administrator. 
     * [ ] Create default user profile page, were the user sees links to user specific pages.
-      For the administrator links to the CPU and RAM usage pages could be provided.
-    * [ ] Provide update command.
-        * [ ] Create OSI command in order to deploy live server via 1 command from development computer.
-        * [ ] Provide update command via webserver and authorization.
-            * [ ] Build server in same container, as the webserver is running, in order to keep the deployment simple.
-            * [ ] Build server via Java based Network Worker.
-            * [ ] Clean up Java based Network Worker and create a basic architecture for it.
+      May do this, by showing all paths, that only a specific user has access to?
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
