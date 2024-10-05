@@ -65,6 +65,8 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] CPU utilization is not visible in the layout anymore.
     * [ ] Fix styling for `You do not have the rights to access this page.` page.
     * [ ] Document this in the web server's changelog.
+    * [ ] Create login page.
+    * [ ] Link to login page from `You do not have the rights to access this page.` page.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
