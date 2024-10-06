@@ -1,4 +1,5 @@
 # Optimization Software
+* Timefold/OptaPlanner
 * [Jenetics](https://github.com/jenetics/jenetics)
 * [A Vehicle Routing Problem solver](https://github.com/reinterpretcat/vrp)
 * [Choco-solver](https://github.com/chocoteam/choco-solver)

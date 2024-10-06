@@ -81,12 +81,15 @@ Projects that are being worked cyclically, and probably will never be finished.
 # Format for Tasks
 ```
 # Weekly deploy static website.
+
 * Issue number: [\#...](link to issue, that defines the number)
+
 # Task Description
 # Service
 [This is a list of tasks, that are executed cyclicly.]
 # Tasks
 [Open and Closed Tasks]
+
 * [ ] Task to be done.
 * [x] Completed task. -> Conclusion
 * [o] Task not to be done, as it was rejected. Such a task may not be deleted for documentation purposes.
@@ -95,6 +98,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   Furtheremore, the not supported rendering of check boxes still looks mostly ok.
   Using `[o]` has the benefit, that one does not need to note on all such tasks explicitly, that they were not done.
   -> Optional Reason for rejection.
+
 # Done Tasks
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]
