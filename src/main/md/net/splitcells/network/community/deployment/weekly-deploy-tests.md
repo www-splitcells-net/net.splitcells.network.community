@@ -9,6 +9,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * [x] Create aggregate report.
     * [ ] Add all projects to aggregate report.
     * [ ] Ensure, that code coverage across projects is considered in the aggregate report.
+    * [ ] `jacoco.overall.exec` is probably not needed as `report-aggregate` already does the job.
 * [ ] Execute full test via Codeberg every day automatically for all repos.
     * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
         * [ ] Create commands for pulling all repos.
