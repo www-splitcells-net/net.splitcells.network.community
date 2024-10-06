@@ -5,10 +5,10 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * Check [daily full test on network hub](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions).
 * Execute `net.splitcells.network.deploy.build.sh`.
 # Tasks
-* [ ] Only upload test coverage in daily Codeberg test.
-    * [ ] ***CURRENT*** Consider `export test_codecov=1`.
-    * [x] Disable test coverage report in CI.
-* [ ] Consider creating aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
+* [ ] Create aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
+    * [x] Create aggregate report.
+    * [ ] Add all projects to aggregate report.
+    * [ ] Ensure, that code coverage across projects is considered in the aggregate report.
 * [ ] Execute full test via Codeberg every day automatically for all repos.
     * [ ] Create and use a script file for the full test, that can be used by any runner/executor.
         * [ ] Create commands for pulling all repos.
@@ -31,4 +31,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * [ ] `deploy.test.extensively.at`
     * [ ] Use `worker.execute` command in order to run all commands inside container and thereby to ease updates of host OS.
 * [ ] Execute tests in Docker/Podman in order to avoid OS problems.
-* [ ] Add test commands to `net.splitcells.martins.avots.distro` as this currently only relates to tests execute by Martins Avots. 
+* [ ] Add test commands to `net.splitcells.martins.avots.distro` as this currently only relates to tests execute by Martins Avots.
+# Done Tasks
+* [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
+    * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
+    * [x] Disable test coverage report in CI.

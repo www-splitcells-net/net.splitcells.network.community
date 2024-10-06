@@ -6,10 +6,11 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update `net.splitcells.network.bom`.
 * Monthly update `net.splitcells.network.distro.java.acme`.
 # Tasks
-* [ ] Note why `net.splitcells.network.bom` is not split into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
-    * [ ] Hard to update BOM of BOM automatically and without human error.
-    * [ ] The BOM repo has not that many dependencies yet and therefore not that many commits.
-* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`.
+* [x] Note why `net.splitcells.network.bom` is not split into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
+    * [x] Hard to update BOM of BOM automatically and without human error.
+    * [x] The BOM repo has not that many dependencies yet and therefore not that many commits.
+* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
+  with a very specific commit message, that can be used, in order to easily filter such commits.
 # Done Tasks
 * [o] Split `net.splitcells.network.bom` into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
   The latter only has commits regarding, why a dependency is used or not.
