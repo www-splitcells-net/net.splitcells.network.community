@@ -56,7 +56,14 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Authenticate 
     * [x] Authorize
     * [x] Persist authentication info of the users.
-    * [ ] CURRENT Authorize based on persisted authorization data of the users. 
+    * [ ] CURRENT Authorize based on persisted authorization data of the users.
+        * [ ] Simplify config file structure and make more consistent.
+            * [x] Place ACME files inside config folder. -> This was already the case. There were just some old files on the server, that created the impressions, that ACME files were stored inconsistently.
+            * [ ] Each user should have a password file. The user file should not contain the password, but be a folder, so that additional attributes can be placed there.
+        * [ ] Make file structure more consistent. Currently, some files are place in the top level.
+        * [ ] Change
+        * [ ] Read user from vertx.
+        * [ ] Read role of user from config.
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
@@ -67,6 +74,10 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Document this in the web server's changelog.
     * [ ] Create login page.
     * [ ] Link to login page from `You do not have the rights to access this page.` page.
+    * [ ] The following extensions needed appropriate protection as well.
+        * [ ] `net.splitcells.website.server.projects.extension.TestExtension`
+        * [ ] `net.splitcells.website.server.projects.extension.status.HostMemoryUtilizationExtension`
+        * [ ] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.

@@ -10,6 +10,7 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Avoid logging to stdout and stderr, in order to have a clean systemd log.
 * [ ] Pull source code from Codeberg instead of GitHub.
 * [ ] Update certificates for ACME automatically, in order to avoid these expiring during production.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
@@ -57,6 +58,10 @@
   the old pod cannot be killed.
   But a new pod is executed, which leads to a broken podman instance.
   -> Consider docker swarm or even micro k8s.
+* [ ] Consider creating double book-keeping for config files, in order to check ones, that are not used.
+  Abort the software, when such an unused file is found.
+* [ ] Create backup of files.
+* [ ] Do disaster recovery tests.
 ## Done Tasks
 * [x] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
   (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
