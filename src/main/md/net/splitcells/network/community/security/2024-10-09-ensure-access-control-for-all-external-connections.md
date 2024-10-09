@@ -1,4 +1,4 @@
-# Ensure access control for all external context
+# Ensure access control for all external connections
 # Task Description
 There should be a set of interfaces,
 that generically describes, how one exports or imports data.
