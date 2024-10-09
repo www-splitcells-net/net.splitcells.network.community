@@ -51,6 +51,9 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Blog
   * Description: Speaking to the void about the development process.
   * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
+* Security (very low priority)
+  * Description: What could go possibly wrong?
+  * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 ## Notes
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
