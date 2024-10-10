@@ -63,13 +63,18 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Make file structure more consistent. Currently, some files are place in the top level. -> These were just some stray files on the live server.
         * [ ] Read user from vertx.
             * [ ] Ensure, that every handled user is created by the main Authentication.
+                * [x] Implement Vertx independent Authenticator.
+                * [ ] Test Vertx independent Authenticator.
+                * [ ] Use independent Authenticator in Vertx and the UserSession to the user attributes map of Vertx.
+                * [ ] Strongly limit allowed symbols username and password severely.
             * [ ] Ensure, that every user object is created with proper user input. Do not look up user objects just by names.
               Ensure that proper authentication was provided by the user.
             * [ ] Convert user object to user session object.
             * [ ] Provide a RAII based cycle for user sessions.
               An access control object can ensure this, by providing a method, that takes a login and user session consumer,
               in order to execute a piece of code with login specified user session. 
-            * [ ] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions. 
+            * [ ] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions.
+              -> Document this as a task, at the access control object source code.
         * [ ] Read roles of user from config.
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
