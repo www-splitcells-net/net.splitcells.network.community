@@ -62,14 +62,15 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Each user should have a password file. The user file should not contain the password, but be a folder, so that additional attributes can be placed there.
         * [x] Make file structure more consistent. Currently, some files are place in the top level. -> These were just some stray files on the live server.
         * [ ] Read user from vertx.
-            * [ ] Ensure, that every handled user is created by the main Authentication.
+            * [x] Ensure, that every handled user is created by the main Authentication. -> The solution calculators are ignored regarding this for now.
                 * [x] Implement Vertx independent Authenticator.
-                * [ ] Test Vertx independent Authenticator.
-                * [ ] Use independent Authenticator in Vertx and the UserSession to the user attributes map of Vertx.
-                * [ ] Strongly limit allowed symbols username and password severely.
-            * [ ] Ensure, that every user object is created with proper user input. Do not look up user objects just by names.
+                * [x] Test Vertx independent Authenticator.
+                * [x] Use independent Authenticator in Vertx and the UserSession to the user attributes map of Vertx.
+                * [x] Strongly limit allowed symbols username and password severely.
+                  -> Only the username was limited for now, as an urgent need for limiting the user's password is not know.
+            * [x] Ensure, that every user object is created with proper user input. Do not look up user objects just by names.
               Ensure that proper authentication was provided by the user.
-            * [ ] Convert user object to user session object.
+            * [x] Convert user object to user session object.
             * [ ] Provide a RAII based cycle for user sessions.
               An access control object can ensure this, by providing a method, that takes a login and user session consumer,
               in order to execute a piece of code with login specified user session. 
