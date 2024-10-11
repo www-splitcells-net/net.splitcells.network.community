@@ -90,6 +90,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [ ] `net.splitcells.website.server.projects.extension.TestExtension`
         * [ ] `net.splitcells.website.server.projects.extension.status.HostMemoryUtilizationExtension`
         * [ ] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
+    * [ ] Create picture depicting an architectural overview of the security system.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
