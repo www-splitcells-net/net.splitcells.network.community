@@ -47,6 +47,10 @@ to bootstrap the Network Worker and to ease DevOps.
     * [ ] Use this for local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
 * [ ] Consider that all worker commands of the network core, should be basically links to commands inside the worker project.
   If not consider documenting this in the worker doc.
+* [ ] Create network worker bootstrapper.
+    * [x] Create command `worker.bootstrap`, that downloads all repos and make it executable via `worker.execute`.
+    * [ ] Create command in order to execute additional commands after downloading all repos.
+    * [ ] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.

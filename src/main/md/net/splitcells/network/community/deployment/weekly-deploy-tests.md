@@ -4,7 +4,14 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 # Services
 * Check [daily full test on network hub](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions).
 * Execute `net.splitcells.network.deploy.build.sh`.
+* Maintain test servers.
+    * `net.splitcells.martins.avots.riscv.login`
+    * `net.splitcells.martins.avots.raspberry.v2.login`
+    * Live Server
 # Tasks
+* [ ] Create command, in order to deploy tests on every test server.
+    * [ ] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md). 
+* [ ] Add live server as normal test server.
 * [ ] Create aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
     * [x] Create aggregate report.
     * [ ] Add all projects to aggregate report.
