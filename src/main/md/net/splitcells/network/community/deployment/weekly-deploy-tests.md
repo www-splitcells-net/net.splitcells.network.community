@@ -10,7 +10,11 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * Live Server
 # Tasks
 * [ ] Create command, in order to deploy tests on every test server.
-    * [ ] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md). 
+    * [ ] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md).
+    * [ ] Enable this for all servers.
+        * `net.splitcells.martins.avots.riscv.login`
+        * `net.splitcells.martins.avots.raspberry.v2.login`
+        * Live Server
 * [ ] Add live server as normal test server.
 * [ ] Create aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
     * [x] Create aggregate report.
