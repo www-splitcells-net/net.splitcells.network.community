@@ -1,4 +1,5 @@
 # Create game based on optimization networks.
+* TODO: This ticket has to be changed. This ticket is about adding an 3D world to the existing Cin game.
 * Issue number: TODO
   (The original GitHub issue id is [#170](https://github.com/www-splitcells-net/net.splitcells.network/issues/170).)
 # Description
@@ -45,27 +46,6 @@ where on can place and connect things.
 Games are inherently suitable for this and have the advantage of being advertizable.
 # Tasks
 * [ ] Clean up this issue as a whole.
-* [ ] Create the overarching story for the game, that defines the direction of this project.
-    * [ ] Provide a space where one can input anything related to optimization and improves these if possible.
-      For instance, optimizers could be stored and used in order to create better optimizers.
-      Furthermore, one could inject a optimization problem and reward into this system in order to get it solved.
-    * [ ] The space also provides a world, where injected/inputs are represented.
-      This world is the game's main level.
-    * [ ] Optimizers in this space require resources in order to be executed.
-      The resources are earned by optimizing the world.
-      The reward is provided by the space's meta optimizer.
-      The space deletes the world's meta optimizers, that do not earn enough.
-    * [ ] Meta optimizers optimize optimizers. Their rater, that the meta optimizers optimize,
-      weighs the rating of the individual optimizers differently and thereby creates an in and out group mechanic.
-    * [ ] Meta optimizers are fighting each other, in order to get enough rewards by the space.
-      The space provides a changing amount of rewards each turn.
-      When there is not enough reward provided by the space, the meta optimizers have to try to kill the each others optimizers.
-    * [ ] The space provides a changing amount of rewards each turn, in order to optimize the meta optimizers.
-      During each cycle there are 2 spaces.
-      At the end of each cycle, the space with the best meta optimizer survives.
-      The other space is deleted.
-      The clone of the best meta optimizer becomes the space's new meta optimizer and a new clone of the space is created.
-      The cycle start again.
 * [ ] Record performance data and manage cache size via these.
 * [ ] Document goals of this game.
     * [x] Add game to main objectives of the Splitcells Network
