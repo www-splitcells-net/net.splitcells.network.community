@@ -1,30 +1,35 @@
 # Bootstrap game based on optimization networks
 * Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/51)
 # Task Description
+It was [attempted](task-archive/2022-12-21-1-create-game-based-on-optimization-networks.md) to create a game,
+but it failed for now, because of performance problems caused by modelling space-time as an optimization problem.
+This task will be resumed later.
+
+It came to my mind, that bootstrapping the game with a 3-dimensional world is not strictly needed.
+So, instead of starting with a 3-dimensional world,
+we bootstrap the game development by starting with a minimal entity manager and some really simple game rules.
+Thereby, we still model the time of the game as an optimization problem,
+that is an interesting feature for the future,
+while still being able to quickly create a minimal running game.
+
+The reason for the bootstrapping,
+is the fact, that is a lot easier to work on something,
+that works already,
+than to tinker on something, that cannot be run at all.
+In order to keep it simple, there is no user input for the bootstrapped game.
 # Tasks
-* [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
-* [ ] Create the overarching story for the game, that defines the direction of this project.
-    * [ ] Provide a space where one can input anything related to optimization and improves these if possible.
-      For instance, optimizers could be stored and used in order to create better optimizers.
-      Furthermore, one could inject a optimization problem and reward into this system in order to get it solved.
-    * [ ] The space also provides a world, where injected/inputs are represented.
-      This world is the game's main level.
-    * [ ] Optimizers in this space require resources in order to be executed.
-      The resources are earned by optimizing the world.
-      The reward is provided by the space's meta optimizer.
-      The space deletes the world's meta optimizers, that do not earn enough.
-    * [ ] Meta optimizers optimize optimizers. Their rater, that the meta optimizers optimize,
-      weighs the rating of the individual optimizers differently and thereby creates an in and out group mechanic.
-    * [ ] Meta optimizers are fighting each other, in order to get enough rewards by the space.
-      The space provides a changing amount of rewards each turn.
-      When there is not enough reward provided by the space, the meta optimizers have to try to kill the each others optimizers.
-    * [ ] The space provides a changing amount of rewards each turn, in order to optimize the meta optimizers.
-      During each cycle there are 2 spaces.
-      At the end of each cycle, the space with the best meta optimizer survives.
-      The other space is deleted.
-      The clone of the best meta optimizer becomes the space's new meta optimizer and a new clone of the space is created.
-      The cycle start again.
-* [ ] Add game to live distro via Cell API.
-* [ ] Create minimal game.
+* [ ] [Add game to live distro via Cell API.](../compatibility-portability-and-adaptability/2024-08-06-establish-cell-api.md)
+* [ ] Create minimal game. 
+    * [x] Create timeline.
+    * [ ] Provide supplies.
+    * [ ] Allocate values randomly.
+    * [ ] Delete players with value of zero.
+    * [ ] Decrement players' value by one every time step.
+    * [ ] Increment select players' value by an action every time step.
+* [ ] Render the game's current state.
+  * [ ] Make rendering of game thread safe.
+* [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
-* [ ] Create logo for Cin.
+* [ ] Create minimal advertisement.
+    * [ ] Create logo for Cin.
+    * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`

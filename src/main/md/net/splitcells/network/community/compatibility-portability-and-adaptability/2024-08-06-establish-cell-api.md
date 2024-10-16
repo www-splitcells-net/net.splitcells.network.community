@@ -27,7 +27,7 @@ created severe configuration costs.
           one is harder.
           -> This is not needed because `Dem#process` and `Dem#serve` are both equally valid use cases..
             * [x] Deprecate such `Dem#process` and create a copy with a longer name, in order to discourage its use.
-              Note, that such a method is needed for non service things,
+              Note, that such a method is needed for non-service things,
               like executing a test. -> `Dem#process` is needed in order to calculate something with a given config. So
               it is not deprecated.
         * [ ] Enable all services etc. of a module via one single point of entry like a method,
