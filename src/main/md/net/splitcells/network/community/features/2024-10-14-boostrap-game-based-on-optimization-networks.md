@@ -21,7 +21,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [o] [Add game to live distro via Cell API.](../compatibility-portability-and-adaptability/2024-08-06-establish-cell-api.md) -> This is not needed for now.
 * [ ] Create minimal game. 
     * [x] Create timeline.
-    * [ ] Allocate demands by creating appropriate supply objects randomly on the fly, instead of pre creating supply objects.
+    * [x] Allocate demands by creating appropriate supply objects randomly on the fly, instead of pre creating supply objects.
+    * [x] Create time step raters as base for further raters. -> The existing one was undeprecated.
     * [ ] Decrement players' value by one every time step  via constraints. Check this in unit tests.
     * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints. Check this in unit tests.
