@@ -21,13 +21,13 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [o] [Add game to live distro via Cell API.](../compatibility-portability-and-adaptability/2024-08-06-establish-cell-api.md) -> This is not needed for now.
 * [ ] Create minimal game. 
     * [x] Create timeline.
-    * [ ] Provide supplies.
-    * [ ] Allocate values randomly.
-    * [ ] Delete players with value of zero.
-    * [ ] Decrement players' value by one every time step.
-    * [ ] Increment select players' value by an action every time step.
+    * [ ] Allocate demands by creating appropriate supply objects randomly on the fly, instead of pre creating supply objects.
+    * [ ] Decrement players' value by one every time step  via constraints. Check this in unit tests.
+    * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
+    * [ ] Delete players with value of zero via constraints. Check this in unit tests.
+    * [ ] Create guided optimization, instead of a random optimization.
 * [ ] Render the game's current state.
-  * [ ] Make rendering of game thread safe.
+    * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
 * [ ] Create minimal advertisement.
