@@ -34,3 +34,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
+# Ideas
+* [ ] Optimize runtime performance of allocations and constraint.
+  Adding and removing of free supplies is pretty fast,
+  but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
+  This should only be 1 magnitude slower at most.
