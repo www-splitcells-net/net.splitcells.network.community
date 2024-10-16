@@ -18,7 +18,7 @@ that works already,
 than to tinker on something, that cannot be run at all.
 In order to keep it simple, there is no user input for the bootstrapped game.
 # Tasks
-* [ ] [Add game to live distro via Cell API.](../compatibility-portability-and-adaptability/2024-08-06-establish-cell-api.md)
+* [o] [Add game to live distro via Cell API.](../compatibility-portability-and-adaptability/2024-08-06-establish-cell-api.md) -> This is not needed for now.
 * [ ] Create minimal game. 
     * [x] Create timeline.
     * [ ] Provide supplies.
