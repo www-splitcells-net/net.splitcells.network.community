@@ -27,6 +27,14 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints. Check this in unit tests.
     * [ ] Create guided optimization, instead of a random optimization.
+* [ ] Optimize runtime performance of allocations and constraint.
+  Adding and removing of free supplies is pretty fast,
+  but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
+  This should only be 1 magnitude slower at most.
+    * [ ] Draft performance logger of database.
+    * [ ] Draft performance logger of database.
+    * [ ] Speed up allocation database by using single database with line updates.
+    * [ ] Speed up constraint nodes by using single database with line updates.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
@@ -34,8 +42,3 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
-# Ideas
-* [ ] Optimize runtime performance of allocations and constraint.
-  Adding and removing of free supplies is pretty fast,
-  but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
-  This should only be 1 magnitude slower at most.
