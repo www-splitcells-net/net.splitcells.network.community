@@ -33,6 +33,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   This should only be 1 magnitude slower at most.
     * [ ] Draft performance logger of database.
     * [ ] Draft performance logger of database.
+    * [ ] Fix paths of database in order to have a correct performance logs.
     * [ ] Speed up allocation database by using single database with line updates.
     * [ ] Speed up constraint nodes by using single database with line updates.
 * [ ] Render the game's current state.
