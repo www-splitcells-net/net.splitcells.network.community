@@ -27,19 +27,22 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints. Check this in unit tests.
     * [ ] Create guided optimization, instead of a random optimization.
-* [ ] Optimize runtime performance of allocations and constraint.
-  Adding and removing of free supplies is pretty fast,
-  but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
-  This should only be 1 magnitude slower at most.
-    * [ ] Draft performance logger of database.
-    * [ ] Draft performance logger of lookups.
-    * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
-    * [ ] Visualize logging.
-        * [ ] Histogram of Sum
-        * [ ] Histogram for Each Object
-    * [ ] Fix paths of database in order to have a correct performance logs.
-    * [ ] Speed up allocation database by using single database with line updates.
-    * [ ] Speed up constraint nodes by using single database with line updates.
+* [ ] This features demonstrates some severe performance and performance analysis problems.
+  This is a good time to do something about it, because this task is so small scale and therefore easy to optimize. 
+    * [ ] Optimize runtime performance of allocations and constraint.
+      Adding and removing of free supplies is pretty fast,
+      but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
+      This should only be 1 magnitude slower at most.
+        * [ ] Draft performance logger of database.
+        * [ ] Draft performance logger of lookups.
+        * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
+        * [ ] Visualize logging.
+            * [ ] Histogram of Sum
+            * [ ] Histogram for Each Object
+        * [ ] Fix paths of database in order to have a correct performance logs.
+        * [ ] Speed up allocation database by using single database with line updates.
+        * [ ] Speed up constraint nodes by using single database with line updates.
+        * [ ] Fix the `Discoverable#path` every table, so that database specific performance analysis gets easier.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
