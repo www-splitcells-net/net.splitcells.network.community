@@ -33,7 +33,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       Adding and removing of free supplies is pretty fast,
       but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
       This should only be 1 magnitude slower at most.
-        * [ ] Draft performance logger of database.
+        * [x] Draft performance logger of database.
         * [ ] Draft performance logger of lookups.
         * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
         * [ ] Visualize logging.
@@ -41,6 +41,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [ ] Histogram for Each Object
         * [ ] Fix paths of database in order to have a correct performance logs.
         * [ ] Speed up allocation database by using single database with line updates.
+            * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
+            * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
         * [ ] Speed up constraint nodes by using single database with line updates.
         * [ ] Fix the `Discoverable#path` every table, so that database specific performance analysis gets easier.
 * [ ] Render the game's current state.
