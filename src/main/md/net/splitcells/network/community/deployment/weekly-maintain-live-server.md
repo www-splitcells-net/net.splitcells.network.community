@@ -62,6 +62,7 @@
   Abort the software, when such an unused file is found.
 * [ ] Create backup of files.
 * [ ] Do disaster recovery tests.
+* [ ] Avoiding sharing document files in `worker.execute` by default.
 ## Done Tasks
 * [x] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
   (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.

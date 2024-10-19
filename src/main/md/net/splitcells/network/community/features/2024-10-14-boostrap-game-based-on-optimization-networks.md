@@ -39,12 +39,13 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Visualize logging.
             * [ ] Histogram of Sum
             * [ ] Histogram for Each Object
-        * [ ] Fix paths of database in order to have a correct performance logs.
         * [ ] Speed up allocation database by using single database with line updates.
             * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
             * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
         * [ ] Speed up constraint nodes by using single database with line updates.
-        * [ ] Fix the `Discoverable#path` every table, so that database specific performance analysis gets easier.
+        * [ ] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
+            * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
+              -> The option is called ProgramsDiscoveryPath.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
