@@ -53,3 +53,9 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
     * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
     * [x] Disable test coverage report in CI.
+# Remote Execution Draft
+````
+bin/worker.execute \
+	--name=net.splitcells.network.worker \
+	--executable-path='bin/worker.bootstrap'
+````

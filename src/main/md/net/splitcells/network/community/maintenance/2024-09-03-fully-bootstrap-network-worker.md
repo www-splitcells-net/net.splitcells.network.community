@@ -49,8 +49,10 @@ to bootstrap the Network Worker and to ease DevOps.
   If not consider documenting this in the worker doc.
 * [ ] Create network worker bootstrapper.
     * [x] Create command `worker.bootstrap`, that downloads all repos and make it executable via `worker.execute`.
+    * [x] Do not mount documents folder of host, in order to be more independent of host.
     * [ ] Create command in order to execute additional commands after downloading all repos.
     * [ ] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
+    * [ ] Clean up all commands inside bin at root of network repo.
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.
