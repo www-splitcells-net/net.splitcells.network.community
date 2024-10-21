@@ -33,6 +33,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       Adding and removing of free supplies is pretty fast,
       but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
       This should only be 1 magnitude slower at most.
+        * [x] Consider ["Create performance analyser"](../performance-engineering/2023-06-06-create-performance-analyser.md).
         * [x] Draft performance logger of database.
         * [ ] Draft performance logger of lookups.
         * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
