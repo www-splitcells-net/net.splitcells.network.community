@@ -47,6 +47,9 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
               -> The option is called ProgramsDiscoveryPath.
+            * [ ] All database constructors with discoverable parent, should get the discoverable root of the current program.
+            * [ ] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
+        * [ ] Fix the `Discoverable#path` of every look-ups, so that database specific performance analysis gets easier.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
