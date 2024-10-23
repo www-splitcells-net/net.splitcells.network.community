@@ -32,7 +32,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Deployment project
     * Description: Administer deployments
     * [Link](./src/main/md/net/splitcells/network/community/deployment/index.md)
-* Performance Engineering 
+* (**very low priority**) Performance Engineering 
     * Description: We have a need for speed.
     * [Link](./src/main/md/net/splitcells/network/community/performance-engineering/index.md)
 * Webserver Development
