@@ -41,11 +41,11 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Developer Support
     * Description: Your issues need images? Here is the place for that, but only for developers of this project and not users. 
     * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
-* Major Projects
+* (**very low priority**) Major Projects
     * Description: This is an archive of readable descriptions of some major projects,
       that can be used as advertisement for specific groups.
     * [Link](./src/main/md/net/splitcells/network/community/projects/index.md)
-* Community Guidelines
+* (**very low priority**) Community Guidelines
     * Description: We comment on guidelines.
     * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
 * Blog
