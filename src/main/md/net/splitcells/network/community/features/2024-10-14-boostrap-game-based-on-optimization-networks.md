@@ -36,9 +36,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Consider ["Create performance analyser"](../performance-engineering/2023-06-06-create-performance-analyser.md).
         * [x] Draft performance logger of database.
         * [ ] Draft performance logger of lookups.
-        * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
-        * [ ] Visualize logging.
-            * [ ] Histogram of Sum
+        * [o] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation.
+          -> It is enough to observe the modification counter of the solution database.
+        * [x] Visualize logging.
+            * [x] Histogram of Sum
             * [x] Histogram for Each Object
         * [ ] Speed up allocation database by using single database with line updates.
             * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
@@ -50,8 +51,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] All database constructors with discoverable parent, should get the discoverable root of the current program.
             * [x] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
         * [ ] Fix the `Discoverable#path` of every look-ups, so that database specific performance analysis gets easier.
-        * [ ] Render sum counters on website server as graphs
-        * [ ] Avoid duplicate paths of ObjectsRenderer.
+        * [x] Render sum counters on website server as graphs
+        * [x] Avoid duplicate paths of ObjectsRenderer.
+        * [ ] Make Counter thread safe.
+        * [ ] Make MetaCounter thread safe.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
