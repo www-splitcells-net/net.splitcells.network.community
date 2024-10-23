@@ -39,17 +39,19 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation
         * [ ] Visualize logging.
             * [ ] Histogram of Sum
-            * [ ] Histogram for Each Object
+            * [x] Histogram for Each Object
         * [ ] Speed up allocation database by using single database with line updates.
             * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
             * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
         * [ ] Speed up constraint nodes by using single database with line updates.
-        * [ ] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
+        * [x] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
               -> The option is called ProgramsDiscoveryPath.
-            * [ ] All database constructors with discoverable parent, should get the discoverable root of the current program.
-            * [ ] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
+            * [x] All database constructors with discoverable parent, should get the discoverable root of the current program.
+            * [x] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
         * [ ] Fix the `Discoverable#path` of every look-ups, so that database specific performance analysis gets easier.
+        * [ ] Render sum counters on website server as graphs
+        * [ ] Avoid duplicate paths of ObjectsRenderer.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
