@@ -53,8 +53,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Fix the `Discoverable#path` of every look-ups, so that database specific performance analysis gets easier.
         * [x] Render sum counters on website server as graphs
         * [x] Avoid duplicate paths of ObjectsRenderer.
-        * [ ] Make Counter thread safe.
-        * [ ] Make MetaCounter thread safe.
+        * [x] Make Counter thread safe.
+        * [x] Make MetaCounter thread safe.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
