@@ -9,7 +9,7 @@ is used in order to generate unique issue ids.
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
 ## Standard Projects
 Projects that are being worked cyclically, and probably will never be finished.
-* Accessibility: Improve accessibility:
+* (**very low priority**) Accessibility: Improve accessibility:
     * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
     * Review advertisement, introductions and info linked by README,
       because that is the primary material for newcomers.
@@ -55,6 +55,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: What could go possibly wrong?
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 ## Notes
+* `very low priority` means, that the related thing is currently not being worked on, on a regular basis.
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
   A simplified and therefore easily portable folder structure is preferred.
