@@ -46,7 +46,7 @@ Projects that are being worked cyclically, and probably will never be finished.
       that can be used as advertisement for specific groups.
     * [Link](./src/main/md/net/splitcells/network/community/projects/index.md)
 * (**very low priority**) Community Guidelines
-    * Description: We comment on guidelines.
+    * Description: We comment on guidelines and things happening.
     * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
 * Blog
   * Description: Speaking to the void about the development process.
