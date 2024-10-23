@@ -55,6 +55,14 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
+        * [ ] Render all table like things on webserver, so these can be observed and performance can be analysed better.
+          This way one knows how many table like things are created and how much these are used.
+            * [ ] Create aspects that creates a thread safe database based mirror for every table like thing,
+              This way, the process's databases do not have to made thread safe by default.
+              This can also be used, in order to increase the performance, in case only some databases are actively observed.
+              Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
+            * [ ] Render all databases on webserver.
+            * [ ] Render all lookups on webserver.
 * [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
 * [ ] Add game to live server.
