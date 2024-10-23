@@ -55,6 +55,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
+        * [ ] Correct path of constraint tables.
         * [ ] Render all table like things on webserver, so these can be observed and performance can be analysed better.
           This way one knows how many table like things are created and how much these are used.
             * [ ] Create aspects that creates a thread safe database based mirror for every table like thing,
