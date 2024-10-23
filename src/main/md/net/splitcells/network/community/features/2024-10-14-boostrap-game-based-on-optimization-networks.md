@@ -65,7 +65,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [ ] Render all databases on webserver.
             * [ ] Render all lookups on webserver.
 * [ ] Render the game's current state.
-    * [x] Make rendering of game thread safe.
+    * [ ] Make rendering of game thread safe.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
 * [ ] Create minimal advertisement.
