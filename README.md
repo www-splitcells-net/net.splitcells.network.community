@@ -56,6 +56,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 ## Notes
 * `very low priority` means, that the related thing is currently not being worked on, on a regular basis.
+  So, it is also highly likely, that the related project is not up to date.
 * This is a ticket system in the form of a blog.
   Previously, Hugo was used, but Hugo requires a special subset of CommonMark format.
   A simplified and therefore easily portable folder structure is preferred.
