@@ -71,9 +71,10 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Ensure, that every user object is created with proper user input. Do not look up user objects just by names.
               Ensure that proper authentication was provided by the user.
             * [x] Convert user object to user session object.
-            * [ ] Provide a RAII based cycle for user sessions.
+            * [x] Provide a RAII based cycle for user sessions.
               An access control object can ensure this, by providing a method, that takes a login and user session consumer,
-              in order to execute a piece of code with login specified user session. 
+              in order to execute a piece of code with login specified user session.
+            * [ ] use RAII based user session life cycle for server.
             * [x] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions.
               -> Document this as a task, at the access control object source code.
         * [ ] Read roles of user from config.
