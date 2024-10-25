@@ -61,7 +61,7 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Place ACME files inside config folder. -> This was already the case. There were just some old files on the server, that created the impressions, that ACME files were stored inconsistently.
             * [x] Each user should have a password file. The user file should not contain the password, but be a folder, so that additional attributes can be placed there.
         * [x] Make file structure more consistent. Currently, some files are place in the top level. -> These were just some stray files on the live server.
-        * [ ] Read user from vertx.
+        * [x] Read user from vertx.
             * [x] Ensure, that every handled user is created by the main Authentication. -> The solution calculators are ignored regarding this for now.
                 * [x] Implement Vertx independent Authenticator.
                 * [x] Test Vertx independent Authenticator.
@@ -74,7 +74,7 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Provide a RAII based cycle for user sessions.
               An access control object can ensure this, by providing a method, that takes a login and user session consumer,
               in order to execute a piece of code with login specified user session.
-            * [ ] use RAII based user session life cycle for server.
+            * [x] use RAII based user session life cycle for server.
             * [x] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions.
               -> Document this as a task, at the access control object source code.
         * [ ] Read roles of user from config.
