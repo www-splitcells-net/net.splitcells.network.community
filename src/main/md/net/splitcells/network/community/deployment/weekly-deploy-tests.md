@@ -57,5 +57,11 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 ````
 bin/worker.execute \
 	--name=net.splitcells.network.worker \
-	--executable-path='bin/worker.bootstrap'
+	--executable-path='bin/worker.bootstrap' \
+	--publish-execution-image=true
+
+bin/worker.execute \
+    --name=net.splitcells.network.worker \
+    --executable-path='bin/worker.bootstrap' \
+    --cpu-architecture=riscv64
 ````

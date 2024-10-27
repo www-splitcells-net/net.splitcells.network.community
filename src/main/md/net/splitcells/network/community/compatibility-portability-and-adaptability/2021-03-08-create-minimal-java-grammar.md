@@ -2,12 +2,15 @@
 - The issue numbers are `#26` and `#10`.
     - [This is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
     - [This is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
-* [ ] Recheck this ticket and clean it up.
+# Tasks
 * [ ] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
-* [ ] Check grammar for all repos.
-    * [ ] Create equivalent to repo process, but for projects.
-    * [ ] Create `net.splitcells.project.process` project, in order to process such projects.
-    * [ ] Move `net.splitcells.project.files.standard` content into `net.splitcells.project.process` and 
+* [ ] Add such check to build system.
+* [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
+# Done Tasks
+* [o] Check grammar for all repos. -> There is no need for such command. It's best to add this to the build process.
+    * [o] Create equivalent to repo process, but for projects.
+    * [o] Create `net.splitcells.project.process` project, in order to process such projects.
+    * [o] Move `net.splitcells.project.files.standard` content into `net.splitcells.project.process` and
       delete original.
       This way a generic project exists for such things and
       improves the existing project name, which is too long.
@@ -75,10 +78,7 @@
     * [x] Remove Java's XML imports.
         * [x] `org.w3c`
     * [x] Disallow XML imports in Java grammar by default.
-# Sub Tasks
-For this to work, the source code also have to comply with the grammar, when this issue is done.
 * [x] Ensure that Dem complies with new custom Java grammar.
-* [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 * [x] Detailed Javadoc grammar. -> task is migrated into repo and will be done later.
 * [x] Review grammar.
 * [x] Disable checks for bootstrap code. -> In the grammar it is called legacy code.
@@ -97,15 +97,8 @@ For this to work, the source code also have to comply with the grammar, when thi
 * [x] Only allow foreign code import like the Java standard library in Java legacy code with some exceptions to the Java standard library like `java.util.List`. Currently, only Java standard library imports are blocked.
 * [x] Let all source code comply with this Java subset grammar.
 # Tasks For Future Tickets
-* [ ] Translate code to dlang with working tests in order to be sure, that everything is handled by the grammar: https://tomassetti.me/how-to-write-a-transpiler/
 * [ ] Remove direct usage of Path (because resolve method allows resolving absolute paths), Files (because changing the backend does not seem to be viable) and similar in the future.
-* [ ] Make main part GPL compliant and only extensions non GPL compliant: https://github.com/www-splitcells-net/net.splitcells.network/issues/88
-    * [ ] Note on planned future license change.
-
-* [ ] Create basis for Translation. Use JavaParser for translation only instead of the Java grammer,
-  in order to support some standard Java things/classes/method via name resolution
-  without creating own wrapper interfaces and objects.
-
+* [ ] Make main part GPL compliant and only extensions non GPL compliant.
 # Quotes
 ## FODS-Header
 ```

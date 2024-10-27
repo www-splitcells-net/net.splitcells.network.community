@@ -21,7 +21,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Document new focus on global virtual path system.
 * [ ] Add global virtual path system to main goals.
 * [ ] Unify project and repo projects.
-    * [ ] ***CURRENT*** Install every repository as a project repository and do not use dedicated file for that.
+    * [ ] CURRENT Install every repository as a project repository and do not use dedicated file for that.
     * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
     * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
@@ -49,7 +49,10 @@ to bootstrap the Network Worker and to ease DevOps.
   If not consider documenting this in the worker doc.
 * [ ] Create network worker bootstrapper.
     * [x] Create command `worker.bootstrap`, that downloads all repos and make it executable via `worker.execute`.
-    * [x] Do not mount documents folder of host, in order to be more independent of host.
+    * [x] Do not mount documents folder of host, in order to be more independent of host by default.
+    * [x] Provide container image at Codeberg in order to have a simple boostrap command for remote servers.
+      -> Publishing to Codeberg is not useful, because generating images for all architectures cannot be done on one computer.
+    * [x] Create command to boostrap the image.
     * [ ] Create command in order to execute additional commands after downloading all repos.
     * [ ] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
     * [ ] Clean up all commands inside bin at root of network repo.
