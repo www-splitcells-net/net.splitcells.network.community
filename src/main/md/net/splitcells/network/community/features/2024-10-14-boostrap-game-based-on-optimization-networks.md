@@ -45,6 +45,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
             * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
             * [ ] Clean up database naming in order to make the naming more consistent to SQL and avoid confusion.
+              This is a preparation for the future, in order to avoid developers assuming, that Tables have constant content.
+              A new interface like ConstantTable for this will be used.
                 * [ ] Rename Table to View.
                 * [ ] Database to Table.
                 * [ ] Note the reason for this naming.
