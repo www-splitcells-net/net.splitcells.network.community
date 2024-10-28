@@ -21,7 +21,7 @@
     * [x] Document that the reason for this is the fact the school optimization in on itself is not that good advertisable without additional things like a GUI. In other words, the Cin project is more usable right now, than the school optimization project.
     * [x] Treat subsequent tickets to this topic as service tasks for now.
     * [x] Blog about this decision.
-* [x] Ensure that Solution's name is based on the provided one and not the demand database.
+* [x] Ensure that Solution's name is based on the provided one and not the demand table.
   This is a problem for `SchoolCourseSchedulingTest#defineTeacherAllocationForCourses`.
 * [x] Fix incorrectly implemented equals methods using `return identity().equals(castedArg.identity());` via helper function.
 * [x] Model Problem.

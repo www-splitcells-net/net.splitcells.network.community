@@ -34,29 +34,30 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
       This should only be 1 magnitude slower at most.
         * [x] Consider ["Create performance analyser"](../performance-engineering/2023-06-06-create-performance-analyser.md).
-        * [x] Draft performance logger of database.
+        * [x] Draft performance logger of table.
         * [ ] Draft performance logger of lookups.
         * [o] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation.
-          -> It is enough to observe the modification counter of the solution database.
+          -> It is enough to observe the modification counter of the solution table.
         * [x] Visualize logging.
             * [x] Histogram of Sum
             * [x] Histogram for Each Object
-        * [ ] Speed up allocation database by using single database with line updates.
-            * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
-            * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
-            * [ ] Clean up database naming in order to make the naming more consistent to SQL and avoid confusion.
+        * [ ] Speed up allocation table by using single table with line updates.
+            * [ ] Create a test, that measures the number of value changes of a table versus an allocation table with the same content.
+            * [ ] Create a test, that measures the runtime of a table versus an allocation table with the same content.
+            * [ ] Clean up table naming in order to make the naming more consistent to SQL and avoid confusion.
               This is a preparation for the future, in order to avoid developers assuming, that Tables have constant content.
               A new interface like ConstantTable for this will be used.
-                * [ ] Rename Table to View.
+                * [x] Rename Table to View.
                 * [ ] Database to Table.
+                * [ ] Test Gel UI after that.
                 * [ ] Note the reason for this naming.
-        * [ ] Speed up constraint nodes by using single database with line updates.
-        * [x] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
+        * [ ] Speed up constraint nodes by using single table with line updates.
+        * [x] Fix the `Discoverable#path` of every table, so that table specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
               -> The option is called ProgramsDiscoveryPath.
-            * [x] All database constructors with discoverable parent, should get the discoverable root of the current program.
+            * [x] All table constructors with discoverable parent, should get the discoverable root of the current program.
             * [x] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
-        * [ ] Fix the `Discoverable#path` of every look-ups, so that database specific performance analysis gets easier.
+        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier.
         * [x] Render sum counters on website server as graphs
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
@@ -64,7 +65,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Correct path of constraint tables.
         * [ ] Render all table like things on webserver, so these can be observed and performance can be analysed better.
           This way one knows how many table like things are created and how much these are used.
-            * [ ] Create aspects that creates a thread safe database based mirror for every table like thing,
+            * [ ] Create aspects that creates a thread safe table based mirror for every table like thing,
               This way, the process's databases do not have to made thread safe by default.
               This can also be used, in order to increase the performance, in case only some databases are actively observed.
               Furthermore, this enables one to completely avoid the synchronization overhead for best performance.

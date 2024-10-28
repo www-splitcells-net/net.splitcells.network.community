@@ -12,7 +12,7 @@ This was found out via `SupplySelector#hillClimber` during the implementation of
     * [x] Implement cache for lines (not rawLines) in LookupTable, so that `LookupTable#line` is reasonably fast. -> Is already implemented and present in a strange way.
     * [x] Recheck via profiler, if missing rawLines cache really causes the issue. -> Cause for runtime was dominated by natural argumentation inside history.
     * [ ] Make incremental rating calculations, in the sense, that the group's rating is stored in the constraint node and then updated via differences as opposed to new rating values. This should improve performance, if there is a big incoming constraint group.
-* [ ] Maybe use database instead of allocations for history content in order to minimize the number of tables, that are required for a history table.
+* [ ] Maybe use table instead of allocations for history content in order to minimize the number of tables, that are required for a history table.
 * [ ] On personal ~5 year old Dell XPS laptop, a history build and reset of 10k with constant constraint takes about 2 minutes and 40 seconds in IDE (`HistoryTest#test_rest_to_beginning_runtime`).
     * [ ] Most of the runtime was caused by extensive runtime checks. Use the correct command for the test: `mvn clean install -Dnet.splitcells.dem.environment.config.StaticFlags.ENFORCING_UNIT_CONSISTENCY=false -Dtest.groups=benchmarking_runtime
       `

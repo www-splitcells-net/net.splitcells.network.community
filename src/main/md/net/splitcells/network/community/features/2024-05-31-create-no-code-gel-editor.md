@@ -199,7 +199,7 @@
       * [x] Use FileSystemViaClassResourcesImpl as an example. -> Make blog article shorter and don't use this example.
 * [x] Write documentation for all Help actions.
     * [x] `function-call/attribute.xml`
-    * [x] `function-call/database.xml`
+    * [x] `function-call/table.xml`
     * [x] `function-call/forEach.xml`
     * [x] `function-call/then.xml`
     * [x] `function-call/forAllCombinationsOf.xml`
@@ -233,7 +233,7 @@
     * [x] Exporting solution does not work in mobile for live server.
     * [X] Renaming a variable, breaks the `Calculate solution.
         * [X] Do not search attribute by its name, but by its variable name, when it is used via variable reference.
-            * [x] Correctly pass variables to database creation.
+            * [x] Correctly pass variables to table creation.
             * [x] Correctly pass and use variables for query parser.
                 * [x] Define general variable resolver. - > The variable resolver is the state of the editor. It represents the editor in the backend.
                 * [o] Use editor state in code editor as well, as this is needed for the query parser as well there.

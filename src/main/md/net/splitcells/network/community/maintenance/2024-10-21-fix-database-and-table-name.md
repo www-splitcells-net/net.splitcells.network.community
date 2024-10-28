@@ -1,1 +1,1 @@
-# Fix database and table name
+# Fix table and table name

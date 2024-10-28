@@ -17,7 +17,7 @@ that any message is authorized by the policy.
 It is kind of a firewall.
 
 External communication can be anything.
-Like access to local files or a database.
+Like access to local files or a table.
 It does not have to be communication to a public entity.
 
 In other words, the access control enforces,
