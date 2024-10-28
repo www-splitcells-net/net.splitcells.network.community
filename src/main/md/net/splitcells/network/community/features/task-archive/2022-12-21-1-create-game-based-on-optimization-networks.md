@@ -202,7 +202,7 @@ Games are inherently suitable for this and have the advantage of being advertiza
     * [x] There is probably a problem with time steps.
       -> This is irrelevant by now, because the constraint tree is to be reimplemented.
         * [ ] The constraint init seems to be ignored.
-        * [ ] A error was found: `at net.splitcells.gel.data.table.Table.toCSV(Table.java:209)`
+        * [ ] A error was found: `at net.splitcells.gel.data.view.Table.toCSV(Table.java:209)`
     * [ ] Improve runtime performance, because it the runtime is too extreme.
         * [x] Remove constraint nodes in order to check, what causes the issue.
           -> This had strangely enough no effect,

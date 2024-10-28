@@ -15,10 +15,10 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * `net.splitcells.martins.avots.riscv.login`
         * `net.splitcells.martins.avots.raspberry.v2.login`
         * Live Server
-* [ ] Add live server as normal test server.
 * [ ] Fix RISCV test server.
-    * [ ] Reset test server.
+    * [x] Reset test server.
     * [ ] Try configuring fan control: https://www.youtube.com/watch?v=_JNxsbqLX5c
+* [ ] Add live server as normal test server.
 * [ ] Create aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
     * [x] Create aggregate report.
     * [ ] Add all projects to aggregate report.

@@ -44,6 +44,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Speed up allocation database by using single database with line updates.
             * [ ] Create a test, that measures the number of value changes of a database versus an allocation database with the same content.
             * [ ] Create a test, that measures the runtime of a database versus an allocation database with the same content.
+            * [ ] Clean up database naming in order to make the naming more consistent to SQL and avoid confusion.
+                * [ ] Rename Table to View.
+                * [ ] Database to Table.
+                * [ ] Note the reason for this naming.
         * [ ] Speed up constraint nodes by using single database with line updates.
         * [x] Fix the `Discoverable#path` of every table, so that database specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
