@@ -42,15 +42,15 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Histogram of Sum
             * [x] Histogram for Each Object
         * [ ] Speed up allocation table by using single table with line updates.
-            * [ ] Create a test, that measures the number of value changes of a table versus an allocation table with the same content.
+            * [ ] CURRENT Create a test, that measures the number of value changes of a table versus an allocation table with the same content.
             * [ ] Create a test, that measures the runtime of a table versus an allocation table with the same content.
-            * [ ] Clean up table naming in order to make the naming more consistent to SQL and avoid confusion.
+            * [x] Clean up table naming in order to make the naming more consistent to SQL and avoid confusion.
               This is a preparation for the future, in order to avoid developers assuming, that Tables have constant content.
               A new interface like ConstantTable for this will be used.
                 * [x] Rename Table to View.
-                * [ ] Database to Table.
-                * [ ] Test Gel UI after that.
-                * [ ] Note the reason for this naming.
+                * [x] Database to Table.
+                * [x] Test Gel UI after that.
+                * [x] Note the reason for this naming.
         * [ ] Speed up constraint nodes by using single table with line updates.
         * [x] Fix the `Discoverable#path` of every table, so that table specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
