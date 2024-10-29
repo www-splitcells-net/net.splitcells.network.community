@@ -78,6 +78,8 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions.
               -> Document this as a task, at the access control object source code.
         * [ ] Read roles of user from config.
+        * [ ] Create base class for all currently present authenticators,
+          in order to have standardized runtime checks for authenticators
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
