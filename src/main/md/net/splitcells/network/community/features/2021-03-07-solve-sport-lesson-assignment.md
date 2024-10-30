@@ -56,7 +56,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Authenticate 
     * [x] Authorize
     * [x] Persist authentication info of the users.
-    * [ ] CURRENT Authorize based on persisted authorization data of the users.
+    * [x] Authorize based on persisted authorization data of the users.
         * [x] Simplify config file structure and make more consistent.
             * [x] Place ACME files inside config folder. -> This was already the case. There were just some old files on the server, that created the impressions, that ACME files were stored inconsistently.
             * [x] Each user should have a password file. The user file should not contain the password, but be a folder, so that additional attributes can be placed there.
@@ -77,15 +77,19 @@ To make the administration GUI useful an update command of the webserver itself 
             * [x] use RAII based user session life cycle for server.
             * [x] Limit the amount of parallel user session, in order to detect life cycle problems of user sessions.
               -> Document this as a task, at the access control object source code.
-        * [ ] Read roles of user from config.
-        * [ ] Create base class for all currently present authenticators,
+        * [x] Read roles of user from config.
+        * [x] Create base class for all currently present authenticators,
           in order to have standardized runtime checks for authenticators
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
     * [ ] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
+    * [ ] CURRENT Provide access to CPU and RAM utilization, if the user session has the appropriate role for that.
     * [ ] CPU utilization is not visible in the layout anymore.
+      The reason for that is, that ProjectsRendererExtension do not support project paths listening via a user session.
+        * [ ] Extend interface.
+        * [ ] Add implementation for CPU utilization extension.
     * [ ] Fix styling for `You do not have the rights to access this page.` page.
     * [ ] Document this in the web server's changelog.
     * [ ] Create login page.
