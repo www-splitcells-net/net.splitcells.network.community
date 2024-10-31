@@ -1,5 +1,5 @@
 # Weekly maintain live server.
-* Issue: https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/8
+* Issue number: [\#8](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/8)
 ## Service
 * The server is publicly available at http://live.splitcells.net
 * Update server.
