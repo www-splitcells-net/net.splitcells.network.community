@@ -10,6 +10,7 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Correct deployment via worker on live server. Currently, it is completely broken as the file paths have changed.
 * [ ] Avoid logging to stdout and stderr, in order to have a clean systemd log.
 * [ ] Pull source code from Codeberg instead of GitHub.
 * [ ] Update certificates for ACME automatically, in order to avoid these expiring during production.
