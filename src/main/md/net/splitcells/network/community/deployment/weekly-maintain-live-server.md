@@ -10,10 +10,8 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Correct deployment via worker on live server. Currently, it is completely broken as the file paths have changed.
-* [ ] Avoid logging to stdout and stderr, in order to have a clean systemd log.
-* [ ] Pull source code from Codeberg instead of GitHub.
-* [ ] Update certificates for ACME automatically, in order to avoid these expiring during production.
+* [ ] Playwright is not working anymore.
+    * [ ] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -64,8 +62,12 @@
   Abort the software, when such an unused file is found.
 * [ ] Create backup of files.
 * [ ] Do disaster recovery tests.
-* [ ] Avoiding sharing document files in `worker.execute` by default.
+* [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
 ## Done Tasks
+* [x] Avoiding sharing document files in `worker.execute` by default.
+* [x] Pull source code from Codeberg instead of GitHub.
+* [x] Avoid logging to stdout and stderr, in order to have a clean systemd log.
+* [x] Correct deployment via worker on live server. Currently, it is completely broken as the file paths have changed.
 * [x] Automatic upgrade does not always work. There is sometimes a difference between unattended-upgrades
   (with apt-daily and apt-daily-upgrade) and `apt update && apt upgrade --yes`.
     * [o] Create own automatic restart service, if this gets too complicated. It already cost too many hours.
@@ -84,3 +86,24 @@
   in order to ensure, that all programs of ssh sessions are closed.
   -> The container is now run via a systemd user service and therefore `loginctl enable-linger` is not needed anymore.
 * [x] Create double checking for every config step. -> Check description is present in config script.
+# Playwright Notes
+````
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.splitcells.martins.avots</groupId>
+    <artifactId>distro.manual</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.microsoft.playwright</groupId>
+            <artifactId>playwright</artifactId>
+            <version>1.45.0</version>
+        </dependency>
+    </dependencies>
+</project>
+
+mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"
+````
