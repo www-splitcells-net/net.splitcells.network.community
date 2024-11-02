@@ -3,10 +3,10 @@
     - [\#26 is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
     - [\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 # Tasks
-* [ ] Make code compliant to grammar again.
 * [ ] Add such check to build system, so that grammar compliance is enforced.
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 # Done Tasks
+* [x] Make code compliant to grammar again.
 * [x] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
 * [o] Check grammar for all repos. -> There is no need for such command. It's best to add this to the build process.
     * [o] Create equivalent to repo process, but for projects.
