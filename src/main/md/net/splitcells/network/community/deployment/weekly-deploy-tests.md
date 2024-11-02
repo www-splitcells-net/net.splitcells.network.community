@@ -50,6 +50,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Execute tests in Docker/Podman in order to avoid OS problems.
 * [ ] Add test commands to `net.splitcells.martins.avots.distro` as this currently only relates to tests execute by Martins Avots.
 * [ ] Execute integration tests.
+* [ ] Delete Maven caches every month.
 # Done Tasks
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
     * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
