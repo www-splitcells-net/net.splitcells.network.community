@@ -101,6 +101,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
     * [o] Create picture depicting an architectural overview of the security system.
       -> The authentication, authorization and access control API seems to be good enough.
+    * [x] Deploy this feature to production.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
