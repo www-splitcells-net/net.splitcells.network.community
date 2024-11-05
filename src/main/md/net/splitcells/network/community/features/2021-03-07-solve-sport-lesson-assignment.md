@@ -83,13 +83,14 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
-    * [ ] Create default user profile page, were the user sees links to user specific pages.
+    * [ ] CURRENT Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
-    * [ ] CURRENT Provide access to CPU and RAM utilization, if the user session has the appropriate role for that.
-    * [ ] CPU utilization is not visible in the layout anymore.
+    * [x] Provide access to CPU and RAM utilization, if the user session has the appropriate role for that.
+    * [o] CPU utilization is not visible in the layout anymore.
       The reason for that is, that ProjectsRendererExtension do not support project paths listening via a user session.
-        * [ ] Extend interface.
-        * [ ] Add implementation for CPU utilization extension.
+      -> It is enough, that this page is visible in the users profile.
+        * [o] Extend interface.
+        * [o] Add implementation for CPU utilization extension.
     * [ ] Fix styling for `You do not have the rights to access this page.` page.
     * [ ] Document this in the web server's changelog.
     * [ ] Create login page.

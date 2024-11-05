@@ -78,3 +78,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
+# Ideas
+* [ ] Integrate school scheduling into game,
+  where players learn to retrieve life points by using skills,
+  that are acquired in school.
