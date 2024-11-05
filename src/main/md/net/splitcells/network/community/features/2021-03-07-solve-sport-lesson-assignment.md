@@ -51,7 +51,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [x] Abort live server build with error, if Podman execution aborts with an error.
         * [x] Log all Service starts generically.
     * [x] Check CPU and RAM usage.
-* [ ] Add first administrative GUI in webserver.
+* [x] Add first administrative GUI in webserver.
     * [x] Create blocked page.
     * [x] Authenticate 
     * [x] Authorize
@@ -92,14 +92,15 @@ To make the administration GUI useful an update command of the webserver itself 
         * [o] Extend interface.
         * [o] Add implementation for CPU utilization extension.
     * [o] Fix styling for `You do not have the rights to access this page.` page. -> It is good enough for now.
-    * [ ] Document this in the web server's changelog.
+    * [x] Document this in the web server's changelog.
     * [o] Create login page. -> The browser's default login page is enough for now. 
-    * [ ] Link to login page from `You do not have the rights to access this page.` page.
-    * [ ] The following extensions needed appropriate protection as well.
-        * [ ] `net.splitcells.website.server.projects.extension.TestExtension`
-        * [ ] `net.splitcells.website.server.projects.extension.status.HostMemoryUtilizationExtension`
-        * [ ] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
-    * [ ] Create picture depicting an architectural overview of the security system.
+    * [o] Link to login page from `You do not have the rights to access this page.` page. -> The browser's default login prompt is enough for now.
+    * [x] The following extensions needed appropriate protection as well.
+        * [x] `net.splitcells.website.server.projects.extension.TestExtension`
+        * [x] `net.splitcells.website.server.projects.extension.status.HostMemoryUtilizationExtension`
+        * [x] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
+    * [o] Create picture depicting an architectural overview of the security system.
+      -> The authentication, authorization and access control API seems to be good enough.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
