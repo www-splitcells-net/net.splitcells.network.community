@@ -45,6 +45,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Create a test, that measures the number of value changes of a table versus an allocation table with the same content.
               See DataTest.
             * [ ] CURRENT Create a test, that measures the runtime of a table versus an allocation table with the same content.
+                * [ ] Create a timing test, in order to avoid flaky tests where correctness is tested.
             * [x] Clean up table naming in order to make the naming more consistent to SQL and avoid confusion.
               This is a preparation for the future, in order to avoid developers assuming, that Tables have constant content.
               A new interface like ConstantTable for this will be used.
