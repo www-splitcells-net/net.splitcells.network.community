@@ -83,7 +83,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
         * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
-    * [ ] CURRENT Create default user profile page, were the user sees links to user specific pages.
+    * [x] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
     * [x] Provide access to CPU and RAM utilization, if the user session has the appropriate role for that.
     * [o] CPU utilization is not visible in the layout anymore.
@@ -91,9 +91,9 @@ To make the administration GUI useful an update command of the webserver itself 
       -> It is enough, that this page is visible in the users profile.
         * [o] Extend interface.
         * [o] Add implementation for CPU utilization extension.
-    * [ ] Fix styling for `You do not have the rights to access this page.` page.
+    * [o] Fix styling for `You do not have the rights to access this page.` page. -> It is good enough for now.
     * [ ] Document this in the web server's changelog.
-    * [ ] Create login page.
+    * [o] Create login page. -> The browser's default login page is enough for now. 
     * [ ] Link to login page from `You do not have the rights to access this page.` page.
     * [ ] The following extensions needed appropriate protection as well.
         * [ ] `net.splitcells.website.server.projects.extension.TestExtension`
