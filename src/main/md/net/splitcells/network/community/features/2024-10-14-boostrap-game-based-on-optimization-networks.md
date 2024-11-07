@@ -27,26 +27,41 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints. Check this in unit tests.
     * [ ] Create guided optimization, instead of a random optimization.
-* [ ] This features demonstrates some severe performance and performance analysis problems.
-  This is a good time to do something about it, because this task is so small scale and therefore easy to optimize. 
-    * [ ] Optimize runtime performance of allocations and constraint.
+* [x] This features demonstrates some severe performance and performance analysis problems.
+  This is a good time to do something about it, because this task is so small scale and therefore easy to optimize.
+    * [ ] Create a base performance view for the game.
+        * [x] Test that measures the runtime of a time step.
+          -> Runtime performance seems to be good enough.
+        * [o] Test the overhead of the optimization.
+          Test that measures the difference of runtime for only setting the data of a time step without any concern for the data
+          and the runtime for correctly calculating a time step.
+          -> Runtime performance seems to be good enough.
+        * [o] Test the overhead of the constraint data structure.
+          Test that measures the difference of runtime for only setting the data of a time step without any concern for the data
+          with and without any constraints being present.
+          -> Runtime performance seems to be good enough.
+        * [x] Measure modification counters.
+    * [o] Optimize runtime performance of allocations and constraint.
       Adding and removing of free supplies is pretty fast,
       but adding free supplies and demands, allocating these and removing these, is multiple magnitudes slower.
       This should only be 1 magnitude slower at most.
+      -> The performance seems to be good enough for now.
         * [x] Consider ["Create performance analyser"](../performance-engineering/2023-06-06-create-performance-analyser.md).
         * [x] Draft performance logger of table.
-        * [ ] Draft performance logger of lookups.
+        * [x] Draft performance logger of lookups.
+            * [x] Draft for LookupView
         * [o] Draft performance logger of solutions regarding the allocation and removal counter without weighting the values of every allocation.
-          -> It is enough to observe the modification counter of the solution table.
+          -> It is enough to observe the modification counter of the solution table for now.
         * [x] Visualize logging.
             * [x] Histogram of Sum
             * [x] Histogram for Each Object
-        * [ ] Speed up allocation table by using single table with line updates.
-            * [ ] Implement the speed-up.
-            * [ ] Test the speed-up of the new implementation.
+        * [o] Speed up allocation table by using single table with line updates.
+          -> After testing the speed seems to be good enough for now.
+            * [o] Implement the speed-up. -> After testing the speed seems to be good enough for now.
+            * [o] Test the speed-up of the new implementation. -> After testing the speed seems to be good enough for now.
             * [x] Create a test, that measures the number of value changes of a table versus an allocation table with the same content.
               See DataTest.
-            * [x] CURRENT Create a test, that measures the runtime of a table versus an allocation table with the same content.
+            * [x] Create a test, that measures the runtime of a table versus an allocation table with the same content.
                 * [o] Create a timing test, in order to avoid flaky tests where correctness is tested. -> This will be done, when needed.
             * [x] Clean up table naming in order to make the naming more consistent to SQL and avoid confusion.
               This is a preparation for the future, in order to avoid developers assuming, that Tables have constant content.
@@ -55,28 +70,27 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [x] Database to Table.
                 * [x] Test Gel UI after that.
                 * [x] Note the reason for this naming.
-        * [ ] Speed up constraint nodes by using single table with line updates.
+        * [o] Speed up constraint nodes by using single table with line updates. -> After testing the speed seems to be good enough for now.
         * [x] Fix the `Discoverable#path` of every table, so that table specific performance analysis gets easier.
             * [x] Define root path, that is used as a direct or indirect parent of all discoverable objects.
               -> The option is called ProgramsDiscoveryPath.
             * [x] All table constructors with discoverable parent, should get the discoverable root of the current program.
             * [x] Fix duplicate and missing discoverable paths of demands and supplies in allocations or solutions,
-        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier.
         * [x] Render sum counters on website server as graphs
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
-        * [ ] Correct path of constraint tables.
-        * [ ] Render all table like things on webserver, so these can be observed and performance can be analysed better.
-          This way one knows how many table like things are created and how much these are used.
-            * [ ] Create aspects that creates a thread safe table based mirror for every table like thing,
-              This way, the process's databases do not have to made thread safe by default.
-              This can also be used, in order to increase the performance, in case only some databases are actively observed.
-              Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
-            * [ ] Render all databases on webserver.
-            * [ ] Render all lookups on webserver.
 * [ ] Render the game's current state.
     * [ ] Make rendering of game thread safe.
+    * [ ] Render all table like things on webserver.
+        * [ ] Correct path of constraint tables. -> This will be done, when the analysis is required.
+        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier.
+        * [ ] Create aspects that creates a thread safe table based mirror for every table like thing,
+          This way, the process's databases do not have to made thread safe by default.
+          This can also be used, in order to increase the performance, in case only some databases are actively observed.
+          Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
+  * [ ] Render all databases on webserver.
+  * [ ] Render all lookups on webserver.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
 * [ ] Create minimal advertisement.
