@@ -10,14 +10,19 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * Live Server
 # Tasks
 * [ ] Create command, in order to deploy tests on every test server.
-    * [ ] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md).
+    * [x] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md).
+      -> `worker.bootstrap.remote.at` is this command.
+    * [ ] Add flags to `bin/worker.execute` as an alternative to `--command` and `--class-for-execution`,
+      that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
+      This makes it easier, to create an individual test command per test server.
+      This is important for the RISCV server, that has a lot less resources.
+    * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
         * `net.splitcells.martins.avots.riscv.login`
         * `net.splitcells.martins.avots.raspberry.v2.login`
         * Live Server
-* [ ] Fix RISCV test server.
+* [x] Fix RISCV test server.
     * [x] Reset test server.
-    * [ ] Try configuring fan control: https://www.youtube.com/watch?v=_JNxsbqLX5c
 * [ ] Enable benchmark tests.
 * [ ] Add live server as normal test server.
 * [ ] Enable all runtime checks during tests like `StaticFlags.ENFORCING_UNIT_CONSISTENCY_KEY`.
@@ -52,6 +57,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Add test commands to `net.splitcells.martins.avots.distro` as this currently only relates to tests execute by Martins Avots.
 * [ ] Execute integration tests.
 * [ ] Delete Maven caches every month.
+* [ ] Ensure that all `./bin/*` commands are tested as well.
 # Done Tasks
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
     * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
