@@ -16,6 +16,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
       that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
       This makes it easier, to create an individual test command per test server.
       This is important for the RISCV server, that has a lot less resources.
+        * [ ] Bootstrap repos inside container.
+        * [ ] Execute project command.
     * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
         * `net.splitcells.martins.avots.riscv.login`
