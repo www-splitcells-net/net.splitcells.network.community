@@ -53,8 +53,8 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] Provide container image at Codeberg in order to have a simple boostrap command for remote servers.
       -> Publishing to Codeberg is not useful, because generating images for all architectures cannot be done on one computer.
     * [x] Create command to boostrap the image.
-    * [ ] Create command in order to execute additional commands after downloading all repos.
-    * [ ] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
+    * [o] Create command in order to execute additional commands after downloading all repos. -> There is no need for that.
+    * [x] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
     * [ ] Clean up all commands inside bin at root of network repo.
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.

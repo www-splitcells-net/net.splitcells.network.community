@@ -12,3 +12,10 @@
 * [ ] Find a way for SoundCloud etc. to ignore certain things via an annotation and comment.
   I think, FindBug has something like that.
   * [ ] Create guidelines for handling code scanning like how to handle default rules and its false positives.
+
+# Note on SoundCloud
+
+Consider disabling rules, if these cause problems in some cases,
+as removing too many rules is better than the other way.
+Rules that cause problems sometimes from experience seem to typically require a lot of time with limited benefits.
+If all problems/warnings are solved one can consider to re-enable and solve these one at a time.
