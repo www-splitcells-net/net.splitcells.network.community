@@ -33,7 +33,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Define default project commands.
     * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
     * [x] build
-    * [ ] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
+    * [x] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
     * [ ] Define `shell` that creates a shell with the current directory at the project folder.
     * [ ] repo.diff
@@ -45,8 +45,9 @@ to bootstrap the Network Worker and to ease DevOps.
     * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
       in order to not pollute the user home's bin folder via the OSI installation.
     * [ ] Use this for local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
-* [ ] Consider that all worker commands of the network core, should be basically links to commands inside the worker project.
+* [o] Consider that all worker commands of the network core, should be basically links to commands inside the worker project.
   If not consider documenting this in the worker doc.
+  -> This will be done, if there are multiple worker implementations.
 * [ ] Create network worker bootstrapper.
     * [x] Create command `worker.bootstrap`, that downloads all repos and make it executable via `worker.execute`.
     * [x] Do not mount documents folder of host, in order to be more independent of host by default.
