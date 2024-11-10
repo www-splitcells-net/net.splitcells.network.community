@@ -35,11 +35,7 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] build
     * [x] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
-    * [ ] Define `shell` that creates a shell with the current directory at the project folder.
-    * [ ] repo.diff
-    * [ ] repo.commit.all
-    * [ ] repo.commit.all.generic
-    * [ ] repo.push.at.all
+    * [ ] Define `*.shell` that creates a shell with the current directory at the project folder.
     * [x] repo.gui
 * [ ] Establish and use the global virtual network path system in shell.
     * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,

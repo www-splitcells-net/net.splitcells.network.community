@@ -14,6 +14,7 @@ We also need full accounting for it.
         * [x] `reuse init`
         * [x] `~/.local/bin/reuse lint`
     * [ ] Check this in daily CI for all repos. Just create the workflow for now. The actual license info will be fixed via the weekly test deployments task.
+        * [x] Create command `bin/repos.license.check` in order to check this. 
     * [x] The reuse-tool is licensed under the GPL-3. Is that a problem?
     * [x] Register main repo at: https://api.reuse.software/register
 * [x] Create licensing guidelines.

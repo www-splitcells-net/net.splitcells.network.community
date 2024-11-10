@@ -1,6 +1,16 @@
 # Consider compatibility with git-repo-manager
+* Issue number: [\#53](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/53)
+# Task Description
+Make repos process compatible to git-repo-manager and consider using it as a gui for meta repos,
+where repos process is mainly used for creating configs for tools and meta repos coordination like backups and synchronization.
+Offer git-repo-manager cooperation so these tools are compatible with each other,
+both understand the same simplistic file format for repo inventory files.
+# Tasks
+* [ ] Clean up this issue.
+* [ ] Clean up existing repos process doc.
+* [ ] https://github.com/Krasjet/grm
+* [ ] Define different focus of git-repo-manager and repos process.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
-* [ ] Document right management: Adding and removing such repos manually just takes time.
 * [ ] Add projects files standard to project list on website:
     * [ ] https://splitcells.net/net/splitcells/project/files/standard/repo/repo.process.html
     * [ ] https://splitcells.net/net/splitcells/martins/avots/website/projects/index.html
@@ -73,6 +83,7 @@ error[E0554]: `#![feature]` may not be used on the stable release channel
     * [ ] Improve peer repo handling.
     * [ ] Always require $peerRepo and $supRepo inside remote URLs, except when a special flag is given.
     * [ ] Cloning from GitHub and co was not tested and does not work: `repo.clone git@github.com:www-splitcells-net/net.splitcells.network.git`. This is also the case for `repo.clone.into.current` etc..
-
+# Done Tasks
+* [x] Document right management: Adding and removing such repos manually just takes time.
 # Tasks for future
 * [ ] Provide dry mode.
