@@ -4,6 +4,9 @@
     - [\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 # Tasks
 * [ ] Add such check to build system, so that grammar compliance is enforced.
+    * [x] Create command to check all repos and projects.
+    * [ ] Check command has to provide all project paths to the source code checker and
+      the source code checker has to be independent of current folder.
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 # Done Tasks
 * [x] Make code compliant to grammar again.
