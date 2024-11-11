@@ -81,15 +81,15 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
 * [ ] Render the game's current state.
-    * [ ] Make rendering of game thread safe.
+    * [x] Make rendering of game thread safe.
     * [ ] Render all table like things on webserver.
-        * [ ] Correct path of constraint tables. -> This will be done, when the analysis is required.
-        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier.
-        * [ ] Create aspects that creates a thread safe table based mirror for every table like thing,
+        * [x] Correct path of constraint tables. -> This will be done, when the analysis is required.
+        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier. -> Look-ups are not rendered yet.
+        * [x] Create aspects that creates a thread safe table based mirror for every table like thing,
           This way, the process's databases do not have to made thread safe by default.
           This can also be used, in order to increase the performance, in case only some databases are actively observed.
           Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
-  * [ ] Render all databases on webserver.
+  * [x] Render all databases on webserver.
   * [ ] Render all lookups on webserver.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
@@ -100,3 +100,4 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [ ] Integrate school scheduling into game,
   where players learn to retrieve life points by using skills,
   that are acquired in school.
+* [ ] Consider creating music via programming: https://sonic-pi.net
