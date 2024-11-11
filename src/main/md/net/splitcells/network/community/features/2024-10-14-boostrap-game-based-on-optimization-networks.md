@@ -23,9 +23,19 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [x] Create timeline.
     * [x] Allocate demands by creating appropriate supply objects randomly on the fly, instead of pre creating supply objects.
     * [x] Create time step raters as base for further raters. -> The existing one was undeprecated.
-    * [ ] Decrement players' value by one every time step  via constraints. Check this in unit tests.
-    * [ ] Increment select players' value by an action every time step  via constraints. Check this in unit tests.
+    * [ ] Create world event table, so that conflicting rules like incrementing or decrementing the player's energy can be applied/defined additively.
+      Consider doing this via a player with id -1 in the main entities table.
+      Alternatively, consider adding a new supply attribute named event type and allow multiple allocations for one demand.
+      -> The event type variant is considered.
+    * [ ] Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
+        * [ ] Provide a helper method, that creates a derived table based on column containing lines.
+          The derived table, contains all columns of the original table plus the columns of the lines in the line column.
+        * [ ] Create a renderer for all tables, in order to easily try out or check rater implementations. 
+        * [ ] Create PlayerEnergyConsumptionTest.
+    * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
+    * [ ] Create event based update rater.
     * [ ] Delete players with value of zero via constraints. Check this in unit tests.
+    * [ ] Ensure constraint compliance via optimizer.
     * [ ] Create guided optimization, instead of a random optimization.
 * [x] This features demonstrates some severe performance and performance analysis problems.
   This is a good time to do something about it, because this task is so small scale and therefore easy to optimize.
@@ -80,19 +90,20 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
-* [ ] Render the game's current state.
+* [x] Render the game's current state.
     * [x] Make rendering of game thread safe.
-    * [ ] Render all table like things on webserver.
+    * [x] Render all table like things on webserver.
         * [x] Correct path of constraint tables. -> This will be done, when the analysis is required.
-        * [ ] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier. -> Look-ups are not rendered yet.
+        * [o] Fix the `Discoverable#path` of every look-ups, so that table specific performance analysis gets easier. -> Look-ups are not rendered yet.
         * [x] Create aspects that creates a thread safe table based mirror for every table like thing,
           This way, the process's databases do not have to made thread safe by default.
           This can also be used, in order to increase the performance, in case only some databases are actively observed.
           Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
   * [x] Render all databases on webserver.
-  * [ ] Render all lookups on webserver.
+  * [o] Render all lookups on webserver. -> This is not required for now.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
+    * [ ] Draw reporter.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
