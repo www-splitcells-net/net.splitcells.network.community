@@ -102,6 +102,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   * [x] Render all databases on webserver.
   * [o] Render all lookups on webserver. -> This is not required for now.
   * [ ] Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
+      * [ ] Update all solution argumentation, when one updates occurs.
+        Otherwise, not all line augmentations are up to date, when these are rendered.
   * [ ] The entity manager has an error.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
