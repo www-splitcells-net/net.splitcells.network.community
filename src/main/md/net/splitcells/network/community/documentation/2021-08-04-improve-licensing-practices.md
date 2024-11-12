@@ -29,3 +29,6 @@ We also need full accounting for it.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
 * [ ] Ensure, that every repo has proper licensing data.
+* [ ] `test.everything` should verify license data as well.
+* [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
+  Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.

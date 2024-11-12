@@ -27,7 +27,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       Consider doing this via a player with id -1 in the main entities table.
       Alternatively, consider adding a new supply attribute named event type and allow multiple allocations for one demand.
       -> The event type variant is considered.
-    * [ ] Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
+    * [ ] CURRENT Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
         * [ ] Provide a helper method, that creates a derived table based on column containing lines.
           The derived table, contains all columns of the original table plus the columns of the lines in the line column.
         * [ ] Create a renderer for all tables, in order to easily try out or check rater implementations. 
@@ -90,7 +90,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Avoid duplicate paths of ObjectsRenderer.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
-* [x] Render the game's current state.
+* [ ] Render the game's current state.
     * [x] Make rendering of game thread safe.
     * [x] Render all table like things on webserver.
         * [x] Correct path of constraint tables. -> This will be done, when the analysis is required.
@@ -101,6 +101,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
           Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
   * [x] Render all databases on webserver.
   * [o] Render all lookups on webserver. -> This is not required for now.
+  * [ ] Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
+  * [ ] The entity manager has an error.
+  * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
+    in order to get some sort functionality.
+  * [ ] Create Tabulator help page, if a fitting table is present, in order describe things like sorting by multiple columns.
+  * [ ] Replace HTML tables by Tabulator tables on the client side via dependency injection.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
     * [ ] Draw reporter.
