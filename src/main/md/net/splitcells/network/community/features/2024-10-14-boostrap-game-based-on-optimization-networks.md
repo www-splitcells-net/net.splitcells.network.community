@@ -28,9 +28,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       Alternatively, consider adding a new supply attribute named event type and allow multiple allocations for one demand.
       -> The event type variant is considered.
     * [ ] CURRENT Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
-        * [ ] Provide a helper method, that creates a derived table based on column containing lines.
-          The derived table, contains all columns of the original table plus the columns of the lines in the line column.
-        * [ ] Create a renderer for all tables, in order to easily try out or check rater implementations. 
+        * [x] Provide a helper method, that creates a derived table based on column containing lines.
+          The derived table, contains all columns of the original table plus the columns of the lines in the line column. 
         * [ ] Create PlayerEnergyConsumptionTest.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Create event based update rater.
@@ -101,9 +100,11 @@ In order to keep it simple, there is no user input for the bootstrapped game.
           Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
   * [x] Render all databases on webserver.
   * [o] Render all lookups on webserver. -> This is not required for now.
-  * [ ] Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
-      * [ ] Update all solution argumentation, when one updates occurs.
+  * [ ] CURRENT Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
+      * [x] Update all solution argumentation, when one updates occurs.
         Otherwise, not all line augmentations are up to date, when these are rendered.
+      * [ ] Ensure, that the user sees a complete snapshot of the mirror.
+      * [ ] Enforce, that all things in the table like the argumentation are nicely rendered for the user.
   * [ ] The entity manager has an error.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
@@ -112,9 +113,11 @@ In order to keep it simple, there is no user input for the bootstrapped game.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
     * [ ] Draw reporter.
+    * [ ] Create reporter story.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
+    * [ ] `cin.stories`
 # Ideas
 * [ ] Integrate school scheduling into game,
   where players learn to retrieve life points by using skills,

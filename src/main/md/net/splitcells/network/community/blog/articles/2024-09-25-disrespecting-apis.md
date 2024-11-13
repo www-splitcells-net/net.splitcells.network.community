@@ -1,7 +1,7 @@
 # Disrespecting APIs
 > Not reading the docs is not always the worst.
 
-For [solving the sport lesson assignment](../../features/2021-03-07-solve-sport-lesson-assignment.md)
+For [solving the sport lesson assignment](../../features/task-archive/2024-11-13-solve-sport-lesson-assignment.md)
 it was decided to improve the web server,
 [by supporting multithreading so that multiple users can submit multiple optimization tasks at once](../../features/done/2024-08-27-make-copies-of-the-webserver-thread-safe.md).
 One of the hurdles, was the XML API, that threw exceptions sometimes,

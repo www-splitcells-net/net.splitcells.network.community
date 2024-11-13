@@ -7,13 +7,13 @@ in order to extend the programs modelling and optimization capabilities.
 Thereby make the project usable as a service by multiple users at once.
 A platform supporting many different optimization problems out of hand seems to be crippled,
 if the service can only be used by one user at once.
-Furthermore, in order to prepare the webserver for ["Solve school course scheduling problem"](task-archive/2021-03-07-solve-school-course-scheduling-problem.md),
+Furthermore, in order to prepare the webserver for ["Solve school course scheduling problem"](2021-03-07-solve-school-course-scheduling-problem.md),
 basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
-* [ ] Complete the issue ["Create no-code gel editor"](./2024-05-31-create-no-code-gel-editor.md) first.
+* [ ] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first.
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
         * [x] Note, that multi threading is achieved while avoiding amount of thread safe code.
