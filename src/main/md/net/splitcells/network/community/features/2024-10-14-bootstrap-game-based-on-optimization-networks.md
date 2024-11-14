@@ -105,6 +105,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         Otherwise, not all line augmentations are up to date, when these are rendered.
       * [ ] Ensure, that the user sees a complete snapshot of the mirror.
       * [ ] Enforce, that all things in the table like the argumentation are nicely rendered for the user.
+          * [x] Time step description
+          * [ ] CURRENT ExistenceCost
+              * [ ] Create builder interface for RaterBasedOnLineGroup in order to easily extend this interface in the future.
+                Use new class LineGroupRater for that and deprecate GroupRater.
   * [ ] The entity manager has an error.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
