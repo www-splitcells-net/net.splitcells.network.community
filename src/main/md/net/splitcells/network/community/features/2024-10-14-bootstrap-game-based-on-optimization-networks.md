@@ -107,8 +107,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
       * [ ] Enforce, that all things in the table like the argumentation are nicely rendered for the user.
           * [x] Time step description
           * [ ] CURRENT ExistenceCost
-              * [ ] Create builder interface for RaterBasedOnLineGroup in order to easily extend this interface in the future.
+              * [x] Create builder interface for RaterBasedOnLineGroup in order to easily extend this interface in the future.
                 Use new class LineGroupRater for that and deprecate GroupRater.
+                -> Use GroupingRater as a replacement of LineGroupRater.
+              * [ ] Ensure that all registered additions in the rater get a rating event.
   * [ ] The entity manager has an error.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
