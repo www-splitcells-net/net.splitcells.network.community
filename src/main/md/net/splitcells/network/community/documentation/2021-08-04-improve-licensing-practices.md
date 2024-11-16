@@ -14,7 +14,14 @@ We also need full accounting for it.
         * [x] `reuse init`
         * [x] `~/.local/bin/reuse lint`
     * [ ] Check this in daily CI for all repos. Just create the workflow for now. The actual license info will be fixed via the weekly test deployments task.
-        * [x] Create command `bin/repos.license.check` in order to check this. 
+        * [x] Create command `bin/repos.license.check` in order to check this.
+        * [ ] Install OSI in CI.
+            * [ ] Test this in `worker.execute` first.
+                * [x] `cd projects/net.splitcells.os.state.interface && ./bin/install`
+                * [ ] Create a general shell environment setup command.
+                    * [ ] Create a command that list all default command repositories inside hub repo.
+            * [ ] Use general commands in CI.
+        * [x] Maybe this is part of the worker bootstrapping? -> Yes, this is integrated into `bin/worker.bootstrap`.
     * [x] The reuse-tool is licensed under the GPL-3. Is that a problem?
     * [x] Register main repo at: https://api.reuse.software/register
 * [x] Create licensing guidelines.

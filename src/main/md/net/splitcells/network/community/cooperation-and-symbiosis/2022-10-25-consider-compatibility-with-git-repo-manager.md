@@ -8,7 +8,6 @@ both understand the same simplistic file format for repo inventory files.
 # Tasks
 * [ ] Clean up this issue.
 * [ ] Clean up existing repos process doc.
-* [ ] https://github.com/Krasjet/grm
 * [ ] Define different focus of git-repo-manager and repos process.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
 * [ ] Add projects files standard to project list on website:
@@ -85,5 +84,6 @@ error[E0554]: `#![feature]` may not be used on the stable release channel
     * [ ] Cloning from GitHub and co was not tested and does not work: `repo.clone git@github.com:www-splitcells-net/net.splitcells.network.git`. This is also the case for `repo.clone.into.current` etc..
 # Done Tasks
 * [x] Document right management: Adding and removing such repos manually just takes time.
+* [x] https://github.com/Krasjet/grm
 # Tasks for future
 * [ ] Provide dry mode.
