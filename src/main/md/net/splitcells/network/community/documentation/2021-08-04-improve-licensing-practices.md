@@ -20,6 +20,9 @@ We also need full accounting for it.
                 * [x] `cd projects/net.splitcells.os.state.interface && ./bin/install`
                 * [ ] Create a general shell environment setup command.
                     * [ ] Create a command that list all default command repositories inside hub repo.
+                    * [ ] Install OSI first.
+                      Then use `command.repository.register`, in order to easily use `command.repository.register`.
+                      After that, reinstall OSI, in order to have all repos installed.
             * [ ] Use general commands in CI.
         * [x] Maybe this is part of the worker bootstrapping? -> Yes, this is integrated into `bin/worker.bootstrap`.
     * [x] The reuse-tool is licensed under the GPL-3. Is that a problem?
