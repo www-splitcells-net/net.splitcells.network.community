@@ -23,19 +23,19 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [x] Create timeline.
     * [x] Allocate demands by creating appropriate supply objects randomly on the fly, instead of pre creating supply objects.
     * [x] Create time step raters as base for further raters. -> The existing one was undeprecated.
-    * [ ] Create world event table, so that conflicting rules like incrementing or decrementing the player's energy can be applied/defined additively.
+    * [o] Create world event table, so that conflicting rules like incrementing or decrementing the player's energy can be applied/defined additively.
       Consider doing this via a player with id -1 in the main entities table.
       Alternatively, consider adding a new supply attribute named event type and allow multiple allocations for one demand.
-      -> The event type variant is considered.
-    * [ ] CURRENT Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
+      -> The event type variant is considered, but with single assignments instead of multiple allocations for one demand
+    * [x] Decrement players' value by one every time step via constraints. Check this in unit tests. Name the rater PlayerEnergyConsumption.
         * [x] Provide a helper method, that creates a derived table based on column containing lines.
           The derived table, contains all columns of the original table plus the columns of the lines in the line column. 
-        * [ ] Create PlayerEnergyConsumptionTest.
-    * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
-    * [ ] Create event based update rater.
-    * [ ] Delete players with value of zero via constraints. Check this in unit tests.
+        * [x] Create ExistenceCostTest.
+    * [ ] CURRENT Create general event based attribute update rater.
     * [ ] Ensure constraint compliance via optimizer.
-    * [ ] Create guided optimization, instead of a random optimization.
+        * [ ] Create guided optimization, instead of a random optimization.
+    * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
+    * [ ] Delete players with value of zero via constraints.
 * [x] This features demonstrates some severe performance and performance analysis problems.
   This is a good time to do something about it, because this task is so small scale and therefore easy to optimize.
     * [ ] Create a base performance view for the game.
@@ -100,17 +100,17 @@ In order to keep it simple, there is no user input for the bootstrapped game.
           Furthermore, this enables one to completely avoid the synchronization overhead for best performance.
   * [x] Render all databases on webserver.
   * [o] Render all lookups on webserver. -> This is not required for now.
-  * [ ] CURRENT Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
+  * [x] Render the rating and the argumentation of solutions. Otherwise, it gets hard to evaluate something by hand.
       * [x] Update all solution argumentation, when one updates occurs.
         Otherwise, not all line augmentations are up to date, when these are rendered.
-      * [ ] Ensure, that the user sees a complete snapshot of the mirror.
-      * [ ] Enforce, that all things in the table like the argumentation are nicely rendered for the user.
+      * [x] Ensure, that the user sees a complete snapshot of the mirror.
+      * [x] Enforce, that all things in the table like the argumentation are nicely rendered for the user.
           * [x] Time step description
-          * [ ] CURRENT ExistenceCost
+          * [x] ExistenceCost
               * [x] Create builder interface for RaterBasedOnLineGroup in order to easily extend this interface in the future.
                 Use new class LineGroupRater for that and deprecate GroupRater.
                 -> Use GroupingRater as a replacement of LineGroupRater.
-              * [ ] Ensure that all registered additions in the rater get a rating event.
+              * [x] Ensure that all registered additions in the rater get a rating event.
   * [ ] The entity manager has an error.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
