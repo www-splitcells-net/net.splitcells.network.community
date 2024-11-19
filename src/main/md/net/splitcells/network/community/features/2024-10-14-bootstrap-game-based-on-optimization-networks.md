@@ -32,6 +32,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
           The derived table, contains all columns of the original table plus the columns of the lines in the line column. 
         * [x] Create ExistenceCostTest.
     * [ ] CURRENT Create general event based attribute update rater.
+        * [x] Consider player attribute deletion.
+        * [ ] Visualize table via Tabulator in order to better analyse results by hand.
+        * [ ] Second time step is missing, when CinService is running in DevDistro.
+        * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
