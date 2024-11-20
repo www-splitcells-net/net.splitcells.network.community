@@ -10,6 +10,7 @@
       -> Integration into the Maven build process does this better.
     * [ ] Create Maven build plugin.
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
+* [ ] Add Java's record type to the allowed grammar.
 # Done Tasks
 * [x] Make code compliant to grammar again.
 * [x] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
@@ -103,6 +104,9 @@
 * [x] Only allow foreign code import like the Java standard library in Java legacy code with some exceptions to the Java standard library like `java.util.List`. Currently, only Java standard library imports are blocked.
 * [x] Let all source code comply with this Java subset grammar.
 # Tasks For Future Tickets
+* [ ] Check via Java-Parser the usage of standard library things, that do not require an import.
+  Some of these need to be disallowed as well,
+  as the existing does not support looking up things in Java's classpath.
 * [ ] Remove direct usage of Path (because resolve method allows resolving absolute paths), Files (because changing the backend does not seem to be viable) and similar in the future.
 * [ ] Make main part GPL compliant and only extensions non GPL compliant.
 # Quotes
