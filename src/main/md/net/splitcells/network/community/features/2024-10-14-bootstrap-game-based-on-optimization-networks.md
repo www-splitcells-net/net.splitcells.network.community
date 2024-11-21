@@ -33,8 +33,11 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Create ExistenceCostTest.
     * [ ] CURRENT Create general event based attribute update rater.
         * [x] Consider player attribute deletion.
-        * [ ] Visualize table via Tabulator in order to better analyse results by hand.
-        * [ ] Second time step is missing, when CinService is running in DevDistro.
+        * [x] Visualize table via Tabulator in order to better analyse results by hand.
+        * [x] Render all tables in dev distro.
+        * [ ] Use [Fancytree](https://github.com/mar10/fancytree), in order to visualize the websites tree layout.
+            * [ ] Expand license NOTICE.
+        * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
@@ -119,11 +122,13 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
   * [ ] Create Tabulator help page, if a fitting table is present, in order describe things like sorting by multiple columns.
+    -> See `src/main/resources/html/net/splitcells/website/js/tabulator.md`.
   * [ ] Replace HTML tables by Tabulator tables on the client side via dependency injection.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
     * [ ] Draw reporter.
     * [ ] Create reporter story.
+    * [ ] Add notification on website, if user is on a page of Cin via toastr.
 * [ ] Create minimal advertisement.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
