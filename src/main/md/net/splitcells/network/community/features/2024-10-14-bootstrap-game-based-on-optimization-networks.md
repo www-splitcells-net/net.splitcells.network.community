@@ -36,7 +36,9 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Visualize table via Tabulator in order to better analyse results by hand.
         * [x] Render all tables in dev distro.
         * [ ] Use [Fancytree](https://github.com/mar10/fancytree), in order to visualize the websites tree layout.
-            * [ ] Expand license NOTICE.
+            * [x] Expand license NOTICE.
+            * [ ] Provide alternative drawing of tree via Fancytree.
+              Add a path attribute to a tree, where the server provides a JSON fitting for Fancytree.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
