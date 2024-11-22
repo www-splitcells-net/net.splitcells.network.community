@@ -11,3 +11,4 @@
     * [ ] Write the reasoning in the form of a perfect discussion, when the reasoning is about something
       , that evolved over time.
     * [ ] Link main guidelines and main objects. See these as functional and non-functional objectives.
+    * [ ] Art as a strategy to avoid to complex functionality by allowing the brain to do something fancy less damaging instead.
