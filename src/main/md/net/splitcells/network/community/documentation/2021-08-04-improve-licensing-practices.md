@@ -19,8 +19,10 @@ We also need full accounting for it.
             * [ ] Test this in `worker.execute` first.
                 * [x] `cd projects/net.splitcells.os.state.interface && ./bin/install`
                 * [ ] Create a general shell environment setup command.
+                  -> This is done inside `bin/worker.bootstrap`.
+                  A real general command is not needed for now.
                     * [ ] Create a command that list all default command repositories inside hub repo.
-                    * [ ] Install OSI first.
+                    * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
                       After that, reinstall OSI, in order to have all repos installed.
             * [ ] Use general commands in CI.
