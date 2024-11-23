@@ -12,3 +12,6 @@
       , that evolved over time.
     * [ ] Link main guidelines and main objects. See these as functional and non-functional objectives.
     * [ ] Art as a strategy to avoid to complex functionality by allowing the brain to do something fancy less damaging instead.
+    * [ ] Naming of top level projects in relation to Java's package structure: 
+      Use only one word or abbreviation and accept, that its meaning can drift.
+      Do not use multiple words separated by dots as it causes organizational and structural problems.
