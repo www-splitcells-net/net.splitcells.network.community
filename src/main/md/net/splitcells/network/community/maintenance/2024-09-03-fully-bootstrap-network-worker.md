@@ -22,7 +22,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Add global virtual path system to main goals.
 * [ ] Unify project and repo projects.
     * [x] Rename `net.splitcells.project.files.standard` to `net.splitcells.project`, in order to simplify the naming.
-    * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
+    * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.shell`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
     * [ ] State in `net.splitcells.project.standard` to keep it minimal, except for abstract
       info transfer commands like `project.render` and `repo.repair`.
