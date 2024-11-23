@@ -21,8 +21,7 @@ to bootstrap the Network Worker and to ease DevOps.
 * [ ] Document new focus on global virtual path system.
 * [ ] Add global virtual path system to main goals.
 * [ ] Unify project and repo projects.
-    * [ ] CURRENT Install every repository as a project repository and do not use dedicated file for that.
-    * [ ] Rename `net.splitcells.project.files.standard` to `net.splitcells.project.standard`, in order to simplify the naming.
+    * [x] Rename `net.splitcells.project.files.standard` to `net.splitcells.project`, in order to simplify the naming.
     * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.os.interface`.
     * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
     * [ ] State in `net.splitcells.project.standard` to keep it minimal, except for abstract
