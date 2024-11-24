@@ -13,7 +13,7 @@
 * [ ] Playwright is not working anymore.
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
     * [x] Try using only one browser playwright instance at a time.
-    * [ ] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
+    * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
     * [ ] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
@@ -38,6 +38,8 @@
         * [ ] `deploy.build.at`
         * [ ] `deploy.test.extensively.at`
     * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
+* [ ] Execute runtime profiling for long-running instances and store these,
+  in order to improve day to day performance via [Grafana and Pyroscope](https://grafana.com/docs/pyroscope/latest/get-started/).
 * [ ] Automatically and continuously check, if the SSL certificate for HTTPS is still valid
   and replace it automatically.
 * [ ] Execute the complete test suite on live server periodically and commit result data to network log.
@@ -50,8 +52,6 @@
 * [ ] The corresponding systemd service should only store logs up to 7 days.
 * [ ] Make private setup script public, in order to have a basis for default setup script for a server.
 * [ ] Run Forgejo Runner via Podman in order to not require root rights for Forgejo Runner: https://code.forgejo.org/forgejo/runner/src/branch/main/scripts/systemd.md
-* [ ] Execute runtime profiling for long-running instances and store these,
-  in order to improve day to day performance via [Grafana and Pyroscope](https://grafana.com/docs/pyroscope/latest/get-started/).
 * [ ] Do not log already logged message, in order to simplify logs on live server.
 * [ ] Do not output logs to standard output by default,
   in order to have minimal OS logs.
