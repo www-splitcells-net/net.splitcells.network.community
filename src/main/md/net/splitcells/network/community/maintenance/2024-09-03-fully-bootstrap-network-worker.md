@@ -20,21 +20,16 @@ to bootstrap the Network Worker and to ease DevOps.
 # Tasks
 * [ ] Document new focus on global virtual path system.
 * [ ] Add global virtual path system to main goals.
-* [ ] Unify project and repo projects.
+* [o] Unify project and repo projects. -> The split is ok, as a project is something different from a repo.
     * [x] Rename `net.splitcells.project.files.standard` to `net.splitcells.project`, in order to simplify the naming.
-    * [ ] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.shell`.
-    * [ ] `net.splitcells.project.standard` should be the base for `net.splitcells.os.interface`.
-    * [ ] State in `net.splitcells.project.standard` to keep it minimal, except for abstract
-      info transfer commands like `project.render` and `repo.repair`.
-        * [ ] Consider removing `project.render.as.net.splitcells.website.py`.
-          Is it still used?
-          Can it be replaced by `project.render.py`?
+    * [x] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.shell`.
+      -> The rename was done.
 * [ ] Define default project commands.
     * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
     * [x] build
     * [x] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
-    * [ ] Define `*.shell` that creates a shell with the current directory at the project folder.
+    * [ ] Define `*.shell` that creates a shell with the current directory as the project folder.
     * [x] repo.gui
 * [ ] Establish and use the global virtual network path system in shell.
     * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
