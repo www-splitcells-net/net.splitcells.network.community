@@ -14,7 +14,11 @@
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
     * [x] Try using only one browser playwright instance at a time.
     * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
-    * [ ] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
+    * [ ] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances. 
+    * [ ] Use only one browser instance and one browser tab for each tester instead,
+      in order to avoid process leak in Playwright.
+      Playwright does not seem to close all processes/threads after the browser and Playwright is closed in Java,
+      as many `Socket Process` and `Utility Process` processes with dedicated PIDs were found on live server.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.

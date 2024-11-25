@@ -39,6 +39,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Expand license NOTICE.
             * [ ] Provide alternative drawing of tree via Fancytree.
               Add a path attribute to a tree, where the server provides a JSON fitting for Fancytree.
+                * [ ] Test dictionaries inside an array for `Test#toJsonString()`.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
