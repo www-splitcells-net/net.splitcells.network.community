@@ -37,9 +37,13 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Render all tables in dev distro.
         * [ ] Use [Fancytree](https://github.com/mar10/fancytree), in order to visualize the websites tree layout.
             * [x] Expand license NOTICE.
-            * [ ] Provide alternative drawing of tree via Fancytree.
+            * [x] Provide alternative drawing of tree via Fancytree.
               Add a path attribute to a tree, where the server provides a JSON fitting for Fancytree.
-                * [ ] Test dictionaries inside an array for `Test#toJsonString()`.
+                * [x] Test dictionaries inside an array for `Test#toJsonString()`.
+            * [x] Improve Fancytree styling. 
+            * [x] Improve Fancytree's iframe height.
+            * [ ] Expand all path that represent a Dem service,
+              in order to improve the initial overview without the user's interaction.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
