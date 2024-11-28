@@ -42,8 +42,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [x] Test dictionaries inside an array for `Test#toJsonString()`.
             * [x] Improve Fancytree styling. 
             * [x] Improve Fancytree's iframe height.
-            * [ ] Expand all path that represent a Dem service,
+            * [ ] Expand certain paths that are important,
               in order to improve the initial overview without the user's interaction.
+                * [ ] Dem service paths
+                * [ ] Dem program representatives.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
     * [ ] Ensure constraint compliance via optimizer.
