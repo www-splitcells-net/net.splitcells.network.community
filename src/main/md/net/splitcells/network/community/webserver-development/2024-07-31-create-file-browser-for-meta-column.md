@@ -9,6 +9,12 @@
 # Tasks
 * [x] Logo links at the menu column should point to the front menu just like the icon button at main column's header.
 * [ ] Create central file browser page, that shows all files of document.
+    * [ ] There is now the base technology for that at `localhost:8443/net/splitcells/website/layout/tree.html`, but it needs improvement.
+        * [ ] Styling
+        * [ ] Expand certain paths that are important,
+          in order to improve the initial overview without the user's interaction.
+            * [ ] Dem service paths
+            * [ ] Dem program representatives.
     * [ ] Keep in mind, that something like that already exists: https://splitcells.net/net/splitcells/website/layout.html 
     * [ ] Make all items collapsable.
 * [ ] Embed file browser into meta column.

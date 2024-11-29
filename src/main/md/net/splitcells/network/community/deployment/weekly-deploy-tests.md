@@ -29,6 +29,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Enable benchmark tests.
 * [ ] `test.everything` should verify the validity of the git data as well.
   Create a general repo check command for that as well.
+    * [ ] Use `./bin/build.part.with.python`.
 * [ ] Add live server as normal test server.
 * [ ] Enable all runtime checks during tests like `StaticFlags.ENFORCING_UNIT_CONSISTENCY_KEY`.
 * [ ] Create aggregate code coverage report via jacoco and adding it to the static website via a dedicated jacoco log repo.
