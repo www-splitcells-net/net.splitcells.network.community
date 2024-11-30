@@ -1,11 +1,11 @@
 # Create dynamic lookup optimization.
 # Task Description
-The basic idea is, that the lookups created by tables are in fact lookup managers,
+The basic idea is, that the lookups created by tables should in fact be lookup managers,
 that decide what kind of lookup implementation is used.
 The decision is based on the fly statistics regarding the access patterns.
 There should be 2 major implementations:
 the first one is the existing one, that caches and synchronizes everything.
-The second one would be a new one, that caches  and synchronizes nothing.
+The second one would be a new one, that caches and synchronizes nothing.
 
 The manager should create a report, that states by how much the performance
 is estimated to be improved.
