@@ -64,6 +64,11 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Execute integration tests.
 * [ ] Delete Maven caches every month.
 * [ ] Ensure that all `./bin/*` commands are tested as well.
+* [ ] Execute tests in public CI via general test command.
+  The CI hoster specific setup, like repo cloning should stay in CI hoster specific config files.
+  This is CI hoster specific and not worth generalizing,
+  as there are problems like cloning repos hoster independently is complex,
+  when one wants to avoid that all CI hosters clone the repos from the same git hoster.
 # Done Tasks
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
     * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.

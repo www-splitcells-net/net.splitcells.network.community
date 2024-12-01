@@ -21,11 +21,13 @@ We also need full accounting for it.
                 * [ ] Create a general shell environment setup command.
                   -> This is done inside `bin/worker.bootstrap`.
                   A real general command is not needed for now.
-                    * [ ] Create a command that list all default command repositories inside hub repo.
+                    * [ ] Create a command that list all default command repositories inside hub repo and
+                      install these with this command via the shell project. 
                     * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
                       After that, reinstall OSI, in order to have all repos installed.
-            * [ ] Use general commands in CI.
+            * [x] Create general license test command. -> This command is named `repos.license.check`.
+            * [x] Add this test to Codeberg's CI.
         * [x] Maybe this is part of the worker bootstrapping? -> Yes, this is integrated into `bin/worker.bootstrap`.
     * [x] The reuse-tool is licensed under the GPL-3. Is that a problem?
     * [x] Register main repo at: https://api.reuse.software/register

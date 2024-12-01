@@ -15,6 +15,7 @@
 * [ ] Find a way for SoundCloud etc. to ignore certain things via an annotation and comment.
   I think, FindBug has something like that.
   * [ ] Create guidelines for handling code scanning like how to handle default rules and its false positives.
+* [ ] Use https://checkstyle.sourceforge.io/
 
 # Note on SoundCloud
 

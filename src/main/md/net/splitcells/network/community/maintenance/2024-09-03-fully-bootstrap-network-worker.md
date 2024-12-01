@@ -24,21 +24,21 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] Rename `net.splitcells.project.files.standard` to `net.splitcells.project`, in order to simplify the naming.
     * [x] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.shell`.
       -> The rename was done.
-* [ ] Define default project commands.
+* [x] Define default project commands.
     * [x] Expand `command.managed.install.project.commands.py` so it can install default project commands. 
     * [x] build
     * [x] Rename existing `repo.*` to `repos.*`, because it should be easy to understand,
       if something is done on one repo, or if its children are processed as well.
-    * [ ] Define `*.shell` that creates a shell with the current directory as the project folder.
+    * [x] Define `*.shell` that creates a shell with the current directory as the project folder.
     * [x] repo.gui
-* [ ] Establish and use the global virtual network path system in shell.
-    * [ ] Provide project command to install OSI to an ignored local folder in the source code repos,
+* [o] Establish and use the global virtual network path system in shell. -> There is no urgent need for that for now.
+    * [o] Provide project command to install OSI to an ignored local folder in the source code repos,
       in order to not pollute the user home's bin folder via the OSI installation.
-    * [ ] Use this for local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
+    * [o] Use this for local installation during build and deployment of `net.splitcells.martins.avots.distro` as a proof of concept.
 * [o] Consider that all worker commands of the network core, should be basically links to commands inside the worker project.
   If not consider documenting this in the worker doc.
   -> This will be done, if there are multiple worker implementations.
-* [ ] Create network worker bootstrapper.
+* [x] Create network worker bootstrapper.
     * [x] Create command `worker.bootstrap`, that downloads all repos and make it executable via `worker.execute`.
     * [x] Do not mount documents folder of host, in order to be more independent of host by default.
     * [x] Provide container image at Codeberg in order to have a simple boostrap command for remote servers.
@@ -46,7 +46,8 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] Create command to boostrap the image.
     * [o] Create command in order to execute additional commands after downloading all repos. -> There is no need for that.
     * [x] Create command to execute such bootstrapping on a remote server and ensure, that the execution is isolated via i.e. podman.
-    * [ ] Clean up all commands inside bin at root of network repo.
+    * [x] Clean up all commands inside bin at root of network repo.
+      Alternatively, add the command to the [weekly test deployment task](../deployment/weekly-deploy-tests.md).
 # Ideas
 * [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
 * [ ] Use GVNPS for test servers as well.
