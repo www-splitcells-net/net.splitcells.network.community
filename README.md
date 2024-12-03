@@ -92,7 +92,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Issue number: [\#...](link to issue, that defines the number)
 
 # Task Description
-# Service
+# Service Tasks
 [This is a list of tasks, that are executed cyclicly.]
 # Tasks
 [Open and Closed Tasks]
