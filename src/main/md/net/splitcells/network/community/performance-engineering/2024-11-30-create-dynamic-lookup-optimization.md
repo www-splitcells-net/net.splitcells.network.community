@@ -24,9 +24,12 @@ is estimated to be improved.
   Fix it.
 * [ ] Create an alternative lookup method, that chooses the other implementations
   based on statistics.
-    * [ ] Too many LookupManager are created, where only one value is ever looked up.
+    * [o] Too many LookupManager are created, where only one value is ever looked up.
       -> This seems to be caused by LookupColumn, that contain LookupManager,
       which in turn contains LookupColumns.
+      -> The LookupManager count seems not to be big enough for now, for it to be relevant.
+    * [x] Fix LookupManager errors in live distro.
+    * [ ] Create tests for LookupManager.
 * [ ] Compare benchmarks of any possible usage.
     * [ ] Existing implementation.
     * [ ] Recalculating lookup.
