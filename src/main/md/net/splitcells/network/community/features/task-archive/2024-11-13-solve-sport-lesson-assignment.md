@@ -96,9 +96,9 @@ To make the administration GUI useful an update command of the webserver itself 
     * [o] Create login page. -> The browser's default login page is enough for now. 
     * [o] Link to login page from `You do not have the rights to access this page.` page. -> The browser's default login prompt is enough for now.
     * [x] The following extensions needed appropriate protection as well.
-        * [x] `net.splitcells.website.server.projects.extension.TestExtension`
+        * [x] `net.splitcells.website.server.projects.extension.impls.TestExtension`
         * [x] `net.splitcells.website.server.projects.extension.status.HostMemoryUtilizationExtension`
-        * [x] Enable and secure `net.splitcells.website.server.projects.extension.DemConfigExtension`, which is currently disabled.
+        * [x] Enable and secure `net.splitcells.website.server.projects.extension.impls.DemConfigExtension`, which is currently disabled.
     * [o] Create picture depicting an architectural overview of the security system.
       -> The authentication, authorization and access control API seems to be good enough.
     * [x] Deploy this feature to production.

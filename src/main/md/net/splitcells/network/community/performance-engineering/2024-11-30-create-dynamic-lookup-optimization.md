@@ -19,22 +19,34 @@ is estimated to be improved.
 * [x] Implement an alternative lookup method with a temporary lookup table.
 * [x] Use temporary lookup were possible.
   Find the relevant places via the commit c24999.
-* [ ] The general performance is currently very bad for the 
+* [x] The general performance is currently very bad for the 
   colloquium problem example in `gel.ui`.
   Fix it.
-* [ ] Create an alternative lookup method, that chooses the other implementations
+* [x] Create an alternative lookup method, that chooses the other implementations
   based on statistics.
     * [o] Too many LookupManager are created, where only one value is ever looked up.
       -> This seems to be caused by LookupColumn, that contain LookupManager,
       which in turn contains LookupColumns.
       -> The LookupManager count seems not to be big enough for now, for it to be relevant.
     * [x] Fix LookupManager errors in live distro.
-    * [ ] Create tests for LookupManager.
+    * [x] Create tests for LookupManager.
+    * [x] Create manual performance test in live DevDistro with disabled runtime checks.
+      -> The runtime performance is good enough for now, when runtime checks are disabled.
+* [ ] Create performance report.
+    * [ ] Number of tables
+    * [ ] Number of table reads
+    * [ ] Number of table writes
+    * [ ] Number of lookup managers
+    * [ ] Number of strategy changes in lookup manager
+    * [ ] Number of lookup manager writes
+    * [ ] Number of lookup manager reads
+    * [ ] Number of persisted lookups in lookup manager and their read and write counts.
+    * [ ] Number of cached lookups in lookup manager and their read and write counts.
+    * [ ] Number of assignment tables and their read and write count.
 * [ ] Compare benchmarks of any possible usage.
     * [ ] Existing implementation.
     * [ ] Recalculating lookup.
     * [ ] Lookup manager
-* [ ] Create lookup manager performance report.
 * [ ] Add to performance guidelines the idea,
   that automatic reports with an automatic interpretation is better
   than raw data most of the time,
