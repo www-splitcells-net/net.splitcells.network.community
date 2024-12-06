@@ -32,7 +32,7 @@ is estimated to be improved.
     * [x] Create tests for LookupManager.
     * [x] Create manual performance test in live DevDistro with disabled runtime checks.
       -> The runtime performance is good enough for now, when runtime checks are disabled.
-* [ ] Create performance report.
+* [ ] Create performance report. -> The report is provided at `http://localhost:8443/net/splitcells/system/performance-report.html`.
     * [ ] Number of tables
     * [ ] Number of table reads
     * [ ] Number of table writes
