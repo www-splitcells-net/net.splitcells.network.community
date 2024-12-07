@@ -36,6 +36,9 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Blog
   * Description: Speaking to the void about the development process.
   * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
+* Performance Engineering
+  * Description: We have a need for speed.
+  * [Link](./src/main/md/net/splitcells/network/community/performance-engineering/index.md)
 ## Very Low Priority Standard Projects
 * Accessibility: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
@@ -49,9 +52,6 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: This is an archive of readable descriptions of some major projects,
     that can be used as advertisement for specific groups.
   * [Link](./src/main/md/net/splitcells/network/community/projects/index.md)
-* Performance Engineering
-  * Description: We have a need for speed.
-  * [Link](./src/main/md/net/splitcells/network/community/performance-engineering/index.md)
 * Security
   * Description: What could go possibly wrong?
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
