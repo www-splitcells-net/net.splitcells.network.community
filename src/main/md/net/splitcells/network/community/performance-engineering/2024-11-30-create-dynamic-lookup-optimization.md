@@ -38,11 +38,15 @@ is estimated to be improved.
     * [ ] Number of table writes
     * [ ] Number of lookup managers
     * [ ] Number of strategy changes in lookup manager
-    * [ ] Number of lookup manager writes
+    * [x] Number of lookup manager writes based on table modification counters.
     * [ ] Number of lookup manager reads
     * [ ] Number of persisted lookups in lookup manager and their read and write counts.
     * [ ] Number of cached lookups in lookup manager and their read and write counts.
     * [ ] Number of assignment tables and their read and write count.
+    * [ ] Number of assignment tables writes in relation to the number of table and lookup writes.
+      The same for reads as well.
+    * [ ] Number writes for assignment tables of a solution in relation to the number of table and lookup writes.
+      The same for reads as well.
 * [ ] Compare benchmarks of any possible usage.
     * [ ] Existing implementation.
     * [ ] Recalculating lookup.
