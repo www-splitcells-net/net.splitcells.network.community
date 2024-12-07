@@ -9,11 +9,12 @@
       the source code checker has to be independent of current folder.
       -> Integration into the Maven build process does this better.
     * [ ] Create Maven build plugin.
-        * [ ] Copy Java grammar code into `net.splitcells.dem.source`.
+        * [x] Copy Java grammar code into `net.splitcells.dem.source`.
         * [ ] Make Maven plugin work with `net.splitcells.dem.source` via special setting,
           so that bootstrapping is easy,
           while allowing `net.splitcells.dem.source` to depend on all normal `net.splitcells.*` projects.
         * [ ] Delete Java grammar code from `net.splitcells.dem`.
+        * [ ] Adjust packages in new `net.splitcells.dem.source` project.
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 * [ ] Add Java's record type to the allowed grammar.
 # Done Tasks
