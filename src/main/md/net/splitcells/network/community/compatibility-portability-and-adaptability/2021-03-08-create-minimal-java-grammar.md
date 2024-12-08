@@ -3,21 +3,20 @@
     - [\#26 is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
     - [\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 # Tasks
-* [ ] Add such check to build system, so that grammar compliance is enforced.
+* [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
+# Done Tasks
+* [x] Add such check to build system, so that grammar compliance is enforced.
     * [x] Create command to check all repos and projects.
     * [o] Check command has to provide all project paths to the source code checker and
       the source code checker has to be independent of current folder.
       -> Integration into the Maven build process does this better.
     * [x] Create Maven build plugin.
         * [x] Copy Java grammar code into `net.splitcells.dem.source`.
-        * [x] Add source code check to Maven plugin via `net.splitcells.dem.source`. 
+        * [x] Add source code check to Maven plugin via `net.splitcells.dem.source`.
         * [x] Delete Java grammar code from `net.splitcells.dem`.
         * [x] Adjust packages in new `net.splitcells.dem.source` project.
     * [x] Make source code completely compliant and after that, convert all grammar errors from error messages to build failures.
-      `mci -Dsource_code_check=true -DskipTests` is used to optionally enable the source code check. 
-* [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
-
-# Done Tasks
+      `mci -Dsource_code_check=true -DskipTests` is used to optionally enable the source code check.
 * [o] Add Java's record type to the allowed grammar. -> This is not needed for now.
 * [x] Make code compliant to grammar again.
 * [x] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
@@ -111,11 +110,12 @@
 * [x] Only allow foreign code import like the Java standard library in Java legacy code with some exceptions to the Java standard library like `java.util.List`. Currently, only Java standard library imports are blocked.
 * [x] Let all source code comply with this Java subset grammar.
 # Tasks For Future Tickets
-* [ ] Check via Java-Parser the usage of standard library things, that do not require an import.
+* [x] Check via Java-Parser the usage of standard library things, that do not require an import.
   Some of these need to be disallowed as well,
   as the existing does not support looking up things in Java's classpath.
+  -> This task was moved into the README of `net.splitcells.dem.source`.
 * [ ] Remove direct usage of Path (because resolve method allows resolving absolute paths), Files (because changing the backend does not seem to be viable) and similar in the future.
-* [ ] Make main part GPL compliant and only extensions non GPL compliant.
+* [o] Make main part GPL compliant and only extensions non GPL compliant. -> This task description does not make sense to me.
 # Quotes
 ## FODS-Header
 ```
