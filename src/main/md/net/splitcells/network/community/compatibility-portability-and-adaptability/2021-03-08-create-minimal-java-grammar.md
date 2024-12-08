@@ -14,7 +14,7 @@
         * [x] Delete Java grammar code from `net.splitcells.dem`.
         * [x] Adjust packages in new `net.splitcells.dem.source` project.
     * [ ] Make source code completely compliant and after that, convert all grammar errors from error messages to build failures.
-      `mci -Dsource_code_check=true` is used to optionally enable the source code check. 
+      `mci -Dsource_code_check=true -DskipTests` is used to optionally enable the source code check. 
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 * [ ] Add Java's record type to the allowed grammar.
 # Done Tasks
