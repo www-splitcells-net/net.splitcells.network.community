@@ -8,13 +8,13 @@
     * [o] Check command has to provide all project paths to the source code checker and
       the source code checker has to be independent of current folder.
       -> Integration into the Maven build process does this better.
-    * [ ] Create Maven build plugin.
+    * [x] Create Maven build plugin.
         * [x] Copy Java grammar code into `net.splitcells.dem.source`.
-        * [ ] Make Maven plugin work with `net.splitcells.dem.source` via special setting,
-          so that bootstrapping is easy,
-          while allowing `net.splitcells.dem.source` to depend on all normal `net.splitcells.*` projects.
-        * [ ] Delete Java grammar code from `net.splitcells.dem`.
-        * [ ] Adjust packages in new `net.splitcells.dem.source` project.
+        * [x] Add source code check to Maven plugin via `net.splitcells.dem.source`. 
+        * [x] Delete Java grammar code from `net.splitcells.dem`.
+        * [x] Adjust packages in new `net.splitcells.dem.source` project.
+    * [ ] Make source code completely compliant and after that, convert all grammar errors from error messages to build failures.
+      `mci -Dsource_code_check=true` is used to optionally enable the source code check. 
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
 * [ ] Add Java's record type to the allowed grammar.
 # Done Tasks
