@@ -13,11 +13,12 @@
         * [x] Add source code check to Maven plugin via `net.splitcells.dem.source`. 
         * [x] Delete Java grammar code from `net.splitcells.dem`.
         * [x] Adjust packages in new `net.splitcells.dem.source` project.
-    * [ ] Make source code completely compliant and after that, convert all grammar errors from error messages to build failures.
+    * [x] Make source code completely compliant and after that, convert all grammar errors from error messages to build failures.
       `mci -Dsource_code_check=true -DskipTests` is used to optionally enable the source code check. 
 * [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
-* [ ] Add Java's record type to the allowed grammar.
+
 # Done Tasks
+* [o] Add Java's record type to the allowed grammar. -> This is not needed for now.
 * [x] Make code compliant to grammar again.
 * [x] Avoid grammar check if JavaLegacyArtifact is present, because it destroys the error messages of ANTLR4.
 * [o] Check grammar for all repos. -> There is no need for such command. It's best to add this to the build process.
