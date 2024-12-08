@@ -74,7 +74,7 @@ Basically being the maker of my own demise.
 # The Final Solution
 > Let the wicked forsake their ways and the unrighteous their thoughts. Let them turn to the lord, and he will have mercy on them, and to our God, for he will freely pardon.
 
-I was already working on [replacing Java's XML with my own](../../compatibility-portability-and-adaptability/2021-03-08-create-minimal-java-grammar.md),
+I was already working on [replacing Java's XML with my own](../../compatibility-portability-and-adaptability/done/2021-03-08-create-minimal-java-grammar.md),
 in order to simplify my code and make it more portable.
 It was part of a secondary maintenance task,
 that I was working a tiny bit each weekend.

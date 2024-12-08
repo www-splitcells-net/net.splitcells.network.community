@@ -3,8 +3,9 @@
     - [\#26 is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
     - [\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
 # Tasks
-* [ ] Make grammar clean, so it's straight forward to process for translations and to understand.
+
 # Done Tasks
+* [x] Make grammar clean, so it's straight forward to process for translations and to understand.
 * [x] Add such check to build system, so that grammar compliance is enforced.
     * [x] Create command to check all repos and projects.
     * [o] Check command has to provide all project paths to the source code checker and
