@@ -47,7 +47,9 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Check ratings by hand.
             * [ ] ValueUpdate may not correctly read value update events.
             * [o] There are not value update events, but this is not a problem of the rater.
-        * [ ] Improve argumentation rendering by splitting the description into multiple lines.
+        * [ ] Improve argumentation rendering.
+            * [x] Render argumentation as a tree in pop up.
+            * [ ] Avoid empty elements in argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
