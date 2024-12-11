@@ -131,7 +131,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 -> Use GroupingRater as a replacement of LineGroupRater.
               * [x] Ensure that all registered additions in the rater get a rating event.
   * [ ] The entity manager has an error.
-  * [ ] Consider rendering HTML elements on client side via Tabulator via dependency injection,
+  * [x] Consider rendering HTML elements on client side via Tabulator via dependency injection,
     in order to get some sort functionality.
   * [ ] Create Tabulator help page, if a fitting table is present, in order describe things like sorting by multiple columns.
     -> See `src/main/resources/html/net/splitcells/website/js/tabulator.md`.
