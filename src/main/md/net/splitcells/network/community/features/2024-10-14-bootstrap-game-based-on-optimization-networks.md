@@ -47,7 +47,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [ ] Check ratings by hand.
             * [ ] ValueUpdate may not correctly read value update events.
             * [o] There are not value update events, but this is not a problem of the rater.
-        * [ ] Improve argumentation rendering.
+        * [ ] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
             * [x] Render argumentation as a tree in pop up.
             * [x] Avoid empty elements in argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
             * [ ] Correct reasoning tree.
