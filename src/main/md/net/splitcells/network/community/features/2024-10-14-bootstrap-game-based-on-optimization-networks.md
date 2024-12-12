@@ -49,8 +49,18 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [o] There are not value update events, but this is not a problem of the rater.
         * [ ] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
             * [x] Render argumentation as a tree in pop up.
-            * [x] Avoid empty elements in argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
-            * [ ] Correct reasoning tree.
+            * [x] Avoid empty elements in rendering of argumentation tree. Test this via `TreeTest#testAsXhtmlList()`.
+            * [x] Avoid flattening empty tree nodes in argumentation too much, which results in lossing nearly all nesting. This seems to be caused by the bad argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
+            * [ ] Correct reasoning tree, as the tree nodes with a not empty name have never children.
+              Test this via `ConstraintTest#testArgumentation()`.
+                * [ ] `Constraint#naturalArgumentation(Line subject, GroupId group)`
+                * [ ] `Constraint#naturalArgumentation(Line line, GroupId group, Predicate<AllocationRating> allocationSelector)`
+                * [x] `ConstraintBasedOnLocalGroupsAI#localNaturalArgumentation(Line, GroupId, Predicate<AllocationRating>)`
+                * [x] `ConstraintBasedOnLocalGroupsAI#localNaturalArgumentation(Report)`
+                * [ ] `ConstraintBasedOnLocalGroupsAI#naturalArgumentation(GroupId)`
+                * [x] `Then#LOCAL_NATURAL_ARGUMENTATION`
+                * [x] `ForAll#LOCAL_NATURAL_ARGUMENTATION`
+                * [ ] Remove Gel namespace as it currently has no use.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
@@ -145,6 +155,15 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Create logo for Cin.
     * [ ] Consider subtitle for the first running version: `No Rest for The Guilty`
     * [ ] `cin.stories`
+* [ ] Create design documents.
+    * [ ] Art style should allow to start with very minimal models and to easily improves these bit by bit,
+      in order to minimize the required resources for the art style as the beginning.
+      The minimal art version needs to be nice, so that initially the required work is minimized,
+      while more complex improvements are pushed as far as possible into the past.
+    * [ ] Use blocks for initial 3D models, as its easiest to model and to create textures/color to such.
+* [ ] Create objectives documents.
+    * [ ] Provide injection framework for injecting optimization problems into other optimization problems,
+      in order to model complex problems via unrelated and therefore easier to develop problems.
 # Ideas
 * [ ] Integrate school scheduling into game,
   where players learn to retrieve life points by using skills,
