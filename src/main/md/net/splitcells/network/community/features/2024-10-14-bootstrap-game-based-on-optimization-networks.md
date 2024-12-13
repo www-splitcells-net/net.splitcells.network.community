@@ -60,7 +60,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [ ] `ConstraintBasedOnLocalGroupsAI#naturalArgumentation(GroupId)`
                 * [x] `Then#LOCAL_NATURAL_ARGUMENTATION`
                 * [x] `ForAll#LOCAL_NATURAL_ARGUMENTATION`
-                * [ ] Remove Gel namespace as it currently has no use.
+                * [ ] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
+                * [ ] Remove empty intermediate tree nodes.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
