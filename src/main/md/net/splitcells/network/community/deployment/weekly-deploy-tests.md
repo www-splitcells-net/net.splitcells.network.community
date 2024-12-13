@@ -16,16 +16,17 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
       that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
       This makes it easier, to create an individual test command per test server.
       This is important for the RISCV server, that has a lot less resources.
-        * [ ] Bootstrap server repos.
-        * [ ] Bootstrap repos inside container.
+        * [x] Draft new flag, by creating the appropriate `--comand`.
+          -> ` bin/worker.execute  --name 'net.splitcells.network.worker' --command 'sh -c "cd ~/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap"' --execute-via-ssh-at 'martins-avots@live.splitcells.net' --verbose true --use-host-documents true`
+          -> A dedicated flag is not needed for that, as nothing special needs to done.
+        * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
+        * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
         * [ ] Execute project command.
     * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
         * `net.splitcells.martins.avots.riscv.login`
         * `net.splitcells.martins.avots.raspberry.v2.login`
         * Live Server
-* [x] Fix RISCV test server.
-    * [x] Reset test server.
 * [ ] Enable benchmark tests.
 * [ ] `test.everything` should verify the validity of the git data as well.
   Create a general repo check command for that as well.
@@ -70,6 +71,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
   as there are problems like cloning repos hoster independently is complex,
   when one wants to avoid that all CI hosters clone the repos from the same git hoster.
 # Done Tasks
+* [x] Fix RISCV test server.
+    * [x] Reset test server.
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
     * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
     * [x] Disable test coverage report in CI.
