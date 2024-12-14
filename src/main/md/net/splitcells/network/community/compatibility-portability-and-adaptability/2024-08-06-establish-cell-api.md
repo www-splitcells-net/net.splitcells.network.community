@@ -14,12 +14,12 @@ Lately, this has proven to be not working and
 created severe configuration costs.
 # Tasks
 * [ ] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/task-archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
-    * [ ] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data.
-        * [ ] Create `net.splitcells.network.connect`.
-            * [ ] Its main purposes is to connect multiple `Dem#process`.
-            * [ ] Provides single point of entry for HTTP requests.
+    * [o] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data. -> The service option CinSerive was used instead.
+        * [o] Create `net.splitcells.network.connect`.
+            * [o] Its main purposes is to connect multiple `Dem#process`. 
+            * [o] Provides single point of entry for HTTP requests. -> This was done via ObjectsRenderer instead.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
-        * [ ] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
+        * [o] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
           Link from this ticket to this new ticket instead.
         * [ ] Explain why `CellFileSystemViews` was created and for what it is used.
         * [x] Discourage starting program via Dem process with a given runnable,
