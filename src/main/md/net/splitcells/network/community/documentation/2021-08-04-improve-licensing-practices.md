@@ -15,14 +15,17 @@ We also need full accounting for it.
         * [x] `~/.local/bin/reuse lint`
     * [ ] Check this in daily CI for all repos. Just create the workflow for now. The actual license info will be fixed via the weekly test deployments task.
         * [x] Create command `bin/repos.license.check` in order to check this.
+        * [ ] Make license processes completely independent of GPL3 code, by providing a default license check implementation, that does nothing and inject REUSE dynamically into the process instead.
         * [ ] Install OSI in CI.
             * [ ] Test this in `worker.execute` first.
                 * [x] `cd projects/net.splitcells.os.state.interface && ./bin/install`
                 * [ ] Create a general shell environment setup command.
                   -> This is done inside `bin/worker.bootstrap`.
                   A real general command is not needed for now.
-                    * [ ] Create a command that list all default command repositories inside hub repo and
-                      install these with this command via the shell project. 
+                    * [ ] Create a project command that list all default command repositories managed by the hub repo and
+                      install these with this command via the shell project.
+                    * [x] Create a project command that list all command repositories, that are present in the current repository. -> `net.splitcells.shell.repo.subs.command`
+                    * [ ] Use new project commands, in order to install all command repos. 
                     * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
                       After that, reinstall OSI, in order to have all repos installed.

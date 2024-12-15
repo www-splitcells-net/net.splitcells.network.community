@@ -21,7 +21,6 @@ created severe configuration costs.
     * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
         * [o] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
           Link from this ticket to this new ticket instead.
-        * [ ] Explain why `CellFileSystemViews` was created and for what it is used.
         * [x] Discourage starting program via Dem process with a given runnable,
           because such a program definition is not declarative and therefore combining multiple services or module into
           one is harder.
@@ -56,10 +55,15 @@ created severe configuration costs.
                     * [x] Add all configs and resources to SystemCell.
                 * [x] Deprecate original WebsiteViaJar.
             * [ ] Visualize cell dependencies.
-                * [ ] Provide way for cells to optionally declare their option dependencies. The dependency order will
-                  not be enforced yet.
-                * [ ] Visualize as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
+                * [o] Provide way for cells to optionally declare their option dependencies. The dependency order will
+                  not be enforced yet. -> It is enough for now, that the init system records the dependencies, as it will not be enforced by now. 
+                * [ ] Visualize dependencies between cells as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
                   but dynamically.
+                    * [ ] CURRENT Create dependency recorder option.
+                    * [ ] Render dependency recorder option.
+                    * [ ] Record `Environment#withCell`.
+                    * [ ] Record `Configuration#withConfigValue`.
+                    * [ ] Record `Configuration#withInitedOption`.
             * [ ] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
                 * [ ] Use DistroCell.
