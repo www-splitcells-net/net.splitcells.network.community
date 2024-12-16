@@ -71,7 +71,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Delete players with value of zero via constraints.
 * [x] This features demonstrates some severe performance and performance analysis problems.
   This is a good time to do something about it, because this task is so small scale and therefore easy to optimize.
-    * [ ] Create a base performance view for the game.
+    * [x] Create a base performance view for the game.
         * [x] Test that measures the runtime of a time step.
           -> Runtime performance seems to be good enough.
         * [o] Test the overhead of the optimization.
@@ -150,10 +150,9 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   * [ ] Create Tabulator help page, if a fitting table is present, in order describe things like sorting by multiple columns.
     -> See `src/main/resources/html/net/splitcells/website/js/tabulator.md`.
   * [ ] Replace HTML tables by Tabulator tables on the client side via dependency injection.
-  * [ ] Create a compact tree renderer for layout,
-    where only the paths to its leafs are shown and where all path elements are links to appropriate paths.
-  * [ ] Use compact tree renderer in order provide an overview of all line processing tables of the constraint tree,
+  * [ ] Create compact tree renderer, that provides an overview of all line processing tables of the constraint tree,
     which in turn is a more compact tree.
+    The tree is compact, be only showing the paths to its leafs and where all path elements are links to appropriate paths.
     It also represents the constraint input language more closely.
     Later on in a new task the no-code editor should represent the state of the constraint tree.
 * [ ] Add game to live server.
