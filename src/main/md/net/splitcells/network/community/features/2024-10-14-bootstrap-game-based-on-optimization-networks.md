@@ -150,6 +150,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   * [ ] Create Tabulator help page, if a fitting table is present, in order describe things like sorting by multiple columns.
     -> See `src/main/resources/html/net/splitcells/website/js/tabulator.md`.
   * [ ] Replace HTML tables by Tabulator tables on the client side via dependency injection.
+  * [ ] Create a compact tree renderer for layout,
+    where only the paths to its leafs are shown and where all path elements are links to appropriate paths.
+  * [ ] Use compact tree renderer in order provide an overview of all line processing tables of the constraint tree,
+    which in turn is a more compact tree.
+    It also represents the constraint input language more closely.
+    Later on in a new task the no-code editor should represent the state of the constraint tree.
 * [ ] Add game to live server.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
     * [ ] Draw reporter.

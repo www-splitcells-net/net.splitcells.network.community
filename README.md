@@ -56,6 +56,11 @@ Projects that are being worked cyclically, and probably will never be finished.
   * Description: What could go possibly wrong?
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 ## Notes
+* In order to mark tasks in `task-archives` with a high priority,
+  set the creation date of the task to something impossible like the year 9999.
+  Do this with at most 1 task, as otherwise there will be a creep towards many such tasks.
+  Change the documents date in its file name back to its original,
+  when the task is started.
 * `very low priority` means, that the related thing is currently not being worked on, on a regular basis.
   So, it is also highly likely, that the related project is not up to date.
   In other words, there is no person regularly working on the related thing.
