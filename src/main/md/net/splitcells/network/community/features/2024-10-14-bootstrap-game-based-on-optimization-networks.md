@@ -46,22 +46,25 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
             * [ ] ValueUpdate may not correctly read value update events.
+                * [ ] The collector node for the time step constraint nodes does not process incoming lines correctly.
             * [o] There are not value update events, but this is not a problem of the rater.
         * [ ] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
+            * [ ] Limit the default maximal length of a Tabulator column by a sane value, so that the width of the reasoning column is limited.
             * [x] Render argumentation as a tree in pop up.
             * [x] Avoid empty elements in rendering of argumentation tree. Test this via `TreeTest#testAsXhtmlList()`.
             * [x] Avoid flattening empty tree nodes in argumentation too much, which results in lossing nearly all nesting. This seems to be caused by the bad argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
             * [ ] Correct reasoning tree, as the tree nodes with a not empty name have never children.
               Test this via `ConstraintTest#testArgumentation()`.
-                * [ ] `Constraint#naturalArgumentation(Line subject, GroupId group)`
-                * [ ] `Constraint#naturalArgumentation(Line line, GroupId group, Predicate<AllocationRating> allocationSelector)`
+                * [x] `Constraint#naturalArgumentation(Line subject, GroupId group)`
+                * [x] `Constraint#naturalArgumentation(Line line, GroupId group, Predicate<AllocationRating> allocationSelector)`
                 * [x] `ConstraintBasedOnLocalGroupsAI#localNaturalArgumentation(Line, GroupId, Predicate<AllocationRating>)`
                 * [x] `ConstraintBasedOnLocalGroupsAI#localNaturalArgumentation(Report)`
-                * [ ] `ConstraintBasedOnLocalGroupsAI#naturalArgumentation(GroupId)`
+                * [x] `ConstraintBasedOnLocalGroupsAI#naturalArgumentation(GroupId)`
                 * [x] `Then#LOCAL_NATURAL_ARGUMENTATION`
                 * [x] `ForAll#LOCAL_NATURAL_ARGUMENTATION`
-                * [ ] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
-                * [ ] Remove empty intermediate tree nodes.
+                * [o] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
+                  -> These do not cause a problem for now.
+                * [o] Remove empty intermediate tree nodes. -> These do not cause a problem for now.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
