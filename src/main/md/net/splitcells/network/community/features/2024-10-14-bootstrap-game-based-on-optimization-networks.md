@@ -49,11 +49,11 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [ ] The collector node for the time step constraint nodes does not process incoming lines correctly.
             * [o] There are not value update events, but this is not a problem of the rater.
         * [ ] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
-            * [ ] Limit the default maximal length of a Tabulator column by a sane value, so that the width of the reasoning column is limited.
+            * [x] Limit the default maximal length of a Tabulator column by a sane value, so that the width of the reasoning column is limited.
             * [x] Render argumentation as a tree in pop up.
             * [x] Avoid empty elements in rendering of argumentation tree. Test this via `TreeTest#testAsXhtmlList()`.
             * [x] Avoid flattening empty tree nodes in argumentation too much, which results in lossing nearly all nesting. This seems to be caused by the bad argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
-            * [ ] Correct reasoning tree, as the tree nodes with a not empty name have never children.
+            * [ ] CURRENT Correct reasoning tree, as the tree nodes with a not empty name have never children.
               Test this via `ConstraintTest#testArgumentation()`.
                 * [x] `Constraint#naturalArgumentation(Line subject, GroupId group)`
                 * [x] `Constraint#naturalArgumentation(Line line, GroupId group, Predicate<AllocationRating> allocationSelector)`
