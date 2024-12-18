@@ -65,6 +65,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [o] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
                   -> These do not cause a problem for now.
                 * [o] Remove empty intermediate tree nodes. -> These do not cause a problem for now.
+                * [ ] Maybe Java records are not working as one thought?
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
