@@ -65,7 +65,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [o] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
                   -> These do not cause a problem for now.
                 * [o] Remove empty intermediate tree nodes. -> These do not cause a problem for now.
-                * [ ] Maybe Java records are not working as one thought?
+                * [ ] Maybe Java records are not working as one thought? See https://softwaregarden.dev/en/posts/new-java/records/should-write-equals-and-hashcode/
+                * [ ] Consider simplifying time step rater by implementing it as a group rater instead.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
@@ -179,3 +180,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   where players learn to retrieve life points by using skills,
   that are acquired in school.
 * [ ] Consider creating music via programming: https://sonic-pi.net
+* [ ] Consider expanding the rater API in such a way, that the rater not only retrieves the metadata
+  of the incoming lines, but also a dedicated table containing the underlying lines of the solution,
+  so that the program code for the rater gets simpler.
+  Currently, complex raters are too hard to implement.
+  Also, consider an alternative constraint implementation, in order to avoid giving lookups to raters,
+  which complicates things even further.
+  There may be a task for this already.
