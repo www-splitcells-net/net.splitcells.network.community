@@ -65,8 +65,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [o] Remove all namespaces in argumentation as it currently has no use and hinders the merging of argumentation.
                   -> These do not cause a problem for now.
                 * [o] Remove empty intermediate tree nodes. -> These do not cause a problem for now.
-                * [ ] Maybe Java records are not working as one thought? See https://softwaregarden.dev/en/posts/new-java/records/should-write-equals-and-hashcode/
-                * [ ] Consider simplifying time step rater by implementing it as a group rater instead.
+                * [x] Maybe Java records are not working as one thought? See https://softwaregarden.dev/en/posts/new-java/records/should-write-equals-and-hashcode/
+                * [o] Consider simplifying time step rater by implementing it as a group rater instead.
+                  -> The rater is not that complicated, when one considers that some part of the code is an alternative time step rater calculation,
+                  in order to gain speed-ups.
+                * [x] Avoid caching incoming and resulting line groups, as this is prone to errors.
+                * [ ] Add a test case for creating a no time step group and check if the resulting group is actually a no time step group.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
