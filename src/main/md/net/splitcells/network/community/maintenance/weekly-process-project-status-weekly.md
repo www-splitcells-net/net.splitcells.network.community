@@ -11,11 +11,14 @@
 
 # Tasks
 
+* [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
 * [ ] Use https://maven.apache.org/plugins/maven-pmd-plugin/examples/usingRuleSets.html
 * [ ] Use https://checkstyle.sourceforge.io/
 * [ ] https://spotbugs.github.io/
-* [ ] Consider asking AI to find bugs. Maybe there is an easy way to generate kind of complex queries for AI based source code,
+* [ ] https://dependencytrack.org/
+* [ ] Consider asking AI to find bugs for inspiration.
+  Maybe there is an easy way to generate kind of complex queries for AI based source code,
   so that AI can think about, what is happening in the code?
   It would be interesting, how this would work for code without external dependencies.
   Could the AI analyse the semantics?
