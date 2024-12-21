@@ -18,8 +18,8 @@ that the main focus is laid on the concept of the global virtual network path sy
 This path system should be used during most developer tasks in order
 to bootstrap the Network Worker and to ease DevOps. 
 # Tasks
-* [ ] Document new focus on global virtual path system.
-* [ ] Add global virtual path system to main goals.
+* [x] Document new focus on global virtual path system.
+* [x] Add global virtual path system to main goals.
 * [o] Unify project and repo projects. -> The split is ok, as a project is something different from a repo.
     * [x] Rename `net.splitcells.project.files.standard` to `net.splitcells.project`, in order to simplify the naming.
     * [x] Consider renaming `net.splitcells.os.state.interface` to `net.splitcells.shell`.
@@ -49,12 +49,10 @@ to bootstrap the Network Worker and to ease DevOps.
     * [x] Clean up all commands inside bin at root of network repo.
       Alternatively, add the command to the [weekly test deployment task](../deployment/weekly-deploy-tests.md).
 # Ideas
-* [ ] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
-* [ ] Use GVNPS for test servers as well.
-* [ ] Integrate local folder and user home's bin based OSI installation into webserver.
-* [ ] Clean up project paths.
-    * [ ] Document that project paths mainly indicate jurisdiction.
-    * [ ] Rename `net.splitcells.gel.*` to `net.splitcells.allocator.*`.
-    * [ ] Rename `net.splitcells.sep` to `net.splitcells.allocator.manager`.
-    * [ ] Rename `net.splitcells.dependency.manager` to `net.splitcells.dependency.manager`.
-    * [ ] Rename `net.splitcells.dependency.bom` to `net.splitcells.dependency.bom`.
+* [x] Create build command based on `mvn clean install` of `net.splitcells.network.hub`.
+  -> This is already done in the daily Forgejo task of `net.splitcells.network.hub`.
+* [o] Use GVNPS for test servers as well. -> This does not seem to make sense.
+* [x] Integrate local folder and user home's bin based OSI installation into webserver.
+* [x] Clean up project paths.
+    * [o] Document that project paths mainly indicate jurisdiction.
+    * [x] Rename `net.splitcells.sep` to `net.splitcells.gel.manager`.

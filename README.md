@@ -115,5 +115,10 @@ Projects that are being worked cyclically, and probably will never be finished.
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]
 # Ideas
-[List followup tasks to this ticket here.]
+[List followup tasks to this ticket here.
+ Mark these tasks as done, when tasks are made based on these ideas.
+ Mark such tasks as rejected, when tasks are not made based on these ideas.]
 ```
+# Considerations
+Rename `net.splitcells.network.community` to `net.splitcells.community` as this is a community project for the Splitcells project and
+not .

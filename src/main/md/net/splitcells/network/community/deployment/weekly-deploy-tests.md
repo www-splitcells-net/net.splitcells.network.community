@@ -10,7 +10,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * Live Server
 # Tasks
 * [ ] Create command, in order to deploy tests on every test server.
-    * [x] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/2024-09-03-fully-bootstrap-network-worker.md).
+    * [x] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/task-archive/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
     * [ ] Add flags to `bin/worker.execute` as an alternative to `--command` and `--class-for-execution`,
       that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
