@@ -21,6 +21,9 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
           -> A dedicated flag is not needed for that, as nothing special needs to done.
         * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
         * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
+          See `Remote Initialization Draft.
+            * [ ] Make this work with Raspberry Pi.
+                * [ ] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
         * [ ] Execute project command.
     * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
@@ -88,3 +91,14 @@ bin/worker.execute \
     --executable-path='bin/worker.bootstrap' \
     --cpu-architecture=riscv64
 ````
+# Remote Initialization Draft
+```
+# Create main boostrapping repo.
+  ssh -t splitcells@raspberrypi-v2.local 'test -d ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network || mkdir -p ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/ && cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/ && git clone https://codeberg.org/splitcells-net/net.splitcells.network.git'
+# Update bootstrapping step. This is not needed most of the time.
+  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap'
+# Update network worker's repos.
+  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap.container'
+# Build software via network worker.
+  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.repo.build'
+```
