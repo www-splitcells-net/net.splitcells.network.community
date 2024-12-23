@@ -11,6 +11,10 @@ The second one would be a new one, that caches and synchronizes nothing.
 The manager should create a report, that states by how much the performance
 is estimated to be improved.
 # Tasks
+* [ ] Add to the main objectives a general performance objective,
+  where every static or dynamic optimization manager needs a runtime checks,
+  that measure their effectiveness.
+  Managers without such runtime checks should not be allowed.
 * [x] Rename lookup methods to persisted lookup methods,
   in order to indicate, that these stay up to date.
 * [x] Create lookup method, that does not guarantee synchronization,
