@@ -54,16 +54,20 @@ created severe configuration costs.
                           -> This was caused by a hidden error.
                     * [x] Add all configs and resources to SystemCell.
                 * [x] Deprecate original WebsiteViaJar.
-            * [ ] Visualize cell dependencies.
+            * [ ] Visualize cell dependencies, as otherwise, there will problems of understanding in the future.
+              This was also the case for handling configs via config functions.
                 * [o] Provide way for cells to optionally declare their option dependencies. The dependency order will
                   not be enforced yet. -> It is enough for now, that the init system records the dependencies, as it will not be enforced by now. 
                 * [ ] Visualize dependencies between cells as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
                   but dynamically.
-                    * [ ] CURRENT Create dependency recorder option.
+                    * [x] Create dependency recorder option.
+                      -> It is named DependencyRecording.
                     * [ ] Render dependency recorder option.
+                    * [ ] CURRENT Record `Configuration#withConfigValue`.
                     * [ ] Record `Environment#withCell`.
-                    * [ ] Record `Configuration#withConfigValue`.
-                    * [ ] Record `Configuration#withInitedOption`.
+                    * [ ] Record `Configuration#withInitedOption`. Is this really needed or is this covered via `Configuration#withConfigValue`.
+                * [ ] Visualize dependencies between options and cells.
+                * [ ] Visualize dependencies between options and options.
             * [ ] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
                 * [ ] Use DistroCell.

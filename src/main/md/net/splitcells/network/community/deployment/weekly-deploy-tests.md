@@ -24,8 +24,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
           See `Remote Initialization Draft.
             * [ ] Make this work with Raspberry Pi.
                 * [ ] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
-                * [ ] Clean storage of existing storage drive and check it via `df -h`.
-                    * [ ] `rm -rf Documents/projects/`
+                * [x] Clean storage of existing storage drive and check it via `df -h`.
+                    * [x] `rm -rf Documents/projects/`
         * [ ] Execute project command.
     * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
