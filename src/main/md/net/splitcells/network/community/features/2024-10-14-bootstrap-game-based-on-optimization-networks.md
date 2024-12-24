@@ -45,15 +45,16 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Add links to Fancytree elements.
         * [x] Second time step is missing, when CinService is running in DevDistro.
         * [ ] Check ratings by hand.
-            * [ ] ValueUpdate may not correctly read value update events.
-                * [ ] The collector node for the time step constraint nodes does not process incoming lines correctly.
+            * [x] ValueUpdate may not correctly read value update events.
+                * [x] The collector node for the time step constraint nodes does not process incoming lines correctly.
+            * [ ] CURRENT Test LookupColumn, as the current implementation is error-prone.
             * [o] There are not value update events, but this is not a problem of the rater.
-        * [ ] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
+        * [x] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
             * [x] Limit the default maximal length of a Tabulator column by a sane value, so that the width of the reasoning column is limited.
             * [x] Render argumentation as a tree in pop up.
             * [x] Avoid empty elements in rendering of argumentation tree. Test this via `TreeTest#testAsXhtmlList()`.
             * [x] Avoid flattening empty tree nodes in argumentation too much, which results in lossing nearly all nesting. This seems to be caused by the bad argumentation tree. Test this via `ConstraintTest#testArgumentation()` and `TreeTest#testAsXhtmlList()`.
-            * [ ] CURRENT Correct reasoning tree, as the tree nodes with a not empty name have never children.
+            * [x] Correct reasoning tree, as the tree nodes with a not empty name have never children.
               Test this via `ConstraintTest#testArgumentation()`.
                 * [x] `Constraint#naturalArgumentation(Line subject, GroupId group)`
                 * [x] `Constraint#naturalArgumentation(Line line, GroupId group, Predicate<AllocationRating> allocationSelector)`
@@ -70,7 +71,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                   -> The rater is not that complicated, when one considers that some part of the code is an alternative time step rater calculation,
                   in order to gain speed-ups.
                 * [x] Avoid caching incoming and resulting line groups, as this is prone to errors.
-                * [ ] Add a test case for creating a no time step group and check if the resulting group is actually a no time step group.
+                * [o] Add a test case for creating a no time step group and check if the resulting group is actually a no time step group.#
+                  -> There is already such a test.
     * [ ] Ensure constraint compliance via optimizer.
         * [ ] Create guided optimization, instead of a random optimization.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.

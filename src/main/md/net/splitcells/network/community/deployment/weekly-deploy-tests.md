@@ -26,6 +26,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
                 * [ ] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
                     * [x] `rm -rf Documents/projects/`
+            * [ ] Use this command, in order to set up and update live server repos. 
         * [ ] Execute project command.
     * [ ] Create test command for network worker.
     * [ ] Enable this for all servers.
