@@ -47,7 +47,7 @@ created severe configuration costs.
                   if the developer could edit the source files and test the edit without an application restart. -> This
                   is documented.
                 * [x] Provide a FileSystemView for every Cell by default.
-                * [x] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.system.SystemCell`.
+                * [x] Create Cell version of WebsiteViaJar. -> It is called `net.splitcells.network.system.SystemCell`.
                     * [x] ServerService does not start correctly.
                         * [x] Does not open port.
                           `server.listen();` has no effect, although the server config seems to be correct.

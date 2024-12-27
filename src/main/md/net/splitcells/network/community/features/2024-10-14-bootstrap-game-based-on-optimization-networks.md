@@ -31,7 +31,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Provide a helper method, that creates a derived table based on column containing lines.
           The derived table, contains all columns of the original table plus the columns of the lines in the line column. 
         * [x] Create ExistenceCostTest.
-    * [ ] CURRENT Create general event based attribute update rater.
+    * [x] Create general event based attribute update rater.
         * [x] Consider player attribute deletion.
         * [x] Visualize table via Tabulator in order to better analyse results by hand.
         * [x] Render all tables in dev distro.
@@ -44,10 +44,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Improve Fancytree's iframe height.
             * [x] Add links to Fancytree elements.
         * [x] Second time step is missing, when CinService is running in DevDistro.
-        * [ ] Check ratings by hand.
+        * [x] Check ratings by hand.
             * [x] ValueUpdate may not correctly read value update events.
                 * [x] The collector node for the time step constraint nodes does not process incoming lines correctly.
-            * [ ] CURRENT Test LookupColumn, as the current implementation is error-prone.
+            * [x] Test LookupColumn, as the current implementation is error-prone.
             * [o] There are not value update events, but this is not a problem of the rater.
         * [x] Improve argumentation rendering, in order to better understands augmentations. Currently, somewhat augmentations are very hard to read.
             * [x] Limit the default maximal length of a Tabulator column by a sane value, so that the width of the reasoning column is limited.
@@ -74,7 +74,16 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [o] Add a test case for creating a no time step group and check if the resulting group is actually a no time step group.#
                   -> There is already such a test.
     * [ ] Ensure constraint compliance via optimizer.
-        * [ ] Create guided optimization, instead of a random optimization.
+        * [ ] CURRENT Create guided optimization, instead of a random optimization via supply on demand creation.
+            * [x] Provide a method, to check, if this API is usable for a given problem.
+              -> See `AssignmentsLiveView#allowsSuppliesOnDemand`.
+            * [x] Provide API to create supplies on demand, if enabled.
+              -> See `AssignmentsLiveView#addTranslatedSupply`.
+            * [o] Constrict set of valid attribute values for new supplies. -> This is not needed for now.
+            * [x] Expand proposal API regarding new supply creation. -> See `Proposal#proposedAllocationsWithNewSupplies`
+            * [ ] Use new proposal API in Cin for the entity manager's value update constraint.
+                * [ ] Provide proposals via raters.
+                * [ ] Use proposals via optimization during time step.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
 * [x] This features demonstrates some severe performance and performance analysis problems.
