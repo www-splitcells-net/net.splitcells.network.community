@@ -13,3 +13,5 @@ Make the whole discovery tree traversable via the root node.
 * [ ] Make optional enforcement method mandatory.
 * [ ] Remove Discoverable construction without enforcement.
 * [ ] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
+* [ ] Update Network objectives at `projects/net.splitcells.network/src/main/xml/net/splitcells/network/objectives.xml`,
+  as this becomes the main Java implementation regarding the semantic inventory system.
