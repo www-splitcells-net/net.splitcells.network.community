@@ -10,6 +10,20 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Playwright is not working anymore.
+    * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
+    * [x] Try using only one browser playwright instance at a time.
+    * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
+    * [o] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
+      -> Using one Playwright instance, that is shared across multiple testers makes this work and is even more performant.
+    * [x] Use only one browser instance and one browser tab for each tester instead,
+      in order to avoid process leak in Playwright.
+      Playwright does not seem to close all processes/threads after the browser and Playwright is closed in Java,
+      as many `Socket Process` and `Utility Process` processes with dedicated PIDs were found on live server.
+    * [ ] There seems to be a race condition regarding the close method. ->
+      This may be caused by not closing the tabs of the HTML clients after the test.
+      Currently, it is not the close method, but the newPage method of Playwright instead.
+      Make recycle browser tabs like the browser itself.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -62,16 +76,6 @@
 * [ ] Do disaster recovery tests.
 * [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
 ## Done Tasks
-* [x] Playwright is not working anymore.
-    * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
-    * [x] Try using only one browser playwright instance at a time.
-    * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
-    * [o] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
-      -> Using one Playwright instance, that is shared across multiple testers makes this work and is even more performant.
-    * [x] Use only one browser instance and one browser tab for each tester instead,
-      in order to avoid process leak in Playwright.
-      Playwright does not seem to close all processes/threads after the browser and Playwright is closed in Java,
-      as many `Socket Process` and `Utility Process` processes with dedicated PIDs were found on live server.
 * [x] Avoiding sharing document files in `worker.execute` by default.
 * [x] Pull source code from Codeberg instead of GitHub.
 * [x] Avoid logging to stdout and stderr, in order to have a clean systemd log.
