@@ -62,10 +62,11 @@ created severe configuration costs.
                   but dynamically.
                     * [x] Create dependency recorder option.
                       -> It is named DependencyRecording.
-                    * [ ] Render dependency recorder option.
-                    * [ ] CURRENT Record `Configuration#withConfigValue`.
-                    * [ ] Record `Environment#withCell`.
-                    * [ ] Record `Configuration#withInitedOption`. Is this really needed or is this covered via `Configuration#withConfigValue`.
+                    * [x] Render dependency recorder option.
+                    * [x] Record `Configuration#withConfigValue`.
+                    * [ ] CURRENT Record `Environment#withCell`.
+                    * [x] Record `Configuration#withInitedOption`. Is this really needed or is this covered via `Configuration#withConfigValue`? --> Yes
+                    * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
                 * [ ] Visualize dependencies between options and cells.
                 * [ ] Visualize dependencies between options and options.
             * [ ] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
