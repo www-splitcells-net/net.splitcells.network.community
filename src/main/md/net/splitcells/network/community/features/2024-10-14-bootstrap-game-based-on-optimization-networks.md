@@ -202,3 +202,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
   Also, consider an alternative constraint implementation, in order to avoid giving lookups to raters,
   which complicates things even further.
   There may be a task for this already.
+* [ ] Ensure, that all possibly useful metadata like proposals provided by Gel are used by the optimizers.
+    * [ ] Create optimizer default, that uses everything, that is provided by Gel.
+    * [ ] Create an analyzer, that is run on every optimization. It should report a warning, if everything is not used.
+      Maybe this analyzer could report, why the optimizer could not solve a given problem.
