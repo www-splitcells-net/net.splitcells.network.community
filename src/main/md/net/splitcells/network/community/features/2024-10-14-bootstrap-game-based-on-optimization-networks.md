@@ -83,7 +83,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [x] Expand proposal API regarding new supply creation. -> See `Proposal#proposedAllocationsWithNewSupplies`
             * [ ] Use new proposal API in Cin for the entity manager's value update constraint.
                 * [ ] Provide proposals via raters.
-                * [ ] Use proposals via optimization during time step.
+                * [ ] Use proposals via optimization during time step. -> Establish and use a default Gel optimizer. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
 * [x] This features demonstrates some severe performance and performance analysis problems.
