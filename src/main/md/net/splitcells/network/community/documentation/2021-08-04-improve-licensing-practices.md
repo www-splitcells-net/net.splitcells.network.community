@@ -24,7 +24,8 @@ We also need full accounting for it.
                   A real general command is not needed for now.
                     * [ ] Create a project command that list all default command repositories managed by the hub repo and
                       install these with this command via the shell project.
-                    * [x] Create a project command that list all command repositories, that are present in the current repository. -> `net.splitcells.shell.repo.subs.command`
+                    * [x] Create a project command that list all command repositories, that are present in the current repository. -> `net.splitcells.shell.repo.subs`
+                    * [ ] Create project command `net.splitcells.shell.command.repo.peers`, that list all peer command repos for the shell project (Git repos that are in the same folder as the current repo).
                     * [ ] Use new project commands, in order to install all command repos. 
                     * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
