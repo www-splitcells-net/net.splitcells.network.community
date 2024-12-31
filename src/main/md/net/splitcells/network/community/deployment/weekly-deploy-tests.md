@@ -10,7 +10,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
     * Live Server
 # Tasks
 * [ ] Create command, in order to deploy tests on every test server.
-    * [x] Create new worker command, in order to simply execute such tests via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
+    * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
     * [ ] Add flags to `bin/worker.execute` as an alternative to `--command` and `--class-for-execution`,
       that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
@@ -21,7 +21,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
           -> A dedicated flag is not needed for that, as nothing special needs to done.
         * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
         * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
-          See `Remote Initialization Draft.
+          See `Remote Initialization Draft`.
+            * [ ] Move boostrap step into `worker.bootstrap.remote.at` 
             * [ ] Make this work with Raspberry Pi.
                 * [ ] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
