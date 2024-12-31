@@ -37,10 +37,11 @@
                     * [x] Use more descriptive names for `$1` amd `$2`.
                 * [x] `worker.program` is command without file storage.
                 * [x] `worker.service` is command to execute command in detached mode.
+            * [ ] Consider `worker.bootstrap.remote.at`.
             * [ ] Add parameter to `worker.execute` in order to build a project at the current folder in a standardized way.
                 * [ ] Consolidate `worker.repo.build`.
             * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
-            * [ ] Create flag in order to execute program as a persisten service.
+            * [ ] Create flag in order to execute program as a persistent service.
     * [ ] Delete obsolete `net.splitcells.network.worker` repo.
     * [ ] Use this command for existing test deployment commands as well.
       This tests whether this new command is portable or not. 
