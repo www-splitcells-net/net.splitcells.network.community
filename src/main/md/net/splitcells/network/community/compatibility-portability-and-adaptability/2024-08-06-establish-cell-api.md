@@ -88,7 +88,7 @@ created severe configuration costs.
             * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
         * [ ] Use GelDev as basis.
         * [ ] Do not block web server start via game.
-* [ ] This is needed for [the issue "Publish public website source code"](2021-03-21-publish-public-website-source-code.md).
+* [ ] This is needed for [the issue "Publish public website source code"](task-archive/9999-2021-03-21-publish-public-website-source-code.md).
 * [ ] Remove configuration code of any other way.
 * [ ] Webserver instance should be contained inside `Dem#value` as a service and
   by default be limited to given set of instances.
