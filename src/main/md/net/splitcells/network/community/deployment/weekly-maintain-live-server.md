@@ -24,6 +24,8 @@
       This may be caused by not closing the tabs of the HTML clients after the test.
       Currently, it is not the close method, but the newPage method of Playwright instead.
       Make recycle browser tabs like the browser itself.
+        * [ ] Playwright is [not thread safe](https://playwright.dev/python/docs/library#threading).
+          Use one dedicated instance per thread.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
