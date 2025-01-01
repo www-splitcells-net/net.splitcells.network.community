@@ -9,27 +9,10 @@
 * Improve deployment and its processes.
 * Test security
 * Test legalities and privacy policy. 
-## Open Tasks
-* [ ] Playwright is not working anymore.
-    * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
-    * [x] Try using only one browser playwright instance at a time.
-    * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
-    * [o] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
-      -> Using one Playwright instance, that is shared across multiple testers makes this work and is even more performant.
-    * [x] Use only one browser instance and one browser tab for each tester instead,
-      in order to avoid process leak in Playwright.
-      Playwright does not seem to close all processes/threads after the browser and Playwright is closed in Java,
-      as many `Socket Process` and `Utility Process` processes with dedicated PIDs were found on live server.
-    * [ ] There seems to be a race condition regarding the close method. ->
-      This may be caused by not closing the tabs of the HTML clients after the test.
-      Currently, it is not the close method, but the newPage method of Playwright instead.
-      Make recycle browser tabs like the browser itself.
-        * [x] Playwright is [not thread safe](https://playwright.dev/python/docs/library#threading).
-          Use one dedicated instance per thread.
-            * [x] Simplify Playwright factory implementation by using a thread safe queue instead.
-            * [x] Provide thread safe queue implementation.
-        * [ ] A solution is implemented and deployed, that provides one browser per live tester thread.
-          Check later, if this solution is working for more than 24 hours. 
+## Open Tasks 
+* [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
+  See `Main service killed by OOM killer after 2 days.`.
+    * [ ] Restart the application every day once via `RuntimeMaxSec=1d` and `Restart=always` in the systemd service.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -83,6 +66,26 @@
 * [ ] Do disaster recovery tests.
 * [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
 ## Done Tasks
+* [x] Playwright is not working anymore.
+    * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
+    * [x] Try using only one browser playwright instance at a time.
+    * [x] Use public domain for Playwright based tests, so that the certificate can be accepted by the browser.
+    * [o] Try fixing Playwright's potential race condition, while still maintaining multiple Playwright instances.
+      -> Using one Playwright instance, that is shared across multiple testers makes this work and is even more performant.
+    * [x] Use only one browser instance and one browser tab for each tester instead,
+      in order to avoid process leak in Playwright.
+      Playwright does not seem to close all processes/threads after the browser and Playwright is closed in Java,
+      as many `Socket Process` and `Utility Process` processes with dedicated PIDs were found on live server.
+    * [ ] There seems to be a race condition regarding the close method. ->
+      This may be caused by not closing the tabs of the HTML clients after the test.
+      Currently, it is not the close method, but the newPage method of Playwright instead.
+      Make recycle browser tabs like the browser itself.
+        * [x] Playwright is [not thread safe](https://playwright.dev/python/docs/library#threading).
+          Use one dedicated instance per thread.
+            * [x] Simplify Playwright factory implementation by using a thread safe queue instead.
+            * [x] Provide thread safe queue implementation.
+        * [x] A solution is implemented and deployed, that provides one browser per live tester thread.
+          Check later, if this solution is working for more than 24 hours.
 * [x] Avoiding sharing document files in `worker.execute` by default.
 * [x] Pull source code from Codeberg instead of GitHub.
 * [x] Avoid logging to stdout and stderr, in order to have a clean systemd log.
@@ -125,3 +128,9 @@
 
 mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"
 ````
+# Main service killed by OOM killer after 2 days.
+```
+Jan 01 15:40:56 net-splitcells-live systemd[821]: user.slice: A process of this unit has been killed by the OOM killer.
+Jan 01 15:40:56 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: Consumed 1d 20h 33min 42.329s CPU time.
+Jan 01 15:40:55 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: A process of this unit has been killed by the OOM killer.
+```
