@@ -13,6 +13,7 @@
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
   See `Main service killed by OOM killer after 2 days.`.
     * [ ] Restart the application every Sunday once at 1 hour after midnight.
+    * [ ] Every program exit should cause a heap dump, for better maintenance.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
