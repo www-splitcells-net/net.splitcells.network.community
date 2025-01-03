@@ -10,6 +10,7 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks 
+* [ ] Avoid deadlock in HTML client factory.
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
   See `Main service killed by OOM killer after 2 days.`.
     * [ ] Restart the application every Sunday once at 1 hour after midnight.
