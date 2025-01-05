@@ -54,27 +54,25 @@ created severe configuration costs.
                           -> This was caused by a hidden error.
                     * [x] Add all configs and resources to SystemCell.
                 * [x] Deprecate original WebsiteViaJar.
-            * [ ] Visualize cell dependencies, as otherwise, there will problems of understanding in the future.
+            * [X] Visualize cell dependencies, as otherwise, there will problems of understanding in the future.
               This was also the case for handling configs via config functions.
                 * [o] Provide way for cells to optionally declare their option dependencies. The dependency order will
                   not be enforced yet. -> It is enough for now, that the init system records the dependencies, as it will not be enforced by now. 
-                * [ ] Visualize dependencies between cells as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
+                * [X] Visualize dependencies between cells as graph like `https://splitcells.net/net/splitcells/network/overview.html`,
                   but dynamically.
                     * [x] Create dependency recorder option.
                       -> It is named DependencyRecording.
                     * [x] Render dependency recorder option.
                     * [x] Record `Configuration#withConfigValue`.
-                    * [ ] CURRENT Record `Environment#withCell`.
+                    * [X] Record `Environment#withCell`.
                     * [x] Record `Configuration#withInitedOption`. Is this really needed or is this covered via `Configuration#withConfigValue`? --> Yes
                     * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
-                * [ ] Visualize dependencies between options and cells.
-                * [ ] Visualize dependencies between options and options.
-            * [ ] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
+            * [ ] CURRENT Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
                 * [ ] Use DistroCell.
-                * [ ] Deprecate all old style Distro classes of `net.splitcells.network.distro`.
-                * [ ] Deprecate all old style Distro classes of `net.splitcells.network.martins.avots.distro`.
                 * [ ] Deploy on live server.
+                * [ ] Remove all old style Distro classes of `net.splitcells.network.distro`.
+                * [ ] Remove all old style Distro classes of `net.splitcells.network.martins.avots.distro`.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
           start.

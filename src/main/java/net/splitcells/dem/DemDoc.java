@@ -27,5 +27,5 @@ import java.util.function.Consumer;
  * but in such a case, such values cannot be set dynamically during {@link Dem#ensuredInitialized()} (Class, Consumer)}.
  * This would also make it possible to create API projects like header files in C.
  */
-public class DemDoc extends Dem {
+public class DemDoc {
 }

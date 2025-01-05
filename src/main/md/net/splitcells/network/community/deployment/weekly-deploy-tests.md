@@ -22,14 +22,18 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
         * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
           See `Remote Initialization Draft`.
-            * [ ] Move boostrap step into `worker.bootstrap.remote.at` 
-            * [ ] Make this work with Raspberry Pi.
-                * [ ] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
+            * [x] Move boostrap step into `worker.bootstrap.remote.at` 
+            * [x] Make this work with Raspberry Pi. -> `net.splitcells.network.worker.bootstrap.remote.at network-worker@raspberrypi-v2.local`
+                * [x] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
                     * [x] `rm -rf Documents/projects/`
             * [ ] Use this command, in order to set up and update live server repos. 
         * [ ] Execute project command.
     * [ ] Create test command for network worker.
+        * [ ] Delete network worker files, so that test command tests the bootstrap completely.
+            * [ ] command.repositories.install
+            * [ ] m2
+            * [ ] repos
     * [ ] Enable this for all servers.
         * `net.splitcells.martins.avots.riscv.login`
         * `net.splitcells.martins.avots.raspberry.v2.login`
@@ -79,6 +83,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
   This is CI hoster specific and not worth generalizing,
   as there are problems like cloning repos hoster independently is complex,
   when one wants to avoid that all CI hosters clone the repos from the same git hoster.
+* [ ] Update test servers semi-automatically.
 # Done Tasks
 * [x] Fix RISCV test server.
     * [x] Reset test server.
