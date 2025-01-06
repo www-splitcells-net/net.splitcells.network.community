@@ -23,11 +23,13 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
           See `Remote Initialization Draft`.
             * [x] Move boostrap step into `worker.bootstrap.remote.at` 
-            * [x] Make this work with Raspberry Pi. -> `net.splitcells.network.worker.bootstrap.remote.at network-worker@raspberrypi-v2.local`
+            * [ ] Make this work with Raspberry Pi.
                 * [x] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
                     * [x] `rm -rf Documents/projects/`
+                * [ ] Fix and document slow podman speed because of overlay on: https://github.com/containers/podman/discussions/21111
             * [x] Use this command, in order to set up and update live server repos.
+            * [ ] Delete unused containers: `podman system prune --all --yes`
             * [ ] Deploy command as systemd one time task, where one does not wait on command exit.
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
@@ -108,14 +110,8 @@ bin/worker.execute \
 ````
 # Remote Initialization Draft
 ```
-# Create main boostrapping repo.
-  ssh -t splitcells@raspberrypi-v2.local 'test -d ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network || mkdir -p ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/ && cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/ && git clone https://codeberg.org/splitcells-net/net.splitcells.network.git'
-# Update bootstrapping step. This is not needed most of the time.
-  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap'
-# Update network worker's repos.
-  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap.container'
-# Build software via network worker.
-  ssh -t splitcells@raspberrypi-v2.local 'cd ~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.repo.build'
+net.splitcells.network.worker.bootstrap.remote.at network-worker@raspberrypi-v2.local
+net.splitcells.network.worker.repos.test.trigger.remote.at network-worker@raspberrypi-v2.local
 ```
 # Old deploy.build.at
 ```
