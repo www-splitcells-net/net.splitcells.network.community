@@ -27,7 +27,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
                 * [x] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
                     * [x] `rm -rf Documents/projects/`
-                * [ ] Fix and document slow podman speed because of overlay on: https://github.com/containers/podman/discussions/21111
+                * [x] Fix and document slow podman speed because of overlay on: https://github.com/containers/podman/discussions/21111
+                * [ ] Try speeding up the build by using docker.
             * [x] Use this command, in order to set up and update live server repos.
             * [ ] Delete unused containers: `podman system prune --all --yes`
             * [ ] Deploy command as systemd one time task, where one does not wait on command exit.

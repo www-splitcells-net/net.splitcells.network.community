@@ -22,6 +22,7 @@
   so that AI can think about, what is happening in the code?
   It would be interesting, how this would work for code without external dependencies.
   Could the AI analyse the semantics?
+* [ ] Maybe just safe somewhere interesting frameworks, as using too many will just create problems: https://github.com/cmu-pasta/mu2
 
 # Done Task
 
