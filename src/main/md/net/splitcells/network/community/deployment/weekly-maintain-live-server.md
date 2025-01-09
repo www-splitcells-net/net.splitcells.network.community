@@ -67,6 +67,7 @@
 * [ ] Create backup of files.
 * [ ] Do disaster recovery tests.
 * [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
+* [ ] Create dedicated error log or error search query.
 ## Done Tasks
 * [x] Playwright is not working anymore.
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.

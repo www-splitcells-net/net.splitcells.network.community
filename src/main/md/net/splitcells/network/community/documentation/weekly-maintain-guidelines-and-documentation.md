@@ -13,6 +13,7 @@
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
 # Tasks
+* [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
 * [ ] Make `About This Site` more complete.
   * [ ] Master Thesis
   * [ ] After Master Thesis
@@ -25,5 +26,8 @@
 * [ ] On mobile view every content column should be separated more distinctly.
 * [ ] On mobile view every content column, should have a complete menu bar.
   See meta column for a negative example.
+* [ ] Remove graphical noise from flowing text, like too strong, big or many shadows.
+    * [ ] Consider making a styling guideline, where this is noted.
+* [ ] Consider creating a book out of the project's documentation.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.
