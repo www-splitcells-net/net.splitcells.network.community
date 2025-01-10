@@ -11,6 +11,9 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
   An optional build check could check, if the update did its job completely in the bom log 
   therefore completely fix the code duplication issue.
+    * [ ] Create `net.splitcells.network.bom.base` project as a duplicate of `net.splitcells.network.bom`.
+    * [ ] Transform `net.splitcells.network.bom` into the bom log repo, that updates `net.splitcells.network.bom.base`
+        and has `net.splitcells.network.bom.base` as a dependency.
     * [ ] Enable optional build check via `mci -Dare-dependencies-up-to-date=true`.
     * [ ] Split bom project.
     * [ ] Test the split.
