@@ -9,12 +9,14 @@
 * Improve deployment and its processes.
 * Test security
 * Test legalities and privacy policy. 
-## Open Tasks 
-* [ ] Avoid deadlock in HTML client factory.
+## Open Tasks
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
   See `Main service killed by OOM killer after 2 days.`.
-    * [ ] Restart the application every Sunday once at 1 hour after midnight.
+    * [o] Restart the application every Sunday once at 1 hour after midnight. -> It worked for some days. It seems to be better to let the program run as long as possible, in order to find some issues.
     * [ ] Every program exit should cause a heap dump, for better maintenance.
+        * [ ] Core dumps are created by default on JVM crashes. These should be enough.
+          Set `-XX:ErrorFile=` for the JVM, so core dumps are persisted and can be analyzed.
+        * [ ] Delete all core dumps older than 7 days, as these could contain private information.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -69,6 +71,7 @@
 * [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
 * [ ] Create dedicated error log or error search query.
 ## Done Tasks
+* [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
     * [x] Try using only one browser playwright instance at a time.
