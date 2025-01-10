@@ -19,6 +19,7 @@
   * [ ] Master Thesis
   * [ ] After Master Thesis
   * [ ] Hetzner Deployment
+* [ ] Make code viewer nice.
 * [ ] Reduce background shadows for images, in order to reduce noise. 
 * [ ] Create/improve styling guidelines.
 * [ ] Consider a paper shadow effect for chapter titles.

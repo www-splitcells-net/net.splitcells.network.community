@@ -7,8 +7,10 @@ Do this by adding a manager attribute to every Discoverable,
 that manages all complex actions and Discoverable constructions.
 Make the whole discovery tree traversable via the root node.
 # Tasks
-* [ ] Create Discovery interface as a manager for each Discoverable.
-* [ ] Implement Discovery interface. 
+* [x] Create Discovery interface as a manager for each Discoverable.
+* [x] Implement Discovery interface.
+* [ ] Document interface.
+* [ ] Test Discovery implementation.
 * [ ] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
 * [ ] Make Discovery tree traversable.
 * [ ] Optionally enforce unique Discoverable paths via Discoveries during the Discoverable construction.

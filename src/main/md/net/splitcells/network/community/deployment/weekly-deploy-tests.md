@@ -12,7 +12,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
 * [ ] Create command, in order to deploy tests on every test server.
     * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
-    * [ ] Add flags to `bin/worker.execute` as an alternative to `--command` and `--class-for-execution`,
+    * [x] Add flags to `bin/worker.execute` as an alternative to `--command` and `--class-for-execution`,
       that cds into to the bootstrapped repos on remote and executes a project command of `net.splitcells.network` inside a container.
       This makes it easier, to create an individual test command per test server.
       This is important for the RISCV server, that has a lot less resources.
@@ -20,32 +20,39 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
           -> ` bin/worker.execute  --name 'net.splitcells.network.worker' --command 'sh -c "cd ~/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap"' --execute-via-ssh-at 'martins-avots@live.splitcells.net' --verbose true --use-host-documents true`
           -> A dedicated flag is not needed for that, as nothing special needs to done.
         * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
-        * [ ] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
-          See `Remote Initialization Draft`.
+        * [x] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
+          See `Remote Initialization Draft`. -> The dedicated `worker.service.cycle.trigger.at` command with just 1 argument was created instead. 
             * [x] Move boostrap step into `worker.bootstrap.remote.at` 
-            * [ ] Make this work with Raspberry Pi.
+            * [x] Make this work with Raspberry Pi.
                 * [x] Expand storage of Raspberry Pi via USB drive and use it for a new user's home.
                 * [x] Clean storage of existing storage drive and check it via `df -h`.
                     * [x] `rm -rf Documents/projects/`
                 * [x] Fix and document slow podman speed because of overlay on: https://github.com/containers/podman/discussions/21111
-                * [ ] Try speeding up the build by using docker.
+                * [x] Try speeding up the build by using docker. -> It is not an issue of Podman. The Raspberry PI is generally slower than in the past. I think it is because of the 2 USB sticks. Before that, the PI was a lot faster on 1 USB stick.
             * [x] Use this command, in order to set up and update live server repos.
-            * [ ] Delete unused containers: `podman system prune --all --yes`
-            * [ ] Deploy command as systemd one time task, where one does not wait on command exit.
+            * [x] Delete unused containers: `podman system prune --all --yes`
+            * [x] Deploy command as systemd one time task, where one does not wait on command exit.
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-        * [ ] Execute project command.
-    * [ ] Create test command for network worker.
+    * [ ] Create test command for network worker. -> The new command is `worker.service.cycle.trigger.at`.
         * [ ] Delete network worker files, so that test command tests the bootstrap completely.
             * [ ] command.repositories.install
             * [ ] m2
             * [ ] repos
+        * [ ] Push test results to public network log repo.
     * [ ] Enable this for all servers.
-        * [ ] `net.splitcells.martins.avots.riscv.login`
-        * [ ] `net.splitcells.martins.avots.raspberry.v2.login`
-        * [x] Live Server
+        * [ ] `net.splitcells.martins.avots.riscv.login` via `net.splitcells.network.worker.service.cycle.trigger.at ubuntu@riscv.local`
+            * [ ] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.
+              -> Create a flag for worker execute, that add flags to the command defined in the file `~/.config/net.splitcells.network.worker/execute.podman.flags`.
+              Use this flag in all worker executions of `net.splitcells.network.worker.service.cycle.trigger.at`.
+            * [ ] `net.splitcells.network.worker.service.cycle.trigger.at` should now if Playwright is configured.
+              Determine this with a user config at `~/.config/net.splitcells.network.worker/playwright.supported` and act accordingly.
+        * [ ] `net.splitcells.martins.avots.raspberry.v2.login` via `net.splitcells.network.worker.service.cycle.trigger.at network-worker@raspberrypi-v2.local`
+            * [ ] Fix error with `worker.repos.test.trigger.remote.at`. See `journalctl -f` for the error message.
+        * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
         * [ ] Daily Codeberg workflow.
+        * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
 * [ ] `test.everything` should verify the validity of the git data as well.
   Create a general repo check command for that as well.
     * [ ] Use `./bin/build.part.with.python`.
