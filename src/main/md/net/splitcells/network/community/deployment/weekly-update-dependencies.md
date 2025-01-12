@@ -8,16 +8,17 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * `mvn versions:use-next-releases`
 * Monthly update `net.splitcells.network.distro.java.acme`.
 # Tasks
-* [ ] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
+* [ ] Create command for all weekly tasks, that can be automated or semi-automated.
+    * [ ] Check dependency update status via `mci -Dare-dependencies-up-to-date=true`.
+* [x] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
   An optional build check could check, if the update did its job completely in the bom log 
   therefore completely fix the code duplication issue.
-    * [ ] Create `net.splitcells.network.bom.base` project as a duplicate of `net.splitcells.network.bom`.
-    * [ ] Transform `net.splitcells.network.bom` into the bom log repo, that updates `net.splitcells.network.bom.base`
+    * [x] Create `net.splitcells.network.bom.base` project as a duplicate of `net.splitcells.network.bom`.
+    * [x] Transform `net.splitcells.network.bom` into the bom log repo, that updates `net.splitcells.network.bom.base`
         and has `net.splitcells.network.bom.base` as a dependency.
-    * [ ] Enable optional build check via `mci -Dare-dependencies-up-to-date=true`.
-    * [ ] Split bom project.
-    * [ ] Test the split.
-    * [ ] Update README.
+    * [x] Test the split.
+    * [x] Update README.
+    * [x] Remove Eclipse dependencies, as Eclipse is not suitable for this project.
 * [ ] Create profile, that updates dependencies.
 * [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
   with a very specific commit message, that can be used, in order to easily filter such commits.

@@ -69,6 +69,8 @@ created severe configuration costs.
                     * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
             * [ ] CURRENT Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
+                * [x] Prepare SystemCell.
+                * [ ] Prepare DistroCell.
                 * [ ] Use DistroCell.
                 * [ ] Deploy on live server.
                 * [ ] Remove all old style Distro classes of `net.splitcells.network.distro`.

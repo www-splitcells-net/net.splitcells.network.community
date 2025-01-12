@@ -58,18 +58,16 @@
 * [ ] Do not log already logged message, in order to simplify logs on live server.
 * [ ] Do not output logs to standard output by default,
   in order to have minimal OS logs.
-* [ ] Consider to migrate from Podman to Kubernetes, in order to support the most common deployment technology.
-  Also, supporting Kubernetes implicitly supports Podman and Docker as well regarding the container images.
-* [ ] When there is not enough memory and podman restart the pod,
-  the old pod cannot be killed.
-  But a new pod is executed, which leads to a broken podman instance.
-  -> Consider docker swarm or even micro k8s.
 * [ ] Consider creating double book-keeping for config files, in order to check ones, that are not used.
   Abort the software, when such an unused file is found.
 * [ ] Create backup of files.
 * [ ] Do disaster recovery tests.
 * [ ] Update certificates for ACME automatically without an explicit restart, in order to avoid these expiring during production.
 * [ ] Create dedicated error log or error search query.
+* [ ] Consider migrate from Podman to k8s.
+    * [ ] In order to be able to run many other things with unified infrastructure like the Codeberg runner,
+      that currently kind of needs docker (via https://code.forgejo.org/forgejo/runner/src/branch/main/examples/kubernetes).
+    * [ ] Consider using https://k9scli.io/ as cli TUI.
 ## Done Tasks
 * [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.
