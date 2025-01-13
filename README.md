@@ -57,7 +57,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 ## Notes
 * In order to mark tasks in `task-archives` with a high priority,
-  set the creation date of the task to something impossible like the year 9999.
+  add `9999-` as the file name prefix.
   Do this with at most 1 task, as otherwise there will be a creep towards many such tasks.
   Change the documents date in its file name back to its original,
   when the task is started.
