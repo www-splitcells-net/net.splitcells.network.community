@@ -21,6 +21,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [x] Remove Eclipse dependencies, as Eclipse is not suitable for this project.
 * [ ] Create profile, that updates dependencies.
 * [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
+* [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
   with a very specific commit message, that can be used, in order to easily filter such commits.
 # Done Tasks
 * [x] Note why `net.splitcells.network.bom` is not split into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.

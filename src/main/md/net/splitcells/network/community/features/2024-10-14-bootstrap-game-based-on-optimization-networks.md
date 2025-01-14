@@ -84,14 +84,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [ ] Use new proposal API in Cin for the entity manager's value update constraint.
                 * [ ] Provide proposals via raters.
                     * [ ] Unit test proposals.
-                    * [ ] Make proposal API more like rating API, where tables only provide references to lines of the solution, instead of providing every line value of the solution directly.
+                    * [x] Make proposal API more like rating API, where tables only provide references to lines of the solution, instead of providing every line value of the solution directly.
                       This makes the API more uniform, and allows one to dynamically determine, if such tables only contain line references or may even cache values.
                         * [x] Note reasoning for this in proposal API.
                         * [x] Deprecate old proposedAllocations and contextAllocations API.
-                        * [ ] Clean up Proposal documentation.
-                        * [ ] Draft new contextAllocations method.
-                        * [ ] Eliminate interface and implementation split for Proposal,
-                          as this is a data object.
+                        * [x] Clean up Proposal documentation.
+                        * [x] Draft new contextAllocations method.
                 * [ ] Use proposals via optimization during time step. -> Establish and use a default Gel optimizer. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.

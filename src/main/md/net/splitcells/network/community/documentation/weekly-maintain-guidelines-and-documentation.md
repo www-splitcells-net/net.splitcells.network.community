@@ -31,5 +31,7 @@
 * [ ] Remove graphical noise from flowing text, like too strong, big or many shadows.
     * [ ] Consider making a styling guideline, where this is noted.
 * [ ] Consider creating a book out of the project's documentation.
+* [ ] Create a short developer manifesto.
+* [ ] Create a short documentation and writing manifesto.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.
