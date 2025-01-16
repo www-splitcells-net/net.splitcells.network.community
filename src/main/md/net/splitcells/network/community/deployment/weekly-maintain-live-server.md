@@ -68,6 +68,7 @@
     * [ ] In order to be able to run many other things with unified infrastructure like the Codeberg runner,
       that currently kind of needs docker (via https://code.forgejo.org/forgejo/runner/src/branch/main/examples/kubernetes).
     * [ ] Consider using https://k9scli.io/ as cli TUI.
+* [ ] Block outgoing connections.
 ## Done Tasks
 * [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.
