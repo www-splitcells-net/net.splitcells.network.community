@@ -84,6 +84,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [ ] Use new proposal API in Cin for the entity manager's value update constraint.
                 * [ ] Provide proposals via raters.
                     * [ ] Unit test proposals.
+                    * [ ] Create proposal chaining for a constraint path, so that `ProposalProcessor#propose` creates a proposal object for each constraint group.
                     * [x] Make proposal API more like rating API, where tables only provide references to lines of the solution, instead of providing every line value of the solution directly.
                       This makes the API more uniform, and allows one to dynamically determine, if such tables only contain line references or may even cache values.
                         * [x] Note reasoning for this in proposal API.

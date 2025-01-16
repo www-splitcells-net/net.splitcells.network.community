@@ -5,3 +5,4 @@
     - [ ] Contact Eclipse people about the results.
 - [ ] Try out [Deep Java Libarary](https://github.com/deepjavalibrary/djl). It may be the easier to setup, because it has ready to go network models.
   The  Multilayer Perceptron (`ai.djl.basicmodelzoo.basic.Mlp`) seems to be an easily configurable network.
+- [ ] https://github.com/ImagineAILab/ai-by-hand-excel
