@@ -69,12 +69,18 @@ created severe configuration costs.
                     * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
             * [ ] CURRENT Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
-                * [x] Prepare SystemCell.
-                * [ ] Prepare DistroCell.
-                * [ ] Use DistroCell.
+                * [ ] First move all `Distro*` code into `*Cell` classes, so that cell `Distro*` do not exist and provide non-static wrappers,
+                  so that these can be used in `Environment#withCell(Class, Consumer)`.
+                    * [ ] CURRENT `net.splitcells.network.system.WebsiteViaJar` -> `net.splitcells.network.system.SystemCell`
+                    * [ ] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
+                    * [ ] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
+                    * [ ] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
+                * [ ] Replace main methods, that do not initialize the cell via non Cell methods.
+                    * [ ] `net.splitcells.network.system.SystemCell`
+                    * [ ] `net.splitcells.network.distro.DistroCell.`
+                    * [ ] `net.splitcells.network.distro.java.DistroCell`
+                    * [ ] `net.splitcells.martins.avots.distro.DistroCell`
                 * [ ] Deploy on live server.
-                * [ ] Remove all old style Distro classes of `net.splitcells.network.distro`.
-                * [ ] Remove all old style Distro classes of `net.splitcells.network.martins.avots.distro`.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
           start.

@@ -5,7 +5,6 @@
 # Service
 
 * Process status badges.
-* Minimize number of issues
 * Ensure that test coverage only rises. Currently, at: https://app.codecov.io/gh/www-splitcells-net/net.splitcells.network/tree/master/projects%2Fnet.splitcells.dem%2Fsrc%2Fmain%2Fjava%2Fnet%2Fsplitcells%2Fdem%2Fexecution
 * Execute static code checks.
 

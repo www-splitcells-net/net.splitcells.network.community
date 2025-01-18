@@ -15,6 +15,12 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Cooperation and symbiosis:
     * Description: Tit for tat
     * [Link](./src/main/md/net/splitcells/network/community/cooperation-and-symbiosis/index.md)
+* Deployment project
+  * Description: Administer deployments
+  * [Link](./src/main/md/net/splitcells/network/community/deployment/index.md)
+* Developer Support
+  * Description: Your issues need images? Here is the place for that, but only for developers of this project and not users.
+  * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
 * Documentation project:
     * Description: Nobody reads this xD
     * [Link](./src/main/md/net/splitcells/network/community/documentation/index.md)
@@ -24,24 +30,18 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Maintenance project:
     * Description: Improve quality and fix bugs.
     * [Link](./src/main/md/net/splitcells/network/community/maintenance/index.md)
-* Deployment project
-    * Description: Administer deployments
-    * [Link](./src/main/md/net/splitcells/network/community/deployment/index.md)
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
     * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
-* Developer Support
-    * Description: Your issues need images? Here is the place for that, but only for developers of this project and not users. 
-    * [Host Link](https://codeberg.org/splitcells-net/net.splitcells.network.community/projects/8592)
-* Blog
-  * Description: Speaking to the void about the development process.
-  * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
 ## Very Low Priority Standard Projects
 * Accessibility: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
   * Review advertisement, introductions and info linked by README,
     because that is the primary material for newcomers.
   * [Link](./src/main/md/net/splitcells/network/community/accessibility/index.md)
+* Blog
+  * Description: Speaking to the void about the development process.
+  * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
 * Community Guidelines
   * Description: We comment on guidelines and things happening.
   * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
