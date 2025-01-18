@@ -24,6 +24,7 @@ in order to render the public version of the website.
     * [x] Create `net.splitcells.martins.avots.distro`.
     * [ ] Choose licence for its texts.
     * [ ] Choose licence for its images and consider the consequences (i.e. in Germany).
+* [ ] Ensure, that all license meta data is present.
 # Completed Tasks
 * [x] Make it possible to render a minimal website with just `net.splitcells.network` repo. -> This is not important for this ticket.
     * [ ] Parameterize image location via an XML file provided at environment of `layout.xsl`'s execution.

@@ -10,3 +10,4 @@ this is an opportunity to consider this aspect.
 # Tasks
 * [ ] Prefer using always darkest black color as text color,
   in order to improve contrast.
+* [ ] In web layout add link from primary column to secondary column.

@@ -69,6 +69,8 @@
       that currently kind of needs docker (via https://code.forgejo.org/forgejo/runner/src/branch/main/examples/kubernetes).
     * [ ] Consider using https://k9scli.io/ as cli TUI.
 * [ ] Block outgoing connections.
+* [ ] Make setup script for live server open source as well.
+* [ ] Create 404 page for web server.
 ## Done Tasks
 * [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.

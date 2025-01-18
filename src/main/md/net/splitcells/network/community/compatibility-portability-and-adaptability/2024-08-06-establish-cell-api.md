@@ -80,6 +80,11 @@ created severe configuration costs.
                     * [ ] `net.splitcells.network.distro.DistroCell.`
                     * [ ] `net.splitcells.network.distro.java.DistroCell`
                     * [ ] `net.splitcells.martins.avots.distro.DistroCell`
+              * [ ] Remove static methods inside cells for process configuration.
+                  * [ ] `net.splitcells.network.system.SystemCell`
+                  * [ ] `net.splitcells.network.distro.DistroCell.`
+                  * [ ] `net.splitcells.network.distro.java.DistroCell`
+                  * [ ] `net.splitcells.martins.avots.distro.DistroCell`
                 * [ ] Deploy on live server.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the

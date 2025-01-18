@@ -1,0 +1,1 @@
+# Provide and use XSD for XML of webserver.
