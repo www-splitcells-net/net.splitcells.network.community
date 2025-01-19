@@ -3,13 +3,13 @@
 # Task Description
 Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Service
-* Update `net.splitcells.network.bom`.
-    * `mvn versions:update-parent`
-    * `mvn versions:use-next-releases`
+* Update `net.splitcells.network.bom` via `net.splitcells.network.shell` and `bin/repos.dependencies.update`.
 * Monthly update `net.splitcells.network.distro.java.acme`.
 # Tasks
-* [ ] Create command for all weekly tasks, that can be automated or semi-automated.
-    * [ ] Check dependency update status via `mci -Dare-dependencies-up-to-date=true`.
+* [ ] Some worker commands are not real worker commands.
+    * [ ] `worker.repos.pull`
+    * [ ] `worker.repos.push`
+    * [ ] `worker.repos.status`
 * [x] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
   An optional build check could check, if the update did its job completely in the bom log 
   therefore completely fix the code duplication issue.
@@ -24,6 +24,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
   with a very specific commit message, that can be used, in order to easily filter such commits.
 # Done Tasks
+* [x] Create command for all weekly tasks, that can be automated or semi-automated. -> `repos.dependencies.update` is used for now.
+  * [x] Check dependency update status via `mci -Dare-dependencies-up-to-date=true`. -> `test.extensive` is used for that.
 * [x] Note why `net.splitcells.network.bom` is not split into `net.splitcells.network.bom` and `net.splitcells.network.bom.base`.
   * [x] Hard to update BOM of BOM automatically and without human error.
   * [x] The BOM repo has not that many dependencies yet and therefore not that many commits.

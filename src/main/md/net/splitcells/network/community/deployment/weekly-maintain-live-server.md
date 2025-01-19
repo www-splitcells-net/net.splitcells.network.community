@@ -14,9 +14,10 @@
   See `Main service killed by OOM killer after 2 days.`.
     * [o] Restart the application every Sunday once at 1 hour after midnight. -> It worked for some days. It seems to be better to let the program run as long as possible, in order to find some issues.
     * [ ] Every program exit should cause a heap dump, for better maintenance.
-        * [ ] Core dumps are created by default on JVM crashes. These should be enough.
+        * [x] Core dumps are created by default on JVM crashes. These should be enough.
           Set `-XX:ErrorFile=` for the JVM, so core dumps are persisted and can be analyzed.
         * [ ] Delete all core dumps older than 7 days, as these could contain private information.
+          Do this in Java code, as this needs to be done daily. 
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.

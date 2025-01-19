@@ -3,6 +3,8 @@
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
 # Tasks
+* [ ] The upload is not being done via `net.splitcells.martins.avots.website.deploy.diff`
+  The reason is unknown.
 * [ ] Fix warnings during static web server rendering. 
     * [ ] ` Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.

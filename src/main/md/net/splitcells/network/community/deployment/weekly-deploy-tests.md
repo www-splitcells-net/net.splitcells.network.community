@@ -36,16 +36,20 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
     * [ ] Create test command for network worker. -> The new command is `worker.service.cycle.trigger.at`.
-        * [ ] Delete network worker files, so that test command tests the bootstrap completely.
-            * [ ] command.repositories.install
-            * [ ] m2
-            * [ ] repos
+        * [o] Delete network worker files, so that test command tests the bootstrap completely.
+          -> This is not important for now. A corresponding TODO was added to the `worker.execute` script.
+            * [o] command.repositories.install
+            * [o] m2
+            * [o] repos
         * [ ] Push test results to public network log repo.
-    * [ ] Enable this for all servers.
+    * [ ] CURRENT Enable this for all servers.
         * [ ] `net.splitcells.martins.avots.riscv.login` via `net.splitcells.network.worker.service.cycle.trigger.at ubuntu@riscv.local`
-            * [ ] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.
+            * [x] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.
               -> Create a flag for worker execute, that add flags to the command defined in the file `~/.config/net.splitcells.network.worker/execute.podman.flags`.
               Use this flag in all worker executions of `net.splitcells.network.worker.service.cycle.trigger.at`.
+            * [x] Optionally, avoid Playwright. -> Playwright is not installed by `network.worker` by default and can be enabled via `--use-playwright`.
+              This is done, because Playwright is an OS dependency in this can always create problems.
+              In RISCV this does not seem to work, for instance.
             * [ ] `net.splitcells.network.worker.service.cycle.trigger.at` should now if Playwright is configured.
               Determine this with a user config at `~/.config/net.splitcells.network.worker/playwright.supported` and act accordingly.
         * [ ] `net.splitcells.martins.avots.raspberry.v2.login` via `net.splitcells.network.worker.service.cycle.trigger.at network-worker@raspberrypi-v2.local`
@@ -99,10 +103,12 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
   when one wants to avoid that all CI hosters clone the repos from the same git hoster.
 * [ ] Update test servers semi-automatically.
 # Done Tasks
+* [x] Warning in logs: `Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /home/splitcells/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network/projects/net.splitcells.gel.ui/target/surefire-reports/2025-01-19T21-43-07_716-jvmRun1.dumpstream`
+  -> This is caused by Playwright, which can be seen in the dumpstream. It causes performance problems, but nothing can be done, except for updating playwright to a more stable version.
 * [x] Fix RISCV test server.
     * [x] Reset test server.
 * [o] Only upload test coverage in daily Codeberg test. -> No test coverage is done via Codecov.
-    * [o] ***CURRENT*** Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
+    * [o] Consider `export test_codecov=1`. -> Codecov will not be used anymore, because Codecov does not support reports across repos, which makes it hard to do this via hub repo.
     * [x] Disable test coverage report in CI.
 # Remote Execution Draft
 ````
