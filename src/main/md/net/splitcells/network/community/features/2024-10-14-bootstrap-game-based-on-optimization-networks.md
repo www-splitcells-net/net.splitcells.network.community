@@ -95,6 +95,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [ ] Use proposals via optimization during time step. -> Establish and use a default Gel optimizer. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
+    * [ ] Handle integer overflow of the time attribute.
 * [x] This features demonstrates some severe performance and performance analysis problems.
   This is a good time to do something about it, because this task is so small scale and therefore easy to optimize.
     * [x] Create a base performance view for the game.

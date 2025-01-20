@@ -1,5 +1,7 @@
 # Regularly backup personal user files
 ## Service
+* Test restore via backups.
+* Backup personal data.
 * Simple and portable commands:
 ```
 chezmoi re-add
