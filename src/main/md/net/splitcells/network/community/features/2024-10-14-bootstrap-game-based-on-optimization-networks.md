@@ -82,8 +82,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
             * [o] Constrict set of valid attribute values for new supplies. -> This is not needed for now.
             * [x] Expand proposal API regarding new supply creation. -> See `Proposal#proposedAllocationsWithNewSupplies`
             * [ ] Use new proposal API in Cin for the entity manager's value update constraint.
-                * [ ] Provide proposals via raters.
-                    * [ ] Unit test proposals.
+                * [x] Provide proposals via raters.
+                    * [x] Unit test proposals.
                     * [x] Create proposal chaining for a constraint path, so that `ProposalProcessor#propose` creates a proposal object for each constraint group.
                     * [x] Move ProposalProcessor into Proposals.
                     * [x] Make proposal API more like rating API, where tables only provide references to lines of the solution, instead of providing every line value of the solution directly.
@@ -92,7 +92,9 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                         * [x] Deprecate old proposedAllocations and contextAllocations API.
                         * [x] Clean up Proposal documentation.
                         * [x] Draft new contextAllocations method.
-                * [ ] Use proposals via optimization during time step. -> Establish and use a default Gel optimizer. 
+                * [ ] Use proposals via optimization during time step.
+                    * [x] Establish and use a default Gel optimizer. -> This does already exist. See DefaultOptimization.
+                    * [ ] Do not deallocate lines, that are not part of current or future time. See CommitmentAdherence.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
     * [ ] Handle integer overflow of the time attribute.
@@ -216,3 +218,4 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     * [ ] Create optimizer default, that uses everything, that is provided by Gel.
     * [ ] Create an analyzer, that is run on every optimization. It should report a warning, if everything is not used.
       Maybe this analyzer could report, why the optimizer could not solve a given problem.
+* [ ] Rock, scissor and paper aka prey vs hunters concept for players.
