@@ -95,6 +95,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                 * [ ] Use proposals via optimization during time step.
                     * [x] Establish and use a default Gel optimizer. -> This does already exist. See DefaultOptimization.
                     * [ ] Do not deallocate lines, that are not part of current or future time. See CommitmentAdherence.
+                        * [ ] Consider `Constraint#propose`.
+                        * [ ] Consider `World#worldOptimizer`
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
     * [ ] Handle integer overflow of the time attribute.
