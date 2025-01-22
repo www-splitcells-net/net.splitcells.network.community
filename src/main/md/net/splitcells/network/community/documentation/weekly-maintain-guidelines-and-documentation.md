@@ -33,5 +33,7 @@
 * [ ] Consider creating a book out of the project's documentation.
 * [ ] Create a short developer manifesto.
 * [ ] Create a short documentation and writing manifesto.
+* [ ] Every document in the Network Community should be linked by another document in Network project.
+  In other words, the Community documents should be considered to be part of the documentation.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.
