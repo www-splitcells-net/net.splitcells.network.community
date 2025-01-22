@@ -96,6 +96,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                     * [x] Establish and use a default Gel optimizer. -> This does already exist. See DefaultOptimization.
                     * [ ] Do not deallocate lines, that are not part of current or future time. See CommitmentAdherence.
                         * [ ] Use `Proposal#proposedAssignments` for CommitmentAdherence.
+                        * [ ] Test CommitmentAdherence.
                         * [ ] Consider `Constraint#propose`.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Merge proposals from all constraint nodes into 1 proposal.
