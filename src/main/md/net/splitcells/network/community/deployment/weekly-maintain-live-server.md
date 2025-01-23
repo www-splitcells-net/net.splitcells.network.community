@@ -42,6 +42,8 @@
         * [ ] `deploy.build.at`
         * [ ] `deploy.test.extensively.at`
     * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
+* [ ] Restart main service, when the UI testers are not working anymore.
+  Currently, an error for the UI testers not working could not be found.
 * [ ] Execute runtime profiling for long-running instances and store these,
   in order to improve day to day performance via [Grafana and Pyroscope](https://grafana.com/docs/pyroscope/latest/get-started/).
 * [ ] Automatically and continuously check, if the SSL certificate for HTTPS is still valid
