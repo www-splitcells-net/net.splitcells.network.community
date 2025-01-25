@@ -5,6 +5,8 @@
 # Tasks
 * [ ] The upload is not being done via `net.splitcells.martins.avots.website.deploy.diff`
   The reason is unknown.
+    * [ ] It seems to that `./bin/serve.to.folder` does not write files to `cd ~/connections/net.splitcells.upload` anymore.
+      This seems to be caused by `mvn exec:java -Dexec.mainClass='net.splitcells.website.martins.avots.StaticFileServer'`.
 * [ ] Fix warnings during static web server rendering. 
     * [ ] ` Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.

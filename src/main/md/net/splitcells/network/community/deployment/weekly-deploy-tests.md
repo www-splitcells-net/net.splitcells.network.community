@@ -42,6 +42,13 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
             * [o] m2
             * [o] repos
         * [ ] Push test results to public network log repo.
+            * [ ] Test this with local computer via `net.splitcells.network.worker.service.cycle.trigger.at splitcells@splitcells-XPS-15-9570`.
+              at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
+                * [ ] The shell project needs to be able to install itself to an alternative location.
+                  Do this via an environment variable, as propagating such a value every would be hard.
+            * [ ] Store test results to network log repo.
+            * [ ] Commit test results.
+            * [ ] Push test results to Codeberg.
     * [ ] CURRENT Enable this for all servers.
         * [ ] `net.splitcells.martins.avots.riscv.login` via `net.splitcells.network.worker.service.cycle.trigger.at ubuntu@riscv.local`
             * [x] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.

@@ -10,7 +10,7 @@ Make the whole discovery tree traversable via the root node.
 * [x] Create Discovery interface as a manager for each Discoverable.
 * [x] Implement Discovery interface.
 * [x] Document interface.
-* [ ] Test Discovery implementation.
+* [x] Test Discovery implementation.
 * [ ] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
 * [ ] Make Discovery tree traversable.
 * [ ] Optionally enforce unique Discoverable paths via Discoveries during the Discoverable construction.
