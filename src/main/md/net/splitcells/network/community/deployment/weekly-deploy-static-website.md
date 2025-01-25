@@ -7,6 +7,8 @@
   The reason is unknown.
     * [ ] It seems to that `./bin/serve.to.folder` does not write files to `cd ~/connections/net.splitcells.upload` anymore.
       This seems to be caused by `mvn exec:java -Dexec.mainClass='net.splitcells.website.martins.avots.StaticFileServer'`.
+        * [x] `System.err` is not flushed and can hide the printed stack trace, because of the system exit right after the stack trace print.
+          Unfortunately, there does not seem to be a exception and therefore stack trace being present.
 * [ ] Fix warnings during static web server rendering. 
     * [ ] ` Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.
