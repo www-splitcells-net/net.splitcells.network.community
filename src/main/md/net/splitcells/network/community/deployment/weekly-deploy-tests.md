@@ -64,6 +64,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
         * [ ] Daily Codeberg workflow.
         * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
+* [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
 * [ ] `test.everything` should verify the validity of the git data as well.
   Create a general repo check command for that as well.
     * [ ] Use `./bin/build.part.with.python`.
