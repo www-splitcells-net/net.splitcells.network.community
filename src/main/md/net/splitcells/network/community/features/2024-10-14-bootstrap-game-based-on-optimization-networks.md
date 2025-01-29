@@ -102,7 +102,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                               This is the basis for proposal merging.
                               -> Resolving conflicts by making a proposal consistent is not relevant as a task in of itself.
                               Proposal conflict resolution is dependent on optimization being used.
-                            * [ ] Test this new proposal method.
+                            * [ ] Test this new proposal method via `ValueUpdateTest`.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Merge proposals from all constraint nodes into 1 proposal.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
