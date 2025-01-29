@@ -97,11 +97,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                     * [ ] Do not deallocate lines, that are not part of current or future time. See CommitmentAdherence.
                         * [x] Use `Proposal#proposedAssignments` for CommitmentAdherence.
                         * [x] Test CommitmentAdherence.
-                        * [ ] Provide `Constraint#propose`, that creates a proposal for the complete constraint tree.
+                        * [ ] Provide `Constraint#propose`, that creates a proposal for the complete constraint tree. -> The base for this is `Proposals#proposalsForConstraintTree` and `Solution#propose` is created instead, as the constraint does not hava a reference to the solution.
                             * [o] Create `Proposal#makeConsistent()`, in order to resolve conflicting info inside a proposal.
                               This is the basis for proposal merging.
                               -> Resolving conflicts by making a proposal consistent is not relevant as a task in of itself.
                               Proposal conflict resolution is dependent on optimization being used.
+                            * [ ] Test this new proposal method.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Merge proposals from all constraint nodes into 1 proposal.
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
