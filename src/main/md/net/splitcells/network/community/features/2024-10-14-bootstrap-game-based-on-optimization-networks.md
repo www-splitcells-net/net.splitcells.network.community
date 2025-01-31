@@ -93,7 +93,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                         * [x] Clean up Proposal documentation.
                         * [x] Draft new contextAllocations method.
                 * [ ] Use proposals via optimization during time step. -> DefaultOptimization is used for that.
-                    * [x] Establish and use a default Gel optimizer. -> This does already exist. See DefaultOptimization.
+                    * [x] Establish and use a default Gel optimizer. -> This does already exist. See DefaultOptimization. -> Create DefaultOptimization2 first, in order to not destroy existing functionality.
                     * [ ] Do not deallocate lines, that are not part of current or future time. See CommitmentAdherence.
                         * [x] Use `Proposal#proposedAssignments` for CommitmentAdherence.
                         * [x] Test CommitmentAdherence.
@@ -105,7 +105,10 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                             * [x] Test this new proposal method via `ValueUpdateTest`.
                           * [x] Merge proposals from all constraint nodes into 1 proposal.
                         * [ ] Use `Solution#propose` in order to not remove allocations, that are not allowed to be changed according to CommitmentAdherence.
-                        * [ ] Consider `World#worldOptimizer` 
+                            * [ ] Do not select demands for deallocation. 
+                                * [ ] Create new demand selector at DemandSelectors.
+                        * [ ] Consider `World#worldOptimizer`
+                    * [ ] Merge DefaultOptimization and DefaultOptimization2. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
     * [ ] Handle integer overflow of the time attribute.
