@@ -11,9 +11,10 @@ Make the whole discovery tree traversable via the root node.
 * [x] Implement Discovery interface.
 * [x] Document interface.
 * [x] Test Discovery implementation.
-* [ ] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
-* [ ] Make Discovery tree traversable.
+* [x] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
+* [x] Make Discovery tree traversable.
 * [ ] Optionally enforce unique Discoverable paths via Discoveries during the Discoverable construction.
+    * [ ] Add Optional Discovery to Discoverable.
 * [ ] Migrate all API usage to the optional enforcement method.
 * [ ] Make optional enforcement method mandatory.
 * [ ] Remove Discoverable construction without enforcement.
