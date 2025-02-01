@@ -17,7 +17,8 @@
         * [x] Core dumps are created by default on JVM crashes. These should be enough.
           Set `-XX:ErrorFile=` for the JVM, so core dumps are persisted and can be analyzed.
         * [ ] Delete all core dumps older than 7 days, as these could contain private information.
-          Do this in the `worker.execute` command via a generated execution script, when the flag `--class-for-execution` flag is used. 
+          Do this in the `worker.execute` command via a generated execution script, when the flag `--class-for-execution` flag is used,
+          because the `worker.execute` determines, that the core dumps are created and determines its location.
             * [ ] Document this in the arg doc of the network worker and note, that this is done in order to comply with EU's GDPR.
             * [ ] Create script template.
             * [ ] Generate script.
