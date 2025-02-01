@@ -76,7 +76,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
             * [x] Optionally, avoid Playwright. -> Playwright is not installed by `network.worker` by default and can be enabled via `--use-playwright`.
               This is done, because Playwright is an OS dependency in this can always create problems.
               In RISCV this does not seem to work, for instance.
-            * [ ] `net.splitcells.network.worker.service.cycle.trigger.at` should now if Playwright is configured.
+            * [ ] `net.splitcells.network.worker.service.cycle.trigger.at` should optionally avoid Playwright if configured.
               Determine this with a user config at `~/.config/net.splitcells.network.worker/playwright.supported` and act accordingly.
         * [ ] `net.splitcells.martins.avots.raspberry.v2.login` via `net.splitcells.network.worker.service.cycle.trigger.at network-worker@raspberrypi-v2.local`
             * [ ] Fix error with `worker.repos.test.trigger.remote.at`. See `journalctl -f` for the error message.
