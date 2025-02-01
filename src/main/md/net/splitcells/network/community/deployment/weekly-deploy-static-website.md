@@ -3,18 +3,20 @@
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
 # Tasks
-* [ ] The upload is not being done via `net.splitcells.martins.avots.website.deploy.diff`
-  The reason is unknown.
-    * [ ] It seems to that `./bin/serve.to.folder` does not write files to `cd ~/connections/net.splitcells.upload` anymore.
-      This seems to be caused by `mvn exec:java -Dexec.mainClass='net.splitcells.website.martins.avots.StaticFileServer'`.
-        * [x] `System.err` is not flushed and can hide the printed stack trace, because of the system exit right after the stack trace print.
-          Unfortunately, there does not seem to be a exception and therefore stack trace being present.
 * [ ] Fix warnings during static web server rendering. 
     * [ ] ` Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
 # Completed Tasks
+* [x] The upload is not being done via `net.splitcells.martins.avots.website.deploy.diff`
+  The reason is unknown.
+    * [x] It seems to that `./bin/serve.to.folder` does not write files to `cd ~/connections/net.splitcells.upload` anymore.
+      This seems to be caused by `mvn exec:java -Dexec.mainClass='net.splitcells.website.martins.avots.StaticFileServer'`.
+        * [x] `System.err` is not flushed and can hide the printed stack trace, because of the system exit right after the stack trace print.
+          Unfortunately, there does not seem to be a exception and therefore stack trace being present.
+        * [o] Debug `RenderingValidatorForHtmlLinks#endReport` -> This was caused by the runner inside HostUtilizationRecorder,
+          where an exception in this thread caused a none zero exit code.
 * [x] Invalid-Link-Counter page, has old history file: `https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html`
   * [x] Check the last CSV entry is new enough. Otherwise, create a status warning exactly for this.
 * [x] Speed up `RenderingValidatorForHtmlLinks` by caching `ProjectsRenderer#projectsPaths()`. -> The cache already exists.

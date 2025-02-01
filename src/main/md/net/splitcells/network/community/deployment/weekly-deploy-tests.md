@@ -46,6 +46,25 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
               at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
                 * [ ] The shell project needs to be able to install itself to an alternative location.
                   Do this via an environment variable, as propagating such a value every would be hard.
+                    * [x] `command.managed.install.project.commands.py`
+                    * [x] `command.managed.install.py`
+                    * [ ] Create a shell command to determine the path, where the shell project is installed.
+                    * [ ] `user.bin.configure.sh`
+                    * [ ] `user.command.delete.sh`
+                    * [ ] `user.command.disable.sh`
+                    * [ ] `user.command.install.sh`
+                    * [ ] `user.commands.install.sh`
+                    * [ ] `command.managed.environment.configure.sh`
+                    * [ ] `command.managed.execute.command.sh`
+                    * [ ] `command.managed.export.bin.sh`
+                    * [ ] `command.repositories.install.sh`
+                    * [ ] `command.repositories.setup.sh`
+                    * [ ] ``
+                    * [ ] ``
+                    * [ ] Define alternative config folder, in order to not mix worker config with the developer's computer config.
+                        * [ ] `command.repositories.update.sh`
+                        * [ ] `command.repositories.setup.sh`
+                        * [ ] `command.repository.register.sh`
             * [ ] Store test results to network log repo.
             * [ ] Commit test results.
             * [ ] Push test results to Codeberg.
