@@ -17,7 +17,11 @@
         * [x] Core dumps are created by default on JVM crashes. These should be enough.
           Set `-XX:ErrorFile=` for the JVM, so core dumps are persisted and can be analyzed.
         * [ ] Delete all core dumps older than 7 days, as these could contain private information.
-          Do this in Java code, as this needs to be done daily. 
+          Do this in the `worker.execute` command via a generated execution script, when the flag `--class-for-execution` flag is used. 
+            * [ ] Document this in the arg doc of the network worker and note, that this is done in order to comply with EU's GDPR.
+            * [ ] Create script template.
+            * [ ] Generate script.
+            * [ ] Launch script in container instead of using Java entrypoint.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
