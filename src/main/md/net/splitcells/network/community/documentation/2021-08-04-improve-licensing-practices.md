@@ -8,25 +8,24 @@ We also need full accounting for it.
 # Tasks
 
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
-* [ ] Use https://reuse.software/ in order to check licensing in source code.
+* [x] Use https://reuse.software/ in order to check licensing in source code.
     * [x] Use tmp branch for this experiment.
     * [x] https://reuse.software/tutorial/
         * [x] `reuse init`
         * [x] `~/.local/bin/reuse lint`
-    * [ ] Check this in daily CI for all repos. Just create the workflow for now. The actual license info will be fixed via the weekly test deployments task.
+    * [x] Check this in daily CI for all repos. Just create the workflow for now. The actual license info will be fixed via the weekly test deployments task.
         * [x] Create command `bin/repos.license.check` in order to check this.
-        * [ ] Make license processes completely independent of GPL3 code, by providing a default license check implementation, that does nothing and inject REUSE dynamically into the process instead.
-        * [ ] Install OSI in CI.
-            * [ ] Test this in `worker.execute` first.
+        * [x] Make license processes completely independent of GPL3 code, by providing a default license check implementation, that does nothing and inject REUSE dynamically into the process instead.
+        * [x] Install OSI in CI.
+            * [x] Test this in `worker.execute` first.
                 * [x] `cd projects/net.splitcells.os.state.interface && ./bin/install`
-                * [ ] Create a general shell environment setup command.
+                * [x] Create a general shell environment setup command.
                   -> This is done inside `bin/worker.bootstrap`.
                   A real general command is not needed for now.
-                    * [ ] Create a project command that list all default command repositories managed by the hub repo and
-                      install these with this command via the shell project.
+                    * [x] Create a project command that list all default command repositories managed by the hub repo and
+                      install these with this command via the shell project. -> The project command is `bin/net.splitcells.shell.projects.peers.for.commands`.
                     * [x] Create a project command that list all command repositories, that are present in the current repository. -> `net.splitcells.shell.repo.subs`
-                    * [ ] Create project command `net.splitcells.shell.command.repo.peers`, that list all peer command repos for the shell project (Git repos that are in the same folder as the current repo).
-                    * [ ] Use new project commands, in order to install all command repos. 
+                    * [x] Use new project commands, in order to install all command repos. 
                     * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
                       After that, reinstall OSI, in order to have all repos installed.

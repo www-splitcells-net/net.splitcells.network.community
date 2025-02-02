@@ -23,6 +23,7 @@
             * [ ] Create script template.
             * [ ] Generate script.
             * [ ] Launch script in container instead of using Java entrypoint.
+* [ ] Install a TUI for Docker in order to debug Forgejo runner, as it sometimes does seem to start a queued workflow a bit late.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
