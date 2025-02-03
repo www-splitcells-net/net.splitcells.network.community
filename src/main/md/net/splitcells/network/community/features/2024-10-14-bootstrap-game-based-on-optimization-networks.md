@@ -105,9 +105,12 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                             * [x] Test this new proposal method via `ValueUpdateTest`.
                           * [x] Merge proposals from all constraint nodes into 1 proposal.
                         * [ ] Use `Solution#propose` in order to not remove allocations, that are not allowed to be changed according to CommitmentAdherence.
-                            * [ ] Do not select demands for deallocation. 
-                                * [ ] Create new demand selector at DemandSelectors.
+                            * [ ] Do not select such demands for deallocation via a new DemandSelector.
+                                * [x] Create initial proposal in order to always know which demands not to select, regardless of the constraint depth given an escalation level.
+                                * [ ] Always check the initial proposal.
+                            * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
+                        * [ ] Document that DefaultOptimization2 needs to be kind of backwards compatible, as other it will not be possible to improve it without breaking things all the time and thereby creating development cost.
                     * [ ] Merge DefaultOptimization and DefaultOptimization2. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.
     * [ ] Delete players with value of zero via constraints.
