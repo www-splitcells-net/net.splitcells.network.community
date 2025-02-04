@@ -108,6 +108,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                             * [ ] Do not select such demands for deallocation via a new DemandSelector.
                                 * [x] Create initial proposal in order to always know which demands not to select, regardless of the constraint depth given an escalation level.
                                 * [ ] Always check the initial proposal.
+                                * [ ] `Proposal#proposedAssignments` need a priority attribute, that states how important the proposed assignment is.
+                                  Use a maximal priority for proposals provided by CommitmentAdherence.
                             * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Document that DefaultOptimization2 needs to be kind of backwards compatible, as other it will not be possible to improve it without breaking things all the time and thereby creating development cost.
