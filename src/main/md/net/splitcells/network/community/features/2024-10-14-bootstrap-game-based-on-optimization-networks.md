@@ -107,9 +107,13 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                         * [ ] Use `Solution#propose` in order to not remove allocations, that are not allowed to be changed according to CommitmentAdherence.
                             * [ ] Do not select such demands for deallocation via a new DemandSelector.
                                 * [x] Create initial proposal in order to always know which demands not to select, regardless of the constraint depth given an escalation level.
-                                * [ ] Always check the initial proposal.
+                                * [x] Always check the initial proposal.
                                 * [ ] `Proposal#proposedAssignments` need a priority attribute, that states how important the proposed assignment is.
                                   Use a maximal priority for proposals provided by CommitmentAdherence.
+                                  This is needed, as proposed assignments via a commitment is basically a hard constraint,
+                                  whereas proposed assignments via a normal constraint can be a soft constraint as well.
+                                  See hasSize and CommitmentAdherence raters.
+                                * [ ] Test DefaultOptimization via a test for CommitmentAdherence.
                             * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Document that DefaultOptimization2 needs to be kind of backwards compatible, as other it will not be possible to improve it without breaking things all the time and thereby creating development cost.
