@@ -10,6 +10,13 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Create test workers like htmlClient, but without a browser, because currently the browser tests seem to be kind of unreliable.
+  The reason for that, is that something goes wrong after a while in the Playwright integration.
+  There always new problems and tests
+    * [ ] Document the goal of non GUI test workers.
+    * [ ] Consider HTML/Javascript client written purely in Java as well.
+* [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
+  in order to avoid some Playwright integration issues.
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
   See `Main service killed by OOM killer after 2 days.`.
     * [o] Restart the application every Sunday once at 1 hour after midnight. -> It worked for some days. It seems to be better to let the program run as long as possible, in order to find some issues.
