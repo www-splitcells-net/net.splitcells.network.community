@@ -108,7 +108,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                             * [ ] Do not select such demands for deallocation via a new DemandSelector.
                                 * [x] Create initial proposal in order to always know which demands not to select, regardless of the constraint depth given an escalation level.
                                 * [x] Always check the initial proposal.
-                                * [ ] `Proposal#proposedAssignments` need a priority attribute, that states how important the proposed assignment is.
+                                * [x] `Proposal#proposedAssignments` need a priority attribute, that states how important the proposed assignment is.
                                   Use a maximal priority for proposals provided by CommitmentAdherence.
                                   This is needed, as proposed assignments via a commitment is basically a hard constraint,
                                   whereas proposed assignments via a normal constraint can be a soft constraint as well.
