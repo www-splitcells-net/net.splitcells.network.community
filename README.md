@@ -33,6 +33,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Webserver Development
     * Description: Organizing and presenting data is the foundation of a good day
     * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
+* The Symbiosis Project
 ## Very Low Priority Standard Projects
 * Accessibility: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
