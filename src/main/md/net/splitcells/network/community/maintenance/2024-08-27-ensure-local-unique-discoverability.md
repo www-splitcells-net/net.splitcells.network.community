@@ -13,10 +13,11 @@ Make the whole discovery tree traversable via the root node.
 * [x] Test Discovery implementation.
 * [x] Use `Dem#process` specific Discovery option, that is the root of all Discoveries.
 * [x] Make Discovery tree traversable.
-* [x] Optionally enforce unique Discoverable paths via Discoveries provided by Discoverable.
-  Every Discoverable with a none empty Discovery, has an unique discoverable path.
-* [ ] Migrate all API usage to the optional enforcement method.
-* [ ] Make optional enforcement method mandatory.
+* [x] Optionally check unique Discoverable paths via Discoveries provided by Discoverable.
+  Every Discoverable with a none empty Discovery, has a unique discoverable path.
+* [ ] Migrate all API usage to the optional check method.
+* [ ] Make optional check method mandatory.
+* [ ] Convert the unique Discoverable paths check, with an enforcement.
 * [ ] Remove Discoverable construction without enforcement.
 * [ ] Update Network objectives at `projects/net.splitcells.network/src/main/xml/net/splitcells/network/objectives.xml`,
   as this becomes the main Java implementation regarding the semantic inventory system.

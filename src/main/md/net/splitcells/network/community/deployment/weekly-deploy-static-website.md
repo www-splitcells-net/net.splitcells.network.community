@@ -2,9 +2,13 @@
 * Issue number: [\#35](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/35)
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
+    * Fix warnings during static web server rendering.
 # Tasks
-* [ ] Fix warnings during static web server rendering. 
-    * [ ] ` Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
+* [ ] Fix the warning: `Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
+    * [x] Fix warning instances.
+    * [x] Make this an error.
+    * [ ] Ensure, that big part of website rendering is tested at daily Codeberg CI via SystemCellTest.
+      -> Integration tests do not seem to be executed, which is needed.
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html

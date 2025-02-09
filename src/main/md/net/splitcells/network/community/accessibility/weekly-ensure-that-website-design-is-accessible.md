@@ -8,6 +8,9 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 
 # Tasks
-* [ ] Prefer using always darkest black color as text color,
-  in order to improve contrast.
 * [ ] In web layout add link from primary column to secondary column.
+* [ ] Improve styling of low priority buttons of chapters.
+# Completed Tasks
+* [x] Prefer using always darkest black color as text color,
+  in order to improve contrast.
+  -> The lower priority font colors where made more black and therefore readable.

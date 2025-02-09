@@ -72,7 +72,7 @@ created severe configuration costs.
                 * [ ] First move all `Distro*` code into `*Cell` classes, so that cell `Distro*` do not exist and provide non-static wrappers,
                   so that these can be used in the Consumer of `Environment#withCell(Class, Consumer)`.
                     * [x] `net.splitcells.network.system.WebsiteViaJar` -> `net.splitcells.network.system.SystemCell`
-                    * [ ] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
+                    * [x] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
                     * [ ] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [ ] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
                 * [ ] Replace main methods, that do not initialize the cell via non Cell methods.

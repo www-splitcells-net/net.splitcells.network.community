@@ -48,23 +48,22 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
                   Do this via an environment variable, as propagating such a value every would be hard.
                     * [x] `command.managed.install.project.commands.py`
                     * [x] `command.managed.install.py`
-                    * [ ] Create a shell command to determine the path, where the shell project is installed.
-                    * [ ] `user.bin.configure.sh`
-                    * [ ] `user.command.delete.sh`
-                    * [ ] `user.command.disable.sh`
-                    * [ ] `user.command.install.sh`
-                    * [ ] `user.commands.install.sh`
-                    * [ ] `command.managed.environment.configure.sh`
-                    * [ ] `command.managed.execute.command.sh`
-                    * [ ] `command.managed.export.bin.sh`
-                    * [ ] `command.repositories.install.sh`
-                    * [ ] `command.repositories.setup.sh`
-                    * [ ] ``
-                    * [ ] ``
-                    * [ ] Define alternative config folder, in order to not mix worker config with the developer's computer config.
+                    * [x] Create a shell command to determine the path, where the shell project is installed.
+                    * [x] `user.bin.configure.sh`
+                    * [x] `user.command.delete.sh`
+                    * [x] `user.command.disable.sh`
+                    * [x] `user.command.install.sh`
+                    * [x] `user.commands.install.sh`
+                    * [x] `command.managed.environment.configure.sh`
+                    * [x] `command.managed.execute.command.sh`
+                    * [x] `command.managed.export.bin.sh`
+                    * [x] `command.repositories.install.sh`
+                    * [x] `command.repositories.setup.sh`
+                    * [ ] Define alternative config folder `~/.config/net.splitcells.shell`, in order to not mix worker config with the developer's computer config.
                         * [ ] `command.repositories.update.sh`
                         * [ ] `command.repositories.setup.sh`
                         * [ ] `command.repository.register.sh`
+                    * [ ] Remove any usage of `net.splitcells.shell.commands.disabled`.
             * [ ] Store test results to network log repo.
             * [ ] Commit test results.
             * [ ] Push test results to Codeberg.

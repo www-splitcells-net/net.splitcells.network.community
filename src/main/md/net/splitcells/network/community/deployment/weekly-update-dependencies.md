@@ -6,8 +6,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update `net.splitcells.network.bom` via `net.splitcells.network.shell` and `bin/repos.dependencies.update`.
 * Monthly update `net.splitcells.network.distro.java.acme`.
 # Tasks
-* [ ] Keep playwright version in network bom and network execute in syn,
-  by parsing the bom's version in the network execute command,
+* [ ] Keep playwright version in network BOM and network execute in syn,
+  by parsing the BOM's version in the network execute command,
   in order to set the version in the POM template.
 * [ ] Some worker commands are not real worker commands.
     * [ ] `worker.repos.pull`

@@ -41,11 +41,18 @@ We also need full accounting for it.
 * [x] Add Reuse to project file system standard and document, that its LICENSES folder is exceptional.
 * [x] When rendering CommonMark files, the licence info at the start of the file should be moved to the end of the file.
 * [ ] Improve licensing info on deployed website.
+    * [ ] Create a license overview page, that links to all license relevant documents
+      and also lists the license of all available pages.
+        * [x] Start with empty page. -> `net/splitcells/website/license-page.html`
+        * [ ] Note that user content is not affected by this.
+        * [ ] Link relevant existing pages.
+        * [ ] Link existing license documents.
     * [ ] Licensing of images
     * [ ] List license of every page centrally.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
-* [ ] Ensure, that every repo has proper licensing data.
+    * [ ] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
+* [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
 * [ ] `test.everything` should verify license data as well.
 * [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
   Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
