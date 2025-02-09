@@ -46,6 +46,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
               at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
                 * [ ] The shell project needs to be able to install itself to an alternative location.
                   Do this via an environment variable, as propagating such a value every would be hard.
+                  Otherwise, such a test creates problems with already present shell installation.
                     * [x] `command.managed.install.project.commands.py`
                     * [x] `command.managed.install.py`
                     * [x] Create a shell command to determine the path, where the shell project is installed.
