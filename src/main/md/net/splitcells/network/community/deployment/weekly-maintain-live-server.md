@@ -15,6 +15,9 @@
   There always new problems and tests
     * [ ] Document the goal of non GUI test workers.
     * [ ] Consider HTML/Javascript client written purely in Java as well.
+    * [ ] For this the ProjectsRenderer needs to be a Dem Option.
+        * [x] Create ProjectsRendererOption.
+        * [ ] Initialize at least, when the Live Distro or its Dev is run.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.

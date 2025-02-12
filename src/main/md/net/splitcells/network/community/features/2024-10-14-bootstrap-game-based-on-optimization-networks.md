@@ -114,8 +114,11 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                                   whereas proposed assignments via a normal constraint can be a soft constraint as well.
                                   See hasSize and CommitmentAdherence raters.
                                 * [ ] Test DefaultOptimization via a EntityManager.
+                                    * [ ] `PersistedLookupViewI#rawLinesHashedCache` does not seem to work.
+                                * [ ] Add CommitmentAdherence constraint to EntityManager.
                             * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
+                        * [ ] Add existence cost via manually added allocations between optimization cycles.
                         * [ ] Document that DefaultOptimization2 needs to be kind of backwards compatible, as other it will not be possible to improve it without breaking things all the time and thereby creating development cost.
                     * [ ] Merge DefaultOptimization and DefaultOptimization2. 
     * [ ] Increment randomly selected players' value by an action every time step via constraints. Check this in unit tests.

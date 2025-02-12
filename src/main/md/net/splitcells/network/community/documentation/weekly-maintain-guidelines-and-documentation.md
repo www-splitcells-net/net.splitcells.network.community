@@ -13,6 +13,7 @@
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
 # Tasks
+* [ ] Work on `inherently-broken-and-rotten-by-design.xml`.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
 * [ ] Make `About This Site` more complete.

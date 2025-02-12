@@ -11,6 +11,7 @@
 # Tasks
 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
+    * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
 * [ ] Use https://maven.apache.org/plugins/maven-pmd-plugin/examples/usingRuleSets.html
 * [ ] Use https://checkstyle.sourceforge.io/
