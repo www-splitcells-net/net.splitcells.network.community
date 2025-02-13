@@ -10,6 +10,7 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Fix JS errors in Gel's UI editor.
 * [ ] Create test workers like htmlClient, but without a browser, because currently the browser tests seem to be kind of unreliable.
   The reason for that, is that something goes wrong after a while in the Playwright integration.
   There always new problems and tests
