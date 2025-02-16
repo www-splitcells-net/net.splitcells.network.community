@@ -11,6 +11,7 @@
 * Test legalities and privacy policy. 
 ## Open Tasks
 * [ ] Fix JS errors in Gel's UI editor.
+* [ ] Create UI tester for text editor as well, in order to test both.
 * [ ] Create test workers like htmlClient, but without a browser, because currently the browser tests seem to be kind of unreliable.
   The reason for that, is that something goes wrong after a while in the Playwright integration.
   There always new problems and tests
@@ -34,6 +35,7 @@
             * [ ] Create script template.
             * [ ] Generate script.
             * [ ] Launch script in container instead of using Java entrypoint.
+* [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
 * [ ] Install a TUI for Docker in order to debug Forgejo runner, as it sometimes does seem to start a queued workflow a bit late.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
