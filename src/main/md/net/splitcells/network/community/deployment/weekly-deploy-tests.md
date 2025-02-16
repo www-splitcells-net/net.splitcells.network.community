@@ -88,6 +88,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
   Create a general repo check command for that as well.
     * [ ] Use `./bin/build.part.with.python`.
     * [ ] Use this in daily Codeberg workflow.
+* [ ] Enable SonarCloud in Codeberg CI.
 * [ ] Enable benchmark tests.
 * [ ] Add live server as normal test server.
 * [ ] Enable all runtime checks during tests like `StaticFlags.ENFORCING_UNIT_CONSISTENCY_KEY`.

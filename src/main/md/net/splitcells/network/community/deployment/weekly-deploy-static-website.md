@@ -4,15 +4,16 @@
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
     * Fix warnings during static web server rendering.
 # Tasks
-* [ ] Fix the warning: `Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
-    * [x] Fix warning instances.
-    * [x] Make this an error.
-    * [ ] Ensure, that big part of website rendering is tested at daily Codeberg CI via SystemCellTest.
-      -> Integration tests do not seem to be executed, which is needed.
 * [ ] The status `The number of invalid links is historically improving.` seems to be incorrect.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
 # Completed Tasks
+* [x] Fix the warning: `Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`
+    * [x] Fix warning instances.
+    * [x] Make this an error.
+    * [x] Ensure, that big part of website rendering is tested at daily Codeberg CI via SystemCellTest.
+      -> Integration tests do not seem to be executed, which is needed.
+      -> The integration test is enabled in Codeberg CI.
 * [x] The upload is not being done via `net.splitcells.martins.avots.website.deploy.diff`
   The reason is unknown.
     * [x] It seems to that `./bin/serve.to.folder` does not write files to `cd ~/connections/net.splitcells.upload` anymore.

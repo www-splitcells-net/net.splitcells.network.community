@@ -15,6 +15,8 @@ Make the whole discovery tree traversable via the root node.
 * [x] Make Discovery tree traversable.
 * [x] Optionally check unique Discoverable paths via Discoveries provided by Discoverable.
   Every Discoverable with a none empty Discovery, has a unique discoverable path.
+* [ ] Create a renderer for Discovery elements. See `DiscoveryRenderer`.
+    * [ ] Test it with one element as a proof of concept.
 * [ ] Migrate all API usage to the optional check method.
 * [ ] Make optional check method mandatory.
 * [ ] Convert the unique Discoverable paths check, with an enforcement.
