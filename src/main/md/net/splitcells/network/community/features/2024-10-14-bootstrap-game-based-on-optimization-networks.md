@@ -212,6 +212,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
     It also represents the constraint input language more closely.
     Later on in a new task the no-code editor should represent the state of the constraint tree.
 * [ ] Add game to live server.
+    * [ ] Do not way for the game to finish for the rest of the server to start.
 * [ ] Add reporter to the game, that creates new reports on website and social media about the instance running on the live server.
     * [ ] Draw reporter.
     * [ ] Create reporter story.

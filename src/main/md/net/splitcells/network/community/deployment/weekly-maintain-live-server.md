@@ -10,8 +10,12 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Fix JS errors in Gel's UI editor.
+* [ ] Sometimes submitting an optimization does not work.
+    * [ ] Add a test for submitting optimization to the daily test.
 * [ ] Create UI tester for text editor as well, in order to test both.
+* [ ] Execute more test at once, in order to have a better load test on production.
+* [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
+  in order to avoid some Playwright integration issues.
 * [ ] Create test workers like htmlClient, but without a browser, because currently the browser tests seem to be kind of unreliable.
   The reason for that, is that something goes wrong after a while in the Playwright integration.
   There always new problems and tests
@@ -20,8 +24,6 @@
     * [ ] For this the ProjectsRenderer needs to be a Dem Option.
         * [x] Create ProjectsRendererOption.
         * [ ] Initialize at least, when the Live Distro or its Dev is run.
-* [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
-  in order to avoid some Playwright integration issues.
 * [ ] Fix memory leak in main Java service, that get it killed by the OS in 2 days.
   See `Main service killed by OOM killer after 2 days.`.
     * [o] Restart the application every Sunday once at 1 hour after midnight. -> It worked for some days. It seems to be better to let the program run as long as possible, in order to find some issues.
@@ -94,6 +96,7 @@
 * [ ] Make setup script for live server open source as well.
 * [ ] Create 404 page for web server.
 ## Done Tasks
+* [ ] Fix JS errors in Gel's UI editor. -> JQuery was not unpacked by Maven, as there was a silent dependency resolution error.
 * [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.
