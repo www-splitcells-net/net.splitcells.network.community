@@ -10,8 +10,9 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Sometimes submitting an optimization does not work.
-    * [ ] Add a test for submitting optimization to the daily test.
+* [ ] Sometimes submitting an optimization does not work. -> This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
+    * [ ] Add a test for submitting optimization to the daily Codeberg CI.
+    * [ ] Create test for lookup manager.
 * [ ] Create UI tester for text editor as well, in order to test both.
 * [ ] Execute more test at once, in order to have a better load test on production.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
@@ -95,6 +96,7 @@
 * [ ] Block outgoing connections.
 * [ ] Make setup script for live server open source as well.
 * [ ] Create 404 page for web server.
+* [ ] Consider automatically sending a mail, when an error happens.
 ## Done Tasks
 * [ ] Fix JS errors in Gel's UI editor. -> JQuery was not unpacked by Maven, as there was a silent dependency resolution error.
 * [x] Avoid deadlock in HTML client factory.
