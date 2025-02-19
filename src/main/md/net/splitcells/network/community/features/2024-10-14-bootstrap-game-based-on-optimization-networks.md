@@ -115,7 +115,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                                   See hasSize and CommitmentAdherence raters.
                                 * [ ] Test DefaultOptimization via a EntityManager.
                                     * [x] `PersistedLookupViewI#rawLinesHashedCache` does not seem to work.
-                                    * [ ] Proposals should use temporary tables, that are not registered at the web server. Otherwise, these are never deleted.
+                                    * [x] Proposals should use temporary tables, that are not registered at the web server. Otherwise, these are never deleted.
                                 * [ ] Add CommitmentAdherence constraint to EntityManager.
                             * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
