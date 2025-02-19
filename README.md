@@ -35,11 +35,11 @@ Projects that are being worked cyclically, and probably will never be finished.
     * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
 * The Symbiosis Project
 ## Very Low Priority Standard Projects
-* Accessibility: Improve accessibility:
+* Accessibility and Design: Improve accessibility:
   * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
   * Review advertisement, introductions and info linked by README,
     because that is the primary material for newcomers.
-  * [Link](./src/main/md/net/splitcells/network/community/accessibility/index.md)
+  * [Link](src/main/md/net/splitcells/network/community/accessibility-and-design/index.md)
 * Blog
   * Description: Speaking to the void about the development process.
   * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
