@@ -116,7 +116,17 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                                 * [ ] Test DefaultOptimization via a EntityManager.
                                     * [x] `PersistedLookupViewI#rawLinesHashedCache` does not seem to work.
                                     * [x] Proposals should use temporary tables, that are not registered at the web server. Otherwise, these are never deleted.
+                                    * [ ] Create serialization framework in order to insert lines into tables via domain objects,
+                                      instead of generic lines, which are hard to understand.
+                                      This was triggered, when looking at the test, where it seemed unreasonably complex.
+                                        * [ ] The default optimization ignored deallocations even though such are proposed.
+                                        * [ ] Create generic (de)-serialization framework.
+                                        * [ ] Serialization for table additions.
+                                        * [ ] Use this serialization in the test for Cin.
+                                    * [ ] Create players, when not enough are present every time step.
+                                    * [ ] Add existence cost
                                 * [ ] Add CommitmentAdherence constraint to EntityManager.
+                                * [ ] Test testInitialization.
                             * [ ] Also check supply attributes.
                         * [ ] Consider `World#worldOptimizer`
                         * [ ] Add existence cost via manually added allocations between optimization cycles.
