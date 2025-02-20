@@ -120,7 +120,7 @@ In order to keep it simple, there is no user input for the bootstrapped game.
                                       instead of generic lines, which are hard to understand.
                                       This was triggered, when looking at the test, where it seemed unreasonably complex.
                                         * [ ] The default optimization ignored deallocations even though such are proposed.
-                                        * [ ] Create generic (de)-serialization framework.
+                                        * [x] Create generic (de)-serialization framework.
                                         * [ ] Serialization for table additions.
                                         * [ ] Use this serialization in the test for Cin.
                                     * [ ] Create players, when not enough are present every time step.
