@@ -189,6 +189,8 @@ In order to keep it simple, there is no user input for the bootstrapped game.
         * [x] Make Counter thread safe.
         * [x] Make MetaCounter thread safe.
 * [ ] Render the game's current state.
+    * [ ] Render state table of just the current time, so it is easier to understand.
+    * [ ] Do a 3D visualization of this.
     * [x] Make rendering of game thread safe.
     * [x] Render all table like things on webserver.
         * [x] Correct path of constraint tables. -> This will be done, when the analysis is required.

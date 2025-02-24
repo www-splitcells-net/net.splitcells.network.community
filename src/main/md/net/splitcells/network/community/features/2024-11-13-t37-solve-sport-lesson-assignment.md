@@ -13,7 +13,26 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
+* [ ] Blog why the Cin project is now a low priority feature project.
 * [ ] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first.
+* [ ] Migrate to a new editor backend, that is shared by all editor frontend.
+* [ ] Support complex problem definitions via editor, that are composed of multiple ones,
+  so that the sport lesson assignment can be defined in the editor.
+    * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
+        * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
+            * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
+            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+            * [ ] Use Java sum type in order to simplify handling of domain object, if needed.
+              This requires sum types to be added to the allowed Java grammar. 
+    * [ ] Add example of sport lesson assignment as an editor page to webserver.
+* [ ] Check sport lesson assignment model.
+* [ ] Check test data.
+* [ ] Solve sport lesson assignment.
+* [ ] Make it easier to understand the solution.
+    * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
+    * [ ] Render ratings in formatted output as well via pop-ups.
+      Consider using own table framework, for easier adaptability in this context.
+# Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
         * [x] Note, that multi threading is achieved while avoiding amount of thread safe code.
@@ -53,7 +72,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [x] Check CPU and RAM usage.
 * [x] Add first administrative GUI in webserver.
     * [x] Create blocked page.
-    * [x] Authenticate 
+    * [x] Authenticate
     * [x] Authorize
     * [x] Persist authentication info of the users.
     * [x] Authorize based on persisted authorization data of the users.
@@ -82,7 +101,7 @@ To make the administration GUI useful an update command of the webserver itself 
           in order to have standardized runtime checks for authenticators
     * [x] Do not render administrator documents on static rendering or render administrator pages with the lowest privilege.
         * [x] Renderers have to support a rights concept.
-        * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now. 
+        * [o] View log files in website only for administrator. -> Viewing logs via web UI is not required for now.
     * [x] Create default user profile page, were the user sees links to user specific pages.
       May do this, by showing all paths, that only a specific user has access to?
     * [x] Provide access to CPU and RAM utilization, if the user session has the appropriate role for that.
@@ -93,7 +112,7 @@ To make the administration GUI useful an update command of the webserver itself 
         * [o] Add implementation for CPU utilization extension.
     * [o] Fix styling for `You do not have the rights to access this page.` page. -> It is good enough for now.
     * [x] Document this in the web server's changelog.
-    * [o] Create login page. -> The browser's default login page is enough for now. 
+    * [o] Create login page. -> The browser's default login page is enough for now.
     * [o] Link to login page from `You do not have the rights to access this page.` page. -> The browser's default login prompt is enough for now.
     * [x] The following extensions needed appropriate protection as well.
         * [x] `net.splitcells.website.server.projects.extension.impls.TestExtension`
@@ -102,19 +121,3 @@ To make the administration GUI useful an update command of the webserver itself 
     * [o] Create picture depicting an architectural overview of the security system.
       -> The authentication, authorization and access control API seems to be good enough.
     * [x] Deploy this feature to production.
-* [ ] Support complex problem definitions via editor, that are composed of multiple ones,
-  so that the sport lesson assignment can be defined in the editor.
-    * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
-        * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
-            * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
-            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
-            * [ ] Use Java sum type in order to simplify handling of domain object, if needed.
-              This requires sum types to be added to the allowed Java grammar. 
-    * [ ] Add example of sport lesson assignment as an editor page to webserver.
-* [ ] Check sport lesson assignment model.
-* [ ] Check test data.
-* [ ] Solve sport lesson assignment.
-* [ ] Make it easier to understand the solution.
-    * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
-    * [ ] Render ratings in formatted output as well via pop-ups.
-      Consider using own table framework, for easier adaptability in this context.
