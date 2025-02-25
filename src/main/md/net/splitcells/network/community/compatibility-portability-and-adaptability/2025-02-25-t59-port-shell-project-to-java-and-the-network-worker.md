@@ -52,6 +52,7 @@ This makes the following possible:
 * Simplifies dependencies
 * Makes it possible to use the Java/Maven coding and deployment experience for this functionality as well.
   Therefore, this avoids learning everything about Python coding and deployment.
+  Especially, changing functionality backwards compatible is alot easier with the statically typed Java than the dynamically typed Python.
 * Simplifies writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write for these.
 * Makes it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Tasks
