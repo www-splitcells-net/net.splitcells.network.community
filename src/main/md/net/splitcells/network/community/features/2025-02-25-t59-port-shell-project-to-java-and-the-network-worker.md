@@ -35,6 +35,13 @@ the Java version code generate commands to the appropriate bin folder.
 These sh commands would call Java with the jar located in the fitting subfolder of `.m2` with a fixed Shell project specific Java class as the main entry point.
 The command to be executed by such a wrapper script and the parameters passed to the requested command,
 would just be passed further down to the Java call.
+The Java jar would contain all Java and Shell etc. files.
+
+If Java's startup time is too slow for every shell call from the bin folder,
+one could start the Java jar as a background daemon to which the command calls are dispatched.
+The project mvnd does the same for Maven.
 # Tasks
 * [ ] Update software stack guidelines.
-    * [ ] Deprecate Python 3 and reason this. 
+    * [ ] Deprecate Python 3 and reason this.
+* [ ] Final tasks
+    * [ ] Check runtime of command execution regarding Java's start time.
