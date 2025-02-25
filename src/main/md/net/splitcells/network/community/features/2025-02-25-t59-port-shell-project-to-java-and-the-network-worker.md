@@ -39,7 +39,21 @@ The Java jar would contain all Java and Shell etc. files.
 
 If Java's startup time is too slow for every shell call from the bin folder,
 one could start the Java jar as a background daemon to which the command calls are dispatched.
-The project mvnd does the same for Maven.
+The project Mvnd does the same for Maven.
+
+Therefore, it is decided to port the main Sh and Python parts of the Shell and Network Worker projects into Java and
+integrate it into the rest of the Java projects.
+When the new code supports the full functionality of the main Sh and Python parts,
+these parts are to be replaced by appropriate Sh commands delegating there tasks to the Java parts.
+
+This makes the following possible:
+* Provide the functionality in production possible for the main Java modules (i.e. UI and Network Log synchronization).
+* Avoids code duplication and reduces code complexity
+* Simplifies dependencies
+* Makes it possible to use the Java/Maven coding and deployment experience for this functionality as well.
+  Therefore, this avoids learning everything about Python coding and deployment.
+* Simplifies writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write for these.
+* Makes it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Tasks
 * [ ] Update software stack guidelines.
     * [ ] Deprecate Python 3 and reason this.
