@@ -56,7 +56,28 @@ This makes the following possible:
 * Simplify writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write and execute for these.
 * Make it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Tasks
-* [ ] Update software stack guidelines.
-    * [ ] Deprecate Python 3 and reason this.
+* [ ] Port 'net.splitcells.network's Worker commands to Java.
+    * [ ] Create Java alternative.
+    * [ ] Make it possible to switch between Java and Python version via environment variable.
+    * [ ] Deploy live distro via Java version.
+    * [ ] Remove the Python code.
+* [ ] Port `net.splitcells.shell` related projects to Java/Maven.
+    * [ ] Port `net.splitcells.shell` to Java.
+        * [ ] Create Java alternative.
+        * [ ] Make it possible to switch between Java and Python version via environment variable.
+        * [ ] Test whether the Java version is working.
+            * [ ] Personal laptop.
+            * [ ] Raspberry Pi
+            * [ ] Live server.
+    * [ ] Port `net.splitcells.shell.lib` to Java/Maven.
+    * [ ] Port `net.splitcells.shell.lib.gpl.v2` to Java/Maven.
+    * [ ] Port `net.splitcells.shell.lib.gpl.v3` to Java/Maven.
+    * [ ] Port `net.splitcells.project` to Java/Maven.
+    * [ ] Test everything together.
+* [ ] Remove Python versions of `net.splitcells.shell` related code.
+* [ ] Make `net.splitcells.shell` related projects usable from webserver via UserCommandProjectRendererExtension.
 * [ ] Final tasks
     * [ ] Check runtime of command execution regarding Java's start time.
+    * [ ] Update software stack guidelines.
+        * [ ] Remove Python 3 and reason this.
+    * [ ] Note overhaul changes in changelog.

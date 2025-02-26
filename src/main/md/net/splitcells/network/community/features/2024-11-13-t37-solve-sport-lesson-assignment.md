@@ -15,23 +15,22 @@ To make the administration GUI useful an update command of the webserver itself 
 # Tasks
 * [ ] Blog why the Cin project is now a low priority feature project.
 * [ ] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first.
-* [ ] Migrate to a new editor backend, that is shared by all editor frontend.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
-        * [ ] Use domain object based parser as backend for editor and no-code editor, in order to simplify parsing.
+        * [ ] Use a domain object based parser as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
             * [ ] Use Java sum type in order to simplify handling of domain object, if needed.
               This requires sum types to be added to the allowed Java grammar. 
-    * [ ] Add example of sport lesson assignment as an editor page to webserver.
+    * [ ] Add example of sport lesson assignment as an editor page to the webserver.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
-    * [ ] Render ratings in formatted output as well via pop-ups.
-      Consider using own table framework, for easier adaptability in this context.
+      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node. 
+* [ ] Note overhaul changes in changelog.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
