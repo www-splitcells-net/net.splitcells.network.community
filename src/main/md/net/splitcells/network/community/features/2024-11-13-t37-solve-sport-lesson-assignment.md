@@ -20,9 +20,7 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
         * [ ] Use a domain object based parser as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
-            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
-            * [ ] Use Java sum type in order to simplify handling of domain object, if needed.
-              This requires sum types to be added to the allowed Java grammar. 
+            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies. 
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
