@@ -20,14 +20,20 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
         * [ ] Use a domain object based parser as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
-            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies. 
+            * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
+            * [ ] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
+                * [ ] Extend ANTLR grammar.
+                * [ ] Comment the reason for allowing sum types.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
-    * [ ] Store and show positive reason, why a certain supply was assigned as certain value.
-      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node. 
+    * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
+    * [ ] Store and show positive reason, why a certain supply has not a cost.
+      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
+* [ ] Allow users to define a partial solution, that is the basis for the given problem.
+  The optimizer is not allowed to change the allocations given by the user.
 * [ ] Note overhaul changes in changelog.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.

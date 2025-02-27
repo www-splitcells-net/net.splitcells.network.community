@@ -13,6 +13,7 @@ this is an opportunity to consider this aspect.
 * [ ] In web layout add link from primary column to secondary column.
 * [ ] Improve styling of low priority buttons of chapters. 
 * [ ] Consider using pastel color palette for none black and white colors.
+* [ ] Consider add paper folding or origami as CSS style for background, as decoration.  
 # Completed Tasks
 * [x] Make white bold structural guidelines less thick, as these distract a bit too much.
 * [x] Prefer using always darkest black color as text color,
