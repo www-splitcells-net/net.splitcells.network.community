@@ -8,7 +8,7 @@ Moving closer to a full synergy between the subprojects.
         * [ ] Create unit tests for the Java based Network worker execution.
 * [ ] March 5th
     * [ ] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md)
-* [ ] [Port Shell project to Java completely,](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
+* [ ] [Port Shell project to Java completely.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
 * [ ] [Consider compatibility with git-repo-manager.](../cooperation-and-symbiosis/2022-10-25-consider-compatibility-with-git-repo-manager.md)
 * [ ] Import and export input data in Gel editor.
 * [ ] Fix Gel UI's no-code editor.
