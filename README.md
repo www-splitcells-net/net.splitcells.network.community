@@ -92,7 +92,7 @@ Projects that are being worked cyclically, and probably will never be finished.
   if there is a current need for that
   (i.e. issues on those hosts support image attachments, or it is useful for other users.).
 # Format for Tasks
-* The file name format is `YYYY-MM-DD-t[ticket number]-[ticket name].md`.
+* The file name format is `[YYYY-MM-DD|daily|weekly|...]-t[ticket number]-[ticket name].md`.
   The ticket number is placed in the file name, because it is faster to look up the ticket number that way,
   than to look into the file.
   Often, the file is already opened as it is being worked on, but viewed in a way, that the ticket number is not visible.

@@ -23,3 +23,6 @@
     * [ ] Advertise the free availability of the online service and downloads.
     * [ ] Focus more on overhaul development roadmap and goals.
         * [ ] Cin: simulate all aspects of schools
+* [ ] Delete Mac version of App, as it is not working.
+* [ ] Add project advertisement text in secondary column of front menu.
+* [ ] Improve Hub Readme.

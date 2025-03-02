@@ -1,4 +1,4 @@
-# Consider compatibility with git-repo-manager
+# Consider compatibility with git-repo-manager.
 * Issue number: [\#53](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/53)
 # Task Description
 Make repos process compatible to git-repo-manager and consider using it as a gui for meta repos,
