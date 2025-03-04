@@ -7,10 +7,11 @@ Moving closer to a full synergy between the subprojects.
         * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
         * [ ] Create unit tests for the Java based Network worker execution.
 * [ ] March 5th
-    * [ ] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md)
-* [ ] [Port Shell project to Java completely.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
+    * [ ] [Port Shell project to Java completely.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
+* [ ] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md)
 * [ ] [Consider compatibility with git-repo-manager.](../cooperation-and-symbiosis/2022-10-25-consider-compatibility-with-git-repo-manager.md)
 * [ ] Import and export input data in Gel editor.
 * [ ] Fix Gel UI's no-code editor.
 * [ ] Consider contacting school.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
+* [ ] Explain, what the Splitcells Network is.
