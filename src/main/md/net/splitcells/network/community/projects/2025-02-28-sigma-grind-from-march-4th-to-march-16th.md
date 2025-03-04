@@ -13,3 +13,4 @@ Moving closer to a full synergy between the subprojects.
 * [ ] Import and export input data in Gel editor.
 * [ ] Fix Gel UI's no-code editor.
 * [ ] Consider contacting school.
+* [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
