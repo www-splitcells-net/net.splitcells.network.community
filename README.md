@@ -128,4 +128,4 @@ This is optional, so that one can easily see only the open tasks.]
 ```
 # Considerations
 Rename `net.splitcells.network.community` to `net.splitcells.community` as this is a community project for the Splitcells project and
-not .
+not just the Splitcells Network project.

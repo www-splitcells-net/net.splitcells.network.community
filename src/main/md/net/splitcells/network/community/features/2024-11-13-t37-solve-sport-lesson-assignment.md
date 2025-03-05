@@ -18,13 +18,21 @@ To make the administration GUI useful an update command of the webserver itself 
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
-        * [ ] Use a domain object based parser as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
+        * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
+            * [ ] Create dedicated Gel editor project, that replaces the Sep project.
+                * [x] Create Gel editor project. 
+                * [ ] Move Sep code into editor project.
+                * [ ] Migrate sep usage to editor.
+                * [ ] Remove Sep code.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
             * [ ] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
-                * [ ] Extend ANTLR grammar.
+                * [x] Extend ANTLR grammar.
                 * [ ] Comment the reason for allowing sum types.
+            * [ ] Delete `net.splitcells.gel.ui.Editor`.
+            * [ ] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
+* [ ] Document code editor, as the no-code editor will be deprecated.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
