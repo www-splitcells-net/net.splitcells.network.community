@@ -4,9 +4,18 @@ Moving closer to a full synergy between the subprojects.
 * [ ] [Create a unified backend for editor, which will be the basis for the optimization network.](../features/2024-11-13-t37-solve-sport-lesson-assignment.md)
   This makes it easier to introduce a new grammar while supporting the existing input code and with minimized code duplication.
     * [ ] Migrate code editor.
-        * [ ] Constraint
-            * [ ] Support nested constraints.
-            * [ ] Add constraints at solutionDescription parsing.
+        * [ ] Create new backend.
+            * [x] Constraint
+                * [x] Support nested constraints.
+                * [x] Add constraints at solutionDescription parsing.
+            * [ ] Migrate all tests.
+                * [ ] testOutputFormat
+                * [ ] testParseProblem
+                * [ ] testParseProblemWithForAllCombinationsOf
+                * [ ] testInvalidDemandAttribute
+                * [ ] testInvalidSupplyAttribute
+        * [ ] Use new backend in webserver.
+        * [ ] Delete old backend.
     * [ ] Migrate no-code editor.
     * [ ] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
       The visualization of each description should correspond with the fitting user input part.
@@ -26,3 +35,8 @@ Moving closer to a full synergy between the subprojects.
     * [ ] This provides a default UI for features like persistent optimization problems,
       that are stored on the server and 
     * [ ] No-code is no replacement for documentation.
+    * [ ] The no-code editor is probably not really needed for now.
+      When the editor was created, it was seen as a way to minimize amount of doc and
+      to provide a tool for the user to learn and explor the software by experimenting.
+    * [ ] Multiple frontends make ensure, that the backend is really independent of the frontend.
+      Thereby, the backend does not rely on ANTLR.
