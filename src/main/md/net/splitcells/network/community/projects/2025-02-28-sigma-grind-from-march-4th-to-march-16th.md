@@ -9,7 +9,7 @@ Moving closer to a full synergy between the subprojects.
                 * [x] Support nested constraints.
                 * [x] Add constraints at solutionDescription parsing.
             * [ ] Migrate all tests.
-                * [ ] testOutputFormat
+                * [x] testOutputFormat
                 * [ ] testParseProblem
                 * [ ] testParseProblemWithForAllCombinationsOf
                 * [ ] testInvalidDemandAttribute
