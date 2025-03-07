@@ -20,7 +20,16 @@ Moving closer to a full synergy between the subprojects.
         * [ ] Create new backend.
             * [ ] NoCodeEditorLangParser
                 * [x] parseNoCodeStrings is not required.
+                * [x] Create SolutionDescription.
             * [ ] CodeConstraintLangParser
+                * [o] testStringParsing -> This tests does not really make sense.
+                * [ ] testAttributeParsing
+                    * [ ] Move constraint parsing checks to dedicated test.
+                * [ ] testConstraintParsing
+                * [ ] testDatabaseParsing
+                * [ ] testProblemParsing
+                * [ ] testProblemParsing2
+                * [ ] testOptimization
         * [ ] Migrate all tests.
         * [ ] Use new backend in webserver.
         * [ ] Delete old backend.
@@ -51,4 +60,6 @@ Moving closer to a full synergy between the subprojects.
       to provide a tool for the user to learn and explor the software by experimenting.
     * [ ] Multiple frontends make ensure, that the backend is really independent of the frontend.
       Thereby, the backend does not rely on ANTLR.
+    * [ ] Most likely initially creating no-code editor was an error,
+      but now, that there is a working one it does not make sense to delete it for now.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
