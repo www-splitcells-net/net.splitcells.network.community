@@ -3,20 +3,31 @@ Moving closer to a full synergy between the subprojects.
 # Tasks
 * [ ] [Create a unified backend for editor, which will be the basis for the optimization network.](../features/2024-11-13-t37-solve-sport-lesson-assignment.md)
   This makes it easier to introduce a new grammar while supporting the existing input code and with minimized code duplication.
-    * [ ] Migrate code editor.
-        * [ ] Create new backend.
+    * [x] Migrate code editor.
+        * [x] Create new backend.
             * [x] Constraint
                 * [x] Support nested constraints.
                 * [x] Add constraints at solutionDescription parsing.
-            * [ ] Migrate all tests.
+            * [x] Migrate all tests.
                 * [x] testOutputFormat
-                * [ ] testParseProblem
-                * [ ] testParseProblemWithForAllCombinationsOf
-                * [ ] testInvalidDemandAttribute
-                * [ ] testInvalidSupplyAttribute
+                * [x] testParseProblem
+                * [x] testParseProblemWithForAllCombinationsOf
+                * [x] testInvalidDemandAttribute
+                * [x] testInvalidSupplyAttribute
+        * [x] Use new backend in webserver.
+        * [x] Delete old backend.
+    * [ ] Migrate no-code editor.
+        * [ ] Create new backend.
+            * [ ] NoCodeEditorLangParser
+                * [x] parseNoCodeStrings is not required.
+            * [ ] CodeConstraintLangParser
+        * [ ] Migrate all tests.
         * [ ] Use new backend in webserver.
         * [ ] Delete old backend.
-    * [ ] Migrate no-code editor.
+    * [ ] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
+    * [ ] Delete `net.splitcells.gel.ui.Editor`.
+    * [ ] Delete SolutionParameters.
+    * [ ] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code.
     * [ ] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
       The visualization of each description should correspond with the fitting user input part.
     * [ ] Test unified backend.
@@ -40,3 +51,4 @@ Moving closer to a full synergy between the subprojects.
       to provide a tool for the user to learn and explor the software by experimenting.
     * [ ] Multiple frontends make ensure, that the backend is really independent of the frontend.
       Thereby, the backend does not rely on ANTLR.
+* [ ] Document stable API plan via `net.splitcells.network.system.stable`.
