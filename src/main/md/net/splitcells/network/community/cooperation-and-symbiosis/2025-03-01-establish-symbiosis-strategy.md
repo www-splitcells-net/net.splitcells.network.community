@@ -26,3 +26,4 @@
 * [ ] Delete Mac version of App, as it is not working.
 * [ ] Add project advertisement text in secondary column of front menu.
 * [ ] Improve Hub Readme.
+* [ ] Consider creating pseudo none developer news.
