@@ -23,8 +23,7 @@ Moving closer to a full synergy between the subprojects.
                 * [x] Create SolutionDescription.
             * [ ] CodeConstraintLangParser
                 * [o] testStringParsing -> This tests does not really make sense.
-                * [ ] testAttributeParsing
-                    * [ ] Move constraint parsing checks to dedicated test.
+                * [ ] testAttributeParsing -> testParsing
                 * [ ] testConstraintParsing
                 * [ ] testDatabaseParsing
                 * [ ] testProblemParsing
