@@ -1,5 +1,6 @@
 # Establish symbiosis strategy.
 # Task Description
+* [ ] Blog about pause of Cin and new focus.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [ ] Sleepycat for dual licensing -> This is kind of already the case in a weaker form, but just not with strong copyleft license and problematic if other developers join.
       This can also be supported later with injected modules, that are strong copyleft or commercially available.

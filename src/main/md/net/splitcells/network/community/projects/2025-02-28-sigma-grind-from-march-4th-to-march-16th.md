@@ -63,3 +63,4 @@ Moving closer to a full synergy between the subprojects.
       but now, that there is a working one it does not make sense to delete it for now.
     * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
+* [ ] Make Community Block easier to find via front menu.
