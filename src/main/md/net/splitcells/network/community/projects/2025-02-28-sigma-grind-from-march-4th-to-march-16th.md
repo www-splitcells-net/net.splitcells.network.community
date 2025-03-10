@@ -17,22 +17,24 @@ Moving closer to a full synergy between the subprojects.
         * [x] Use new backend in webserver.
         * [x] Delete old backend.
     * [ ] Migrate no-code editor.
-        * [ ] Create new backend.
-            * [ ] NoCodeEditorLangParser
+        * [x] Create new backend.
+            * [x] NoCodeEditorLangParser
                 * [x] parseNoCodeStrings is not required.
                 * [x] Create SolutionDescription.
-            * [ ] CodeConstraintLangParser
+            * [x] CodeConstraintLangParser
                 * [o] testStringParsing -> This tests does not really make sense.
-                * [ ] testAttributeParsing -> testParsing
-                * [ ] testConstraintParsing
-                * [ ] testDatabaseParsing
-                * [ ] testProblemParsing
-                * [ ] testProblemParsing2
-                * [ ] testOptimization
-        * [ ] Migrate all tests.
+                * [x] testAttributeParsing -> testParsing
+                * [x] testConstraintParsing
+                * [x] testDatabaseParsing
+                * [x] testProblemParsing
+                * [x] testProblemParsing2
+                * [x] testOptimization
+        * [x] Migrate all tests.
         * [ ] Use new backend in webserver.
         * [ ] Delete old backend.
     * [ ] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
+    * [ ] Create shared SolutionCalculator.
+    * [ ] Use shared SolutionCalculator.
     * [ ] Delete `net.splitcells.gel.ui.Editor`.
     * [ ] Delete SolutionParameters.
     * [ ] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code.
@@ -64,3 +66,4 @@ Moving closer to a full synergy between the subprojects.
     * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make Community Block easier to find via front menu.
+* [ ] Consider contacting school.
