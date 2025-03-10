@@ -35,6 +35,7 @@ Moving closer to a full synergy between the subprojects.
     * [ ] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
     * [ ] Create shared SolutionCalculator.
     * [ ] Use shared SolutionCalculator.
+    * [ ] Delete obsolete SolutionCalculators.
     * [ ] Delete `net.splitcells.gel.ui.Editor`.
     * [ ] Delete SolutionParameters.
     * [ ] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code.
