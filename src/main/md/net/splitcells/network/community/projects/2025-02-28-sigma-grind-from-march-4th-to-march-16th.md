@@ -16,7 +16,7 @@ Moving closer to a full synergy between the subprojects.
                 * [x] testInvalidSupplyAttribute
         * [x] Use new backend in webserver.
         * [x] Delete old backend.
-    * [ ] Migrate no-code editor.
+    * [x] Migrate no-code editor.
         * [x] Create new backend.
             * [x] NoCodeEditorLangParser
                 * [x] parseNoCodeStrings is not required.
@@ -30,8 +30,8 @@ Moving closer to a full synergy between the subprojects.
                 * [x] testProblemParsing2
                 * [x] testOptimization
         * [x] Migrate all tests.
-        * [ ] Use new backend in webserver.
-        * [ ] Delete old backend.
+        * [x] Use new backend in webserver.
+        * [x] Delete old backend.
     * [ ] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
     * [ ] Create shared SolutionCalculator.
     * [ ] Use shared SolutionCalculator.
