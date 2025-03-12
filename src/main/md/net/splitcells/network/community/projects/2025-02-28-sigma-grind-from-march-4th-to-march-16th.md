@@ -1,7 +1,7 @@
 # Sigma Grind starting from March 4th to March 16th
 Moving closer to a full synergy between the subprojects.
 # Tasks
-* [ ] [Create a unified backend for editor, which will be the basis for the optimization network.](../features/2024-11-13-t37-solve-sport-lesson-assignment.md)
+* [x] [Create a unified backend for editor, which will be the basis for the optimization network.](../features/2024-11-13-t37-solve-sport-lesson-assignment.md)
   This makes it easier to introduce a new grammar while supporting the existing input code and with minimized code duplication.
     * [x] Migrate code editor.
         * [x] Create new backend.
@@ -38,10 +38,10 @@ Moving closer to a full synergy between the subprojects.
     * [x] Delete obsolete SolutionCalculators.
     * [x] Delete `net.splitcells.gel.ui.Editor`.
     * [x] Delete SolutionParameters.
-    * [ ] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code.
-    * [ ] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
-      The visualization of each description should correspond with the fitting user input part.
-    * [ ] Test unified backend.
+    * [o] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code. -> This is not required right now.
+    * [x] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
+    * [x] The visualization of each description should also contain the corresponding fitting user input part.
+    * [x] Test unified backend.
 * [ ] [Port Network worker exection to Java.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
     * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
     * [ ] Create unit tests for the Java based Network worker execution.
