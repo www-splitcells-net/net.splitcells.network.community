@@ -1,8 +1,10 @@
 # Optimization Software
-* Timefold/OptaPlanner
+* [Timefold](https://github.com/TimefoldAI/timefold-solver)
+* [OptaPlanner](https://github.com/kiegroup/optaplanner)
 * [Jenetics](https://github.com/jenetics/jenetics)
 * [A Vehicle Routing Problem solver](https://github.com/reinterpretcat/vrp)
 * [Choco-solver](https://github.com/chocoteam/choco-solver)
 * [jMetal](https://github.com/jMetal/jMetal)
 * [OR-Tools - Google Optimization Tools](https://github.com/google/or-tools)
+* [COIN-OR Foundation based Cbc (Coin-or branch and cut) is an open-source mixed integer linear programming solver written in C++](https://www.youtube.com/watch?v=QlihiSWb0qo)
 * [Theta contains an SMT solver interface.](https://github.com/ftsrg/theta)

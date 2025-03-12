@@ -32,12 +32,12 @@ Moving closer to a full synergy between the subprojects.
         * [x] Migrate all tests.
         * [x] Use new backend in webserver.
         * [x] Delete old backend.
-    * [ ] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
-    * [ ] Create shared SolutionCalculator.
-    * [ ] Use shared SolutionCalculator.
-    * [ ] Delete obsolete SolutionCalculators.
-    * [ ] Delete `net.splitcells.gel.ui.Editor`.
-    * [ ] Delete SolutionParameters.
+    * [x] Change package structure by using this pattern; `net.splitcell.gel.ui.editor.[code|no_code]`
+    * [x] Create shared SolutionCalculator.
+    * [x] Use shared SolutionCalculator.
+    * [x] Delete obsolete SolutionCalculators.
+    * [x] Delete `net.splitcells.gel.ui.Editor`.
+    * [x] Delete SolutionParameters.
     * [ ] Move ANTLR parser to `net.splitcells.dem.source`, in order to isolate Java legacy code.
     * [ ] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
       The visualization of each description should correspond with the fitting user input part.
