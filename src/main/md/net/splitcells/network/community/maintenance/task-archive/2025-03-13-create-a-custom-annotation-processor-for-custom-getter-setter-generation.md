@@ -1,0 +1,1 @@
+# Create a custom annotation processor for custom getter setter generation.
