@@ -42,15 +42,12 @@ Moving closer to a full synergy between the subprojects.
     * [x] Visualize error location. Currently, `*Description.toString()` has no visualization of its content.
     * [x] The visualization of each description should also contain the corresponding fitting user input part.
     * [x] Test unified backend.
-* [ ] [Port Network worker exection to Java.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md)
-    * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
-    * [ ] Create unit tests for the Java based Network worker execution.
+* [x] [Port Network worker exection to Java as far as possible.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md) -> `bin/worker.test.at` was ported to Java.
 * [ ] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md)
     * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
-* [ ] [Consider compatibility with git-repo-manager.](../cooperation-and-symbiosis/2022-10-25-consider-compatibility-with-git-repo-manager.md)
-* [ ] Import and export input data in Gel editor.
-* [ ] Fix Gel UI's no-code editor.
-    * [ ] Sometimes the pop-up is not wide enough for the title.
+* [x] Import and export input data in Gel editor.
+* [x] Fix Gel UI's no-code editor.
+    * [x] Sometimes the pop-up is not wide enough for the title.
 * [ ] Explain, what the Splitcells Network is.
 * [ ] Document why the no-code editor exists.
     * [ ] Make features more discoverable.
@@ -66,5 +63,4 @@ Moving closer to a full synergy between the subprojects.
       but now, that there is a working one it does not make sense to delete it for now.
     * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
-* [ ] Make Community Block easier to find via front menu.
-* [ ] Consider contacting school.
+* [ ] Make community blog easier to find via front menu.

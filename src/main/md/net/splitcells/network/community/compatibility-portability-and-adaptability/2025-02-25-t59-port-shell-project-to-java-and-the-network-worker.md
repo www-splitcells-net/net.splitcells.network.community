@@ -58,9 +58,29 @@ This makes the following possible:
 # Tasks
 * [ ] Port 'net.splitcells.network's Worker commands to Java.
     * [ ] Create Java alternative.
-    * [ ] Make it possible to switch between Java and Python version via environment variable.
+         * [x] Port `bin/worker.test.at` to Java.
+         * [ ] Port `bin/worker.execute` to Java.
+           * [ ] `--command`
+           * [x] `--execute-via-ssh-at`
+           * [ ] `--executable-path`
+           * [ ] `--class-for-execution`
+           * [ ] `--cpu-architecture`
+           * [ ] `--use-host-documents`
+           * [ ] `--publish-execution-image`
+           * [ ] `--verbose`
+           * [ ] `--only-build-image`
+           * [ ] `--only-execute-image`
+           * [ ] `--dry-run`
+           * [ ] `--use-playwright`
+           * [ ] `--auto-configure-cpu-architecture-explicitly`
+           * [ ] `.config/net.splitcells.network.worker/execute.podman.flags`
+           * [ ] Create Dockerfile.
+           * [ ] Create and execute script.
+             * [ ] Create unit tests for the Java based Network worker execution.
+             * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
+    * [ ] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
     * [ ] Deploy live distro via Java version.
-    * [ ] Remove the Python code.
+    * [ ] Remove the Python code, when the migration worked for the live distro.
 * [ ] Port `net.splitcells.shell` related projects to Java/Maven.
     * [ ] Port `net.splitcells.shell` to Java.
         * [ ] Create Java alternative.

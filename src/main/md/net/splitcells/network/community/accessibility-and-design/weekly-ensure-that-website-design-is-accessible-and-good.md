@@ -8,7 +8,7 @@ public website should be barrierefrei.
 Although, this law does not seem to apply to `splitcells.net`,
 this is an opportunity to consider this aspect.
 # Service Tasks
-
+* [ ] Check warnings and errors in the browser.
 # Tasks
 * [ ] In web layout add link from primary column to secondary column.
 * [ ] Improve styling of low priority buttons of chapters. 
