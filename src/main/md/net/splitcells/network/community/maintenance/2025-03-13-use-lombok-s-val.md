@@ -1,4 +1,7 @@
 # Use Lombok's new val implementation.
+Lombok's new val implementation might now be performant,
+as it val is translated to `final var` since version 1.18.22.
+Before that, the bad performance of val prohibited its usage.
 # Tasks
 * [ ] Use Lombok's new val implementation.
 * [ ] Update Lombok guidelines.
