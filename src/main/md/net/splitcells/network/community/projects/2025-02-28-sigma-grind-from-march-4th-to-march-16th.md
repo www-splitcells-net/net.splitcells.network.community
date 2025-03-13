@@ -46,8 +46,9 @@ Moving closer to a full synergy between the subprojects.
 * [ ] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md)
     * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
 * [x] Import and export input data in Gel editor.
-* [x] Fix Gel UI's no-code editor.
+* [x] Fix some of Gel's UI problems at the no-code editor.
     * [x] Sometimes the pop-up is not wide enough for the title.
+    * [x] Correctly, delete an element of a function chain and variable definition.
 * [ ] Explain, what the Splitcells Network is.
 * [ ] Document why the no-code editor exists.
     * [ ] Make features more discoverable.
@@ -64,3 +65,7 @@ Moving closer to a full synergy between the subprojects.
     * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
+# Results
+Part of the grind worked as expected.
+It helped me to learn about how my mind works and gave me the opportunity to do mind experiments.
+Unfortunately, the grind was not consistent, which lowered the amount of benefits. 
