@@ -28,3 +28,5 @@
 * [ ] Add project advertisement text in secondary column of front menu.
 * [ ] Improve Hub Readme.
 * [ ] Consider creating pseudo none developer news.
+* [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
+* [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml

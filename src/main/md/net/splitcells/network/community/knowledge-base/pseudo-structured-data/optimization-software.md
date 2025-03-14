@@ -1,4 +1,5 @@
 # Optimization Software
+* [SCIP - Solving Constraint Integer Programs](https://github.com/scipopt/scip)
 * [Timefold](https://github.com/TimefoldAI/timefold-solver)
 * [OptaPlanner](https://github.com/kiegroup/optaplanner)
 * [Jenetics](https://github.com/jenetics/jenetics)

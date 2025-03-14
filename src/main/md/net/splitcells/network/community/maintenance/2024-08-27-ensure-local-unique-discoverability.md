@@ -24,3 +24,4 @@ Make the whole discovery tree traversable via the root node.
 * [ ] Update Network objectives at `projects/net.splitcells.network/src/main/xml/net/splitcells/network/objectives.xml`,
   as this becomes the main Java implementation regarding the semantic inventory system.
 * [ ] Enforce via an extra check, that the Discovery is a tree.
+* [ ] Update Network subproject objectives regarding the status of this: net/splitcells/network/objectives.xml
