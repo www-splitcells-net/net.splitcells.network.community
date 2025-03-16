@@ -60,6 +60,7 @@ This makes the following possible:
     * [ ] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
          * [ ] Port `bin/worker.execute` to Java.
+           * [ ] Port Python code without tests as a preparation.
            * [ ] `--command`
            * [x] `--execute-via-ssh-at`
            * [ ] `--executable-path`
