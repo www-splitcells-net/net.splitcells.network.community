@@ -75,10 +75,11 @@ This makes the following possible:
            * [ ] `--auto-configure-cpu-architecture-explicitly`
            * [ ] `.config/net.splitcells.network.worker/execute.podman.flags`
            * [ ] Create Dockerfile.
-           * [ ] Create and execute script.
-             * [ ] Create unit tests for the Java based Network worker execution.
-             * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
+           * [ ] Create unit tests for the Java based Network worker execution.
+           * [ ] Synchronize Playwright version in POM and Dockerfile.
     * [ ] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
+        * [ ] Make WorkerExecutionMain working.
+        * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
     * [ ] Deploy live distro via Java version.
     * [ ] Remove the Python code, when the migration worked for the live distro.
 * [ ] Port `net.splitcells.shell` related projects to Java/Maven.
