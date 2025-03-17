@@ -103,3 +103,4 @@ This makes the following possible:
     * [ ] Update software stack guidelines.
         * [ ] Remove Python 3 and reason this.
     * [ ] Note overhaul changes in changelog.
+    * [ ] Copy appropriate parts of the task description to the project's documentation. 

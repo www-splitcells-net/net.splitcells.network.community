@@ -10,6 +10,7 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 * [ ] Check warnings and errors in the browser.
 # Tasks
+* [ ] All rendered READMEs have the same content on the website.
 * [ ] In web layout add link from primary column to secondary column.
 * [ ] Improve styling of low priority buttons of chapters. 
 * [ ] Consider using pastel color palette for none black and white colors.

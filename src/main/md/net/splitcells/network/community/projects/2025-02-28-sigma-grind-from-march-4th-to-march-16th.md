@@ -43,16 +43,16 @@ Moving closer to a full synergy between the subprojects.
     * [x] The visualization of each description should also contain the corresponding fitting user input part.
     * [x] Test unified backend.
 * [x] [Port Network worker exection to Java as far as possible.](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md) -> `bin/worker.test.at` was ported to Java.
-* [o] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-establish-symbiosis-strategy.md) -> This will be done after this grind.
+* [o] [Establish symbiosis strategy.](../cooperation-and-symbiosis/2025-03-01-t60-establish-a-symbiosis-strategy.md) -> This will be done after this grind.
 * [x] Import and export input data in Gel editor.
 * [x] Fix some of Gel's UI problems at the no-code editor.
     * [x] Sometimes the pop-up is not wide enough for the title.
     * [x] Correctly, delete an element of a function chain and variable definition.
 * [x] Explain, what the Splitcells Network is.
-* [ ] Document why the no-code editor exists.
+* [ ] Document why the no-code editor exists. -> See http://splitcells.net/net/splitcells/gel/ui/objectives.html
     * [ ] Make features more discoverable.
     * [ ] This provides a default UI for features like persistent optimization problems,
-      that are stored on the server and 
+      that are stored on the server, or for complex config objects. 
     * [ ] No-code is no replacement for documentation.
     * [ ] The no-code editor is probably not really needed for now.
       When the editor was created, it was seen as a way to minimize amount of doc and
@@ -62,9 +62,6 @@ Moving closer to a full synergy between the subprojects.
     * [ ] Most likely initially creating no-code editor was an error,
       but now, that there is a working one it does not make sense to delete it for now.
     * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
-* [ ] Document stable API plan via `net.splitcells.network.system.stable`.
-* [ ] Make community blog easier to find via front menu.
-* [ ] Update the [Project Structure Overview](https://splitcells.net/net/splitcells/network/overview.html).
 # Results
 Part of the grind worked as expected.
 It helped me to learn about how my mind works and gave me the opportunity to do mind experiments.
