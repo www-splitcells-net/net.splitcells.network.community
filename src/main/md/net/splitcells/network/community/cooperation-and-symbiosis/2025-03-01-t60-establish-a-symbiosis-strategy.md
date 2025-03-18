@@ -1,12 +1,6 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
-* [ ] Add project advertisement text in secondary column of front menu.
-    * [x] Put there a shortened version of the README.
-    * [x] Improve the project description in the README.
-    * [ ] Replace meta titles of secondary column with the title of the shortened README.
-    * [x] Add note to both README like files, that if one needs to be edited both should be edited.
-* [ ] Update the [Project Structure Overview](https://splitcells.net/net/splitcells/network/overview.html).
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
@@ -44,3 +38,10 @@
     * [ ] Integrate Codeberg issues into the changelog.
     * [ ] Integrate the blog into the changelog.
 * [ ] Update `About This Site`.
+# Done Tasks
+* [x] Add project advertisement text in secondary column of front menu.
+    * [x] Put there a shortened version of the README.
+    * [x] Improve the project description in the README.
+    * [x] Replace meta titles of secondary column with the title of the shortened README.
+    * [x] Add note to both README like files, that if one needs to be edited both should be edited.
+* [x] Update the [Project Structure Overview](https://splitcells.net/net/splitcells/network/overview.html).

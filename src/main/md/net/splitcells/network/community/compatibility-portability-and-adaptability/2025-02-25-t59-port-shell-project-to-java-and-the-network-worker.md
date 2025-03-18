@@ -98,6 +98,7 @@ This makes the following possible:
     * [ ] Test everything together.
 * [ ] Remove Python versions of `net.splitcells.shell` related code.
 * [ ] Make `net.splitcells.shell` related projects usable from webserver via UserCommandProjectRendererExtension.
+* [ ] Port static website deployment to Java as well, in order to speed up the upload via parallelism.
 * [ ] Final tasks
     * [ ] Check runtime of command execution regarding Java's start time.
     * [ ] Update software stack guidelines.
