@@ -49,19 +49,16 @@ Moving closer to a full synergy between the subprojects.
     * [x] Sometimes the pop-up is not wide enough for the title.
     * [x] Correctly, delete an element of a function chain and variable definition.
 * [x] Explain, what the Splitcells Network is.
-* [ ] Document why the no-code editor exists. -> See http://splitcells.net/net/splitcells/gel/ui/objectives.html
-    * [ ] Make features more discoverable.
-    * [ ] This provides a default UI for features like persistent optimization problems,
+* [x] Document why the no-code editor exists. -> See http://splitcells.net/net/splitcells/gel/ui/objectives.html
+    * [x] Make features more discoverable.
+    * [x] This provides a default UI for features like persistent optimization problems,
       that are stored on the server, or for complex config objects. 
-    * [ ] No-code is no replacement for documentation.
-    * [ ] The no-code editor is probably not really needed for now.
-      When the editor was created, it was seen as a way to minimize amount of doc and
-      to provide a tool for the user to learn and explor the software by experimenting.
-    * [ ] Multiple frontends make ensure, that the backend is really independent of the frontend.
-      Thereby, the backend does not rely on ANTLR.
-    * [ ] Most likely initially creating no-code editor was an error,
-      but now, that there is a working one it does not make sense to delete it for now.
-    * [ ] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
+    * [x] No-code is no replacement for code documentation.
+    * [x] In the future, this could be used as a basis for interacting with complex objects likes configs via the GUI.
+# Ideas
+* [x] Make the description language independent of the no-code editor and transform it to general programming language.
+    * [o] Abolish Constraint description and add children attribute to FunctionDescription instead.
+    * [x] Update Gel UI objectives accordingly.
 # Results
 Part of the grind worked as expected.
 It helped me to learn about how my mind works and gave me the opportunity to do mind experiments.
