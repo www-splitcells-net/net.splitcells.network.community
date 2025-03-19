@@ -1,6 +1,13 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
+* [ ] Make the global changelog more generally usable.
+    * [ ] Create a global changelog with tags for each message.
+    * [o] Integrate Codeberg issues into the changelog. -> This is costly and should only be done, when it gets relevant.
+    * [ ] Integrate the blog into the changelog.
+    * [ ] The notification class itself should do the top level list item parsing in the notification list,
+      instead of the CommonMark parser.
+      Thereby, the base list formatting has not to be implemented for each notification source.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
@@ -29,15 +36,12 @@
     * [ ] Focus more on overhaul development roadmap and goals.
         * [ ] Cin: simulate all aspects of schools
 * [ ] Delete Mac version of App, as it is not working.
-* [ ] Improve Hub Readme.
+* [x] Improve Hub Readme.
 * [ ] Consider creating pseudo none developer news.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
-* [ ] Make the global changelog more generally usable.
-    * [ ] Create a global changelog with tags for each message.
-    * [ ] Integrate Codeberg issues into the changelog.
-    * [ ] Integrate the blog into the changelog.
 * [ ] Update `About This Site`.
+* [ ] Force CSS reload, as users otherwise get old styling from the browser. 
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.
