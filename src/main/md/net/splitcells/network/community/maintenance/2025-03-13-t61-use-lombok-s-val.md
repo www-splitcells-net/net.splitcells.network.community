@@ -1,4 +1,6 @@
 # Use Lombok's new val implementation.
+* Issue number: [\#61](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/61)
+# Task Description
 Lombok's new val implementation might now be performant,
 as it val is translated to `final var` since version 1.18.22.
 Before that, the bad performance of val prohibited its usage.

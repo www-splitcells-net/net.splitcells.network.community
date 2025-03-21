@@ -2,7 +2,8 @@
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
 * [ ] Make the global changelog more generally usable. -> This new system is called notification queue.
-    * [ ] Create a global changelog with tags for each message.
+    * [ ] Add tags to notifications. This way a single notification queue definition can be used,
+      while allow different queues in the UI for different users.
     * [x] Render date of notification.
     * [x] Avoid duplicate date rendering for change log items.
     * [o] Integrate Codeberg issues into the changelog. -> This is costly and should only be done, when it gets relevant.
@@ -12,12 +13,11 @@
       instead of the CommonMark parser.
       Thereby, the base list formatting has not to be implemented for each notification source.
     * [ ] Add notifications link to the menu.
-    * [ ] Add tags to notifications. This way a single notification queue definition can be used,
-      while allow different queues in the UI for different users.
     * [ ] Use new notification system for global changelog as well.
     * [ ] Improve notification queue runtime performance.
-    * [ ] Link to source for each notification.
+    * [x] Link to source for each notification.
     * [ ] Add projects and task of community repo to the notifications queue.
+    * [ ] Render correct changelog for a given changelog URL.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
