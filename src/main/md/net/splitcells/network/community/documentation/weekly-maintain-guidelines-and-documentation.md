@@ -38,5 +38,6 @@
   In other words, the Community documents should be considered to be part of the documentation.
 * [ ] Consider creating a newsletter that bundles blog, social media posts and interesting info like releases of other optimization software, that contain something interesting regarding optimization.
     * [ ] Add newsletter to global changelog.
+* [ ] Note in programming guidelines, that implicit error handling is preferred to explicit one.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.

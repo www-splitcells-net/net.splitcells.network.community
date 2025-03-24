@@ -2,7 +2,8 @@
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
 * [ ] Make the global changelog more generally usable. -> This new system is called notification queue.
-    * [ ] Add tags to notifications. This way a single notification queue definition can be used,
+    * [x] Make notifications page available in the website's layout. This seems to be a bug.
+    * [x] Add tags to notifications. This way a single notification queue definition can be used,
       while allow different queues in the UI for different users.
     * [x] Render date of notification.
     * [x] Avoid duplicate date rendering for change log items.
@@ -12,16 +13,15 @@
     * [x] The notification class itself should do the top level list item parsing in the notification list,
       instead of the CommonMark parser.
       Thereby, the base list formatting has not to be implemented for each notification source.
-    * [ ] Add notifications link to the menu.
+    * [ ] Add projects and tasks of community repo to the notifications queue.
     * [ ] Use new notification system for global changelog as well.
-    * [ ] Improve notification queue runtime performance.
+    * [ ] Use new notification system for a dedicated user oriented news page.
+    * [ ] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
     * [x] Link to source for each notification.
-    * [ ] Add projects and task of community repo to the notifications queue.
-    * [ ] Render correct changelog for a given changelog URL.
+    * [ ] Render correct changelog for a given changelog URL. This is not related to the new notification system.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
-* [ ] Blog about pause of Cin and new focus.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [ ] Sleepycat for dual licensing -> This is kind of already the case in a weaker form, but just not with strong copyleft license and problematic if other developers join.
       This can also be supported later with injected modules, that are strong copyleft or commercially available.
@@ -51,7 +51,8 @@
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
 * [ ] Update `About This Site`.
-* [ ] Force CSS reload, as users otherwise get old styling from the browser. 
+* [ ] Blog about pause of Cin and new focus.
+    * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.

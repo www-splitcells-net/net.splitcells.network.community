@@ -20,6 +20,7 @@ this is an opportunity to consider this aspect.
   which is better than JavaFX's embedded Chromium.
   The Chromium has some strange icons and other differences.
   These are not game breakers, but make things more ugly.
+* [ ] Force CSS reload, as users otherwise get old styling from the browser.
 # Completed Tasks
 * [x] Make white bold structural guidelines less thick, as these distract a bit too much.
 * [x] Prefer using always darkest black color as text color,

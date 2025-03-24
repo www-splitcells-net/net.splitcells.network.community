@@ -1,4 +1,5 @@
 # Optimization Software
+* [Isabelle is a generic proof assistant.](https://isabelle.in.tum.de/)
 * [SCIP - Solving Constraint Integer Programs](https://github.com/scipopt/scip)
 * [Timefold](https://github.com/TimefoldAI/timefold-solver)
 * [OptaPlanner](https://github.com/kiegroup/optaplanner)
