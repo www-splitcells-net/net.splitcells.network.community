@@ -13,8 +13,8 @@
     * [x] The notification class itself should do the top level list item parsing in the notification list,
       instead of the CommonMark parser.
       Thereby, the base list formatting has not to be implemented for each notification source.
-    * [ ] Add projects and tasks of community repo to the notifications queue.
-    * [ ] Use new notification system for global changelog as well.
+    * [x] Add projects and tasks of community repo to the notifications queue.
+    * [x] Use new notification system for global changelog as well.
     * [ ] Use new notification system for a dedicated user oriented news page.
     * [ ] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
     * [x] Link to source for each notification.
