@@ -1,24 +1,37 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
-* [ ] Make the global changelog more generally usable. -> This new system is called notification queue.
-    * [x] Make notifications page available in the website's layout. This seems to be a bug.
-    * [x] Add tags to notifications. This way a single notification queue definition can be used,
-      while allow different queues in the UI for different users.
-    * [x] Render date of notification.
-    * [x] Avoid duplicate date rendering for change log items.
-    * [o] Integrate Codeberg issues into the changelog. -> This is costly and should only be done, when it gets relevant.
-    * [x] Integrate the blog into the changelog.
-        * [x] Parse date of blog article. 
-    * [x] The notification class itself should do the top level list item parsing in the notification list,
-      instead of the CommonMark parser.
-      Thereby, the base list formatting has not to be implemented for each notification source.
-    * [x] Add projects and tasks of community repo to the notifications queue.
-    * [x] Use new notification system for global changelog as well.
-    * [ ] Use new notification system for a dedicated user oriented news page.
-    * [ ] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
-    * [x] Link to source for each notification.
-    * [ ] Render correct changelog for a given changelog URL. This is not related to the new notification system.
+* [ ] Let the front menu lead the user to interesting things more clearly. 
+    * [ ] Make the global changelog more generally usable. -> This new system is called notification queue.
+        * [x] Make notifications page available in the website's layout. This seems to be a bug.
+        * [x] Add tags to notifications. This way a single notification queue definition can be used,
+          while allow different queues in the UI for different users.
+        * [x] Render date of notification.
+        * [x] Avoid duplicate date rendering for change log items.
+        * [o] Integrate Codeberg issues into the changelog. -> This is costly and should only be done, when it gets relevant.
+        * [x] Integrate the blog into the changelog.
+            * [x] Parse date of blog article. 
+        * [x] The notification class itself should do the top level list item parsing in the notification list,
+          instead of the CommonMark parser.
+          Thereby, the base list formatting has not to be implemented for each notification source.
+        * [x] Add projects and tasks of community repo to the notifications queue.
+        * [x] Use new notification system for global changelog as well.
+        * [x] Use new notification system for a dedicated user oriented news page. -> See `http://localhost:8443/net/splitcells/website/news.html`.
+        * [x] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
+        * [x] Link to source for each notification.
+        * [ ] Render correct changelog for a given changelog URL. This is not related to the new notification system.
+        * [ ] For each project create potentially multiple notifications.
+            * [ ] Proposal of Project
+            * [ ] Start of Project
+            * [ ] End of Project
+    * [ ] Add news to front menu.
+    * [ ] Improve notifications styling.
+    * [ ] Use animation in order to advertise important things.
+        * [ ] Create a border outline animation, that flashes the orange color.
+          The orange color is already used, in order to mark activity. See `--background-color-activity: #ff9900;`.
+    * [x] Outline interactive or most important things via round corners.
+      Do this to the main cards of the front menu.
+    * [ ] In Desktop view replace menu header link with front menu link, as multiple but different menu links are irritating otherwise.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
