@@ -19,7 +19,7 @@
         * [x] Use new notification system for a dedicated user oriented news page. -> See `http://localhost:8443/net/splitcells/website/news.html`.
         * [x] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
         * [x] Link to source for each notification.
-        * [ ] Render correct changelog for a given changelog URL. This is not related to the new notification system.
+        * [x] Render correct changelog for a given changelog URL. This is not related to the new notification system.
         * [ ] For each project create potentially multiple notifications.
             * [ ] Proposal of Project
             * [ ] Start of Project
@@ -29,6 +29,8 @@
     * [ ] Use animation in order to advertise important things.
         * [ ] Create a border outline animation, that flashes the orange color.
           The orange color is already used, in order to mark activity. See `--background-color-activity: #ff9900;`.
+        * [ ] Note, that in the future, maybe a glass reflection like animation could be used.
+        * [ ] Consider using a type writer effect for advertisement.
     * [x] Outline interactive or most important things via round corners.
       Do this to the main cards of the front menu.
     * [ ] In Desktop view replace menu header link with front menu link, as multiple but different menu links are irritating otherwise.
@@ -66,6 +68,7 @@
 * [ ] Update `About This Site`.
 * [ ] Blog about pause of Cin and new focus.
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
+* [ ] Use drawn faces, as art on website more. Document in guidelines why and how. 
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.
