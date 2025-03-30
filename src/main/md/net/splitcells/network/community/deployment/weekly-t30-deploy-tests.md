@@ -18,7 +18,7 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
       This is important for the RISCV server, that has a lot less resources.
         * [x] Draft new flag, by creating the appropriate `--comand`.
           -> ` bin/worker.execute  --name 'net.splitcells.network.worker' --command 'sh -c "cd ~/.local/state/net.splitcells.repos/public/net.splitcells.network && bin/worker.bootstrap"' --execute-via-ssh-at 'martins-avots@live.splitcells.net' --verbose true --use-host-documents true`
-          -> A dedicated flag is not needed for that, as nothing special needs to done.
+          -> A dedicated flag is not needed for that, as nothing special needs to be done.
         * [x] Use only 1 meta repo for bootstrapping. Currently `~/.local/state/net.splitcells.repos/public` and `~/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.repos/public/` is used.
         * [x] Create flag as an alternative to --command, that bootstraps network worker repos and represents a remote server initialization.
           See `Remote Initialization Draft`. -> The dedicated `worker.service.cycle.trigger.at` command with just 1 argument was created instead. 
@@ -35,18 +35,18 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-    * [ ] Create test command for network worker. -> The new command is `worker.service.cycle.trigger.at`.
+    * [ ] CURRENT Create test command for network worker. -> The new command is `worker.test.trigger.remote.at`.
         * [o] Delete network worker files, so that test command tests the bootstrap completely.
           -> This is not important for now. A corresponding TODO was added to the `worker.execute` script.
             * [o] command.repositories.install
             * [o] m2
             * [o] repos
         * [ ] Push test results to public network log repo.
-            * [ ] Test this with local computer via `net.splitcells.network.worker.service.cycle.trigger.at splitcells@splitcells-XPS-15-9570`.
+            * [ ] Test this with local computer via `net.splitcells.network.worker.test.trigger.remote.at splitcells@splitcells-XPS-15-9570`.
               at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
                 * [ ] The shell project needs to be able to install itself to an alternative location.
                   Do this via an environment variable, as propagating such a value every would be hard.
-                  Otherwise, such a test creates problems with already present shell installation.
+                  Otherwise, such a test creates problems with already present shell installation. 
                     * [x] `command.managed.install.project.commands.py`
                     * [x] `command.managed.install.py`
                     * [x] Create a shell command to determine the path, where the shell project is installed.
@@ -61,14 +61,20 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
                     * [x] `command.repositories.install.sh`
                     * [x] `command.repositories.setup.sh`
                     * [ ] Define alternative config folder `~/.config/net.splitcells.shell`, in order to not mix worker config with the developer's computer config.
-                        * [ ] `command.repositories.update.sh`
-                        * [ ] `command.repositories.setup.sh`
-                        * [ ] `command.repository.register.sh`
-                    * [ ] Remove any usage of `net.splitcells.shell.commands.disabled`.
+                        * [x] Define an environment variable, that points to the config folder.
+                          -> It is called `NET_SPLITCELLS_SHELL_CONFIG_FOLDER`.
+                        * [x] `command.repositories.update.sh`
+                        * [x] `command.repositories.setup.sh`
+                        * [x] `command.repository.register.sh`
+                        * [ ] Set up this environment variable during remote execution, by checking the presence of a config file intended for remote execution.
+                            * [ ] Support this in `worker.bootstrap`.
+                            * [ ] Support this in `worker.execute`.
+                        * [ ] Document why this is done.
+                    * [ ] Remove any usage of `net.splitcells.shell.commands.disabled`. 
             * [ ] Store test results to network log repo.
             * [ ] Commit test results.
             * [ ] Push test results to Codeberg.
-    * [ ] CURRENT Enable this for all servers.
+    * [ ] Enable this for all servers.
         * [ ] `net.splitcells.martins.avots.riscv.login` via `net.splitcells.network.worker.service.cycle.trigger.at ubuntu@riscv.local`
             * [x] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.
               -> Create a flag for worker execute, that add flags to the command defined in the file `~/.config/net.splitcells.network.worker/execute.podman.flags`.

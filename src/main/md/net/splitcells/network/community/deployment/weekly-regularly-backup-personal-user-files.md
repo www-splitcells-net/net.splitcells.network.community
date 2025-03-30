@@ -21,4 +21,5 @@ exit
 chezmoi apply
 ```
 ## Tasks
+* [ ] Move this to a private repo, as this is specific to the author.
 * [x] `~/.gnupg`
