@@ -2,7 +2,7 @@
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
 * [ ] Let the front menu lead the user to interesting things more clearly. 
-    * [ ] Make the global changelog more generally usable. -> This new system is called notification queue.
+    * [x] Make the global changelog more generally usable. -> This new system is called notification queue.
         * [x] Make notifications page available in the website's layout. This seems to be a bug.
         * [x] Add tags to notifications. This way a single notification queue definition can be used,
           while allow different queues in the UI for different users.
@@ -20,10 +20,10 @@
         * [x] Improve notification queue runtime performance. A profiling needs to be done, in order to find out the cause.
         * [x] Link to source for each notification.
         * [x] Render correct changelog for a given changelog URL. This is not related to the new notification system.
-        * [ ] For each project create potentially multiple notifications.
-            * [ ] Proposal of Project
-            * [ ] Start of Project
-            * [ ] End of Project
+        * [x] For each project create potentially multiple notifications.
+            * [x] Proposal of Project -> This is the date at the start of the file name.
+            * [x] Start of Project
+            * [x] End of Project
     * [ ] Add news to front menu.
     * [ ] Improve notifications styling.
     * [ ] Use animation in order to advertise important things.

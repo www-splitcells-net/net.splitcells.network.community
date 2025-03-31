@@ -2,6 +2,8 @@
 * Goal: The goal is to provide a minimum viable product, that demonstrates,
      how such a tool would look and work like.
 * Ticket: https://github.com/www-splitcells-net/net.splitcells.network/issues/252
+* Start Date: 2023-10-05
+* End Date: 2024-03-24
 ## Tasks
 * [x] Provide runnable application with GUI.
     * [x] Place MathJax files into dedicated repo, because it is too big.
