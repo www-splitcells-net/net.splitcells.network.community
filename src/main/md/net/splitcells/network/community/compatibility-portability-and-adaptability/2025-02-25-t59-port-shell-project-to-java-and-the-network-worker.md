@@ -60,21 +60,22 @@ This makes the following possible:
     * [ ] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
          * [ ] Port `bin/worker.execute` to Java.
-           * [ ] Port Python code without tests as a preparation.
-           * [ ] `--command`
-           * [x] `--execute-via-ssh-at`
-           * [ ] `--executable-path`
-           * [ ] `--class-for-execution`
-           * [ ] `--cpu-architecture`
-           * [ ] `--use-host-documents`
-           * [ ] `--publish-execution-image`
-           * [ ] `--verbose`
-           * [ ] `--only-build-image`
-           * [ ] `--only-execute-image`
-           * [ ] `--dry-run`
-           * [ ] `--use-playwright`
-           * [ ] `--auto-configure-cpu-architecture-explicitly`
-           * [ ] `.config/net.splitcells.network.worker/execute.podman.flags`
+           * [x] Port Python code without tests as a preparation.
+               * [x] `--command`
+               * [x] `--execute-via-ssh-at`
+               * [x] `--executable-path`
+               * [x] `--class-for-execution`
+               * [x] `--cpu-architecture`
+               * [x] `--use-host-documents`
+               * [x] `--publish-execution-image`
+               * [x] `--verbose`
+               * [x] `--only-build-image`
+               * [x] `--only-execute-image`
+               * [x] `--dry-run`
+               * [x] `--use-playwright`
+               * [x] `--auto-configure-cpu-architecture-explicitly`
+               * [x] `.config/net.splitcells.network.worker/execute.podman.flags`
+           * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
            * [ ] Synchronize Playwright version in POM and Dockerfile.

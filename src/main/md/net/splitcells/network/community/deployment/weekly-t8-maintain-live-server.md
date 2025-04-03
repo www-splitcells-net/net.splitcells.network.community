@@ -98,7 +98,11 @@
 * [ ] Create 404 page for web server.
 * [ ] Consider automatically sending a mail, when an error happens.
 ## Done Tasks
-* [ ] Fix JS errors in Gel's UI editor. -> JQuery was not unpacked by Maven, as there was a silent dependency resolution error.
+* [o] Browser tests are not always working. Log message: `Target page, context or browser has been closed`
+  -> The warning log `Closing HTML clients is implemented, but is not actually expected to be used in production.` with its stack-trace was implemented and deployed in order to find the reason for this error.
+  For now this task is closed, as this only appears sometimes.
+  When the warning or log message is found again it will be attempted again.
+* [x] Fix JS errors in Gel's UI editor. -> JQuery was not unpacked by Maven, as there was a silent dependency resolution error.
 * [x] Avoid deadlock in HTML client factory.
 * [x] Playwright is not working anymore.
     * [x] Install Playwright dependencies via Maven, so that the dependencies are more consistent. See `Playwright Notes`.

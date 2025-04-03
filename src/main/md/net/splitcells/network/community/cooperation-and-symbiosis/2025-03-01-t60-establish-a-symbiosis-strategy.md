@@ -1,7 +1,7 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
 # Task Description
-* [ ] Let the front menu lead the user to interesting things more clearly. 
+* [x] Let the front menu lead the user to interesting things more clearly. 
     * [x] Make the global changelog more generally usable. -> This new system is called notification queue.
         * [x] Make notifications page available in the website's layout. This seems to be a bug.
         * [x] Add tags to notifications. This way a single notification queue definition can be used,
@@ -24,16 +24,17 @@
             * [x] Proposal of Project -> This is the date at the start of the file name.
             * [x] Start of Project
             * [x] End of Project
-    * [ ] Add news to front menu.
+    * [x] Add news link to front menu.
+    * [x] `https://splitcells.net/net/splitcells/website/notifications.html` is not statically deployed.
     * [o] Improve notifications styling. -> It is good enough for now.
-    * [ ] Use animation in order to advertise important things.
-        * [ ] Create a border outline animation, that flashes the orange color.
+    * [o] Use animation in order to advertise important things. -> Do not use animations for advertisement, but it could be used for interactive elements in general.
+        * [o] Create a border outline animation, that flashes the orange color.
           The orange color is already used, in order to mark activity. See `--background-color-activity: #ff9900;`.
-        * [ ] Note, that in the future, maybe a glass reflection like animation could be used.
-        * [ ] Consider using a typewriter effect for advertisement.
+        * [o] Note, that in the future, maybe a glass reflection like animation could be used.
+        * [o] Consider using a typewriter effect for advertisement. -> This was added as a todo to the `basic.css`, in order to use the typewriter for interactive elements in the future.
     * [x] Outline interactive or most important things via round corners.
       Do this to the main cards of the front menu.
-    * [ ] In Desktop view replace menu header link with front menu link, as multiple but different menu links are irritating otherwise.
+    * [x] In Desktop view replace menu header link with front menu link, as multiple but different menu links are irritating otherwise.
 * [ ] Document stable API plan via `net.splitcells.network.system.stable`.
 * [ ] Make community blog easier to find via front menu.
 * [ ] Clean up community blog.
