@@ -10,7 +10,11 @@ Before that, the bad performance of val prohibited its usage.
   -> This is noted in the Base Bom instead.
 * [ ] Consider additional usage of Lombok.
     * [ ] Use any Lombok annotation via intermedia annotations just like for JUnit and co.
-    * [ ] Consider using `@Getter` and `@Setter`.
-    * [ ] Consider using `@EqualsAndHashCode`.
-    * [ ] Consider using `@ToString`.
+    * [x] Consider using `@Getter` and `@Setter`.
+    * [ ] Consider using `@EqualsAndHashCode` and `@Data`.
     * [ ] Note that `@ExtensionMethod` could have been used as an alternative to custom wrapper interfaces.
+    * [ ] Consider using `@Delegate`.
+* [ ] Create Java code guidelines.
+    * [ ] Note that using Java like the majority is preferred by default.
+    * [ ] Note getter and setter definition in this project in contrast to majorities public consent.
+* [ ] Add Lombok guidelines to Java guidelines.
