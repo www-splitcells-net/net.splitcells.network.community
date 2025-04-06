@@ -96,12 +96,17 @@ Projects that are being worked cyclically, and probably will never be finished.
   The ticket number is placed in the file name, because it is faster to look up the ticket number that way,
   than to look into the file.
   Often, the file is already opened as it is being worked on, but viewed in a way, that the ticket number is not visible.
-  This causes a significant amount of scrolling. 
+  This causes a significant amount of scrolling.
+* The `Start Date: YYYY-MM-DD`, `End Date: YYYY-MM-DD` and date in the filename are interpreted in the notification parser of the website server,
+  in order show these in the notification queue.
+  See https://splitcells.net/net/splitcells/website/notifications.html such a queue.
 * File content format:
 ```
 # Weekly deploy static website.
 
-* Issue number: [\#...](link to issue, that defines the number)
+* Issue number: [\#51](link to issue, that defines the number)
+* Start Date: 2025-04-05
+* End Date: 2025-04-06
 
 # Task Description
 # Service Tasks
