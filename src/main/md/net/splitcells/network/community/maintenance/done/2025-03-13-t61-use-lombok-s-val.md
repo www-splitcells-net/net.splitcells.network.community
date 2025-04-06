@@ -4,7 +4,7 @@
 * End Date: 2025-04-06
 # Task Description
 Lombok's new val implementation might now be performant,
-as it val is translated to `final var` since version 1.18.22.
+as it translates val to `final var` since version 1.18.22.
 Before that, the bad performance of val prohibited its usage.
 # Tasks
 * [x] Use Lombok's new val implementation.

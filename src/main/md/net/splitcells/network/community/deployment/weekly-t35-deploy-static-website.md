@@ -4,6 +4,7 @@
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
     * Fix warnings during static web server rendering.
 # Tasks
+* [ ] Fix README correctly.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
 # Completed Tasks
