@@ -19,7 +19,8 @@ Before that, the bad performance of val prohibited its usage.
     * [x] Consider using `@Delegate`.
       -> According to `@Delegate` this implementation has major limitations and may even be removed in the future.
       Therefore, this feature is not used.
-* [ ] Create Java code guidelines.
-    * [ ] Note that using Java like the majority is preferred by default.
-    * [ ] Note getter and setter definition in this project in contrast to majorities public consent.
-* [ ] Add Lombok guidelines to Java guidelines.
+* [x] Create Java code guidelines.
+    * [x] Note that using Java like the majority is preferred by default.
+    * [x] Note getter and setter definition in this project in contrast to majorities public consent.
+      -> This only the case for the static constructor functions.
+* [x] Add Lombok guidelines to Java guidelines.
