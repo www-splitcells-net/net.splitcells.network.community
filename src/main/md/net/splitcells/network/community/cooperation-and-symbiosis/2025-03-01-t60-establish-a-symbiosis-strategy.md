@@ -35,8 +35,10 @@
     * [x] Outline interactive or most important things via round corners.
       Do this to the main cards of the front menu.
     * [x] In Desktop view replace menu header link with front menu link, as multiple but different menu links are irritating otherwise.
-* [ ] Document stable API plan via `net.splitcells.network.system.stable`.
-* [ ] Make community blog easier to find via front menu.
+* [x] Document stable API plan via `net.splitcells.network.system.stable`.
+* [o] Make community blog easier to find via front menu.
+  -> The blog is visible via the meta column of the front menu.
+  Furthermore, the notifications and news also contain the blog articles.
 * [ ] Clean up community blog.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [ ] Sleepycat for dual licensing -> This is kind of already the case in a weaker form, but just not with strong copyleft license and problematic if other developers join.
