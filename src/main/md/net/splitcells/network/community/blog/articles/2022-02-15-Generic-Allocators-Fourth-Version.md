@@ -11,7 +11,7 @@ Initially it was planned to solve all school problems for the next version:
 * [The Sport Lesson Assignment](https://github.com/www-splitcells-net/net.splitcells.network/issues/9)
 
 Unfortunately, this seemed to be a too big task for the next version.
-Other than the oral exam management problem the school scheduling problem
+Other than the oral exam management problem, the school scheduling problem
 consists of multiple subproblems,
 which depend on each other.
 

@@ -7,9 +7,12 @@ SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
 ---
 # Development Timing And Discovery Based Networks Of Perspectives (Den)
+
+Note: the Den project was mostly transformed into the simplified and generalized `net.splitcells.dem.lang.tree` package.
+
 One has always more ideas or needs,
 than time needed to implement or satisfy such.
-discovery based networks of perspectives or short Den are such an example.
+Discovery based networks of perspectives or short Dens are such an example.
 
 It's basically a concept for an abstract syntax tree (AST)
 and related semantics and paradigms.
@@ -57,7 +60,7 @@ In other words, I had better deals,
 but the situation is changing a little bit.
 This creates an opportunity for quality improvements.
 # Current State Of Implementation
-Currently, there is the Java class `net.splitcells.dem.lang.perspective.Tree implements the AST.
+Currently, there is the Java class `net.splitcells.dem.lang.perspective.Perspective implements the AST.
 A node just consists of a namespace, a string value, child references
 and some helper functions.
 There is a simplified serialization,

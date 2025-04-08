@@ -50,13 +50,10 @@ able to use such secrets against the authoring company.
 Additionally, some software may even be too complex to be created by one
 company.
 
-Both parties make some of the secrets public in order to share the cost for
-common functionalities.
+Both parties make some of the secrets public in order to share the cost for common functionalities.
 Nobody want's to reimplement their own archive file formats,
 just to be sure, that they exclusively possess the code and can control
 its binary distribution (just like you hopefully did not buy WinRAR).
-Buying a license for such code/program in order to use it as a dependency does
-also not seem to be worth it most of the time.
 
 In order for both parties to cooperate in a predictable manner a framework
 for the group work is being created, where licensing is our biggest concern.
@@ -84,7 +81,7 @@ shall stay there:
 Metaphorically speaking, the 2 parties point at each other with guns and state,
 that all shared secrets put into the open source project,
 shall stay open and pledge, that these secrets are up-to-date.
-> We both publish our parts, and ensure, that these are up-to-date.
+> We both publish our parts, and ensure, that these stay up to date.
 
 The article is licensed under the [EPL-2.0](http://splitcells.net/net/splitcells/network/legal/licenses/EPL-2.0.txt)
 OR [MIT](http://splitcells.net/net/splitcells/network/legal/licenses/MIT.txt).

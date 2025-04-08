@@ -14,8 +14,7 @@ Allocator (Gel) is neither done nor is it in good shape.
 In the previous version, a general optimization algorithm was designed
 and implemented 3 times for 3 different problems.
 I called this constraint group based repair.
-The purpose of the successor version was to make the solving routine implementations suitable for
-a wider range of problems.
+The purpose of the successor version was to make the repairer as agnostic as possible to given problems.
 As mentioned in the prior article, this is done via a kind of complete rewrite,
 but this takes an unjustifiable amount of time.
 

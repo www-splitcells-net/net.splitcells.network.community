@@ -39,7 +39,7 @@
 * [o] Make community blog easier to find via front menu.
   -> The blog is visible via the meta column of the front menu.
   Furthermore, the notifications and news also contain the blog articles.
-* [ ] Clean up community blog.
+* [x] Clean up community blog. -> I only looked and correct only some of them, but I think these are good enough.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [ ] Sleepycat for dual licensing -> This is kind of already the case in a weaker form, but just not with strong copyleft license and problematic if other developers join.
       This can also be supported later with injected modules, that are strong copyleft or commercially available.
@@ -63,9 +63,9 @@
     * [ ] Advertise the free availability of the online service and downloads.
     * [ ] Focus more on overhaul development roadmap and goals.
         * [ ] Cin: simulate all aspects of schools
-* [ ] Delete Mac version of App, as it is not working.
+* [x] Delete Mac version of App, as it is not working.
 * [x] Improve Hub Readme.
-* [ ] Consider creating pseudo none developer news.
+* [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
 * [ ] Update `About This Site`.
@@ -73,7 +73,7 @@
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
 * [ ] Use drawn faces, as art on website more. Document in guidelines why and how.
 * [ ] Add true goal to main objectives: many people can work together.
-* [ ] Start the public version of the support system idea.
+* [ ] Create project timeline/releases, but without release artifacts.
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.

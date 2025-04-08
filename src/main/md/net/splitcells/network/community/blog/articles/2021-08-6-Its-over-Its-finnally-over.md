@@ -26,8 +26,7 @@ It's over. Its finally over
 The third version is the first one,
 that's publicly available,
 where people can contribute
-and breaking changes and other crazy shit is tried to be
-omitted.
+and breaking changes and other crazy shit is tried to be omitted.
 
 Functionality wise it is a partial downgrade,
 also, some new functionalities are present as well.

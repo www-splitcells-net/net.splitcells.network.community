@@ -14,11 +14,12 @@
     * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
         * [ ] Add a test for submitting optimization to the daily Codeberg CI.
         * [ ] Create test for lookup manager.
-    * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved.
+    * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
         * [ ] Maybe the problem is that optimization requests are being queue, but not processed yet.
           Thereby, the queue grows until something breaks.
         * [ ] Starting Firefox multiple times causes problems. See Codeberg.
-        * [ ] Is Playwright present in container in the correct version?
+        * [x] Is Playwright present in container in the correct version? -> Yes
+        * [ ] Create only one Playwright servers, that has multiple tabs per HtmlClient in Java.
 * [ ] Create UI tester for text editor as well, in order to test both.
 * [ ] Execute more test at once, in order to have a better load test on production.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
