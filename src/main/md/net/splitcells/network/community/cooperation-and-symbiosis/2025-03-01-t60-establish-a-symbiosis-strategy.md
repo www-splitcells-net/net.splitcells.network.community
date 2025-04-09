@@ -41,28 +41,26 @@
   Furthermore, the notifications and news also contain the blog articles.
 * [x] Clean up community blog. -> I only looked and correct only some of them, but I think these are good enough.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
-    * [ ] Sleepycat for dual licensing -> This is kind of already the case in a weaker form, but just not with strong copyleft license and problematic if other developers join.
-      This can also be supported later with injected modules, that are strong copyleft or commercially available.
-    * [ ] Open Core
+    * [ ] Sleepycat for dual licensing ->
+      A weaker version of this can also be supported later with injected modules, that are strong copyleft or commercially available.
+    * [ ] Open Core is preferred.
     * [ ] Promise and advertise the project's reliability to its users.
-    * [ ] Add objective to guidelines, that the software is usable.
-    * [ ] Present oneself as a person reliable.
-        * [ ] Update social media profile image.
-        * [ ] Create genera social media strategy
-        * [ ] “Software Craftsmanship: The New Imperative” by Pete McBreen
-        * [ ] Refocus in school problem?
-    * [ ] Consider linking to in guidelines: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
-    * [ ] Add advertisement and documentation to real users on website.
+    * [ ] Add objective to guidelines, that the software is usable and reliable.
+    * [ ] Present oneself as a reliable person.
+        * [ ] Create general social media strategy
+        * [x] Refocus in school problem. -> This is only a decision.
+    * [ ] Consider linking to this in guidelines as inspiration: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [ ] Define support strategy.
-        * [ ] Add support page to website and app.
-    * [ ] Provide way for users to request support.
+        * [x] Add support page to website and app. -> This is done via the Hub's README.
+        * [ ] Provide way for users to request support.
     * [ ] Signed Windows executables becomes more relevant that way.
-    * [ ] Distribute Linux executables as well.
+      -> Consider this only, when such relevant user are present.
+      Note this and add this info to the download link for the GUI.
+    * [x] Distribute Linux executables as well. -> This is already provided at the download page.
     * [ ] Make versioning more relevant for advertisement and signalling to users of software changes.
       Consider semantic versioning and year versioning.
-    * [ ] Advertise the free availability of the online service and downloads.
-    * [ ] Focus more on overhaul development roadmap and goals.
-        * [ ] Cin: simulate all aspects of schools
+        * [ ] Create project timeline/releases, but without release artifacts.
+    * [x] Advertise the free availability of the online service and downloads.
 * [x] Delete Mac version of App, as it is not working.
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
@@ -73,7 +71,6 @@
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
 * [ ] Use drawn faces, as art on website more. Document in guidelines why and how.
 * [ ] Add true goal to main objectives: many people can work together.
-* [ ] Create project timeline/releases, but without release artifacts.
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.
