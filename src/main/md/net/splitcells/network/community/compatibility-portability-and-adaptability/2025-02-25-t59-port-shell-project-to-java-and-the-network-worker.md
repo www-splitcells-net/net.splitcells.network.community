@@ -100,6 +100,8 @@ This makes the following possible:
 * [ ] Remove Python versions of `net.splitcells.shell` related code.
 * [ ] Make `net.splitcells.shell` related projects usable from webserver via UserCommandProjectRendererExtension.
 * [ ] Port static website deployment to Java as well, in order to speed up the upload via parallelism.
+* [ ] Execute worker commands at current repo by default and only switch to `~/.local/state/net.splitcells.network.worker` via an explicit flag.
+    * [ ] Ensure, that this is the case for all worker commands.
 * [ ] Final tasks
     * [ ] Check runtime of command execution regarding Java's start time.
     * [ ] Update software stack guidelines.

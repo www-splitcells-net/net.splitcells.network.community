@@ -41,10 +41,15 @@
   Furthermore, the notifications and news also contain the blog articles.
 * [x] Clean up community blog. -> I only looked and correct only some of them, but I think these are good enough.
 * [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
-    * [ ] Sleepycat for dual licensing ->
-      A weaker version of this can also be supported later with injected modules, that are strong copyleft or commercially available.
-    * [ ] Open Core is preferred.
-    * [ ] Promise and advertise the project's reliability to its users.
+    * [x] Sleepycat for dual licensing ->
+      This is rejected, as a weak copy-left license is required for the open source version, because of the dependencies.
+      Also, strictly speaking, the core code could support dependency free code.
+      Extension do not have to be under strong copy-left licenses, when there is a permissively licensed API,
+      where the implementation is strongly copyrighted, but this defeats the purpose of a strong copy-left license.
+      Furthermore, such dual licensing does not work, if there is no overarching organization,
+      when there is more than one contributor.
+      Contributor also become harder this way, as a contributor agreement between the organization and the contributor would be needed as well.
+    * [ ] Open core concept is preferred for commercial licensing.
     * [ ] Add objective to guidelines, that the software is usable and reliable.
     * [ ] Present oneself as a reliable person.
         * [ ] Create general social media strategy
@@ -53,15 +58,20 @@
     * [ ] Define support strategy.
         * [x] Add support page to website and app. -> This is done via the Hub's README.
         * [ ] Provide way for users to request support.
+        * [ ] No support guarantee etc.
     * [ ] Signed Windows executables becomes more relevant that way.
       -> Consider this only, when such relevant user are present.
       Note this and add this info to the download link for the GUI.
     * [x] Distribute Linux executables as well. -> This is already provided at the download page.
     * [ ] Make versioning more relevant for advertisement and signalling to users of software changes.
-      Consider semantic versioning and year versioning.
+      Consider semantic versioning and year versioning. -> This is not useful for now, as there are no users. Add a task to do this, at the download page, so it is considered, when there are actual users.
         * [ ] Create project timeline/releases, but without release artifacts.
     * [x] Advertise the free availability of the online service and downloads.
 * [x] Delete Mac version of App, as it is not working.
+* [ ] Update `BUILD.md`.
+    * [ ] Make it easy to set up development via 1 clone and 1 command in an IDE.
+    * [ ] Consolidate bin and binr folder.
+* [ ] Link to Codeberg and GitHub in README.
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.

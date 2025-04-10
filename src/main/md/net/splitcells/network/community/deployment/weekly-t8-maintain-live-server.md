@@ -10,6 +10,8 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Reset the git repos, in order to prevent an unexpected state.
+* [ ] Reset .m2 folder, in order to prevent an unexpected state.
 * [ ] Sometimes submitting an optimization does not work.
     * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
         * [ ] Add a test for submitting optimization to the daily Codeberg CI.
