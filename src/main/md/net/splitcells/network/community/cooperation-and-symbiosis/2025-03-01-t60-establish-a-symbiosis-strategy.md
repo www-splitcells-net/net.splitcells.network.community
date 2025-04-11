@@ -40,7 +40,7 @@
   -> The blog is visible via the meta column of the front menu.
   Furthermore, the notifications and news also contain the blog articles.
 * [x] Clean up community blog. -> I only looked and correct only some of them, but I think these are good enough.
-* [ ] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
+* [x] Update licensing etc. strategy: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
     * [x] Sleepycat for dual licensing ->
       This is rejected, as a weak copy-left license is required for the open source version, because of the dependencies.
       Also, strictly speaking, the core code could support dependency free code.
@@ -49,29 +49,30 @@
       Furthermore, such dual licensing does not work, if there is no overarching organization,
       when there is more than one contributor.
       Contributor also become harder this way, as a contributor agreement between the organization and the contributor would be needed as well.
-    * [ ] Open core concept is preferred for commercial licensing.
-    * [ ] Add objective to guidelines, that the software is usable and reliable.
-    * [ ] Present oneself as a reliable person.
-        * [ ] Create general social media strategy
+    * [x] Open core concept is preferred for commercial licensing.
+    * [x] Add objective to guidelines, that the software is usable and reliable.
+    * [x] Present oneself as a reliable person.
+        * [o] Create general social media strategy -> The current strategy is good enough and will be adapted, when needed, instead.
         * [x] Refocus in school problem. -> This is only a decision.
-    * [ ] Consider linking to this in guidelines as inspiration: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
-    * [ ] Define support strategy.
+    * [x] Consider linking to this in guidelines as inspiration: https://www.cs.auckland.ac.nz/~pgut001/pubs/oss_development.pdf
+    * [o] Define support strategy. -> For now an explicit strategy is not required, as there are no support requests. This will be created, when a real need arises for this.
         * [x] Add support page to website and app. -> This is done via the Hub's README.
-        * [ ] Provide way for users to request support.
-        * [ ] No support guarantee etc.
-    * [ ] Signed Windows executables becomes more relevant that way.
+        * [x] Provide way for users to request support. -> The link for support in the README is enough.
+        * [o] No support guarantee etc. 
+    * [x] Signed Windows executables becomes more relevant that way.
       -> Consider this only, when such relevant user are present.
       Note this and add this info to the download link for the GUI.
     * [x] Distribute Linux executables as well. -> This is already provided at the download page.
-    * [ ] Make versioning more relevant for advertisement and signalling to users of software changes.
+    * [x] Make versioning more relevant for advertisement and signalling to users of software changes.
       Consider semantic versioning and year versioning. -> This is not useful for now, as there are no users. Add a task to do this, at the download page, so it is considered, when there are actual users.
-        * [ ] Create project timeline/releases, but without release artifacts.
+        * [x] Create project timeline/releases, but without release artifacts.
     * [x] Advertise the free availability of the online service and downloads.
 * [x] Delete Mac version of App, as it is not working.
 * [ ] Update `BUILD.md`.
     * [ ] Make it easy to set up development via 1 clone and 1 command in an IDE.
     * [ ] Consolidate bin and binr folder.
-* [ ] Link to Codeberg and GitHub in README.
+    * [ ] Build software on Steam Deck, in order to check this.
+* [x] Link to Codeberg in README.
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
