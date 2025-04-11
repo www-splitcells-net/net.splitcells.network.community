@@ -75,6 +75,7 @@ This makes the following possible:
                * [x] `--use-playwright`
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags`
+           * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
