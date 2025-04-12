@@ -75,7 +75,13 @@ This makes the following possible:
                * [x] `--use-playwright`
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags`
-           * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`.
+           * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
+               * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
+               * [ ] Escape single quotes.
+               * [ ] Use a command with only the target ssh user and server, in order to simplify this.
+               * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
+               * [ ] Create a complete reset command of network worker, so that everything can be tested.
+           * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
@@ -108,4 +114,5 @@ This makes the following possible:
     * [ ] Update software stack guidelines.
         * [ ] Remove Python 3 and reason this.
     * [ ] Note overhaul changes in changelog.
-    * [ ] Copy appropriate parts of the task description to the project's documentation. 
+    * [ ] Copy appropriate parts of the task description to the project's documentation.
+    * [ ] Add this task description to the project's documentation.
