@@ -76,7 +76,14 @@ This makes the following possible:
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags`
            * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
+               * [ ] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
+                 in order to simplify folder structure and thereby the administration.
+                   * [ ] Implement this in the Java port. 
+                   * [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.
+                   * [ ] Also note, how namespaces could be done in such a scenario, in order to isolate groups of execution names more explicitly from each other.
+                     This can be used, in order to isolate publicly accessible and privately accessible programs from each other at the same user, just like for meta repos.
                * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
+               * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
                * [ ] Escape single quotes.
                * [ ] Use a command with only the target ssh user and server, in order to simplify this.
                * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
@@ -91,6 +98,7 @@ This makes the following possible:
         * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
     * [ ] Deploy live distro via Java version.
     * [ ] Remove the Python code, when the migration worked for the live distro.
+        * [ ] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`.
 * [ ] Port `net.splitcells.shell` related projects to Java/Maven.
     * [ ] Port `net.splitcells.shell` to Java.
         * [ ] Create Java alternative.
