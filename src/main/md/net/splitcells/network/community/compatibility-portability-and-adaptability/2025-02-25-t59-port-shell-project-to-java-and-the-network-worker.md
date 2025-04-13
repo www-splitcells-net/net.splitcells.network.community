@@ -74,7 +74,7 @@ This makes the following possible:
                * [x] `--dry-run`
                * [x] `--use-playwright`
                * [x] `--auto-configure-cpu-architecture-explicitly`
-               * [x] `.config/net.splitcells.network.worker/execute.podman.flags`
+               * [x] `.config/net.splitcells.network.worker/execute.podman.flags` 
            * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
                * [ ] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
                  in order to simplify folder structure and thereby the administration.
@@ -82,6 +82,8 @@ This makes the following possible:
                    * [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.
                    * [ ] Also note, how namespaces could be done in such a scenario, in order to isolate groups of execution names more explicitly from each other.
                      This can be used, in order to isolate publicly accessible and privately accessible programs from each other at the same user, just like for meta repos.
+                   * [ ] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to read and understand.
+                   * [ ] Safe execution script in target folder just like the Dockerfile and program script.
                * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
                * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
                * [ ] Escape single quotes.
@@ -89,6 +91,7 @@ This makes the following possible:
                * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
                * [ ] Create a complete reset command of network worker, so that everything can be tested.
            * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
+               * [ ] Speed up volume mounting on Podman just like it is done on the live server.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
