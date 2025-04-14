@@ -90,6 +90,9 @@ This makes the following possible:
                * [ ] Use a command with only the target ssh user and server, in order to simplify this.
                * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
                * [ ] Create a complete reset command of network worker, so that everything can be tested.
+               * [ ] Note why distinction between default user config and instance config is being done.
+                   * [ ] Development and running should be possible on one user, in order to simplify administration. Do not require OS administration for simple development task.
+                   * [ ] Remote user config, remote test config and local user are inherently different configs.
            * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
                * [ ] Speed up volume mounting on Podman just like it is done on the live server.
            * [ ] Check syntactical completeness of initial Python to Java port.

@@ -76,10 +76,14 @@
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
 * [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
+* [ ] Deprecate no-code editor.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
 * [ ] Update `About This Site`.
 * [ ] Blog about pause of Cin and new focus.
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
+    * [ ] Comment on no-code editor deprecation.
+    * [ ] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
+    * [ ] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop. 
 * [ ] Use drawn faces, as art on website more. Document in guidelines why and how.
 * [ ] Add true goal to main objectives: many people can work together.
 # Done Tasks
