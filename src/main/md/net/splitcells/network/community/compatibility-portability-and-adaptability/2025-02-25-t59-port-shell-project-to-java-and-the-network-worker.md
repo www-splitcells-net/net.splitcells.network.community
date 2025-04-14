@@ -76,29 +76,30 @@ This makes the following possible:
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags` 
            * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
-               * [ ] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
-                 in order to simplify folder structure and thereby the administration.
-                   * [x] Implement this in the Java port. 
-                   * [x] Implement this in Python port via a new flag for that, in order not break the live server deployment.
-                   * [x] Also note, how namespaces could be done in such a scenario, in order to isolate groups of execution names more explicitly from each other.
-                     This can be used, in order to isolate publicly accessible and privately accessible programs from each other at the same user, just like for meta repos.
-                   * [ ] Output shell execution in correct order. Currently, some logs like `Cloning into 'net.splitcells.network.distro'...` is logged later,
-                     than it is actually happening in relation to other log files.
-                 * [ ] Adjust Volume paths.
+               * [ ] Adjust Volume paths.
                * [ ] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to support, read and understand.
                * [ ] Store execution script in target folder just like the Dockerfile and program script.
-               * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
-               * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
-               * [ ] Escape single quotes.
-               * [ ] Use a command with only the target ssh user and server, in order to simplify this.
-               * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
-               * [ ] Create a complete reset command of network worker, so that everything can be tested.
                * [ ] Note why distinction between default user config and instance config is being done.
                    * [ ] Development and running should be possible on one user, in order to simplify administration. Do not require OS administration for simple development task.
                    * [ ] Remote user config, remote test config and local user are inherently different configs.
+               * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
+               * [ ] Escape single quotes.
+               * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
+               * [ ] Create a complete reset command of network worker, so that everything can be tested.
            * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
+               * [ ] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
+                 in order to simplify folder structure and thereby the administration.
+                   * [x] Implement this in the Java port.
+                   * [x] Implement this in Python port via a new flag for that, in order not break the live server deployment.
+                   * [x] Also note, how namespaces could be done in such a scenario, in order to isolate groups of execution names more explicitly from each other.
+                     This can be used, in order to isolate publicly accessible and privately accessible programs from each other at the same user, just like for meta repos.
+                   * [x] Output shell execution in correct order. Currently, some logs like `Cloning into 'net.splitcells.network.distro'...` is logged later,
+                     than it is actually happening in relation to other log files.
+                   * [ ] The repos are still always cloned.
+                       * [ ] The volumes of the Dockefile are still not updated.
                * [ ] Speed up volume mounting on Podman just like it is done on the live server.
                * [ ] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
+               * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
