@@ -87,7 +87,7 @@ This makes the following possible:
                * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
                * [ ] Create a complete reset command of network worker, so that everything can be tested.
            * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
-               * [ ] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
+               * [x] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
                  in order to simplify folder structure and thereby the administration.
                    * [x] Implement this in the Java port.
                    * [x] Implement this in Python port via a new flag for that, in order not break the live server deployment.
@@ -95,10 +95,10 @@ This makes the following possible:
                      This can be used, in order to isolate publicly accessible and privately accessible programs from each other at the same user, just like for meta repos.
                    * [x] Output shell execution in correct order. Currently, some logs like `Cloning into 'net.splitcells.network.distro'...` is logged later,
                      than it is actually happening in relation to other log files.
-                   * [ ] The repos are still always cloned.
-                       * [ ] The volumes of the Dockefile are still not updated.
-               * [ ] Speed up volume mounting on Podman just like it is done on the live server.
-               * [ ] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
+                   * [x] The repos are still always cloned.
+                       * [x] The volumes of the Dockefile are still not updated.
+               * [x] Speed up volume mounting on Podman just like it is done on the live server.
+               * [x] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
                * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
