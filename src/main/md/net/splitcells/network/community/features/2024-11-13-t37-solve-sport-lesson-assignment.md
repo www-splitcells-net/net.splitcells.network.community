@@ -32,6 +32,7 @@ To make the administration GUI useful an update command of the webserver itself 
             * [ ] Delete `net.splitcells.gel.ui.Editor`.
             * [ ] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
+* [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
 * [ ] Document code editor, as the no-code editor will be deprecated.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.

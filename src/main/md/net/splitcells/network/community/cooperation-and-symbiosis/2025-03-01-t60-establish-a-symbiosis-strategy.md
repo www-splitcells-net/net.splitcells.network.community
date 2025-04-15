@@ -75,15 +75,23 @@
 * [x] Link to Codeberg in README.
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
-* [ ] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable.
-* [ ] Deprecate no-code editor.
+* [o] Integrate symbiosis project into objectives, even though the status of symbiosis is questionable. -> A TODO was added to the objectives, but this project is not mature enough.
+* [x] Deprecate no-code editor and create no-code editor comment document.
+    * [x] No-code and code is not so different, when logic is modelled.
+    * [x] Refocus of efforts and thereby liquidations of features.
+    * [x] In the future start with LSP servers and similar before considering no-code.
+    * [x] Updating code from the server side is possible on code editors as well.
+    * [x] Remove backend code.
+    * [x] Add TODO to code editor for LSP support via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
+      -> This was added to [2024-11-13-t37-solve-sport-lesson-assignment.md](../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
+    * [x] Document focus of network project on providing an IDE for optimizations in the network's objectives.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
 * [ ] Update `About This Site`.
 * [ ] Blog about pause of Cin and new focus.
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
     * [ ] Comment on no-code editor deprecation.
     * [ ] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
-    * [ ] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop. 
+    * [ ] This is the result about thinking, what I would have done, if I would have less timey i.e. RISCV server vs RISCV framework laptop. 
 * [ ] Use drawn faces, as art on website more. Document in guidelines why and how.
 * [ ] Add true goal to main objectives: many people can work together.
 # Done Tasks
