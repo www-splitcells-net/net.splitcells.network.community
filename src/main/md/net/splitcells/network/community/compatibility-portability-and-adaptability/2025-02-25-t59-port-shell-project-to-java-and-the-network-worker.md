@@ -101,6 +101,7 @@ This makes the following possible:
                * [x] Speed up volume mounting on Podman just like it is done on the live server.
                * [x] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
                * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
+               * [x] Build software.
                * [ ] Execute test.
                * [ ] Stabilize Java port regarding script and dockerfile generation.
                * [ ] Commit test results to network log.
