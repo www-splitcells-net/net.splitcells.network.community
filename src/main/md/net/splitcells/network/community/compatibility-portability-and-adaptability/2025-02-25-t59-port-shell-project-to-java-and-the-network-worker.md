@@ -76,8 +76,8 @@ This makes the following possible:
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags` 
            * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
-               * [ ] Adjust Volume paths.
-               * [ ] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to support, read and understand.
+               * [x] Adjust Volume paths.
+               * [x] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to support, read and understand.
                * [ ] Store execution script in target folder just like the Dockerfile and program script.
                * [ ] Note why distinction between default user config and instance config is being done.
                    * [ ] Development and running should be possible on one user, in order to simplify administration. Do not require OS administration for simple development task.
@@ -97,9 +97,14 @@ This makes the following possible:
                      than it is actually happening in relation to other log files.
                    * [x] The repos are still always cloned.
                        * [x] The volumes of the Dockefile are still not updated.
+                   * [x] Ensure that `.m2` is persisted.
                * [x] Speed up volume mounting on Podman just like it is done on the live server.
                * [x] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
                * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
+               * [ ] Execute test.
+               * [ ] Stabilize Java port regarding script and dockerfile generation.
+               * [ ] Commit test results to network log.
+               * [ ] Push network log.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
