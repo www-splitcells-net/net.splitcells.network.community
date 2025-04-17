@@ -116,6 +116,8 @@ This makes the following possible:
     * [ ] Deploy live distro via Java version.
     * [ ] Remove the Python code, when the migration worked for the live distro.
         * [ ] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`.
+* [ ] Port `repo.process`.
+    * [ ] Add flag, in order to parallelize tasks like pulling and pushing.
 * [ ] Port `net.splitcells.shell` related projects to Java/Maven.
     * [ ] Port `net.splitcells.shell` to Java.
         * [ ] Create Java alternative.
