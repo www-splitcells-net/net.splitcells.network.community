@@ -100,12 +100,15 @@ This makes the following possible:
                    * [x] Ensure that `.m2` is persisted.
                * [x] Speed up volume mounting on Podman just like it is done on the live server.
                * [x] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
-               * [ ] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
+               * [x] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
                * [x] Build software.
-               * [ ] Execute test.
+               * [x] Execute tests.
                * [ ] Stabilize Java port regarding script and dockerfile generation.
-               * [ ] Commit test results to network log.
-               * [ ] Push network log.
+               * [x] Commit test results to network log.
+               * [ ] Push network log. -> The commits are pulled by the test triggerer instead, so that access tokens do not have to be stored on each test server for Codeberg.
+           * [ ] Execute remote test without requiring continues connection during the test.
+             Currently, a connection abort stops the remote test as well.
+             This feature was present in the past before the Network Worker existed.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
