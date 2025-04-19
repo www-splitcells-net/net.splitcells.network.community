@@ -106,6 +106,7 @@ This makes the following possible:
                * [ ] Stabilize Java port regarding script and dockerfile generation.
                * [x] Commit test results to network log.
                * [ ] Push network log. -> The commits are pulled by the test triggerer instead, so that access tokens do not have to be stored on each test server for Codeberg.
+               * [ ] Improve logging by stating why something is executed.
            * [ ] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
              This feature was present in the past before the Network Worker existed.
