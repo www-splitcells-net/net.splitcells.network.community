@@ -16,7 +16,15 @@ Make the whole discovery tree traversable via the root node.
 * [x] Optionally check unique Discoverable paths via Discoveries provided by Discoverable.
   Every Discoverable with a none empty Discovery, has a unique discoverable path.
 * [ ] Create a renderer for Discovery elements. See `DiscoveryRenderer`.
-    * [ ] Test it with one element as a proof of concept.
+  -> Add the required functionality to ObjectsMediaRendererI instead of DiscoveryRenderer,
+  as this whole thing is just about the paths.
+  DiscoveryRenderer is deleted.
+    * [o] Implement DiscoveryRendererImpl like ObjectsMediaRendererI.
+    * [o] Test it with one element as a proof of concept.
+    * [o] Enable DiscoveryRendererImpl on website server.
+* [ ] Add optional Rendering via Discovery ObjectsMediaRendererI
+  * [ ] Check if Discovery is present and use its path instead.
+  * [ ] Unit test ObjectsMediaRendererI.
 * [ ] Migrate all API usage to the optional check method.
 * [ ] Make optional check method mandatory.
 * [ ] Convert the unique Discoverable paths check, with an enforcement.

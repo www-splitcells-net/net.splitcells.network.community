@@ -5,11 +5,13 @@
 # Service
 
 * Process status badges.
-* Ensure that test coverage only rises. Currently, at: https://app.codecov.io/gh/www-splitcells-net/net.splitcells.network/tree/master/projects%2Fnet.splitcells.dem%2Fsrc%2Fmain%2Fjava%2Fnet%2Fsplitcells%2Fdem%2Fexecution
 * Execute static code checks.
 
-# Tasks
-
+# Tasks.
+* [ ] Re-enable codecov.io upload via Maven.
+    * [ ] https://github.com/codecov/example-java-maven
+* [ ] Ensure that local test coverage report is correct
+* [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
