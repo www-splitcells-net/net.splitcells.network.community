@@ -15,7 +15,7 @@ Make the whole discovery tree traversable via the root node.
 * [x] Make Discovery tree traversable.
 * [x] Optionally check unique Discoverable paths via Discoveries provided by Discoverable.
   Every Discoverable with a none empty Discovery, has a unique discoverable path.
-* [ ] Create a renderer for Discovery elements. See `DiscoveryRenderer`.
+* [o] Create a renderer for Discovery elements. See `DiscoveryRenderer`.
   -> Add the required functionality to ObjectsMediaRendererI instead of DiscoveryRenderer,
   as this whole thing is just about the paths.
   DiscoveryRenderer is deleted.
