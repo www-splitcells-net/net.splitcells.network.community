@@ -86,7 +86,7 @@ This makes the following possible:
                * [ ] Escape single quotes.
                * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
                * [ ] Create a complete reset command of network worker, so that everything can be tested.
-           * [ ] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
+           * [x] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
                * [x] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
                  in order to simplify folder structure and thereby the administration.
                    * [x] Implement this in the Java port.
@@ -100,14 +100,20 @@ This makes the following possible:
                    * [x] Ensure that `.m2` is persisted.
                * [x] Speed up volume mounting on Podman just like it is done on the live server.
                * [x] Reset repo by default, in order to avoid pull conflicts or exit if pull does not work.
-               * [x] Remote bootstrapping should be done via Java port as well, but the bootstrap script itself stays a shell script.
                * [x] Build software.
                * [x] Execute tests.
-               * [ ] Stabilize Java port regarding script and dockerfile generation.
                * [x] Commit test results to network log.
                * [x] Push network log. -> The commits are pulled by the test triggerer instead, so that access tokens do not have to be stored on each test server for Codeberg.
-               * [ ] Fix the test's hostname written into the Network Log. It is currently incorrect, as it is the hostname of the Podman container, which is a random string. This needs to be parsed from the network worker arguments.
-               * [ ] Improve logging by stating why something is executed.
+               * [x] Fix the test's hostname written into the Network Log. It is currently incorrect, as it is the hostname of the Podman container, which is a random string. This needs to be parsed from the network worker arguments.
+               * [x] Improve logging by stating why something is executed.
+               * [x] Remote bootstrapping should be done via the Java port as well, but the bootstrap script itself stays a shell script.
+               * [x] Move bootstrapping execution into container, in order to minimize initial server requirements.
+                 -> The bootstrapping was already executed inside a container, the initial bootstrapping just needs to be moved into the Java prot.
+                 See `Remote bootstrapping should be done via the Java port as well, but the bootstrap script itself stays a shell script.`.
+               * [x] Stabilize Java port regarding script and dockerfile generation.
+                   * [x] Do not use muteable variables.
+                   * [x] Generate one execution script, if possible, order to simplify execution.
+                   * [x] Split local and remote execution into 2 distinct scripts.
            * [ ] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
              This feature was present in the past before the Network Worker existed.

@@ -10,19 +10,20 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Reset the git repos, in order to prevent an unexpected state.
-* [ ] Reset .m2 folder, in order to prevent an unexpected state.
 * [ ] Sometimes submitting an optimization does not work.
     * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
         * [ ] Add a test for submitting optimization to the daily Codeberg CI.
         * [ ] Create test for lookup manager.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
+        * [ ] Try restarting Playwright instance.
+        * [ ] Maybe an error in the test causes problems for Playwright.
         * [ ] Maybe the problem is that optimization requests are being queue, but not processed yet.
           Thereby, the queue grows until something breaks.
         * [ ] Starting Firefox multiple times causes problems. See Codeberg.
         * [x] Is Playwright present in container in the correct version? -> Yes
         * [ ] Create only one Playwright servers, that has multiple tabs per HtmlClient in Java.
-* [ ] Create UI tester for text editor as well, in order to test both.
+* [ ] Reset the git repos, in order to prevent an unexpected state.
+* [ ] Reset .m2 folder, in order to prevent an unexpected state.
 * [ ] Execute more test at once, in order to have a better load test on production.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
@@ -107,6 +108,7 @@
 * [ ] Create 404 page for web server.
 * [ ] Consider automatically sending a mail, when an error happens.
 ## Done Tasks
+* [x] Create UI tester for text editor as well, in order to test both.
 * [o] Browser tests are not always working. Log message: `Target page, context or browser has been closed`
   -> The warning log `Closing HTML clients is implemented, but is not actually expected to be used in production.` with its stack-trace was implemented and deployed in order to find the reason for this error.
   For now this task is closed, as this only appears sometimes.
