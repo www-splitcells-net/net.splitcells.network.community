@@ -125,6 +125,7 @@ This makes the following possible:
            * [ ] Create unit tests for the Java based Network worker execution.
            * [ ] Synchronize Playwright version in POM and Dockerfile.
     * [ ] Persist bin folder.
+    * [ ] Do not pass arguments in remote execution scripts, that rely on default values in order to improve the script overview.
     * [ ] Provide a way in order to bootstrap and test as one command instead of 2.
     * [ ] Create a script to deploy command on every computer.
     * [ ] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
