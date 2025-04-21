@@ -78,14 +78,15 @@ This makes the following possible:
            * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
                * [x] Adjust Volume paths.
                * [x] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to support, read and understand.
-               * [ ] Store execution script in target folder just like the Dockerfile and program script.
-               * [ ] Note why distinction between default user config and instance config is being done.
-                   * [ ] Development and running should be possible on one user, in order to simplify administration. Do not require OS administration for simple development task.
-                   * [ ] Remote user config, remote test config and local user are inherently different configs.
-               * [ ] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER.
-               * [ ] Escape single quotes.
-               * [ ] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible.
+               * [o] Store execution script in target folder just like the Dockerfile and program script. -> Logging is enough for now.
+               * [x] Note why distinction between default user config and instance config is being done.
+                   * [x] Development and running should be possible on one user, in order to simplify administration. Do not require OS administration for simple development task.
+                   * [x] Remote user config, remote test config and local user are inherently different configs.
+               * [o] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER. -> Everything is done in the container, so this is not needed.
+               * [x] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible. -> Shell, git, Java and Maven is required.
                * [ ] Create a complete reset command of network worker, so that everything can be tested.
+                   * [x] Git
+                   * [ ] Delete .m2 via `rm -rf ~/.local/state/net.splitcells.network.worker/.m2/repository/net/splitcells/`
            * [x] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
                * [x] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
                  in order to simplify folder structure and thereby the administration.
@@ -121,12 +122,15 @@ This makes the following possible:
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
            * [ ] Synchronize Playwright version in POM and Dockerfile.
+    * [ ] Persist bin folder.
+    * [ ] Provide a way in order to bootstrap and test as one command instead of 2.
+    * [ ] Create a script to deploy command on every computer.
     * [ ] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
         * [ ] Make WorkerExecutionMain working.
         * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
     * [ ] Deploy live distro via Java version.
     * [ ] Remove the Python code, when the migration worked for the live distro.
-        * [ ] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`.
+        * [ ] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`. 
 * [ ] Port `repo.process`.
     * [ ] Add flag, in order to parallelize tasks like pulling and pushing.
 * [ ] Port `net.splitcells.shell` related projects to Java/Maven.
