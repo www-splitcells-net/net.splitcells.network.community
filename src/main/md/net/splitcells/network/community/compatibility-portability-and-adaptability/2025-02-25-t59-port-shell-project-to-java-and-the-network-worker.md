@@ -75,7 +75,7 @@ This makes the following possible:
                * [x] `--use-playwright`
                * [x] `--auto-configure-cpu-architecture-explicitly`
                * [x] `.config/net.splitcells.network.worker/execute.podman.flags` 
-           * [ ] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
+           * [x] Make testAtRemote work locally via `.splitcells.martins.avots.distro/bin/test`, but only make client side based on Java.
                * [x] Adjust Volume paths.
                * [x] Make `NetworkWorkerTest#testTestAtRemote()` generate multi line scripts, as these are otherwise hard to support, read and understand.
                * [o] Store execution script in target folder just like the Dockerfile and program script. -> Logging is enough for now.
@@ -84,9 +84,11 @@ This makes the following possible:
                    * [x] Remote user config, remote test config and local user are inherently different configs.
                * [o] Use different `net.splitcell.shell` config folder on developer computer. See NET_SPLITCELLS_SHELL_CONFIG_FOLDER. -> Everything is done in the container, so this is not needed.
                * [x] Note that only `worker.bootstrap` is allowed to be a bash script. `worker.bootstrap` needs to be a portable as possible with as minimal and small OS dependencies as possible. -> Shell, git, Java and Maven is required.
-               * [ ] Create a complete reset command of network worker, so that everything can be tested.
+               * [x] Create a complete reset command of network worker, so that everything can be tested.
                    * [x] Git
-                   * [ ] Delete .m2 via `rm -rf ~/.local/state/net.splitcells.network.worker/.m2/repository/net/splitcells/`
+                   * [x] Delete .m2 via `rm -rf ~/.local/state/net.splitcells.network.worker/.m2/repository/net/splitcells/`
+                     -> This is only done during the build.
+               * [x] Correct initial Network Log pull.
            * [x] Make testAtRemote work remotely on Raspberry Pi via `.splitcells.martins.avots.distro/bin/test`.
                * [x] Do not nest user folders via Podman aka `./.local/state/net.splitcells.martins.avots.distro/.local/state/net.splitcells.martins.avots.distro.LiveDistro/logs/`,
                  in order to simplify folder structure and thereby the administration.
