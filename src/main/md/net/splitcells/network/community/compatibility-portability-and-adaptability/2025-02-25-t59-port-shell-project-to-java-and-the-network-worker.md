@@ -119,7 +119,7 @@ This makes the following possible:
                    * [x] Split local and remote execution into 2 distinct scripts.
            * [ ] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
-             This feature was present in the past before the Network Worker existed.
+             This feature was present in the past before the Network Worker existed and was used to execute long-running tasks on slow computers during the night.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
