@@ -107,6 +107,7 @@
 * [ ] Make setup script for live server open source as well.
 * [ ] Create 404 page for web server.
 * [ ] Consider automatically sending a mail, when an error happens.
+* [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
 * [x] Create UI tester for text editor as well, in order to test both.
 * [o] Browser tests are not always working. Log message: `Target page, context or browser has been closed`
