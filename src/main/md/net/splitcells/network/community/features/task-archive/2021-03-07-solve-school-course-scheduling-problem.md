@@ -1,7 +1,14 @@
 # Solve school course scheduling problem
 * [This is the original issue](https://github.com/www-splitcells-net/net.splitcells.network/issues/8)
 * This is ticket is mainly used in order to improve constraint based repair and make the whole software package more usable for developers.
-* [ ] Do [make constraint multi threading usable](2024-08-27-make-constraint-multi-threading-useable.md).
+* [ ] Create better programming grammar for the code editor.
+    * [ ] Simplified function call chain syntax.
+    * [ ] Simplified no argument function call.
+    * [ ] Simplified one argument function call.
+    * [ ] Pipe operator for function chain syntax for none objects with support for pipe element variable.
+    * [ ] In the future any class could override the standard math operators, but no custom operators would be allowed. 
+    * [ ] Create overview image of programming language syntax, in order to be able to quickly get the gist and paradigm of the grammar.
+* [o] Do [make constraint multi threading usable](2024-08-27-make-constraint-multi-threading-useable.md). -> This is not relevant for now.
 * [ ] Make the network distribution an optimization platform where the problems can also be stored on the server can be interacted with.
   A user authorization system is needed for this.
     * [ ] Persist the users optimization problems via an optimization network editor.
