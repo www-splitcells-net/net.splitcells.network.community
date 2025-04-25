@@ -69,8 +69,8 @@
     * [x] Advertise the free availability of the online service and downloads.
 * [x] Delete Mac version of App, as it is not working.
 * [ ] Update `BUILD.md`.
-    * [ ] Make it easy to set up development via 1 clone and 1 command in an IDE.
-    * [ ] Consolidate bin and binr folder.
+    * [x] Make it easy to set up development via 1 clone and 1 command in an IDE.
+    * [x] Consolidate bin and binr folder.
       -> Do not do this as the advantage of a dedicated folder for such, is the fact, that IDE usable commands are not hidden along not IDE usable commands in the bin folder.
       -> Commands should check, if they are executed in the bin folder or in the project folder and act accordingly.
     * [ ] Build software on Steam Deck, in order to check this.
