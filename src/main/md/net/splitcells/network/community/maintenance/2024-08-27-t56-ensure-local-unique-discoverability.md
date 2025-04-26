@@ -3,9 +3,11 @@
 # Task Description
 Every net.splitcells.dem.object.Discoverable needs a unique path,
 as otherwise this will only cause website server issues during request routing.
-Do this by adding a manager attribute to every Discoverable,
+The existing Discoverable does not enforce anything.
+Enforce this by adding a manager attribute to every Discoverable,
 that manages all complex actions and Discoverable constructions.
-Make the whole discovery tree traversable via the root node.
+Make the whole discovery tree traversable via the root node,
+in order support querying the tree.
 # Tasks
 * [x] Create Discovery interface as a manager for each Discoverable.
 * [x] Implement Discovery interface.
@@ -23,8 +25,10 @@ Make the whole discovery tree traversable via the root node.
     * [o] Test it with one element as a proof of concept.
     * [o] Enable DiscoveryRendererImpl on website server.
 * [ ] Add optional Rendering via Discovery ObjectsMediaRendererI
-  * [ ] Check if Discovery is present and use its path instead.
+  * [x] Check if Discovery is present and use its path instead.
+  * [ ] Implement Discovery for MetaCounter, so it can be used for the unit test.
   * [ ] Unit test ObjectsMediaRendererI.
+* [ ] Deprecate Discoverable and `Discoverable#path`.
 * [ ] Migrate all API usage to the optional check method.
 * [ ] Make optional check method mandatory.
 * [ ] Convert the unique Discoverable paths check, with an enforcement.
