@@ -120,6 +120,11 @@ This makes the following possible:
            * [ ] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
              This feature was present in the past before the Network Worker existed and was used to execute long-running tasks on slow computers during the night.
+               * [ ] Use old implementation as a help for that. See `deploy.build.at`. 
+               * [ ] Create a temporary user service for the one time task.
+                 Choose its name, so that every new service has a unique name like `[execution-name]-[date]`.
+                 This avoids, that an execution with an error, does not block the next execution.
+               * [ ] Look up, how to delete services, that exited with an error.
            * [ ] Check syntactical completeness of initial Python to Java port.
            * [ ] Create Dockerfile.
            * [ ] Create unit tests for the Java based Network worker execution.
@@ -161,3 +166,76 @@ This makes the following possible:
     * [ ] Note overhaul changes in changelog.
     * [ ] Copy appropriate parts of the task description to the project's documentation.
     * [ ] Add this task description to the project's documentation.
+# deploy.build.at
+````
+#!/usr/bin/env python3
+"""
+SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
+SPDX-FileCopyrightText: Contributors To The `net.splitcells.*` Projects
+
+Deploys a build of this repository to a server,
+retrieves execution data and integrates these into the network log.
+
+TODO Use user services (`~/.config/systemd/user/*`) in order to avoid root privileges for deployment on the target server.
+"""
+
+__author__ = "Mārtiņš Avots"
+__authors__ = ["and other"]
+__copyright__ = "Copyright 2022"
+__license__ = "EPL-2.0 OR GPL-2.0-or-later"
+
+import argparse
+import subprocess
+import logging
+from os import environ
+
+if __name__ == '__main__':
+	if environ.get('log_level') == 'debug':
+		logging.basicConfig(level=logging.DEBUG)
+	argsParser = argparse.ArgumentParser(
+		description="""Deploys the build process to a different server via a push mechanism.
+This is useful, when the server is not always online or does not have access to a server hosting the repos.
+
+Steps required on the target computer to set this up:
+* The computer deploying the build process needs ssh access to the target server.
+* Upload all repositories to the target server.
+  This can be done via sshfs mounts or by cloning the repos from some other servers to the target server.
+* Install all required software on the target server.
+  This is usually Python 3 and Java 21.
+* Configure git via `git config --global user.email && git config --global user.name`.
+* Make sure that `~/.profile` exists and is executable.
+  The file is allowed to be empty.
+  Edit `~/.profile` and add required settings for the server (i.e. extending the PATH).
+
+`journalctl --follow --unit build` can be used, in order to follow the log of the service in real time.
+`systemctl status build` can be used, in order to check the state of the deployment.
+Use `cat ~/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.log/target/test.via.network.worker.log` in order to view the build logs written to a file.
+
+The main reason for ". ~/bin/net.splitcells.os.state.interface.commands.managed/command.managed.export.bin" is the fact,
+that back then commands provided by the export where used by "./bin/test.via.network.worker".
+
+TODO Execute Build in pod instead. See "live.splitcells.net".
+""")
+	argsParser.add_argument('--target-server', dest='targetServer', type = str, required = True)
+	argsParser.add_argument('--user', type = str, required = True)
+	argsParser.add_argument('--build-command', dest='buildCommand', type = str, required = False, default = './bin/test.via.network.worker')
+	parsedArgs = argsParser.parse_args()
+	buildScript = """
+		git push {0}:/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network master:net-splitcells-martins-avots-connection
+		cd ../net.splitcells.network.bom
+		git push {0}:/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.bom master:net-splitcells-martins-avots-connection
+		cd ../net.splitcells.network
+		ssh -t {0} sudo systemctl reset-failed # Ensure, that service instance of previous run is not present, in case the previous run failed.
+		ssh -t {0} systemctl is-active build || ssh -t {0} sudo systemd-run --uid={1} --unit=build --working-directory='/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.bom' 'sh -c "git merge net-splitcells-martins-avots-connection && cd ../net.splitcells.network && git merge net-splitcells-martins-avots-connection && . ~/.profile && . ~/bin/net.splitcells.os.state.interface.commands.managed/command.managed.export.bin && {2}"'
+		cd ../net.splitcells.network.log/
+		if git ls-remote --heads {0}:/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.log master; then
+			git pull --ff {0}:/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.log master
+		else
+			git pull --ff {0}:/home/{1}/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network.log main
+		fi
+		""".format(parsedArgs.targetServer, parsedArgs.user, parsedArgs.buildCommand)
+	logging.debug('Executing: ' + buildScript)
+	returnCode = subprocess.call(buildScript, shell='True')
+	if returnCode != 0:
+		exit(1)
+````

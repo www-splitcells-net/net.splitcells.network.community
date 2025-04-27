@@ -30,7 +30,7 @@ in order support querying the tree.
   * [ ] Unit test ObjectsMediaRendererI.
 * [ ] Deprecate Discoverable and `Discoverable#path`.
 * [ ] Migrate all API usage to the optional check method.
-* [ ] Make optional check method mandatory.
+* [ ] Make optional check method mandatory by setting `Discoveries#ENFORCE_PATH_IDENTITY` to true.
 * [ ] Convert the unique Discoverable paths check, with an enforcement.
 * [ ] Remove Discoverable construction without enforcement.
 * [ ] Update Network objectives at `projects/net.splitcells.network/src/main/xml/net/splitcells/network/objectives.xml`,
