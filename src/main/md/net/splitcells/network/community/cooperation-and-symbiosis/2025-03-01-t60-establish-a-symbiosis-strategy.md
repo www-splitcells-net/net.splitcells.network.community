@@ -73,7 +73,8 @@
     * [x] Consolidate bin and binr folder.
       -> Do not do this as the advantage of a dedicated folder for such, is the fact, that IDE usable commands are not hidden along not IDE usable commands in the bin folder.
       -> Commands should check, if they are executed in the bin folder or in the project folder and act accordingly.
-    * [ ] Build software on Steam Deck, in order to check this.
+    * [x] Build software on Steam Deck, in order to check this. -> Building the software on a unprepared computer, is good enough for testing purposes.
+    * [ ] Fix README links and their respective docs to build instructions.
 * [x] Link to Codeberg in README.
 * [x] Improve Hub Readme.
 * [x] Consider creating pseudo none developer news. -> Social media is enough for that, right now.
@@ -88,14 +89,23 @@
       -> This was added to [2024-11-13-t37-solve-sport-lesson-assignment.md](../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
     * [x] Document focus of network project on providing an IDE for optimizations in the network's objectives.
 * [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
-* [ ] Update `About This Site`.
+* [x] Update `About This Site`.
+    * [x] Master Thesis
+    * [x] After Master Thesis
+    * [x] Hetzner Deployment
+    * [x] Symbiosis
 * [ ] Blog about pause of Cin and new focus.
+    * [ ] Feature set restriction in the past was not strict enough.
     * [ ] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
     * [ ] Comment on no-code editor deprecation.
     * [ ] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
-    * [ ] This is the result about thinking, what I would have done, if I would have less timey i.e. RISCV server vs RISCV framework laptop. 
-* [ ] Use drawn faces, as art on website more. Document in guidelines why and how.
-* [ ] Add true goal to main objectives: many people can work together.
+    * [ ] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop.
+      I noticed, that I am kind of wasting time.
+    * [ ] The weekly support tasks are ok, even though there are too many active ones.
+    * [ ] Clean up history document and link to this blog entry.
+    * [ ] Link to about this sie from history document.
+* [ ] Add true goal to main objectives: The project's relationship to the public is unclear,
+  but stays an unresolved issue.
 # Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.

@@ -7,19 +7,16 @@
 * The starting point of the guidelines is:
     * https://splitcells.net/net/splitcells/network/guidelines/index.html
     * http://localhost:8443/net/splitcells/network/guidelines/index.html
+* Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
+  * [ ] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.
 * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
 * Consider Documentation from point of a user
 * Consider Documentation from point of a developer
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
 # Tasks
-* [ ] Work on `inherently-broken-and-rotten-by-design.xml`.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
-* [ ] Make `About This Site` more complete.
-  * [ ] Master Thesis
-  * [ ] After Master Thesis
-  * [ ] Hetzner Deployment
 * [ ] Make code viewer nice.
 * [ ] Reduce background shadows for images, in order to reduce noise. 
 * [ ] Create/improve styling guidelines.
