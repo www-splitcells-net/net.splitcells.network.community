@@ -11,7 +11,7 @@
 * Test legalities and privacy policy. 
 ## Open Tasks
 * [ ] Sometimes submitting an optimization does not work.
-    * [ ] Avoid XSL errors in systemd logs.
+    * [x] Avoid XSL errors in systemd logs.
     * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
         * [ ] Add a test for submitting optimization to the daily Codeberg CI.
         * [ ] Create test for lookup manager.
