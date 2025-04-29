@@ -88,7 +88,8 @@
     * [x] Add TODO to code editor for LSP support via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
       -> This was added to [2024-11-13-t37-solve-sport-lesson-assignment.md](../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
     * [x] Document focus of network project on providing an IDE for optimizations in the network's objectives.
-* [ ] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
+* [x] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
+* [ ] Publish guidelines on static website and tweet about it.
 * [x] Update `About This Site`.
     * [x] Master Thesis
     * [x] After Master Thesis

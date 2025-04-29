@@ -111,6 +111,8 @@ Projects that are being worked cyclically, and probably will never be finished.
 # Task Description
 # Service Tasks
 [This is a list of tasks, that are executed cyclicly.]
+# Acceptance Note
+[States how the project ended.]
 # Tasks
 [Open and Closed Tasks]
 
