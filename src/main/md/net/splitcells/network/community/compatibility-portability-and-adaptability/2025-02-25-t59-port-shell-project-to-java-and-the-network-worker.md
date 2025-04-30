@@ -120,7 +120,7 @@ This makes the following possible:
            * [ ] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
              This feature was present in the past before the Network Worker existed and was used to execute long-running tasks on slow computers during the night.
-               * [ ] Use old implementation as a help for that. See `deploy.build.at`. 
+               * [o] Use old implementation as a help for that. See `deploy.build.at`. -> Create an ordinary user service instead, as this does not require root rights.
                * [ ] Create a temporary user service for the one time task.
                  Choose its name, so that every new service has a unique name like `[execution-name]-[date]`.
                  This avoids, that an execution with an error, does not block the next execution.
