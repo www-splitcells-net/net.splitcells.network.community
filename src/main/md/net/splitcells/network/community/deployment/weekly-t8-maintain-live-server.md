@@ -10,23 +10,25 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Sometimes submitting an optimization does not work.
+* [ ] Playwright based test sometime do nothing.
     * [x] Avoid XSL errors in systemd logs.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
-        * [ ] For each log message, also log its thread name.
+        * [x] Minimize Systemd logs, so that Playwright errors can be found there. -> No Playwright errors are outputed to the standard out and error anymore 
         * [ ] Run program in remote debug mode.
             * [ ] Add new JVM parameter `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:8000`.
             * [ ] Forward port of container to host machine, but don't make the port publicly available.
             * [ ] Create command to forward the liver server debug port to local machine over SSH.
+        * [ ] For each log message, also log its thread name.
         * [ ] Try restarting Playwright instance daily.
-        * [ ] Maybe an error in the test causes problems for Playwright.
+        * [x] Maybe an error in the test causes problems for Playwright. -> According to the logs, errors are recovered. 
         * [x] Maybe the problem is that optimization requests are being queue, but not processed yet.
           Thereby, the queue grows until something breaks. -> This does not seem to be the case.
         * [x] Is Playwright present in container in the correct version? -> Yes
-        * [ ] Create only one Playwright servers, that has multiple tabs per HtmlClient in Java. 
+        * [x] Create only one Playwright server, that one browser per HtmlClient in Java.
 * [ ] Reset the git repos, in order to prevent an unexpected state.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
+* [ ] Sometimes submitting an optimization does not work.
 * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
     * [ ] Add a test for submitting optimization to the daily Codeberg CI.
     * [ ] Create test for lookup manager.
