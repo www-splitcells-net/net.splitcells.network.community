@@ -12,27 +12,33 @@
 ## Open Tasks
 * [ ] Sometimes submitting an optimization does not work.
     * [x] Avoid XSL errors in systemd logs.
-    * [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
-        * [ ] Add a test for submitting optimization to the daily Codeberg CI.
-        * [ ] Create test for lookup manager.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
-        * [ ] Try restarting Playwright instance.
+        * [ ] For each log message, also log its thread name.
+        * [ ] Run program in remote debug mode.
+            * [ ] Add new JVM parameter `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:8000`.
+            * [ ] Forward port of container to host machine, but don't make the port publicly available.
+            * [ ] Create command to forward the liver server debug port to local machine over SSH.
+        * [ ] Try restarting Playwright instance daily.
         * [ ] Maybe an error in the test causes problems for Playwright.
-        * [ ] Maybe the problem is that optimization requests are being queue, but not processed yet.
-          Thereby, the queue grows until something breaks.
-        * [ ] Starting Firefox multiple times causes problems. See Codeberg.
+        * [x] Maybe the problem is that optimization requests are being queue, but not processed yet.
+          Thereby, the queue grows until something breaks. -> This does not seem to be the case.
         * [x] Is Playwright present in container in the correct version? -> Yes
-        * [ ] Create only one Playwright servers, that has multiple tabs per HtmlClient in Java.
+        * [ ] Create only one Playwright servers, that has multiple tabs per HtmlClient in Java. 
 * [ ] Reset the git repos, in order to prevent an unexpected state.
-* [ ] Reset .m2 folder, in order to prevent an unexpected state.
-* [ ] Execute more test at once, in order to have a better load test on production.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
+* [ ] This was caused by a bug in the LookupManager, when the persisted lookup got enabled.
+    * [ ] Add a test for submitting optimization to the daily Codeberg CI.
+    * [ ] Create test for lookup manager.
+* [ ] Create an admin page, where all distinct errors can be viewed.
+    * [ ] Add command to delete 1 error from the view.
+* [ ] Make logs smaller.
+* [ ] Reset .m2 folder, in order to prevent an unexpected state.
 * [ ] Create test workers like htmlClient, but without a browser, because currently the browser tests seem to be kind of unreliable.
   The reason for that, is that something goes wrong after a while in the Playwright integration.
   There always new problems and tests
     * [ ] Document the goal of non GUI test workers.
-    * [ ] Consider HTML/Javascript client written purely in Java as well.
+    * [ ] Consider HTML/Javascript client written purely in Java as well, in order to avoid the problems with Playwright.
     * [ ] For this the ProjectsRenderer needs to be a Dem Option.
         * [x] Create ProjectsRendererOption.
         * [ ] Initialize at least, when the Live Distro or its Dev is run.
@@ -110,6 +116,7 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] Execute more test at once, in order to have a better load test on production.
 * [x] Create UI tester for text editor as well, in order to test both.
 * [o] Browser tests are not always working. Log message: `Target page, context or browser has been closed`
   -> The warning log `Closing HTML clients is implemented, but is not actually expected to be used in production.` with its stack-trace was implemented and deployed in order to find the reason for this error.
