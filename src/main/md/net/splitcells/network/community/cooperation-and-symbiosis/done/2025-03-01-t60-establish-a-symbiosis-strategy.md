@@ -1,5 +1,8 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
+# Task Description
+Clean up and update documents and strategy regarding public,
+so the current direction is more clear.
 # Tasks
 * [x] Let the front menu lead the user to interesting things more clearly. 
     * [x] Make the global changelog more generally usable. -> This new system is called notification queue.
