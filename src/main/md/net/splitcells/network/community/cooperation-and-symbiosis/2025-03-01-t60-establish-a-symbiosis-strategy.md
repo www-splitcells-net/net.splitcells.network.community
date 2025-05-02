@@ -1,6 +1,6 @@
 # Establish a symbiosis strategy.
 * Issue number: [\#60](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/60)
-# Task Description
+# Tasks
 * [x] Let the front menu lead the user to interesting things more clearly. 
     * [x] Make the global changelog more generally usable. -> This new system is called notification queue.
         * [x] Make notifications page available in the website's layout. This seems to be a bug.
@@ -89,7 +89,7 @@
       -> This was added to [2024-11-13-t37-solve-sport-lesson-assignment.md](../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
     * [x] Document focus of network project on providing an IDE for optimizations in the network's objectives.
 * [x] Finish guidelines: net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.xml
-* [ ] Publish guidelines on static website and tweet about it.
+* [x] Publish guidelines on static website and tweet about it.
 * [x] Update `About This Site`.
     * [x] Master Thesis
     * [x] After Master Thesis
@@ -106,9 +106,8 @@
     * [x] The weekly support tasks are ok, even though there are too many active ones.
     * [x] Clean up history document and link to this blog entry.
     * [x] Link to about this sie from history document.
-* [ ] Add true goal to main objectives: The project's relationship to the public is unclear,
+* [x] Add true goal to main objectives: The project's relationship to the public is unclear,
   but stays an unresolved issue.
-# Done Tasks
 * [x] Add project advertisement text in secondary column of front menu.
     * [x] Put there a shortened version of the README.
     * [x] Improve the project description in the README.

@@ -1,4 +1,4 @@
-# Consolidating the project's focus.
+# Consolidating the project's focus
 > It is essential to understand, what is really important for oneself.
  
 One day I woke up and thought, that given the time frame,
