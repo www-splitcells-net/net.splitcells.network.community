@@ -101,9 +101,9 @@
     * [x] Comment on no-code editor deprecation.
     * [x] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
       The aim is to create an optimization IDE.
-    * [ ] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop.
+    * [x] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop.
       I noticed, that I am kind of wasting time.
-    * [ ] The weekly support tasks are ok, even though there are too many active ones.
+    * [x] The weekly support tasks are ok, even though there are too many active ones.
     * [ ] Clean up history document and link to this blog entry.
     * [ ] Link to about this sie from history document.
 * [ ] Add true goal to main objectives: The project's relationship to the public is unclear,
