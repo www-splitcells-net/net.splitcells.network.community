@@ -3,6 +3,12 @@
   in order to ease the documentation of the programming language
   by avoiding or minimizing documentation regarding the language's syntax.
 * [\#24](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/24) is the issue.
+# Acceptance Note
+The no-code editor was deleted, because it was basically providing the same-ish functionality as the code editor
+without bringing something new to the table.
+The ease of use of the no-code editor, turned out to not be that useful,
+as people that cannot learn to code probably won't define their own optimization problems.
+See ["Consolidating the project's focus"](../blog/articles/2025-04-29-consolidating-the-projects-focus.md) for more details.
 # Tasks
 * [x] Create HTML data mockup.
 * [x] Create backend language based on mockup.
