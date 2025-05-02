@@ -99,7 +99,7 @@
     * [x] Feature set restriction in the past was not strict enough.
     * [x] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
     * [x] Comment on no-code editor deprecation.
-    * [ ] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
+    * [x] Focus on minimal not strictly required features like a code editor AND a no-code editor aka. lean development.
       The aim is to create an optimization IDE.
     * [ ] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop.
       I noticed, that I am kind of wasting time.

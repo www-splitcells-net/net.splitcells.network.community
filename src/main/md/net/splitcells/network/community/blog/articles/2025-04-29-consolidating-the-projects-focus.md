@@ -1,6 +1,5 @@
 # Consolidating the project's focus.
 > It is essential to understand, what is really important for oneself.
-
 2021 I limited the software's functionality, in order to create a first release.
 Over time a too wide feature creep started.
 Instead of finishing the basics regarding the school scheduling,
@@ -22,3 +21,10 @@ I also cancelled the project of providing a scheduler for schools in real life,
 as coordinating such a project with schools  would require a lot of time and resources.
 Furthermore, I would first have to find a fitting school and
 the more I think about it, the more this seems to be out of scope for the Network project for now.
+
+Instead, I am focusing on creating a proper optimization IDE and solving the advanced school scheduling problems.
+The optimization IDE aka code editor is required,
+so users can properly model the advanced school scheduling problems without using Java and Maven.
+The goal is to not just enable software developers to use the program,
+but to make the platform usable for domain experts, too.
+Only after this is, the Crisis Network will be attempted.
