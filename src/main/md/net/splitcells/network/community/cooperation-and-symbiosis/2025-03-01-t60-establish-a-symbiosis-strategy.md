@@ -95,7 +95,7 @@
     * [x] After Master Thesis
     * [x] Hetzner Deployment
     * [x] Symbiosis
-* [ ] Blog about pause of Cin and new focus.
+* [x] Blog about pause of Cin and new focus.
     * [x] Feature set restriction in the past was not strict enough.
     * [x] Cancel the school project and reason its cancellation. Also, update Network objectives accordingly.
     * [x] Comment on no-code editor deprecation.
@@ -104,8 +104,8 @@
     * [x] This is the result about thinking, what I would have done, if I would have less time i.e. RISCV server vs RISCV framework laptop.
       I noticed, that I am kind of wasting time.
     * [x] The weekly support tasks are ok, even though there are too many active ones.
-    * [ ] Clean up history document and link to this blog entry.
-    * [ ] Link to about this sie from history document.
+    * [x] Clean up history document and link to this blog entry.
+    * [x] Link to about this sie from history document.
 * [ ] Add true goal to main objectives: The project's relationship to the public is unclear,
   but stays an unresolved issue.
 # Done Tasks
