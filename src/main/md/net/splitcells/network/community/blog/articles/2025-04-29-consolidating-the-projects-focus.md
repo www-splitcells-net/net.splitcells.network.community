@@ -1,5 +1,6 @@
 # Consolidating the project's focus.
 > It is essential to understand, what is really important for oneself.
+
 2021 I limited the software's functionality, in order to create a first release.
 Over time a too wide feature creep started.
 Instead of finishing the basics regarding the school scheduling,
