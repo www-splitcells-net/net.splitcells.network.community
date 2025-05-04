@@ -13,10 +13,9 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
-* [ ] Blog why the Cin project is now a low priority feature project.
-* [ ] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
+    * [ ] Create a name for the language and document it. -> There is already a programming langauge named Gel, so let's name it Geal instead.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
         * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Create dedicated Gel editor project, that replaces the Sep project.
@@ -33,8 +32,9 @@ To make the administration GUI useful an update command of the webserver itself 
             * [ ] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
-* [ ] Document code editor, as the no-code editor will be deprecated.
+* [ ] Document code editor.
 * [ ] Check sport lesson assignment model.
+* [ ] Translate Java based lesson assignment model to the new programming language.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
@@ -133,3 +133,6 @@ To make the administration GUI useful an update command of the webserver itself 
     * [o] Create picture depicting an architectural overview of the security system.
       -> The authentication, authorization and access control API seems to be good enough.
     * [x] Deploy this feature to production.
+# Done Tasks
+* [o] Blog why the Cin project is now a low priority feature project.
+* [o] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first. -> The no-code editor is obsolete and deleted.

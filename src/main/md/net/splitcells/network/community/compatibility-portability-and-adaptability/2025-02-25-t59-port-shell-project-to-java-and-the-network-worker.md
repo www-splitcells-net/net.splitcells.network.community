@@ -56,6 +56,15 @@ This makes the following possible:
 * Simplify writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write and execute for these.
 * Make it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Tasks
+* [ ] Python is important for complex scripts and therefore Python should not be deprecated.
+  If Python is not deprecated, there is no need for a Java implementation of worker execute and
+    * [ ] Update this project accordingly.
+    * [ ] Undo deprecation of Python.
+    * [ ] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
+      Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
+    * [ ] Add self test to worker execute, that is executed for each worker execute call.
+      This makes sure, that any code change to the worker execution does not break it.
+* [ ] Use more portable parameter substitution via `${variable-name}`.
 * [ ] Port 'net.splitcells.network's Worker commands to Java.
     * [ ] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
