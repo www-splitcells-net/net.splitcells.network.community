@@ -58,17 +58,26 @@ This makes the following possible:
 # Tasks
 * [ ] Python is important for complex scripts and therefore Python should not be deprecated.
   If Python is not deprecated, there is no need for a Java implementation of worker execute and
-    * [ ] Update this project accordingly.
-    * [ ] Undo deprecation of Python.
+    * [x] Update this project accordingly.
+    * [x] Undo deprecation of Python.
     * [ ] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
       Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
-    * [ ] Add self test to worker execute, that is executed for each worker execute call.
-      This makes sure, that any code change to the worker execution does not break it.
-* [ ] Use more portable parameter substitution via `${variable-name}`.
-* [ ] Port 'net.splitcells.network's Worker commands to Java.
-    * [ ] Create Java alternative.
+* [ ] Clean up worker execution.
+    * [ ] Move Java improvements to Python.
+        * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
+            * [ ] Create unit test like in Java version.
+                * [ ] Execute test in daily CI.
+                * [ ] Execute test in `bin/repos.build`
+            * [ ] Add self test to worker execute, that is executed for each worker execute call.
+              This makes sure, that any code change to the worker execution does not break it.
+            * [ ] Use more portable parameter substitution via `${variable-name}` in worker execution.
+        * [ ] Replace existing `worker.execute` with `worker.execute.py`.
+        * [ ] Make flat-folder true by default.
+        * [ ] Deploy on live server.
+* [o] Port 'net.splitcells.network's Worker commands to Java.
+    * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
-         * [ ] Port `bin/worker.execute` to Java.
+         * [o] Port `bin/worker.execute` to Java.
            * [x] Port Python code without tests as a preparation.
                * [x] `--command`
                * [x] `--execute-via-ssh-at`
@@ -126,55 +135,55 @@ This makes the following possible:
                    * [x] Do not use muteable variables.
                    * [x] Generate one execution script, if possible, order to simplify execution.
                    * [x] Split local and remote execution into 2 distinct scripts.
-           * [ ] Execute remote test without requiring continues connection during the test.
+           * [o] Execute remote test without requiring continues connection during the test.
              Currently, a connection abort stops the remote test as well.
              This feature was present in the past before the Network Worker existed and was used to execute long-running tasks on slow computers during the night.
                * [o] Use old implementation as a help for that. See `deploy.build.at`. -> Create an ordinary user service instead, as this does not require root rights.
-               * [ ] Create a temporary user service for the one time task.
+               * [o] Create a temporary user service for the one time task.
                  Choose its name, so that every new service has a unique name like `[execution-name]-[date]`.
                  This avoids, that an execution with an error, does not block the next execution.
-               * [ ] Look up, how to delete services, that exited with an error.
-           * [ ] Check syntactical completeness of initial Python to Java port.
-           * [ ] Create Dockerfile.
-           * [ ] Create unit tests for the Java based Network worker execution.
-           * [ ] Synchronize Playwright version in POM and Dockerfile.
-    * [ ] Persist bin folder.
-    * [ ] Do not pass arguments in remote execution scripts, that rely on default values in order to improve the script overview.
-    * [ ] Provide a way in order to bootstrap and test as one command instead of 2.
-    * [ ] Create a script to deploy command on every computer.
-    * [ ] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
-        * [ ] Make WorkerExecutionMain working.
-        * [ ] Try to get the deployment to the live server working via a Java based Network worker execution.
-    * [ ] Deploy live distro via Java version.
-    * [ ] Remove the Python code, when the migration worked for the live distro.
-        * [ ] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`. 
-* [ ] Port `repo.process`.
-    * [ ] Add flag, in order to parallelize tasks like pulling and pushing.
-* [ ] Port `net.splitcells.shell` related projects to Java/Maven.
-    * [ ] Port `net.splitcells.shell` to Java.
-        * [ ] Create Java alternative.
-        * [ ] Make it possible to switch between Java and Python version via environment variable.
-        * [ ] Test whether the Java version is working.
-            * [ ] Personal laptop.
-            * [ ] Raspberry Pi
-            * [ ] Live server.
-    * [ ] Port `net.splitcells.shell.lib` to Java/Maven.
-    * [ ] Port `net.splitcells.shell.lib.gpl.v2` to Java/Maven.
-    * [ ] Port `net.splitcells.shell.lib.gpl.v3` to Java/Maven.
-    * [ ] Port `net.splitcells.project` to Java/Maven.
-    * [ ] Test everything together.
-* [ ] Remove Python versions of `net.splitcells.shell` related code.
-* [ ] Make `net.splitcells.shell` related projects usable from webserver via UserCommandProjectRendererExtension.
-* [ ] Port static website deployment to Java as well, in order to speed up the upload via parallelism.
-* [ ] Execute worker commands at current repo by default and only switch to `~/.local/state/net.splitcells.network.worker` via an explicit flag.
-    * [ ] Ensure, that this is the case for all worker commands.
-* [ ] Final tasks
-    * [ ] Check runtime of command execution regarding Java's start time.
-    * [ ] Update software stack guidelines.
-        * [ ] Remove Python 3 and reason this.
-    * [ ] Note overhaul changes in changelog.
-    * [ ] Copy appropriate parts of the task description to the project's documentation.
-    * [ ] Add this task description to the project's documentation.
+               * [o] Look up, how to delete services, that exited with an error.
+           * [o] Check syntactical completeness of initial Python to Java port.
+           * [o] Create Dockerfile.
+           * [o] Create unit tests for the Java based Network worker execution.
+           * [o] Synchronize Playwright version in POM and Dockerfile.
+    * [o] Persist bin folder.
+    * [o] Do not pass arguments in remote execution scripts, that rely on default values in order to improve the script overview.
+    * [o] Provide a way in order to bootstrap and test as one command instead of 2.
+    * [o] Create a script to deploy command on every computer.
+    * [o] Make it possible to switch between Java and Python version via environment variable, when calling this commands as project commands from a shell.
+        * [o] Make WorkerExecutionMain working.
+        * [o] Try to get the deployment to the live server working via a Java based Network worker execution.
+    * [o] Deploy live distro via Java version.
+    * [o] Remove the Python code, when the migration worked for the live distro.
+        * [o] Remove special flag for live distro. See `* [ ] Implement this in Python port via a new flag for that, in order not break the live server deployment.`. 
+* [o] Port `repo.process`.
+    * [o] Add flag, in order to parallelize tasks like pulling and pushing.
+* [o] Port `net.splitcells.shell` related projects to Java/Maven.
+    * [o] Port `net.splitcells.shell` to Java.
+        * [o] Create Java alternative.
+        * [o] Make it possible to switch between Java and Python version via environment variable.
+        * [o] Test whether the Java version is working.
+            * [o] Personal laptop.
+            * [o] Raspberry Pi
+            * [o] Live server.
+    * [o] Port `net.splitcells.shell.lib` to Java/Maven.
+    * [o] Port `net.splitcells.shell.lib.gpl.v2` to Java/Maven.
+    * [o] Port `net.splitcells.shell.lib.gpl.v3` to Java/Maven.
+    * [o] Port `net.splitcells.project` to Java/Maven.
+    * [o] Test everything together.
+* [o] Remove Python versions of `net.splitcells.shell` related code.
+* [o] Make `net.splitcells.shell` related projects usable from webserver via UserCommandProjectRendererExtension.
+* [o] Port static website deployment to Java as well, in order to speed up the upload via parallelism.
+* [o] Execute worker commands at current repo by default and only switch to `~/.local/state/net.splitcells.network.worker` via an explicit flag.
+    * [o] Ensure, that this is the case for all worker commands.
+* [o] Final tasks
+    * [o] Check runtime of command execution regarding Java's start time.
+    * [o] Update software stack guidelines.
+        * [o] Remove Python 3 and reason this.
+    * [o] Note overhaul changes in changelog.
+    * [o] Copy appropriate parts of the task description to the project's documentation.
+    * [o] Add this task description to the project's documentation.
 # deploy.build.at
 ````
 #!/usr/bin/env python3
