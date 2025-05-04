@@ -62,6 +62,7 @@ This makes the following possible:
     * [x] Undo deprecation of Python.
     * [ ] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
       Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
+    * [ ] Document why Python is not desired by that much in this project and why it was not removed from this project.
 * [ ] Clean up worker execution.
     * [ ] Move Java improvements to Python.
         * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
