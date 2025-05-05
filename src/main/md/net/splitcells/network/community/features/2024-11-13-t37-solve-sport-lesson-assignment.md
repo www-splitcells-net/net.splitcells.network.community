@@ -24,6 +24,7 @@ To make the administration GUI useful an update command of the webserver itself 
                 * [ ] Migrate sep usage to editor.
                 * [ ] Remove Sep code.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
+                * [ ] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
             * [ ] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
                 * [x] Extend ANTLR grammar.
@@ -33,8 +34,10 @@ To make the administration GUI useful an update command of the webserver itself 
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
 * [ ] Document code editor.
+    * [ ] Create a simple grammatic overview images.
+        * [ ] 1 for Abstract Syntax
+        * [ ] 1 for Optimization Problem Definition
 * [ ] Check sport lesson assignment model.
-* [ ] Translate Java based lesson assignment model to the new programming language.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.

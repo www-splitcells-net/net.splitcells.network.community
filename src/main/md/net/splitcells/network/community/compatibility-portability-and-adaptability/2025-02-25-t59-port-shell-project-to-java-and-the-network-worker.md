@@ -56,13 +56,13 @@ This makes the following possible:
 * Simplify writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write and execute for these.
 * Make it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Tasks
-* [ ] Python is important for complex scripts and therefore Python should not be deprecated.
+* [x] Python is important for complex scripts and therefore Python should not be deprecated.
   If Python is not deprecated, there is no need for a Java implementation of worker execute and
     * [x] Update this project accordingly.
     * [x] Undo deprecation of Python.
-    * [ ] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
+    * [x] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
       Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
-    * [ ] Document why Python is not desired by that much in this project and why it was not removed from this project.
+    * [x] Document why Python is not desired by that much in this project and why it was not removed from this project.
 * [ ] Clean up worker execution.
     * [ ] Move Java improvements to Python.
         * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
@@ -71,7 +71,7 @@ This makes the following possible:
                 * [ ] Execute test in `bin/repos.build`
             * [ ] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
-            * [ ] Use more portable parameter substitution via `${variable-name}` in worker execution.
+            * [ ] Use more portable parameter substitution via `${variable-name}` in worker execution via the substitute method of Python.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
