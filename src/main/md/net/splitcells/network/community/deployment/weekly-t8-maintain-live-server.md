@@ -10,6 +10,7 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] Restart the server daily.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.

@@ -66,15 +66,22 @@ This makes the following possible:
 * [ ] Clean up worker execution.
     * [ ] Move Java improvements to Python.
         * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
+            * [ ] Port code.
+                * [ ] Port CLI argument parsing.
+                * [ ] Port remote execute code.
+                * [ ] Port local execute code.
             * [ ] Create unit test like in Java version.
                 * [ ] Execute test in daily CI.
                 * [ ] Execute test in `bin/repos.build`
             * [ ] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
             * [ ] Use more portable parameter substitution via `${variable-name}` in worker execution via the substitute method of Python.
+            * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
+            * [ ] Make flat folder true by default and after that, remove this flag and the implementation for false.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
+    * [ ] Clean up Java based Network Worker.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.

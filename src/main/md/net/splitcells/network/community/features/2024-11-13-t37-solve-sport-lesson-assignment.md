@@ -17,6 +17,9 @@ To make the administration GUI useful an update command of the webserver itself 
   so that the sport lesson assignment can be defined in the editor.
     * [ ] Create a name for the language and document it. -> There is already a programming langauge named Gel, so let's name it Geal instead.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
+        * [ ] Define new grammar.
+            * [ ] Do not avoid dot for function call chains, in order to make it possible to consistently format code.
+            * [ ] Do not allow empty round braces for function calls.
         * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Create dedicated Gel editor project, that replaces the Sep project.
                 * [x] Create Gel editor project. 

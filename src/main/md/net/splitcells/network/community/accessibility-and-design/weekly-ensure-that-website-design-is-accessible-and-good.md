@@ -10,6 +10,7 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 * [ ] Check warnings and errors in the browser.
 # Tasks
+* [ ] The meta menu bar does not feel like the start of a new distinct part of the website in mobile view.
 * [ ] All rendered READMEs have the same content on the website.
 * [ ] In web layout add link from primary column to secondary column.
 * [ ] Improve styling of low priority buttons of chapters. 
