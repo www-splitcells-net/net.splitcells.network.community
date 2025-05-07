@@ -66,16 +66,18 @@ This makes the following possible:
 * [ ] Clean up worker execution.
     * [ ] Move Java improvements to Python.
         * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
-            * [ ] Port code.
-                * [ ] Port CLI argument parsing.
-                * [ ] Port remote execute code.
-                * [ ] Port local execute code.
+            * [x] Port code.
+                * [x] Port CLI argument parsing.
+                * [x] Port remote execute code.
+                * [x] Port local execute code.
+                * [x] Port extended CLI argument parsing.
+                * [x] Standardize variable naming.
+                * [x] Use more portable parameter substitution via `${variable-name}` in worker execution via the substitute method of Python.
+                * [x] Only use multi line strings for templating.
+                * [x] Check that only one of the required is actually present and not multiple ones.
             * [ ] Create unit test like in Java version.
-                * [ ] Execute test in daily CI.
-                * [ ] Execute test in `bin/repos.build`
-            * [ ] Add self test to worker execute, that is executed for each worker execute call.
+            * [x] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
-            * [ ] Use more portable parameter substitution via `${variable-name}` in worker execution via the substitute method of Python.
             * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
             * [ ] Make flat folder true by default and after that, remove this flag and the implementation for false.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
