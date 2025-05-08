@@ -86,6 +86,7 @@ This makes the following possible:
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
     * [ ] Clean up Java based Network Worker.
+* [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
