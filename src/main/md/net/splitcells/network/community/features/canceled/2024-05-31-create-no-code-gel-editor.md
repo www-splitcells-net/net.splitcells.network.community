@@ -8,6 +8,8 @@ The no-code editor was deleted, because it was basically providing the same-ish 
 without bringing something new to the table.
 The ease of use of the no-code editor, turned out to not be that useful,
 as people that cannot learn to code probably won't define their own optimization problems.
+Furthermore, if the code's grammar is simple enough and if the code assistant is good enough,
+it basically represents no-code.
 See ["Consolidating the project's focus"](../blog/articles/2025-04-29-consolidating-the-projects-focus.md) for more details.
 # Tasks
 * [x] Create HTML data mockup.
