@@ -77,6 +77,7 @@ This makes the following possible:
                 * [x] Check that only one of the required is actually present and not multiple ones.
             * [ ] Create unit test like in Java version.
                 * [ ] Disable test logs, when the command is executed normally.
+                * [ ] Use hyphens for all argument names in remote execution script.
             * [x] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
             * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
