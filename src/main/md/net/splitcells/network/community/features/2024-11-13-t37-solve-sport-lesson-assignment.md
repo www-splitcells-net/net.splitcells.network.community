@@ -11,7 +11,6 @@ Furthermore, in order to prepare the webserver for ["Solve school course schedul
 basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
-To make the administration GUI useful an update command of the webserver itself is to be implemented.
 # Tasks
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
