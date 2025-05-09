@@ -10,9 +10,12 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 * [ ] Check warnings and errors in the browser.
 # Tasks
+* [ ] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] The meta menu bar does not feel like the start of a new distinct part of the website in mobile view.
 * [ ] Buttons should be less bold than titles.
+* [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
+* [ ] Not all READMEs are visible in the parent pages. See http://localhost:8443/net/splitcells/network/hub/README.html .
 * [ ] In web layout add link from primary column to secondary column.
 * [ ] Improve styling of low priority buttons of chapters. 
 * [ ] Consider using pastel color palette for none black and white colors.

@@ -83,6 +83,9 @@ This makes the following possible:
             * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
             * [ ] Make flat folder true by default and after that, remove this flag and the implementation for false.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
+            * [ ] Make everything work with `--backwards-compatible=false`.
+            * [ ] Set `--backwards-compatible` to true by default.
+            * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
     * [ ] Clean up Java based Network Worker.
