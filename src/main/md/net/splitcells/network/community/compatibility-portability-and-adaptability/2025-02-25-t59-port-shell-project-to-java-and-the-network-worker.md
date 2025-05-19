@@ -81,7 +81,7 @@ This makes the following possible:
             * [x] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
             * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
-            * [ ] Make flat folder true by default and after that, remove this flag and the implementation for false.
+            * [x] Make flat folder true by default and after that, remove this flag and the implementation for false.
             * [x] Create remote build command, that works similar to the remote bootstrap command. -> The new parameter is `--build-remote`.
             * [x] Make `--pull-network-log` true by default, in order to simplify commands.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
