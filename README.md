@@ -104,7 +104,7 @@ Projects that are being worked cyclically, and probably will never be finished.
 ```
 # Weekly deploy static website.
 
-* Issue number: [\#51](link to issue, that defines the number)
+* Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/[Issue Number])
 * Start Date: 2025-04-05
 * End Date: 2025-04-06
 

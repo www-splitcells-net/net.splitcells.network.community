@@ -75,15 +75,19 @@ This makes the following possible:
                 * [x] Use more portable parameter substitution via `${variable-name}` in worker execution via the substitute method of Python.
                 * [x] Only use multi line strings for templating.
                 * [x] Check that only one of the required is actually present and not multiple ones.
-            * [ ] Create unit test like in Java version.
-                * [ ] Disable test logs, when the command is executed normally.
-                * [ ] Use hyphens for all argument names in remote execution script.
+            * [x] Create unit test like in Java version.
+                * [x] Disable test logs, when the command is executed normally. -> The test logs are printed, when the tests fail.
+                * [x] Use hyphens for all argument names in remote execution script.
             * [x] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
             * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
             * [ ] Make flat folder true by default and after that, remove this flag and the implementation for false.
+            * [x] Create remote build command, that works similar to the remote bootstrap command. -> The new parameter is `--build-remote`.
+            * [x] Make `--pull-network-log` true by default, in order to simplify commands.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
             * [ ] Make everything work with `--backwards-compatible=false`.
+                * [x] Raspberry Pi
+                * [ ] Live Server
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.

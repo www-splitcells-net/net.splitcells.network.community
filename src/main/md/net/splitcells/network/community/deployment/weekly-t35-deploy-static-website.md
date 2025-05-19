@@ -7,6 +7,11 @@
 * [ ] Fix README correctly.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
+* [ ] The websites logo does not work on IPhone.
+* [ ] Let all interactive pages be a redirect to the live server instead.
+  Use a special domain for that, that is a placeholder and is used for nothing else.
+    * [ ] Support pages requiring a login.
+    * [ ]
 # Completed Tasks
 * [x] The status `The number of invalid links is historically improving.` seems to be incorrect. -> This was only a problem in `net.splitcells.martins.avots.distro`.
 * [x] Fix the warning: `Expecting at most 1 meta data entries but found 2 instead: [Optional[index.html], Optional[index.html]]`

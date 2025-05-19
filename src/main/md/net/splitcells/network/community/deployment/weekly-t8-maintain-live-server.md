@@ -51,6 +51,7 @@
           Thereby, the queue grows until something breaks. -> This does not seem to be the case.
         * [x] Is Playwright present in container in the correct version? -> Yes
         * [x] Create only one Playwright server, that one browser per HtmlClient in Java.
+    * [ ] If nothing works, use HTMLUnit instead.
 * [ ] Reset the git repos, in order to prevent an unexpected state.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
