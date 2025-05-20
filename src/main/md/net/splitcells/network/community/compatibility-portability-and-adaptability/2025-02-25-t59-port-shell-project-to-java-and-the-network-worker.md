@@ -92,7 +92,8 @@ This makes the following possible:
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
-    * [ ] Clean up Java based Network Worker.
+    * [ ] Delete Java based Network Worker.
+    * [ ] Create future task to consolidate both Python Network Worker implementation. This is a lower priority task.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
