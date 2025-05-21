@@ -88,6 +88,13 @@ This makes the following possible:
             * [ ] Make everything work with `--backwards-compatible=false`.
                 * [x] Raspberry Pi
                 * [ ] Live Server
+                    * [ ] Bootstrap correct folder.
+                        * [ ] Use environment variable, in order to control the state folder of the Network Execution.
+                            * [ ] `worker.bootstrap`
+                            * [ ] `worker.bootstrap.core`
+                            * [ ] `worker.bootstrap.remote.at`
+                        * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
+                    * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
