@@ -90,9 +90,11 @@ This makes the following possible:
                 * [ ] Live Server
                     * [ ] Bootstrap correct folder.
                         * [ ] Use environment variable, in order to control the state folder of the Network Execution.
-                            * [ ] `worker.bootstrap`
-                            * [ ] `worker.bootstrap.core`
-                            * [ ] `worker.bootstrap.remote.at`
+                            * [x] `worker.bootstrap`
+                            * [x] `worker.bootstrap.repos`
+                            * [x] `worker.bootstrap.shell`
+                            * [x] `worker.bootstrap.remote.at` -> This script is not needed anymore and therefore deleted.
+                        * [ ] Correct folder name for `--build-remote` 
                         * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
                     * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
