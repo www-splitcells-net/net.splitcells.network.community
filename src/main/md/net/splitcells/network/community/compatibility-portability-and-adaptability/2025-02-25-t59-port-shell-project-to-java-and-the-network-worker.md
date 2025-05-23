@@ -89,11 +89,12 @@ This makes the following possible:
                 * [x] Raspberry Pi
                 * [ ] Live Server
                     * [ ] Bootstrap correct folder.
-                        * [ ] Use environment variable, in order to control the state folder of the Network Execution.
+                        * [x] Use environment variable, in order to control the state folder of the Network Execution.
                             * [x] `worker.bootstrap`
                             * [x] `worker.bootstrap.repos`
                             * [x] `worker.bootstrap.shell`
                             * [x] `worker.bootstrap.remote.at` -> This script is not needed anymore and therefore deleted.
+                        * [ ] Execute container on local computer.
                         * [ ] Correct folder name for `--build-remote` 
                         * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
                     * [ ] Split complete remote deployment into multiple commands for each step.
