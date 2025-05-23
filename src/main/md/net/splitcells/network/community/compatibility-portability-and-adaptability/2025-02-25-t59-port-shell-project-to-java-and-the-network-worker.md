@@ -95,7 +95,8 @@ This makes the following possible:
                             * [x] `worker.bootstrap.shell`
                             * [x] `worker.bootstrap.remote.at` -> This script is not needed anymore and therefore deleted.
                         * [ ] Execute container on local computer.
-                        * [ ] Correct folder name for `--build-remote` 
+                            * [ ] Create test for local execution script.
+                        * [ ] Correct folder name for `--build-remote`
                         * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
                     * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
