@@ -34,6 +34,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Delete `net.splitcells.gel.ui.Editor`.
             * [ ] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
+    * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.

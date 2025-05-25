@@ -96,6 +96,7 @@ This makes the following possible:
                             * [x] `worker.bootstrap.remote.at` -> This script is not needed anymore and therefore deleted.
                         * [ ] Execute container on local computer.
                             * [ ] Create test for local execution script.
+                            * [x] Make local execution work.
                         * [ ] Correct folder name for `--build-remote`
                         * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
                     * [ ] Split complete remote deployment into multiple commands for each step.
@@ -106,6 +107,7 @@ This makes the following possible:
     * [ ] Delete Java based Network Worker.
     * [ ] Create future task to consolidate both Python Network Worker implementation. This is a lower priority task.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
+* [ ] Document why Network Worker Execution implementations were and are so badly developed.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
