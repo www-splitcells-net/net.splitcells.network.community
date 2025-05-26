@@ -108,6 +108,7 @@ This makes the following possible:
     * [ ] Create future task to consolidate both Python Network Worker implementation. This is a lower priority task.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
+* [ ] Note, that breaking the live server deployment during the migration is not acceptable.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.
