@@ -94,19 +94,21 @@ This makes the following possible:
                             * [x] `worker.bootstrap.repos`
                             * [x] `worker.bootstrap.shell`
                             * [x] `worker.bootstrap.remote.at` -> This script is not needed anymore and therefore deleted.
-                        * [ ] Execute container on local computer.
-                            * [ ] Create test for local execution script.
+                        * [x] Execute container on local computer.
+                            * [x] Create test for local execution script.
                             * [x] Make local execution work.
-                        * [ ] Correct folder name for `--build-remote`
-                        * [ ] Do not use `worker.execute.py`, as `worker.execute` makes problems.
+                        * [x] Correct folder name for `--build-remote`
+                        * [ ] Correctly bootstrap via `--executable-path` instead of `--command`.
+                        * [x] Do not use `worker.execute.py`, as `worker.execute` makes problems.
                     * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
     * [ ] Delete Java based Network Worker.
-    * [ ] Create future task to consolidate both Python Network Worker implementation. This is a lower priority task.
+    * [ ] Delete alternative underscore flag versions, as these are not needed anymore.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
+* [ ] Delete `bin/worker.execute`.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
 * [ ] Note, that breaking the live server deployment during the migration is not acceptable.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
