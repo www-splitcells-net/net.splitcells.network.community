@@ -100,6 +100,9 @@ This makes the following possible:
                         * [x] Correct folder name for `--build-remote`
                         * [ ] Correctly bootstrap via `--executable-path` instead of `--command`.
                         * [x] Do not use `worker.execute.py`, as `worker.execute` makes problems.
+                        * [ ] Fix ACME.
+                        * [ ] Avoid redundant repo clones, that happen all the time.
+                        * [ ] Use distinct container image name for distinct deployment steps.
                     * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Remove `--backwards-compatible`.
