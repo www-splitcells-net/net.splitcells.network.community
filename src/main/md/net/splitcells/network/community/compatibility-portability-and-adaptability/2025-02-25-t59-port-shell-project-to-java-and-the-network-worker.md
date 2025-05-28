@@ -103,6 +103,12 @@ This makes the following possible:
                         * [ ] Fix ACME.
                         * [ ] Avoid redundant repo clones, that happen all the time.
                         * [ ] Use distinct container image name for distinct deployment steps.
+                          Do this by differentiating between the program name (the overhaul name for the set of executions) and
+                          the execution name (i.e. the name of one container).
+                            * [ ] Set `--program-name` to `--execution-name` by default.
+                            * [ ] Make `--execution-name` a required argument.
+                            * [ ] Make `--program-name` and optional argument.
+                        * [ ] Remove `--daemon-name` at it is replaced by execution name.
                     * [ ] Split complete remote deployment into multiple commands for each step.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Remove `--backwards-compatible`.
