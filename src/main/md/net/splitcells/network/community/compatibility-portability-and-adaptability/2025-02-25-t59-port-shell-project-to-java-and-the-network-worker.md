@@ -88,7 +88,7 @@ This makes the following possible:
             * [ ] Make everything work with `--backwards-compatible=false`.
                 * [x] Raspberry Pi
                 * [ ] Live Server
-                    * [ ] Bootstrap correct folder.
+                    * [x] Bootstrap correct folder.
                         * [x] Use environment variable, in order to control the state folder of the Network Execution.
                             * [x] `worker.bootstrap`
                             * [x] `worker.bootstrap.repos`
@@ -98,19 +98,18 @@ This makes the following possible:
                             * [x] Create test for local execution script.
                             * [x] Make local execution work.
                         * [x] Correct folder name for `--build-remote`
-                        * [ ] Correctly bootstrap via `--executable-path` instead of `--command`.
                         * [x] Do not use `worker.execute.py`, as `worker.execute` makes problems.
-                        * [ ] Fix ACME.
-                        * [ ] Avoid redundant repo clones, that happen all the time.
-                        * [ ] Use distinct container image name for distinct deployment steps.
+                        * [x] Fix ACME.
+                        * [x] Use distinct container image name for distinct deployment steps.
                           Do this by differentiating between the program name (the overhaul name for the set of executions) and
                           the execution name (i.e. the name of one container).
-                            * [ ] Set `--program-name` to `--execution-name` by default.
-                            * [ ] Make `--execution-name` a required argument.
-                            * [ ] Make `--program-name` and optional argument.
-                        * [ ] Remove `--daemon-name` at it is replaced by execution name.
-                    * [ ] Split complete remote deployment into multiple commands for each step.
+                            * [x] Set `--program-name` to `--execution-name` by default.
+                    * [x] Split complete remote deployment into multiple commands for each step.
+                    * [ ] Create daemon container image.
             * [ ] Set `--backwards-compatible` to true by default.
+            * [ ] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
+          * [ ] Remove `--daemon-name` at it is replaced by execution name.
+            * [ ] Use `systemctl --user daemon-reload`.
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
