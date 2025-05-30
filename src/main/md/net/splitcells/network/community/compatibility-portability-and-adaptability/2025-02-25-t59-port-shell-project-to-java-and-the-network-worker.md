@@ -105,13 +105,14 @@ This makes the following possible:
                           the execution name (i.e. the name of one container).
                             * [x] Set `--program-name` to `--execution-name` by default.
                     * [x] Split complete remote deployment into multiple commands for each step.
-                    * [ ] Create daemon container image.
+                    * [x] Create daemon container image.
                         * [x] Move all container creation logic into local execution.
                           Use remote execution only for synchronization and command dispatch over SSH.
                             * [x] Create --bootstrap-locally for test_bootstrap_remote. See test_bootstrap -> This already is correct.
                             * [x] Create --bootstrap-locally for test_bootstrap_remote_via_daemon. See test_bootstrap
                             * [x] Remove any container logic from --execute-via-ssh-at.
                               Any usage of --execute-via-ssh-at should just forward parameters to a remote `bin/worker.execute`.
+                    * [ ] Run daemon container image. 
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
             * [ ] Test every flag.
