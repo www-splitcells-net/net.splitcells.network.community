@@ -22,4 +22,10 @@ chezmoi apply
 ```
 ## Tasks
 * [ ] Move this to a private repo, as this is specific to the author.
+* [ ] Create full offline backup.
+    * [ ] Consider using https://github.com/rustic-rs/rustic
+    * [ ] Consider using restic.
+        * [ ] https://github.com/garethgeorge/backrest
+        * [ ] https://github.com/rubiojr/awesome-restic
+    * [ ] Parchive 
 * [x] `~/.gnupg`

@@ -15,6 +15,10 @@
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
 # Tasks
+* [ ] Make News more practible.
+    * [ ] Only show started projects.
+    * [ ] Show project completions and cancellations.
+    * [ ] Show community blog entries.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
 * [ ] Make code viewer nice.
