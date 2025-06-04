@@ -114,7 +114,7 @@ This makes the following possible:
                               Any usage of --execute-via-ssh-at should just forward parameters to a remote `bin/worker.execute`.
                     * [ ] Run daemon container image.
                         * [x] Make the container and its systemd user service startable.
-                        * [ ] Start the container. 
+                        * [x] Start the container. 
                         * [ ] Make ACME work again.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.

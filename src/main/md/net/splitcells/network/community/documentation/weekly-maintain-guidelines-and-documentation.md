@@ -16,7 +16,7 @@
 * Consider mobile vs desktop view.
 # Tasks
 * [ ] Make News more practible.
-    * [ ] Only show started projects.
+    * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
     * [ ] Show community blog entries.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
