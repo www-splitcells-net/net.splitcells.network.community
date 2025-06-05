@@ -4,7 +4,7 @@
 Instead of renting a server at Hetzner it is more cost-efficient to host it personally (Martins Avots).
 Costs:
 * Hetzner Cost: 37.30 to 52,36 € = min 37.30 €
-* Local Cost: Electricity + Hetzner VPS for Reverse Proxy ~ 10 to 15 € + 3.79 € = max 18.79 €
+* Local Cost: Electricity + Hetzner VPS for Reverse Proxy ~ 20 € + 3.79 € = max 18.79 €
 * Minimal expected savings by month: 37.30 € - 18.79 € = 18.55 €
 * Expected savings over lifetime (of expected 5 years): 18.55 € * 12 months * 5 years = 1113 €
 

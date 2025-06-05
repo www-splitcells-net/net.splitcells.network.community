@@ -8,7 +8,18 @@ is used in order to generate unique issue ids.
 ## Overview And Status
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
 ## Standard Projects
-Projects that are being worked cyclically, and probably will never be finished.
+Projects that are being worked cyclically, and probably will never be finished:
+* Accessibility and Design: Improve accessibility:
+  * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
+  * Review advertisement, introductions and info linked by README,
+    because that is the primary material for newcomers.
+  * [Link](src/main/md/net/splitcells/network/community/accessibility-and-design/index.md)
+* Blog
+  * Description: Speaking to the void about the development process.
+  * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
+* Community Guidelines
+  * Description: We comment on guidelines and things happening.
+  * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
 * Compatibility, portability and adaptability:
     * Description: Make code easy portable, translatable and adaptable to other languages and environments.
     * [Link](./src/main/md/net/splitcells/network/community/compatibility-portability-and-adaptability/index.md)
@@ -30,22 +41,6 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Maintenance project:
     * Description: Improve quality and fix bugs.
     * [Link](./src/main/md/net/splitcells/network/community/maintenance/index.md)
-* Webserver Development
-    * Description: Organizing and presenting data is the foundation of a good day
-    * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
-* The Symbiosis Project
-## Very Low Priority Standard Projects
-* Accessibility and Design: Improve accessibility:
-  * Description: We want to use the software, guys. RIGHT?! Right? right? ... ehh
-  * Review advertisement, introductions and info linked by README,
-    because that is the primary material for newcomers.
-  * [Link](src/main/md/net/splitcells/network/community/accessibility-and-design/index.md)
-* Blog
-  * Description: Speaking to the void about the development process.
-  * [Link](./src/main/md/net/splitcells/network/community/blog/index.md)
-* Community Guidelines
-  * Description: We comment on guidelines and things happening.
-  * [Link](./src/main/md/net/splitcells/network/community/guidelines/index.md)
 * Major Projects
   * Description: This is an archive of readable descriptions of some major projects,
     that can be used as advertisement for specific groups.
@@ -56,6 +51,10 @@ Projects that are being worked cyclically, and probably will never be finished.
 * Security
   * Description: What could go possibly wrong?
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
+* The Symbiosis Project
+* Webserver Development
+    * Description: Organizing and presenting data is the foundation of a good day
+    * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
 ## Notes
 * In order to mark tasks in `task-archives` with a high priority,
   add `9999-` as the file name prefix.

@@ -85,9 +85,9 @@ This makes the following possible:
             * [x] Create remote build command, that works similar to the remote bootstrap command. -> The new parameter is `--build-remote`.
             * [x] Make `--pull-network-log` true by default, in order to simplify commands.
         * [ ] Replace existing `worker.execute` with `worker.execute.py`.
-            * [ ] Make everything work with `--backwards-compatible=false`.
+            * [x] Make everything work with `--backwards-compatible=false`.
                 * [x] Raspberry Pi
-                * [ ] Live Server
+                * [x] Live Server
                     * [x] Bootstrap correct folder.
                         * [x] Use environment variable, in order to control the state folder of the Network Execution.
                             * [x] `worker.bootstrap`
@@ -112,16 +112,16 @@ This makes the following possible:
                             * [x] Create --bootstrap-locally for test_bootstrap_remote_via_daemon. See test_bootstrap
                             * [x] Remove any container logic from --execute-via-ssh-at.
                               Any usage of --execute-via-ssh-at should just forward parameters to a remote `bin/worker.execute`.
-                    * [ ] Run daemon container image.
+                    * [x] Run daemon container image.
                         * [x] Make the container and its systemd user service startable.
                         * [x] Start the container. 
-                        * [ ] Make ACME work again.
+                        * [x] Make ACME work again.
             * [ ] Set `--backwards-compatible` to true by default.
             * [ ] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
             * [ ] Test every flag.
             * [ ] Use only applyTemplate for any String replacement.
           * [ ] Remove `--daemon-name` at it is replaced by execution name.
-            * [ ] Use `systemctl --user daemon-reload`.
+            * [x] Use `systemctl --user daemon-reload`.
             * [ ] Remove `--backwards-compatible`.
         * [ ] Make flat-folder true by default.
         * [ ] Deploy on live server.
