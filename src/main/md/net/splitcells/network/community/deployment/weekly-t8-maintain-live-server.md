@@ -10,7 +10,9 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Restart the server daily.
+* [ ] Support flat folder on Java side.
+* [ ] Set program name to `net.splitcells.martins.avots.distro`.
+* [ ] Restart the server daily automatically.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -36,6 +38,8 @@
         * [ ] `deploy.test.extensively.at`
     * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
     * [ ] Simplify `deploy.remote`.
+* [ ] Safe user credentials as salted hashes.
+* [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
 * [ ] Playwright based test sometime do nothing.
     * [x] Avoid XSL errors in systemd logs.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.

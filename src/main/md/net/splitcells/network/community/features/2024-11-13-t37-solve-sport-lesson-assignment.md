@@ -2,7 +2,7 @@
 * Issue number: [\#37](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/37)
 # Task Description
 Exemplary solve the sport lesson assignment problem from Martins Avots's master thesis,
-in order to extend the programs modelling and optimization capabilities.
+in order to extend the programs modelling, optimization capabilities and usability.
 
 Thereby make the project usable as a service by multiple users at once.
 A platform supporting many different optimization problems out of hand seems to be crippled,
@@ -14,17 +14,16 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
-    * [ ] Create a name for the language and document it. -> There is already a programming langauge named Gel, so let's name it Geal instead.
+    * [ ] Create a name for the language and document it. -> It's named Den v3, as it is the third attempt at a general programming language.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
-        * [ ] Define new grammar.
-            * [ ] Do not avoid dot for function call chains, in order to make it possible to consistently format code.
-            * [ ] Do not allow empty round braces for function calls.
+        * [x] Define new grammar.
+            * [x] Do not avoid dot for function call chains, in order to make it possible to consistently format code.
+            * [x] Do not allow empty round braces for function calls.
+            * [x] Create public Grammar documentation file. This will be later completed, when the editor is finalized
+              and thereby the standard library is known.
         * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Create dedicated Gel editor project, that replaces the Sep project.
-                * [x] Create Gel editor project. 
-                * [ ] Move Sep code into editor project.
-                * [ ] Migrate sep usage to editor.
-                * [ ] Remove Sep code.
+                * [x] Create Gel editor project.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [ ] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
@@ -50,6 +49,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Allow users to define a partial solution, that is the basis for the given problem.
   The optimizer is not allowed to change the allocations given by the user.
 * [ ] Note overhaul changes in changelog.
+* [ ] Deprecate Sep project.
+    * [ ] Move Sep code into editor project.
+    * [ ] Migrate sep usage to editor.
+    * [ ] Remove Sep code.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
