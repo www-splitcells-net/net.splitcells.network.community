@@ -36,8 +36,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
                 * [x] Extend ANTLR grammar.
                 * [ ] Comment the reason for allowing sum types.
-            * [ ] Delete `net.splitcells.gel.ui.Editor`.
-            * [ ] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
+            * [o] Delete `net.splitcells.gel.ui.Editor`. -> This class is migrated instead.
+            * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
