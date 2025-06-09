@@ -27,6 +27,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
                     * [x] Create domain objects.
                     * [ ] Create parser and integrate into editor.
+                        * [ ] Test pure AST interpretation by example.
+                        * [ ] Test AST parsing and AST interpretation by example.
                 * [ ] Deprecate existing language.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [ ] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
