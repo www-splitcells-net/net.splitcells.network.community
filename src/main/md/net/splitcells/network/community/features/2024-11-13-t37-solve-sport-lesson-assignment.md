@@ -24,6 +24,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [ ] Create dedicated Gel editor project, that replaces the Sep project.
                 * [x] Create Gel editor project.
+                * [ ] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
+                    * [x] Create domain objects.
+                    * [ ] Create parser and integrate into editor.
+                * [ ] Deprecate existing language.
             * [ ] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [ ] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [ ] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies.
@@ -49,6 +53,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Allow users to define a partial solution, that is the basis for the given problem.
   The optimizer is not allowed to change the allocations given by the user.
 * [ ] Note overhaul changes in changelog.
+* [ ] Delete old Gel editor domain language.
 * [ ] Deprecate Sep project.
     * [ ] Move Sep code into editor project.
     * [ ] Migrate sep usage to editor.
