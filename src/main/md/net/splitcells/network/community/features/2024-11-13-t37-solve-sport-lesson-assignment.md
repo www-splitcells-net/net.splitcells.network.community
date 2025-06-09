@@ -14,7 +14,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
-    * [ ] Create a name for the language and document it. -> It's named Den v3, as it is the third attempt at a general programming language.
+    * [x] Create a name for the language and document it. -> It's named Geal.
     * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
         * [x] Define new grammar.
             * [x] Do not avoid dot for function call chains, in order to make it possible to consistently format code.
