@@ -10,8 +10,6 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Support flat folder on Java side.
-* [ ] Set program name to `net.splitcells.martins.avots.distro`.
 * [ ] Restart the server daily automatically.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
@@ -125,6 +123,8 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] Support flat folder on Java side.
+* [x] Set program name to `net.splitcells.martins.avots.distro`.
 * [x] Execute more test at once, in order to have a better load test on production.
 * [x] Create UI tester for text editor as well, in order to test both.
 * [o] Browser tests are not always working. Log message: `Target page, context or browser has been closed`
