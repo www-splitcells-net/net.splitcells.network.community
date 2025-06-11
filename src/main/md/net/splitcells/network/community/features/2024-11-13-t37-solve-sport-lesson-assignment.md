@@ -63,6 +63,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Remove Sep code.
 * [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
   If mobile support becomes required, then an additional no-code editor might be worth it.
+    * [ ] It seems, that codemirror 6 has better mobile view.
+    * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
+      where a program also represents a GUI for interacting with the world.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
