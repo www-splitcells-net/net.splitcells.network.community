@@ -10,31 +10,6 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
-    * [ ] Deploy server software as systemd user service.
-        * [x] Create user service.
-        * [x] Make user service reachable via network.
-        * [x] Start user service on server start automatically.
-        * [ ] Build image during build command and execute image during execute command with `net.splitcells.network/bin/worker.execute`,
-          instead of  `net.splitcells.network.worker/bin/worker.execute`.
-          Currently, the build command builds the Java part and the execute command builds the container image.
-            * [x] Merge `worker.execute.*` commands into one `worker.execute` command.
-                * [x] `worker.execute` is command with file storage.
-                    * [x] Use more descriptive names for `$1` amd `$2`.
-                * [x] `worker.program` is command without file storage.
-                * [x] `worker.service` is command to execute command in detached mode.
-            * [ ] Consider `worker.bootstrap.remote.at`.
-            * [ ] Add parameter to `worker.execute` in order to build a project at the current folder in a standardized way.
-                * [ ] Consolidate `worker.repo.build`.
-            * [ ] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
-            * [ ] Create flag in order to execute program as a persistent service.
-    * [ ] Delete obsolete `net.splitcells.network.worker` repo.
-    * [ ] Use this command for existing test deployment commands as well.
-      This tests whether this new command is portable or not.
-        * [ ] `deploy.build.at`
-        * [ ] `deploy.test.extensively.at`
-    * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
-    * [ ] Simplify `deploy.remote`.
 * [ ] Restart the server daily automatically.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
@@ -123,6 +98,31 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
+    * [x] Deploy server software as systemd user service.
+        * [x] Create user service.
+        * [x] Make user service reachable via network.
+        * [x] Start user service on server start automatically.
+        * [x] Build image during build command and execute image during execute command with `net.splitcells.network/bin/worker.execute`,
+          instead of  `net.splitcells.network.worker/bin/worker.execute`.
+          Currently, the build command builds the Java part and the execute command builds the container image.
+            * [x] Merge `worker.execute.*` commands into one `worker.execute` command.
+                * [x] `worker.execute` is command with file storage.
+                    * [x] Use more descriptive names for `$1` amd `$2`.
+                * [x] `worker.program` is command without file storage.
+                * [x] `worker.service` is command to execute command in detached mode.
+            * [o] Consider `worker.bootstrap.remote.at`.
+            * [x] Add parameter to `worker.execute` in order to build a project at the current folder in a standardized way.
+                * [o] Consolidate `worker.repo.build`.
+            * [o] Create flag for `worker.execute` command, in order to execute program based on files created via `worker.build`.
+            * [x] Create flag in order to execute program as a persistent service.
+    * [x] Delete obsolete `net.splitcells.network.worker` repo.
+    * [x] Use this command for existing test deployment commands as well.
+      This tests whether this new command is portable or not.
+        * [o] `deploy.build.at` -> This command is deleted.
+        * [o] `deploy.test.extensively.at` -> This command is deleted.
+    * [x] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
+    * [x] Simplify `deploy.remote`.
 * [x] Correct download logs command.
 * [x] Support flat folder on Java side.
 * [x] Set program name to `net.splitcells.martins.avots.distro`.
