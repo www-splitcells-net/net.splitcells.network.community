@@ -38,6 +38,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Comment the reason for allowing sum types.
             * [o] Delete `net.splitcells.gel.ui.Editor`. -> This class is migrated instead.
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
+            * [ ] Implement proper user friendly error handling.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
@@ -60,6 +61,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Move Sep code into editor project.
     * [ ] Migrate sep usage to editor.
     * [ ] Remove Sep code.
+* [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
+  If mobile support becomes required, then an additional no-code editor might be worth it.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.

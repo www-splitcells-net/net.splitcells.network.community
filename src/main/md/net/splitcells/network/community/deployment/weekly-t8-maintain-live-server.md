@@ -10,7 +10,6 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Restart the server daily automatically.
 * [ ] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [ ] Deploy server software as systemd user service.
         * [x] Create user service.
@@ -36,6 +35,7 @@
         * [ ] `deploy.test.extensively.at`
     * [ ] Build everything via `mvn clean install` at `net.splitcells.network.hub`.
     * [ ] Simplify `deploy.remote`.
+* [ ] Restart the server daily automatically.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
 * [ ] Playwright based test sometime do nothing.
@@ -123,6 +123,7 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] Correct download logs command.
 * [x] Support flat folder on Java side.
 * [x] Set program name to `net.splitcells.martins.avots.distro`.
 * [x] Execute more test at once, in order to have a better load test on production.
