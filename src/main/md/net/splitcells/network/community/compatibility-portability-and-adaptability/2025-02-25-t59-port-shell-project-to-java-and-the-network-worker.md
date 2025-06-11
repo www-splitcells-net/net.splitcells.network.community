@@ -55,6 +55,22 @@ This makes the following possible:
   Especially, changing functionality backwards compatible is alot easier with the statically typed Java than the dynamically typed Python.
 * Simplify writing tests for such functions, which sometime got broken for the Python parts as tests are harder to write and execute for these.
 * Make it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
+# Acceptance Note
+Instead of porting the shell project and the network worker to Java, the Python code is improved
+by simplifying it and adding tests, that are automatically executed on any execution of these.
+
+The reason for that is, that requiring a minimal and relatively old Python 3 instance,
+allows one to execute commands with complex arguments easily on servers without any or minimal setup as most Linux Distros have Python 3 by default.
+As Java does not support a good argument parsing lib by default, a server would need Java and Maven be available in the correct version.
+Old Java/Maven version could be supported, but this would require managing multiple Java versions on the server at once,
+as the project's software requires a relatively new Java version.
+In other words, Java is still relatively complex to be used for scripting.
+
+Building the software from scratch is considered very important at this project.
+Python 3 is used instead of Java in order to support as many servers and operating systems as possible.
+
+In the future a Java implementation might be a better idea,
+but right now this does not seem to be the case.
 # Tasks
 * [x] Python is important for complex scripts and therefore Python should not be deprecated.
   If Python is not deprecated, there is no need for a Java implementation of worker execute and
