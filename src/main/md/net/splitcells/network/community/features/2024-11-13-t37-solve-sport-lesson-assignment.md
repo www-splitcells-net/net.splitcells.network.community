@@ -28,6 +28,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Create domain objects.
                     * [ ] Create parser and integrate into editor.
                         * [ ] Test pure AST interpretation by example.
+                            * [ ] Actually parse constraints.
+                            * [ ] Make duplicate variable check complete.
+                            * [ ] Remove code duplicate in central parser.
                         * [ ] Test AST parsing and AST interpretation by example.
                 * [x] Deprecate existing language.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
