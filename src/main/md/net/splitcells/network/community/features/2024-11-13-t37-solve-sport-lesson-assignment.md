@@ -49,6 +49,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
+    * [ ] New approach to error handling.
+        * [ ] Problem with classical error handling.
+        * [ ] Limit line length via dedicated methods referenced,
+          which is better than aspect oriented style because of required code duplication caused by data selection. 
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Solve sport lesson assignment.
