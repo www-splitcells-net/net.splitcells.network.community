@@ -81,7 +81,7 @@ but right now this does not seem to be the case.
     * [x] Document why Python is not desired by that much in this project and why it was not removed from this project.
 * [ ] Clean up worker execution.
     * [ ] Move Java improvements to Python.
-        * [ ] Create `worker.execute.py` and prepare it as the new worker execution version.
+        * [x] Create `worker.execute.py` and prepare it as the new worker execution version.
             * [x] Port code.
                 * [x] Port CLI argument parsing.
                 * [x] Port remote execute code.
@@ -96,7 +96,7 @@ but right now this does not seem to be the case.
                 * [x] Use hyphens for all argument names in remote execution script.
             * [x] Add self test to worker execute, that is executed for each worker execute call.
               This makes sure, that any code change to the worker execution does not break it.
-            * [ ] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
+            * [x] Implement `--is-daemon`, in order to simplify liver server deployment on fresh server.
             * [x] Make flat folder true by default and after that, remove this flag and the implementation for false.
             * [x] Create remote build command, that works similar to the remote bootstrap command. -> The new parameter is `--build-remote`.
             * [x] Make `--pull-network-log` true by default, in order to simplify commands.
@@ -132,8 +132,9 @@ but right now this does not seem to be the case.
                         * [x] Make the container and its systemd user service startable.
                         * [x] Start the container. 
                         * [x] Make ACME work again.
-            * [ ] Set `--backwards-compatible` to true by default.
-            * [ ] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
+            * [x] Set `--backwards-compatible` to true by default.
+            * [x] Remove `--flat-folders`, as it is only used with true and was only created for a soft migration.
+            * [o] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
             * [ ] Test every flag.
             * [ ] Use only applyTemplate for any String replacement.
           * [ ] Remove `--daemon-name` at it is replaced by execution name.
@@ -143,6 +144,7 @@ but right now this does not seem to be the case.
         * [ ] Deploy on live server.
     * [ ] Delete Java based Network Worker.
     * [ ] Delete alternative underscore flag versions, as these are not needed anymore.
+    * [ ] Check the other `bin/worker.*` commands.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [ ] Delete `bin/worker.execute`.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.

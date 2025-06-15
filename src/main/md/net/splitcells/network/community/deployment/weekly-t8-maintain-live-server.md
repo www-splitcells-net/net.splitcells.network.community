@@ -17,6 +17,8 @@
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
+* [ ] Declare a data protection officer.
+* [ ] Make privacy policy of live and static server the same.
 * [ ] Playwright based test sometime do nothing.
     * [x] Avoid XSL errors in systemd logs.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
