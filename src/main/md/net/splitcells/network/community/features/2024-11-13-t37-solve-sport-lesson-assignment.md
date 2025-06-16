@@ -29,8 +29,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [ ] Create parser and integrate into editor.
                         * [ ] Test pure AST interpretation by example.
                             * [ ] Actually parse constraints.
-                            * [ ] Make duplicate variable check complete.
-                            * [ ] Remove code duplicate in central parser.
+                                * [ ] Implement recursion.
+                                * [ ] Ensure, that constraint call recursion's last element returns the subject and not the first one,
+                                  as this makes more sense.
+                                    * [ ] Make constraint variable definition correct to this correct way of piping function call chain results. 
+                                * [ ] Ensure, that the runners' subject is set correctly.
+                            * [x] Make duplicate variable check complete.
+                            * [x] Remove code duplicate in central parser.
                         * [ ] Test AST parsing and AST interpretation by example.
                 * [x] Deprecate existing language.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.

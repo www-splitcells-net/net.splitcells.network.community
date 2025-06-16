@@ -10,10 +10,11 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] Restart the server daily automatically.
+* [ ] The deployed systemd service shuts down after a while. Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
+* [x] Restart the server daily automatically.
     * [x] Move automatic update to 3:00 to 3:45. 
     * [x] Setup daily restart configuration for at 4:00.
-    * [ ] Check if new configuration worked.
+    * [x] Check if new configuration worked.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
