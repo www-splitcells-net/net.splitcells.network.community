@@ -40,5 +40,7 @@
 * [ ] Consider creating a newsletter that bundles blog, social media posts and interesting info like releases of other optimization software, that contain something interesting regarding optimization.
     * [ ] Add newsletter to global changelog.
 * [ ] Note in programming guidelines, that implicit error handling is preferred to explicit one.
+* [ ] Consider creating a joke page.
+    * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.

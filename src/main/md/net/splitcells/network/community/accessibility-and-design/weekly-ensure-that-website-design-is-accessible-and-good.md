@@ -26,6 +26,9 @@ this is an opportunity to consider this aspect.
   The Chromium has some strange icons and other differences.
   These are not game breakers, but make things more ugly.
 * [ ] Force CSS reload, as users otherwise get old styling from the browser.
+* [ ] Consider a more distinct look of link buttons and action buttons:
+  The first one get additional drawn edges at the bottom left and top right.
+  The second one get additional drawn edges at the top left and bottom right.
 # Completed Tasks
 * [x] Make white bold structural guidelines less thick, as these distract a bit too much.
 * [x] Prefer using always darkest black color as text color,
