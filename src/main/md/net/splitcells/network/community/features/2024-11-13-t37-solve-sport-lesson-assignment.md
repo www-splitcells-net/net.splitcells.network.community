@@ -32,7 +32,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                 * [ ] Implement recursion.
                                 * [ ] Ensure, that constraint call recursion's last element returns the subject and not the first one,
                                   as this makes more sense.
-                                    * [ ] Make constraint variable definition correct to this correct way of piping function call chain results. 
+                                    * [ ] Make constraint variable definition correct to this correct way of piping function call chain results.
+                                    * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
+                                      instead of using a dedicated constraint function and variable.
                                 * [ ] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.

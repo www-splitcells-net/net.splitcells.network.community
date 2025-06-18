@@ -10,7 +10,9 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] The deployed systemd service shuts down after a while. Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
+* [ ] The deployed systemd service shuts down after a while.
+  Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
+  -> This is caused by the fact, that the systemd service config has not configured an automated service start.
 * [x] Restart the server daily automatically.
     * [x] Move automatic update to 3:00 to 3:45. 
     * [x] Setup daily restart configuration for at 4:00.
