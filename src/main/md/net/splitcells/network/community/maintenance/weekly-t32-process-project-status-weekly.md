@@ -8,8 +8,7 @@
 * Execute static code checks.
 
 # Tasks.
-* [ ] Re-enable codecov.io upload via Maven.
-    * [ ] https://github.com/codecov/example-java-maven
+* [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
 * [ ] Ensure that local test coverage report is correct
 * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.

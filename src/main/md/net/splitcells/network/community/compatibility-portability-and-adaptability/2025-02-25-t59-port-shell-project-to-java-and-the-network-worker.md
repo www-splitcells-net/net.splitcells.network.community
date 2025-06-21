@@ -137,11 +137,11 @@ but right now this does not seem to be the case.
             * [o] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
             * [ ] Test every flag.
             * [ ] Use only applyTemplate for any String replacement.
-          * [ ] Remove `--daemon-name` at it is replaced by execution name.
+            * [x] Remove `--daemon-name` at it is replaced by execution name.
             * [x] Use `systemctl --user daemon-reload`.
-            * [ ] Remove `--backwards-compatible`.
-        * [ ] Make flat-folder true by default.
-        * [ ] Deploy on live server.
+            * [x] Remove `--backwards-compatible`.
+        * [y] Make flat-folder true by default.
+        * [x] Deploy on live server.
     * [ ] Delete Java based Network Worker.
     * [ ] Delete alternative underscore flag versions, as these are not needed anymore.
     * [ ] Check the other `bin/worker.*` commands.

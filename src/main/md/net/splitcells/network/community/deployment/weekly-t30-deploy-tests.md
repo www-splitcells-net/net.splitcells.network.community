@@ -35,12 +35,13 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-    * [ ] CURRENT Create test command for network worker. -> The new command is `worker.test.trigger.remote.at`.
+    * [ ] CURRENT Create test command for network worker. 
         * [o] Delete network worker files, so that test command tests the bootstrap completely.
           -> This is not important for now. A corresponding TODO was added to the `worker.execute` script.
             * [o] command.repositories.install
             * [o] m2
             * [o] repos
+        * [ ] Use new Network Worker Execute command for that.
         * [ ] Push test results to public network log repo.
             * [ ] Test this with local computer via `net.splitcells.network.worker.test.trigger.remote.at splitcells@splitcells-XPS-15-9570`.
               at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
@@ -89,6 +90,9 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
         * [ ] Daily Codeberg workflow.
         * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
+* [ ] Fix code coverage.
+  * [ ] This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+  * [ ] https://github.com/codecov/example-java-maven
 * [ ] Let Tester test capability tests as well.
 * [ ] Use ExtensiveTester on capable platforms.
 * [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
