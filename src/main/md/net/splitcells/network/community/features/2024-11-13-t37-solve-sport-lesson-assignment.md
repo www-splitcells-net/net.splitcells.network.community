@@ -35,6 +35,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                     * [ ] Make constraint variable definition correct to this correct way of piping function call chain results.
                                     * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
                                       instead of using a dedicated constraint function and variable.
+                                    * [ ] Delete `constraint` function.
                                 * [ ] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
@@ -51,7 +52,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Implement proper user friendly error handling.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
-* [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
@@ -172,3 +172,5 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Done Tasks
 * [o] Blog why the Cin project is now a low priority feature project.
 * [o] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first. -> The no-code editor is obsolete and deleted.
+# Future Ideas
+* [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.

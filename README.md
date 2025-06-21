@@ -127,7 +127,7 @@ Projects that are being worked cyclically, and probably will never be finished:
 # Done Tasks
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]
-# Ideas
+# Future Ideas
 [List followup tasks to this ticket here.
  Mark these tasks as done, when tasks are made based on these ideas.
  Mark such tasks as rejected, when tasks are not made based on these ideas.]
