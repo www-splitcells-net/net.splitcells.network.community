@@ -61,17 +61,18 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
                     * [x] `command.managed.export.bin.sh`
                     * [x] `command.repositories.install.sh`
                     * [x] `command.repositories.setup.sh`
-                    * [ ] Define alternative config folder `~/.config/net.splitcells.shell`, in order to not mix worker config with the developer's computer config.
+                    * [x] Define alternative config folder `~/.config/net.splitcells.shell`, in order to not mix worker config with the developer's computer config.
                         * [x] Define an environment variable, that points to the config folder.
                           -> It is called `NET_SPLITCELLS_SHELL_CONFIG_FOLDER`.
                         * [x] `command.repositories.update.sh`
                         * [x] `command.repositories.setup.sh`
                         * [x] `command.repository.register.sh`
-                        * [ ] Set up this environment variable during remote execution, by checking the presence of a config file intended for remote execution.
-                            * [ ] Support this in `worker.bootstrap`.
-                            * [ ] Support this in `worker.execute`.
-                        * [ ] Document why this is done.
-                    * [ ] Remove any usage of `net.splitcells.shell.commands.disabled`. 
+                        * [o] Set up this environment variable during remote execution, by checking the presence of a config file intended for remote execution.
+                          -> This is not required for the Network Worker Execution, as everything is executed in containers.
+                            * [o] Support this in `worker.bootstrap`.
+                            * [o] Support this in `worker.execute`.
+                        * [o] Document why this is done. -> There is no useful Shell Project documentation for now, so this aspect is not important.
+                    * [x] Remove any usage of `net.splitcells.shell.commands.disabled`. 
             * [ ] Store test results to network log repo.
             * [ ] Commit test results.
             * [ ] Push test results to Codeberg.
@@ -91,8 +92,10 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Daily Codeberg workflow.
         * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
 * [ ] Fix code coverage.
-  * [ ] This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
-  * [ ] https://github.com/codecov/example-java-maven
+  * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+  * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
+  * [ ] Note why code coverage is done this way.
+* [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well.
 * [ ] Use ExtensiveTester on capable platforms.
 * [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
