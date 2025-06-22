@@ -9,9 +9,8 @@ SWT provides a way to embed the systems browser, which should do the trick.
 
 Keep in mind
 # Tasks
-* [ ] Mark downloadable applications as removed.
 * [ ] Create a proof of concept browser application.
 * [ ] Build runnable application.
     * [ ] Linux
     * [ ] Windows
-* [ ] Remove previous kinds of desktop apps completely.
+* [ ] Remove previous kind of desktop app completely.
