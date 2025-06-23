@@ -9,6 +9,8 @@ SWT provides a way to embed the systems browser, which should do the trick.
 
 Keep in mind
 # Tasks
+* [ ] This is a very low priority task. Do this only,
+  when there is a concrete need for that or when no real deployment tasks are left.
 * [ ] Create a proof of concept browser application.
 * [ ] Build runnable application.
     * [ ] Linux

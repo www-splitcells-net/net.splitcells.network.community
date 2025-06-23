@@ -35,7 +35,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                     * [ ] Make constraint variable definition correct to this correct way of piping function call chain results.
                                     * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
                                       instead of using a dedicated constraint function and variable.
+                                    * [x] Make function call arguments function call chains, in order to support everything as a function argument. 
                                     * [ ] Delete `constraint` function.
+                                    * [ ] Port SolutionEditor to the new Editor.
                                 * [ ] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
@@ -52,6 +54,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Implement proper user friendly error handling.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
+    * [ ] Delete obsolete SolutionEditor and the corresponding users.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax

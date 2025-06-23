@@ -10,9 +10,6 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [ ] The deployed systemd service shuts down after a while.
-  Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
-  -> This is caused by the fact, that the systemd service config has not configured an automated service start.
 * [x] Restart the server daily automatically.
     * [x] Move automatic update to 3:00 to 3:45. 
     * [x] Setup daily restart configuration for at 4:00.
@@ -107,6 +104,10 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] The deployed systemd service shuts down after a while.
+  Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
+  -> This is caused by the fact, that the systemd service config has not configured an automated service start.
+  -> The systemd user service was not enabled.
 * [x] Create and user generic `worker.execute` command, in order to make things portable regarding the infrastructure.
     * [x] Deploy server software as systemd user service.
         * [x] Create user service.
