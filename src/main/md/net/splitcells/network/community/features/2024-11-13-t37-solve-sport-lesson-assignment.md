@@ -35,7 +35,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                     * [ ] Make constraint variable definition correct to this correct way of piping function call chain results.
                                     * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
                                       instead of using a dedicated constraint function and variable.
-                                    * [x] Make function call arguments function call chains, in order to support everything as a function argument. 
+                                        * [x] Use the query interface.
+                                    * [x] Make function call arguments function call chains, in order to support everything as a function argument.
                                     * [ ] Delete `constraint` function.
                                     * [ ] Port SolutionEditor to the new Editor.
                                 * [ ] Ensure, that the runners' subject is set correctly.
