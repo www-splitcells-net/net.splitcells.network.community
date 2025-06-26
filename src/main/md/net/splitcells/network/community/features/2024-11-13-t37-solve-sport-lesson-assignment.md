@@ -56,6 +56,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
+        * [ ] Delete `Query#constraintResult`.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
