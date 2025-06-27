@@ -1,15 +1,19 @@
 # Process project status badges weekly
-
 * The issue number is [\#32](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/32).
-
+# Task Description
+All workflows should be green for most of the time.
+If a new automated workflow is being created, add it to the status badges only,
+when it is green most of the time.
+Alternatively, these should be executed by hand,
+as otherwise it is hard to judge the status,
+when it is stating failure all the time.
+This does not apply for statuses, that show progress.
 # Service
-
 * Process status badges.
 * Execute static code checks.
-
 # Tasks.
-* [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
-* [ ] Ensure that local test coverage report is correct
+* [ ] Make `net.splitcells.network.repos.license.check` successful and add it to the daily CI.
+* [ ] Check which tasks are more fitting for [weekly deploy tests](../deployment/weekly-t30-deploy-tests.md).
 * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.

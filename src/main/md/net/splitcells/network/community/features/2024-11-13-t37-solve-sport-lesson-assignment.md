@@ -12,6 +12,9 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
+    * [ ] Consider always requiring a user.
+    * [ ] Just support try catch of user errors for now, as this will be enough for a long time.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [x] Create a name for the language and document it. -> It's named Geal.

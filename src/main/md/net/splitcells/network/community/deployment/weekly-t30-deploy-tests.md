@@ -97,6 +97,8 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
   * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
   * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
   * [ ] Note why code coverage is done this way.
+  * [ ] Check by hand if the aggregate test coverage report is correct.
+  * [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well.
 * [ ] Use ExtensiveTester on capable platforms.
