@@ -80,7 +80,7 @@ but right now this does not seem to be the case.
       Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
     * [x] Document why Python is not desired by that much in this project and why it was not removed from this project.
 * [ ] Clean up worker execution.
-    * [ ] Move Java improvements to Python.
+    * [x] Move Java improvements to Python.
         * [x] Create `worker.execute.py` and prepare it as the new worker execution version.
             * [x] Port code.
                 * [x] Port CLI argument parsing.
@@ -100,7 +100,7 @@ but right now this does not seem to be the case.
             * [x] Make flat folder true by default and after that, remove this flag and the implementation for false.
             * [x] Create remote build command, that works similar to the remote bootstrap command. -> The new parameter is `--build-remote`.
             * [x] Make `--pull-network-log` true by default, in order to simplify commands.
-        * [ ] Replace existing `worker.execute` with `worker.execute.py`.
+        * [x] Replace existing `worker.execute` with `worker.execute.py`.
             * [x] Make everything work with `--backwards-compatible=false`.
                 * [x] Raspberry Pi
                 * [x] Live Server
@@ -135,18 +135,18 @@ but right now this does not seem to be the case.
             * [x] Set `--backwards-compatible` to true by default.
             * [x] Remove `--flat-folders`, as it is only used with true and was only created for a soft migration.
             * [o] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
-            * [ ] Test every flag.
+            * [x] Test every flag.
                 * [x] --test-remote
                 * [x] --build-remote
                 * [x] --pull-network-log
                 * [x] --source-repo
                 * [x] --use-host-documents (Consider its removal)
                 * [x] --publish-execution-image
-                * [ ] --cpu-architecture (test_local_deployment is not correct.)
-                * [ ] --use-playwright
-                * [ ] --auto-configure-cpu-architecture-explicitly
-                * [ ] --execute-via-ssh-at
-            * [ ] Use coverage tool, in order to ensure a minimal test coverage. i.e. via `coverage report --fail-under=80`.
+                * [x] --cpu-architecture (test_local_deployment is not correct.)
+                * [x] --use-playwright
+                * [x] --auto-configure-cpu-architecture-explicitly
+                * [x] --execute-via-ssh-at
+            * [o] Use coverage tool, in order to ensure a minimal test coverage. i.e. via `coverage report --fail-under=80`. -> Moved this task into a TODO of the Network Worker.
             * [x] Remove `--daemon-name` at it is replaced by execution name.
             * [x] Use `systemctl --user daemon-reload`.
             * [x] Remove `--backwards-compatible`.
@@ -155,6 +155,9 @@ but right now this does not seem to be the case.
     * [x] Delete Java based Network Worker.
     * [x] Delete alternative underscore flag versions, as these are not needed anymore.
     * [ ] Check the other `bin/worker.*` commands.
+        * [ ] For what is `worker.bootstrap.*` split needed?
+        * [ ] `worker.repos.test`
+        * [ ] `worker.test.at`
     * [ ] Delete `bin/worker.execute`, as it is not used anymore.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
