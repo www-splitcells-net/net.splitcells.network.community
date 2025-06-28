@@ -158,6 +158,8 @@ but right now this does not seem to be the case.
         * [ ] For what is `worker.bootstrap.*` split needed?
         * [ ] `worker.repos.test`
         * [ ] `worker.test.at`
+        * [ ] `worker.repos.*` should be `repos.*`, as this is no worker command and only handles the current repo.
+          Note, that a worker is not a set of repos, but also an appropriate id and file location.
     * [ ] Delete `bin/worker.execute`, as it is not used anymore.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
