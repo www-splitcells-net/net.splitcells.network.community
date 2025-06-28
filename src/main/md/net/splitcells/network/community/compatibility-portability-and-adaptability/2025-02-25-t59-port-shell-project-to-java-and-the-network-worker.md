@@ -136,17 +136,27 @@ but right now this does not seem to be the case.
             * [x] Remove `--flat-folders`, as it is only used with true and was only created for a soft migration.
             * [o] Avoid redundant repo clones, that happen all the time. -> This seems to be caused by `./bin/test.routine`. So at least, this is not causing active problems for now.
             * [ ] Test every flag.
-            * [ ] Use only applyTemplate for any String replacement.
+                * [x] --test-remote
+                * [x] --build-remote
+                * [x] --pull-network-log
+                * [x] --source-repo
+                * [x] --use-host-documents (Consider its removal)
+                * [x] --publish-execution-image
+                * [ ] --cpu-architecture (test_local_deployment is not correct.)
+                * [ ] --use-playwright
+                * [ ] --auto-configure-cpu-architecture-explicitly
+                * [ ] --execute-via-ssh-at
+            * [ ] Use coverage tool, in order to ensure a minimal test coverage. i.e. via `coverage report --fail-under=80`.
             * [x] Remove `--daemon-name` at it is replaced by execution name.
             * [x] Use `systemctl --user daemon-reload`.
             * [x] Remove `--backwards-compatible`.
         * [y] Make flat-folder true by default.
         * [x] Deploy on live server.
-    * [ ] Delete Java based Network Worker.
-    * [ ] Delete alternative underscore flag versions, as these are not needed anymore.
+    * [x] Delete Java based Network Worker.
+    * [x] Delete alternative underscore flag versions, as these are not needed anymore.
     * [ ] Check the other `bin/worker.*` commands.
+    * [ ] Delete `bin/worker.execute`, as it is not used anymore.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
-* [ ] Delete `bin/worker.execute`.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
 * [ ] Note, that breaking the live server deployment during the migration is not acceptable.
 * [ ] Use only one string template as the core for local execution and one for remote execution.

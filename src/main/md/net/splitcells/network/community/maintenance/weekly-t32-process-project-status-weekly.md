@@ -1,6 +1,8 @@
 # Process project status badges weekly
 * The issue number is [\#32](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/32).
 # Task Description
+Here automated tests are maintained and their results processed.
+
 All workflows should be green for most of the time.
 If a new automated workflow is being created, add it to the status badges only,
 when it is green most of the time.
@@ -13,8 +15,15 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Make `net.splitcells.network.repos.license.check` successful and add it to the daily CI.
-* [ ] Check which tasks are more fitting for [weekly deploy tests](../deployment/weekly-t30-deploy-tests.md).
-* [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website. 
+* [ ] Fix code coverage.
+    * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+    * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
+    * [ ] Note why code coverage is done this way.
+    * [ ] Check by hand if the aggregate test coverage report is correct.
+    * [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
+    * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
+* [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
+* [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin

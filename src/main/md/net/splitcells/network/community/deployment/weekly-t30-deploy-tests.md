@@ -1,6 +1,8 @@
 # Weekly deploy tests.
-Tests are executed on servers in order to ensure, that the software works on different CPUs.
-The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/30).
+* The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/30).
+# Task Description
+Here manual or semiautomated tests are maintained and their results processed.
+Some tests are executed on servers in order to ensure, that the software works on different CPUs or computer types.
 # Services
 * Check [daily full test on network hub](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions).
 * Execute `net.splitcells.network.deploy.build.sh`.
@@ -93,14 +95,6 @@ The issue number is [\#30](https://codeberg.org/splitcells-net/net.splitcells.ne
         * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
         * [ ] Daily Codeberg workflow.
         * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
-* [ ] Fix code coverage.
-  * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
-  * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
-  * [ ] Note why code coverage is done this way.
-  * [ ] Check by hand if the aggregate test coverage report is correct.
-  * [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
-* [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
-* [ ] Let Tester test capability tests as well.
 * [ ] Use ExtensiveTester on capable platforms.
 * [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
 * [ ] `test.everything` should verify the validity of the git data as well.
