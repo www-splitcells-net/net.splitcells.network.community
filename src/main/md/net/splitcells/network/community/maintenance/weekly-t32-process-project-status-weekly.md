@@ -31,6 +31,7 @@ This does not apply for statuses, that show progress.
 * [ ] Use https://checkstyle.sourceforge.io/
 * [ ] https://spotbugs.github.io/
 * [ ] https://dependencytrack.org/
+* [ ] Establish test for all project commands (`bin/*`).
 * [ ] Consider asking AI to find bugs for inspiration.
   Maybe there is an easy way to generate kind of complex queries for AI based source code,
   so that AI can think about, what is happening in the code?
