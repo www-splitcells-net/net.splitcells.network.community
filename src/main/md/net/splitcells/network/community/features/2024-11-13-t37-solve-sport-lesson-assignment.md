@@ -39,8 +39,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                     * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
                                       instead of using a dedicated constraint function and variable.
                                         * [x] Use the query interface.
-                                        * [ ] Make FunctionCallMetaExecutor less mutable and use FunctionCallRunner constructor functions.
-                                        * [ ] Make `FunctionCallRunner#execute` not require additional function calls, as otherwise it can hard to understand, what is required for `FunctionCallRunner#execute`.
+                                        * [x] Make FunctionCallMetaExecutor less mutable and use FunctionCallRunner constructor functions.
+                                        * [x] Make `FunctionCallRunner#execute` not require additional function calls, as otherwise it can hard to understand, what is required for `FunctionCallRunner#execute`.
                                     * [x] Make function call arguments function call chains, in order to support everything as a function argument.
                                     * [ ] Delete `constraint` function.
                                     * [ ] Port SolutionEditor to the new Editor.
