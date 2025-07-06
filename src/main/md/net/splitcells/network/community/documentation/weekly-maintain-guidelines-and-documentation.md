@@ -15,6 +15,7 @@
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
 # Tasks
+* [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
 * [ ] Make News more practible.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.

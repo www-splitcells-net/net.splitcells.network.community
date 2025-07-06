@@ -41,6 +41,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                         * [x] Use the query interface.
                                         * [x] Make FunctionCallMetaExecutor less mutable and use FunctionCallRunner constructor functions.
                                         * [x] Make `FunctionCallRunner#execute` not require additional function calls, as otherwise it can hard to understand, what is required for `FunctionCallRunner#execute`.
+                                    * [ ] Avoid `BaseCallRunnerParser#support` by implementing the `BaseCallRunnerParser#execute` just like other execute methods for runners.
                                     * [x] Make function call arguments function call chains, in order to support everything as a function argument.
                                     * [ ] Delete `constraint` function.
                                     * [ ] Port SolutionEditor to the new Editor.
