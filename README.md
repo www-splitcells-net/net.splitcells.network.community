@@ -52,9 +52,6 @@ Projects that are being worked cyclically, and probably will never be finished:
   * Description: What could go possibly wrong?
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 * The Symbiosis Project
-* Webserver Development
-    * Description: Organizing and presenting data is the foundation of a good day
-    * [Link](./src/main/md/net/splitcells/network/community/webserver-development/index.md)
 ## Notes
 * In order to mark tasks in `task-archives` with a high priority,
   add `9999-` as the file name prefix.

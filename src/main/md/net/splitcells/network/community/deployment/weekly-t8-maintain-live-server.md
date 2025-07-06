@@ -10,10 +10,6 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
-* [x] Restart the server daily automatically.
-    * [x] Move automatic update to 3:00 to 3:45. 
-    * [x] Setup daily restart configuration for at 4:00.
-    * [x] Check if new configuration worked.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
@@ -104,6 +100,10 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 ## Done Tasks
+* [x] Restart the server daily automatically.
+    * [x] Move automatic update to 3:00 to 3:45.
+    * [x] Setup daily restart configuration for at 4:00.
+    * [x] Check if new configuration worked.
 * [x] The deployed systemd service shuts down after a while.
   Maybe this is caused by the oneshot type or maybe this is caused by the daily server restart?
   -> This is caused by the fact, that the systemd service config has not configured an automated service start.
