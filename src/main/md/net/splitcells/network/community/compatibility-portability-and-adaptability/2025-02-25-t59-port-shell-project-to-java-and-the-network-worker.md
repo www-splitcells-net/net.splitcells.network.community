@@ -158,8 +158,10 @@ but right now this does not seem to be the case.
         * [x] For what is `worker.bootstrap.*` split needed?
           -> Yes, as only some parts of the bootstrapping are required at once, except for `worker.bootstrap.repos` and `worker.bootstrap.shell`.
           Also, this always instant updates without duplicate runs `worker.bootstrap`.
-        * [ ] `worker.test.at`
+        * [ ] `worker.test.at` (everything up until `test.everything` is tested via splitcells@raspberrypi-v2.local).
         * [ ] `worker.bootstrap.container`
+            * [ ] Do bootstrap with new --boostrap-locally instead of a more complex command.
+            * [ ] Write Docker file and co. to correct folder via absolute path or path relative to the `~/.local/stae`
         * [x] `worker.repos.*` should be `repos.*`, as this is no worker command and only handles the current repo.
           Note, that a worker is not a set of repos, but also an appropriate id and file location.
             * [x] `worker.repos.pull` -> `repos.pull`
