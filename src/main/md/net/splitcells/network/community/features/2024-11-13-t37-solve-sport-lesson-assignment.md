@@ -31,25 +31,27 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Create domain objects.
                     * [ ] Create parser and integrate into editor.
                         * [ ] Test pure AST interpretation by example.
-                            * [ ] Actually parse constraints.
-                                * [ ] Implement recursion.
-                                * [ ] Ensure, that constraint call recursion's last element returns the subject and not the first one,
+                            * [x] Actually parse constraints.
+                                * [x] Implement recursion.
+                                * [x] Ensure, that constraint call recursion's last element returns the subject and not the first one,
                                   as this makes more sense.
-                                    * [ ] Make constraint variable definition correct to this correct way of piping function call chain results.
-                                    * [ ] Apply constraints to solutions by function call chains directly starting at the solution variable,
+                                    * [o] Make constraint variable definition correct to this correct way of piping function call chain results. -> No constraint variables are used anymore.
+                                    * [x] Apply constraints to solutions by function call chains directly starting at the solution variable,
                                       instead of using a dedicated constraint function and variable.
                                         * [x] Use the query interface.
                                         * [x] Make FunctionCallMetaExecutor less mutable and use FunctionCallRunner constructor functions.
                                         * [x] Make `FunctionCallRunner#execute` not require additional function calls, as otherwise it can hard to understand, what is required for `FunctionCallRunner#execute`.
-                                    * [ ] Avoid `BaseCallRunnerParser#support` by implementing the `BaseCallRunnerParser#execute` just like other execute methods for runners.
+                                    * [x] Avoid `BaseCallRunnerParser#support` by implementing the `BaseCallRunnerParser#execute` just like other execute methods for runners.
+                                        * [x] Migrate every BaseCallRunnerParser to FunctionCallExecutor.
+                                        * [x] Delete BaseCallRunner.
                                     * [x] Make function call arguments function call chains, in order to support everything as a function argument.
-                                    * [ ] Delete `constraint` function.
-                                    * [ ] Port SolutionEditor to the new Editor.
-                                * [ ] Ensure, that the runners' subject is set correctly.
+                                    * [x] Delete `constraint` function.
+                                * [x] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
                         * [ ] Test AST parsing and AST interpretation by example.
                 * [x] Deprecate existing language.
+                * [ ] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [x] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [o] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies. -> Isolation via Java Legacy class should be enough.

@@ -1,4 +1,6 @@
 # Infrastructure Software
+* [Git Build Hook Maven Plugin - Git Hook Like Functionality via Maven](https://github.com/rudikershaw/git-build-hook)
+* [TornadoVM - Java on Heterogeneous Hardware like GPUs](https://www.tornadovm.org/)
 * [Graphite - procedural 2D raster and vector image editor](https://graphite.rs/)
 * [Toolbox/Toolbx for local CLI tools and the Shell project.](https://containertoolbx.org/)
 * [Smile — Statistical Machine Intelligence and Learning Engine for Java](https://github.com/haifengl/smile)
