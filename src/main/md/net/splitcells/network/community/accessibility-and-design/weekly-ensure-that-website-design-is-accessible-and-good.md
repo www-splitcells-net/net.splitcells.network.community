@@ -10,6 +10,7 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 * [ ] Check warnings and errors in the browser.
 # Tasks
+* [ ] Make rendering of TODOs prettier.
 * [ ] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] The meta menu bar does not feel like the start of a new distinct part of the website in mobile view.
 * [ ] Buttons should be less bold than titles.

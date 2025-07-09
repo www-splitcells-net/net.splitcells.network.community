@@ -30,7 +30,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
                     * [x] Create domain objects.
                     * [ ] Create parser and integrate into editor.
-                        * [ ] Test pure AST interpretation by example.
+                        * [x] Test pure AST interpretation by example.
                             * [x] Actually parse constraints.
                                 * [x] Implement recursion.
                                 * [x] Ensure, that constraint call recursion's last element returns the subject and not the first one,
@@ -49,7 +49,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                 * [x] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
-                        * [ ] Test AST parsing and AST interpretation by example.
+                        * [ ] Test AST parsing and AST interpretation by example. CURRENT
+                          -> Test this at
                 * [x] Deprecate existing language.
                 * [ ] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
@@ -61,6 +62,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [o] Delete `net.splitcells.gel.ui.Editor`. -> This class is migrated instead.
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
             * [ ] Implement proper user friendly error handling.
+                * [ ] Use user session in dem, in order to store all errors.
+                * [ ] Use multiple types of errors.
+                * [ ] Define the subject of errors.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
