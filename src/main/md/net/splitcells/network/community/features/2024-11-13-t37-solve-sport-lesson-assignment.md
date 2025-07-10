@@ -50,7 +50,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
                         * [ ] Test AST parsing and AST interpretation by example. CURRENT
-                          -> Test this at
+                          -> Test this at `EditorTest#testGealParsing`.
                 * [x] Deprecate existing language.
                 * [ ] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
