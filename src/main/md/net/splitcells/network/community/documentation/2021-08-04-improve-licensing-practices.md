@@ -51,7 +51,12 @@ We also need full accounting for it.
     * [ ] List license of every page centrally.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
-    * [ ] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
+    * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
+* [ ] Images are licensed under the `CC BY-SA 4.0`.
+    * [ ] Update licensing guidelines.
+    * [ ] Consider add licensing metadata in images itself. See German court cases (to be refound),
+      why no license metadata in `CC BY-SA 4.0` can be a problem for other distributors.
+    * [ ] Consider https://creativecommons.org/licenses/by-sa/4.0/deed.en
 * [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
 * [ ] `test.everything` should verify license data as well.
 * [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.

@@ -15,6 +15,7 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Make `net.splitcells.network.repos.license.check` successful and add it to the daily CI.
+  Images are licensed under `CC BY-SA 4.0`. The appropriate guidelines and metadata will be handled [here](../documentation/2021-08-04-improve-licensing-practices.md).
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
