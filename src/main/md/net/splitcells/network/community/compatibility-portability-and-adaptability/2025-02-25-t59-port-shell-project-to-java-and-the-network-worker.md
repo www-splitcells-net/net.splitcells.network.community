@@ -79,7 +79,7 @@ but right now this does not seem to be the case.
     * [x] Document, when Python implementation of network worker and repo process should be replaced by a Java implementation.
       Note, that in this case the implementation should be fully replaced, in order to avoid duplicate implementations.
     * [x] Document why Python is not desired by that much in this project and why it was not removed from this project.
-* [ ] Clean up worker execution.
+* [x] Clean up worker execution.
     * [x] Move Java improvements to Python.
         * [x] Create `worker.execute.py` and prepare it as the new worker execution version.
             * [x] Port code.
@@ -154,26 +154,26 @@ but right now this does not seem to be the case.
         * [x] Deploy on live server.
     * [x] Delete Java based Network Worker.
     * [x] Delete alternative underscore flag versions, as these are not needed anymore.
-    * [ ] Check the other `bin/worker.*` commands. Are these needed? Need these to be fixed?
+    * [x] Check the other `bin/worker.*` commands. Are these needed? Need these to be fixed?
         * [x] For what is `worker.bootstrap.*` split needed?
           -> Yes, as only some parts of the bootstrapping are required at once, except for `worker.bootstrap.repos` and `worker.bootstrap.shell`.
           Also, this always instant updates without duplicate runs `worker.bootstrap`.
-        * [ ] `worker.test.at` (everything up until `test.everything` is tested via splitcells@raspberrypi-v2.local).
-        * [ ] `worker.bootstrap.container`
-            * [ ] Do bootstrap with new --boostrap-locally instead of a more complex command.
-            * [ ] Write Docker file and co. to correct folder via absolute path or path relative to the `~/.local/stae`
+        * [x] `worker.bootstrap.container`
+            * [x] Write Docker file and co. to correct folder via absolute path or path relative to the `~/.local/state`
+            * [x] Add unit test to `worker.execute.py` regarding the last step, as this one caused quite a lot of problems.
+            * [o] Do bootstrap with new --boostrap-locally instead of a more complex command. -> This is not needed for now.
         * [x] `worker.repos.*` should be `repos.*`, as this is no worker command and only handles the current repo.
           Note, that a worker is not a set of repos, but also an appropriate id and file location.
             * [x] `worker.repos.pull` -> `repos.pull`
             * [x] `worker.repos.push` -> `repos.push`
             * [x] `worker.repos.status` -> `repos.status`
             * [x] `worker.repos.test` -> This command is not needed and therefore deleted. `worker.test.at` is used instead.
-    * [ ] Delete `bin/worker.execute`, as it is not used anymore.
+    * [x] Delete `bin/worker.execute`, as it is not used anymore.
 * [ ] Port relevant parts of the `deploy.build.at` documentation.
 * [ ] Document why Network Worker Execution implementations were and are so badly developed.
 * [ ] Note, that breaking the live server deployment during the migration is not acceptable.
 * [ ] Use only one string template as the core for local execution and one for remote execution.
-* [ ] Everything like `repo.process` should be an only one string template thing.
+* [o] Everything like `repo.process` should be an only one string template thing. -> This was added as a TODO to `repo.process` itself.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
          * [x] Port `bin/worker.test.at` to Java.

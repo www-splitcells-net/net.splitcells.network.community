@@ -95,6 +95,9 @@ Some tests are executed on servers in order to ensure, that the software works o
         * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
         * [ ] Daily Codeberg workflow.
         * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
+* [ ] `worker.test.at` (everything up until `test.everything` is tested via splitcells@raspberrypi-v2.local).
+    * [ ] Ensure, that every test command writes test results into Network Log.
+      See `test.extensively.via.network.worker` and consider Maven integration.
 * [ ] Use ExtensiveTester on capable platforms.
 * [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
 * [ ] `test.everything` should verify the validity of the git data as well.
