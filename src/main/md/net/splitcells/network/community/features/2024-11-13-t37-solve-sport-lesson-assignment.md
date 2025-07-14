@@ -56,15 +56,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [x] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [o] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies. -> Isolation via Java Legacy class should be enough.
-            * [ ] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
+            * [x] Allow using sum types in this project's Java subset, in order to provide access to a set of values, where only one of them at one time is actually set. Use this only for that.
                 * [x] Extend ANTLR grammar.
-                * [ ] Comment the reason for allowing sum types.
+                * [o] Comment the reason for allowing sum types.
             * [o] Delete `net.splitcells.gel.ui.Editor`. -> This class is migrated instead.
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Use user session in dem, in order to store all errors.
-                * [ ] Use multiple types of errors.
+                * [ ] Use multiple types of messages like errors and warnings.
                 * [ ] Define the subject of errors.
+                * [ ] Handle this like logging, but with a special address.
+                * [ ] Document why explicit error message handling is bad.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
