@@ -52,7 +52,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [ ] Test AST parsing and AST interpretation by example. CURRENT
                           -> Test this at `EditorTest#testGealParsing`.
                 * [x] Deprecate existing language.
-                * [ ] Port SolutionEditor to the new Editor.
+                * [x] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
                 * [x] Use list based FunctionCallChainDescription for constraint definitions, instead of creating a special case for constraints. 
             * [o] Consider moving parsing code to dedicated project, in order to isolate ANTLR4 and grammar dependencies. -> Isolation via Java Legacy class should be enough.
