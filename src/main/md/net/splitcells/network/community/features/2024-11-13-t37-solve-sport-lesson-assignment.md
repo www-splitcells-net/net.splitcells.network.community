@@ -71,6 +71,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`.
+* [ ] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
