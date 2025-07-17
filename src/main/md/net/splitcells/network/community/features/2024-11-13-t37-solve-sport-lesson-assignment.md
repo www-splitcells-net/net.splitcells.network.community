@@ -51,6 +51,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] Remove code duplicate in central parser.
                         * [ ] Test AST parsing and AST interpretation by example. CURRENT
                           -> Test this at `EditorTest#testGealParsing`.
+                            * [ ] Remove concept of name expressions, as it is already covered by function calls without arguments and the parser is already mixing up these two.
+                              The distinction has currently no practical use and introducing names later on will probably be easier,
+                              than to remove these, if names turn out to be a dead end (which it already seems).
+                            * [ ] Reenable tests.
                 * [x] Deprecate existing language.
                 * [x] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
@@ -67,6 +71,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Define the subject of errors.
                 * [ ] Handle this like logging, but with a special address.
                 * [ ] Document why explicit error message handling is bad.
+                * [ ] Render all exception messages with a tree as common mark.
     * [ ] Add example of sport lesson assignment as an editor page to the webserver.
     * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
