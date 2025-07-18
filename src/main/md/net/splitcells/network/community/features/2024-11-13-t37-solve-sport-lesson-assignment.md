@@ -25,11 +25,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Create public Grammar documentation file. This will be later completed, when the editor is finalized
               and thereby the standard library is known.
         * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
-            * [ ] Create dedicated Gel editor project, that replaces the Sep project.
+            * [x] Create dedicated Gel editor project, that replaces the Sep project.
                 * [x] Create Gel editor project.
-                * [ ] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
+                * [x] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
                     * [x] Create domain objects.
-                    * [ ] Create parser and integrate into editor.
+                    * [x] Create parser and integrate into editor.
                         * [x] Test pure AST interpretation by example.
                             * [x] Actually parse constraints.
                                 * [x] Implement recursion.
@@ -49,12 +49,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                 * [x] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
-                        * [ ] Test AST parsing and AST interpretation by example. CURRENT
+                        * [x] Test AST parsing and AST interpretation by example. CURRENT
                           -> Test this at `EditorTest#testGealParsing`.
-                            * [ ] Remove concept of name expressions, as it is already covered by function calls without arguments and the parser is already mixing up these two.
+                            * [x] Remove concept of name expressions, as it is already covered by function calls without arguments and the parser is already mixing up these two.
                               The distinction has currently no practical use and introducing names later on will probably be easier,
                               than to remove these, if names turn out to be a dead end (which it already seems).
-                            * [ ] Reenable tests.
+                            * [x] Reenable tests.
                 * [x] Deprecate existing language.
                 * [x] Port SolutionEditor to the new Editor.
             * [x] Remove direct dependency to ANTLR4 at parser and any other code.
