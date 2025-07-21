@@ -18,6 +18,7 @@
     * [ ] Fix the title of privacy policy.
     * [ ] Do this for the German and English version.
     * [ ] Use the same privacy policy for the static and the live server.
+* [ ] `https://splitcells.net/net/splitcells/website/css/basic.css` is not updated.
 * [ ] Remove telephone number from Impressum and replace it with Matrix chat room.
     * [ ] Create Matrix chat.
     * [ ] Update impressum.

@@ -65,7 +65,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Comment the reason for allowing sum types.
             * [o] Delete `net.splitcells.gel.ui.Editor`. -> This class is migrated instead.
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
-            * [ ] Read input data.
+            * [x] Create input data interface for editor.
             * [ ] Create new UI for code editor.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Use user session in dem, in order to store all errors.
