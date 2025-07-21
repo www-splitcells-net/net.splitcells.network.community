@@ -65,7 +65,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Create input data interface for editor.
             * [ ] Create new UI for code editor.
                 * [ ] Determine inputs for user.
-                * [ ] Show problem definition.
+                * [x] Show problem definition.
                 * [ ] Show all problem tables.
                 * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
