@@ -67,6 +67,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
             * [x] Create input data interface for editor.
             * [ ] Create new UI for code editor.
+                * [ ] Determine inputs for user.
+                * [ ] Show problem definition.
+                * [ ] Show all problem tables.
+                * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Use user session in dem, in order to store all errors.
                 * [ ] Use multiple types of messages like errors and warnings.
