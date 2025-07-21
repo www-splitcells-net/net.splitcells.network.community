@@ -12,9 +12,6 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
-    * [ ] Consider always requiring a user.
-    * [ ] Just support try catch of user errors for now, as this will be enough for a long time.
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [x] Create a name for the language and document it. -> It's named Geal.
@@ -72,17 +69,18 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Show all problem tables.
                 * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
+                * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
+                    * [ ] Consider always requiring a user.
+                    * [ ] Just support try catch of user errors for now, as this will be enough for a long time.
                 * [ ] Use user session in dem, in order to store all errors.
                 * [ ] Use multiple types of messages like errors and warnings.
                 * [ ] Define the subject of errors.
                 * [ ] Handle this like logging, but with a special address.
                 * [ ] Document why explicit error message handling is bad.
                 * [ ] Render all exception messages with a tree as common mark.
-    * [ ] Add example of sport lesson assignment as an editor page to the webserver.
-    * [ ] Document and attempt backwards compatibility for this language only. Note the relation to the stable system API.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`.
-* [ ] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
+* [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
@@ -93,6 +91,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
           which is better than aspect oriented style because of required code duplication caused by data selection. 
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
+* [ ] Make sport lesson assignment an additional GUI editor example.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
