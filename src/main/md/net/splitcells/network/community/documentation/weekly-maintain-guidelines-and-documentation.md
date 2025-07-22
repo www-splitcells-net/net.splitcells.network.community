@@ -41,7 +41,8 @@
 * [ ] Consider creating a newsletter that bundles blog, social media posts and interesting info like releases of other optimization software, that contain something interesting regarding optimization.
     * [ ] Add newsletter to global changelog.
 * [ ] Note in programming guidelines, that implicit error handling is preferred to explicit one.
-* [ ] Consider creating a joke page.
+* [ ] Consider creating a joke page about this project.
     * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
+o    * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.

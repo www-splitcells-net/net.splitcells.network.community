@@ -61,3 +61,4 @@ We also need full accounting for it.
 * [ ] `test.everything` should verify license data as well.
 * [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
   Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
+* [ ] Add denial notice of EU's copyright exception regarding machine learning.

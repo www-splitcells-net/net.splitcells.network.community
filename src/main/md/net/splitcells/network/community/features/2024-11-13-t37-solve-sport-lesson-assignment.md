@@ -64,7 +64,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Use unified namespace for attribute names across SolutionEditors, in order to simplify user input.
             * [x] Create input data interface for editor.
             * [ ] Create new UI for code editor.
-                * [ ] Determine inputs for user.
+                * [x] Do not use QueryMode. Use one method in order to do most things in the editor like calculating the solution or opening tabs for all data in the problem definition.
+                * [ ] Determine inputs for user by submitting the editor's form.
+                  The server answers with the new form's input values.
+                  Some of the inputs represent the new form's fields, that need to be added to the form.
+                    * [ ] The server responses to the editor form's submission with all editor's data entries as new input fields.
+                    * [ ] net_splitcells_webserver_form_submit adds the new fields to the frontend's editor form.
                 * [x] Show problem definition.
                 * [ ] Show all problem tables.
                 * [ ] Execute optimization via colloquium planning.
@@ -110,6 +115,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] It seems, that codemirror 6 has better mobile view.
     * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
       where a program also represents a GUI for interacting with the world.
+* [ ] Note that initial no-code editor was a feature creep.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
