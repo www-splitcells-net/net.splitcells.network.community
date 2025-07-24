@@ -65,7 +65,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Create input data interface for editor.
             * [ ] Create new UI for code editor.
                 * [x] Do not use QueryMode. Use one method in order to do most things in the editor like calculating the solution or opening tabs for all data in the problem definition.
-                * [x] Determine inputs for user by submitting the editor's form.
+                * [x] Determine data inputs for user by submitting the editor's form.
                   The server answers with the new form's input values.
                   Some of the inputs represent the new form's fields, that need to be added to the form.
                     * [x] The server responses to the editor form's submission with all editor's data entries as new input fields.
@@ -73,6 +73,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Show problem definition.
                 * [x] Show all tables.
                 * [x] Show all solutions.
+                * [ ] Show all tables and solutions as interactive HTML tables.
+                * [ ] Test data inputs. It does not seem to work correctly.
+                * [ ] Ensure, that data inputs are not deleted after calculation a solution.
                 * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
