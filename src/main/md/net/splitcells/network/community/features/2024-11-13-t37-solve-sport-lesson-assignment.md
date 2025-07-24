@@ -71,8 +71,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] The server responses to the editor form's submission with all editor's data entries as new input fields.
                     * [x] net_splitcells_webserver_form_submit adds the new fields to the frontend's editor form.
                 * [x] Show problem definition.
-                * [ ] Show all tables.
-                * [ ] Show all solutions.
+                * [x] Show all tables.
+                * [x] Show all solutions.
                 * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
@@ -117,7 +117,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
       where a program also represents a GUI for interacting with the world.
 * [ ] Note that initial no-code editor was a feature creep.
-* [ ] Use fonts with constant character width, in order to have consistent nice formatting in the code editor's default example.
+* [ ] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
+  Currently, some span styles are overwritten by the `basic.css`.
+    * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
+* [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
+  This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
