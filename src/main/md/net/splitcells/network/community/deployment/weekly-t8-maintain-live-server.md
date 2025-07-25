@@ -10,6 +10,9 @@
 * Test security
 * Test legalities and privacy policy. 
 ## Open Tasks
+* [ ] UI tester: start a browser for each test instance and then destroy it,
+  but do not do actions over any browsers in parallel.
+  This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser. 
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
