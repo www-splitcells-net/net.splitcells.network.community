@@ -72,6 +72,9 @@ Python 3 is used instead of Java in order to support as many servers and operati
 
 In the future a Java implementation might be a better idea,
 but right now this does not seem to be the case.
+
+This task was not done cost-effective as it blindly relied on reimplementing things,
+instead of making backwards compatible changes, that are migrated to by the corresponding dependants.
 # Tasks
 * [x] Python is important for complex scripts and therefore Python should not be deprecated.
   If Python is not deprecated, there is no need for a Java implementation of worker execute and
