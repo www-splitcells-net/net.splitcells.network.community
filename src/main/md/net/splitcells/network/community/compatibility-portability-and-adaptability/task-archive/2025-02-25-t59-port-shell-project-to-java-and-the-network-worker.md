@@ -57,7 +57,8 @@ This makes the following possible:
 * Make it easier to generate simple setup scripts for servers without requiring a full Shell project installation on the target server.
 # Acceptance Note
 Instead of porting the shell project and the network worker to Java, the Python code is improved
-by simplifying it and adding tests, that are automatically executed on any execution of these.
+by simplifying the code, consolidating multiple deployment scripts and adding tests, that are automatically executed on any execution of these.
+Furthermore, the deployment file structure on the target server was simplified by remove excessive folder nesting.
 
 The reason for that is, that requiring a minimal and relatively old Python 3 instance,
 allows one to execute commands with complex arguments easily on servers without any or minimal setup as most Linux Distros have Python 3 by default.
