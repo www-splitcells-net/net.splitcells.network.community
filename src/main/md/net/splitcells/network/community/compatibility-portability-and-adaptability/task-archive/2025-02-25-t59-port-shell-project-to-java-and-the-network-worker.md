@@ -171,8 +171,8 @@ but right now this does not seem to be the case.
     * [x] Delete `bin/worker.execute`, as it is not used anymore.
 * [x] Port relevant parts of the `deploy.build.at` documentation.
 * [x] Document why Network Worker Execution implementations were and are so badly developed.
-* [ ] Note, that breaking the live server deployment during the migration is not acceptable.
-* [ ] Use only one string template as the core for local execution and one for remote execution.
+* [x] Note, that breaking the live server deployment during the migration is not acceptable.
+* [o] Use only one string template as the core for local execution and one for remote execution. -> This was noted as a TODO in the program code.
 * [o] Everything like `repo.process` should be an only one string template thing. -> This was added as a TODO to `repo.process` itself.
 * [o] Port 'net.splitcells.network's Worker commands to Java.
     * [o] Create Java alternative.
@@ -284,7 +284,7 @@ but right now this does not seem to be the case.
     * [o] Note overhaul changes in changelog.
     * [o] Copy appropriate parts of the task description to the project's documentation.
     * [o] Add this task description to the project's documentation.
-* [ ] Update changelog.
+* [x] Update changelog.
 # deploy.build.at
 ````
 #!/usr/bin/env python3

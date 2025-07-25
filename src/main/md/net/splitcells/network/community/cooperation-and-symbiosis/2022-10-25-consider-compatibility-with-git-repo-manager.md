@@ -6,9 +6,9 @@ where repos process is mainly used for creating configs for tools and meta repos
 Offer git-repo-manager cooperation so these tools are compatible with each other,
 both understand the same simplistic file format for repo inventory files.
 # Tasks
-* [ ] This project will be relevant, when the [repo process is ported to Java](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md).
+* [ ] This project will be relevant, when the [repo process is ported to Java](../compatibility-portability-and-adaptability/task-archive/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md).
 * [ ] Simplify the Python implementation.
-* [ ] Clean up this issue. This issue changes a lot, because of [Port Shell project to Java and the Network Worker](../compatibility-portability-and-adaptability/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md).
+* [ ] Clean up this issue. This issue changes a lot, because of [Port Shell project to Java and the Network Worker](../compatibility-portability-and-adaptability/task-archive/2025-02-25-t59-port-shell-project-to-java-and-the-network-worker.md).
 * [ ] Clean up existing repos process doc.
 * [ ] Define different focus of git-repo-manager and repos process.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
