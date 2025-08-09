@@ -41,7 +41,7 @@ This does not apply for statuses, that show progress.
 * [ ] Maybe just safe somewhere interesting frameworks, as using too many will just create problems:
     * https://github.com/cmu-pasta/mu2
     * https://github.com/rohanpadhye/JQF
-
+* [ ] Consider [JSpecify](https://jspecify.dev/).
 # Done Task
 
 * [x] Find a way for SoundCloud etc. to ignore certain things via an annotation and comment.
