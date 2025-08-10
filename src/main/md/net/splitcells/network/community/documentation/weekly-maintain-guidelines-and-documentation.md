@@ -21,6 +21,7 @@
     * [ ] Show project completions and cancellations.
     * [ ] Show community blog entries.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
+* [ ] Check validity of all XML files.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
 * [ ] Make code viewer nice.
 * [ ] Reduce background shadows for images, in order to reduce noise. 
@@ -43,6 +44,6 @@
 * [ ] Note in programming guidelines, that implicit error handling is preferred to explicit one.
 * [ ] Consider creating a joke page about this project.
     * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
-o    * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
+    * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.

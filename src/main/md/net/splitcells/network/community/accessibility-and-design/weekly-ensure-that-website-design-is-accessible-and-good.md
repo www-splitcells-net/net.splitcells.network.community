@@ -10,8 +10,6 @@ this is an opportunity to consider this aspect.
 # Service Tasks
 * [ ] Check warnings and errors in the browser.
 # Tasks
-* [ ] Make rendering of TODOs prettier.
-* [ ] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] The meta menu bar does not feel like the start of a new distinct part of the website in mobile view.
 * [ ] Buttons should be less bold than titles.
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
@@ -31,6 +29,11 @@ this is an opportunity to consider this aspect.
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
 # Completed Tasks
+* [x] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
+  -> The client side errors could not be found anymore.
+* [x] Make rendering of TODOs prettier. -> The TODOs are now rendered more compactly, which make them look prettier.
+  Thereby, it was noticed, that lists are incorrectly nested.
+  This problem was not fixed.
 * [x] Make white bold structural guidelines less thick, as these distract a bit too much.
 * [x] Prefer using always darkest black color as text color,
   in order to improve contrast.
