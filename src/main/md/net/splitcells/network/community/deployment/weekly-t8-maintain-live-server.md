@@ -8,7 +8,9 @@
     * Update deployed software
 * Improve deployment and its processes.
 * Test security
-* Test legalities and privacy policy. 
+* Test legalities and privacy policy.
+    * Check via browser, if really no cookies are set.
+* Check via browser, if there are client side errors.
 ## Open Tasks
 * [ ] UI tester: start a browser for each test instance and then destroy it,
   but do not do actions over any browsers in parallel.

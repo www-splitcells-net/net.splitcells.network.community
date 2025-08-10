@@ -3,20 +3,24 @@
 # Service
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
     * Fix warnings during static web server rendering.
+    * Check via browser, if there are client side errors.
+    * Check via browser, if really no cookies are set.
 # Tasks
 * [ ] Consider simplifying the privacy policy, in order to minimize the attack surface.
-    * [ ] Do not state too specifically the log content and duration.
-    * [ ] Do not state where the server is hosted. Make this only available on request.
-      On the other hand, making this available on requests makes this more complicated.
-      Either way, document the decision. 
-    * [ ] Do not state, that cookies are not used.
-    * [ ] `Folgende Nutzungs-Daten werden` -> `Unter anderem folgende Nutzungs-Daten werden`
-    * [ ] Explicitly state the legal basis for processing and storage of personal data.
-    * [ ] Remove phone number from privacy policy.
-    * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
-    * [ ] State the relevant law is German law, instead of referring just the law. 
-    * [ ] Fix the title of privacy policy.
-    * [ ] Do this for the German and English version.
+    * [ ] Adjust the liver server privacy policy.
+        * [x] Do not state too specifically the log content and duration. -> The duration is relevant.
+        * [x] Do not state where the server is hosted. Make this only available on request.
+          On the other hand, making this available on requests makes this more complicated.
+          Either way, document the decision. -> Always stating this in the privacy policy is the easiest.  
+        * [x] Do not state, that cookies are not used.
+        * [o] `Folgende Nutzungs-Daten werden` -> `Unter anderem folgende Nutzungs-Daten werden`
+          -> `Unter anderem` implies, that something is missing in the privacy policy.
+        * [ ] Explicitly state the legal basis for processing and storage of personal data.
+        * [ ] Remove phone number from privacy policy.
+        * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
+        * [ ] State the relevant law is German law, instead of referring just the law. 
+        * [ ] Fix the title of privacy policy.
+        * [ ] Do this for the German and English version.
     * [ ] Use the same privacy policy for the static and the live server.
 * [ ] `https://splitcells.net/net/splitcells/website/css/basic.css` is not updated.
 * [ ] Remove telephone number from Impressum and replace it with Matrix chat room.
@@ -25,6 +29,8 @@
 * [ ] Fix README correctly.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
+* [ ] Disallow any XSL warnings and erros by default.
+    * [ ] Remove all XSL warnings and errors.
 * [ ] The websites logo does not work on IPhone.
 * [ ] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
