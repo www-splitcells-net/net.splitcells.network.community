@@ -73,13 +73,21 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Show problem definition.
                 * [x] Show all tables.
                 * [x] Show all solutions.
-                * [ ] Show all tables and solutions as interactive HTML tables.
-                * [ ] Test data inputs. It does not seem to work correctly.
-                * [ ] Ensure, that data inputs are not deleted after calculation a solution.
-                * [ ] Execute optimization via colloquium planning.
+              * [ ] Determine and show  all input and output fields.
+                  * [ ] Show all inputs and outputs in editor based on a field to content type mapping, that is returned by the server for an optimization requests in the GUI.
+                  * [ ] Test data inputs. It does not seem to work correctly. 
+                  * [ ] Show all tables and solutions as interactive HTML tables.
+                  * [ ] Ensure, that data inputs are not deleted after calculation a solution.
+                  * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
                     * [ ] Consider always requiring a user.
+                      -> Yes, there should be always a user stored via a Dem config as this disallows arbitrary user switching in code.
+                      Furthermore, most code does not require any authentication context, but may be used in an authentication context.
+                      See file system for example.
+                      It is not acceptable, for every code to explicitly pass an authentication context,
+                      even though it is not required most of the time.
+                      This needs to be documented.
                     * [ ] Just support try catch of user errors for now, as this will be enough for a long time.
                 * [ ] Use user session in dem, in order to store all errors.
                 * [ ] Use multiple types of messages like errors and warnings.
