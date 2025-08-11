@@ -74,8 +74,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Show all tables.
                 * [x] Show all solutions.
               * [ ] Determine and show  all input and output fields.
+                  * [ ] Input and output field are not transferred from client to server. It does not seem to work correctly.
                   * [ ] Show all inputs and outputs in editor based on a field to content type mapping, that is returned by the server for an optimization requests in the GUI.
-                  * [ ] Test data inputs. It does not seem to work correctly. 
                   * [ ] Show all tables and solutions as interactive HTML tables.
                   * [ ] Ensure, that data inputs are not deleted after calculation a solution.
                   * [ ] Execute optimization via colloquium planning.
