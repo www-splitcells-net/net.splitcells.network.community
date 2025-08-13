@@ -78,6 +78,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       * [x] Correctly, fill up input text areas.
                       * [ ] Enable input text area adaption via CodeMirror.
                   * [ ] Show all inputs and outputs in editor based on a field to content type mapping, that is returned by the server for an optimization requests in the GUI.
+                      * [x] Remove new `.csv` fields. -> This is just a consequence, that the default example contains a CSV import. This is OK.
                   * [ ] Show all tables and solutions as interactive HTML tables.
                   * [ ] Ensure, that data inputs are not deleted after calculation a solution.
                   * [ ] Execute optimization via colloquium planning.
