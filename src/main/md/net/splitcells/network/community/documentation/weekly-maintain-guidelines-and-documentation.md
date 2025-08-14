@@ -42,6 +42,12 @@
 * [ ] Consider creating a newsletter that bundles blog, social media posts and interesting info like releases of other optimization software, that contain something interesting regarding optimization.
     * [ ] Add newsletter to global changelog.
 * [ ] Note in programming guidelines, that implicit error handling is preferred to explicit one.
+* [ ] Every project should also have a joke title.
+    * [ ] Jokes are useful as they provide a way to look at something, from a different perspective.
+      The more the emotional reaction, the more interesting/useful the perspective is.
+      This is also a motivation and advertisement tactic.
+    * [ ] Maybe jokes should be injected, instead of added directly to the content?
+    * [ ] `It works on my Kubernetes.`
 * [ ] Consider creating a joke page about this project.
     * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
