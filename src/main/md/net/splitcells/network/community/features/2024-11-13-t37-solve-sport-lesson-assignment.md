@@ -82,7 +82,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       * [x] Add content type mapping to response.
                       * [x] Interpret content type mapping in browser.
                       * [x] Support table fields and not just text fields.
-                      * [ ] Initialize empty CSV files.
+                      * [ ] Initialize empty CSV import files.
                   * [ ] Show all tables and solutions as interactive HTML tables.
                   * [ ] Ensure, that data inputs are not deleted after calculation a solution.
                   * [ ] Execute optimization via colloquium planning.
