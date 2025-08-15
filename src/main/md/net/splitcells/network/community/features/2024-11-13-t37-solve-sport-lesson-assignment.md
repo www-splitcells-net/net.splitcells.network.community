@@ -229,7 +229,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [o] Create picture depicting an architectural overview of the security system.
       -> The authentication, authorization and access control API seems to be good enough.
     * [x] Deploy this feature to production.
-# Done Tasks
 * [o] Blog why the Cin project is now a low priority feature project.
 * [o] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first. -> The no-code editor is obsolete and deleted.
 # Future Ideas
