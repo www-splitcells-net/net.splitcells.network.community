@@ -16,16 +16,19 @@ This does not apply for statuses, that show progress.
 # Tasks.
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
-    * [ ] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
-    * [ ] Note why code coverage is done this way.
-    * [ ] Check by hand if the aggregate test coverage report is correct.
+    * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
+      Note why code coverage is done this way.
+    * [x] Check by hand if the aggregate test coverage report is correct.
     * [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
+    * [ ] Add cache to GitHub workflow.
+* [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
+* [ ] [Search for security bugs via SpotBugs.](https://spotbugs.readthedocs.io/en/latest/maven.html)
 * [ ] Use https://maven.apache.org/plugins/maven-pmd-plugin/examples/usingRuleSets.html
 * [ ] Use https://checkstyle.sourceforge.io/
 * [ ] https://spotbugs.github.io/
@@ -40,6 +43,7 @@ This does not apply for statuses, that show progress.
     * https://github.com/cmu-pasta/mu2
     * https://github.com/rohanpadhye/JQF
 * [ ] Consider [JSpecify](https://jspecify.dev/).
+* [ ] Daily test Maven site goal. 
 # Done Task
 * [x] Make `net.splitcells.network.repos.license.check` successful and add it to the daily CI.
   Images are licensed under `CC BY-SA 4.0`. The appropriate guidelines and metadata will be handled [here](../documentation/2021-08-04-improve-licensing-practices.md).

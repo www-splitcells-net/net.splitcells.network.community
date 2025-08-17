@@ -9,10 +9,10 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Keep playwright version in network BOM and network execute in syn,
   by parsing the BOM's version in the network execute command,
   in order to set the version in the POM template.
-* [ ] Some worker commands are not real worker commands.
-    * [ ] `worker.repos.pull`
-    * [ ] `worker.repos.push`
-    * [ ] `worker.repos.status`
+    * [x] Make playwright version a template parameter.
+    * [ ] Test generated playwright version.
+    * [ ] Parse playwright version from BOM repo.
+    * [ ] Test parsed playwright version.
 * [x] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
   An optional build check could check, if the update did its job completely in the bom log 
   therefore completely fix the code duplication issue.

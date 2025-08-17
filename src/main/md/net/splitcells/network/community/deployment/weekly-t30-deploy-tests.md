@@ -37,64 +37,7 @@ Some tests are executed on servers in order to ensure, that the software works o
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-    * [ ] CURRENT Create test command for network worker. 
-        * [o] Delete network worker files, so that test command tests the bootstrap completely.
-          -> This is not important for now. A corresponding TODO was added to the `worker.execute` script.
-            * [o] command.repositories.install
-            * [o] m2
-            * [o] repos
-        * [ ] Use new Network Worker Execute command for that.
-        * [ ] Push test results to public network log repo.
-            * [ ] Test this with local computer via `net.splitcells.network.worker.test.trigger.remote.at splitcells@splitcells-XPS-15-9570`.
-              at `/home/splitcells/.local/state/net.splitcells.network.worker/.local/state/net.splitcells.network.worker/`.
-                * [ ] Launch tests on other computer via `repos.test`.
-                * [ ] Test result pulling.
-                * [x] The shell project needs to be able to install itself to an alternative location.
-                  Do this via an environment variable, as propagating such a value every would be hard.
-                  Otherwise, such a test creates problems with already present shell installation. 
-                    * [x] `command.managed.install.project.commands.py`
-                    * [x] `command.managed.install.py`
-                    * [x] Create a shell command to determine the path, where the shell project is installed.
-                    * [x] `user.bin.configure.sh`
-                    * [x] `user.command.delete.sh`
-                    * [x] `user.command.disable.sh`
-                    * [x] `user.command.install.sh`
-                    * [x] `user.commands.install.sh`
-                    * [x] `command.managed.environment.configure.sh`
-                    * [x] `command.managed.execute.command.sh`
-                    * [x] `command.managed.export.bin.sh`
-                    * [x] `command.repositories.install.sh`
-                    * [x] `command.repositories.setup.sh`
-                    * [x] Define alternative config folder `~/.config/net.splitcells.shell`, in order to not mix worker config with the developer's computer config.
-                        * [x] Define an environment variable, that points to the config folder.
-                          -> It is called `NET_SPLITCELLS_SHELL_CONFIG_FOLDER`.
-                        * [x] `command.repositories.update.sh`
-                        * [x] `command.repositories.setup.sh`
-                        * [x] `command.repository.register.sh`
-                        * [o] Set up this environment variable during remote execution, by checking the presence of a config file intended for remote execution.
-                          -> This is not required for the Network Worker Execution, as everything is executed in containers.
-                            * [o] Support this in `worker.bootstrap`.
-                            * [o] Support this in `worker.execute`.
-                        * [o] Document why this is done. -> There is no useful Shell Project documentation for now, so this aspect is not important.
-                    * [x] Remove any usage of `net.splitcells.shell.commands.disabled`. 
-            * [ ] Store test results to network log repo.
-            * [ ] Commit test results.
-            * [ ] Push test results to Codeberg.
-    * [ ] Enable this for all servers.
-        * [ ] `net.splitcells.martins.avots.riscv.login` via `net.splitcells.network.worker.service.cycle.trigger.at ubuntu@riscv.local`
-            * [x] On RISCV this requires `--security-opt=seccomp=unconfined` for Podman.
-              -> Create a flag for worker execute, that add flags to the command defined in the file `~/.config/net.splitcells.network.worker/execute.podman.flags`.
-              Use this flag in all worker executions of `net.splitcells.network.worker.service.cycle.trigger.at`.
-            * [x] Optionally, avoid Playwright. -> Playwright is not installed by `network.worker` by default and can be enabled via `--use-playwright`.
-              This is done, because Playwright is an OS dependency in this can always create problems.
-              In RISCV this does not seem to work, for instance.
-            * [ ] `net.splitcells.network.worker.service.cycle.trigger.at` should optionally avoid Playwright if configured.
-              Determine this with a user config at `~/.config/net.splitcells.network.worker/playwright.supported` and act accordingly.
-        * [ ] `net.splitcells.martins.avots.raspberry.v2.login` via `net.splitcells.network.worker.service.cycle.trigger.at network-worker@raspberrypi-v2.local`
-            * [ ] Fix error with `worker.repos.test.trigger.remote.at`. See `journalctl -f` for the error message.
-        * [ ] Live Server via `net.splitcells.network.worker.service.cycle.trigger.at ssh martins-avots@live.splitcells.net`
-        * [ ] Daily Codeberg workflow.
-        * [ ] Create a weekly execution script, that execute all tests of all reachable servers.
+    * [ ] Deploy test via `--test-remote`
 * [ ] `worker.test.at` (everything up until `test.everything` is tested via splitcells@raspberrypi-v2.local).
     * [ ] Ensure, that every test command writes test results into Network Log.
       See `test.extensively.via.network.worker` and consider Maven integration.

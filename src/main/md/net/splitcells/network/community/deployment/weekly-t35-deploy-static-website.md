@@ -15,8 +15,10 @@
         * [x] Do not state, that cookies are not used.
         * [o] `Folgende Nutzungs-Daten werden` -> `Unter anderem folgende Nutzungs-Daten werden`
           -> `Unter anderem` implies, that something is missing in the privacy policy.
-        * [ ] Explicitly state the legal basis for processing and storage of personal data.
+        * [x] Explicitly state the legal basis for processing and storage of personal data.
         * [ ] Remove phone number from privacy policy.
+            * [ ] Create matrix channel.
+            * [ ] Link matrix channel.
         * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
         * [ ] State the relevant law is German law, instead of referring just the law. 
         * [ ] Fix the title of privacy policy.
