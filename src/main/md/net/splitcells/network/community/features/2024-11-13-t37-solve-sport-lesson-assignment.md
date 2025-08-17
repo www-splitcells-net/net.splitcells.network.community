@@ -74,16 +74,16 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Show all tables.
                 * [x] Show all solutions.
               * [ ] Determine and show  all input and output fields.
-                  * [ ] Input and output field are not transferred from client to server. It does not seem to work correctly.
+                  * [x] Input and output field are not transferred from client to server. It does not seem to work correctly.
                       * [x] Correctly, fill up input text areas.
-                      * [ ] Enable input text area adaption via CodeMirror.
-                  * [ ] Show all inputs and outputs in editor based on a field to content type mapping, that is returned by the server for an optimization requests in the GUI.
+                      * [x] Enable input text area adaption via CodeMirror.
+                  * [x] Show all inputs and outputs in editor based on a field to content type mapping, that is returned by the server for an optimization requests in the GUI.
                       * [x] Remove new `.csv` fields. -> This is just a consequence, that the default example contains a CSV import. This is OK.
                       * [x] Add content type mapping to response.
                       * [x] Interpret content type mapping in browser.
                       * [x] Support table fields and not just text fields.
-                      * [ ] Initialize empty CSV import files.
-                  * [ ] Show all tables and solutions as interactive HTML tables.
+                      * [x] Initialize empty CSV import files.
+                  * [x] Show all tables and solutions as interactive HTML tables.
                   * [ ] Ensure, that data inputs are not deleted after calculation a solution.
                   * [ ] Execute optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.

@@ -19,9 +19,10 @@ This does not apply for statuses, that show progress.
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
       Note why code coverage is done this way.
     * [x] Check by hand if the aggregate test coverage report is correct.
-    * [ ] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that.
+    * [o] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work.
+    * [ ] Upload JaCoCo code coverage to website via sftp.
+    * [ ] Delete codecov integration.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
-    * [ ] Add cache to GitHub workflow.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 
