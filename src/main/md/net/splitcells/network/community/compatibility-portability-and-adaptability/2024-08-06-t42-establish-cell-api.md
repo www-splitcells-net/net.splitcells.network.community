@@ -75,7 +75,7 @@ created severe configuration costs.
                     * [x] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
                     * [x] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [ ] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
-                  * [ ] `net.splitcells.martins.avots.website`
+                    * [ ] `net.splitcells.martins.avots.website`
                 * [ ] Replace main methods based on static methods with cell based main methods.
                     * [ ] `net.splitcells.network.system.SystemCell`
                     * [ ] `net.splitcells.network.distro.DistroCell.`

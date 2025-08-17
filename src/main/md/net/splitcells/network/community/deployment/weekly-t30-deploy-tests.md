@@ -37,10 +37,14 @@ Some tests are executed on servers in order to ensure, that the software works o
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-    * [ ] Deploy test via `--test-remote`
-* [ ] `worker.test.at` (everything up until `test.everything` is tested via splitcells@raspberrypi-v2.local).
-    * [ ] Ensure, that every test command writes test results into Network Log.
-      See `test.extensively.via.network.worker` and consider Maven integration.
+    * [ ] Deploy test via `bin/worker.test.at` which has to use the `bin/repos.test*` commands.
+      Test this via the live server, as it is fast.
+        * [ ] Verify git repo.
+        * [ ] Check license data.
+    * [ ] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands.
+    * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
+* [ ] Migrate Codeberg workflow to `repos.test`.
+* [ ] Migrate GitHub workflow to `repos.test`.
 * [ ] Use ExtensiveTester on capable platforms.
 * [ ] Upload Maven artifacts to Codeberg during daily workflow and update `Public Dependency Repository` of the document `DEVELOPMENT.md` accordingly.
 * [ ] `test.everything` should verify the validity of the git data as well.
