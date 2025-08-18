@@ -83,9 +83,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       * [x] Interpret content type mapping in browser.
                       * [x] Support table fields and not just text fields.
                       * [x] Initialize empty CSV import files.
-                  * [x] Show all tables and solutions as interactive HTML tables.
+                  * [x] Show all tables and solutions as interactive HTML tables
                   * [ ] Ensure, that data inputs are not deleted after calculation a solution.
-                  * [ ] Execute optimization via colloquium planning.
+                  * [ ] Implement optimization via colloquium planning.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
                     * [ ] Consider always requiring a user.
