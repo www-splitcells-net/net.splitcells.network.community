@@ -88,7 +88,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                   * [ ] Add tab buttons in the page menu, so that these are fitting more compactly on screen,
                     as there these are arranged vertically.
                       * [ ] Align button text to the left.
-                      * [ ] Add definition button by default.
+                      * [x] Add definition button by default.
+                      * [ ] Color definition button, when it is selected.
+                      * [ ] Correctly color definition button, when CSV tabs are selected.
+                      * [ ] Correctly color definition button, when editor is initialized.
                   * [ ] Remove old tab buttons.
                   * [ ] Implement optimization for colloquium planning example.
             * [ ] Implement proper user friendly error handling.
