@@ -91,7 +91,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       * [x] Add definition button by default.
                       * [ ] Color definition button, when it is selected.
                       * [ ] Correctly color definition button, when CSV tabs are selected.
-                      * [ ] Correctly color definition button, when editor is initialized.
+                      * [ ] Correctly color definition button, when editor is initialized.4
                   * [ ] Remove old tab buttons.
                   * [ ] Implement optimization for colloquium planning example.
             * [ ] Implement proper user friendly error handling.

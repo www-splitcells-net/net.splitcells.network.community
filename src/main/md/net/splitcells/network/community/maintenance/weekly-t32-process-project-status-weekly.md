@@ -21,6 +21,7 @@ This does not apply for statuses, that show progress.
     * [x] Check by hand if the aggregate test coverage report is correct.
     * [o] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work.
     * [ ] Upload JaCoCo code coverage to website via sftp.
+    * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.

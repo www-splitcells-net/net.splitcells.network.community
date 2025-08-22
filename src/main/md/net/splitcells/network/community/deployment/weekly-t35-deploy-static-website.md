@@ -1,6 +1,7 @@
 # Weekly deploy static website.
 * Issue number: [\#35](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/35)
 # Service
+* Test availability and phone notifications of Matrix room for legal contacts via the account `test-mavo:matrix.org`: https://matrix.to/#/#net.splitcells.martins.avots.webiste.legal:matrix.org
 * Execute `net.splitcells.martins.avots.website.deploy.diff`.
     * Fix warnings during static web server rendering.
     * Check via browser, if there are client side errors.
@@ -17,8 +18,10 @@
           -> `Unter anderem` implies, that something is missing in the privacy policy.
         * [x] Explicitly state the legal basis for processing and storage of personal data.
         * [ ] Remove phone number from privacy policy.
-            * [ ] Create matrix channel.
-            * [ ] Link matrix channel.
+            * [x] Create matrix channel. -> The invitation link is https://matrix.to/#/#net.splitcells.martins.avots.webiste.legal:matrix.org
+            * [x] Test invitation link with an additional Matrix account.
+            * [x] Test phone notifications with 2nd Matrix test account.
+            * [ ] Link matrix channel in privacy policy and impressum, but recheck if this is legally ok.
         * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
         * [ ] State the relevant law is German law, instead of referring just the law. 
         * [ ] Fix the title of privacy policy.

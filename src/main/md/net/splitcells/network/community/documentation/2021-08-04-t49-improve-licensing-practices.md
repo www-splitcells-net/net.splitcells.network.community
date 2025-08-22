@@ -7,6 +7,39 @@ We want all license metadata to be present and to be correct.
 We also need full accounting for it.
 # Tasks
 
+* [ ] Improve licensing info on deployed website.
+    * [ ] Create a license overview page, that links to all license relevant documents
+      and also lists the license of all available pages.
+        * [x] Start with empty page. -> LicensePageExtension provides this at `net/splitcells/website/license-page.html`.
+        * [ ] Create and use a website server config, that contains a list of all license pages.
+        * [x] Add name/description to every license page.
+        * [o] Create a static Cell methods, that lists all relevant license resources.
+          Use these methods in the static website server construction functions.
+          -> For now it is ok, to use website server config. 
+        * [ ] Note that user content is not affected by this.
+        * [ ] Link relevant existing pages.
+            * [x] net.splitcells.network
+            * [x] net.splitcells.network.system
+            * [ ] net.splitcells.martins.avots.distro
+            * [ ] net.splitcells.martins.avots.website
+        * [ ] Add license overview page to menu.
+    * [ ] Licensing of images
+    * [ ] List license of every page centrally.
+    * [ ] Show license of every page on every page.
+    * [x] Link to `NOTICE.md` and `LICENSE.md`.
+    * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
+* [ ] Images are licensed under the `CC BY-SA 4.0`.
+    * [ ] Update licensing guidelines.
+    * [ ] Consider add licensing metadata in images itself. See German court cases (to be refound),
+      why no license metadata in `CC BY-SA 4.0` can be a problem for other distributors.
+    * [ ] Consider https://creativecommons.org/licenses/by-sa/4.0/deed.en
+* [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
+* [ ] `test.everything` should verify license data as well.
+* [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
+  Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
+* [ ] Add denial notice of EU's copyright exception regarding machine learning.
+* [ ] Add REUSE files to license pages.
+# Done Tasks
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
 * [x] Use https://reuse.software/ in order to check licensing in source code.
     * [x] Use tmp branch for this experiment.
@@ -25,7 +58,7 @@ We also need full accounting for it.
                     * [x] Create a project command that list all default command repositories managed by the hub repo and
                       install these with this command via the shell project. -> The project command is `bin/net.splitcells.shell.projects.peers.for.commands`.
                     * [x] Create a project command that list all command repositories, that are present in the current repository. -> `net.splitcells.shell.repo.subs`
-                    * [x] Use new project commands, in order to install all command repos. 
+                    * [x] Use new project commands, in order to install all command repos.
                     * [x] Install OSI first.
                       Then use `command.repository.register`, in order to easily use `command.repository.register`.
                       After that, reinstall OSI, in order to have all repos installed.
@@ -40,30 +73,3 @@ We also need full accounting for it.
 * [x] Document/link licensing overview in README. -> This is not relevant for now.
 * [x] Add Reuse to project file system standard and document, that its LICENSES folder is exceptional.
 * [x] When rendering CommonMark files, the licence info at the start of the file should be moved to the end of the file.
-* [ ] Improve licensing info on deployed website.
-    * [ ] Create a license overview page, that links to all license relevant documents
-      and also lists the license of all available pages.
-        * [x] Start with empty page. -> LicensePageExtension provides this at `net/splitcells/website/license-page.html`.
-        * [ ] Create and use a website server config, that contains a list of all license pages.
-        * [ ] Create a static Cell methods, that lists all relevant license resources.
-          Use these methods in the static website server construction functions. 
-        * [ ] Note that user content is not affected by this.
-        * [ ] Link relevant existing pages.
-            * [ ] net.splitcells.network.system
-            * [ ] net.splitcells.martins.avots.distro
-            * [ ] net.splitcells.martins.avots.website
-    * [ ] Licensing of images
-    * [ ] List license of every page centrally.
-    * [ ] Show license of every page on every page.
-    * [x] Link to `NOTICE.md` and `LICENSE.md`.
-    * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
-* [ ] Images are licensed under the `CC BY-SA 4.0`.
-    * [ ] Update licensing guidelines.
-    * [ ] Consider add licensing metadata in images itself. See German court cases (to be refound),
-      why no license metadata in `CC BY-SA 4.0` can be a problem for other distributors.
-    * [ ] Consider https://creativecommons.org/licenses/by-sa/4.0/deed.en
-* [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
-* [ ] `test.everything` should verify license data as well.
-* [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
-  Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
-* [ ] Add denial notice of EU's copyright exception regarding machine learning.
