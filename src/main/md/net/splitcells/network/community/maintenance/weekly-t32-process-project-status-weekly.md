@@ -24,6 +24,8 @@ This does not apply for statuses, that show progress.
     * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
+    * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
+      For instance, the code coverage report could be uploaded from a developer computer.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 
