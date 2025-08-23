@@ -11,7 +11,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
   in order to set the version in the POM template.
     * [x] Make Playwright version a template parameter.
     * [x] Test generated Playwright version.
-    * [x] Parse Playwright version from BOM repo.
+    * [ ] Parse Playwright dependency from BOM repo.
+    * [ ] Parse Playwright version from BOM repo.
     * [ ] Insert parsed Playwright into container POM.
     * [ ] Test parsed Playwright version.
     * [ ] Test inserted Playwright version by replacing the default version during test.
