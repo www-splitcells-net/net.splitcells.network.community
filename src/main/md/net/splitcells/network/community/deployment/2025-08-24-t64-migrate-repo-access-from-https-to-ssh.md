@@ -13,3 +13,16 @@ SSH is not blocked, because it is restricted to Codeberg users.
     * [ ] Sometimes git pulls are rejected by the Codeberg server. The reason for that is unkown.
         * [x] Avoid multiple pulls of all repos during one deployment run.
         * [ ] https://codeberg.org/Codeberg-CI/feedback/issues/271
+        * [ ] Reuse SSH connections.
+        * [ ] Support parallel pulling for speed up, via an environment flag.
+# Reuse SSH connections via `~/.ssh/config`.
+````
+Host codeberg.org
+  HostName codeberg.org
+  User git
+  Port 22
+  # Reuse SSH connection
+  ControlMaster auto
+  ControlPath ~/.ssh/control-%r@%h:%p
+  ControlPersist 10m
+````
