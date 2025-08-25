@@ -14,6 +14,7 @@ This does not apply for statuses, that show progress.
 * Process status badges.
 * Execute static code checks.
 # Tasks.
+* [ ] Switch git cloning to SSH.
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.

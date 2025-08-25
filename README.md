@@ -99,11 +99,9 @@ Projects that are being worked cyclically, and probably will never be finished:
 * File content format:
 ```
 # Weekly deploy static website.
-
 * Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/[Issue Number])
 * Start Date: 2025-04-05
 * End Date: 2025-04-06
-
 # Task Description
 # Service Tasks
 [This is a list of tasks, that are executed cyclicly.]
@@ -120,7 +118,6 @@ Projects that are being worked cyclically, and probably will never be finished:
   Furtheremore, the not supported rendering of check boxes still looks mostly ok.
   Using `[o]` has the benefit, that one does not need to note on all such tasks explicitly, that they were not done.
   -> Optional Reason for rejection.
-
 # Done Tasks
 [Tasks that are done and stored for documentation purposes.
 This is optional, so that one can easily see only the open tasks.]

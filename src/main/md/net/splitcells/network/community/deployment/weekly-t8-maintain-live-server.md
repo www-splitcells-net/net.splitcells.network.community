@@ -14,6 +14,8 @@
 ## Open Tasks
 * [ ] Check if the error `Failed to create driver` at `com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)` reappears.
   If that is the case, the reason for it must be found. A theory is, that the Playwright initial Java base setup does not work. For this the Linux journal log can be checked.
+    * [ ] Playwright cannot download the browser sometimes, because of a network error.
+        * [ ] Cache Playwright's browser downloads, by caching `~/.cache/ms-playwright/` via `worker.execute`.
 * [ ] UI tester: start a browser for each test instance and then destroy it,
   but do not do actions over any browsers in parallel.
   This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser. 
