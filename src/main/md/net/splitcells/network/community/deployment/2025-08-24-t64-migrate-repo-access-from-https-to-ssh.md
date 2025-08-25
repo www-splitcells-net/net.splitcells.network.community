@@ -10,4 +10,6 @@ SSH is not blocked, because it is restricted to Codeberg users.
 * [x] Codeberg CI via `continuous-integration.yml`.
 * [x] Daily Workflow via `daily-test.yml`.
 * [ ] `net.splitcells.martins.avots.distro.deploy.remote`
-    * [ ] Avoid multiple pulls of all repos during one deployment run.
+    * [ ] Sometimes git pulls are rejected by the Codeberg server. The reason for that is unkown.
+        * [x] Avoid multiple pulls of all repos during one deployment run.
+        * [ ] https://codeberg.org/Codeberg-CI/feedback/issues/271
