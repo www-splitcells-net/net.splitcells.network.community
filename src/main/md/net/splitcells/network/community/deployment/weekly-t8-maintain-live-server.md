@@ -108,6 +108,7 @@
 * [ ] Create 404 page for web server.
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
+* [ ] Speed up deployment via parallel module builds with mvnd.
 ## Done Tasks
 * [x] Fix `Failed to create driver` at `com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)`. -> Updating and redeploying the software fixed the issue.
 * [x] Restart the server daily automatically.
