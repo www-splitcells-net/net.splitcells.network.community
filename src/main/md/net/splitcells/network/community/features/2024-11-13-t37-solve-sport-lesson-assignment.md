@@ -102,8 +102,16 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                               * [ ] Adjust initial tab buttons.
                               * [ ] Adjust dynamic tab content.
                               * [ ] Adjust dynamic tab buttons.
+                              * [x] Adjust net_splitcells_webserver_form_tab_select.
+                              * [ ] Adjust net_splitcells_webserver_form_submit.
+                              * [ ] Adjust `component.standard.xsl` by inlining the input field templates.
+                                  * [x] content
+                                  * [x] buttons
+                                  * [x] Simplify tab content Javascript in HTML by moving this to a dedicated Javascript file.
+                              * [ ] Adjust `component.editor.xsl`.
                           * [ ] Do not use text-area ID in XSL.
                           * [ ] Correctly create dynamic buttons.
+                          * [ ] Mark initial main tab button as select at start.
                   * [ ] Remove old horizontal tab buttons.
                   * [ ] Implement optimization for colloquium planning example.
             * [ ] Implement proper user friendly error handling.
