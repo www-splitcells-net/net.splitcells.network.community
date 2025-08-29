@@ -12,15 +12,15 @@ when it is stating failure all the time.
 This does not apply for statuses, that show progress.
 # Service
 * Process status badges.
+    * Improve test coverage: currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
-* [ ] Switch git cloning to SSH.
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
       Note why code coverage is done this way.
     * [x] Check by hand if the aggregate test coverage report is correct.
-    * [o] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work.
+    * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
     * [ ] Upload JaCoCo code coverage to website via sftp.
     * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.
@@ -28,7 +28,7 @@ This does not apply for statuses, that show progress.
     * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
       For instance, the code coverage report could be uploaded from a developer computer.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
-* [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
+* [ ] Do Sonar[]()Cloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
