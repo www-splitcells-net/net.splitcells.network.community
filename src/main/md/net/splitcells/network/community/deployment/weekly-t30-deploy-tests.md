@@ -38,9 +38,12 @@ Some tests are executed on servers in order to ensure, that the software works o
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
     * [ ] Deploy test via `bin/worker.test.at` which has to use the `bin/repos.test*` commands.
-      Test this via the live server, as it is fast.
-        * [ ] Verify git repo.
-        * [ ] Check license data.
+      Test this via `net.splitcells.martins.avots.distro/bin/test.live-server.sh` as it is fast.
+        * [x] Create one unified test command, as the multiple test commands are irritating.
+          Also consolidate build if possible, as these have not much practical use.
+          This command is named `bin/repos.test.sh`.
+        * [x] Verify git repo.
+        * [x] Check license data.
     * [ ] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands.
     * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
 * [ ] Migrate Codeberg workflow to `repos.test`.

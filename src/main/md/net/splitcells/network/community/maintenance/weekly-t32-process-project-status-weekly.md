@@ -22,11 +22,15 @@ This does not apply for statuses, that show progress.
     * [x] Check by hand if the aggregate test coverage report is correct.
     * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
     * [ ] Upload JaCoCo code coverage to website via sftp.
+    * [ ] Do not echo private key for upload.
+    * [ ] Replace private key for SFTP upload.
     * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
     * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
       For instance, the code coverage report could be uploaded from a developer computer.
+    * [ ] Delete static website and reupload everything, in order to get rid of old and potentially manipulated data.
+* [ ] Enable ` dominant managemen` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do Sonar[]()Cloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 

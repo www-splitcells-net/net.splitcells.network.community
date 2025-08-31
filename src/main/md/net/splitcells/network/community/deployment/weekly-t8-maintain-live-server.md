@@ -3,9 +3,8 @@
 ## Service
 * The server is publicly available at http://live.splitcells.net
 * Update server.
-    * Restart server, in order to ensure, that every process uses the newest packages.
     * Upgrade major version of OS when available.
-    * Update deployed software
+    * Update deployed software.
 * Improve deployment and its processes.
 * Test security
 * Test legalities and privacy policy.
@@ -15,6 +14,11 @@
 * [ ] UI tester: start a browser for each test instance and then destroy it,
   but do not do actions over any browsers in parallel.
   This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser. 
+    * [x] Analyse how the HTML client works now.
+      -> It has a fixed pool of browsers, where only one thread can do on any one of them at a time.
+      The HTML client has to kill its browser after the usage is done.
+    * [ ] The Geal editor has to replace the code editor fully first.
+    * [ ] Adapt UI tester.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
