@@ -44,6 +44,9 @@ Some tests are executed on servers in order to ensure, that the software works o
           This command is named `bin/repos.test.sh`.
         * [x] Verify git repo.
         * [x] Check license data.
+        * [ ] Fix `ColloquiumPlanningTest.testComplexity:143`.
+        * [ ] Fix `ColloquiumPlanningTest.testRandomInstanceSolving:113`.
+        * [ ] Fix `NQueenProblemTest.test_8_queen_problem_with_backtracking:115`.
     * [ ] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands.
     * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
 * [ ] Migrate Codeberg workflow to `repos.test`.
