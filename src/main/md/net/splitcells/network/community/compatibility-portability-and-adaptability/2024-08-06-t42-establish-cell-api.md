@@ -76,6 +76,7 @@ created severe configuration costs.
                     * [x] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
                     * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](task-archive/9999-2021-03-21-publish-public-website-source-code.md) project.
+                    * [ ] GelDev
                 * [ ] Replace main methods based on static methods with cell based main methods and test these.
                     * [ ] `net.splitcells.network.system.SystemCell`
                     * [ ] `net.splitcells.network.distro.DistroCell.`
@@ -87,7 +88,7 @@ created severe configuration costs.
                   * [ ] `net.splitcells.network.distro.DistroCell.`
                   * [ ] `net.splitcells.network.distro.java.DistroCell`
                   * [ ] `net.splitcells.martins.avots.distro.DistroCell`
-                * [ ] Deploy on live server.
+              * [ ] Deploy on live server.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
           start.
