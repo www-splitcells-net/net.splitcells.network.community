@@ -12,6 +12,8 @@ in order to lessen the need for custom configs.
 At the end, this avoids creating complex configurations by chaining multiple config functions by hand.
 Lately, this has proven to be not working and
 created severe configuration costs.
+
+This is needed for [the issue "Publish public website source code"](task-archive/9999-2021-03-21-publish-public-website-source-code.md).
 # Tasks
 * [ ] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/task-archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
     * [o] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data. -> The service option CinSerive was used instead.
@@ -102,10 +104,12 @@ created severe configuration costs.
             * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
         * [ ] Use GelDev as basis.
         * [ ] Do not block web server start via game.
-* [ ] This is needed for [the issue "Publish public website source code"](task-archive/9999-2021-03-21-publish-public-website-source-code.md).
 * [ ] Remove configuration code of any other way.
 * [ ] Webserver instance should be contained inside `Dem#value` as a service and
   by default be limited to given set of instances.
   Otherwise, webserver instances cannot be configured, created and run declaratively.
   This makes working with these essential resources unnecessary hard.
   For instance, replacing or adapting the webserver becomes harder.
+* [ ] Document that cells are better, than simple config function,
+  as cells allow for better control of config application functions,
+  whereas simple config functions without helper functions do not allow for such.

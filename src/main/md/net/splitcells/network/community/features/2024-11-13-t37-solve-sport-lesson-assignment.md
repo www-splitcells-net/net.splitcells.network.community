@@ -104,6 +104,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                               * [x] Adjust dynamic tab buttons.
                               * [x] Adjust net_splitcells_webserver_form_tab_select.
                               * [ ] Adjust net_splitcells_webserver_form_submit.
+                                  * [ ] Ensure that all tables are visible.
+                                      * [x] Make all tables based on text/csv by default.
+                                      * [ ] Use new data to determine the type of rendering.
+                                      * [ ] Show data of new tables. Currently, the data of dynamically created tables like the solution is empty.
+                                  * [ ] Ensure, that newly created form inputs are correctly sent the next time to the server.
                               * [x] Adjust `component.standard.xsl` by inlining the input field templates.
                                   * [x] content
                                   * [x] buttons
@@ -112,6 +117,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                           * [ ] Do not use text-area ID in XSL.
                           * [ ] Correctly create dynamic buttons.
                           * [ ] Mark initial main tab button as select at start.
+                          * [ ] Tab buttons shouls select content by ID and not CSS,
+                            as there can be only element per tab content.
                   * [ ] Remove old horizontal tab buttons.
                   * [ ] Implement optimization for colloquium planning example.
             * [ ] Implement proper user friendly error handling.
