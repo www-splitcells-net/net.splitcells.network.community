@@ -1,6 +1,9 @@
 # Release software to Maven Central repositories
+
+# Task Description
 This makes sure, that the Java code is releasable via Maven at any time.
 
+# Tasks
 - [x] Create guidelines/checklist for Maven Central public release.
 - [ ] https://ozkanpakdil.github.io/maven/2024/03/10/publish-central-maven.html
 - [ ] Make it easy to update plugins by setting the version in the parent via properties: https://stackoverflow.com/questions/34032262/maven-versions-plugin-updating-plugins
@@ -44,3 +47,5 @@ mvn release:perform -Drepo-github-enable=1
 - [x] Add PGP signing: https://central.sonatype.org/publish/requirements/#provide-files-checksums
 - [ ] Public Maven-Release is not required right now. When to do it? -> Do it, when the first version is published via FlatHub. See #195
 - [ ] Create guidelines how to do formal releases. Maybe do a release every half year, with the date as the real version number?
+- [ ] Make release artifact as small as possible, by minimizing the resources imported.
+  This means, that a release to Maven central, would be a minimal release.

@@ -100,27 +100,30 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                           * [ ] Use form id + input name in order to select and manipulate form data.
                               * [x] Adjust initial tab content.
                               * [x] Adjust initial tab buttons.
-                              * [ ] Adjust dynamic tab content.
+                              * [x] Adjust dynamic tab content.
                               * [x] Adjust dynamic tab buttons.
                               * [x] Adjust net_splitcells_webserver_form_tab_select.
                               * [ ] Adjust net_splitcells_webserver_form_submit.
-                                  * [ ] Ensure that all tables are visible.
+                                  * [x] Ensure that all tables are visible.
                                       * [x] Make all tables based on text/csv by default.
-                                      * [ ] Use new data to determine the type of rendering.
-                                      * [ ] Show data of new tables. Currently, the data of dynamically created tables like the solution is empty.
+                                      * [x] Provide rendering type data by server to client.
+                                      * [x] Use rendering type data to determine the type of rendering on client.
+                                      * [x] Show data of new tables. Currently, the data of dynamically created tables like the solution is empty.
                                   * [ ] Ensure, that newly created form inputs are correctly sent the next time to the server.
+                                      * [ ] When the CSV data is changed on client, the demands and supplies table are empty after form submission.
                               * [x] Adjust `component.standard.xsl` by inlining the input field templates.
                                   * [x] content
                                   * [x] buttons
                                   * [x] Simplify tab content Javascript in HTML by moving this to a dedicated Javascript file.
                               * [x] Adjust `component.editor.xsl`.
                           * [ ] Do not use text-area ID in XSL.
-                          * [ ] Correctly create dynamic buttons.
-                          * [ ] Mark initial main tab button as select at start.
-                          * [ ] Tab buttons shouls select content by ID and not CSS,
+                          * [x] Correctly create dynamic buttons.
+                          * [x] Mark initial main tab button as select at start.
+                          * [ ] Tab buttons should select content by ID and not CSS,
                             as there can be only element per tab content.
-                  * [ ] Remove old horizontal tab buttons.
+                  * [x] Remove old horizontal tab buttons.
                   * [ ] Implement optimization for colloquium planning example.
+            * [ ] Implement solution formating.
             * [ ] Implement proper user friendly error handling.
                 * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
                     * [ ] Consider always requiring a user.
@@ -138,7 +141,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Document why explicit error message handling is bad.
                 * [ ] Render all exception messages with a tree as common mark.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
-        * [ ] Delete `Query#constraintResult`.
+        * [ ] Delete `Query#constraintResult`. 
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
@@ -175,7 +178,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
 * [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
   This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
-* [ ] Remove old editor. Do not forget its Javascript code.
+* [ ] Remove old code editor. Do not forget its Javascript code.
+* [ ] Preserver no-code editor UI code,
+  as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
