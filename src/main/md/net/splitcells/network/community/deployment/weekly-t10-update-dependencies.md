@@ -5,6 +5,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Service
 * Update `net.splitcells.network.bom` via `net.splitcells.network.shell` and `bin/repos.dependencies.update`.
 * Monthly update `net.splitcells.network.distro.java.acme`.
+* Update Java
+* Update Maven
 # Tasks
 * [ ] Keep Playwright version in network BOM and network execute in syn,
   by parsing the BOM's version in the network execute command,
