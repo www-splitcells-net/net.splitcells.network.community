@@ -125,25 +125,29 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                               This is already the case, when one considers blank textareas and their respective editors as distinct representations.
                     * [x] Remove old horizontal tab buttons.
                     * [x] Implement optimization for colloquium planning example.
-            * [ ] Implement solution formating.
+            * [x] Implement solution formating.
             * [ ] Implement proper user friendly error handling.
-                * [ ] Create central error handling guidelines or documentation via central interface, that handles everything error.
-                    * [ ] Consider always requiring a user.
+                * [x] Create central error handling guidelines or documentation via central interface, that handles everything error.
+                    * [x] Consider always requiring a user.
                       -> Yes, there should be always a user stored via a Dem config as this disallows arbitrary user switching in code.
                       Furthermore, most code does not require any authentication context, but may be used in an authentication context.
                       See file system for example.
                       It is not acceptable, for every code to explicitly pass an authentication context,
                       even though it is not required most of the time.
                       This needs to be documented.
-                    * [ ] Just support try catch of user errors for now, as this will be enough for a long time.
-                * [ ] Use user session in dem, in order to store all errors.
-                * [ ] Use multiple types of messages like errors and warnings.
-                * [ ] Define the subject of errors.
-                * [ ] Handle this like logging, but with a special address.
-                * [ ] Document why explicit error message handling is bad.
+                    * [x] Just support try catch of user errors for now, as this will be enough for a long time.
+                * [o] Use user session in dem, in order to store all errors. -> Try and catch will be used instead.
+                * [x] Use multiple types of messages like errors and warnings. -> We are using LogLevels for that.
+                * [o] Define the subject of errors. -> This will be done implicitly via the content of the error message and its stack trace instead.
+                * [x] Handle this like logging, but with a special address. -> Try and catch will be used instead.
+                * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
                 * [ ] Render all exception messages with a tree as common mark.
+                  Add needs to checker to website server.
+            * [ ] Render rating.
+            * [ ] Render argumentation.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
+    * [ ] Add Geal editor to main page of live server.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
