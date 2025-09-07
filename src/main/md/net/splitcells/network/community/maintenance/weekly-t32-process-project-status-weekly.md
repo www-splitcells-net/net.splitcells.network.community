@@ -15,14 +15,18 @@ This does not apply for statuses, that show progress.
     * Improve test coverage: currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
+* [ ] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
+    * [ ] Move Javadoc build to site goal. 
+    * [ ] Execute site goal in daily workflow.
+    * [ ] Is an explicit Javadoc plugin required in the parent POM in this case?
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
       Note why code coverage is done this way.
     * [x] Check by hand if the aggregate test coverage report is correct.
     * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
-    * [ ] Upload JaCoCo code coverage to website via sftp.
-    * [ ] Do not echo private key for upload.
+    * [ ] Upload JaCoCo code coverage to website via sftp. Check this at https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
+    * [x] Do not echo private key for upload.
     * [ ] Replace private key for SFTP upload.
     * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.

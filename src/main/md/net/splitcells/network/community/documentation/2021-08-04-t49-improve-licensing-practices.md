@@ -10,14 +10,16 @@ We also need full accounting for it.
 * [ ] Improve licensing info on deployed website.
     * [ ] Create a license overview page, that links to all license relevant documents
       and also lists the license of all available pages.
-        * [x] Start with empty page. -> LicensePageExtension provides this at `net/splitcells/website/license-page.html`.
-        * [ ] Create and use a website server config, that contains a list of all license pages.
+        * [x] Start with empty page. -> LicensePageExtension provides this at http://localhost:8443/net/splitcells/website/license-page.html
+        * [x] Create and use a website server config, that contains a list of all license pages.
+          The new option is located at `net.splitcells.website.server.Config#licensePages`
         * [x] Add name/description to every license page.
         * [o] Create a static Cell methods, that lists all relevant license resources.
           Use these methods in the static website server construction functions.
           -> For now it is ok, to use website server config. 
         * [ ] Note that user content is not affected by this.
         * [ ] Link relevant existing pages.
+            * [ ] Fix all links. 
             * [x] net.splitcells.network
             * [x] net.splitcells.network.system
             * [ ] net.splitcells.martins.avots.distro
