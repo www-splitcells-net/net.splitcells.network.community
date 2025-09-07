@@ -16,7 +16,7 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
-    * [ ] Move Javadoc build to site goal. 
+    * [x] Move Javadoc build to site goal. 
     * [ ] Execute site goal in daily workflow.
     * [ ] Is an explicit Javadoc plugin required in the parent POM in this case?
 * [ ] Fix code coverage.

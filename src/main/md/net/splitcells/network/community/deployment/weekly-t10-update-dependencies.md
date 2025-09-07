@@ -16,6 +16,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [x] Parse Playwright dependency from BOM repo.
     * [x] Parse Playwright version from BOM repo.
     * [ ] Insert parsed Playwright into container POM.
+    * [ ] Disable Playwright prasing during tests, so these do not have to be changed all the time.
     * [ ] Test parsed Playwright version.
     * [ ] Test inserted Playwright version by replacing the default version during test.
 * [ ] Create profile, that updates dependencies.
