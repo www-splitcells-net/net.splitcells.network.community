@@ -12,7 +12,9 @@ when it is stating failure all the time.
 This does not apply for statuses, that show progress.
 # Service
 * Process status badges.
-    * Improve test coverage: currently working on `net.splitcells.dem.api`.
+* Improve test coverage.
+    * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
+    * Currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
 * [ ] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
@@ -25,9 +27,10 @@ This does not apply for statuses, that show progress.
       Note why code coverage is done this way.
     * [x] Check by hand if the aggregate test coverage report is correct.
     * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
-    * [ ] Upload JaCoCo code coverage to website via sftp. Check this at https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
+    * [x] Upload JaCoCo code coverage to website via sftp. Check this at https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * [x] Do not echo private key for upload.
-    * [ ] Replace private key for SFTP upload.
+    * [x] Replace private key for SFTP upload.
+    * [ ] Clean up SFTP server for static site.
     * [ ] Remove codecov upload in GitHub CI.
     * [ ] Delete codecov integration.
     * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
