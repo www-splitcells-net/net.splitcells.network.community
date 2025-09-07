@@ -143,8 +143,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
                 * [ ] Render all exception messages with a tree as common mark.
                   Add needs to checker to website server.
-            * [ ] Render rating.
-            * [ ] Render argumentation.
+                * [ ] Create new common mark field for errors.
+            * [ ] Render rating as a CommonMark 
+            * [ ] Render argumentation as a CommonMark document.
+            * [ ] Test every field at CodeSolutionCalculatorTest.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
     * [ ] Add Geal editor to main page of live server.
