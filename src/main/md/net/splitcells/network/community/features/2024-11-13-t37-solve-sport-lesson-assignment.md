@@ -141,12 +141,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Define the subject of errors. -> This will be done implicitly via the content of the error message and its stack trace instead.
                 * [x] Handle this like logging, but with a special address. -> Try and catch will be used instead.
                 * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
-                * [ ] Render all exception messages with a tree as common mark.
-                  Add needs to checker to website server.
-                * [ ] Create new common mark field for errors.
-            * [ ] Render rating as a CommonMark 
+                * [x] Consider a generic implicit error handler. -> Something like that will be done, when it is really needed.
+                * [ ] Create new CommonMark field for errors.
+                    * [ ] Render all messages of need exceptions
+                    * [ ] Render all stack traces at the end of the errors field.
+                    * [ ] Render all none need exceptions at the end of the errors field.
+                * [ ] Go through all UI code and check everything. 
+            * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
+            * [ ] Render argumentation as part of the solution table.
             * [ ] Test every field at CodeSolutionCalculatorTest.
+    * [ ] Make first char of vertical tab button upper case in the GUI.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
     * [ ] Add Geal editor to main page of live server.
@@ -186,7 +191,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
 * [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
   This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
-* [ ] Remove old code editor. Do not forget its Javascript code.
+* [x] Remove old code editor. Do not forget its Javascript code.
+* [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
 * [ ] Preserver no-code editor UI code,
   as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
 # Done Tasks
