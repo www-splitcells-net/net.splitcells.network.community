@@ -146,6 +146,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [ ] Render all messages of need exceptions
                     * [ ] Render all stack traces at the end of the errors field.
                     * [ ] Render all none need exceptions at the end of the errors field.
+                    * [ ] Create error title.
                 * [ ] Go through all UI code and check everything. 
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
