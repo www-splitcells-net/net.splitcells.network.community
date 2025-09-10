@@ -37,6 +37,8 @@ This does not apply for statuses, that show progress.
     * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
       For instance, the code coverage report could be uploaded from a developer computer.
     * [ ] Delete static website and reupload everything, in order to get rid of old and potentially manipulated data.
+* [ ] Move source code check to daily workflow, as it can otherwise be hard to fix anything in the grammar.
+  See the protected keyword problem.
 * [ ] Enable ` dominant managemen` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do Sonar[]()Cloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.

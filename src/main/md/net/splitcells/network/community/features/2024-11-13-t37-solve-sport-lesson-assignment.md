@@ -141,17 +141,20 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Define the subject of errors. -> This will be done implicitly via the content of the error message and its stack trace instead.
                 * [x] Handle this like logging, but with a special address. -> Try and catch will be used instead.
                 * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
-                * [x] Consider a generic implicit error handler. -> Something like that will be done, when it is really needed.
                 * [ ] Create new CommonMark field for errors.
-                    * [ ] Render all messages of need exceptions
-                    * [ ] Render all stack traces at the end of the errors field.
+                    * [x] Render all messages of need exceptions
+                    * [x] Render all stack traces at the end of the errors field.
                     * [ ] Render all none need exceptions at the end of the errors field.
-                    * [ ] Create error title.
+                      This is needed, as support will be harder.
+                        * [x] Create a generic implicit error handler for any kind of error report system. -> The Needs Check API does the job.
+                        * [o] ExecException -> Can be handled via code processing Throwables.
+                        * [ ] Throwable
+                    * [x] Create error title.
+                    * [ ] Avoid empty lines between list elements.
                 * [ ] Go through all UI code and check everything. 
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
             * [ ] Render argumentation as part of the solution table.
-            * [ ] Test every field at CodeSolutionCalculatorTest.
     * [ ] Make first char of vertical tab button upper case in the GUI.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
