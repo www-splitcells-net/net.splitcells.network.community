@@ -150,7 +150,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [o] ExecException -> Can be handled via code processing Throwables.
                         * [ ] Throwable
                     * [x] Create error title.
+                    * [ ] Only concat multiple CommonMark documents with a specialized method,
+                      in order to ensure proper line endings.
                     * [ ] Avoid empty lines between list elements in CommonMark.
+                    * [ ] Correct lines before and after a heading.
                 * [ ] Go through all UI code and check everything. 
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
