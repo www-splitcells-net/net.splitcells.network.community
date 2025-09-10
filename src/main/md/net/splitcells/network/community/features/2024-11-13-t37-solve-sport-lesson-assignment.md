@@ -158,7 +158,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Make first char of vertical tab button upper case in the GUI.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
-    * [ ] Add Geal editor to main page of live server.
+    * [x] Add Geal editor to main page of live server.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
