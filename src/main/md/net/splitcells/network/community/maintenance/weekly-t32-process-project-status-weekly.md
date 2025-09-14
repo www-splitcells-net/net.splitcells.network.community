@@ -17,10 +17,6 @@ This does not apply for statuses, that show progress.
     * Currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
-* [ ] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
-    * [x] Move Javadoc build to site goal. 
-    * [ ] Execute site goal in daily workflow.
-    * [ ] Is an explicit Javadoc plugin required in the parent POM in this case?
 * [ ] Fix code coverage.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
@@ -31,15 +27,13 @@ This does not apply for statuses, that show progress.
     * [x] Do not echo private key for upload.
     * [x] Replace private key for SFTP upload.
     * [ ] Clean up SFTP server for static site.
-    * [ ] Remove codecov upload in GitHub CI.
-    * [ ] Delete codecov integration.
-    * [ ] Add to daily Codeberg test a test coverage report generator and upload it to the website.
-    * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
-      For instance, the code coverage report could be uploaded from a developer computer.
+    * [x] Remove codecov upload in GitHub CI.
+    * [x] Delete codecov integration.
+    * [x] Add to daily Codeberg test a test coverage report generator and upload it to the website.
     * [ ] Delete static website and reupload everything, in order to get rid of old and potentially manipulated data.
-* [ ] Move source code check to daily workflow, as it can otherwise be hard to fix anything in the grammar.
-  See the protected keyword problem.
-* [ ] Enable ` dominant managemen` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
+* [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
+  For instance, the code coverage report could be uploaded from a developer computer.
+* [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [ ] Do Sonar[]()Cloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
 * [ ] Let Tester test capability tests as well. 
@@ -61,8 +55,16 @@ This does not apply for statuses, that show progress.
     * https://github.com/cmu-pasta/mu2
     * https://github.com/rohanpadhye/JQF
 * [ ] Consider [JSpecify](https://jspecify.dev/).
-* [ ] Daily test Maven site goal. 
+* [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 # Done Task
+* [x] Move source code check to daily workflow, as it can otherwise be hard to fix anything in the grammar.
+  See the protected keyword problem.
+* [x] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
+    * [x] Move Javadoc build to site goal.
+    * [x] Execute site goal in daily workflow.
+    * [o] Is an explicit Javadoc plugin required in the parent POM in this case?
+      -> This is not important for now.
+      Stating the Maven plugin determines its version.
 * [x] Make `net.splitcells.network.repos.license.check` successful and add it to the daily CI.
   Images are licensed under `CC BY-SA 4.0`. The appropriate guidelines and metadata will be handled [here](../documentation/2021-08-04-improve-licensing-practices.md).
 * [x] Find a way for SoundCloud etc. to ignore certain things via an annotation and comment.

@@ -17,7 +17,7 @@ We also need full accounting for it.
         * [o] Create a static Cell methods, that lists all relevant license resources.
           Use these methods in the static website server construction functions.
           -> For now it is ok, to use website server config. 
-        * [ ] Note that user content is not affected by this.
+        * [x] Note that user content is not affected by this.
         * [ ] Link relevant existing pages.
             * [ ] Fix all links. 
             * [x] net.splitcells.network
