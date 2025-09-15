@@ -17,20 +17,6 @@ This does not apply for statuses, that show progress.
     * Currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
-* [ ] Fix code coverage.
-    * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
-    * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
-      Note why code coverage is done this way.
-    * [x] Check by hand if the aggregate test coverage report is correct.
-    * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
-    * [x] Upload JaCoCo code coverage to website via sftp. Check this at https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * [x] Do not echo private key for upload.
-    * [x] Replace private key for SFTP upload.
-    * [ ] Clean up SFTP server for static site.
-    * [x] Remove codecov upload in GitHub CI.
-    * [x] Delete codecov integration.
-    * [x] Add to daily Codeberg test a test coverage report generator and upload it to the website.
-    * [ ] Delete static website and reupload everything, in order to get rid of old and potentially manipulated data.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
   For instance, the code coverage report could be uploaded from a developer computer.
 * [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
@@ -57,6 +43,20 @@ This does not apply for statuses, that show progress.
 * [ ] Consider [JSpecify](https://jspecify.dev/).
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 # Done Task
+* [x] Fix code coverage report.
+    * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+    * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
+      Note why code coverage is done this way.
+    * [x] Check by hand if the aggregate test coverage report is correct.
+    * [x] Re-enable codecov.io upload via Maven. See [\#30](../deployment/weekly-t30-deploy-tests.md) for current work on that. -> The upload does not work. -> Not it works magically without changing anything.
+    * [x] Upload JaCoCo code coverage to website via sftp. Check this at https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
+    * [x] Do not echo private key for upload.
+    * [x] Replace private key for SFTP upload.
+    * [x] Clean up SFTP server for static site.
+    * [x] Remove codecov upload in GitHub CI.
+    * [x] Delete codecov integration.
+    * [x] Add to daily Codeberg test a test coverage report generator and upload it to the website.
+    * [x] Delete static website and reupload everything, in order to get rid of old and potentially manipulated data.
 * [x] Move source code check to daily workflow, as it can otherwise be hard to fix anything in the grammar.
   See the protected keyword problem.
 * [x] Skip Javadoc build, when site goal is not target during Maven command, in order to speed up developer builds.
