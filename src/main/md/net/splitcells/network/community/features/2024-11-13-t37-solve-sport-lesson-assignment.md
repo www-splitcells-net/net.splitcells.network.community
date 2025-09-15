@@ -141,19 +141,19 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Define the subject of errors. -> This will be done implicitly via the content of the error message and its stack trace instead.
                 * [x] Handle this like logging, but with a special address. -> Try and catch will be used instead.
                 * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
-                * [ ] Create new CommonMark field for errors.
+                * [x] Create new CommonMark field for errors.
                     * [x] Render all messages of need exceptions
                     * [x] Render all stack traces at the end of the errors field.
-                    * [ ] Render all none need exceptions at the end of the errors field.
+                    * [x] Render all none need exceptions at the end of the errors field.
                       This is needed, as support will be harder.
                         * [x] Create a generic implicit error handler for any kind of error report system. -> The Needs Check API does the job.
                         * [o] ExecException -> Can be handled via code processing Throwables.
-                        * [ ] Throwable
+                        * [x] Throwable
                     * [x] Create error title.
-                    * [ ] Only concat multiple CommonMark documents with a specialized method,
+                    * [x] Only concat multiple CommonMark documents with a specialized method,
                       in order to ensure proper line endings.
-                    * [ ] Avoid empty lines between list elements in CommonMark.
-                    * [ ] Correct lines before and after a heading.
+                    * [x] Avoid empty lines between list elements in CommonMark.
+                    * [x] Correct lines before and after a heading.
                 * [ ] Go through all UI code and check everything. 
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
