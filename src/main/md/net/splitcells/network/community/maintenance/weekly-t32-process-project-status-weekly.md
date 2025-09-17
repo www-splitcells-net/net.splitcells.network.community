@@ -17,7 +17,8 @@ This does not apply for statuses, that show progress.
     * Currently working on `net.splitcells.dem.api`.
 * Execute static code checks.
 # Tasks.
-* [ ] Move as much of commands as possible from CI YML file to dedicated project commands, so these can be used anywhere.
+* [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
+  so these can be used anywhere and are therefore more standardized.
   For instance, the code coverage report could be uploaded from a developer computer.
 * [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
@@ -43,6 +44,12 @@ This does not apply for statuses, that show progress.
 * [ ] Consider [JSpecify](https://jspecify.dev/).
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 # Done Task
+* [x] Fix mvn site error.
+    * [x] Maybe it is caused by the Maven version 3.8.7-2 in the daily CI,
+      as it works on my local PC with maven 3.9.5.
+      This [Apache issue](https://issues.apache.org/jira/browse/MSITE-967) implies, that this is the problem.
+      -> I could confirm on my PC, that the Maven version is causing the problem.
+        * [x] Use [Maven Wrapper](https://maven.apache.org/tools/wrapper/), in order to set up correct Maven version.
 * [x] Fix code coverage report.
     * This is done in the daily workflow: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
     * [x] Do code coverage only on the main `net.splitcells.network` repo for now, as there is a problem with the distro repo.
