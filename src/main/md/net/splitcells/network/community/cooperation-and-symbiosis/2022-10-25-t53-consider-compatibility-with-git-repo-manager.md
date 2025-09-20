@@ -20,6 +20,7 @@ as the results of this task would not be essential to the projects main goal.
         * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
     * [ ] Consider creating an alternative git submodule based backend for repo process and co and migrate slowly to it.
       Make this part of the repo process implementation clean up.
+        * [ ] Read about submodules: https://www.cyberdemon.org/2024/03/20/submodules.html
     * [ ] Note `bin/net.splitcells.osi.repos.children`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
     * [ ] Define different focus of git-repo-manager and repos process.
