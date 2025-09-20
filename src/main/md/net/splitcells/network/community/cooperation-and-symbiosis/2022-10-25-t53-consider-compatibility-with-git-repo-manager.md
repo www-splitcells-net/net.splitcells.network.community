@@ -18,7 +18,8 @@ as the results of this task would not be essential to the projects main goal.
             * [ ] Note that cooperation with git-repo-manager becomes moot, as repo process way of storing sub repo info is too unconventional.
         * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.examples.md`
         * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
-    * [ ] Consider creating an alternative git submodule based backend for repo process and co.
+    * [ ] Consider creating an alternative git submodule based backend for repo process and co and migrate slowly to it.
+      Make this part of the repo process implementation clean up.
     * [ ] Note `bin/net.splitcells.osi.repos.children`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
     * [ ] Define different focus of git-repo-manager and repos process.
