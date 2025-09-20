@@ -23,6 +23,7 @@ This does not apply for statuses, that show progress.
     * [x] Build
     * [ ] Build Reports
     * [ ] Upload Reports
+* [ ] Execute tests of shell projects in daily CI as well.
 * [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.

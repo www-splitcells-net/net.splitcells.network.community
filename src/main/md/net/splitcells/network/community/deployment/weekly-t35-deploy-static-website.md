@@ -24,12 +24,12 @@
             * [x] Link matrix channel in privacy policy and impressum, but recheck if this is legally ok.
             * [ ] Remove personal phone number from git history of `net.splitcells.martins.avots.distro`.
               Add the commands to the git guidelines as these could be useful in the future as well.
-            * [ ] Note why call is not enough:
-                * [ ] https://www.ferner-alsdorf.de/impressumspflicht-haendler-muss-auf-anfragen-innerhalb-von-60-minuten-antworten/ 
-                * [ ] https://codeberg.org/Codeberg/org/src/branch/main/Imprint.md
-                * [ ] https://www.danisch.de/assets/pages/impressum.html
-                * [ ] This is not a commercial website/server.
-                * [ ] Phone also does not guarantee 24/7 availability at any moment, for example because of too many calls.
+            * [x] Note why call is not enough:
+                * [x] https://www.ferner-alsdorf.de/impressumspflicht-haendler-muss-auf-anfragen-innerhalb-von-60-minuten-antworten/ 
+                * [x] https://codeberg.org/Codeberg/org/src/branch/main/Imprint.md
+                * [x] https://www.danisch.de/assets/pages/impressum.html
+                * [o] This is not a commercial website/server. -> Does not seem to be relevant.
+                * [x] Phone also does not guarantee 24/7 availability at any moment, for example because of too many calls.
         * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
         * [ ] State the relevant law is German law, instead of referring just the law. 
         * [ ] Fix the title of privacy policy.

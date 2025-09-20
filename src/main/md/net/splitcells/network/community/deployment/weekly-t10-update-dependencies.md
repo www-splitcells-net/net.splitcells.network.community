@@ -8,22 +8,23 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update Java
 * Update Maven
 # Tasks
-* [ ] Keep Playwright version in network BOM and network execute in syn,
+* [ ] Create profile, that updates dependencies during the build.
+* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
+* [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
+  with a very specific commit message, that can be used, in order to easily filter such commits.
+# Done Tasks
+* [x] Keep Playwright version in network BOM and network execute in syn,
   by parsing the BOM's version in the network execute command,
   in order to set the version in the POM template.
     * [x] Make Playwright version a template parameter.
     * [x] Test generated Playwright version.
     * [x] Parse Playwright dependency from BOM repo.
     * [x] Parse Playwright version from BOM repo.
-    * [ ] Insert parsed Playwright into container POM.
-    * [ ] Disable Playwright prasing during tests, so these do not have to be changed all the time.
-    * [ ] Test parsed Playwright version.
-    * [ ] Test inserted Playwright version by replacing the default version during test.
-* [ ] Create profile, that updates dependencies.
-* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
-* [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
-  with a very specific commit message, that can be used, in order to easily filter such commits.
-# Done Tasks
+    * [o] Disable Playwright parsing during tests, so these do not have to be changed all the time.
+      -> The resulting POM for the container is compared to a regex instead.
+    * [x] Insert parsed Playwright into container POM.
+    * [x] Test parsed Playwright version.
+    * [x] Test inserted Playwright version by replacing the default version during test.
 * [x] Retry splitting bom project into a bom base and a bom log project, as it may be easier, than one thinks.
   An optional build check could check, if the update did its job completely in the bom log
   therefore completely fix the code duplication issue.

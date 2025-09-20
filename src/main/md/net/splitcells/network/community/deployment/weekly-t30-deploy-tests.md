@@ -37,18 +37,19 @@ Some tests are executed on servers in order to ensure, that the software works o
               See `Old deploy.build.at` as a template, that was used in the past.
               Alternatively consider using `systemd-run --user [command]`, which may be easier to use, as the `Old deploy.build.at` template.
               Systemd-run may not require cleaning up failed builds.
-    * [ ] Deploy test via `bin/worker.test.at` which has to use the `bin/repos.test*` commands.
+    * [x] Deploy test via `bin/worker.test.at` which has to use the `bin/repos.test*` commands.
       Test this via `net.splitcells.martins.avots.distro/bin/test.live-server.sh` as it is fast.
         * [x] Create one unified test command, as the multiple test commands are irritating.
           Also consolidate build if possible, as these have not much practical use.
           This command is named `bin/repos.test.sh`.
         * [x] Verify git repo.
         * [x] Check license data.
-        * [ ] Fix `ColloquiumPlanningTest.testComplexity:143`.
-        * [ ] Fix `ColloquiumPlanningTest.testRandomInstanceSolving:113`.
-        * [ ] Fix `NQueenProblemTest.test_8_queen_problem_with_backtracking:115`.
-    * [ ] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands.
+        * [x] Fix `ColloquiumPlanningTest.testComplexity:143`. -> This was fixed via commit for the daily CI workflow. 
+        * [x] Fix `ColloquiumPlanningTest.testRandomInstanceSolving:113`. -> This was fixed via commit for the daily CI workflow.
+        * [x] Fix `NQueenProblemTest.test_8_queen_problem_with_backtracking:115`. -> This was fixed via commit for the daily CI workflow.
+    * [x] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands. -> This was fixed via commit for the daily CI workflow.
     * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
+    * [ ] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.
 * [ ] Use ExtensiveTester on capable platforms.

@@ -78,6 +78,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
                     * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](task-archive/9999-2021-03-21-publish-public-website-source-code.md) project.
+                    * [x] GelEnv
                     * [ ] GelDev
                 * [ ] Replace main methods based on static methods with cell based main methods and test these.
                     * [ ] `net.splitcells.network.system.SystemCell`

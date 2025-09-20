@@ -18,15 +18,18 @@ We also need full accounting for it.
           Use these methods in the static website server construction functions.
           -> For now it is ok, to use website server config. 
         * [x] Note that user content is not affected by this.
-        * [ ] Link relevant existing pages.
-            * [ ] Fix all links. 
+        * [x] Link relevant existing pages.
+            * [x] Fix all links. 
             * [x] net.splitcells.network
             * [x] net.splitcells.network.system
-            * [ ] net.splitcells.martins.avots.distro
-            * [ ] net.splitcells.martins.avots.website
+            * [x] net.splitcells.martins.avots.distro -> Does not have relevant license files.
+            * [x] net.splitcells.martins.avots.website -> Does not have relevant license files.
         * [ ] Add license overview page to menu.
-    * [ ] Licensing of images
     * [ ] List license of every page centrally.
+        * [ ] Create empty page for listing all files.
+        * [ ] Licensing of images
+        * [ ] Read `REUSE.toml` for list files without license metadata.
+        * [ ] Read license metadata in files.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
