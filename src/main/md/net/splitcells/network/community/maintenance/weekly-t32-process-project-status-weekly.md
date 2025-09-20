@@ -14,15 +14,19 @@ This does not apply for statuses, that show progress.
 * Process status badges.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on `net.splitcells.dem.api`.
+    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
   For instance, the code coverage report could be uploaded from a developer computer.
+    * [x] Build
+    * [ ] Build Reports
+    * [ ] Upload Reports
 * [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
-* [ ] Enable site goal in daily test, in order to test everything that is part of the Maven build.
-* [ ] Do Sonar[]()Cloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
+* [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
+    * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
+* [ ] Record and upload test runtime performance via network log repo.
 * [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
@@ -44,6 +48,7 @@ This does not apply for statuses, that show progress.
 * [ ] Consider [JSpecify](https://jspecify.dev/).
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 # Done Task
+* [x] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [x] Fix mvn site error.
     * [x] Maybe it is caused by the Maven version 3.8.7-2 in the daily CI,
       as it works on my local PC with maven 3.9.5.

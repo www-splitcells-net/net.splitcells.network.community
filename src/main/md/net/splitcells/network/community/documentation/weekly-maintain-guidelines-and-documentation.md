@@ -14,6 +14,9 @@
 * Consider Documentation from point of a developer
 * Consider Documentation from point of a product owner.
 * Consider mobile vs desktop view.
+* Give Chat AI a piece of documentation and ask what is described by it.
+  Also, ask what is incorrect.
+  This may help to find errors or problems with text.
 # Tasks
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
 * [ ] Make News more practible.
