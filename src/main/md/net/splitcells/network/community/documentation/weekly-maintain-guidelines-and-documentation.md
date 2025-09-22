@@ -18,6 +18,7 @@
   Also, ask what is incorrect.
   This may help to find errors or problems with text.
 # Tasks
+* [ ] Project news are missing in the global changelog.
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
 * [ ] Make News more practible.
     * [ ] Only show explicitly started projects.

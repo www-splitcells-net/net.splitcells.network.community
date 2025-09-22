@@ -154,7 +154,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       in order to ensure proper line endings.
                     * [x] Avoid empty lines between list elements in CommonMark.
                     * [x] Correct lines before and after a heading.
-                * [ ] Go through all UI code and check everything. 
+                * [ ] Go through all UI code and check everything.
+                    * [ ] `EditorProcessor#process`
+                    * [ ] `Editor#interpret`
+                    * [ ] `Solution#optimize`
+                * [ ] Support problem definitions without a solution.
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
             * [ ] Render argumentation as part of the solution table.

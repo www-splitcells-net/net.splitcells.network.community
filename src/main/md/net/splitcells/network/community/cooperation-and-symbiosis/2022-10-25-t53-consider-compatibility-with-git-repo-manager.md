@@ -5,11 +5,13 @@ Make repos process compatible to git-repo-manager and consider using it as a gui
 where repos process is mainly used for creating configs for tools and meta repos coordination like backups and synchronization.
 Offer git-repo-manager cooperation so these tools are compatible with each other,
 both understand the same simplistic file format for repo inventory files.
-# Acceptance Note
+# Old Acceptance Note
 Instead of creating a very loose cooperation,
 it was decided to just make repo process advertisable and to advertise it.
 A cooperation would currently cost too many resources,
 as the results of this task would not be essential to the projects main goal.
+# Acceptance Note
+TODO
 # Tasks
 * [ ] Clean up existing repos process doc.
     * [ ] Proofread the doc.
@@ -21,6 +23,11 @@ as the results of this task would not be essential to the projects main goal.
     * [ ] Consider creating an alternative git submodule based backend for repo process and co and migrate slowly to it.
       Make this part of the repo process implementation clean up.
         * [ ] Read about submodules: https://www.cyberdemon.org/2024/03/20/submodules.html
+        * [ ] Make repo process a boostrap like command located the `net.splitcells.network/bin` folder,
+          that links to the `net.splitcells.prject`'s implementation.
+        * [ ] The daily CIs and co, should use repo process to extract the list of sub and peer repos,
+          instead of the own custom command.
+    * [ ] Create new acceptance note for this cooperation project, as the cooperation was found out to be a bad idea.
     * [ ] Note `bin/net.splitcells.osi.repos.children`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
     * [ ] Define different focus of git-repo-manager and repos process.
