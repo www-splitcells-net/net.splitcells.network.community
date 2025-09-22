@@ -155,7 +155,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Avoid empty lines between list elements in CommonMark.
                     * [x] Correct lines before and after a heading.
                 * [ ] Go through all UI code and check everything.
-                    * [ ] `EditorProcessor#process`
+                    * [x] `EditorProcessor#process`
                     * [ ] `Editor#interpret`
                     * [ ] `Solution#optimize`
                 * [ ] Support problem definitions without a solution.
