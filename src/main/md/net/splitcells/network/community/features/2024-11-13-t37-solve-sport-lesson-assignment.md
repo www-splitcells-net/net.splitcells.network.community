@@ -154,9 +154,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       in order to ensure proper line endings.
                     * [x] Avoid empty lines between list elements in CommonMark.
                     * [x] Correct lines before and after a heading.
-                * [ ] Go through all UI code and check everything.
+                * [ ] Go through all UI code, check everything and create user-friendly errors.
                     * [x] `EditorProcessor#process`
                     * [ ] `Editor#interpret`
+                        * [ ] `public Editor interpret(SourceUnit sourceUnit)`
+                        * [ ] `SourceUnitParser`
+                            * [ ] `GealAntlrUtils`
                     * [ ] `Solution#optimize`
                 * [ ] Support problem definitions without a solution.
             * [ ] Render rating as a CommonMark field
@@ -167,6 +170,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Delete `Query#constraintResult`. 
     * [x] Add Geal editor to main page of live server.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
+* [ ] Use the descriptive attribute names in CSV files for better readability.
+  Otherwise, there is no none technical use for th descriptive names.
+* [ ] Check for duplicate attributes in tables and solutions.c
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
