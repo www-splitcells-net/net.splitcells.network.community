@@ -71,7 +71,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
             * [ ] CURRENT Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
-                * [ ] First move all `Distro*` code into `*Cell` classes, so that cell `Distro*` do not exist and provide non-static wrappers,
+                * [X] First move all `Distro*` code into `*Cell` classes, so that cell `Distro*` do not exist and provide non-static wrappers,
                   so that these can be used in the Consumer of `Environment#withCell(Class, Consumer)`.
                     * [x] `net.splitcells.network.system.WebsiteViaJar` -> `net.splitcells.network.system.SystemCell`
                     * [x] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
@@ -79,11 +79,14 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
                     * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](task-archive/9999-2021-03-21-publish-public-website-source-code.md) project.
                     * [x] GelEnv
-                    * [ ] GelDev
+                    * [x] GelDev
+                    * [X] `net.splitcells.martins.avots.distro.DevDistroCell` -> `net.splitcells.martins.avots.distro.DevDistroCell`
+                * [ ] Store Cells in Dem config and thereby make it possible to call its member methods.
+                  This way, one can convert the static config methods to members of cells and prevent static config chaining which caused a lot of hard to understand complexity.
                 * [ ] Replace main methods based on static methods with cell based main methods and test these.
-                    * [ ] `net.splitcells.network.system.SystemCell`
-                    * [ ] `net.splitcells.network.distro.DistroCell.`
-                    * [ ] `net.splitcells.network.distro.java.DistroCell`
+                    * [x] `net.splitcells.network.system.SystemCell`
+                    * [x] `net.splitcells.network.distro.DistroCell.`
+                    * [x] `net.splitcells.network.distro.java.DistroCell`
                     * [ ] `net.splitcells.martins.avots.distro.DistroCell`
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
@@ -92,6 +95,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                   * [ ] `net.splitcells.network.distro.java.DistroCell`
                   * [ ] `net.splitcells.martins.avots.distro.DistroCell`
               * [ ] Deploy on live server.
+              * [ ] Ensure, that the dependency recorder is really recording Cell dependencies.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
           start.
@@ -102,7 +106,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
         * [ ] Clean up existing configs.
             * [ ] What is `net.splitcells.website.Projects` used for?
             * [ ] Consider `net.splitcells.cin.WorldService`, which contains former working code.
-            * [ ] Consider `net.splitcells.martins.avots.distro.DevDistro`, which contains currently working code.
+            * [ ] Consider `net.splitcells.martins.avots.distro.DevDistroCell`, which contains currently working code.
         * [ ] Use GelDev as basis.
         * [ ] Do not block web server start via game.
 * [ ] Remove configuration code of any other way.

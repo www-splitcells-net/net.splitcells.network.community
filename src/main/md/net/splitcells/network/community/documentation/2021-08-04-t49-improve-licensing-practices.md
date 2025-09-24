@@ -44,6 +44,7 @@ We also need full accounting for it.
   Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
 * [ ] Add denial notice of EU's copyright exception regarding machine learning.
 * [ ] Add REUSE files to license pages.
+* [ ] Remove big license header from Java code as this only wastes resources.
 # Done Tasks
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
 * [x] Use https://reuse.software/ in order to check licensing in source code.

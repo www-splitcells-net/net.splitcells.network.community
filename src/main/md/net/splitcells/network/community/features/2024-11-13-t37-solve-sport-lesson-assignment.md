@@ -156,10 +156,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Correct lines before and after a heading.
                 * [ ] Go through all UI code, check everything and create user-friendly errors.
                     * [x] `EditorProcessor#process`
-                    * [ ] `Editor#interpret`
-                        * [ ] `public Editor interpret(SourceUnit sourceUnit)`
-                        * [ ] `SourceUnitParser`
-                            * [ ] `GealAntlrUtils`
+                    * [x] `Editor#interpret`
+                        * [x] `public Editor interpret(SourceUnit sourceUnit)`
+                        * [x] `SourceUnitParser`
+                            * [x] `GealAntlrUtils`
+                            * [x] ExpressionParser
+                            * [x] FunctionCallChainParser
+                            * [x] FunctionCallParser
+                            * [x] StatementParser
+                            * [x] VariableDefinitionParser
+                    * [ ] `Editor#*`
+                        * [ ] Create need version of lookupTableLikeName, in order to know what is causing the lookup.
                     * [ ] `Solution#optimize`
                 * [ ] Support problem definitions without a solution.
             * [ ] Render rating as a CommonMark field
