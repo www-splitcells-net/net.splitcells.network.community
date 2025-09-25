@@ -165,9 +165,27 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] FunctionCallParser
                             * [x] StatementParser
                             * [x] VariableDefinitionParser
+                    * [ ] Runners
+                        * [x] AttributeCallRunner
+                        * [x] ForAllCombsCallRunner
+                        * [ ] ForEachCallRunner
+                        * [ ] FunctionCallExecutor
+                        * [ ] FunctionCallMetaExecutor
+                        * [ ] FunctionCallRun
+                        * [ ] FunctionCallRunner
+                        * [ ] HasSizeCallRunner
+                        * [ ] ImportCsvDataRunner
+                        * [ ] OutputFormatCallRunner
+                        * [ ] SolutionCallRunner
+                        * [ ] TableCallRunner
+                        * [ ] ThenCallRunner
                     * [ ] `Editor#*`
-                        * [ ] Create need version of lookupTableLikeName, in order to know what is causing the lookup.
-                    * [ ] `Solution#optimize`
+                        * [o] Create need version of lookupTableLikeName, in order to know what is causing the lookup.
+                          -> Making the return type an Optional makes it easier to handle errors.
+                        * [ ] `Editor#resolve`
+                    * [ ] Prevent variables with names, that can already be resolved.
+                      See solution for example.
+                    * [ ] Runners should never resolve variables manually, but use the functionCallMetaExecutor instead.
                 * [ ] Support problem definitions without a solution.
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
