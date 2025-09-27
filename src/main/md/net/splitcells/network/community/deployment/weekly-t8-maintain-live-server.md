@@ -23,7 +23,15 @@
         * [x] One has to check the thing's presence first.
         * [x] Handle timeout exceptions and add a better message to these, so its meaning is easier to understand.
     * [ ] Adapt UI tester, so that a browser is started for each tester run and closed after every tester run.
-        * [ ] Implement this.
+        * [x] Implement this.
+        * [ ] According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
+          So, starting and closing a real browser for each test run may not work with Playwright,
+          as this can cause a resource leak.
+          Test this.
+          If this is the case, consider changing HtmlClientSharer so that there is pool of real browser instances,
+          instead of just one (`HTMLClients#ROOT_CLIENT`).
+          In other words, use one browser per thread, instead of one browser tab of a singleton browser per thread.
+          Use this HtmlClientSharer, instead of starting and closing a browser for each test run.
         * [ ] Test this
         * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
         * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
