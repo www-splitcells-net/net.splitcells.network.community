@@ -18,11 +18,16 @@
       -> It has a fixed pool of browsers, where only one thread can do on any one of them at a time.
       The HTML client has to kill its browser after the usage is done.
     * [x] The Geal editor has to replace the code editor fully first.
-    * [ ] Correct the Playwright's locator usage and keep in mind,
+    * [x] Correct the Playwright's locator usage and keep in mind,
       that access none existing thing by locators causes a timeout exception.
-        * [ ] One has to check the thing's presence first.
-        * [ ] Handle timeout exceptions and add a better message to these, so its meaning is easier to understand.
-    * [ ] Adapt UI tester.
+        * [x] One has to check the thing's presence first.
+        * [x] Handle timeout exceptions and add a better message to these, so its meaning is easier to understand.
+    * [ ] Adapt UI tester, so that a browser is started for each tester run and closed after every tester run.
+        * [ ] Implement this.
+        * [ ] Test this
+        * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
+        * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
+        * [ ] Note, that browser is killed, as long-running browsers can cause issues as well. 
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
