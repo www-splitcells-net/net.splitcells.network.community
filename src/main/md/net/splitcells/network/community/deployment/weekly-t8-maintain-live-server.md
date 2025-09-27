@@ -29,6 +29,8 @@
     * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
     * [ ] Note, that browser is killed, as long-running browsers can cause issues as well.
     * [ ] Clean up the LiveDistro TODOs, if the UI tester works by now.
+    * [ ] See chapter `process/resource limits reached`.
+        * [ ] Try `--security-opt seccomp=unconfined`.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
@@ -252,3 +254,24 @@ Jan 01 15:40:56 net-splitcells-live systemd[821]: user.slice: A process of this 
 Jan 01 15:40:56 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: Consumed 1d 20h 33min 42.329s CPU time.
 Jan 01 15:40:55 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: A process of this unit has been killed by the OOM killer.
 ```
+
+# process/resource limits reached
+````
+Sep 28 01:10:49 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[805419]: [9.596s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
+Sep 28 01:10:49 net-splitcells-live podman[805374]: [9.596s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
+````
+
+````
+Sep 28 00:50:41 net-splitcells-live podman[715008]: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: [13.236s][warning][os,thread] Failed to start the native thread for java.lang.Thread "HtmlLiveTester-7"
+Sep 28 00:50:41 net-splitcells-live podman[715008]: [13.236s][warning][os,thread] Failed to start the native thread for java.lang.Thread "HtmlLiveTester-7"
+Sep 28 00:50:41 net-splitcells-live podman[715008]: [13.236s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: [13.236s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.run(Thread.java:1583)
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.website.server.test.HtmlLiveTester$1.lambda$executeTest$1(HtmlLiveTester.java:55)
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.website.server.test.HtmlLiveTester$1.executeTest(HtmlLiveTester.java:46)
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.dem.Dem.executeThread(Dem.java:124)
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start(Thread.java:1526)
+Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start0(Native Method)
+````
