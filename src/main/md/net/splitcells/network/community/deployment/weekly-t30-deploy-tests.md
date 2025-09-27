@@ -50,6 +50,7 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [x] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands. -> This was fixed via commit for the daily CI workflow.
     * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
     * [ ] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
+* [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.
 * [ ] Use ExtensiveTester on capable platforms.

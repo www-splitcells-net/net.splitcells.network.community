@@ -24,7 +24,7 @@ We also need full accounting for it.
             * [x] net.splitcells.network.system
             * [x] net.splitcells.martins.avots.distro -> Does not have relevant license files.
             * [x] net.splitcells.martins.avots.website -> Does not have relevant license files.
-        * [ ] Add license overview page to menu.
+        * [x] Add license overview page to menu.
     * [ ] List license of every page centrally.
         * [ ] Create empty page for listing all files.
         * [ ] Licensing of images
