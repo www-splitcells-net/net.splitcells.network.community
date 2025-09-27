@@ -25,8 +25,6 @@
       because closing a Playwright instance does not terminate all of its processes.
       So, in the end process are spawned until there are to many for the OS.
     * [ ] Document the error, when just use one browser instance.
-    * [ ] Test this. -> It seems to be better to use one persistent browser per CPU core, instead of one browser tab of a singleton browser per thread.
-      A persistent browser itself is only accessed by one thread at a time.
     * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
     * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
     * [ ] Note, that browser is killed, as long-running browsers can cause issues as well.
