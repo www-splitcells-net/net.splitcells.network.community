@@ -11,31 +11,26 @@
     * Check via browser, if really no cookies are set.
 * Check via browser, if there are client side errors.
 ## Open Tasks
-* [ ] UI tester: start a browser for each test instance and then destroy it,
-  but do not do actions over any browsers in parallel.
-  This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser. 
-    * [x] Analyse how the HTML client works now.
-      -> It has a fixed pool of browsers, where only one thread can do on any one of them at a time.
-      The HTML client has to kill its browser after the usage is done.
-    * [x] The Geal editor has to replace the code editor fully first.
-    * [x] Correct the Playwright's locator usage and keep in mind,
-      that access none existing thing by locators causes a timeout exception.
-        * [x] One has to check the thing's presence first.
-        * [x] Handle timeout exceptions and add a better message to these, so its meaning is easier to understand.
-    * [ ] Adapt UI tester, so that a browser is started for each tester run and closed after every tester run.
-        * [x] Implement this.
-        * [ ] According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
-          So, starting and closing a real browser for each test run may not work with Playwright,
-          as this can cause a resource leak.
-          Test this.
-          If this is the case, consider changing HtmlClientSharer so that there is pool of real browser instances,
-          instead of just one (`HTMLClients#ROOT_CLIENT`).
-          In other words, use one browser per thread, instead of one browser tab of a singleton browser per thread.
-          Use this HtmlClientSharer, instead of starting and closing a browser for each test run.
-        * [ ] Test this
-        * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
-        * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
-        * [ ] Note, that browser is killed, as long-running browsers can cause issues as well. 
+* [x] Because of Playwright TimeoutError:
+  According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
+  So, starting and closing a real browser for each test run may not work with Playwright,
+  as this can cause a resource leak.
+  If this is the case, consider changing HtmlClientSharer so that there is pool of real browser instances,
+  instead of just one (`HTMLClients#ROOT_CLIENT`).
+  In other words, use one browser per CPU core, instead of one browser tab of a singleton browser per thread.
+  Use this HtmlClientSharer, instead of starting and closing a browser for each test run.
+    * [x] Implement this.
+    * [x] Test `podman run --security-opt seccomp=unconfined` as a fix for NodeJS start.
+      -> `--security-opt seccomp=unconfined` does not fix the issue,
+      because closing a Playwright instance does not terminate all of its processes.
+      So, in the end process are spawned until there are to many for the OS.
+    * [ ] Document the error, when just use one browser instance.
+    * [ ] Test this. -> It seems to be better to use one persistent browser per CPU core, instead of one browser tab of a singleton browser per thread.
+      A persistent browser itself is only accessed by one thread at a time.
+    * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
+    * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
+    * [ ] Note, that browser is killed, as long-running browsers can cause issues as well.
+    * [ ] Clean up the LiveDistro TODOs, if the UI tester works by now.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
@@ -127,6 +122,21 @@
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
 ## Done Tasks
+* [x] Because of Playwright TimeoutError: Try UI tester, that starts a browser for each test instance and then destroy it,
+  but do not do actions over any browsers in parallel.
+  This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser.
+  -> Closing Playwright instance does sometimes not work, which causes a resource leak.
+  The leak leads to the crash of the container, as there are too many processes.
+  Therefore, this does not work.
+  Furthermore, maybe all errors was caused by the fact, that the Geal editor test was not correctly written.
+    * [x] Analyse how the HTML client works now.
+      -> It has a fixed pool of browsers, where only one thread can do on any one of them at a time.
+      The HTML client has to kill its browser after the usage is done.
+    * [x] The Geal editor has to replace the code editor fully first.
+    * [x] Correct the Playwright's locator usage and keep in mind,
+      that access none existing thing by locators causes a timeout exception.
+        * [x] One has to check the thing's presence first.
+        * [x] Handle timeout exceptions and add a better message to these, so its meaning is easier to understand.
 * [x] Check if the error `Failed to create driver` at `com.microsoft.playwright.impl.driver.Driver.createAndInstall(Driver.java:105)` reappears.
   If that is the case, the reason for it must be found. A theory is, that the Playwright initial Java base setup does not work. For this the Linux journal log can be checked.
     * [x] Playwright cannot download the browser sometimes, because of a network error.
