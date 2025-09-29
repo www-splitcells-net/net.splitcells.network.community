@@ -57,6 +57,7 @@
         * [x] Create only one Playwright server, that one browser per HtmlClient in Java.
     * [ ] If nothing works, use HTMLUnit instead.
 * [ ] Reset the git repos, in order to prevent an unexpected state.
+* [ ] Log UI test runtime performance.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
   in order to avoid some Playwright integration issues.
 * [ ] Sometimes submitting an optimization does not work.
