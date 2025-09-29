@@ -30,7 +30,11 @@
     * [ ] Note, that browser is killed, as long-running browsers can cause issues as well.
     * [ ] Clean up the LiveDistro TODOs, if the UI tester works by now.
     * [ ] See chapter `process/resource limits reached`.
-        * [ ] Try `--security-opt seccomp=unconfined`.
+        * [x] Try `--security-opt seccomp=unconfined`. -> This worked.
+        * [ ] Document why `--security-opt seccomp=unconfined` is used.
+    * [ ] Why are tabs or their context etc. being closed? `Target page, context or browser has been closed\n  name='TargetClosedError\n  stack='TargetClosedError: Target page, context or browser has been closed\n`
+    * [ ] Clean up HtmlClientSharer
+    * [ ] Note the reason for the error message `[62.986s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.`.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
