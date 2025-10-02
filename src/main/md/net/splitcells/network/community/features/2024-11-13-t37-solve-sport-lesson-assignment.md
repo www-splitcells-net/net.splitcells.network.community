@@ -185,6 +185,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                           -> Making the return type an Optional makes it easier to handle errors.
                         * [x] `Editor#resolve`
                     * [ ] Do not render error messages as XML, because the error field contains a CommonMark document and not an XML document.
+                      -> Do not use ExecutionException and return a TreesException for `ExecutionException#executionException(Tree)`
+                      and migrate this static constructor to TreesException class.
                     * [ ] Source code quotations are not rendered as well in the error messages.
                     * [ ] Prevent variables with names, that can already be resolved.
                       See solution for example.
