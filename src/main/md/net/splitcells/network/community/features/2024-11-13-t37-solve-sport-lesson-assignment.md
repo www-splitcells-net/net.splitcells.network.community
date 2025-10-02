@@ -187,6 +187,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [ ] Do not render error messages as XML, because the error field contains a CommonMark document and not an XML document.
                       -> Do not use ExecutionException and return a TreesException for `ExecutionException#executionException(Tree)`
                       and migrate this static constructor to TreesException class.
+                        * [ ] Deprecate and remove TreesException in favor of ExecutionException.
+                          For this ExecutionException needs to provide tree based error messages.
+                          For compatibility reasons, if no tree message was provided for the ExecutionExceptions construction,
+                          provide a tree based on the string based message.
                     * [ ] Source code quotations are not rendered as well in the error messages.
                     * [ ] Prevent variables with names, that can already be resolved.
                       See solution for example.
