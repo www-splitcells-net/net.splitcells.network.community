@@ -126,7 +126,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Remove old horizontal tab buttons.
                     * [x] Implement optimization for colloquium planning example.
             * [x] Implement solution formating.
-            * [ ] Implement proper user friendly error handling.
+            * [x] Implement proper user friendly error handling.
                 * [x] Create central error handling guidelines or documentation via central interface, that handles everything error.
                     * [x] Consider always requiring a user.
                       -> Yes, there should be always a user stored via a Dem config as this disallows arbitrary user switching in code.
@@ -154,7 +154,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                       in order to ensure proper line endings.
                     * [x] Avoid empty lines between list elements in CommonMark.
                     * [x] Correct lines before and after a heading.
-                * [ ] Go through all UI code, check everything and create user-friendly errors.
+                * [x] Go through all UI code, check everything and create user-friendly errors.
                     * [x] `EditorProcessor#process`
                     * [x] `Editor#interpret`
                         * [x] `public Editor interpret(SourceUnit sourceUnit)`
@@ -184,18 +184,33 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [o] Create need version of lookupTableLikeName, in order to know what is causing the lookup.
                           -> Making the return type an Optional makes it easier to handle errors.
                         * [x] `Editor#resolve`
-                    * [ ] Do not render error messages as XML, because the error field contains a CommonMark document and not an XML document.
+                    * [x] Do not render error messages as XML, because the error field contains a CommonMark document and not an XML document.
                       -> Do not use ExecutionException and return a TreesException for `ExecutionException#executionException(Tree)`
                       and migrate this static constructor to TreesException class.
-                        * [ ] Deprecate and remove TreesException in favor of ExecutionException.
+                        * [x] Deprecate and remove TreesException in favor of ExecutionException.
                           For this ExecutionException needs to provide tree based error messages.
                           For compatibility reasons, if no tree message was provided for the ExecutionExceptions construction,
                           provide a tree based on the string based message.
-                    * [ ] Source code quotations are not rendered as well in the error messages.
-                    * [ ] Prevent variables with names, that can already be resolved.
-                      See solution for example.
-                    * [ ] Runners should never resolve variables manually, but use the functionCallMetaExecutor instead.
-                * [ ] Support problem definitions without a solution.
+                    * [x] Source code quotations are not rendered as well in the error messages.
+                    * [x] Prevent variables with names, that can already be resolved.
+                      See solution for example. -> It is enough, when new variables are shadowing every function of the standard library with the same name and no parameters.
+                    * [x] Runners should never resolve variables manually, but use the functionCallMetaExecutor instead.
+                      Otherwise, the argument parsing of function call is not fully implemented.
+                        * [x] AttributeCallRunner
+                        * [x] ForAllCombsCallRunner
+                        * [x] ForEachCallRunner
+                        * [x] FunctionCallExecutor
+                        * [x] FunctionCallMetaExecutor
+                        * [x] FunctionCallRun
+                        * [x] FunctionCallRunner
+                        * [x] HasSizeCallRunner
+                        * [x] ImportCsvDataRunner
+                        * [x] OutputFormatCallRunner
+                        * [x] SolutionCallRunner
+                        * [x] TableCallRunner
+                        * [x] ThenCallRunner
+                        * [x] VariableResolutionRunner
+                * [x] Support problem definitions without a solution. -> This is already supported.
             * [ ] Render rating as a CommonMark field
             * [ ] Render argumentation as a CommonMark document.
             * [ ] Render argumentation as part of the solution table.
@@ -246,6 +261,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
 * [ ] Preserver no-code editor UI code,
   as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
+* [ ] Consolidate `net.splitcells.gel.editor.lang`.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.
