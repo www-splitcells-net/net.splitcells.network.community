@@ -23,10 +23,9 @@ This does not apply for statuses, that show progress.
     * [x] Build
     * [ ] Build Reports
     * [ ] Upload Reports
-* [ ] Execute tests of shell projects in daily CI as well.
-* [ ] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
+    * [ ] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.` 
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
@@ -49,6 +48,9 @@ This does not apply for statuses, that show progress.
 * [ ] Consider [JSpecify](https://jspecify.dev/).
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 # Done Task
+* [x] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
+  -> This was already the case.
+* [x] Execute tests of shell projects in daily CI as well. - This was already the case.
 * [x] Enable site goal in daily test, in order to test everything that is part of the Maven build.
 * [x] Fix mvn site error.
     * [x] Maybe it is caused by the Maven version 3.8.7-2 in the daily CI,
