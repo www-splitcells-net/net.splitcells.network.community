@@ -26,10 +26,16 @@ We also need full accounting for it.
             * [x] net.splitcells.martins.avots.website -> Does not have relevant license files.
         * [x] Add license overview page to menu.
     * [ ] List license of every page centrally.
-        * [ ] Create empty page for listing all files.
-        * [ ] Licensing of images
-        * [ ] Read `REUSE.toml` for list files without license metadata.
-        * [ ] Read license metadata in files.
+        * [x] Create empty page for listing all files. -> ResourceLicensingExtension
+        * [ ] `net.splitcells.maven.plugin.resource.list` has also to create and bundle a directory containing the metadata into the jar.
+          The directory contains a file tree, where any file corresponds to a resource managed by the resource list.
+          The file format is a UTF-8 encoded property file.
+            * [ ] Licensing of images
+            * [ ] Read `REUSE.toml` for list files without license metadata.
+            * [ ] Read license metadata in files.
+        * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
+          Use this to list the licensing of every file.
+            * [ ] Only provide access to metadata, to which the user has access to.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
