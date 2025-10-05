@@ -262,6 +262,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Preserver no-code editor UI code,
   as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
 * [ ] Consolidate `net.splitcells.gel.editor.lang`.
+* [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
 # Done Tasks
 * [x] Improve user experience regarding the application's responsiveness, by supporting multiple web server users at once.
     * [x] Implement basic multi threading injection framework.

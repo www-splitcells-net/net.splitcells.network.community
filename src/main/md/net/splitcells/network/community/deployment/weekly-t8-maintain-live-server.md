@@ -35,6 +35,7 @@
     * [ ] Why are tabs or their context etc. being closed? `Target page, context or browser has been closed\n  name='TargetClosedError\n  stack='TargetClosedError: Target page, context or browser has been closed\n`
     * [ ] Clean up HtmlClientSharer
     * [ ] Note the reason for the error message `[62.986s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.`.
+* [ ] Use only fast-forward git pulls for relevant workflows.
 * [ ] Host CPU/Memory Utilization page does not work.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
