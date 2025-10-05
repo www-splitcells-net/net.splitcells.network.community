@@ -17,6 +17,7 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
+* [ ] Consider enforcing a minimal Maven version.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
   For instance, the code coverage report could be uploaded from a developer computer.
