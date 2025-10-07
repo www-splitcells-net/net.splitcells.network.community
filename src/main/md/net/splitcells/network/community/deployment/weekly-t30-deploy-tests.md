@@ -60,6 +60,9 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [ ] Use `./bin/build.part.with.python`.
     * [ ] Use this in daily Codeberg workflow.
 * [ ] Enable SonarCloud in Codeberg CI.
+* [ ] Make `repos.tests.sh` easily executable, without changing the config folder via `export $NET_SPLITCELLS_SHELL_CONFIG_FOLDER=$HOME/tmp/`.
+    * [ ] Allow bootstrapping worker at any folder.
+    * [ ] Allow custom bin folder, that is inside the network repo and not commited.
 * [ ] Enable benchmark tests.
 * [ ] Add live server as normal test server.
 * [ ] Enable all runtime checks during tests like `StaticFlags.ENFORCING_UNIT_CONSISTENCY_KEY`.

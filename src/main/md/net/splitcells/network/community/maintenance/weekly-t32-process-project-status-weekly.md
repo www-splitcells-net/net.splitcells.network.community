@@ -17,6 +17,7 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
+* [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
 * [ ] Consider enforcing a minimal Maven version.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
@@ -48,6 +49,8 @@ This does not apply for statuses, that show progress.
     * https://github.com/rohanpadhye/JQF
 * [ ] Consider [JSpecify](https://jspecify.dev/).
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
+* [ ] Ensure, that all scripts like Bash scripts are tested as well.
+  Consider creating a coverage report for this ,too.
 # Done Task
 * [x] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
   -> This was already the case.
