@@ -211,8 +211,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] ThenCallRunner
                         * [x] VariableResolutionRunner
                 * [x] Support problem definitions without a solution. -> This is already supported.
-            * [ ] Render rating as a CommonMark field
-            * [ ] Render argumentation as a CommonMark document.
+            * [ ] Render rating as a CommonMark field.
+                * [ ] Create a CommonMark template, that provides a chapter for the rating.
+                * [ ] Use `Rating#descriptionForUser` as the chapter's content.
+            * [ ] Render argumentation as part of the rating CommonMark field.
+                * [ ] Create a CommonMark template, that provides a chapter for the rating.
+                * [ ] Use `Constraint#naturalArgumentation` as the chapter's content.
+                * [ ] The tree provided by `Constraint#naturalArgumentation` needs to be simplified.
             * [ ] Render argumentation as part of the solution table.
     * [ ] Make first char of vertical tab button upper case in the GUI.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
@@ -221,7 +226,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Use the descriptive attribute names in CSV files for better readability.
   Otherwise, there is no none technical use for th descriptive names.
-* [ ] Check for duplicate attributes in tables and solutions.c
+* [ ] Check for duplicate attributes in tables and solutions.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
