@@ -104,6 +104,11 @@ Some tests are executed on servers in order to ensure, that the software works o
   as there are problems like cloning repos hoster independently is complex,
   when one wants to avoid that all CI hosters clone the repos from the same git hoster.
 * [ ] Update test servers semi-automatically.
+* [ ] Support offline tests, where all dependencies are loaded from a git repo and no online communication to external servers is required.
+    * [ ] Java binaries
+    * [ ] Maven binaries.
+    * [ ] Maven repo binaries.
+    * [ ] Do not keep its history. Only use 1 commit for this repo.
 # Done Tasks
 * [x] Warning in logs: `Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /home/splitcells/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network/projects/net.splitcells.gel.ui/target/surefire-reports/2025-01-19T21-43-07_716-jvmRun1.dumpstream`
   -> This is caused by Playwright, which can be seen in the dumpstream. It causes performance problems, but nothing can be done, except for updating playwright to a more stable version.

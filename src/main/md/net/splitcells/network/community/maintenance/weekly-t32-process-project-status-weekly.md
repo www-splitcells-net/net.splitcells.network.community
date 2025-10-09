@@ -17,6 +17,10 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
+* [ ] Fix push CI.
+    * [ ] GitHub
+    * [ ] Codeberg
+    * [ ] Enable E-Mail notification on the fixed CIs.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
     * [ ] Remove debugging commands.
 * [ ] Consider enforcing a minimal Maven version.
