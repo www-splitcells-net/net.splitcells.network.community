@@ -211,18 +211,25 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] ThenCallRunner
                         * [x] VariableResolutionRunner
                 * [x] Support problem definitions without a solution. -> This is already supported.
-            * [ ] Render rating as a CommonMark field.
-                * [ ] Create a CommonMark template, that provides a chapter for the rating.
-                * [ ] Use `Rating#descriptionForUser` as the chapter's content.
+            * [x] Render rating as a CommonMark field.
+                * [x] Create a CommonMark template, that provides a chapter for the rating.
+                * [x] Use `Rating#descriptionForUser` as the chapter's content.
             * [ ] Render argumentation as part of the rating CommonMark field.
-                * [ ] Create a CommonMark template, that provides a chapter for the rating.
-                * [ ] Use `Constraint#naturalArgumentation` as the chapter's content.
-                * [ ] The tree provided by `Constraint#naturalArgumentation` needs to be simplified.
+                * [x] Create a CommonMark template, that provides a chapter for the rating.
+                * [x] Use `Constraint#naturalArgumentation` as the chapter's content.
+                * [X] The tree provided by `Constraint#naturalArgumentation` needs to be simplified.
+                  Create a test for that, as testing manually takes too much time.
+                * [ ] Add causing values to argumentation.
+                * [ ] Drop the special GEL name space, as it has no actual use and makes things more complex.
+                  Keep in mind natural argumentation is not about creating an argumentation schema, also it would be possible.
+                  Natural argumentation is flowing text for user, but nothing else except for Internationalization and there is not even an attempt to support that yet.
+                * [ ] Re-enable `Constraint#testArgumentation`, when the `Constraint#naturalArgumentation` is simplified.
             * [ ] Render argumentation as part of the solution table.
     * [ ] Make first char of vertical tab button upper case in the GUI.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
     * [x] Add Geal editor to main page of live server.
+* [ ] The constraint requiring days between colloquium tests is missing.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [ ] Use the descriptive attribute names in CSV files for better readability.
   Otherwise, there is no none technical use for th descriptive names.

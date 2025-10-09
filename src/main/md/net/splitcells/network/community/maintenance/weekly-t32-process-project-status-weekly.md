@@ -18,6 +18,7 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
+    * [ ] Remove debugging commands.
 * [ ] Consider enforcing a minimal Maven version.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
@@ -29,6 +30,7 @@ This does not apply for statuses, that show progress.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
     * [ ] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.` 
 * [ ] Record and upload test runtime performance via network log repo.
+* [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
@@ -51,6 +53,7 @@ This does not apply for statuses, that show progress.
 * [ ] Consider OWASP's dependency-check-maven for checking security vulnerabilities in dependencies.
 * [ ] Ensure, that all scripts like Bash scripts are tested as well.
   Consider creating a coverage report for this ,too.
+* [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Task
 * [x] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
   -> This was already the case.
