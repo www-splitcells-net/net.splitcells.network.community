@@ -18,9 +18,9 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Fix push CI.
-    * [ ] GitHub
-    * [ ] Codeberg
-    * [ ] Enable E-Mail notification on the fixed CIs.
+    * [ ] GitHub.
+    * [x] Codeberg
+    * [ ] Enable E-Mail notification on the Codeberg CI.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
     * [x] Remove debugging commands.
 * [ ] Consider enforcing a minimal Maven version.
@@ -32,7 +32,8 @@ This does not apply for statuses, that show progress.
     * [ ] Upload Reports
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
-    * [ ] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.` 
+    * [ ] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.`
+    * [ ] Disable GitHub based CI, as it has no use after that anymore.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
