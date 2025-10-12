@@ -18,7 +18,7 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 # Tasks.
 * [ ] Fix push CI.
-    * [ ] GitHub.
+    * [x] GitHub.
     * [x] Codeberg
     * [ ] Enable E-Mail notification on the Codeberg CI.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
