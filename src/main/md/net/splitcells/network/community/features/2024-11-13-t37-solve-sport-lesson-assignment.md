@@ -223,17 +223,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [ ] Drop the special GEL name space, as it has no actual use and makes things more complex.
                   Keep in mind natural argumentation is not about creating an argumentation schema, also it would be possible.
                   Natural argumentation is flowing text for user, but nothing else except for Internationalization and there is not even an attempt to support that yet.
-                * [ ] Re-enable `Constraint#testArgumentation`, when the `Constraint#naturalArgumentation` is simplified.
+                * [x] Re-enable `Constraint#testArgumentation`, when the `Constraint#naturalArgumentation` is simplified.
             * [ ] Render argumentation as part of the solution table.
-    * [ ] Make first char of vertical tab button upper case in the GUI.
+            * [ ] Check for duplicate attributes in tables and solutions.
+    * [o] Make first char of vertical tab button upper case in the GUI. -> This does not make for variables, as this would make them incorrect.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
     * [x] Add Geal editor to main page of live server.
 * [ ] The constraint requiring days between colloquium tests is missing.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
-* [ ] Use the descriptive attribute names in CSV files for better readability.
-  Otherwise, there is no none technical use for th descriptive names.
-* [ ] Check for duplicate attributes in tables and solutions.
 * [ ] Document code editor.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
@@ -250,6 +248,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
       In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
+    * [ ] Color allocations according to their respective ratings.
 * [ ] Allow users to define a partial solution, that is the basis for the given problem.
   The optimizer is not allowed to change the allocations given by the user.
 * [ ] Note overhaul changes in changelog.
