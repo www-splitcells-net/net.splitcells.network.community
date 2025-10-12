@@ -30,9 +30,10 @@ We also need full accounting for it.
         * [ ] `net.splitcells.maven.plugin.resource.list` has also to create and bundle a directory containing the metadata into the jar.
           The directory contains a file tree, where any file corresponds to a resource managed by the resource list.
           The file format is a UTF-8 encoded property file.
+            * [x] Create meta data files.
+            * [ ] Read license metadata in the file headers.
             * [ ] Licensing of images
             * [ ] Read `REUSE.toml` for list files without license metadata.
-            * [ ] Read license metadata in files.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every file.
             * [ ] Only provide access to metadata, to which the user has access to.
@@ -45,13 +46,14 @@ We also need full accounting for it.
       why no license metadata in `CC BY-SA 4.0` can be a problem for other distributors.
     * [ ] Consider https://creativecommons.org/licenses/by-sa/4.0/deed.en
 * [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
-* [ ] `test.everything` should verify license data as well.
 * [ ] Simplify Java's license header, in order to simplify Java files and make them shorter.
   Document that the Linux kernel uses the same format and that such a header is REUSE compliant as well.
 * [ ] Add denial notice of EU's copyright exception regarding machine learning.
 * [ ] Add REUSE files to license pages.
 * [ ] Remove big license header from Java code as this only wastes resources.
+* [ ] Check and/or generate license NOTICE file, in order to ensure its correctness.
 # Done Tasks
+* [x] `test.everything` should verify license data as well. -> This is done via `repos.test.sh` instead.
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
 * [x] Use https://reuse.software/ in order to check licensing in source code.
     * [x] Use tmp branch for this experiment.

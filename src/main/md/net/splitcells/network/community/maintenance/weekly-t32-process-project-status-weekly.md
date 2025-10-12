@@ -22,7 +22,7 @@ This does not apply for statuses, that show progress.
     * [ ] Codeberg
     * [ ] Enable E-Mail notification on the fixed CIs.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
-    * [ ] Remove debugging commands.
+    * [x] Remove debugging commands.
 * [ ] Consider enforcing a minimal Maven version.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
