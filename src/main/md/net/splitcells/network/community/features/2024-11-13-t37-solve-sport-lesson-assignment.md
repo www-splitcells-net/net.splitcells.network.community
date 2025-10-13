@@ -15,13 +15,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Support complex problem definitions via editor, that are composed of multiple ones,
   so that the sport lesson assignment can be defined in the editor.
     * [x] Create a name for the language and document it. -> It's named Geal.
-    * [ ] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
+    * [x] Extend Gel language, in order to model optimization problems consisting of multiple optimization problems.
         * [x] Define new grammar.
             * [x] Do not avoid dot for function call chains, in order to make it possible to consistently format code.
             * [x] Do not allow empty round braces for function calls.
             * [x] Create public Grammar documentation file. This will be later completed, when the editor is finalized
               and thereby the standard library is known.
-        * [ ] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
+        * [x] Use a domain object based parser and editor as backend for editor and no-code editor, in order to simplify parsing. In other words, create an editor backend, that is shared by the code and no-code editor frontend.
             * [x] Create dedicated Gel editor project, that replaces the Sep project.
                 * [x] Create Gel editor project.
                 * [x] Create new domain language in order to simplify it, as the first 1 has too much complexity without any benefits.
@@ -214,18 +214,18 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Render rating as a CommonMark field.
                 * [x] Create a CommonMark template, that provides a chapter for the rating.
                 * [x] Use `Rating#descriptionForUser` as the chapter's content.
-            * [ ] Render argumentation as part of the rating CommonMark field.
+            * [x] Render argumentation as part of the rating CommonMark field.
                 * [x] Create a CommonMark template, that provides a chapter for the rating.
                 * [x] Use `Constraint#naturalArgumentation` as the chapter's content.
                 * [X] The tree provided by `Constraint#naturalArgumentation` needs to be simplified.
                   Create a test for that, as testing manually takes too much time.
-                * [ ] Add causing values to argumentation.
-                * [ ] Drop the special GEL name space, as it has no actual use and makes things more complex.
+                * [x] Add causing values to argumentation. -> This was done for the ForAll raters. For that the rest it will be done, when need and for some it is already present.
+                * [x] Drop the special GEL name space, as it has no actual use and makes things more complex.
                   Keep in mind natural argumentation is not about creating an argumentation schema, also it would be possible.
                   Natural argumentation is flowing text for user, but nothing else except for Internationalization and there is not even an attempt to support that yet.
                 * [x] Re-enable `Constraint#testArgumentation`, when the `Constraint#naturalArgumentation` is simplified.
-            * [ ] Render argumentation as part of the solution table.
-            * [ ] Check for duplicate attributes in tables and solutions.
+            * [x] Render argumentation as part of the solution table.
+            * [x] Check for duplicate attributes in tables and solutions.
     * [o] Make first char of vertical tab button upper case in the GUI. -> This does not make for variables, as this would make them incorrect.
     * [ ] Delete obsolete SolutionEditor and the corresponding users.
         * [ ] Delete `Query#constraintResult`. 
