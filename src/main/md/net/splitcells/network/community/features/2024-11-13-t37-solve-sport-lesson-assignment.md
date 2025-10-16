@@ -13,13 +13,11 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Document code editor.
+    * [ ] Generate function documentation via FunctionCallRegistrsy.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
-    * [ ] New approach to error handling.
-        * [ ] Problem with classical error handling.
-        * [ ] Limit line length via dedicated methods referenced,
-          which is better than aspect oriented style because of required code duplication caused by data selection. 
+    * [x] New approach to error handling. -> The new NeedsCheck API is already documented.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
