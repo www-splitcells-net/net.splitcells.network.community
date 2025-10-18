@@ -17,10 +17,6 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Fix push CI.
-    * [x] GitHub.
-    * [x] Codeberg
-    * [ ] Enable E-Mail notification on the Codeberg CI.
 * [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
     * [x] Remove debugging commands.
 * [ ] Consider enforcing a minimal Maven version.
@@ -60,6 +56,12 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Task
+* [x] Fix push CI.
+    * [x] GitHub.
+    * [x] Codeberg
+    * [x] Enable E-Mail notification on the Codeberg CI.
+      -> It is not possible to enable e-mail notifications just for CI.
+      Therefore, it is not done, in order to avoid notification spamming regarding [CI requests](https://codeberg.org/Codeberg-e.V./requests/issues) etc. .
 * [x] Enable `dominant management` for daily Codeberg workflow, in order to speed it up and lessen resource usage.
   -> This was already the case.
 * [x] Execute tests of shell projects in daily CI as well. - This was already the case.
