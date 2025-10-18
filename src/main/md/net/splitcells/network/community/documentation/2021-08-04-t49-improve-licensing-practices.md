@@ -31,7 +31,8 @@ We also need full accounting for it.
           The directory contains a file tree, where any file corresponds to a resource managed by the resource list.
           The file format is a UTF-8 encoded property file.
             * [x] Create meta data files.
-            * [ ] Read license metadata in the file headers.
+            * [x] Read license metadata in the file headers.
+            * [ ] Read copyright text metadata in the file headers.
             * [ ] Licensing of images
             * [ ] Read `REUSE.toml` for list files without license metadata.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
