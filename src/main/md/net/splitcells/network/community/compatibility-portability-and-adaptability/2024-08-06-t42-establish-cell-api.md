@@ -89,6 +89,8 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.DistroCell`
                     * [ ] `net.splitcells.martins.avots.distro.DevDistroCell` See `DevDistroCell#cellBasedMain`.
+                        * [x] Make cellBasedMain run.
+                        * [ ] Add all configs from main method to cellBasedMain as well.
                     * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell`
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
