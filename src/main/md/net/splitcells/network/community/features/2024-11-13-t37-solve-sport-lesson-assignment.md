@@ -12,16 +12,26 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] Make testRatingReport complete.
 * [ ] Document code editor.
     * [ ] Parse function calls and generate function documentation via FunctionCallRecording.
-        * [ ] Use FunctionCallRecording.
+        * [x] Use FunctionCallRecording.
             * [x] AttributeCallRunner
             * [x] ForAllCombsCallRunner
+            * [x] ForEachCallRunner
+            * [x] HasMinimalDistanceOfCallRunner
+            * [x] HasSizeCallRunner
+            * [x] ImportCsvDataRunner
+            * [x] OutputFormatCallRunner
+            * [x] ResolutionRunner
+            * [x] SolutionCallRunner
+            * [x] TableCallRunner
+            * [x] ThenCallRunner
+        * [ ] Generate documentation via FunctionCallRecording.
+        * [ ] Add comments to arguments and function documentation.
+            * [ ] AttributeCallRunner
+            * [ ] ForAllCombsCallRunner
             * [ ] ForEachCallRunner
-            * [ ] FunctionCallExecutor
-            * [ ] FunctionCallMetaExecutor
-            * [ ] FunctionCallRun
-            * [ ] FunctionCallRunner
             * [ ] HasMinimalDistanceOfCallRunner
             * [ ] HasSizeCallRunner
             * [ ] ImportCsvDataRunner
@@ -30,7 +40,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] SolutionCallRunner
             * [ ] TableCallRunner
             * [ ] ThenCallRunner
-        * [ ] Generate documentation via FunctionCallRecording.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
