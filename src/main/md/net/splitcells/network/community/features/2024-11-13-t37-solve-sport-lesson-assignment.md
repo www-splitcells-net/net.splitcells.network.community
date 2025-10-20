@@ -13,7 +13,24 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Document code editor.
-    * [ ] Generate function documentation via FunctionCallRegistrsy.
+    * [ ] Parse function calls and generate function documentation via FunctionCallRecording.
+        * [ ] Use FunctionCallRecording.
+            * [x] AttributeCallRunner
+            * [x] ForAllCombsCallRunner
+            * [ ] ForEachCallRunner
+            * [ ] FunctionCallExecutor
+            * [ ] FunctionCallMetaExecutor
+            * [ ] FunctionCallRun
+            * [ ] FunctionCallRunner
+            * [ ] HasMinimalDistanceOfCallRunner
+            * [ ] HasSizeCallRunner
+            * [ ] ImportCsvDataRunner
+            * [ ] OutputFormatCallRunner
+            * [ ] ResolutionRunner
+            * [ ] SolutionCallRunner
+            * [ ] TableCallRunner
+            * [ ] ThenCallRunner
+        * [ ] Generate documentation via FunctionCallRecording.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
