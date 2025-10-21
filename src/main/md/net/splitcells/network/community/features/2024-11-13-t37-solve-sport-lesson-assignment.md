@@ -27,7 +27,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] SolutionCallRunner
             * [x] TableCallRunner
             * [x] ThenCallRunner
-        * [ ] Generate documentation via FunctionCallRecording.
+        * [ ] Generate documentation via FunctionCallRecording and EditorFunctionCalls.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
