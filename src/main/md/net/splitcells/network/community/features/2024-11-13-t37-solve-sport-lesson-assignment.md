@@ -28,6 +28,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] TableCallRunner
             * [x] ThenCallRunner
         * [ ] Generate documentation via FunctionCallRecording and EditorFunctionCalls.
+            * [x] Add the processed functionCall to the FunctionCallRecord, so it's easier to generate the documentation.
+            * [x] Created dedicated FunctionCallRecord parsers.
+              This enables one to generate a function call documentation without an example
+              , which avoids one to write dedicated code to generate its documentation (which can be forgotten)
+              , when a new function call is defined.
+            * [ ] Generate documentation via FunctionCallDoc.
+                * [ ] functionCallRunnerParser have to know their variation id.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
