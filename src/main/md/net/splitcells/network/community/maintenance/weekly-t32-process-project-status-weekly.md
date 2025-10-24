@@ -17,9 +17,6 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
-    * [x] Remove debugging commands.
-* [ ] Consider enforcing a minimal Maven version.
 * [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
   so these can be used anywhere and are therefore more standardized.
   For instance, the code coverage report could be uploaded from a developer computer.
@@ -56,6 +53,9 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Task
+* [x] Consider enforcing a minimal Maven version. -> pom-java-minimal already enforces the Maven minimal version 3.9.5.
+* [x] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
+    * [x] Remove debugging commands.
 * [x] Fix push CI.
     * [x] GitHub.
     * [x] Codeberg
