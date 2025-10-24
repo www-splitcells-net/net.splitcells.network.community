@@ -36,23 +36,23 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Generate documentation via FunctionCallDoc.
                 * [x] functionCallRunnerParser have to know their variation id.
                 * [x] Improve ordering of factory arguments. -> The lambda is now the last argument, which is easier to read.
-                * [ ] Implement FunctionCallRecord's recording method.
-                    * [ ] requireArgumentCount
-                    * [ ] requireArgumentMinimalCount
-                    * [ ] parseArgumentAsType
+                * [x] Implement FunctionCallRecord's recording method.
+                    * [x] requireArgumentCount
+                    * [x] requireArgumentMinimalCount
+                    * [x] parseArgumentAsType
                     * [x] parseArgumentAsType
                     * [x] parseArgumentAsStringDesc
-                    * [ ] failBecauseOfInvalidType
-                    * [ ] parseQuerySubject
-                    * [ ] parseSubject
-                    * [ ] parseAttributeArguments
-                    * [ ] parseAttributeArguments
+                    * [x] failBecauseOfInvalidType
+                    * [x] parseQuerySubject
+                    * [x] parseSubject
+                    * [x] parseAttributeArguments
+                    * [x] parseAttributeArguments
                     * [x] parseAttributeArgument
                     * [x] parseAttributeArgument
                     * [x] parseArgument
                     * [x] requireSubjectAbsence
             * [x] Render documentation on website server.
-            * [ ] Define an EditorCell.
+            * [ ] Make documentation rendering nice.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
