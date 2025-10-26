@@ -30,7 +30,7 @@
                 * [x] https://www.danisch.de/assets/pages/impressum.html
                 * [o] This is not a commercial website/server. -> Does not seem to be relevant.
                 * [x] Phone also does not guarantee 24/7 availability at any moment, for example because of too many calls.
-        * [ ] Note, that we have at most 1 month to answer privacy policy related requests.
+        * [x] Note, that we have at most 1 month to answer privacy policy related requests.
         * [ ] State the relevant law is German law, instead of referring just the law. 
         * [ ] Fix the title of privacy policy.
         * [ ] Do this for the German and English version.
