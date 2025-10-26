@@ -81,6 +81,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] GelEnv
                     * [x] GelDev
                     * [X] `net.splitcells.martins.avots.distro.DevDistroCell` -> `net.splitcells.martins.avots.distro.DevDistroCell`
+                    * [x] `net.splitcells.martins.avots.distro.LiveDistro` -> `net.splitcells.martins.avots.distro.LiveDistroCell`
                 * [ ] Store Cells in Dem config and thereby make it possible to call its member methods.
                   This way, one can convert the static config methods to members of cells and prevent static config chaining which caused a lot of hard to understand complexity.
                 * [ ] Replace main methods based on static methods with cell based main methods and test these.
@@ -88,10 +89,12 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.network.distro.DistroCell.`
                     * [x] `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.DistroCell`
-                    * [ ] `net.splitcells.martins.avots.distro.DevDistroCell` See `DevDistroCell#cellBasedMain`.
+                    * [x] `net.splitcells.martins.avots.distro.DevDistroCell` See `DevDistroCell#cellBasedMain`.
                         * [x] Make cellBasedMain run.
-                        * [ ] Add all configs from main method to cellBasedMain as well.
-                    * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell`
+                        * [x] Add all configs from main method to cellBasedMain as well.
+                    * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro.
+                        * [ ] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
+                        * [ ] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
                   * [ ] `net.splitcells.network.system.SystemCell`

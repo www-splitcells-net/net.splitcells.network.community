@@ -32,9 +32,9 @@ We also need full accounting for it.
           The file format is a UTF-8 encoded property file.
             * [x] Create meta data files.
             * [x] Read license metadata in the file headers.
-            * [ ] Read copyright text metadata in the file headers.
-            * [ ] Licensing of images
+            * [x] Read copyright text metadata in the file headers.
             * [ ] Read `REUSE.toml` for list files without license metadata.
+            * [ ] Process binary files with MetaData class.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every file.
             * [ ] Only provide access to metadata, to which the user has access to.
