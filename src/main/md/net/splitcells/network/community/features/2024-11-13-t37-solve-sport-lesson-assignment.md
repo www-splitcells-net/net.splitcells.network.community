@@ -53,7 +53,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] requireSubjectAbsence
             * [x] Render documentation on website server.
             * [ ] Make documentation rendering nice.
-                * [ ] Sort function calls by name and variation id.
+                * [x] Primarily sort function calls by name.
+                * [x] Secondary sort function calls by variation id.
+                * [x] Better structure parameter properties.
+                * [ ] Better style parameter properties.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
