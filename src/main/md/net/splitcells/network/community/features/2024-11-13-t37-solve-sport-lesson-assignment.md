@@ -57,6 +57,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Secondary sort function calls by variation id.
                 * [x] Better structure parameter properties.
                 * [ ] Better style parameter properties.
+                    * [ ] Rename subject to receiver, as this is the commonly known terminology of OOP.
+                    * [ ] Do not show variation id, if there is only one variation.
+                    * [ ] Use word parameter, where argument does not fit.
+                    * [x] Rename `Parameter Rules` to `Receiver Constraints`.
+                    * [ ] Move exact argument comment to parameter list.
+                    * [ ] Improve list name styling.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
