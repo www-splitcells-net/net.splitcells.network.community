@@ -27,13 +27,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] SolutionCallRunner
             * [x] TableCallRunner
             * [x] ThenCallRunner
-        * [ ] Generate documentation via FunctionCallRecording and EditorFunctionCalls.
+        * [x] Generate documentation via FunctionCallRecording and EditorFunctionCalls.
             * [x] Add the processed functionCall to the FunctionCallRecord, so it's easier to generate the documentation.
             * [x] Created dedicated FunctionCallRecord parsers.
               This enables one to generate a function call documentation without an example
               , which avoids one to write dedicated code to generate its documentation (which can be forgotten)
               , when a new function call is defined.
-            * [ ] Generate documentation via FunctionCallDoc.
+            * [x] Generate documentation via FunctionCallDoc.
                 * [x] functionCallRunnerParser have to know their variation id.
                 * [x] Improve ordering of factory arguments. -> The lambda is now the last argument, which is easier to read.
                 * [x] Implement FunctionCallRecord's recording method.
@@ -52,17 +52,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] parseArgument
                     * [x] requireSubjectAbsence
             * [x] Render documentation on website server.
-            * [ ] Make documentation rendering nice.
+            * [x] Make documentation rendering nice.
                 * [x] Primarily sort function calls by name.
                 * [x] Secondary sort function calls by variation id.
                 * [x] Better structure parameter properties.
-                * [ ] Better style parameter properties.
-                    * [ ] Rename subject to receiver, as this is the commonly known terminology of OOP.
-                    * [ ] Do not show variation id, if there is only one variation.
-                    * [ ] Use word parameter, where argument does not fit.
+                * [x] Better style parameter properties.
+                    * [x] Rename subject to receiver, as this is the commonly known terminology of OOP.
+                    * [x] Do not show variation id, if there is only one variation.
+                    * [x] Use word parameter, where argument does not fit.
                     * [x] Rename `Parameter Rules` to `Receiver Constraints`.
-                    * [ ] Move exact argument comment to parameter list.
-                    * [ ] Improve list name styling.
+                    * [x] Move exact argument comment to parameter list.
+                    * [x] Improve list name styling by using a dedicated div for the name.
         * [ ] Add comments to arguments and function documentation.
             * [ ] AttributeCallRunner
             * [ ] ForAllCombsCallRunner
@@ -79,6 +79,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
     * [x] New approach to error handling. -> The new NeedsCheck API is already documented.
+    * [ ] Integrate documentation into the editor.
 * [ ] Check sport lesson assignment model.
 * [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
