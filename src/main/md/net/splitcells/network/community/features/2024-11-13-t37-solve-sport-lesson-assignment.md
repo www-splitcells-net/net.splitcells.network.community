@@ -14,7 +14,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Make testRatingReport complete.
 * [ ] Document code editor.
-    * [ ] Parse function calls and generate function documentation via FunctionCallRecording.
+    * [x] Parse function calls and generate function documentation via FunctionCallRecording.
         * [x] Use FunctionCallRecording.
             * [x] AttributeCallRunner
             * [x] ForAllCombsCallRunner
@@ -63,18 +63,19 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Rename `Parameter Rules` to `Receiver Constraints`.
                     * [x] Move exact argument comment to parameter list.
                     * [x] Improve list name styling by using a dedicated div for the name.
-        * [ ] Add comments to arguments and function documentation.
-            * [ ] AttributeCallRunner
-            * [ ] ForAllCombsCallRunner
-            * [ ] ForEachCallRunner
-            * [ ] HasMinimalDistanceOfCallRunner
-            * [ ] HasSizeCallRunner
-            * [ ] ImportCsvDataRunner
-            * [ ] OutputFormatCallRunner
-            * [ ] ResolutionRunner
-            * [ ] SolutionCallRunner
-            * [ ] TableCallRunner
-            * [ ] ThenCallRunner
+        * [x] Render description.
+        * [x] Make styling of subchapter more distinct to the styling of the main chapters. 
+        * [x] Add comments to arguments and function documentation.
+            * [x] AttributeCallRunner
+            * [x] ForAllCombsCallRunner
+            * [x] ForEachCallRunner
+            * [x] HasMinimalDistanceOfCallRunner
+            * [x] HasSizeCallRunner
+            * [x] ImportCsvDataRunner
+            * [x] OutputFormatCallRunner
+            * [x] SolutionCallRunner
+            * [x] TableCallRunner
+            * [x] ThenCallRunner
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
