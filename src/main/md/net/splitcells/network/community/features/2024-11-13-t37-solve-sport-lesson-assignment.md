@@ -14,7 +14,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Make testRatingReport complete.
 * [ ] Document code editor.
-    * [x] Parse function calls and generate function documentation via FunctionCallRecording.
+    * [ ] Parse function calls and generate function documentation via FunctionCallRecording.
         * [x] Use FunctionCallRecording.
             * [x] AttributeCallRunner
             * [x] ForAllCombsCallRunner
@@ -76,6 +76,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] SolutionCallRunner
             * [x] TableCallRunner
             * [x] ThenCallRunner
+        * [ ] Define parameter name.
+        * [ ] Render parameter name.
     * [ ] Create a simple grammatic overview images.
         * [ ] 1 for Abstract Syntax
         * [ ] 1 for Optimization Problem Definition
