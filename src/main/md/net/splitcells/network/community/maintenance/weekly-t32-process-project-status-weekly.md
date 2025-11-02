@@ -17,12 +17,6 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
-  so these can be used anywhere and are therefore more standardized.
-  For instance, the code coverage report could be uploaded from a developer computer.
-    * [x] Build
-    * [ ] Build Reports
-    * [ ] Upload Reports
 * [ ] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
     * [ ] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.`
@@ -53,6 +47,13 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Task
+* [ ] Move as much of commands as possible from CI YML file to dedicated project commands,
+  so these can be used anywhere and are therefore more standardized.
+  For instance, the code coverage report could be uploaded from a developer computer.
+    * [o] Setup Build -> These commands are purely Codeberg CI specific, so standardization is not required for that.
+    * [x] Build
+    * [x] Build Reports
+    * [x] Upload Reports
 * [x] Consider enforcing a minimal Maven version. -> pom-java-minimal already enforces the Maven minimal version 3.9.5.
 * [x] Run each CI step via just one shell script, as things like `source [...]` and environment variables have unexpected side effects.
     * [x] Remove debugging commands.

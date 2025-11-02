@@ -24,18 +24,24 @@
       -> `--security-opt seccomp=unconfined` does not fix the issue,
       because closing a Playwright instance does not terminate all of its processes.
       So, in the end process are spawned until there are to many for the OS.
-    * [ ] Document the error, when just use one browser instance.
-    * [ ] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
-    * [ ] Only one browser at a time should be launched, as this also caused threading issues in the past.
-    * [ ] Note, that browser is killed, as long-running browsers can cause issues as well.
-    * [ ] Clean up the LiveDistro TODOs, if the UI tester works by now.
-    * [ ] See chapter `process/resource limits reached`.
+    * [x] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
+    * [x] Only one browser at a time should be launched, as this also caused threading issues in the past.
+    * [x] Clean up the LiveDistro TODOs, if the UI tester works by now.
+    * [x] See chapter `process/resource limits reached`.
         * [x] Try `--security-opt seccomp=unconfined`. -> This worked.
-        * [ ] Document why `--security-opt seccomp=unconfined` is used.
+        * [x] Document why `--security-opt seccomp=unconfined` is used.
+        * [x] `--pids-limit=-1` seems to be the actual solution. Remove `--security-opt seccomp=unconfined` and deploy this to live server and check results.
+            * [x] Deploy `--security-opt seccomp=unconfined` removal. -> The deployment is broken. -> The deployment is fixed.
+            * [x] Check results.
     * [ ] Why are tabs or their context etc. being closed? `Target page, context or browser has been closed\n  name='TargetClosedError\n  stack='TargetClosedError: Target page, context or browser has been closed\n`
     * [ ] Clean up HtmlClientSharer
     * [ ] Note the reason for the error message `[62.986s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.`.
+    * [ ] Clean up HtmlClients.
 * [ ] Use only fast-forward git pulls for relevant workflows.
+* [ ] Detect any deployment errors.
+    * [ ] Maven Build
+    * [ ] Shell Project Setup
+    * [ ] End execution on first failure.
 * [ ] Host CPU/Memory Utilization page does not work.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html

@@ -4,16 +4,17 @@
 Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Service
 * Update `net.splitcells.network.bom` via `net.splitcells.network.shell` and `bin/repos.dependencies.update`.
-* Monthly update `net.splitcells.network.distro.java.acme`.
 * Update Java
 * Update Maven
 # Tasks
-* [ ] Create profile, that updates dependencies during the build.
-* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html`,
-* [ ] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
-  with a very specific commit message, that can be used, in order to easily filter such commits.
-* [ ] Detect Maven build errors during deployment.
+* [ ] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html` and create a daily workflow for that.
+  That daily workflow updates the dependencies, does an extensive test and if everything was successfully,
+  the dependency update is pushed to the public Codeberg server.
+  Maybe this could be done during the already [existing daily workflow](../maintenance/weekly-t32-process-project-status-weekly.md).
 # Done Tasks
+* [o] Rename `net.splitcells.network.bom` to `net.splitcells.dem.bom`, in order to correctly show subproject interdependencies.
+  with a very specific commit message, that can be used, in order to easily filter such commits.
+  -> This does not need to be done, as there are dependencies for the whole project and not just `net.splitcells.dem`.
 * [x] Keep Playwright version in network BOM and network execute in syn,
   by parsing the BOM's version in the network execute command,
   in order to set the version in the POM template.
