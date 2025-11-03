@@ -10,6 +10,7 @@
 * Test legalities and privacy policy.
     * Check via browser, if really no cookies are set.
 * Check via browser, if there are client side errors.
+* Check htop.9
 ## Open Tasks
 * [x] Because of Playwright TimeoutError:
   According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.

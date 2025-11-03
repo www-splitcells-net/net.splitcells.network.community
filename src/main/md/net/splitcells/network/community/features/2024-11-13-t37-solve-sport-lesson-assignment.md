@@ -13,8 +13,43 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Make testRatingReport complete.
-* [ ] Document code editor.
-    * [ ] Parse function calls and generate function documentation via FunctionCallRecording.
+* [ ] Check sport lesson assignment model.
+* [ ] Check test data.
+* [ ] Make sport lesson assignment an additional GUI editor example.
+* [ ] Solve sport lesson assignment.
+* [ ] Make it easier to understand the solution.
+    * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
+    * [ ] Store and show positive reason, why a certain supply has not a cost.
+      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
+    * [ ] Color allocations according to their respective ratings.
+* [ ] Allow users to define a partial solution, that is the basis for the given problem.
+  The optimizer is not allowed to change the allocations given by the user.
+* [ ] Note overhaul changes in changelog.
+* [ ] Delete old Gel editor domain language.
+* [ ] Deprecate Sep project.
+    * [ ] Move Sep code into editor project.
+    * [ ] Migrate sep usage to editor.
+    * [ ] Remove Sep code.
+* [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
+  If mobile support becomes required, then an additional no-code editor might be worth it.
+    * [ ] It seems, that codemirror 6 has better mobile view.
+    * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
+      where a program also represents a GUI for interacting with the world.
+* [ ] Note that initial no-code editor was a feature creep.
+* [ ] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
+  Currently, some span styles are overwritten by the `basic.css`.
+    * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
+* [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
+  This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
+* [x] Remove old code editor. Do not forget its Javascript code.
+* [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
+* [ ] Preserver no-code editor UI code,
+  as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
+* [ ] Consolidate `net.splitcells.gel.editor.lang`.
+* [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
+# Done Tasks
+* [x] Document code editor.
+    * [x] Parse function calls and generate function documentation via FunctionCallRecording.
         * [x] Use FunctionCallRecording.
             * [x] AttributeCallRunner
             * [x] ForAllCombsCallRunner
@@ -64,7 +99,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Move exact argument comment to parameter list.
                     * [x] Improve list name styling by using a dedicated div for the name.
         * [x] Render description.
-        * [x] Make styling of subchapter more distinct to the styling of the main chapters. 
+        * [x] Make styling of subchapter more distinct to the styling of the main chapters.
         * [x] Add comments to arguments and function documentation.
             * [x] AttributeCallRunner
             * [x] ForAllCombsCallRunner
@@ -76,48 +111,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] SolutionCallRunner
             * [x] TableCallRunner
             * [x] ThenCallRunner
-        * [ ] Define parameter name.
-        * [ ] Render parameter name.
-    * [ ] Create a simple grammatic overview images.
-        * [ ] 1 for Abstract Syntax
-        * [ ] 1 for Optimization Problem Definition
+        * [x] Define parameter name.
+        * [x] Render parameter name.
+    * [x] Create simple exemplary source code.
+        * [x] 1 for grammar
+        * [x] 1 for Optimization Problem Definition
+    * [o] Add exemplary source code to function call doc.
+      -> The Geal introduction gets the exemplary source code and the intro just links to the function call doc.
     * [x] New approach to error handling. -> The new NeedsCheck API is already documented.
-    * [ ] Integrate documentation into the editor.
-* [ ] Check sport lesson assignment model.
-* [ ] Check test data.
-* [ ] Make sport lesson assignment an additional GUI editor example.
-* [ ] Solve sport lesson assignment.
-* [ ] Make it easier to understand the solution.
-    * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
-    * [ ] Store and show positive reason, why a certain supply has not a cost.
-      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
-    * [ ] Color allocations according to their respective ratings.
-* [ ] Allow users to define a partial solution, that is the basis for the given problem.
-  The optimizer is not allowed to change the allocations given by the user.
-* [ ] Note overhaul changes in changelog.
-* [ ] Delete old Gel editor domain language.
-* [ ] Deprecate Sep project.
-    * [ ] Move Sep code into editor project.
-    * [ ] Migrate sep usage to editor.
-    * [ ] Remove Sep code.
-* [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
-  If mobile support becomes required, then an additional no-code editor might be worth it.
-    * [ ] It seems, that codemirror 6 has better mobile view.
-    * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
-      where a program also represents a GUI for interacting with the world.
-* [ ] Note that initial no-code editor was a feature creep.
-* [ ] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
-  Currently, some span styles are overwritten by the `basic.css`.
-    * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
-* [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
-  This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
-* [x] Remove old code editor. Do not forget its Javascript code.
-* [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
-* [ ] Preserver no-code editor UI code,
-  as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
-* [ ] Consolidate `net.splitcells.gel.editor.lang`.
-* [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
-# Done Tasks
+    * [x] Create function call doc introduction.
+        * [x] State, that the goal of the source code is to define solution tables for the optimizer.
+    * [x] Integrate documentation into the editor.
 * [x] The constraint requiring days between colloquium tests is missing.
 * [x] Consider making NameDesc a FunctionCallDesc with only one argument, which simplifies the grammar and its parsing.
 * [x] Support complex problem definitions via editor, that are composed of multiple ones,

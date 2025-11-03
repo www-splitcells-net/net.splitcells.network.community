@@ -1,7 +1,7 @@
 # Migrate repo access from HTTPS to SSH
 * Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/64)
 * Start Date: 2025-08-24
-* Start Date: 2025-08-26
+* End Date: 2025-08-26
 * Codeberg CI Issue: https://codeberg.org/Codeberg-CI/feedback/issues/271
 # Task Description
 Currently, CI and deployment workflows are getting 429 error codes via HTTPS.
