@@ -13,7 +13,10 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Create sport lesson assignment model.
-    * [ ] SportsCoursePlanningTest
+    * [ ] Create SportsCoursePlanningTest.
+        * [ ] Create not rater.
+    * [ ] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
+    * [ ] Make distinction between hard and soft constraints.
 * [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
 * [ ] Solve sport lesson assignment.
@@ -52,6 +55,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Move ColloquiumPlanningTest of `net.splitcells.gel.ext` to editor project.
     * [ ] Used editor for testing. 
     * [ ] Use Geal code for testing.
+* [ ] Ensure that all constraint types and raters are usable in the Geal.
+    * [ ] Decide and note on relationship between Query and Editor.
 # Done Tasks
 * [x] Remove old code editor. Do not forget its Javascript code.
 * [x] Create and use async loaded background image for website, in order to signal a higher quality to the user.
