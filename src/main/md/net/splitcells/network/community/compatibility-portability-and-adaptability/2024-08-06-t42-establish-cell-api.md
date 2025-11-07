@@ -95,6 +95,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro.
                         * [ ] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [ ] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
+                        * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
                   * [ ] `net.splitcells.network.system.SystemCell`
