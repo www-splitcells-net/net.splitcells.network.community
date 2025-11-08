@@ -33,6 +33,9 @@
     * [ ] Consider creating a VPN.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.
+      Furthermore, the telemetry services are completely optional and
+      the server will work, if these are down, after a restart and without any additional config.
+      In general, additional services like a database are ok, as long as these are optional.
     * [ ] Send vert.x log to Prometheus as well.
 * [ ] Host CPU/Memory Utilization page does not work.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
