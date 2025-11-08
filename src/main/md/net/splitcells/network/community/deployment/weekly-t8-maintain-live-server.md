@@ -12,6 +12,7 @@
 * Check via browser, if there are client side errors.
 * Check htop.9
 ## Open Tasks
+* [ ] Test if pages with authorization do work without authentication. This should not be the case.
 * [ ] Use only fast-forward git pulls for relevant workflows.
 * [ ] Detect any deployment errors.
     * [ ] Maven Build
