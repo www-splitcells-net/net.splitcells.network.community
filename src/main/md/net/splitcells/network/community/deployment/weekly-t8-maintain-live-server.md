@@ -12,37 +12,27 @@
 * Check via browser, if there are client side errors.
 * Check htop.9
 ## Open Tasks
-* [x] Because of Playwright TimeoutError:
-  According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
-  So, starting and closing a real browser for each test run may not work with Playwright,
-  as this can cause a resource leak.
-  If this is the case, consider changing HtmlClientSharer so that there is pool of real browser instances,
-  instead of just one (`HTMLClients#ROOT_CLIENT`).
-  In other words, use one browser per CPU core, instead of one browser tab of a singleton browser per thread.
-  Use this HtmlClientSharer, instead of starting and closing a browser for each test run.
-    * [x] Implement this.
-    * [x] Test `podman run --security-opt seccomp=unconfined` as a fix for NodeJS start.
-      -> `--security-opt seccomp=unconfined` does not fix the issue,
-      because closing a Playwright instance does not terminate all of its processes.
-      So, in the end process are spawned until there are to many for the OS.
-    * [x] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
-    * [x] Only one browser at a time should be launched, as this also caused threading issues in the past.
-    * [x] Clean up the LiveDistro TODOs, if the UI tester works by now.
-    * [x] See chapter `process/resource limits reached`.
-        * [x] Try `--security-opt seccomp=unconfined`. -> This worked.
-        * [x] Document why `--security-opt seccomp=unconfined` is used.
-        * [x] `--pids-limit=-1` seems to be the actual solution. Remove `--security-opt seccomp=unconfined` and deploy this to live server and check results.
-            * [x] Deploy `--security-opt seccomp=unconfined` removal. -> The deployment is broken. -> The deployment is fixed.
-            * [x] Check results.
-    * [ ] Why are tabs or their context etc. being closed? `Target page, context or browser has been closed\n  name='TargetClosedError\n  stack='TargetClosedError: Target page, context or browser has been closed\n`
-    * [ ] Clean up HtmlClientSharer
-    * [ ] Note the reason for the error message `[62.986s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.`.
-    * [ ] Clean up HtmlClients.
 * [ ] Use only fast-forward git pulls for relevant workflows.
 * [ ] Detect any deployment errors.
     * [ ] Maven Build
     * [ ] Shell Project Setup
     * [ ] End execution on first failure.
+* [ ] Create dedicated logging services.
+    * [ ] Move from Dockerfile to Podman compose.
+    * [ ] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
+    * [ ] Get access to server via SSH port-forwarding scripts.
+    * [ ] Setup visualisation server based on Grafana:
+    * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
+        * [ ] Create own telemetry log API.
+        * [ ] Forward own API calls to OpenTelemetry.
+    * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
+        * [ ] CPU usage
+        * [ ] Memory usage
+    * [ ] Setup Java profiling: https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
+    * [ ] Consider creating a VPN.
+    * [ ] Note, that this is done as this is generic functionality.
+      It also allows one to do complex analysis and monitoring.
+    * [ ] Send vert.x log to Prometheus as well.
 * [ ] Host CPU/Memory Utilization page does not work.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
@@ -138,6 +128,33 @@
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
 ## Done Tasks
+* [x] Because of Playwright TimeoutError:
+  According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
+  So, starting and closing a real browser for each test run may not work with Playwright,
+  as this can cause a resource leak.
+  If this is the case, consider changing HtmlClientSharer so that there is pool of real browser instances,
+  instead of just one (`HTMLClients#ROOT_CLIENT`).
+  In other words, use one browser per CPU core, instead of one browser tab of a singleton browser per thread.
+  Use this HtmlClientSharer, instead of starting and closing a browser for each test run.
+    * [x] Implement this.
+    * [x] Test `podman run --security-opt seccomp=unconfined` as a fix for NodeJS start.
+      -> `--security-opt seccomp=unconfined` does not fix the issue,
+      because closing a Playwright instance does not terminate all of its processes.
+      So, in the end process are spawned until there are to many for the OS.
+    * [x] Note the reason, why a browser is only accessed by one thread at a time: https://github.com/microsoft/playwright-java/issues/1184
+    * [x] Only one browser at a time should be launched, as this also caused threading issues in the past.
+    * [x] Clean up the LiveDistro TODOs, if the UI tester works by now.
+    * [x] See chapter `process/resource limits reached`.
+        * [x] Try `--security-opt seccomp=unconfined`. -> This worked.
+        * [x] Document why `--security-opt seccomp=unconfined` is used.
+        * [x] `--pids-limit=-1` seems to be the actual solution. Remove `--security-opt seccomp=unconfined` and deploy this to live server and check results.
+            * [x] Deploy `--security-opt seccomp=unconfined` removal. -> The deployment is broken. -> The deployment is fixed.
+            * [x] Check results.
+    * [o] Why are tabs or their context etc. being closed? `Target page, context or browser has been closed\n  name='TargetClosedError\n  stack='TargetClosedError: Target page, context or browser has been closed\n`
+      -> This does not need to be noted as saving resources is the default use case for closing a resource.
+    * [x] Clean up HtmlClientsShare and HtmlClientsSharer.
+    * [x] Note the reason for the error message `[62.986s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.`.
+    * [x] Clean up HtmlClients.
 * [x] Because of Playwright TimeoutError: Try UI tester, that starts a browser for each test instance and then destroy it,
   but do not do actions over any browsers in parallel.
   This is like the first UI HTML client draft, but with an exclusive lock for any action on any browser.
