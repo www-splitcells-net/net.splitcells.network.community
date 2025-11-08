@@ -26,15 +26,17 @@
     * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
         * [ ] Create own telemetry log API.
         * [ ] Forward own API calls to OpenTelemetry.
+        * [ ] Forward Telemetry to Log library, if Prometheus server is not reachable.
+        * [ ] Forward Telemetry to Log library, if logging to via OpenTelemetry to Prometheus server stops working at any time (i.e. caused by a connection issue).
     * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
         * [ ] CPU usage
         * [ ] Memory usage
     * [ ] Setup Java profiling: https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
-    * [ ] Consider creating a VPN.
+    * [ ] Consider creating a VPN for accessing the server instead of port-forwarding.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.
       Furthermore, the telemetry services are completely optional and
-      the server will work, if these are down, after a restart and without any additional config.
+      the server will work, if these are down, after a restart, without a restart and without any additional config.
       In general, additional services like a database are ok, as long as these are optional.
     * [ ] Send vert.x log to Prometheus as well.
 * [ ] Host CPU/Memory Utilization page does not work.
