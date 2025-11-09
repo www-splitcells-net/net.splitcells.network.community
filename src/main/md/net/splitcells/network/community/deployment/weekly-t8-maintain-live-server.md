@@ -12,8 +12,6 @@
 * Check via browser, if there are client side errors.
 * Check htop.9
 ## Open Tasks
-* [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
-    * [ ] Status of UI tests and tester
 * [ ] Check why so many program states are created. See `Program States` note.
 * [ ] Create dedicated logging services.
     * [ ] Move from Dockerfile to Podman compose.
@@ -40,9 +38,11 @@
       where a Prometheus integration does not make sense.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
-* [ ] Host CPU/Memory Utilization page does not work.
+* [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
+* [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
+    * [ ] Status of UI tests and tester
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
