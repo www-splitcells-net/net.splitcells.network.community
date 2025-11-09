@@ -36,6 +36,10 @@
       the server will work, if these are down, after a restart, without a restart and without any additional config.
       In general, additional services like a database are ok, as long as these are optional.
     * [ ] Send vert.x log to Prometheus as well.
+    * [ ] Note that some logs will still be safe locally in the future for error databases,
+      where a Prometheus integration does not make sense.
+    * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
+      -> Java Profiling is important enough in order to set up this stack. Note this.
 * [ ] Host CPU/Memory Utilization page does not work.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
