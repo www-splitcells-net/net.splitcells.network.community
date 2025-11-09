@@ -10,9 +10,10 @@
 * Test legalities and privacy policy.
     * Check via browser, if really no cookies are set.
 * Check via browser, if there are client side errors.
-* Check htop.9
+* Check htop.
 ## Open Tasks
 * [ ] Check why so many program states are created. See `Program States` note.
+    * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Create dedicated logging services.
     * [ ] Move from Dockerfile to Podman compose.
     * [ ] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
