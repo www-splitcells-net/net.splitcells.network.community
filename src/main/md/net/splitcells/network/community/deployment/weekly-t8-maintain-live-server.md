@@ -12,6 +12,8 @@
 * Check via browser, if there are client side errors.
 * Check htop.9
 ## Open Tasks
+* [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
+    * [ ] Status of UI tests and tester
 * [ ] Check why so many program states are created. See `Program States` note.
 * [ ] Create dedicated logging services.
     * [ ] Move from Dockerfile to Podman compose.
@@ -42,22 +44,6 @@
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
 * [ ] Declare a data protection officer.
 * [ ] Make privacy policy of live and static server the same.
-* [ ] Playwright based test sometime do nothing.
-    * [x] Avoid XSL errors in systemd logs.
-    * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
-        * [x] Minimize Systemd logs, so that Playwright errors can be found there. -> No Playwright errors are outputed to the standard out and error anymore 
-        * [ ] Run program in remote debug mode.
-            * [ ] Add new JVM parameter `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:8000`.
-            * [ ] Forward port of container to host machine, but don't make the port publicly available.
-            * [ ] Create command to forward the liver server debug port to local machine over SSH.
-        * [ ] For each log message, also log its thread name.
-        * [ ] Try restarting Playwright instance daily.
-        * [x] Maybe an error in the test causes problems for Playwright. -> According to the logs, errors are recovered. 
-        * [x] Maybe the problem is that optimization requests are being queue, but not processed yet.
-          Thereby, the queue grows until something breaks. -> This does not seem to be the case.
-        * [x] Is Playwright present in container in the correct version? -> Yes
-        * [x] Create only one Playwright server, that one browser per HtmlClient in Java.
-    * [ ] If nothing works, use HTMLUnit instead.
 * [ ] Reset the git repos, in order to prevent an unexpected state.
 * [ ] Log UI test runtime performance.
 * [ ] Synchronize Playwright in Container created by `network.execute` and in Network Bom,
@@ -91,7 +77,6 @@
             * [ ] Create script template.
             * [ ] Generate script.
             * [ ] Launch script in container instead of using Java entrypoint.
-* [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
 * [ ] Install a TUI for Docker in order to debug Forgejo runner, as it sometimes does seem to start a queued workflow a bit late.
 * [ ] Restart main service, when the UI testers are not working anymore.
   Currently, an error for the UI testers not working could not be found.
@@ -129,6 +114,22 @@
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
 ## Done Tasks
+* [o] Playwright based test sometime do nothing. -> Playwright tests work now.
+    * [x] Avoid XSL errors in systemd logs.
+    * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
+        * [x] Minimize Systemd logs, so that Playwright errors can be found there. -> No Playwright errors are outputed to the standard out and error anymore
+        * [ ] Run program in remote debug mode.
+            * [ ] Add new JVM parameter `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=127.0.0.1:8000`.
+            * [ ] Forward port of container to host machine, but don't make the port publicly available.
+            * [ ] Create command to forward the liver server debug port to local machine over SSH.
+        * [ ] For each log message, also log its thread name.
+        * [ ] Try restarting Playwright instance daily.
+        * [x] Maybe an error in the test causes problems for Playwright. -> According to the logs, errors are recovered.
+        * [x] Maybe the problem is that optimization requests are being queue, but not processed yet.
+          Thereby, the queue grows until something breaks. -> This does not seem to be the case.
+        * [x] Is Playwright present in container in the correct version? -> Yes
+        * [x] Create only one Playwright server, that one browser per HtmlClient in Java.
+    * [ ] If nothing works, use HTMLUnit instead.
 * [x] Detect any deployment errors.
     * [x] Maven Build
     * [x] Shell Project Setup
