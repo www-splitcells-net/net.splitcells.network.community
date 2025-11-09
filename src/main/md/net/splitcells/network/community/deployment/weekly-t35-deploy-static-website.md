@@ -22,7 +22,7 @@
             * [x] Test invitation link with an additional Matrix account.
             * [x] Test phone notifications with 2nd Matrix test account.
             * [x] Link matrix channel in privacy policy and impressum, but recheck if this is legally ok.
-            * [ ] Remove personal phone number from git history of `net.splitcells.martins.avots.distro`.
+            * [x] Remove personal phone number from git history of `net.splitcells.martins.avots.distro`.
               Add the commands to the git guidelines as these could be useful in the future as well.
             * [x] Note why call is not enough:
                 * [x] https://www.ferner-alsdorf.de/impressumspflicht-haendler-muss-auf-anfragen-innerhalb-von-60-minuten-antworten/ 

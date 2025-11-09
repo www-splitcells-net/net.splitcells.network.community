@@ -12,12 +12,7 @@
 * Check via browser, if there are client side errors.
 * Check htop.9
 ## Open Tasks
-* [ ] Test if pages with authorization do work without authentication. This should not be the case.
-* [ ] Use only fast-forward git pulls for relevant workflows.
-* [ ] Detect any deployment errors.
-    * [ ] Maven Build
-    * [ ] Shell Project Setup
-    * [ ] End execution on first failure.
+* [ ] Check why so many program states are created. See `Program States` note.
 * [ ] Create dedicated logging services.
     * [ ] Move from Dockerfile to Podman compose.
     * [ ] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
@@ -134,6 +129,13 @@
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
 ## Done Tasks
+* [x] Detect any deployment errors.
+    * [x] Maven Build
+    * [x] Shell Project Setup
+    * [x] worker.execute ist affected as well. -> This is already the case.
+* [x] Use only fast-forward git pulls for relevant workflows. -> This is already the case.
+* [x] Test if pages with authorization does work without authentication. This should not be the case.
+  -> Authorization does not work without authentication and therefore it is working correctly.
 * [x] Because of Playwright TimeoutError:
   According to HtmlClientSharer, closing the Firefox browser with Playwright does not always work.
   So, starting and closing a real browser for each test run may not work with Playwright,
@@ -313,4 +315,11 @@ Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedist
 Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.dem.Dem.executeThread(Dem.java:124)
 Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start(Thread.java:1526)
 Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start0(Native Method)
+````
+# Program States
+````
+drwxr-xr-x  3 martins-avots martins-avots 4096 Nov  9 01:14 net.splitcells.martins.avots.distro/
+drwxr-xr-x  3 martins-avots martins-avots 4096 Nov  9 01:14 net.splitcells.martins.avots.distro.livedistro/
+drwxr-xr-x 12 martins-avots martins-avots 4096 Aug 26 20:39 net.splitcells.martins.avots.distro.livedistrocell/
+drwxr-xr-x 12 martins-avots martins-avots 4096 Aug 31 16:55 net.splitcells.network.worker/
 ````

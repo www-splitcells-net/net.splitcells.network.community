@@ -92,6 +92,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.martins.avots.distro.DevDistroCell` See `DevDistroCell#cellBasedMain`.
                         * [x] Make cellBasedMain run.
                         * [x] Add all configs from main method to cellBasedMain as well.
+                    * [ ] LiveCryptoSetupCell
                     * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro.
                         * [ ] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [ ] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
@@ -103,6 +104,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                   * [ ] `net.splitcells.network.distro.java.DistroCell`
                   * [ ] `net.splitcells.martins.avots.distro.DistroCell`
               * [ ] Deploy on live server.
+              * [ ] Why does LiveDistroCells do not contain a dependency to SystemCell?
               * [ ] Ensure, that the dependency recorder is really recording Cell dependencies.
     * [ ] Create launcher class for execution or configuration of the game.
         * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
@@ -126,3 +128,9 @@ This is needed for [the issue "Publish public website source code"](task-archive
 * [ ] Document that cells are better, than simple config function,
   as cells allow for better control of config application functions,
   whereas simple config functions without helper functions do not allow for such.
+* [ ] Create configuration framework guidelines.
+    * [ ] The default config is a full config with no side effects, except for optional default ones.
+      The optional default ones are enabled, if the environment has certain variables defined.
+    * [ ] The default config is a valid test config or a valid production config with no side effects.
+    * [ ] Split all options into options and side effect options by creating an option inheritance tree.
+* [ ] Support managing side effects with Cells effectively and efficiently.

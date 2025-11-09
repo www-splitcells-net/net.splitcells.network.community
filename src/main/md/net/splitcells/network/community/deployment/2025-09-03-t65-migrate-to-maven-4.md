@@ -7,7 +7,8 @@
         * [x] https://maven.apache.org/whatsnewinmaven4.html#New_packaging_type.3A_bom
         * [x] https://issues.apache.org/jira/browse/MNG-8009
         * [x] https://github.com/apache/maven/issues/10841
-    * [ ] Document reasoning why BOMs are not used internally in a multi-module project.
+    * [o] Document reasoning why BOMs are not used internally in a multi-module project.
+      -> This is already documented.
     * [ ] Note, that I am not using something that is not considered a BOM in the Maven community,
       even though it is a BOM of external dependencies for me.
       My BOM is just another parent POM from the perspective of the Maven community. 

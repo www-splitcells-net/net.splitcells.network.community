@@ -9,8 +9,9 @@ Although, this law does not seem to apply to `splitcells.net`,
 this is an opportunity to consider this aspect.
 # Service Tasks
 * Check warnings and errors in the browser.
+* Check static website with an analyzer: https://pagelocity.com/analyzer?url=https%3A%2F%2Fsplitcells.net%2Fnet%2Fsplitcells%2Fwebsite%2Fserver%2Ffront-menu.html
+    * [ ] FAVICON not found.
 # Tasks
-* [ ] Buttons should be less bold than titles.
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
 * [ ] Not all READMEs are visible in the parent pages. See http://localhost:8443/net/splitcells/network/hub/README.html .
@@ -28,6 +29,8 @@ this is an opportunity to consider this aspect.
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
 # Completed Tasks
+* [o] Buttons should be less bold than titles. -> As long as the titles are using a bigger font, everything is fine.
+* [x] Check website with public internet services. -> The service task `Check static website with an analyzer` is created for that.
 * [x] The meta menu bar does not feel like the start of a new distinct part of the website in view where all columns are vertically arranged and which is not the minimal view.
   -> An additional white structural bar at the top of the meta menu is used, in order to separate parts more distinctly.
 * [x] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .

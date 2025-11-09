@@ -9,7 +9,6 @@ Some tests are executed on servers in order to ensure, that the software works o
 * Maintain test servers.
     * `net.splitcells.martins.avots.riscv.login`
     * `net.splitcells.martins.avots.raspberry.v2.login`
-    * Live Server
 # Tasks
 * [ ] Create command, in order to deploy tests on every test server.
     * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
@@ -48,8 +47,9 @@ Some tests are executed on servers in order to ensure, that the software works o
         * [x] Fix `ColloquiumPlanningTest.testRandomInstanceSolving:113`. -> This was fixed via commit for the daily CI workflow.
         * [x] Fix `NQueenProblemTest.test_8_queen_problem_with_backtracking:115`. -> This was fixed via commit for the daily CI workflow.
     * [x] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands. -> This was fixed via commit for the daily CI workflow.
-    * [ ] Delete `--test-remote` from `worker.execute.py`, as it is too specific.
+    * [o] Delete `--test-remote` from `worker.execute.py`, as it is too specific. -> We have already flags like --boostrap-remote and these make sense.
     * [ ] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
+      -> Place it a the core network repo at `bin/cluster.deploy.test.sh`.
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.
