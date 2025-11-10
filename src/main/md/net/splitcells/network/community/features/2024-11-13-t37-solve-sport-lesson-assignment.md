@@ -16,7 +16,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Create SportsCoursePlanningTest.
         * [x] Create not rater.
         * [ ] Add not rater to editor.
-    * [ ] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
+    * [x] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
     * [ ] Make distinction between hard and soft constraints.
 * [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
