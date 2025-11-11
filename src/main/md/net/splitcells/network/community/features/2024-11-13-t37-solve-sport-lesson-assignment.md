@@ -15,7 +15,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create sport lesson assignment model.
     * [ ] Create SportsCoursePlanningTest.
         * [x] Create not rater.
-        * [ ] Add not rater to editor.
+        * [x] Add not rater to editor.
     * [ ] Ensure that Editor and Query provides the same constraint types.
     * [ ] Ensure that Editor and Query provides the same raters.
     * [x] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
