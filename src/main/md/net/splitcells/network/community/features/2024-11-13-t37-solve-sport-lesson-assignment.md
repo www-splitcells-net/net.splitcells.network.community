@@ -20,6 +20,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Ensure that Editor and Query provides the same raters.
     * [x] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
     * [ ] Consider making distinction between hard and soft constraints.
+    * [ ] `forEach(not(equals(assignedSport, 'Dummy Course')))` should work with the Query's constraint visiting functionality and
+      thereby avoid creating a new constraint node for every `forEach(not(equals(assignedSport, 'Dummy Course')))`.
 * [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
 * [ ] Solve sport lesson assignment.
