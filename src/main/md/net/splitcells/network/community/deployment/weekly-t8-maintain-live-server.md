@@ -33,7 +33,14 @@
         * [ ] Make Pyroscope agent optional in Java based execution via worker execute.
         * [ ] Determine Pyroscope agent name via POM automatically, instead of hard coding the jar's name.
         * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/ebpf/setup-docker/
-        * [ ] Clean up `Dem#startPyroscope`.
+        * [ ] Clean up `Dem#startPyroscope`. Is `Dem#startPyroscope` needed at all?
+        * [ ] Clean up `setup.monitoring.sh`.
+        * [ ] Configure host.docker.internal correctly.
+        * [ ] Ensure that Prometheus data is persisted accross restarts.
+        * [ ] Use different port than 9090 as it conflicts with cockpit.
+        * [ ] Re enable cockpit service.
+        * [ ] On the live server, Grafana cannot reach Prometheus, but can reach the Pyroscope service.
+        * [ ] Create an easy to use Grafana connection command.
     * [ ] Consider creating a VPN for accessing the server instead of port-forwarding.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.
