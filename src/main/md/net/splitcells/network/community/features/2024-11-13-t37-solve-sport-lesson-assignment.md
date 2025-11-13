@@ -62,6 +62,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Use Geal code for testing.
 * [ ] Ensure that all constraint types and raters are usable in the Geal.
     * [ ] Decide and note on relationship between Query and Editor.
+* [ ] Add background box to section titles in menu.
 # Done Tasks
 * [x] Remove old code editor. Do not forget its Javascript code.
 * [x] Create and use async loaded background image for website, in order to signal a higher quality to the user.

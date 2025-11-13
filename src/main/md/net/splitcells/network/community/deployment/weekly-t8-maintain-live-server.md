@@ -15,7 +15,7 @@
 * [ ] Check why so many program states are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Create dedicated logging services.
-    * [ ] Move from Dockerfile to Podman compose.
+    * [ ] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [ ] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
     * [ ] Get access to server via SSH port-forwarding scripts.
     * [ ] Setup visualisation server based on Grafana:
@@ -27,7 +27,13 @@
     * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
         * [ ] CPU usage
         * [ ] Memory usage
-    * [ ] Setup Java profiling: https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
+    * [ ] Setup Java profiling:
+        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
+        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/
+        * [ ] Make Pyroscope agent optional in Java based execution via worker execute.
+        * [ ] Determine Pyroscope agent name via POM automatically, instead of hard coding the jar's name.
+        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/ebpf/setup-docker/
+        * [ ] Clean up `Dem#startPyroscope`.
     * [ ] Consider creating a VPN for accessing the server instead of port-forwarding.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.
@@ -39,6 +45,7 @@
       where a Prometheus integration does not make sense.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
+    * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality.
 * [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
