@@ -42,6 +42,7 @@
         * [ ] On the live server, Grafana cannot reach Prometheus, but can reach the Pyroscope service.
         * [ ] Create an easy to use Grafana connection command.
         * [ ] Redeploy Monitoring services semi automatically.
+        * [ ] Fix monitoring services versions and organize its updates.
     * [ ] Consider creating a VPN for accessing the server instead of port-forwarding.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.
