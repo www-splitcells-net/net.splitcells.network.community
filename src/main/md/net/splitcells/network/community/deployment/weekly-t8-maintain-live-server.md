@@ -12,7 +12,7 @@
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Check why so many program states are created. See `Program States` note.
+* [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Create dedicated logging services.
     * [ ] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
@@ -27,22 +27,30 @@
     * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
         * [ ] CPU usage
         * [ ] Memory usage
-    * [ ] Setup Java profiling:
-        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
-        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/
-        * [ ] Make Pyroscope agent optional in Java based execution via worker execute.
-        * [ ] Determine Pyroscope agent name via POM automatically, instead of hard coding the jar's name.
-        * [ ] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/ebpf/setup-docker/
-        * [ ] Clean up `Dem#startPyroscope`. Is `Dem#startPyroscope` needed at all?
-        * [ ] Clean up `setup.monitoring.sh`.
-        * [ ] Configure host.docker.internal correctly.
-        * [ ] Ensure that Prometheus data is persisted accross restarts.
-        * [ ] Use different port than 9090 as it conflicts with cockpit.
-        * [ ] Re enable cockpit service.
-        * [ ] On the live server, Grafana cannot reach Prometheus, but can reach the Pyroscope service.
-        * [ ] Create an easy to use Grafana connection command.
-        * [ ] Redeploy Monitoring services semi automatically.
-        * [ ] Fix monitoring services versions and organize its updates.
+        * [ ] JVM Garbage Collector Metrics
+        * [ ] JVM Thread Metrics
+    * [x] Setup Java profiling:
+        * [x] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/java/
+        * [x] https://grafana.com/docs/pyroscope/latest/configure-client/language-sdks/java/
+        * [x] Make Pyroscope agent optional in Java based execution via worker execute.
+          -> Pyroscope is done via Java code only instead, as it is more flexible and minimize the worker execute API.
+        * [o] Determine Pyroscope agent name via POM automatically, instead of hard coding the jar's name.
+          -> The agent is not used and therefore the name does not have to be determined.
+        * [x] https://grafana.com/docs/pyroscope/latest/configure-client/grafana-alloy/ebpf/setup-docker/
+        * [x] Clean up `Dem#startPyroscope`. Is `Dem#startPyroscope` needed at all?
+          -> `Dem#startPyroscope` was moved to PyroscopeService. 
+        * [x] Clean up `setup.monitoring.sh`.
+        * [x] Configure host.docker.internal correctly.
+        * [x] Ensure that Prometheus data is persisted accross restarts.
+        * [x] Use different port than 9090 as it conflicts with cockpit.
+        * [x] Re enable cockpit service.
+        * [x] On the live server, Grafana cannot reach Prometheus, but can reach the Pyroscope service.
+        * [x] Create an easy to use Grafana connection command.
+        * [o] Redeploy Monitoring services semi-automatically. -> This is not needed for now.
+        * [x] Fix monitoring services versions and organize its updates.
+          -> Using latest is good enough for now. When the first problem appears, we will fix the version,
+          as implementing an update workflow right now has limited advantages.
+        * [x] Setup performance engineering service task.
     * [ ] Consider creating a VPN for accessing the server instead of port-forwarding.
     * [ ] Note, that this is done as this is generic functionality.
       It also allows one to do complex analysis and monitoring.

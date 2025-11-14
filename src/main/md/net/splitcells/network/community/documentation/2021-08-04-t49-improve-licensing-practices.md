@@ -34,7 +34,7 @@ We also need full accounting for it.
             * [x] Read license metadata in the file headers.
             * [x] Read copyright text metadata in the file headers.
             * [ ] Read `REUSE.toml` for list files without license metadata.
-                * [ ] Double check results in jars by hand.
+                * [x] Double check results in jars by hand.
                 * [ ] Support `**` in the REUSE paths.
             * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
             * [ ] Process binary files with MetaData class.
