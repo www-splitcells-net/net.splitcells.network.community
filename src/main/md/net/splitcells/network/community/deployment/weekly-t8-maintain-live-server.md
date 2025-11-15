@@ -15,8 +15,9 @@
 * [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Create dedicated logging services.
-    * [ ] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
-    * [ ] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
+    * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
+    * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
+    * [x] Start Podman compose on server startup via a systemd user service.
     * [ ] Get access to server via SSH port-forwarding scripts.
     * [ ] Setup visualisation server based on Grafana:
     * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
