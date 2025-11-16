@@ -92,10 +92,11 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.martins.avots.distro.DevDistroCell` See `DevDistroCell#cellBasedMain`.
                         * [x] Make cellBasedMain run.
                         * [x] Add all configs from main method to cellBasedMain as well.
-                    * [ ] LiveCryptoSetupCell
+                    * [x] LiveCryptoSetupCell
                     * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro.
-                        * [ ] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
-                        * [ ] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
+                        * [x] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
+                        * [x] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
+                        * [ ] Make LiveDistroCell work locally and only then deploy this to the live server.
                         * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.

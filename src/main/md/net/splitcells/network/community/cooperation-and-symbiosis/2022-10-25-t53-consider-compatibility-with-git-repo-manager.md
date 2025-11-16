@@ -10,26 +10,16 @@ Instead of creating a very loose cooperation,
 it was decided to just make repo process advertisable and to advertise it.
 A cooperation would currently cost too many resources,
 as the results of this task would not be essential to the projects main goal.
-# Acceptance Note
-TODO
 # Tasks
 * [ ] Clean up existing repos process doc.
-    * [ ] Proofread the doc.
-        * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.md`
+    * [x] Proofread the doc.
+        * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.md`
             * [x] Note that the implementation of this software was completely incorrectly done.
-            * [ ] Note that cooperation with git-repo-manager becomes moot, as repo process way of storing sub repo info is too unconventional.
-        * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.examples.md`
-        * [ ] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
-    * [ ] Consider creating an alternative git submodule based backend for repo process and co and migrate slowly to it.
-      Make this part of the repo process implementation clean up.
-        * [ ] Read about submodules: https://www.cyberdemon.org/2024/03/20/submodules.html
-        * [ ] Make repo process a boostrap like command located the `net.splitcells.network/bin` folder,
-          that links to the `net.splitcells.prject`'s implementation.
-        * [ ] The daily CIs and co, should use repo process to extract the list of sub and peer repos,
-          instead of the own custom command.
-    * [ ] Create new acceptance note for this cooperation project, as the cooperation was found out to be a bad idea.
-    * [ ] Note `bin/net.splitcells.osi.repos.children`
+        * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.examples.md`
+        * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
+        * [ ] `net.splitcells.osi.repos.children`
+    * [ ] Note `bin/net.splitcells.osi.repos.children`
     * [ ] Define different focus of git-repo-manager and repos process.
     * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.

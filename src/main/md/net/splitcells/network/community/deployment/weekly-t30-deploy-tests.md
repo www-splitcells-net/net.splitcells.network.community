@@ -5,7 +5,7 @@ Here manual or semiautomated tests are maintained and their results processed.
 Some tests are executed on servers in order to ensure, that the software works on different CPUs or computer types.
 # Services
 * Check [daily full test on network hub](https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions).
-* Execute `net.splitcells.network.deploy.build.sh`.
+* Execute `net.splitcells.network.cluster.deploy.test.sh`.
 * Maintain test servers.
     * `net.splitcells.martins.avots.riscv.login`
     * `net.splitcells.martins.avots.raspberry.v2.login`
@@ -49,7 +49,9 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [x] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands. -> This was fixed via commit for the daily CI workflow.
     * [o] Delete `--test-remote` from `worker.execute.py`, as it is too specific. -> We have already flags like --boostrap-remote and these make sense.
     * [ ] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
-      -> Place it a the core network repo at `bin/cluster.deploy.test.sh`.
+      -> Place it at the core network repo at `bin/cluster.deploy.test.sh`.
+    * [ ] Create log of failed executions.
+    * [ ] Create log of skipped execution, caused by not reachable servers.
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.

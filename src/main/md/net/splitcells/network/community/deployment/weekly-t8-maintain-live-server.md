@@ -14,6 +14,7 @@
 ## Open Tasks
 * [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
+* [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
