@@ -11,6 +11,8 @@ this is an opportunity to consider this aspect.
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
+* [ ] `basic.js`: missing identifier and also missing CSS for Tabulator
+* [ ] Use darker red with a serif font for error messages. See error for missing Javascript. 
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
 * [ ] Not all READMEs are visible in the parent pages. See http://localhost:8443/net/splitcells/network/hub/README.html .

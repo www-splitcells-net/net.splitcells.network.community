@@ -64,7 +64,7 @@
       where a Prometheus integration does not make sense.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
-    * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality.
+    * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality. 
 * [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
@@ -144,6 +144,7 @@
 * [ ] Consider automatically sending a mail, when an error happens.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
+* [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
 * [o] Playwright based test sometime do nothing. -> Playwright tests work now.
     * [x] Avoid XSL errors in systemd logs.
