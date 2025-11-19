@@ -12,6 +12,8 @@
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
+* [ ] Check whether Hetzner's network cost per month is limited or not and document this.
+  Create a Hetzner document, for administration, notes and guidelines.
 * [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
