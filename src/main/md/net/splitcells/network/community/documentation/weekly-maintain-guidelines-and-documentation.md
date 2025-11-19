@@ -55,5 +55,6 @@
 * [ ] Consider creating a joke page about this project.
     * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
+* [ ] Consider checking commits according to the guidlines via AI.
 # Done Tasks
 * [x] Add padding to the left of lists, in order to avoid clipping.
