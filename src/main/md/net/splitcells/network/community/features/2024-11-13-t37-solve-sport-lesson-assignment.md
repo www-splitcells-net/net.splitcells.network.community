@@ -12,19 +12,16 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Create sport lesson assignment model.
-    * [ ] Create SportsCoursePlanningTest.
-        * [x] Create not rater.
-        * [x] Add not rater to editor.
-        * [x] Add equals rater.
-    * [ ] Ensure that Editor and Query provides the same constraint types.
-    * [ ] Ensure that Editor and Query provides the same raters.
-    * [x] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
-    * [ ] Consider making distinction between hard and soft constraints.
-    * [ ] `forEach(not(equals(assignedSport, 'Dummy Course')))` should work with the Query's constraint visiting functionality and
-      thereby avoid creating a new constraint node for every `forEach(not(equals(assignedSport, 'Dummy Course')))`.
-* [ ] Check test data.
 * [ ] Make sport lesson assignment an additional GUI editor example.
+    * [ ] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
+        * [ ] Add button for sport course example loading.
+            * [ ] Delete all fields.
+            * [ ] Request example problem.
+        * [ ] Add button colloquium planning example.
+* [ ] Support complex problems with the default optimization.
+    * [ ] Move default optimization to the editor itself.
+    * [ ] Extend default optimization method.
+* [ ] Create test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -48,15 +45,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
   Currently, some span styles are overwritten by the `basic.css`.
     * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
-* [ ] Calculate solution, when the editor is opened, so that the example tables are loaded.
-  This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
 * [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
 * [ ] Preserver no-code editor UI code,
   as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
 * [ ] Consolidate `net.splitcells.gel.editor.lang`.
 * [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
 * [ ] Improve news feed of live server.
-* [ ] Make it easy to try out colloquium and sport planning example.
 * [ ] Create help command in editor, in order to access function call doc without closing the current editor and thereby loosing its content.
 * [ ] Move ColloquiumPlanningTest of `net.splitcells.gel.ext` to editor project.
     * [ ] Used editor for testing. 
@@ -65,7 +59,23 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Decide and note on relationship between Query and Editor.
 * [ ] Add background box to section titles in menu.
 * [ ] Improve styling of news.
+* [ ] Consider making distinction between hard and soft constraints.
+* [ ] Add link to editor at `Introduction to the Generic Allocator`.
 # Done Tasks
+* [x] Create sport lesson assignment model.
+    * [x] Create SportsCoursePlanningTest.
+        * [x] Create not rater.
+        * [x] Add not rater to editor.
+        * [x] Add equals rater.
+    * [o] Ensure that Editor and Query provides the same constraint types. -> This is not required.
+    * [o] Ensure that Editor and Query provides the same raters. -> This is not required.
+    * [x] Rename forAllCombinationsOf to forEach, as it has no advantages to have different names for such similar functions.
+    * [o] `forEach(not(equals(assignedSport, 'Dummy Course')))` should work with the Query's constraint visiting functionality and
+      thereby avoid creating a new constraint node for every `forEach(not(equals(assignedSport, 'Dummy Course')))`.
+      -> Performance in this regard is not relevant for now.
+* [o] Calculate solution, when the editor is opened, so that the example tables are loaded.
+  This action makes the editor feel more interactive to new visitors and also makes the example fully loaded.
+  -> That's probably a bad idea, as it creates a lot of resource usage and it also blocks some further user action.
 * [x] Remove old code editor. Do not forget its Javascript code.
 * [x] Create and use async loaded background image for website, in order to signal a higher quality to the user.
   -> The high quality is small enough, so that async loading is not required.
