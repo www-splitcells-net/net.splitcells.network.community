@@ -19,7 +19,8 @@ as the results of this task would not be essential to the projects main goal.
         * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
         * [x] `net.splitcells.osi.repos.children` -> `net.splitcells.repos.children`
-    * [ ] Note `bin/net.splitcells.osi.repos.children`
+        * [ ] `net.splitcells.osi.repos.peers`
+        * [ ] `net.splitcells.osi.repos.hosts`
     * [ ] Define different focus of git-repo-manager and repos process.
     * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
