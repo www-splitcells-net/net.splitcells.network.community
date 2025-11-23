@@ -1,4 +1,6 @@
 # Make the project deployable as a single jar.
+* Start Date: 2023-07-12
+* End Date: 2024-05-08
 * [x] Add support for jar based filesystem to webserver,
   instead of the files being available on the hosts filesystem.
     * [x] ProjectsRendererExtension

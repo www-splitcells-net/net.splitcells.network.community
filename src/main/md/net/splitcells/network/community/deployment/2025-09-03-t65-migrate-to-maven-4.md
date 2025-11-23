@@ -1,7 +1,7 @@
 # Migrate to Maven 4
 * Issue number: [\#65](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/65)
 # Tasks
-* [ ] Maven 4 is not really released yet.
+* [ ] Maven 4 is not fully released yet: https://maven.apache.org/docs/history.html
 * [ ] Ask Maven community, why [are internal BOMs discouraged](https://maven.apache.org/whatsnewinmaven4.html)?
   Especially the classifier argumentation seems like circular reasoning.
     * [x] Online research was enough, to find the true reason for not recommending internal BOMs.

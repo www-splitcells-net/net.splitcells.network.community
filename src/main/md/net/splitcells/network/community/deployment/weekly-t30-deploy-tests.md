@@ -48,10 +48,11 @@ Some tests are executed on servers in order to ensure, that the software works o
         * [x] Fix `NQueenProblemTest.test_8_queen_problem_with_backtracking:115`. -> This was fixed via commit for the daily CI workflow.
     * [x] The `bin/test*` commands should either be deleted or migrated to the `bin/repos.test*` commands. -> This was fixed via commit for the daily CI workflow.
     * [o] Delete `--test-remote` from `worker.execute.py`, as it is too specific. -> We have already flags like --boostrap-remote and these make sense.
-    * [ ] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
+    * [x] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
       -> Place it at the core network repo at `bin/cluster.deploy.test.sh`.
-    * [ ] Create log of failed executions.
-    * [ ] Create log of skipped execution, caused by not reachable servers.
+    * [ ] Create log of failed executions in network log.
+    * [ ] Create log of skipped execution in local network log, caused by not reachable servers.
+    * [ ] Create and commit runtime results to network log.
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.

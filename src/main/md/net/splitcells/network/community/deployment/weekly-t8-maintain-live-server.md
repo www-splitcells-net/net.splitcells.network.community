@@ -1,5 +1,14 @@
 # Weekly maintain live server.
 * Issue number: [\#8](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/8)
+## Task Description
+The static server is hosted at Hetzner as well.
+It is the high available primary access to the project,
+as its tech stack is very simple.
+
+The live server is hosted at Hetzner.
+The server settings of Hetzner can be accessed [here](https://robot.hetzner.com/server).
+The network traffic is included in the fixed package price of Hetzner and no additional fees are charged,
+as long as no additional network expansions are bought for the package.
 ## Service
 * The server is publicly available at http://live.splitcells.net
 * Update server.
@@ -12,11 +21,10 @@
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Check whether Hetzner's network cost per month is limited or not and document this.
-  Create a Hetzner document, for administration, notes and guidelines.
 * [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
 * [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
+* [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
@@ -148,6 +156,11 @@
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Check whether Hetzner's network cost per month is limited or not and document this.
+  Create a Hetzner document, for administration, notes and guidelines.
+  -> Traffic is included in the fixed package price and no additional fees are charged,
+  as long as no additional network expansions are bought for the package.
+  This is noted in this issue under at the task description.
 * [o] Playwright based test sometime do nothing. -> Playwright tests work now.
     * [x] Avoid XSL errors in systemd logs.
     * [ ] Maybe there is also a problem, when the submitted problem is optimized, but not fully solved. -> No, Playwright is not working.
@@ -304,57 +317,3 @@
   in order to ensure, that all programs of ssh sessions are closed.
   -> The container is now run via a systemd user service and therefore `loginctl enable-linger` is not needed anymore.
 * [x] Create double-checking for every config step. -> Check description is present in config script.
-# Playwright Notes
-````
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>net.splitcells</groupId>
-    <artifactId>worker.pom.empty</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <dependencies>
-        <dependency>
-            <groupId>com.microsoft.playwright</groupId>
-            <artifactId>playwright</artifactId>
-            <version>1.45.0</version>
-        </dependency>
-    </dependencies>
-</project>
-
-mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install-deps"
-````
-# Main service killed by OOM killer after 2 days.
-```
-Jan 01 15:40:56 net-splitcells-live systemd[821]: user.slice: A process of this unit has been killed by the OOM killer.
-Jan 01 15:40:56 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: Consumed 1d 20h 33min 42.329s CPU time.
-Jan 01 15:40:55 net-splitcells-live systemd[821]: libpod-480013e988f74f4b0a05947771663c4dc6b1e904f6984183568e8ceba925af67.scope: A process of this unit has been killed by the OOM killer.
-```
-
-# process/resource limits reached
-````
-Sep 28 01:10:49 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[805419]: [9.596s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
-Sep 28 01:10:49 net-splitcells-live podman[805374]: [9.596s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
-````
-
-````
-Sep 28 00:50:41 net-splitcells-live podman[715008]: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: java.lang.OutOfMemoryError: unable to create native thread: possibly out of memory or process/resource limits reached
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: [13.236s][warning][os,thread] Failed to start the native thread for java.lang.Thread "HtmlLiveTester-7"
-Sep 28 00:50:41 net-splitcells-live podman[715008]: [13.236s][warning][os,thread] Failed to start the native thread for java.lang.Thread "HtmlLiveTester-7"
-Sep 28 00:50:41 net-splitcells-live podman[715008]: [13.236s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]: [13.236s][warning][os,thread] Failed to start thread "Unknown thread" - pthread_create failed (EAGAIN) for attributes: stacksize: 1024k, guardsize: 4k, detached.
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.run(Thread.java:1583)
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.website.server.test.HtmlLiveTester$1.lambda$executeTest$1(HtmlLiveTester.java:55)
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.website.server.test.HtmlLiveTester$1.executeTest(HtmlLiveTester.java:46)
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at net.splitcells.dem.Dem.executeThread(Dem.java:124)
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start(Thread.java:1526)
-Sep 28 00:50:41 net-splitcells-live net.splitcells.martins.avots.distro.livedistro.daemon[715057]:         at java.base/java.lang.Thread.start0(Native Method)
-````
-# Program States
-````
-drwxr-xr-x  3 martins-avots martins-avots 4096 Nov  9 01:14 net.splitcells.martins.avots.distro/
-drwxr-xr-x  3 martins-avots martins-avots 4096 Nov  9 01:14 net.splitcells.martins.avots.distro.livedistro/
-drwxr-xr-x 12 martins-avots martins-avots 4096 Aug 26 20:39 net.splitcells.martins.avots.distro.livedistrocell/
-drwxr-xr-x 12 martins-avots martins-avots 4096 Aug 31 16:55 net.splitcells.network.worker/
-````

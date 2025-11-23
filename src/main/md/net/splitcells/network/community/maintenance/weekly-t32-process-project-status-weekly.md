@@ -17,7 +17,7 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Add start and end date for all completed community tasks.
+* [ ] Add start and end date for all completed community tasks. -> Currently, processing folder `compatibility-portability-and-adaptability` of this repo.
 * [ ] Generate JaCoCo report and SonarCloud report with one comm 
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.

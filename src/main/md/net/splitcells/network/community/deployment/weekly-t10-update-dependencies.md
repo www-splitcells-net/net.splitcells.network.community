@@ -7,8 +7,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update Java
 * Update Maven
 # Tasks
-* [ ] Note why automatic update is only updating by one version increment for each dependency.
 # Done Tasks
+* [x] Note why automatic update is only updating by one version increment for each dependency.
 * [x] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html` and create a daily workflow for that.
   That daily workflow updates the dependencies, does an extensive test and if everything was successfully,
   the dependency update is pushed to the public Codeberg server.

@@ -18,7 +18,6 @@
   Also, ask what is incorrect.
   This may help to find errors or problems with text.
 # Tasks
-* [ ] Project news are missing in the global changelog.
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
 * [ ] Make News more practible.
     * [ ] Only show explicitly started projects.
@@ -57,4 +56,5 @@
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 * [ ] Consider checking commits according to the guidlines via AI.
 # Done Tasks
+* [x] Project news are missing in the global changelog.
 * [x] Add padding to the left of lists, in order to avoid clipping.
