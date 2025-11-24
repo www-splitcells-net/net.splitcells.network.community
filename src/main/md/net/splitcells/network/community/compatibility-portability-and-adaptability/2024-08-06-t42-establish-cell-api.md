@@ -97,6 +97,9 @@ This is needed for [the issue "Publish public website source code"](task-archive
                         * [x] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [x] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
                         * [ ] Make LiveDistroCell work locally and only then deploy this to the live server.
+                            * [x] `["`ProjectsRenderer#httpServer()` should not be used anymore. Use `Server#serveToHttpAt()` instead, because multi threading is not supported for `ProjectsRenderer#httpServer()`."]`
+                            * [x] ACME challenge is executed in LiveDistroCell, even though a valid certificate is present.
+                            * [ ] Fix user authentication.
                         * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
