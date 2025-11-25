@@ -15,6 +15,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Make sport lesson assignment an additional GUI editor example.
     * [ ] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
         * [ ] Add button for sport course example loading.
+            * [ ] Transform linear vertical menu to a vertical tree menu.
             * [ ] Delete all fields.
             * [ ] Request example problem.
         * [ ] Add button colloquium planning example.
