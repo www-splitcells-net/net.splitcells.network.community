@@ -1,7 +1,9 @@
 # Create minimal Java grammar for this project in order to make code less complex
-- The issue numbers are `#26` and `#10`.
-    - [\#26 is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
-    - [\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
+* The issue numbers are `#26` and `#10`.
+    * [\#26 is the current online ticket.](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/26)
+    *[\#10 is the original issue.](https://github.com/www-splitcells-net/net.splitcells.network/issues/10)
+* Start Date: 2024-02-24
+* End Date: 2024-12-14
 # Tasks
 
 # Done Tasks

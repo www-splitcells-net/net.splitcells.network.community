@@ -1,6 +1,8 @@
 # Make copies of the webserver thread safe
 * Issue number: [\#38](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/38)
 * Primary method: `net.splitcells.website.server.Server.serveToHttpAt`
+* Start Date: 2024-08-27
+* End Date: 2025-09-24
 # Task Description
 If multiple ProjectsRenderer are created and each used by a dedicated thread,
 then these ProjectsRenderers still have problems with each other's thread.

@@ -14,4 +14,6 @@ therefore the focus is on the community and code reviews.
 
 # Tasks
 * [ ] A smallish implementation task: https://github.com/apache/maven-resolver/issues/1521
-    * [ ] Create one minimal pull request as a test: https://github.com/apache/maven-resolver/pull/1686
+    * [x] Create one minimal pull request as a test: https://github.com/apache/maven-resolver/pull/1686
+    * [ ] Submitting [Apache Individual Contributor License Agreement](https://www.apache.org/licenses/icla.pdf).
+      -> E-Mail was sent.

@@ -1,4 +1,7 @@
 # Sigma Grind starting from March 4th to March 16th
+* Start Date: 2024-08-22
+* End Date: 2025-06-03
+# Task Description
 Moving closer to a full synergy between the subprojects.
 # Tasks
 * [x] [Create a unified backend for editor, which will be the basis for the optimization network.](../features/2024-11-13-t37-solve-sport-lesson-assignment.md)

@@ -17,8 +17,7 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Add start and end date for all completed community tasks. -> Currently, processing folder `compatibility-portability-and-adaptability` of this repo.
-* [ ] Generate JaCoCo report and SonarCloud report with one comm 
+* [ ] Generate JaCoCo report and SonarCloud report with one command. 
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
@@ -45,6 +44,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Task
+* [x] Add start and end date for all completed community tasks. -> Currently, processing folder `compatibility-portability-and-adaptability` of this repo.
 * [x] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
     * [x] Move scan from GitHub to Codeberg: `mvn -B clean install org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=www-splitcells-net_net.splitcells.network -Dsonar.test.exclusions=src/main/java/** -Dsonar.organization=www-splitcells-net -Dsonar.host.url=https://sonarcloud.io # `-Dsonar.inclusions=src/main/**,bin/*` does not seem to work.`

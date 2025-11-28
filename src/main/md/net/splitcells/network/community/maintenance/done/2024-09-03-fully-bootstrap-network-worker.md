@@ -1,5 +1,7 @@
 # Fully bootstrap Network Worker
 * Issue number: [\#41](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/41)
+* Start Date: 2024-09-03
+* End Date: 2024-12-2
 # Task Description
 The Network Worker was envisioned to be a software,
 that provides an easy integration UI of the operating system, software environment, the source code repos,

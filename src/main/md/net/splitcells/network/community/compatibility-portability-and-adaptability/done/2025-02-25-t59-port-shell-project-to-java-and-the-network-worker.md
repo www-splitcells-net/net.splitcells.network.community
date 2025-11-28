@@ -1,5 +1,7 @@
 # Port Shell project to Java and the Network Worker
 * Issue number: [\#59](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/59)
+* Start Date: 2025-02-25
+* End Date: 2025-07-26
 # Task Description
 Until now, it was assumed, that Sh and Python 3 are required for bootstrapping the project and
 that Java and Maven would be the main software stack.

@@ -1,5 +1,7 @@
 # Make project advertisable
-[\#c11](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/11) is the issue.
+* [\#c11](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/11) is the issue.
+* Start Date: 2024-01-07
+* End Date: 2024-06-24
 ## Goal
 The goal is, to create some advertisement material and to do some polishing work.
 ## Tasks

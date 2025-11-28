@@ -1,5 +1,7 @@
 # Migrate from SourceHut to Codeberg.
 * [Codeberg issue](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/1)
+* Start Date: 2025-02-25
+* End Date: 2024-05-27
 # Actual Tasks
 * [x] Move the issue description to community repo.
 * [x] Upload repos.
