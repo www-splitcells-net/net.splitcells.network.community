@@ -37,7 +37,7 @@ We also need full accounting for it.
                 * [x] Double check results in jars by hand.
                 * [x] Correctly, filter paths of parent `REUSE.toml`, that are not part of the current project.
                 * [x] Parse actual license data for each path `REUSE.toml`.
-                * [ ] Write all MetaData after parsing of any source to a file to MetaData map.
+                * [x] Write all MetaData after parsing of any source to a file to MetaData map.
                 * [ ] After creating MetaData map write these to `target/classes`.
                 * [ ] Support `**` in the REUSE paths.
             * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
