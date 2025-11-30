@@ -19,6 +19,12 @@
   This may help to find errors or problems with text.
 # Tasks
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
+    * [ ] Project proposal parsing was removed completely, because it was horribly wrong.
+      Even blog articles have a project proposal entry.
+      Readd project proposal parsing.
+    * [ ] Make nicer project proposal prefix.
+    * [ ] Make nicer project start prefix.
+    * [ ] Make nicer project end prefix.
 * [ ] Make News more practible.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
