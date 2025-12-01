@@ -14,10 +14,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Make sport lesson assignment an additional GUI editor example.
     * [ ] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
-        * [ ] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
-            * [ ] Place field buttons before example sub menu.
-            * [ ] Create `*.csv` buttons via Javascript and not XSL.
-            * [ ] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
+        * [x] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
+            * [x] Place field buttons before example sub menu.
+            * [x] Create `*.csv` buttons via Javascript and not XSL.
+            * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
         * [ ] Add button for sport course example loading.
             * [ ] Transform linear vertical menu to a vertical tree menu.
             * [ ] Delete all fields.
