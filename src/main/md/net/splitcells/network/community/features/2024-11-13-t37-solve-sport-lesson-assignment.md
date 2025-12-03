@@ -19,11 +19,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Create `*.csv` buttons via Javascript and not XSL.
             * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
         * [ ] Add button for sport course example loading.
-            * [ ] Transform linear vertical menu to a vertical tree menu.
+            * [x] Transform linear vertical menu to a vertical tree menu.
             * [ ] Delete all fields.
+            * [x] Delete all field buttons.
             * [ ] Request example problem.
+            * [ ] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
         * [ ] Add button for colloquium planning example.
-        * [ ] Generate problem specific form fields via client side Javascript instead of XSL as well.
+        * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
+        * [x] Create sub menu for the problem fields.
+        * [x] Add additional button for the definition field at the top level of the menu.
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
