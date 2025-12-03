@@ -20,9 +20,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
         * [ ] Add button for sport course example loading.
             * [x] Transform linear vertical menu to a vertical tree menu.
-            * [ ] Delete all fields.
+            * [x] Delete all fields.
             * [x] Delete all field buttons.
-            * [ ] Request example problem.
+            * [x] Request example problem.
             * [ ] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
         * [ ] Add button for colloquium planning example.
         * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
