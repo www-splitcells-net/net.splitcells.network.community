@@ -28,6 +28,7 @@ this is an opportunity to consider this aspect.
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
 # Completed Tasks
+* [x] Fix title of README on server: https://live.splitcells.net/net/splitcells/network/hub/README.html
 * [x] Use darker red with a serif font for error messages. See error for missing Javascript.
 * [x] Check static website with an analyzer: https://pagelocity.com/analyzer?url=https%3A%2F%2Fsplitcells.net%2Fnet%2Fsplitcells%2Fwebsite%2Fserver%2Ffront-menu.html
   -> https://pagelocity.com does not seem to be a good analyzer, as id does not find FAVICONs and does not state, what it is searching for.

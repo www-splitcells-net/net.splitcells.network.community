@@ -23,7 +23,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Delete all fields.
             * [x] Delete all field buttons.
             * [x] Request example problem.
-            * [ ] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
+            * [x] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
+            * [ ] Load example data.
+                * [ ] Defining editor update messages.
+                * [ ] Providing examples via update messages.
+                * [ ] Implement this for colloquium example.
+                * [ ] Implement this for sport course example.
         * [ ] Add button for colloquium planning example.
         * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
         * [x] Create sub menu for the problem fields.
