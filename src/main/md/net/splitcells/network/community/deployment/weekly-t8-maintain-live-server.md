@@ -23,6 +23,11 @@ as long as no additional network expansions are bought for the package.
 ## Open Tasks
 * [ ] Check why so many program state folders are created. See `Program States` note.
     * [ ] Check one step at a time of the `deploy.remote` script.
+        * [ ] Avoid `~/.local/state/net.splitcells.martins.avots.distro.livedistro`.
+            * [ ] This is created by the first `bin/worker.execute.py` of `deploy.remote` and
+              only has an empty target folder of the public `net.splitcells.network`.
+            * [ ] The problem is probably the `bin/worker.execute.py` inside the generated console scripts created by `bin/worker.execute.py`.
+      * [ ] What creates `~/.local/state/net.splitcells.martins.avots.distro.livedistrocell`?
 * [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
