@@ -18,6 +18,7 @@
   Also, ask what is incorrect.
   This may help to find errors or problems with text.
 # Tasks
+* [ ] Correct the copyright text in `REUSE.toml` of the `net.splitcells.website.content.binaries` repo.
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
     * [ ] Project proposal parsing was removed completely, because it was horribly wrong.
       Even blog articles have a project proposal entry.
