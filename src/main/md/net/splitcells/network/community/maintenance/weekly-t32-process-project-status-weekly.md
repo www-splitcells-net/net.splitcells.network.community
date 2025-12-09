@@ -17,7 +17,8 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
 # Tasks.
-* [ ] Generate JaCoCo report and SonarCloud report with one command. 
+* [ ] Generate and Upload JavaDoc in daily CI.
+    * [ ] Note, that upload to JavaDoc is only done for static site, as build JavaDoc takes a lot of time. 
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
@@ -43,7 +44,8 @@ This does not apply for statuses, that show progress.
 * [ ] Ensure, that all scripts like Bash scripts are tested as well.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
-# Done Task
+# Done Tasks
+* [o] Generate JaCoCo report and SonarCloud report with one command. -> This does not work, as the JaCoCo reports are not present otherwise.
 * [x] Add start and end date for all completed community tasks. -> Currently, processing folder `compatibility-portability-and-adaptability` of this repo.
 * [x] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
     * [x] Sonarcloud integration does not work at network hub repo, as only the `net.splitcells.network` repo is known there.
