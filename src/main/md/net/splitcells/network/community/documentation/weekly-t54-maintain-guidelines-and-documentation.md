@@ -4,19 +4,18 @@
 
 # Task Description
 # Service Tasks
-* The starting point of the guidelines is:
+* Check documentation and their links.
+    * The starting point of the guidelines is:
     * https://splitcells.net/net/splitcells/network/guidelines/index.html
     * http://localhost:8443/net/splitcells/network/guidelines/index.html
-* Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
-  * [ ] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.
-* Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
-* Consider Documentation from point of a user
-* Consider Documentation from point of a developer
-* Consider Documentation from point of a product owner.
-* Consider mobile vs desktop view.
-* Give Chat AI a piece of documentation and ask what is described by it.
-  Also, ask what is incorrect.
-  This may help to find errors or problems with text.
+    * Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
+    * [ ] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.
+    * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
+    * Consider Documentation from point of a user
+    * Consider Documentation from point of a developer
+    * Consider Documentation from point of a product owner.
+    * Consider mobile vs desktop view.
+* Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Tasks
 * [ ] Correct the copyright text in `REUSE.toml` of the `net.splitcells.website.content.binaries` repo.
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.

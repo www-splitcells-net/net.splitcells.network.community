@@ -11,11 +11,14 @@ this is an opportunity to consider this aspect.
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
-* [ ] Check and fix links of both main READMEs. 
-* [ ] The download of the program does not work on the static site.
-* [ ] The downloadable Linux program does not run.
-* [ ] Remove the downloadable Windows program, as it is not tested regularly.
-  Maybe just deactivate the link and add an appropriate note.
+* [ ] Make website more presentable.
+    * [ ] Check and fix links of both main READMEs. 
+    * [ ] The download of the program does not work on the static site.
+    * [ ] The downloadable Linux program does not run.
+    * [ ] Remove the downloadable Windows program, as it is not tested regularly.
+      Maybe just deactivate the link and add an appropriate note.
+    * [ ] Better style news and notifications.
+    * [ ] Fix news and notifications links, as some link text do not correspond to the linked content.
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
 * [ ] Not all READMEs are visible in the parent pages. See http://localhost:8443/net/splitcells/network/hub/README.html .
