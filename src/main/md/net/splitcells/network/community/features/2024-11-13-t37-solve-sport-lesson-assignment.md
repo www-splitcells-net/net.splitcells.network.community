@@ -25,7 +25,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Request example problem.
             * [x] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
             * [ ] Load example data.
-                * [ ] Defining editor update messages.
+                * [x] Defining editor update messages.
                     * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
                       -> The new base table API is not required yet.
                 * [ ] Providing examples via update messages.
