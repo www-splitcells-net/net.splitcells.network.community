@@ -11,6 +11,7 @@ this is an opportunity to consider this aspect.
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
+* [ ] Check and fix links of both main READMEs. 
 * [ ] The download of the program does not work on the static site.
 * [ ] The downloadable Linux program does not run.
 * [ ] Remove the downloadable Windows program, as it is not tested regularly.
