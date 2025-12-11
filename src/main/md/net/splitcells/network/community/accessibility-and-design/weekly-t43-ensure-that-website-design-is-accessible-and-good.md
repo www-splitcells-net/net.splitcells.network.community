@@ -12,10 +12,13 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 # Tasks
 * [ ] Make website more presentable.
-    * [ ] Check and fix links of both main READMEs. 
+    * [x] Check and fix links of both main READMEs. 
     * [ ] The download of the program does not work on the static site.
-    * [ ] The downloadable Linux program does not run.
-    * [ ] Remove the downloadable Windows program, as it is not tested regularly.
+        * [ ] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
+          for a subproject's file system.
+          Extend the developer interface accordingly.
+    * [x] The downloadable Linux program does not run.
+    * [x] Remove the downloadable Windows program, as it is not tested regularly.
       Maybe just deactivate the link and add an appropriate note.
     * [ ] Better style news and notifications.
     * [ ] Fix news and notifications links, as some link text do not correspond to the linked content.

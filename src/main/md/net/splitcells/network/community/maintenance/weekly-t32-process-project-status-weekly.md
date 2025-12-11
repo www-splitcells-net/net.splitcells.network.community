@@ -19,9 +19,12 @@ This does not apply for statuses, that show progress.
 # Tasks.
 * [ ] Generate and Upload JavaDoc in daily CI.
     * [ ] Note, that upload to JavaDoc is only done for static site, as build JavaDoc takes a lot of time. 
+* [ ] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
+* [ ] Check validity of all links.
+* [ ] Test if Linux application is runnable.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin

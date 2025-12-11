@@ -28,7 +28,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Defining editor update messages.
                     * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
                       -> The new base table API is not required yet.
-                * [ ] Providing examples via update messages.
+                * [ ] Providing examples via update messages. -> See ColloquiumExample.
                 * [ ] Implement this for colloquium example.
                 * [ ] Implement this for sport course example.
         * [ ] Add button for colloquium planning example.
