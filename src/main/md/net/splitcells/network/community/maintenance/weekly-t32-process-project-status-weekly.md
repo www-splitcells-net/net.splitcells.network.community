@@ -16,9 +16,7 @@ This does not apply for statuses, that show progress.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
-# Tasks.
-* [ ] Generate and Upload JavaDoc in daily CI.
-    * [ ] Note, that upload to JavaDoc is only done for static site, as build JavaDoc takes a lot of time. 
+# Tasks. 
 * [ ] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
@@ -48,6 +46,8 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Generate and Upload JavaDoc in daily CI. -> Generating JavaDoc is good enough for now, as there are no realistic JavaDoc consumers right now.
+    * [x] Note, that upload to JavaDoc is only done for static site, as build JavaDoc takes a lot of time.
 * [o] Generate JaCoCo report and SonarCloud report with one command. -> This does not work, as the JaCoCo reports are not present otherwise.
 * [x] Add start and end date for all completed community tasks. -> Currently, processing folder `compatibility-portability-and-adaptability` of this repo.
 * [x] Do SonarCloud scan in Codeberg and not in GitHub by applying the can just on the main `net.splitcells.network` repo.
