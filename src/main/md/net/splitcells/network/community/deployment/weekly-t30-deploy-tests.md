@@ -52,8 +52,11 @@ Some tests are executed on servers in order to ensure, that the software works o
       -> Place it at the core network repo at `bin/cluster.deploy.test.sh`.
     * [ ] Create log of failed executions in network log.
         * [ ] Create a dedicated test function at `net.splitcells.dem.testing.Test` and run this with an additional Maven command.
+          -> `net.splitcells.network.worker.via.java.Tester` is used instead.
             * [ ] Note reasoning. This is done, as the surefire plugin cannot set the TestExecutionListener.
               The only alternative is using Java's ServiceLoader, that gets very in multiproject module
+            * [ ] Make `net.splitcells.network.worker.via.java.Tester` work.
+                * [ ] What tests should be executed?
     * [ ] Create log of skipped execution in local network log, caused by not reachable servers.
     * [ ] Create and commit runtime results to network log.
 * [ ] Deploy UI test in daily CI.

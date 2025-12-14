@@ -21,13 +21,6 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Check why so many program state folders are created. See `Program States` note.
-    * [ ] Check one step at a time of the `deploy.remote` script.
-        * [ ] Avoid `~/.local/state/net.splitcells.martins.avots.distro.livedistro`.
-            * [ ] This is created by the first `bin/worker.execute.py` of `deploy.remote` and
-              only has an empty target folder of the public `net.splitcells.network`.
-            * [ ] The problem is probably the `bin/worker.execute.py` inside the generated console scripts created by `bin/worker.execute.py`.
-      * [ ] What creates `~/.local/state/net.splitcells.martins.avots.distro.livedistrocell`?
 * [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
@@ -161,6 +154,15 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Check why so many program state folders are created. See `Program States` note.
+    * [x] Check one step at a time of the `deploy.remote` script.
+        * [x] Avoid `~/.local/state/net.splitcells.martins.avots.distro.livedistro`.
+            * [x] This is created by the first `bin/worker.execute.py` of `deploy.remote` and
+              only has an empty target folder of the public `net.splitcells.network`.
+            * [x] The problem is probably the `bin/worker.execute.py` inside the generated console scripts created by `bin/worker.execute.py`.
+              -> It was that and dynamic folder creation for local execution.
+        * [x] What creates `~/.local/state/net.splitcells.martins.avots.distro.livedistro`?
+          -> This was fixed with the previois task.
 * [x] Check whether Hetzner's network cost per month is limited or not and document this.
   Create a Hetzner document, for administration, notes and guidelines.
   -> Traffic is included in the fixed package price and no additional fees are charged,

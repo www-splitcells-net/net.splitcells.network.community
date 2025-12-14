@@ -9,7 +9,6 @@
     * https://splitcells.net/net/splitcells/network/guidelines/index.html
     * http://localhost:8443/net/splitcells/network/guidelines/index.html
     * Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
-    * [ ] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.
     * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
     * Consider Documentation from point of a user
     * Consider Documentation from point of a developer
@@ -18,6 +17,7 @@
 * Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Tasks
 * [ ] Correct the copyright text in `REUSE.toml` of the `net.splitcells.website.content.binaries` repo.
+* [ ] Check the copyright text in `REUSE.toml` of all repos.
 * [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
     * [ ] Project proposal parsing was removed completely, because it was horribly wrong.
       Even blog articles have a project proposal entry.
@@ -62,5 +62,6 @@
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 * [ ] Consider checking commits according to the guidlines via AI.
 # Done Tasks
+* [x] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.
 * [x] Project news are missing in the global changelog.
 * [x] Add padding to the left of lists, in order to avoid clipping.

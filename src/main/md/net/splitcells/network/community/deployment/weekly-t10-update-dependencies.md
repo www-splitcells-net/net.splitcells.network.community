@@ -3,7 +3,7 @@
 # Task Description
 Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Service
-* Update `net.splitcells.network.bom` via `net.splitcells.network.shell` and `bin/repos.dependencies.update`.
+* Update `net.splitcells.network.bom` via `bin/repos.dependencies.update` (this is done via the daily CI atm).
 * Update Java
 * Update Maven
 # Tasks
