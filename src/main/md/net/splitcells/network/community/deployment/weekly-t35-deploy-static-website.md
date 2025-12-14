@@ -7,11 +7,7 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] `https://splitcells.net/net/splitcells/website/css/basic.css` is not updated.
-* [ ] Remove telephone number from Impressum and replace it with Matrix chat room.
-    * [ ] Create Matrix chat.
-    * [ ] Update impressum.
-* [ ] Fix README correctly.
+* [ ] GitHub's SVGs in the README attempt to set cookies. This should not even be attempted.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
 * [ ] Disallow any XSL warnings and erros by default.
@@ -20,7 +16,12 @@
 * [ ] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
     * [ ] Support pages requiring a login.
-# Completed Tasks
+# Done Tasks
+* [x] Remove telephone number from Impressum and replace it with Matrix chat room.
+    * [x] Create Matrix chat.
+    * [x] Update impressum.
+* [ ] `https://splitcells.net/net/splitcells/website/css/basic.css` is not updated.
+  -> For whatever reason the `basic.css` is not updated during the website depoyment.
 * [x] Consider simplifying the privacy policy, in order to minimize the attack surface.
     * [x] Adjust the liver server privacy policy.
         * [x] Do not state too specifically the log content and duration. -> The duration is relevant.
