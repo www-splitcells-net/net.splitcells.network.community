@@ -29,6 +29,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
                       -> The new base table API is not required yet.
                 * [ ] Providing examples via update messages. -> See ColloquiumExample.
+                    * [ ] Create and use a form update domain object, in order to simplify code and make it more statically type safe.
                 * [ ] Implement this for colloquium example.
                 * [ ] Implement this for sport course example.
         * [ ] Add button for colloquium planning example.

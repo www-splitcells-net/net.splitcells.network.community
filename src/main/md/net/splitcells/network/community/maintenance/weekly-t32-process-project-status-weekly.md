@@ -16,8 +16,9 @@ This does not apply for statuses, that show progress.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
 * Execute static code checks.
-# Tasks. 
+# Tasks.
 * [ ] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
+* [ ] Build complete static website weekly and upload it to Hetzner.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
