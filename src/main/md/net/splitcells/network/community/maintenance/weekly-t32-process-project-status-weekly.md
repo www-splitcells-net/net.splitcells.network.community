@@ -17,8 +17,10 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/Files.html
 * Execute static code checks.
 # Tasks.
-* [ ] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
-* [ ] Build complete static website weekly and upload it to Hetzner.
+* [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
+  The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
+  RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
+* [ ] Build complete static website and upload it to Hetzner via daily CI.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
 * [ ] Let Tester test capability tests as well. 
@@ -47,6 +49,8 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [o] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
+  -> SWT has binding issues in Linux, which require a certain Linux setup to work for and is therefore not acceptable.
 * [x] Generate and Upload JavaDoc in daily CI. -> Generating JavaDoc is good enough for now, as there are no realistic JavaDoc consumers right now.
     * [x] Note, that upload to JavaDoc is only done for static site, as build JavaDoc takes a lot of time.
 * [o] Generate JaCoCo report and SonarCloud report with one command. -> This does not work, as the JaCoCo reports are not present otherwise.
