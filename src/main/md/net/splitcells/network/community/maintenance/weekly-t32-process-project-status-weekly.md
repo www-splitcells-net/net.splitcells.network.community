@@ -14,7 +14,7 @@ This does not apply for statuses, that show progress.
 * Process status badges.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaClassResourcesImpl.html
+    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/Files.html
 * Execute static code checks.
 # Tasks.
 * [ ] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.

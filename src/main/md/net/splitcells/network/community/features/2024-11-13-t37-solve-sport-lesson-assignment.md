@@ -29,9 +29,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
                       -> The new base table API is not required yet.
                 * [ ] Providing examples via update messages. -> See ColloquiumExample.
-                    * [ ] Create and use a form update domain object, in order to simplify code and make it more statically type safe.
+                    * [ ] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
                 * [ ] Implement this for colloquium example.
                 * [ ] Implement this for sport course example.
+                * [ ] Move EditorProcessor form update constants to FormUpdate to website server.
         * [ ] Add button for colloquium planning example.
         * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
         * [x] Create sub menu for the problem fields.
@@ -301,7 +302,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Use user session in dem, in order to store all errors. -> Try and catch will be used instead.
                 * [x] Use multiple types of messages like errors and warnings. -> We are using LogLevels for that.
                 * [o] Define the subject of errors. -> This will be done implicitly via the content of the error message and its stack trace instead.
-                * [x] Handle this like logging, but with a special address. -> Try and catch will be used instead.
+                * [o] Handle this like logging, but with a special address. -> Try and catch will be used instead.
                 * [x] Document why explicit error message handling is bad. -> This is done via describing the goal of the need API.
                 * [x] Create new CommonMark field for errors.
                     * [x] Render all messages of need exceptions
