@@ -38,6 +38,9 @@ We also need full accounting for it.
                 * [x] Correctly, filter paths of parent `REUSE.toml`, that are not part of the current project.
                 * [x] Parse actual license data for each path `REUSE.toml`.
                 * [x] Write all MetaData after parsing of any source to a file to MetaData map.
+                * [ ] Correct the `MetaData#filePath`. Currently, it is absolute.
+                    * [ ] Fix file content parser.
+                    * [ ] Fix `REUSE.toml` parser.
                 * [ ] After creating MetaData map write these to `target/classes`.
                 * [ ] Support `**` in the REUSE paths.
             * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
