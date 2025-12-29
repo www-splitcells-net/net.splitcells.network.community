@@ -28,10 +28,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Defining editor update messages.
                     * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
                       -> The new base table API is not required yet.
-                * [ ] Providing examples via update messages. -> See ColloquiumExample.
-                    * [ ] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
-                * [ ] Implement this for colloquium example.
-                * [ ] Implement this for sport course example.
+                * [x] Providing examples via update messages. -> See ColloquiumExample.
+                    * [x] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
+                * [x] Implement this for colloquium example.
+                * [x] Implement this for sport course example.
                 * [ ] Move EditorProcessor form update constants to FormUpdate to website server.
         * [ ] Add button for colloquium planning example.
         * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
