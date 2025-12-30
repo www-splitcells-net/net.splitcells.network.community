@@ -13,12 +13,12 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Make sport lesson assignment an additional GUI editor example.
-    * [ ] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
+    * [x] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
         * [x] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
             * [x] Place field buttons before example sub menu.
             * [x] Create `*.csv` buttons via Javascript and not XSL.
             * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
-        * [ ] Add button for sport course example loading.
+        * [x] Add button for sport course example loading.
             * [x] Transform linear vertical menu to a vertical tree menu.
             * [x] Delete all fields.
             * [x] Delete all field buttons.
@@ -32,11 +32,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
                 * [x] Implement this for colloquium example.
                 * [x] Implement this for sport course example.
-                * [ ] Move EditorProcessor form update constants to FormUpdate to website server.
-        * [ ] Add button for colloquium planning example.
+                * [x] Move EditorProcessor form update constants to FormUpdate of the website server.
+        * [x] Add button for colloquium planning example.
         * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
         * [x] Create sub menu for the problem fields.
         * [x] Add additional button for the definition field at the top level of the menu.
+    * [ ] Load test data for both examples.
+    * [ ] Load initial editor data like it is done for the examples menu.
+        * [ ] Remove ColloquiumPlanningSuppliesTestData.
+        * [ ] Remove ColloquiumPlanningDemandsTestData.
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
