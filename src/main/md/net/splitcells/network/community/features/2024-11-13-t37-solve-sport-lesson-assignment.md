@@ -38,6 +38,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Create sub menu for the problem fields.
         * [x] Add additional button for the definition field at the top level of the menu.
     * [ ] Load test data for both examples.
+        * [x] ColloquiumExample
+        * [ ] SportCourseExample
     * [ ] Load initial editor data like it is done for the examples menu.
         * [ ] Remove ColloquiumPlanningSuppliesTestData.
         * [ ] Remove ColloquiumPlanningDemandsTestData.
