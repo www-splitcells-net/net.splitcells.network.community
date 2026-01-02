@@ -40,9 +40,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Load test data for both examples.
         * [x] ColloquiumExample
         * [ ] SportCourseExample
-    * [ ] Load initial editor data like it is done for the examples menu.
-        * [ ] Remove ColloquiumPlanningSuppliesTestData.
-        * [ ] Remove ColloquiumPlanningDemandsTestData.
+    * [ ] Load initial editor data like it is done for the example's menu.
+        * [x] Remove ColloquiumPlanningSuppliesTestData.
+        * [x] Remove ColloquiumPlanningDemandsTestData.
+    * [ ] Initialize all editor data fields. Currently, an initial `Calculate solution` is required for all fields to be visible in the GUI.
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
