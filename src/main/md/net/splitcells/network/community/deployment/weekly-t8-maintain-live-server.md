@@ -21,7 +21,6 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Speed up `user.bin.configure`, in order to speed up redeployment.
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
@@ -154,6 +153,9 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Speed up `user.bin.configure`, in order to speed up redeployment.
+    * [x] command.repositories.install is causing the problem.
+        * [x] Provide argument so that `command.managed.install.py` does not install one file for each call, but a given folder completely instead.
 * [x] Check why so many program state folders are created. See `Program States` note.
     * [x] Check one step at a time of the `deploy.remote` script.
         * [x] Avoid `~/.local/state/net.splitcells.martins.avots.distro.livedistro`.

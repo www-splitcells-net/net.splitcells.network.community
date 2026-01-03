@@ -41,8 +41,8 @@ We also need full accounting for it.
                 * [x] Correct the `MetaData#filePath`. Currently, it is absolute.
                     * [x] Fix file content parser.
                     * [x] Fix `REUSE.toml` parser.
-                * [ ] REUSE parser does not correctly determine copyright and license data of a file.
-                * [ ] After creating MetaData map write these to `target/classes`.
+                * [x] REUSE parser does not correctly determine copyright and license data of a file.
+                * [x] After creating MetaData map write these to `target/classes`.
                 * [ ] Support `**` in the REUSE paths.
             * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
             * [ ] Process binary files with MetaData class.

@@ -4,9 +4,10 @@
 Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Service
 * Update `net.splitcells.network.bom` via `bin/repos.dependencies.update` (this is done via the daily CI atm).
-* Update Java
-* Update Maven
+* Update Java: https://www.java.com/releases/
+* Update Maven: https://maven.apache.org/docs/history.html
 # Tasks
+* [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 # Done Tasks
 * [x] Note why automatic update is only updating by one version increment for each dependency.
 * [x] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html` and create a daily workflow for that.

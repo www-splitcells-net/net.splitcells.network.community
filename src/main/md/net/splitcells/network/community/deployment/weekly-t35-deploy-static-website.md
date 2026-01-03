@@ -7,6 +7,7 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
+* [ ] [Deploy static website via daily Codeberg CI.](../maintenance/weekly-t32-process-project-status-weekly.md)
 * [ ] GitHub's SVGs in the README attempt to set cookies. This should not even be attempted.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html

@@ -20,7 +20,11 @@ as the results of this task would not be essential to the projects main goal.
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
         * [x] `net.splitcells.osi.repos.children` -> `net.splitcells.repos.children`
         * [ ] `net.splitcells.osi.repos.peers`
+            * [ ] Support old and new naming first.
+            * [ ] Remove old name usage.
         * [ ] `net.splitcells.osi.repos.hosts`
+            * [ ] Support old and new naming first.
+            * [ ] Remove old name usage.
     * [ ] Define different focus of git-repo-manager and repos process.
     * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
