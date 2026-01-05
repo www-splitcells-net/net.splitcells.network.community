@@ -13,8 +13,8 @@ this is an opportunity to consider this aspect.
 # Tasks
 * [ ] Make website more presentable.
     * [x] Check and fix links of both main READMEs. 
-    * [ ] The download of the program does not work on the static site.
-        * [ ] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
+    * [o] The download of the program does not work on the static site. -> In the future, there will be no application. See [weekly maintenance task](../maintenance/weekly-t32-process-project-status-weekly.md).
+        * [o] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
           for a subproject's file system.
           Extend the developer interface accordingly.
     * [x] The downloadable Linux program does not run.

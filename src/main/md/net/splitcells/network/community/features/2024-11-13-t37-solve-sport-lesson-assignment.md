@@ -40,6 +40,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Load test data for both examples.
         * [x] ColloquiumExample
         * [ ] SportCourseExample
+        * [ ] Remove main definition field button, as a button for the data menu is enough.
     * [ ] Load initial editor data like it is done for the example's menu.
         * [x] Remove ColloquiumPlanningSuppliesTestData.
         * [x] Remove ColloquiumPlanningDemandsTestData.
