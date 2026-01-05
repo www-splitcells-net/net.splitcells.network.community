@@ -93,13 +93,14 @@ This is needed for [the issue "Publish public website source code"](task-archive
                         * [x] Make cellBasedMain run.
                         * [x] Add all configs from main method to cellBasedMain as well.
                     * [x] LiveCryptoSetupCell
-                    * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro.
+                    * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro. Test this via https://localhost:8443/ and a certificate exception in the browser.
                         * [x] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [x] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
                         * [ ] Make LiveDistroCell work locally and only then deploy this to the live server.
                             * [x] `["`ProjectsRenderer#httpServer()` should not be used anymore. Use `Server#serveToHttpAt()` instead, because multi threading is not supported for `ProjectsRenderer#httpServer()`."]`
                             * [x] ACME challenge is executed in LiveDistroCell, even though a valid certificate is present.
-                            * [ ] Fix user authentication.
+                            * [x] Fix user authentication: https://localhost:8443/net/splitcells/website/server/projects/extension/user-profile-page-extension.html
+                            * [ ] Fix editor: https://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html
                         * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static methods inside cells for process configuration.
