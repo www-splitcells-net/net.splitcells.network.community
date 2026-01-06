@@ -102,8 +102,12 @@ This is needed for [the issue "Publish public website source code"](task-archive
                             * [x] Fix user authentication: https://localhost:8443/net/splitcells/website/server/projects/extension/user-profile-page-extension.html
                             * [ ] Fix editor: https://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html
                             * [ ] Make LiveDistro for live server work with the changes.
-                                * [ ] Move none GUI distro config at `net.splitcells.network.distro.java.DistroCell#config`
+                                * [x] Move none GUI distro config at `net.splitcells.network.distro.java.DistroCell#config`
                                   to pure distro config
+                                * [ ] Fix legacy live distro.
+                                    * [ ] Deploy and test legacy live distro fix.
+                                    * [ ] Fix code editor.
+                                * [ ] Test DevDistroCell.
                         * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
