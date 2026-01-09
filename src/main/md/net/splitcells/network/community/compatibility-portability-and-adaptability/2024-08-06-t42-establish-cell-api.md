@@ -96,18 +96,18 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro. Test this via https://localhost:8443/ and a certificate exception in the browser.
                         * [x] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [x] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
-                        * [ ] Make LiveDistroCell work locally and only then deploy this to the live server.
+                        * [x] Make LiveDistroCell work locally and only then deploy this to the live server.
                             * [x] `["`ProjectsRenderer#httpServer()` should not be used anymore. Use `Server#serveToHttpAt()` instead, because multi threading is not supported for `ProjectsRenderer#httpServer()`."]`
                             * [x] ACME challenge is executed in LiveDistroCell, even though a valid certificate is present.
                             * [x] Fix user authentication: https://localhost:8443/net/splitcells/website/server/projects/extension/user-profile-page-extension.html
-                            * [ ] Fix editor: https://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html
-                            * [ ] Make LiveDistro for live server work with the changes.
+                            * [x] Fix editor: https://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html
+                            * [x] Make LiveDistro for live server work with the changes.
                                 * [x] Move none GUI distro config at `net.splitcells.network.distro.java.DistroCell#config`
                                   to pure distro config
-                                * [ ] Fix legacy live distro.
-                                    * [ ] Deploy and test legacy live distro fix.
-                                    * [ ] Fix code editor.
-                                * [ ] Test DevDistroCell.
+                                * [x] Fix legacy live distro.
+                                    * [x] Deploy and test legacy live distro fix.
+                                    * [x] Fix code editor.
+                                * [x] Test DevDistroCell.
                         * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.

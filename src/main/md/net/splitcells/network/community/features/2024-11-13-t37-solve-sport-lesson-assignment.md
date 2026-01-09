@@ -12,43 +12,14 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Make sport lesson assignment an additional GUI editor example.
-    * [x] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
-        * [x] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
-            * [x] Place field buttons before example sub menu.
-            * [x] Create `*.csv` buttons via Javascript and not XSL.
-            * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
-        * [x] Add button for sport course example loading.
-            * [x] Transform linear vertical menu to a vertical tree menu.
-            * [x] Delete all fields.
-            * [x] Delete all field buttons.
-            * [x] Request example problem.
-            * [x] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
-            * [ ] Load example data.
-                * [x] Defining editor update messages.
-                    * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
-                      -> The new base table API is not required yet.
-                * [x] Providing examples via update messages. -> See ColloquiumExample.
-                    * [x] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
-                * [x] Implement this for colloquium example.
-                * [x] Implement this for sport course example.
-                * [x] Move EditorProcessor form update constants to FormUpdate of the website server.
-        * [x] Add button for colloquium planning example.
-        * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
-        * [x] Create sub menu for the problem fields.
-        * [x] Add additional button for the definition field at the top level of the menu.
-    * [ ] Load test data for both examples.
-        * [x] ColloquiumExample
-        * [ ] SportCourseExample
-        * [ ] Remove main definition field button, as a button for the data menu is enough.
-    * [ ] Load initial editor data like it is done for the example's menu.
-        * [x] Remove ColloquiumPlanningSuppliesTestData.
-        * [x] Remove ColloquiumPlanningDemandsTestData.
-    * [ ] Initialize all editor data fields. Currently, an initial `Calculate solution` is required for all fields to be visible in the GUI.
+* [ ] Create test data.
+* [ ] Check and correct the problem definition
+    * [ ] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
+        * [ ] Disallow hasMinimumSize with an argument < 2 in general.
+    * [ ] Create constraint for isSecondaryChoice. 
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
-* [ ] Create test data.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -88,7 +59,42 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Improve styling of news.
 * [ ] Consider making distinction between hard and soft constraints.
 * [ ] Add link to editor at `Introduction to the Generic Allocator`.
+* [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
+* [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 # Done Tasks
+* [x] Make sport lesson assignment an additional GUI editor example.
+    * [x] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
+        * [x] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
+            * [x] Place field buttons before example sub menu.
+            * [x] Create `*.csv` buttons via Javascript and not XSL.
+            * [x] Renaming the argument of `importCsvData('[...]')` breaks the editor at the backend.
+        * [x] Add button for sport course example loading.
+            * [x] Transform linear vertical menu to a vertical tree menu.
+            * [x] Delete all fields.
+            * [x] Delete all field buttons.
+            * [x] Request example problem.
+            * [x] Rename `net-splitcells-websiter-server-form-update` to `net-splitcells-website-server-form-update`.
+            * [x] Load example data.
+                * [x] Defining editor update messages.
+                    * [o] Create a new base table API for Dem, in order to provide a way to conveniently use data oriented programming.
+                      -> The new base table API is not required yet.
+                * [x] Providing examples via update messages. -> See ColloquiumExample.
+                    * [x] Create and use a form update domain object, in order to simplify code and make it more statically type safe. -> FormUpdate
+                * [x] Implement this for colloquium example.
+                * [x] Implement this for sport course example.
+                * [x] Move EditorProcessor form update constants to FormUpdate of the website server.
+        * [x] Add button for colloquium planning example.
+        * [x] Generate problem specific form fields via client side Javascript instead of XSL as well.
+        * [x] Create sub menu for the problem fields.
+        * [x] Add additional button for the definition field at the top level of the menu.
+    * [x] Load test data for both examples.
+        * [x] ColloquiumExample
+        * [x] SportCourseExample
+        * [x] Select CSV data fields, does not color these like the other buttons.
+    * [x] Load initial editor data like it is done for the example's menu.
+        * [x] Remove ColloquiumPlanningSuppliesTestData.
+        * [x] Remove ColloquiumPlanningDemandsTestData.
+    * [x] Initialize all editor data fields. Currently, an initial `Calculate solution` is required for all fields to be visible in the GUI.
 * [x] Create sport lesson assignment model.
     * [x] Create SportsCoursePlanningTest.
         * [x] Create not rater.

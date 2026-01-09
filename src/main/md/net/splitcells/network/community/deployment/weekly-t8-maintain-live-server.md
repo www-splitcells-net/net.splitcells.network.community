@@ -21,6 +21,7 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
+* [ ] Require authorization for `net/splitcells/website/layout/build.html`
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
