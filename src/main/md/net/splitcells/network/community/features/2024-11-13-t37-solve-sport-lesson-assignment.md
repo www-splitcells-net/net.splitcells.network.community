@@ -13,9 +13,11 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Establish modifier syntax.
-    * [ ] Extend grammar for simple modifiers.
-    * [ ] Use whitespace like in modifiers as an alternative for function call arguments of the innermost nested function call.
+    * [x] Extend grammar for simple modifiers.
+    * [x] In modifier chains avoid brackets for the innermost function call arguments.
     * [ ] Support this new syntax via the runners.
+        * [ ] Simple
+        * [ ] Bracketless arguments
     * [ ] Adjust examples to new modifier syntax.
     * [ ] Document new syntax in grammar doc.
 * [ ] Create test data.
