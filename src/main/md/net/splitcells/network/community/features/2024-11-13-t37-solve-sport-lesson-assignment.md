@@ -15,9 +15,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Establish modifier syntax.
     * [x] Extend grammar for simple modifiers.
     * [x] In modifier chains avoid brackets for the innermost function call arguments.
-    * [ ] Support this new syntax via the runners.
-        * [ ] Simple
-        * [ ] Bracketless arguments
+    * [x] Remove bracketless arguments and explain the removal.
+    * [ ] Support and test this new syntax via the runners.
+        * [ ] Test the grammar with the same example of https://live.splitcells.net/net/splitcells/gel/editor/geal/index.html
+          Inline the example in the document via a link to a resource and not via inlining the example in the document.
+          This way a grammar test can exactly test the same example.
+        * [x] Function call
+        * [ ] Integer
+        * [ ] String
     * [ ] Adjust examples to new modifier syntax.
     * [ ] Document new syntax in grammar doc.
 * [ ] Create test data.

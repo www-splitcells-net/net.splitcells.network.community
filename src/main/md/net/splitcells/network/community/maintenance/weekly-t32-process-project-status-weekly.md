@@ -17,6 +17,7 @@ This does not apply for statuses, that show progress.
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/Files.html
 * Execute static code checks.
 # Tasks.
+* [ ] Disable GitHub's CI as it is not needed anymore.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
