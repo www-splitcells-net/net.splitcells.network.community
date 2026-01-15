@@ -12,19 +12,6 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Establish modifier syntax.
-    * [x] Extend grammar for simple modifiers.
-    * [x] In modifier chains avoid brackets for the innermost function call arguments.
-    * [x] Remove bracketless arguments and explain the removal.
-    * [ ] Support and test this new syntax via the runners.
-        * [ ] Test the grammar with the same example of https://live.splitcells.net/net/splitcells/gel/editor/geal/index.html
-          Inline the example in the document via a link to a resource and not via inlining the example in the document.
-          This way a grammar test can exactly test the same example.
-        * [x] Function call
-        * [ ] Integer
-        * [ ] String
-    * [ ] Adjust examples to new modifier syntax.
-    * [ ] Document new syntax in grammar doc.
 * [ ] Create test data.
 * [ ] Check and correct the problem definition
     * [ ] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
@@ -75,6 +62,20 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 # Done Tasks
+* [x] Establish modifier syntax.
+    * [x] Extend grammar for simple modifiers.
+    * [x] In modifier chains avoid brackets for the innermost function call arguments.
+    * [x] Remove bracketless arguments and explain the removal.
+    * [x] Support and test this new syntax via the runners.
+        * [x] Test the grammar with the same example of https://live.splitcells.net/net/splitcells/gel/editor/geal/index.html
+          Inline the example in the document via a link to a resource and not via inlining the example in the document.
+          This way a grammar test can exactly test the same example.
+        * [x] Function call
+        * [x] Integer
+        * [x] String
+        * [x] Support bracketless arguments for modifier chains, if the last function call has exactly one argument.
+    * [x] Adjust examples to new modifier syntax.
+    * [x] Document new syntax in grammar doc.
 * [x] Make sport lesson assignment an additional GUI editor example.
     * [x] Make it easy to try out colloquium and sport planning example by creating an example select menu in the editor.
         * [x] Generate problem specific buttons only via client side Javascript code and do not use XSL anymore for that.
