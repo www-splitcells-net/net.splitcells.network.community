@@ -23,7 +23,7 @@ This does not apply for statuses, that show progress.
     * [ ] Use `net.splitcells.network.distro.java`.
     * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
     * [ ] Package `net.splitcells.network.distro.java` like the existing distro, as it avoids having to sign an executable on Windows.
-    * [ ] Do not provide distro build for desktop use for now, as there are currently no users.
+    * [x] Do not provide distro build for desktop use for now, as there are currently no users.
       Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
 * [ ] Disable GitHub's CI as it is not needed anymore.
 * [ ] Build complete static website and upload it to Hetzner via daily CI.
