@@ -22,6 +22,9 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 ## Open Tasks
 * [ ] Require authorization for `net/splitcells/website/layout/build.html`
+    * [x] Implement a new ProjectsRendererExtension for this. -> BuildExtension
+    * [ ] Register extension to ProjectsRenderer. -> Something is not working there.
+    * [ ] Delete the current implementation inside ProjectsRendererI.
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.

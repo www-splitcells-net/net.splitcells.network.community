@@ -64,6 +64,7 @@ We also need full accounting for it.
 * [ ] Add REUSE files to license pages.
 * [ ] Remove big license header from Java code as this only wastes resources.
 * [ ] Check and/or generate license NOTICE file, in order to ensure its correctness.
+* [ ] Ensure via Maven plugin, that all files have license info.
 # Done Tasks
 * [x] `test.everything` should verify license data as well. -> This is done via `repos.test.sh` instead.
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
