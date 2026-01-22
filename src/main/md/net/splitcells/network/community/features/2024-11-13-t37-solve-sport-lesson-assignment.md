@@ -13,6 +13,7 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Create test data.
+    * [ ] Create unit test for test data.
 * [ ] Check and correct the problem definition
     * [ ] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
         * [ ] Disallow hasMinimumSize with an argument < 2 in general.
