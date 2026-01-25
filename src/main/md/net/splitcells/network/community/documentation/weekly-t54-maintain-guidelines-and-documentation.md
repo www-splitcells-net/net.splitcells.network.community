@@ -59,6 +59,7 @@
     * [ ] The first implementations are so inefficient, that you don't see anything happening, when anything is executed! xD See Gel v2 & v3, the first lookup implementation and Cin
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 * [ ] Consider checking commits according to the guidlines via AI.
+* [ ] Place link for running the software in Hub Readme. The doc for running the software and not just building has to be created as well.
 # Done Tasks
 * [x] Correct the copyright text in `REUSE.toml` of the `net.splitcells.website.content.binaries` repo.
 * [x] Check the copyright text in `REUSE.toml` of all repos. -> I just checked the `net.spitcells.network` repo.

@@ -25,7 +25,6 @@ This does not apply for statuses, that show progress.
     * [ ] Package `net.splitcells.network.distro.java` like the existing distro, as it avoids having to sign an executable on Windows.
     * [x] Do not provide distro build for desktop use for now, as there are currently no users.
       Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
-* [ ] Disable GitHub's CI as it is not needed anymore.
 * [ ] Build complete static website and upload it to Hetzner via daily CI.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
@@ -55,6 +54,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Disable GitHub's CI as it is not needed anymore.
 * [o] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
   -> SWT has binding issues in Linux, which require a certain Linux setup to work for and is therefore not acceptable.
 * [x] Generate and Upload JavaDoc in daily CI. -> Generating JavaDoc is good enough for now, as there are no realistic JavaDoc consumers right now.

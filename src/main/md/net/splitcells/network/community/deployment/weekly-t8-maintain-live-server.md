@@ -21,10 +21,6 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Require authorization for `net/splitcells/website/layout/build.html`
-    * [x] Implement a new ProjectsRendererExtension for this. -> BuildExtension
-    * [ ] Register extension to ProjectsRenderer. -> Something is not working there.
-    * [ ] Delete the current implementation inside ProjectsRendererI.
 * [ ] Upgrade Debian.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
@@ -157,6 +153,10 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Require authorization for `net/splitcells/website/layout/build.html`
+    * [x] Implement a new ProjectsRendererExtension for this. -> BuildLayoutExtension is the new implementation.
+    * [x] Register extension to ProjectsRenderer. -> Something is not working there. -> This was just a misunderstanding.
+    * [x] Delete the current implementation inside ProjectsRendererI.
 * [x] Speed up `user.bin.configure`, in order to speed up redeployment.
     * [x] command.repositories.install is causing the problem.
         * [x] Provide argument so that `command.managed.install.py` does not install one file for each call, but a given folder completely instead.
