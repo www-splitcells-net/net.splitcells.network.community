@@ -13,11 +13,14 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Create test data.
-    * [ ] Create unit test for test data.
+    * [ ] studentChoicesCsv
+    * [ ] availableCoursesCsv
+    * [ ] availableHalfYearsCsv
+    * [ ] Create unit test for test data and really test the logic with minimal examples.
 * [ ] Check and correct the problem definition
     * [ ] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
         * [ ] Disallow hasMinimumSize with an argument < 2 in general.
-    * [ ] Create constraint for isSecondaryChoice. 
+    * [ ] Create constraint for isSecondaryChoice.
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
@@ -514,4 +517,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [o] Blog why the Cin project is now a low priority feature project.
 * [o] Complete the issue ["Create no-code gel editor"](../2024-05-31-create-no-code-gel-editor.md) first. -> The no-code editor is obsolete and deleted.
 # Future Ideas
+* [ ] Translate string columns to int columns, in tables, if the constraints are compatible to such a conversion.
+  Do this by creating the table as is and then building new tables, that are derived from these.
+  Solve the solution on the derived ones and write the solution afterwards into the original tables. 
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
