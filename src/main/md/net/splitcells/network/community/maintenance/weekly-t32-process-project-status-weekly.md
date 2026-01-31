@@ -21,8 +21,17 @@ This does not apply for statuses, that show progress.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
     * [ ] Use `net.splitcells.network.distro.java`.
+        * [ ] Build app like the JavaFX version.
+            * [ ] assembly folder
+            * [ ] bat folder
+            * [ ] pom.xml
+                * [ ] Copy dependencies.
+                * [ ] Download suitable Java versions.
+                * [ ] Apply assembly plugin.
+    * [ ] Remove `net.splitcells.network.distro.javafx`.
     * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
-    * [ ] Package `net.splitcells.network.distro.java` like the existing distro, as it avoids having to sign an executable on Windows.
+        * [ ] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
+        * [ ] Create task to create desktop app with [JCEF Maven and Conveyor](https://www.hydraulic.dev/).
     * [x] Do not provide distro build for desktop use for now, as there are currently no users.
       Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
 * [ ] Build complete static website and upload it to Hetzner via daily CI.
