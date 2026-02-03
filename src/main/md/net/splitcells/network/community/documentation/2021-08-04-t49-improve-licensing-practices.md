@@ -44,6 +44,9 @@ We also need full accounting for it.
                 * [x] REUSE parser does not correctly determine copyright and license data of a file.
                 * [x] After creating MetaData map write these to `target/classes`.
                 * [ ] Support `**` in the REUSE paths.
+                    * [x] Detect pattern.
+                    * [x] Check all project files for pattern.
+                    * [ ] Create one meta file per file match.
             * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
             * [ ] Process binary files with MetaData class.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.

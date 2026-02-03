@@ -1,8 +1,7 @@
 # Sigma Grind
 * [x] Move editor link on top of the live server's front menu.
     * [x] Every page now require authentication.
-* [ ] JavaLegacy -> Legacy
-* [ ] JavaArtifactLegacy -> Legacy
+* [x] Rename all JavaLegacy* annotations to JavaLegacy, in order to simplify legacy annotations.
 * [ ] Maintenance cycle
 * [ ] Contribute to Maven. 
 * [ ] Restart single torch protocol and add open source extension.
