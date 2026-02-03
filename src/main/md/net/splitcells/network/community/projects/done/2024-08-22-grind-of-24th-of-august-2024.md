@@ -1,5 +1,4 @@
-# Sigma Grind of 24th of August 2024
-> Time to break the mind into pieces as much as possible.
+# Grind of 24th of August 2024
 * Start Date: 2024-08-24
 * End Date: 2024-08-27
 # Possible Tasks to be Done

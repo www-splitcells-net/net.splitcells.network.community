@@ -20,7 +20,7 @@ this is an opportunity to consider this aspect.
     * [x] The downloadable Linux program does not run.
     * [x] Remove the downloadable Windows program, as it is not tested regularly.
       Maybe just deactivate the link and add an appropriate note.
-    * [ ] Better style news and notifications.
+    * [x] Better style news and notifications.
     * [ ] Fix news and notifications links, as some link text do not correspond to the linked content.
 * [ ] JavaScript is not working on iPhone and Safari.
 * [ ] In some documents there are empty lists. Is this correct?

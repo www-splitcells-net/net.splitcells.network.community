@@ -1,4 +1,4 @@
-# Sigma Grind starting from March 4th to March 16th
+# Grind starting from March 4th to March 16th
 * Start Date: 2024-08-22
 * End Date: 2025-06-03
 # Task Description

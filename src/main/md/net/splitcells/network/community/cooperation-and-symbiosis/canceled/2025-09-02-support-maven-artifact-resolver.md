@@ -11,7 +11,9 @@ therefore the focus is on the community and code reviews.
 # Service Tasks
 
 * Review pull requests: https://github.com/apache/maven-resolver/pulls
-
+# Acceptance Note
+This task is canceled for now, as supporting/contributing to an external project regarding errors,
+that do not happen locally as well takes too much time.
 # Tasks
 * [ ] A smallish implementation task: https://github.com/apache/maven-resolver/issues/1521
     * [x] Create one minimal pull request as a test: https://github.com/apache/maven-resolver/pull/1686
