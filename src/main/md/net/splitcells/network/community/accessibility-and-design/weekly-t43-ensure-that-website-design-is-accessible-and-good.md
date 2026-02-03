@@ -22,6 +22,7 @@ this is an opportunity to consider this aspect.
       Maybe just deactivate the link and add an appropriate note.
     * [ ] Better style news and notifications.
     * [ ] Fix news and notifications links, as some link text do not correspond to the linked content.
+* [ ] JavaScript is not working on iPhone and Safari.
 * [ ] In some documents there are empty lists. Is this correct?
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
