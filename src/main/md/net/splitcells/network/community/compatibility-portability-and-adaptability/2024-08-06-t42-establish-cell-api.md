@@ -111,6 +111,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [ ] Simplify `net.splitcells.martins.avots.distro.*`.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
+                This will clean up all existing cells.
                   * [ ] `net.splitcells.network.system.SystemCell`
                   * [ ] `net.splitcells.network.distro.DistroCell.`
                   * [ ] `net.splitcells.network.distro.java.DistroCell`
