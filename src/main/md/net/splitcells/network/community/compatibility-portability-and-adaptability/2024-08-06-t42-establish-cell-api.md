@@ -93,7 +93,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                         * [x] Make cellBasedMain run.
                         * [x] Add all configs from main method to cellBasedMain as well.
                     * [x] LiveCryptoSetupCell
-                    * [ ] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro. Test this via https://localhost:8443/ and a certificate exception in the browser.
+                    * [x] `net.splitcells.martins.avots.distro.LiveDistroCell` and LiveDistro. Test this via https://localhost:8443/ and a certificate exception in the browser.
                         * [x] Create dedicated Cell to initialize crypto named LiveCryptoSetupCell
                         * [x] The new method first executes LiveCryptoSetupCell and then serves LiveDistroCell.
                         * [x] Make LiveDistroCell work locally and only then deploy this to the live server.
@@ -108,7 +108,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                                     * [x] Deploy and test legacy live distro fix.
                                     * [x] Fix code editor.
                                 * [x] Test DevDistroCell.
-                        * [ ] Move LiveCryptoSetupCell into the Network Distro project, so it works in general.
+                    * [ ] Simplify `net.splitcells.martins.avots.distro.*`.
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                   * [ ] `net.splitcells.network.system.SystemCell`

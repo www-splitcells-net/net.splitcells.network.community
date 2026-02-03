@@ -55,8 +55,11 @@ Some tests are executed on servers in order to ensure, that the software works o
           -> `net.splitcells.network.worker.via.java.Tester` is used instead.
             * [ ] Note reasoning. This is done, as the surefire plugin cannot set the TestExecutionListener.
               The only alternative is using Java's ServiceLoader, that gets very in multiproject module
-            * [ ] Make `net.splitcells.network.worker.via.java.Tester` work.
-                * [ ] What tests should be executed?
+            * [x] Make `net.splitcells.network.worker.via.java.Tester` work via `cd projects/net.splitcells.network.system` and `mvn exec:java -Dexec.mainClass=net.splitcells.network.worker.via.java.Tester "-Dexec.args=$(hostname)"`.
+            * [x] What tests should be executed? -> Just do unit tests for now.
+            * [ ] Add this test command to `repos.test.sh`.
+            * [ ] Write results to network log repo.
+            * [ ] Log failed test runs at `net/splitcells/network/logger/builder/failed`.
     * [ ] Create log of skipped execution in local network log, caused by not reachable servers.
     * [ ] Create and commit runtime results to network log.
 * [ ] Deploy UI test in daily CI.

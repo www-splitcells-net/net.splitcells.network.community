@@ -19,14 +19,15 @@ as the results of this task would not be essential to the projects main goal.
         * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
     * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
         * [x] `net.splitcells.osi.repos.children` -> `net.splitcells.repos.children`
-        * [ ] `net.splitcells.osi.repos.peers`
-            * [ ] Support old and new naming first.
-            * [ ] Remove old name usage.
-        * [ ] `net.splitcells.osi.repos.hosts`
-            * [ ] Support old and new naming first.
-            * [ ] Remove old name usage.
-    * [ ] Define different focus of git-repo-manager and repos process.
+        * [x] `net.splitcells.osi.repos.peers` -> `net.splitcells.shell.repos.peers`
+            * [x] Support old and new naming first.
+            * [x] Remove old name usage.
+        * [x] `net.splitcells.osi.repos.hosts`
+            * [x] Support old and new naming first.
+            * [x] Remove old name usage.
+    * [x] Define different focus of git-repo-manager and repos process. -> That is already present.
     * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
+        * [ ] The shell's README is not rendered correctly: https://splitcells.net/net/splitcells/shell/README.html
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
 * [x] Source: https://github.com/hakoerber/git-repo-manager
 * [x] Build and test GRM: Create setup instructions for Ubuntu:
