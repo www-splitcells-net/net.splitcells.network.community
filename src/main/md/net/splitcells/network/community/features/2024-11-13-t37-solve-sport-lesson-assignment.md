@@ -12,6 +12,7 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] Double check test data by hand.
 * [ ] Visualize constraint graph, in order to double-check the problem definition by hand.
   This makes it also easier for users to find problems in their optimization definition.
     * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
