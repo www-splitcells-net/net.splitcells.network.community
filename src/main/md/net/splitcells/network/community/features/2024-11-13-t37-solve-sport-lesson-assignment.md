@@ -12,15 +12,15 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Create test data.
-    * [ ] studentChoicesCsv
-    * [ ] availableCoursesCsv
-    * [ ] availableHalfYearsCsv
-    * [ ] Create unit test for test data and really test the logic with minimal examples.
-* [ ] Check and correct the problem definition
-    * [ ] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
-        * [ ] Disallow hasMinimumSize with an argument < 2 in general.
-    * [ ] Create constraint for isSecondaryChoice.
+* [ ] Visualize constraint graph, in order to double-check the problem definition by hand.
+  This makes it also easier for users to find problems in their optimization definition.
+    * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
+    * [ ] Make the constraint graph nice and easier to read. This method can be adjusted as wanted, as the exact format was never important.
+        * [ ] Make it more compact via an argument for `Tree#toCommonMarkString`.
+        * [ ] Argumentation -> Arguments
+    * [ ] Try out to render this as a normal nested HTML list.
+        * [ ] Support HTML form fields.
+        * [ ] Use HTML form field for the constraint graph.
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
@@ -66,6 +66,16 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 # Done Tasks
+* [x] Check and correct the problem definition
+    * [x] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
+    * [x] Disallow hasMinimumSize with an argument < 2 in general.
+    * [x] `equals` is not used correctly. -> A new equals function was defined, that checks the equality of 2 column values.
+    * [x] Create constraint for isSecondaryChoice.
+* [x] Create test data.
+    * [x] studentChoicesCsv
+    * [x] availableCoursesCsv
+    * [x] availableHalfYearsCsv
+    * [x] Create unit test for test data and really test the logic with minimal examples.
 * [x] Establish modifier syntax.
     * [x] Extend grammar for simple modifiers.
     * [x] In modifier chains avoid brackets for the innermost function call arguments.
