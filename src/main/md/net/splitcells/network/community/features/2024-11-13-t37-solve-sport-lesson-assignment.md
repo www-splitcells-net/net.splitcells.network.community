@@ -12,8 +12,6 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Double check test data by hand.
-    * [ ] Use generated names for students instead of numbers, as to make the example more real world likish by styling.
 * [ ] Visualize constraint graph, in order to double-check the problem definition by hand.
   This makes it also easier for users to find problems in their optimization definition.
     * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
@@ -69,6 +67,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 * [ ] Consider nesting main editor menu for fields with the same prefix like solution.
 # Done Tasks
+* [x] Double check test data by hand.
+    * [x] Use generated names for students instead of numbers, as to make the example more real world likish by styling.
 * [x] Check and correct the problem definition
     * [x] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
     * [x] Disallow hasMinimumSize with an argument < 2 in general.
