@@ -13,6 +13,7 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Double check test data by hand.
+    * [ ] Use generated names for students instead of numbers, as to make the example more real world likish by styling.
 * [ ] Visualize constraint graph, in order to double-check the problem definition by hand.
   This makes it also easier for users to find problems in their optimization definition.
     * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
@@ -41,7 +42,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Remove Sep code.
 * [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
   If mobile support becomes required, then an additional no-code editor might be worth it.
-    * [ ] It seems, that codemirror 6 has better mobile view.
+    * [ ] It seems, that Codemirror 6 has better mobile view.
     * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
       where a program also represents a GUI for interacting with the world.
 * [ ] Note that initial no-code editor was a feature creep.
@@ -66,6 +67,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add link to editor at `Introduction to the Generic Allocator`.
 * [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
+* [ ] Consider nesting main editor menu for fields with the same prefix like solution.
 # Done Tasks
 * [x] Check and correct the problem definition
     * [x] `. then(hasMinimumSize(1))` is not correct, as it can never be triggered by definition.
