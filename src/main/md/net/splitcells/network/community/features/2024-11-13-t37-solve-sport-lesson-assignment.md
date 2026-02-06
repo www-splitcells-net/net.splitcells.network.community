@@ -12,6 +12,23 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] Visualize constraint graph, in order to double-check the problem definition by hand.
+  This makes it also easier for users to find problems in their optimization definition.
+    * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
+    * [x] Make the constraint graph nice and easier to read. This method can be adjusted as wanted, as the exact format was never important.
+        * [x] Make it more compact via the new tree transformation method toCompactTree. Use toCommonMarkString on the transformed tree.
+            * [x] The equals method has to be implemented for trees.
+            * [x] Long paths trigger blockquotes at toCommonMarkString.
+              That make it harder to see the overhaul structure of the tree.
+              Make a config for this, so that in this case blockquotes are not triggered.
+        * [x] Argumentation -> Arguments
+    * [o] Try out to render this as a normal nested HTML list. -> There is no real advantage of an HTML based rendering vs a text based one yet.
+        * [o] Support HTML form fields.
+        * [o] Use HTML form field for the constraint graph.
+    * [ ] Provide sensible strings for Java objects in this tree.
+        * [ ] `net.splitcells.gel.rating.rater.lib.RaterBasedOnLineValue$$Lambda/0x00007bc8302b3060@61b2de7c`
+        * [ ] `net.splitcells.gel.rating.rater.lib.MinimalDistance$$Lambda/0x00007bc8302d7928@7ddcbb36`
+        * [ ] `net.splitcells.dem.data.order.Comparators$1@37e1b616`
 * [ ] Support complex problems with the default optimization.
     * [ ] Move default optimization to the editor itself.
     * [ ] Extend default optimization method.
@@ -58,19 +75,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 * [ ] Consider nesting main editor menu for fields with the same prefix like solution.
 # Done Tasks
-* [x] Visualize constraint graph, in order to double-check the problem definition by hand.
-  This makes it also easier for users to find problems in their optimization definition.
-    * [x] Try out `Constraint#graph()`. -> The result is too technical and the overview is bad.
-    * [x] Make the constraint graph nice and easier to read. This method can be adjusted as wanted, as the exact format was never important.
-        * [x] Make it more compact via the new tree transformation method toCompactTree. Use toCommonMarkString on the transformed tree.
-            * [x] The equals method has to be implemented for trees.
-            * [x] Long paths trigger blockquotes at toCommonMarkString.
-              That make it harder to see the overhaul structure of the tree.
-              Make a config for this, so that in this case blockquotes are not triggered.
-        * [x] Argumentation -> Arguments
-    * [o] Try out to render this as a normal nested HTML list. -> There is no real advantage of an HTML based rendering vs a text based one yet.
-        * [o] Support HTML form fields.
-        * [o] Use HTML form field for the constraint graph.
 * [x] Double check test data by hand.
     * [x] Use generated names for students instead of numbers, as to make the example more real world likish by styling.
 * [x] Check and correct the problem definition
