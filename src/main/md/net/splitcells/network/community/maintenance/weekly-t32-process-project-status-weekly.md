@@ -22,12 +22,12 @@ This does not apply for statuses, that show progress.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
     * [ ] Use `net.splitcells.network.distro.java`.
         * [ ] Build app like the JavaFX version.
-            * [ ] assembly folder
-            * [ ] bat folder
             * [ ] pom.xml
-                * [ ] Copy dependencies.
+                * [x] Copy dependencies.
                 * [ ] Download suitable Java versions.
                 * [ ] Apply assembly plugin.
+            * [ ] assembly folder
+            * [ ] bat folder
     * [ ] Remove `net.splitcells.network.distro.javafx`.
     * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
         * [ ] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
