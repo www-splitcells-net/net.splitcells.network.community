@@ -1,5 +1,6 @@
 # Establish Cell API
 * Issue number: [\#42](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/42)
+* Start Date: 2024-08-06
 # Task Description
 Only the `net.splitcells.dem.environment.Cell` API should be used,
 in order to manage and combine `Dem#process` and `Dem#serve` configurations.
@@ -109,6 +110,11 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                                     * [x] Fix code editor.
                                 * [x] Test DevDistroCell.
                     * [ ] Simplify `net.splitcells.martins.avots.distro.*`.
+                        * [x] LiveCryptoSetupCell
+                        * [ ] DistroCell
+                            * [ ] Avoid config method, as such does not seem to be really required. Move their content to the Cell's accept method.
+                        * [ ] LiveDistroCell
+                        * [ ] DevDistroCell
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                 This will clean up all existing cells.

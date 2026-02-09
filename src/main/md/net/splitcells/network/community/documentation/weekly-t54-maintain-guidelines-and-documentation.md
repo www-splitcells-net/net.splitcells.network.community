@@ -17,9 +17,10 @@
 * Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Tasks
 * [ ] Make News more practible.
+    * [x] Show community blog entries as such and not as project proposals.
+    * [ ] Render weekly projects as such and not as project proposals.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
-    * [x] Show community blog entries as such and not as project proposals.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Check validity of all XML files.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
