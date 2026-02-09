@@ -2,4 +2,4 @@
 
 * [ ] Maintenance cycle.
 * [ ] Get all cluster tests running and the results pushed to the network log.
-* [x] Work on [sport lesson assignment](../../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
+* [ ] Work on [sport lesson assignment](../../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
