@@ -24,8 +24,9 @@ This does not apply for statuses, that show progress.
         * [ ] Build app like the JavaFX version.
             * [ ] pom.xml
                 * [x] Copy dependencies.
-                * [ ] Download suitable Java versions.
+                * [x] Download suitable Java versions.
                 * [ ] Apply assembly plugin.
+                * [ ] Add main class launcher via src/main/bash and bat.
             * [ ] assembly folder
             * [ ] bat folder
     * [ ] Remove `net.splitcells.network.distro.javafx`.

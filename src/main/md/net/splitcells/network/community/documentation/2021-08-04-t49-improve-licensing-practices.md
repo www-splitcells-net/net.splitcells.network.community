@@ -27,13 +27,13 @@ We also need full accounting for it.
         * [x] Add license overview page to menu.
     * [ ] List license of every page centrally.
         * [x] Create empty page for listing all files. -> ResourceLicensingExtension
-        * [ ] `net.splitcells.maven.plugin.resource.list` has also to create and bundle a directory containing the metadata into the jar.
+        * [x] `net.splitcells.maven.plugin.resource.list` has also to create and bundle a directory containing the metadata into the jar.
           The directory contains a file tree, where any file corresponds to a resource managed by the resource list.
           The file format is a UTF-8 encoded property file.
             * [x] Create meta data files.
             * [x] Read license metadata in the file headers.
             * [x] Read copyright text metadata in the file headers.
-            * [ ] Read `REUSE.toml` for list files without license metadata.
+            * [x] Read `REUSE.toml` for list files without license metadata.
                 * [x] Double check results in jars by hand.
                 * [x] Correctly, filter paths of parent `REUSE.toml`, that are not part of the current project.
                 * [x] Parse actual license data for each path `REUSE.toml`.
@@ -46,9 +46,10 @@ We also need full accounting for it.
                 * [ ] Support `**` in the REUSE paths.
                     * [x] Detect pattern.
                     * [x] Check all project files for pattern.
-                    * [ ] Create one meta file per file match.
-            * [ ] Merge results of `REUSE.toml` parsing and individual file parsing.
-            * [ ] Process binary files with MetaData class.
+                    * [x] Create one meta file per file match.
+            * [x] Merge results of `REUSE.toml` parsing and individual file parsing.
+            * [x] Process binary files with MetaData class. -> This is only supported via `**` matching in `REUSE.toml`.
+              Currently, there is no supported meta data inside binary files and `REUSE.toml` is required by the REUSE tool.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every file.
             * [ ] Only provide access to metadata, to which the user has access to.
