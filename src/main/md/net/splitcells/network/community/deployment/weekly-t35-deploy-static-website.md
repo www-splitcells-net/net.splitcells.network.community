@@ -18,6 +18,7 @@
     * [ ] Support pages requiring a login.
 * [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
   First [Publish public website source code](../compatibility-portability-and-adaptability/9999-2021-03-21-publish-public-website-source-code.md) has to be done.
+    * [ ] Enable Javadoc rendering. It was disabled, as it takes a lot of time on the local computer.
 # Done Tasks
 * [x] Remove telephone number from Impressum and replace it with Matrix chat room.
     * [x] Create Matrix chat.
