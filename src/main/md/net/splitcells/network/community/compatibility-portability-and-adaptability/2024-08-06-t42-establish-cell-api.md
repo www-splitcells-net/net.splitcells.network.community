@@ -13,7 +13,7 @@ At the end, this avoids creating complex configurations by chaining multiple con
 Lately, this has proven to be not working and
 created severe configuration costs.
 
-This is needed for [the issue "Publish public website source code"](task-archive/9999-2021-03-21-publish-public-website-source-code.md).
+This is needed for [the issue "Publish public website source code"](9999-2021-03-21-publish-public-website-source-code.md).
 # Tasks
 * [ ] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/task-archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
     * [o] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data. -> The service option CinSerive was used instead.
@@ -77,7 +77,7 @@ This is needed for [the issue "Publish public website source code"](task-archive
                     * [x] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
                     * [x] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
-                    * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](task-archive/9999-2021-03-21-publish-public-website-source-code.md) project.
+                    * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](9999-2021-03-21-publish-public-website-source-code.md) project.
                     * [x] GelEnv
                     * [x] GelDev
                     * [X] `net.splitcells.martins.avots.distro.DevDistroCell` -> `net.splitcells.martins.avots.distro.DevDistroCell`

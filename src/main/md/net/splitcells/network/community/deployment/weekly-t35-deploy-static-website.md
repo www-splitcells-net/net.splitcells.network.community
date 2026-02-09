@@ -7,7 +7,6 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] [Deploy static website via daily Codeberg CI.](../maintenance/weekly-t32-process-project-status-weekly.md)
 * [ ] GitHub's SVGs in the README attempt to set cookies. This should not even be attempted.
 * [ ] Do not allow static website deployment with invalid links.
 * [ ] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
@@ -17,6 +16,8 @@
 * [ ] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
     * [ ] Support pages requiring a login.
+* [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
+  First [Publish public website source code](../compatibility-portability-and-adaptability/9999-2021-03-21-publish-public-website-source-code.md) has to be done.
 # Done Tasks
 * [x] Remove telephone number from Impressum and replace it with Matrix chat room.
     * [x] Create Matrix chat.

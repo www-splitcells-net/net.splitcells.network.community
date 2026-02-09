@@ -16,17 +16,10 @@
     * Consider mobile vs desktop view.
 * Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Tasks
-* [ ] Do not show project proposals in news, as this just clutters things too much for none technical users.
-    * [ ] Project proposal parsing was removed completely, because it was horribly wrong.
-      Even blog articles have a project proposal entry.
-      Readd project proposal parsing.
-    * [ ] Make nicer project proposal prefix.
-    * [ ] Make nicer project start prefix.
-    * [ ] Make nicer project end prefix.
 * [ ] Make News more practible.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
-    * [ ] Show community blog entries.
+    * [x] Show community blog entries as such and not as project proposals.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Check validity of all XML files.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
@@ -61,6 +54,13 @@
 * [ ] Consider checking commits according to the guidlines via AI.
 * [ ] Place link for running the software in Hub Readme. The doc for running the software and not just building has to be created as well.
 # Done Tasks
+* [o] Do not show project proposals in news, as this just clutters things too much for none technical users.
+  * [o] Project proposal parsing was removed completely, because it was horribly wrong.
+    Even blog articles have a project proposal entry.
+    Readd project proposal parsing.
+  * [x] Make nicer project proposal prefix.
+  * [x] Make nicer project start prefix.
+  * [x] Make nicer project end prefix.
 * [x] Correct the copyright text in `REUSE.toml` of the `net.splitcells.website.content.binaries` repo.
 * [x] Check the copyright text in `REUSE.toml` of all repos. -> I just checked the `net.spitcells.network` repo.
 * [x] Consolidate https://splitcells.net/net/splitcells/gel/history/index.html into https://splitcells.net/net/splitcells/network/history/index.html.

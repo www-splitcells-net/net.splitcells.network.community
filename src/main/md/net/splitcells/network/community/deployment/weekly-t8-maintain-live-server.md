@@ -21,7 +21,7 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 ## Open Tasks
-* [ ] Upgrade Debian.
+* [ ] Check acme4j error on service restart.
 * [ ] Create dedicated logging services.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
@@ -153,6 +153,7 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Upgrade Debian.
 * [x] Require authorization for `net/splitcells/website/layout/build.html`
     * [x] Implement a new ProjectsRendererExtension for this. -> BuildLayoutExtension is the new implementation.
     * [x] Register extension to ProjectsRenderer. -> Something is not working there. -> This was just a misunderstanding.
