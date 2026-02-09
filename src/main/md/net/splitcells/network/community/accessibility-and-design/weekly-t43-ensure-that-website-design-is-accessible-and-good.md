@@ -11,17 +11,6 @@ this is an opportunity to consider this aspect.
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
-* [ ] Make website more presentable.
-    * [x] Check and fix links of both main READMEs. 
-    * [o] The download of the program does not work on the static site. -> In the future, there will be no application. See [weekly maintenance task](../maintenance/weekly-t32-process-project-status-weekly.md).
-        * [o] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
-          for a subproject's file system.
-          Extend the developer interface accordingly.
-    * [x] The downloadable Linux program does not run.
-    * [x] Remove the downloadable Windows program, as it is not tested regularly.
-      Maybe just deactivate the link and add an appropriate note.
-    * [x] Better style news and notifications.
-    * [ ] Fix news and notifications links, as some link text do not correspond to the linked content.
 * [ ] JavaScript is not working on iPhone and Safari.
 * [ ] In some documents there are empty lists. Is this correct?
 * [ ] Lists in texts does not look good compared to lists in the meta column.
@@ -42,6 +31,18 @@ this is an opportunity to consider this aspect.
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
 # Completed Tasks
+* [x] Make website more presentable.
+  * [x] Check and fix links of both main READMEs.
+  * [o] The download of the program does not work on the static site. -> In the future, there will be no application. See [weekly maintenance task](../maintenance/weekly-t32-process-project-status-weekly.md).
+    * [o] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
+      for a subproject's file system.
+      Extend the developer interface accordingly.
+  * [x] The downloadable Linux program does not run.
+  * [x] Remove the downloadable Windows program, as it is not tested regularly.
+    Maybe just deactivate the link and add an appropriate note.
+  * [x] Better style news and notifications.
+  * [o] Fix news and notifications links, as some link text do not correspond to the linked content.
+    -> This error could not be recreated on the local machine, the live server or the static server.
 * [x] Fix title of README on server: https://live.splitcells.net/net/splitcells/network/hub/README.html
 * [x] Use darker red with a serif font for error messages. See error for missing Javascript.
 * [x] Check static website with an analyzer: https://pagelocity.com/analyzer?url=https%3A%2F%2Fsplitcells.net%2Fnet%2Fsplitcells%2Fwebsite%2Fserver%2Ffront-menu.html

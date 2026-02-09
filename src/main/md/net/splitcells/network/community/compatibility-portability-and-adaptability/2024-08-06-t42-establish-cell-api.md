@@ -113,6 +113,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                         * [x] LiveCryptoSetupCell
                         * [ ] DistroCell
                             * [ ] Avoid config method, as such does not seem to be really required. Move their content to the Cell's accept method.
+                            * [ ] Cells should call other cell's optional methods not by creating these, but retrieving these from the current config.
                         * [ ] LiveDistroCell
                         * [ ] DevDistroCell
                     * [ ] `net.splitcells.martins.avots.website`
