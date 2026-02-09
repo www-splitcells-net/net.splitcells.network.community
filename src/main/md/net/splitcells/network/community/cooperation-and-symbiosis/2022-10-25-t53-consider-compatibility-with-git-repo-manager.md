@@ -28,6 +28,10 @@ as the results of this task would not be essential to the projects main goal.
     * [x] Define different focus of git-repo-manager and repos process. -> That is already present.
     * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
         * [ ] The shell's README is not rendered correctly: https://splitcells.net/net/splitcells/shell/README.html
+            * [x] Provide top level MDs like the README as a normal resource under `src/main/md/[artifact id + groupid]/*`
+              This way a dedicated extension for READMEs is not required.
+            * [ ] Fix top level file rendering, when the local file system is used via DevCellDistro.
+            * [ ] Remove dedicated extensions for all top level files
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
 * [x] Source: https://github.com/hakoerber/git-repo-manager
 * [x] Build and test GRM: Create setup instructions for Ubuntu:
