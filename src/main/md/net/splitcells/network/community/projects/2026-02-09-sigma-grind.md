@@ -5,9 +5,11 @@
     * [x] Test Live Server.
     * [x] Test Raspberry PI.
     * [ ] Test RISC-V server.
-* [ ] Support repo synchronization with on command.
+* [x] Support repo synchronization with on command.
   Currently, 2 commands `net.splitcells.network.bom.repo.pull` and `repo.push.at.all` are required,
   as dependencies can be updated.
+  -> `repos.synchronize` does the job. For easier use it was simplified, so the command assumes, that nothing is left for commit.
+  Thereby unintended commits with bad generic messages are avoided.
 * [ ] Start `repos.process.2`, which does its execution by generating shell scripts.
   This makes tests easier in the future.
   Define environment variable for `repos.process`, in order to delicate the calls to it to the new `repos.process.2`.
