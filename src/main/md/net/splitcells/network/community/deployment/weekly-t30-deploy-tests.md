@@ -50,6 +50,8 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [o] Delete `--test-remote` from `worker.execute.py`, as it is too specific. -> We have already flags like --boostrap-remote and these make sense.
     * [x] Create test command, that execute tests on all reachable servers and notifies the user about unreachable servers.
       -> Place it at the core network repo at `bin/cluster.deploy.test.sh`.
+    * [x] Currently, nothing is written into the network log.
+    * [x] Use host's hostname inside container and not the Podman's default hostname.
     * [ ] Create log of failed executions in network log.
         * [ ] Create a dedicated test function at `net.splitcells.dem.testing.Test` and run this with an additional Maven command.
           -> `net.splitcells.network.worker.via.java.Tester` is used instead.
@@ -57,11 +59,11 @@ Some tests are executed on servers in order to ensure, that the software works o
               The only alternative is using Java's ServiceLoader, that gets very in multiproject module
             * [x] Make `net.splitcells.network.worker.via.java.Tester` work via `cd projects/net.splitcells.network.system` and `mvn exec:java -Dexec.mainClass=net.splitcells.network.worker.via.java.Tester "-Dexec.args=$(hostname)"`.
             * [x] What tests should be executed? -> Just do unit tests for now.
-            * [ ] Add this test command to `repos.test.sh`.
-            * [ ] Write results to network log repo.
+            * [x] Add this test command to `repos.test.sh`.
+            * [x] Write results to network log repo.
             * [ ] Log failed test runs at `net/splitcells/network/logger/builder/failed`.
     * [ ] Create log of skipped execution in local network log, caused by not reachable servers.
-    * [ ] Create and commit runtime results to network log.
+    * [x] Create and commit runtime results to network log. 
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.

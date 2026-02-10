@@ -14,7 +14,7 @@ This does not apply for statuses, that show progress.
 * Process status badges.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/Files.html
+    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
 * Execute static code checks.
 # Tasks.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
@@ -35,6 +35,7 @@ This does not apply for statuses, that show progress.
         * [ ] Create task to create desktop app with [JCEF Maven and Conveyor](https://www.hydraulic.dev/).
     * [x] Do not provide distro build for desktop use for now, as there are currently no users.
       Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
+* [ ] Try to make `net.splitcells.network.distro.swt` work and consider it an alternative to the current app.
 * [ ] Build complete static website and upload it to Hetzner via daily CI.
 * [ ] Record and upload test runtime performance via network log repo.
 * [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.

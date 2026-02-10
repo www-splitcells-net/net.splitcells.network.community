@@ -1,6 +1,10 @@
 # Sigma Grind of 2026.02.09
-* [ ] Maintenance cycle.
+* [x] Maintenance cycle.
 * [ ] Get all cluster tests running and the results pushed to the network log.
+    * [ ] Fix RISC-V server.
+    * [x] Test Live Server.
+    * [x] Test Raspberry PI.
+    * [ ] Test RISC-V server.
 * [ ] Support repo synchronization with on command.
   Currently, 2 commands `net.splitcells.network.bom.repo.pull` and `repo.push.at.all` are required,
   as dependencies can be updated.
