@@ -10,5 +10,8 @@ This also makes the process more debuggable.
 * [x] Implement current processing.
 * [x] Implement children processing.
 * [x] Implement peer processing.
-* [ ] Implement recursion.
+* [x] Implement recursion.
+* [x] Implement missing repo processing.
+* [ ] Implement unknown repo processing.
 * [ ] Implement optional parallelism.
+* [ ] Pass repos process calls to new implementation via environment variable.
