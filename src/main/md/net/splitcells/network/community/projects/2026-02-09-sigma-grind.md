@@ -10,8 +10,8 @@
   as dependencies can be updated.
   -> `repos.synchronize` does the job. For easier use it was simplified, so the command assumes, that nothing is left for commit.
   Thereby unintended commits with bad generic messages are avoided.
-* [ ] Start `repos.process.2`, which does its execution by generating shell scripts.
+* [ ] Start `repos.process.v2`, which does its execution by generating shell scripts.
   This makes tests easier in the future.
-  Define environment variable for `repos.process`, in order to delicate the calls to it to the new `repos.process.2`.
+  Define environment variable for `repos.process`, in order to delicate the calls to it to the new `repos.process.v2`.
   When everything is ready the old implementation is replaced by the new one.
 * [ ] Work on [sport lesson assignment](../../features/2024-11-13-t37-solve-sport-lesson-assignment.md).
