@@ -10,7 +10,6 @@ Some tests are executed on servers in order to ensure, that the software works o
     * `net.splitcells.martins.avots.riscv.login`
     * `net.splitcells.martins.avots.raspberry.v2.login`
 # Tasks
-* [ ] Get RISC-V server working again.
 * [ ] Create command, in order to deploy tests on every test server.
     * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
@@ -125,6 +124,9 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [ ] Maven repo binaries.
     * [ ] Do not keep its history. Only use 1 commit for this repo.
 # Done Tasks
+* [o] Get RISC-V server working again.
+  -> I cannot get an installation via newly flashed SD cards working.
+  In the past this worked without issues and was quick.
 * [x] Warning in logs: `Corrupted STDOUT by directly writing to native stream in forked JVM 1. See FAQ web page and the dump file /home/splitcells/Documents/projects/net.splitcells.martins.avots.support.system/public/net.splitcells.network/projects/net.splitcells.gel.ui/target/surefire-reports/2025-01-19T21-43-07_716-jvmRun1.dumpstream`
   -> This is caused by Playwright, which can be seen in the dumpstream. It causes performance problems, but nothing can be done, except for updating playwright to a more stable version.
 * [x] Fix RISCV test server.
