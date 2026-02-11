@@ -28,3 +28,4 @@ This also makes the process more debuggable.
 * [x] Format multi line string example, to not mix up code indentation.
 * [x] Log each processed repo in generated script.
 * [x] Test high nesting level like on developer computer.
+* [x] Make repos.push.at.all work.
