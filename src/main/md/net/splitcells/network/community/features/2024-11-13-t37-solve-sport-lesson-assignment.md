@@ -16,7 +16,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
     * [ ] Implement DefaultEditorOptimization.
-        * [ ] Draft version running version.
+        * [x] Draft version running version.
         * [ ] Solve problem with DefaultEditorOptimization.
             * [ ] Validate solutions by hand.
 * [ ] Solve sport lesson assignment.
