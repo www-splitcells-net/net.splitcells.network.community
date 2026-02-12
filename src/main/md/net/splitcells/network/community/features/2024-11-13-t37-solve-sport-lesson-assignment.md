@@ -15,6 +15,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
+    * [ ] When executing `Calculate solution`, clear the error input field,
+      so that old errors are not visible.
+    * [ ] Note in rating report, is complete and state whether the solution is known to be optimal.
     * [ ] Implement DefaultEditorOptimization.
         * [x] Draft version running version.
         * [ ] Solve problem with DefaultEditorOptimization.
