@@ -154,3 +154,4 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
     * [ ] The default config is a valid test config or a valid production config with no side effects.
     * [ ] Split all options into options and side effect options by creating an option inheritance tree.
 * [ ] Support managing side effects with Cells effectively and efficiently.
+* [ ] Remove file system options, as these are handled by the cells.
