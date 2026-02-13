@@ -22,7 +22,7 @@ This does not apply for statuses, that show progress.
   -> Add target files to project file system, in order to have access to the top level files, as these are sometimes imported from different folders.
   See `net.splitcells.network.hub/projects/net.splitcells.network.hub`.
   This was tested on `gel.editor`. Now this has to be done for the rest as well.
-    * [ ] Use unified local file system integration and not 2 different version in DevDistroCell and personal website. 
+    * [x] Use unified local file system integration provider and not 2 different version in DevDistroCell and personal website. 
     * [ ] Provide correct top level files. Currently, the README of the Dem project is the README of `network.hub` project. This only happened in none dev mode for now.
 * [ ] Fix status report: http://localhost:8443/net/splitcells/network/status.html
 * [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
