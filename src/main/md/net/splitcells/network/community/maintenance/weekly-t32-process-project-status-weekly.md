@@ -16,7 +16,10 @@ This does not apply for statuses, that show progress.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
 * Execute static code checks.
+* Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
+* FIX top level file access in dev mode.
+* Fix status report: http://localhost:8443/net/splitcells/network/status.html
 * [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
 * [ ] Test `repo.process` in daily CI.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
