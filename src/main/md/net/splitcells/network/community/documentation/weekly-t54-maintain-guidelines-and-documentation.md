@@ -21,6 +21,7 @@
     * [ ] Render weekly projects as such and not as project proposals.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
+* [ ] The level of chapter titles in documents should be easier to recognize.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Check validity of all XML files.
 * [ ] Import theoretic formulas regarding assignment problem definition from personal master thesis.
