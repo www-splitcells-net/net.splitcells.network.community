@@ -14,12 +14,11 @@ This does not apply for statuses, that show progress.
 * Process status badges.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
+    * Currently working on: FileSystemWriteTest, FileSystemViaMemoryTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
 * Execute static code checks.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* FIX top level file access in dev mode.
-* Fix status report: http://localhost:8443/net/splitcells/network/status.html
+* [ ] Fix status report: http://localhost:8443/net/splitcells/network/status.html
 * [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
 * [ ] Test `repo.process` in daily CI.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
@@ -70,6 +69,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] FIX top level file access in dev mode.
 * [x] Disable GitHub's CI as it is not needed anymore.
 * [o] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
   -> SWT has binding issues in Linux, which require a certain Linux setup to work for and is therefore not acceptable.
