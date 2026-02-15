@@ -10,7 +10,6 @@ Some tests are executed on servers in order to ensure, that the software works o
     * `net.splitcells.martins.avots.riscv.login`
     * `net.splitcells.martins.avots.raspberry.v2.login`
 # Tasks
-* [ ] `%H` is sometimes written into the network log repo.
 * [ ] Create command, in order to deploy tests on every test server.
     * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
@@ -125,6 +124,8 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [ ] Maven repo binaries.
     * [ ] Do not keep its history. Only use 1 commit for this repo.
 # Done Tasks
+* [x] `%H` is sometimes written into the network log repo. If this is not caused by `worker.test.at`
+  -> I think, it was caused by some experimental code, that is already removed.
 * [o] Get RISC-V server working again.
   -> I cannot get an installation via newly flashed SD cards working.
   In the past this worked without issues and was quick.

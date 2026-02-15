@@ -18,15 +18,6 @@ This does not apply for statuses, that show progress.
 * Execute static code checks.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Fix missing top level file access in dev mode.
-  -> Add target files to project file system, in order to have access to the top level files, as these are sometimes imported from different folders.
-  See `net.splitcells.network.hub/projects/net.splitcells.network.hub`.
-  This was tested on `gel.editor`. Now this has to be done for the rest as well.
-    * [x] Use unified local file system integration provider and not 2 different version in DevDistroCell and personal website. 
-    * [x] Provide correct top level files. Currently, the README of the Dem project is the README of `network.hub` project. This only happened in none dev mode for now.
-    * [x] Fix CONTRIBUTING etc.
-    * [ ] Remove copy of top level files at the jars' top level resources folder.
-* [ ] Check and eventually fix `FileSystem#exists`. Is it actually used?
 * [ ] Fix status report: http://localhost:8443/net/splitcells/network/status.html
 * [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
 * [ ] Test `repo.process` in daily CI.
@@ -78,6 +69,14 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Fix missing top level file access in dev mode.
+  -> Add target files to project file system, in order to have access to the top level files, as these are sometimes imported from different folders.
+  See `net.splitcells.network.hub/projects/net.splitcells.network.hub`.
+  This was tested on `gel.editor`. Now this has to be done for the rest as well.
+    * [x] Use unified local file system integration provider and not 2 different version in DevDistroCell and personal website.
+    * [x] Provide correct top level files. Currently, the README of the Dem project is the README of `network.hub` project. This only happened in none dev mode for now.
+    * [x] Fix CONTRIBUTING etc.
+    * [x] Remove copy of top level files at the jars' top level resources folder.
 * [x] Disable GitHub's CI as it is not needed anymore.
 * [o] Consider using SWT for Java application. The JavaFX version is broken, as Javascript does not seem to work anymore.
   -> SWT has binding issues in Linux, which require a certain Linux setup to work for and is therefore not acceptable.

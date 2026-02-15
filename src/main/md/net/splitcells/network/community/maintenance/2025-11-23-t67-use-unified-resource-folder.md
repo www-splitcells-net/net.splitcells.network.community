@@ -14,4 +14,5 @@ where one has to switch between such folders in the IDE all the time.
 This wastes a lot of time.
 Therefore, the md and xml folders will be abandoned in Maven projects.
 # Tasks
-* [ ] Even Maven projects mix file types in such folders. See https://github.com/apache/maven-resolver/tree/master/src/site
+* [ ] Even Maven projects mix file types in resource folders. See https://github.com/apache/maven-resolver/tree/master/src/site
+* [ ] This is more about, making the website renders work with CommonMark files located in the generic resource folder.

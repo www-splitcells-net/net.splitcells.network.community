@@ -43,16 +43,17 @@ We also need full accounting for it.
                     * [x] Fix `REUSE.toml` parser.
                 * [x] REUSE parser does not correctly determine copyright and license data of a file.
                 * [x] After creating MetaData map write these to `target/classes`.
-                * [ ] Support `**` in the REUSE paths.
+                * [x] Support `**` in the REUSE paths.
                     * [x] Detect pattern.
                     * [x] Check all project files for pattern.
                     * [x] Create one meta file per file match.
             * [x] Merge results of `REUSE.toml` parsing and individual file parsing.
             * [x] Process binary files with MetaData class. -> This is only supported via `**` matching in `REUSE.toml`.
-              Currently, there is no supported meta data inside binary files and `REUSE.toml` is required by the REUSE tool.
+              Currently, there is no supported metadata inside binary files and `REUSE.toml` is required by the REUSE tool.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every file.
-            * [ ] Only provide access to metadata, to which the user has access to.
+            * [x] Only provide access to metadata, to which the user has access to. -> Source code should not contain secrets and therefore their name, are not a secret as well.
+            * [ ] Provide a method to iterate over all file system metadata.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
