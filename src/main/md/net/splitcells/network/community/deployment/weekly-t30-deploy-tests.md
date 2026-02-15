@@ -10,6 +10,7 @@ Some tests are executed on servers in order to ensure, that the software works o
     * `net.splitcells.martins.avots.riscv.login`
     * `net.splitcells.martins.avots.raspberry.v2.login`
 # Tasks
+* [ ] `%H` is sometimes written into the network log repo.
 * [ ] Create command, in order to deploy tests on every test server.
     * [x] Create new worker command, in order to simply deploy bootstrapping via one command. See [here](../maintenance/done/2024-09-03-fully-bootstrap-network-worker.md).
       -> `worker.bootstrap.remote.at` is this command.
