@@ -1,5 +1,6 @@
 # Solve sport lesson assignment
 * Issue number: [\#37](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/37)
+* Start Date: 2024-11-13
 # Task Description
 Exemplary solve the sport lesson assignment problem from Martins Avots's master thesis,
 in order to extend the programs modelling, optimization capabilities and usability.
@@ -22,8 +23,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Draft version running version.
         * [ ] Solve problem with DefaultEditorOptimization.
             * [ ] Validate solutions by hand.
-                * [ ] Create guidelines for writing optimization problems.
-                  Require tests with data for each constraint, as there were too many faulty ratings in the past.
+                * [ ] Create a mini framework for problem definition testing.
+                  One would just state the link to the problem definition, the content of the solution table and the resulting rating.
+                  This probably could be implemented as additional test methods at the editor class.
+                * [ ] Make it easier to look up table constraints for debugging via DevDistroCell.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
