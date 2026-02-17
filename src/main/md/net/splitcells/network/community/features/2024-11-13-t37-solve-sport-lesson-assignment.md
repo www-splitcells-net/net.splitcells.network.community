@@ -23,10 +23,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Draft version running version.
         * [ ] Solve problem with DefaultEditorOptimization.
             * [ ] Validate solutions by hand.
-                * [ ] Create a mini framework for problem definition testing.
+                * [x] Create a mini framework for problem definition testing.
                   One would just state the link to the problem definition, the content of the solution table and the resulting rating.
                   This probably could be implemented as additional test methods at the editor class.
+                  -> `Editor#importSolutionCsvData` is enough for now.
                 * [ ] Make it easier to look up table constraints for debugging via DevDistroCell.
+                    * [ ] Make constraint paths more understandable by adjusting the constraints discoverable parent.
+                        * [ ] Then
+                        * [ ] ForAll
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
