@@ -31,6 +31,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [ ] Make constraint paths more understandable by adjusting the constraints discoverable parent.
                         * [ ] Then
                         * [ ] ForAll
+                        * [ ] Adjusts rater part of paths.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -72,7 +73,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add link to editor at `Introduction to the Generic Allocator`.
 * [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
-* [ ] Consider nesting main editor menu for fields with the same prefix like solution.
+* [ ] Consider nesting main editor menu for fields with the same prefix as the solution.
+* [ ] When submitting an optimization with a solution in the editor, this solution should be used as a starting point.
 # Done Tasks
 * [x] Load test data, when the sport lesson example is chosen. -> This is already done.
 * [x] Double check test data by hand.

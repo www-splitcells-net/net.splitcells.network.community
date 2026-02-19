@@ -9,6 +9,7 @@ that manages all complex actions and Discoverable constructions.
 Make the whole discovery tree traversable via the root node,
 in order support querying the tree.
 # Tasks
+* [ ] Make `#path()` read only or make it always return a copy.
 * [x] Create Discovery interface as a manager for each Discoverable.
 * [x] Implement Discovery interface.
 * [x] Document interface.
