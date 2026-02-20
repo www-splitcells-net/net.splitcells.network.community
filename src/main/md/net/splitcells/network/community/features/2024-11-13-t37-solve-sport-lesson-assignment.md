@@ -28,10 +28,40 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                   This probably could be implemented as additional test methods at the editor class.
                   -> `Editor#importSolutionCsvData` is enough for now.
                 * [ ] Make it easier to look up table constraints for debugging via DevDistroCell.
-                    * [ ] Make constraint paths more understandable by adjusting the constraints discoverable parent.
+                    * [ ] Remove duplicate modification counters.
+                    * [ ] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
                         * [ ] Then
-                        * [ ] ForAll
+                        * [x] ForAll
+                        * [x] ForAlls
                         * [ ] Adjusts rater part of paths.
+                            * [x] equals of Geal -> RaterBasedOnLineValue
+                            * [x] ForAllWithCondition
+                            * [ ] AllDifferent
+                            * [ ] ConstantRater
+                            * [ ] HasMaximumSize
+                            * [ ] HasMinimalSize
+                            * [ ] HasSize
+                            * [ ] LineGroupRater
+                            * [ ] MinimalDistance
+                            * [ ] MinimalDistanceBasedOnDiffs
+                            * [ ] Not
+                            * [ ] RaterBasedOnLineGroup
+                            * [ ] RaterBasedOnLineValue
+                                * [ ] lineValueRater
+                            * [x] ForAllAttributeValues
+                            * [x] ForAllValueCombinations
+                            * [ ] GroupMultiplier
+                            * [ ] Propagation
+                            * [ ] RaterBasedOnGrouping
+                            * [ ] ThenAtLeastRater
+                            * [ ] TimeSteps
+                            * [ ] CommitmentAdherence
+                            * [ ] TemplateAdherence
+                            * [ ] FundamentalWorldRules
+                            * [ ] CommitmentAdherence
+                            * [ ] Loneliness
+                            * [ ] PositionClusters
+                    * [ ] Make `Rater#descriptiveName` a required implementation without a default one.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -562,3 +592,5 @@ to only provide server CPU and RAM usage in real time to the administrator of th
   Do this by creating the table as is and then building new tables, that are derived from these.
   Solve the solution on the derived ones and write the solution afterwards into the original tables. 
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
+* [ ] Create a test framework, that tests a problem definition just like `EditorProcessorTest#TEST_OPTIMIZATION_GUI`,
+  but abstracts away the fact, that the full stack is tested.

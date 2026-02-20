@@ -11,14 +11,13 @@ as otherwise it is hard to judge the status,
 when it is stating failure all the time.
 This does not apply for statuses, that show progress.
 # Service
-* Process status badges.
+* Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: FileSystemWriteTest, FileSystemViaMemoryTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
 * Execute static code checks.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Fix status report: http://localhost:8443/net/splitcells/network/status.html
 * [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
 * [ ] Test `repo.process` in daily CI.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.

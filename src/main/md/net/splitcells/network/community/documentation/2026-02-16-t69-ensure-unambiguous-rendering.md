@@ -8,6 +8,8 @@ All these errors should cause a program exit in the future, when the static site
 First these have to be fixed via log reports, in order to not initially break the deployment.
 # Tasks
 * [ ] Remove status page regarding the links: http://localhost:8443/net/splitcells/network/status.html
+    * [ ] Remove RenderingValidatorForHtmlLinks chart.
+    * [ ] Do not store count.
 * [ ] Create report with errors regarding this problem.
     * [ ] Extend LogMessage with tags.
     * [ ] Adjust LoggerRouter for the tags.
