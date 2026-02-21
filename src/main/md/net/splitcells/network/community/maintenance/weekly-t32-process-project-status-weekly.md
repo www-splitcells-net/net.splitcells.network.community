@@ -15,11 +15,8 @@ This does not apply for statuses, that show progress.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: FileSystemWriteTest, FileSystemViaMemoryTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
-* Execute static code checks.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Test with the help flag project commands of `net.splitcells.network` in daily CI.
-* [ ] Test `repo.process` in daily CI.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
@@ -68,6 +65,8 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Test with the help flag project commands of `net.splitcells.network` in daily CI.
+* [x] Test `repo.process` in daily CI.
 * [x] Fix missing top level file access in dev mode.
   -> Add target files to project file system, in order to have access to the top level files, as these are sometimes imported from different folders.
   See `net.splitcells.network.hub/projects/net.splitcells.network.hub`.

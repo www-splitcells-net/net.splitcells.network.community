@@ -1,4 +1,5 @@
 # Infrastructure Software
+* [JfrUnit](https://blog.mene.dev/continuous-performance-regression-testing-with-jfrunit/) for performance regression
 * [Git Build Hook Maven Plugin - Git Hook Like Functionality via Maven](https://github.com/rudikershaw/git-build-hook)
 * [TornadoVM - Java on Heterogeneous Hardware like GPUs](https://www.tornadovm.org/)
 * [Graphite - procedural 2D raster and vector image editor](https://graphite.rs/)

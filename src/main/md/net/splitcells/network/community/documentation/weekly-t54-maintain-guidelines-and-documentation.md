@@ -9,7 +9,7 @@
     * https://splitcells.net/net/splitcells/network/guidelines/index.html
     * http://localhost:8443/net/splitcells/network/guidelines/index.html
     * Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
-    * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network
+    * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network.hub
     * Consider Documentation from point of a user
     * Consider Documentation from point of a developer
     * Consider Documentation from point of a product owner.

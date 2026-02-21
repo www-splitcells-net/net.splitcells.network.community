@@ -51,9 +51,16 @@ We also need full accounting for it.
             * [x] Process binary files with MetaData class. -> This is only supported via `**` matching in `REUSE.toml`.
               Currently, there is no supported metadata inside binary files and `REUSE.toml` is required by the REUSE tool.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
-          Use this to list the licensing of every file.
-            * [x] Only provide access to metadata, to which the user has access to. -> Source code should not contain secrets and therefore their name, are not a secret as well.
-            * [ ] Provide a method to iterate over all file system metadata.
+          Use this to list the licensing of every HTML file.
+            * [ ] Only provide access to metadata, to which the user has access to.
+            * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
+                * [ ] A write method is not needed for this, as there is currently no use case for that.
+                * [ ] The default implementation should return empty metadata.
+                * [ ] Implement this for FileSystemViaClassResourcesImpl.
+                * [ ] Implement this for the DevDistroCell.
+            * [ ]
+            * [ ] Render the metadata in HTML layout.
+            * [ ] Go over all extensions and implement this.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
