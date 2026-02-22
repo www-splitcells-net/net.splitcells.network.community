@@ -20,9 +20,13 @@ as long as no additional network expansions are bought for the package.
     * Check via browser, if really no cookies are set.
 * Check via browser, if there are client side errors.
 * Check htop.
+* Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Create dedicated logging services.
-    * [ ] Fix Grafana errors in the logs.
+    * [ ] Fix Pyroscope errors in the logs by disabling telemetry.
+         * [ ] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
+         * [ ] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
+         * [ ] Disable analytics: https://grafana.com/docs/pyroscope/latest/configure-server/reference-configuration-parameters/
     * [ ] Fix node-exporter errors in the logs.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/

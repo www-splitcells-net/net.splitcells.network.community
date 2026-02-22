@@ -115,6 +115,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                             * [ ] Avoid config method, as such does not seem to be really required. Move their content to the Cell's accept method.
                             * [ ] Cells should call other cell's optional methods not by creating these, but retrieving these from the current config.
                         * [ ] LiveDistroCell
+                            * [x] Remove initViaCells flag, as none cell init is removed by now.
                         * [ ] DevDistroCell
                     * [ ] `net.splitcells.martins.avots.website`
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.

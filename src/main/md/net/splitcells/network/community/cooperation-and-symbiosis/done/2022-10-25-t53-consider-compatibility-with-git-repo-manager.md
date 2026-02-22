@@ -10,14 +10,16 @@ Instead of creating a very loose cooperation,
 it was decided to just make repo process advertisable and to advertise it.
 A cooperation would currently cost too many resources,
 as the results of this task would not be essential to the projects main goal.
+Furthermore, repo process is probably not that important for other developers.
 # Tasks
-* [ ] Clean up existing repos process doc.
+# Done Tasks
+* [x] Clean up existing repos process doc.
     * [x] Proofread the doc.
         * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.md`
             * [x] Note that the implementation of this software was completely incorrectly done.
         * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.examples.md`
         * [x] `projects/net.splitcells.project/src/main/md/net/splitcells/project/repo/repos.process.help.md`
-    * [ ] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
+    * [x] Rename all appearances of `net.splitcells.osi.*` with `net.splitcells.project.*`
         * [x] `net.splitcells.osi.repos.children` -> `net.splitcells.repos.children`
         * [x] `net.splitcells.osi.repos.peers` -> `net.splitcells.shell.repos.peers`
             * [x] Support old and new naming first.
@@ -26,12 +28,12 @@ as the results of this task would not be essential to the projects main goal.
             * [x] Support old and new naming first.
             * [x] Remove old name usage.
     * [x] Define different focus of git-repo-manager and repos process. -> That is already present.
-    * [ ] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
-        * [ ] The shell's README is not rendered correctly: https://splitcells.net/net/splitcells/shell/README.html
+    * [x] Advertise repo process on README, as I think, that such functionality is essential for distributed software development.
+        * [x] The shell's README is not rendered correctly: https://splitcells.net/net/splitcells/shell/README.html
             * [x] Provide top level MDs like the README as a normal resource under `src/main/md/[artifact id + groupid]/*`
               This way a dedicated extension for READMEs is not required.
-            * [ ] Fix top level file rendering, when the local file system is used via DevCellDistro.
-            * [ ] Remove dedicated extensions for all top level files
+            * [x] Fix top level file rendering, when the local file system is used via DevCellDistro.
+            * [x] Remove dedicated extensions for all top level files
 * [x] Move file containing all child repos to bin folder, in order to simplify file layout.
 * [x] Source: https://github.com/hakoerber/git-repo-manager
 * [x] Build and test GRM: Create setup instructions for Ubuntu:
@@ -63,7 +65,6 @@ error[E0554]: `#![feature]` may not be used on the stable release channel
   |            ^^^^^^^^^^^^^^^^
 
 ```
-# Done Tasks
 * [x] Document right management: Adding and removing such repos manually just takes time.
 * [x] https://github.com/Krasjet/grm
 * [o] Create good documentation for `repo.process`.

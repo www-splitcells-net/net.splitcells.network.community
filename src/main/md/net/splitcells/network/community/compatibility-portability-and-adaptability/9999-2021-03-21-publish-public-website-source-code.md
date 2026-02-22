@@ -1,12 +1,10 @@
 # Publish public website source code
+* Issue number: [\#70](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/70)
+# Tasks
 * [ ] [Establish Cell API first](2024-08-06-establish-cell-api.md).
 * [ ] Make this ticket nice and note the difference to https://github.com/www-splitcells-net/net.splitcells.network/issues/199
 * [ ] This repo is used in order to publish the website's source code: https://github.com/www-splitcells-net/net.splitcells.martins.avots.distro
-
-In #14 the server code is published.
-Now the layout and some other basic stuff is missing,
-in order to render the public version of the website.
-
+# Done Tasks
 * [x] Layout
 * [x] Style
 * [x] Declare licensing info to `net.splitcells.network.media`.

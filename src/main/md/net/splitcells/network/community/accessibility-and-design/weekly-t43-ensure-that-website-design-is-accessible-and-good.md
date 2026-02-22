@@ -12,7 +12,6 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 # Tasks
 * [ ] JavaScript is not working on iPhone and Safari.
-* [ ] In some documents there are empty lists. Is this correct?
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
