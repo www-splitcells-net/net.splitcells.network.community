@@ -41,11 +41,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] HasMaximalSize
                             * [x] HasMinimalSize
                             * [x] HasSize
-                            * [ ] LineGroupRater
-                            * [ ] MinimalDistance
-                            * [ ] MinimalDistanceBasedOnDiffs
-                            * [ ] Not
+                            * [x] LineGroupRater
+                                * [x] GroupingRater
+                            * [x] MinimalDistance
+                            * [x] MinimalDistanceBasedOnDiffs
+                            * [x] Not
                             * [ ] RaterBasedOnLineGroup
+                                * [ ] SimpleDescriptor
                             * [ ] RaterBasedOnLineValue
                                 * [ ] lineValueRater
                             * [x] ForAllAttributeValues
