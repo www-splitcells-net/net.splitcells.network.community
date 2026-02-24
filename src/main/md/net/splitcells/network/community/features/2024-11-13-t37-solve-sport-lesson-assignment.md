@@ -36,11 +36,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [ ] Adjusts rater part of paths.
                             * [x] equals of Geal -> RaterBasedOnLineValue
                             * [x] ForAllWithCondition
-                            * [ ] AllDifferent
-                            * [ ] ConstantRater
-                            * [ ] HasMaximumSize
-                            * [ ] HasMinimalSize
-                            * [ ] HasSize
+                            * [x] AllDifferent
+                            * [x] ConstantRater
+                            * [x] HasMaximalSize
+                            * [x] HasMinimalSize
+                            * [x] HasSize
                             * [ ] LineGroupRater
                             * [ ] MinimalDistance
                             * [ ] MinimalDistanceBasedOnDiffs
@@ -61,6 +61,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [ ] CommitmentAdherence
                             * [ ] Loneliness
                             * [ ] PositionClusters
+                        * [ ] Check all editor examples.
                     * [ ] Make `Rater#descriptiveName` a required implementation without a default one.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
