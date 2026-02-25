@@ -28,12 +28,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                   This probably could be implemented as additional test methods at the editor class.
                   -> `Editor#importSolutionCsvData` is enough for now.
                 * [ ] Make it easier to look up table constraints for debugging via DevDistroCell.
-                    * [ ] Remove duplicate modification counters.
-                    * [ ] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
-                        * [ ] Then
+                    * [x] Add solution name as prefix to constraint paths, as otherwise it gets hard to find the constraints of just on solution in a problem. 
+                    * [x] Remove duplicate modification counters. -> There were none.
+                    * [x] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
+                        * [x] Then
                         * [x] ForAll
                         * [x] ForAlls
-                        * [ ] Adjusts rater part of paths.
+                        * [x] Provide path name for all raters. -> Some shortcuts/workarounds were done for some raters. 
                             * [x] equals of Geal -> RaterBasedOnLineValue
                             * [x] ForAllWithCondition
                             * [x] AllDifferent
@@ -46,25 +47,28 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] MinimalDistance
                             * [x] MinimalDistanceBasedOnDiffs
                             * [x] Not
-                            * [ ] RaterBasedOnLineGroup
-                                * [ ] SimpleDescriptor
-                            * [ ] RaterBasedOnLineValue
-                                * [ ] lineValueRater
+                            * [x] RaterBasedOnLineGroup
+                                * [x] SimpleDescriptor
+                                * [x] GroupRater
+                                * [x] GroupRouter
+                            * [x] RaterBasedOnLineValue
+                                * [x] lineValueRater
                             * [x] ForAllAttributeValues
                             * [x] ForAllValueCombinations
-                            * [ ] GroupMultiplier
-                            * [ ] Propagation
-                            * [ ] RaterBasedOnGrouping
-                            * [ ] ThenAtLeastRater
-                            * [ ] TimeSteps
-                            * [ ] CommitmentAdherence
-                            * [ ] TemplateAdherence
-                            * [ ] FundamentalWorldRules
-                            * [ ] CommitmentAdherence
-                            * [ ] Loneliness
-                            * [ ] PositionClusters
-                        * [ ] Check all editor examples.
-                    * [ ] Make `Rater#descriptiveName` a required implementation without a default one.
+                            * [x] GroupMultiplier
+                            * [x] Propagation
+                            * [x] RaterBasedOnGrouping
+                            * [x] ThenAtLeastRater
+                            * [x] TimeSteps
+                            * [x] CommitmentAdherence
+                            * [x] TemplateAdherence
+                            * [x] FundamentalWorldRules
+                            * [x] CommitmentAdherence
+                            * [x] Loneliness
+                            * [x] PositionClusters
+                        * [x] Check all editor examples.
+                    * [x] Make `Rater#descriptiveName` a required implementation without a default one.
+                    * [ ] The propagation of the Not rater does not seem to work.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -597,3 +601,4 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Support LSP in editor via [Eclipse LSP4J](https://github.com/eclipse-lsp4j/lsp4j), [LSPs](https://github.com/qualified/lsps) and CodeMirror.
 * [ ] Create a test framework, that tests a problem definition just like `EditorProcessorTest#TEST_OPTIMIZATION_GUI`,
   but abstracts away the fact, that the full stack is tested.
+* [ ] Real GUI for website's layout tree like GUI programs for file management.
