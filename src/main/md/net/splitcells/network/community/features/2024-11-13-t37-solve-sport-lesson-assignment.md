@@ -69,6 +69,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] Check all editor examples.
                     * [x] Make `Rater#descriptiveName` a required implementation without a default one.
                     * [ ] The propagation of the Not rater does not seem to work.
+                        * [ ] Add propagation test to NotTest.
+                        * [ ] Fix the propagation.
                     * [ ] The rendering of lineProcessing does not show the ratings.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
