@@ -69,6 +69,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] Check all editor examples.
                     * [x] Make `Rater#descriptiveName` a required implementation without a default one.
                     * [ ] The propagation of the Not rater does not seem to work.
+                    * [ ] The rendering of lineProcessing does not show the ratings.
 * [ ] Solve sport lesson assignment.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
