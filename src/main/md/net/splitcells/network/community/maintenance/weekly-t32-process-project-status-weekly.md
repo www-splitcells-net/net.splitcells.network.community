@@ -15,22 +15,20 @@ This does not apply for statuses, that show progress.
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
     * Currently working on: FileSystemWriteTest, FileSystemViaMemoryTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
-    * Check test coverage on currently worked features: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/gel.ui/net.splitcells.gel.ui.editor.geal/EditorProcessorTest.html
+    * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
-    * [ ] Use `net.splitcells.network.distro.java`.
-        * [ ] Build app like the JavaFX version.
-            * [ ] pom.xml
+    * [x] Use `net.splitcells.network.distro.java`.
+        * [x] Build app like the JavaFX version. Build only for Linux, as this is most easily tested.
+            * [x] pom.xml
                 * [x] Copy dependencies.
                 * [x] Download suitable Java versions.
-                * [ ] Apply assembly plugin.
-                * [ ] Add main class launcher via src/main/bash and bat.
-            * [ ] assembly folder
-            * [ ] bat folder
+                * [x] Add assembly XML.
+                * [x] Apply assembly plugin.
     * [ ] Remove `net.splitcells.network.distro.javafx`.
     * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
         * [ ] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.

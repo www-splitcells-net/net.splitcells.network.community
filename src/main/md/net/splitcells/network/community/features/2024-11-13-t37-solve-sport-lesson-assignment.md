@@ -13,6 +13,7 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] Improve performance, as otherwise one cannot test optimizing this problem.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
@@ -69,7 +70,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] Check all editor examples.
                     * [x] Make `Rater#descriptiveName` a required implementation without a default one.
                     * [ ] The propagation of the Not rater does not seem to work.
-                        * [ ] Add propagation test to NotTest.
+                        * [x] Add propagation test to NotTest.
                         * [ ] Fix the propagation.
                     * [ ] The rendering of lineProcessing does not show the ratings.
 * [ ] Solve sport lesson assignment.
