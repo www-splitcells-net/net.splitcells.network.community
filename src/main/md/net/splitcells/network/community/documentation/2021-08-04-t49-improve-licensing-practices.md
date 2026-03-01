@@ -53,6 +53,11 @@ We also need full accounting for it.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every HTML file.
             * [ ] Only provide access to metadata, to which the user has access to.
+                * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
+                    * [x] Create new method with empty default.
+                    * [ ] Use new and old method.
+                    * [ ] Migrate all old implementations to new methods.
+                    * [ ] Remove old method.
             * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
                 * [ ] A write method is not needed for this, as there is currently no use case for that.
                 * [ ] The default implementation should return empty metadata.

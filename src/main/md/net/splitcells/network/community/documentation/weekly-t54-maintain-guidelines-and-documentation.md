@@ -21,6 +21,7 @@
     * [ ] Render weekly projects as such and not as project proposals.
     * [ ] Only show explicitly started projects.
     * [ ] Show project completions and cancellations.
+* [ ] Create new guidelines, that point to the importance of the root projects.
 * [ ] The level of chapter titles in documents should be easier to recognize.
 * [ ] Link to https://passo.uno/what-is-a-documentation-engineer/ in documentation guidelines as inspiration.
 * [ ] Check validity of all XML files.

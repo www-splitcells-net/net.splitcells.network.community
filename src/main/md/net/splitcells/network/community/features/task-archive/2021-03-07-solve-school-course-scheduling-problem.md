@@ -114,7 +114,7 @@
 * [ ] Test all constraints.
 * [ ] Ensure that test data more sane by manually checking these.
 * [x] Disable history by default, because otherwise is not a sane default performance setting.
-
+* [ ] Delete SchoolCourseSchedulingTest, when its content is migrated.
 # Future Tasks
 * [ ] Fix last element of solution paths in logging (i.e. `net/splitcells/gel/GelEnv/demands.allocations.allocations/`).
 * [ ] Create a presentation for the problem.

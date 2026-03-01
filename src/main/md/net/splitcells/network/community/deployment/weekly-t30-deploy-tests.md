@@ -53,7 +53,7 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [x] Currently, nothing is written into the network log.
     * [x] Use host's hostname inside container and not the Podman's default hostname.
     * [ ] Create log of failed executions in network log.
-        * [ ] Create a dedicated test function at `net.splitcells.dem.testing.Test` and run this with an additional Maven command.
+        * [x] Create a dedicated test function at `net.splitcells.dem.testing.Test` and run this with an additional Maven command.
           -> `net.splitcells.network.worker.via.java.Tester` is used instead.
             * [x] Note reasoning. This is done, as the surefire plugin cannot set the TestExecutionListener.
               The only alternative is using Java's ServiceLoader, that gets very in multiproject module
@@ -63,7 +63,10 @@ Some tests are executed on servers in order to ensure, that the software works o
             * [x] Write results to network log repo.
             * [x] Log failed test runs at `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
             * [ ] Check build status via the new `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
-    * [ ] Create log of skipped execution in local network log, caused by not reachable servers.
+                * [ ] Write this via Logger class.
+                * [ ] Read this via NetworkStatusRenderExtension.
+                * [ ] Remove obsolete `net/splitcells/network/logger/builder/runtime`.
+    * [x] Create log of skipped execution in local network log, caused by not reachable servers. -> This not needed/useful for now.
     * [x] Create and commit runtime results to network log. 
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.

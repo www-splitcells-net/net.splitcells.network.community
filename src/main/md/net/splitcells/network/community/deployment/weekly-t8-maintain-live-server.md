@@ -24,10 +24,11 @@ as long as no additional network expansions are bought for the package.
 ## Open Tasks
 * [ ] Create dedicated logging services.
     * [ ] Fix Pyroscope errors in the logs by disabling telemetry.
-         * [ ] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
-         * [ ] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
-         * [ ] Disable analytics: https://grafana.com/docs/pyroscope/latest/configure-server/reference-configuration-parameters/
-    * [ ] Fix node-exporter errors in the logs.
+         * [x] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
+         * [x] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
+         * [x] Disable analytics: https://grafana.com/docs/pyroscope/latest/configure-server/reference-configuration-parameters/
+         * [ ] Deploy changes.
+    * [ ] Fix errors in systemd logs.
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
     * [x] Start Podman compose on server startup via a systemd user service.
@@ -76,7 +77,7 @@ as long as no additional network expansions are bought for the package.
       where a Prometheus integration does not make sense.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
-    * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality. 
+    * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality.
 * [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html

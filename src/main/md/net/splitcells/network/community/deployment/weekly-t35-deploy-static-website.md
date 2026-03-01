@@ -7,16 +7,18 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] The websites logo does not work on IPhone.
 * [ ] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
-    * [ ] Support pages requiring a login.
+    * [ ] Create a config to enable this functionality on static website. This functionality is disabled by default.
+    * [ ] Enable this config in the website project.
+    * [ ] Implement new config interpretation.
 * [ ] Do not allow static website deployment with invalid links.
-* [ ] Disallow any XSL warnings and erros by default.
+* [ ] Disallow any XSL warnings and errors by default.
     * [ ] Remove all XSL warnings and errors.
 * [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
   First [Publish public website source code](../compatibility-portability-and-adaptability/9999-2021-03-21-publish-public-website-source-code.md) has to be done.
     * [ ] Enable Javadoc rendering. It was disabled, as it takes a lot of time on the local computer.
+* [ ] The websites logo does not work on iPhone.
 # Done Tasks
 * [o] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
   -> This count is not stored anymore.

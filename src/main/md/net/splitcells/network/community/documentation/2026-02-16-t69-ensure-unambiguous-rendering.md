@@ -8,9 +8,9 @@ All these errors should cause a program exit in the future, when the static site
 First these have to be fixed via log reports, in order to not initially break the deployment.
 # Tasks
 * [ ] Create report with errors regarding this problem.
-    * [ ] Extend LogMessage with tags.
-    * [ ] Adjust LoggerRouter for the tags.
-    * [ ] Use default Logger in LoggerRouter.
+    * [x] Extend LogMessage with tags.
+    * [x] Adjust LoggerRouter for the tags.
+    * [x] Use default Logger in LoggerRouter.
     * [ ] Use generic logger factor in LoggerRouter.
     * [ ] Detect errors via RenderingValidatorForHtmlLinks.
     * [ ] Write errors regarding this into the network log repo.
