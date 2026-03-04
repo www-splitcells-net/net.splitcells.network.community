@@ -14,6 +14,11 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Improve performance, as otherwise one cannot test optimizing this problem.
+    * [ ] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
+    * [ ] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
+        * [ ] Create HashSet legacy factory.
+        * [ ] Create THashSet legacy factory.
+    * [ ] Document HashSet removal.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.

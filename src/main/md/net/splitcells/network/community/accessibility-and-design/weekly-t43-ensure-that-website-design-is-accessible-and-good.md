@@ -1,23 +1,33 @@
 # Ensure that the website design is accessible and good
+
 * Issue number: [\#43](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/43)
+
 # Task Description
+
 Improve the design, accessibility and usability of the software.
 
-Starting with [2025](https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655.html)
+Starting
+with [2025](https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655.html)
 public website should be barrierefrei.
 Although, this law does not seem to apply to `splitcells.net`,
 this is an opportunity to consider this aspect.
+
 # Service Tasks
+
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
+
 # Tasks
+
 * [ ] JavaScript is not working on iPhone and Safari.
 * [ ] Lists in texts does not look good compared to lists in the meta column.
-* [ ] The parent pages are not correct. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
+* [ ] The parent pages are not correct.
+  See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
-* [ ] Not all READMEs are visible in the parent pages. See http://localhost:8443/net/splitcells/network/hub/README.html .
+* [ ] Not all READMEs are visible in the parent pages.
+  See http://localhost:8443/net/splitcells/network/hub/README.html .
 * [ ] In web layout add link from primary column to secondary column.
-* [ ] Improve styling of low priority buttons of chapters. 
+* [ ] Improve styling of low priority buttons of chapters.
 * [ ] Consider using pastel color palette for none black and white colors.
 * [ ] Consider add paper folding or origami as CSS style for background, as decoration.
 * [ ] Consider using pure e4 without RCP as GUI instead of JavaFX,
@@ -29,29 +39,39 @@ this is an opportunity to consider this aspect.
 * [ ] Consider a more distinct look of link buttons and action buttons:
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
+* [ ] Add an background effect to interactive elements, where the background around the mouse is highlighted by color or
+  light.
+
 # Completed Tasks
+
 * [x] Make website more presentable.
-  * [x] Check and fix links of both main READMEs.
-  * [o] The download of the program does not work on the static site. -> In the future, there will be no application. See [weekly maintenance task](../maintenance/weekly-t32-process-project-status-weekly.md).
-    * [o] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
-      for a subproject's file system.
-      Extend the developer interface accordingly.
-  * [x] The downloadable Linux program does not run.
-  * [x] Remove the downloadable Windows program, as it is not tested regularly.
-    Maybe just deactivate the link and add an appropriate note.
-  * [x] Better style news and notifications.
-  * [o] Fix news and notifications links, as some link text do not correspond to the linked content.
-    -> This error could not be recreated on the local machine, the live server or the static server.
+    * [x] Check and fix links of both main READMEs.
+    * [o] The download of the program does not work on the static site. -> In the future, there will be no application.
+      See [weekly maintenance task](../maintenance/weekly-t32-process-project-status-weekly.md).
+        * [o] The problem is, that the static version does not read `target/classes/[artifact id].[group id].resources`
+          for a subproject's file system.
+          Extend the developer interface accordingly.
+    * [x] The downloadable Linux program does not run.
+    * [x] Remove the downloadable Windows program, as it is not tested regularly.
+      Maybe just deactivate the link and add an appropriate note.
+    * [x] Better style news and notifications.
+    * [o] Fix news and notifications links, as some link text do not correspond to the linked content.
+      -> This error could not be recreated on the local machine, the live server or the static server.
 * [x] Fix title of README on server: https://live.splitcells.net/net/splitcells/network/hub/README.html
 * [x] Use darker red with a serif font for error messages. See error for missing Javascript.
-* [x] Check static website with an analyzer: https://pagelocity.com/analyzer?url=https%3A%2F%2Fsplitcells.net%2Fnet%2Fsplitcells%2Fwebsite%2Fserver%2Ffront-menu.html
-  -> https://pagelocity.com does not seem to be a good analyzer, as id does not find FAVICONs and does not state, what it is searching for.
+* [x] Check static website with an
+  analyzer: https://pagelocity.com/analyzer?url=https%3A%2F%2Fsplitcells.net%2Fnet%2Fsplitcells%2Fwebsite%2Fserver%2Ffront-menu.html
+  -> https://pagelocity.com does not seem to be a good analyzer, as id does not find FAVICONs and does not state, what
+  it is searching for.
     * [x] FAVICON not found. -> These are present and even the Iphone recognizes these
 * [o] Buttons should be less bold than titles. -> As long as the titles are using a bigger font, everything is fine.
-* [x] Check website with public internet services. -> The service task `Check static website with an analyzer` is created for that.
-* [x] The meta menu bar does not feel like the start of a new distinct part of the website in view where all columns are vertically arranged and which is not the minimal view.
+* [x] Check website with public internet services. -> The service task `Check static website with an analyzer` is
+  created for that.
+* [x] The meta menu bar does not feel like the start of a new distinct part of the website in view where all columns are
+  vertically arranged and which is not the minimal view.
   -> An additional white structural bar at the top of the meta menu is used, in order to separate parts more distinctly.
-* [x] Errors are present at the client side Javascript code. See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
+* [x] Errors are present at the client side Javascript code.
+  See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
   -> The client side errors could not be found anymore.
 * [x] Make rendering of TODOs prettier. -> The TODOs are now rendered more compactly, which make them look prettier.
   Thereby, it was noticed, that lists are incorrectly nested.
