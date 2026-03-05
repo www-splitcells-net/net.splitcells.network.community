@@ -14,7 +14,6 @@
     * Consider Documentation from point of a developer
     * Consider Documentation from point of a product owner.
     * Consider mobile vs desktop view.
-* Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Tasks
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
@@ -56,6 +55,8 @@
     * [ ] Create jokes via a chatbot, where the prompt asks to write a joke regarding a random piece of text in this project like a project's description.
 * [ ] Consider checking commits according to the guidlines via AI.
 * [ ] Place link for running the software in Hub Readme. The doc for running the software and not just building has to be created as well.
+* [ ] Consider integrating AI to check commits according to the guidelines.
+* [ ] Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Done Tasks
 * [o] Do not show project proposals in news, as this just clutters things too much for none technical users.
   * [o] Project proposal parsing was removed completely, because it was horribly wrong.
