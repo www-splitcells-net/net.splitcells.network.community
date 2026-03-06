@@ -16,9 +16,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Improve performance, as otherwise one cannot test optimizing this problem.
     * [ ] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
     * [ ] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
+        * [x] Declare factory interface. -> LegacySetFactory
+        * [x] Declare factory singleton. -> LegacySets
         * [ ] Create HashSet legacy factory.
         * [ ] Create THashSet legacy factory.
     * [ ] Document HashSet removal.
+    * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
