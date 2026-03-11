@@ -14,16 +14,19 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Improve performance, as otherwise one cannot test optimizing this problem.
-    * [x] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
-    * [x] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
-        * [x] Declare factory interface. -> LegacySetFactory
-        * [x] Declare factory singleton. -> LegacySets
-        * [x] Create HashSet legacy factory.
-        * [x] Create THashSet legacy factory.
-    * [x] Try out Eclipse collections, as this project is still active.
-    * [ ] Simplify set factories.
-    * [x] Document HashSet removal.
-    * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
+    * [ ] Improve set performance.
+        * [x] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
+        * [x] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
+            * [x] Declare factory interface. -> LegacySetFactory
+            * [x] Declare factory singleton. -> LegacySets
+            * [x] Create HashSet legacy factory.
+            * [x] Create THashSet legacy factory.
+        * [x] Try out Eclipse collections, as this project is still active.
+        * [o] Simplify set factories. -> It is not the best, but OK.
+        * [x] Document HashSet removal.
+        * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
+    * [ ] Check modification counts.
+    * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
