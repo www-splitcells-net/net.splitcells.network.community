@@ -14,6 +14,7 @@
     * Consider Documentation from point of a developer
     * Consider Documentation from point of a product owner.
     * Consider mobile vs desktop view.
+    * JavaDoc
 # Tasks
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
