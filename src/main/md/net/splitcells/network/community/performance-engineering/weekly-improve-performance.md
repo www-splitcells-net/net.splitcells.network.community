@@ -4,4 +4,5 @@
 # Service Tasks
 * `net.splitcells.martins.avots.distro.connect.grafana.sh` -> http://localhost:9000
 # Tasks
+* [ ] Consider checking Java dependencies of Google's OR-tools for more performant libraries or as an inspiration for performance improvements.
 # Done Tasks
