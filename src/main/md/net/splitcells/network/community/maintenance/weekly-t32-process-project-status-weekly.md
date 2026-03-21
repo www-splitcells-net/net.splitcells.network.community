@@ -20,6 +20,9 @@ This does not apply for statuses, that show progress.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
 * [ ] Fix `CommitmentAdherenceTest#test`.
+* [ ] Fix benchmark tests of DataTest.
+    * [ ] test_runtime_performance_difference_of_assignments_and_tables
+    * [ ] test_performance_difference_of_assignments_and_tables
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
