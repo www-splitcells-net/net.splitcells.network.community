@@ -19,7 +19,6 @@ This does not apply for statuses, that show progress.
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Fix `CommitmentAdherenceTest#test`.
 * [ ] Fix benchmark tests of DataTest.
     * [ ] test_runtime_performance_difference_of_assignments_and_tables
     * [ ] test_performance_difference_of_assignments_and_tables
@@ -69,6 +68,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Fix `CommitmentAdherenceTest#test`.
 * [x] Fix `ConstraintTest#testArgumentation`.
 * [x] Test with the help flag project commands of `net.splitcells.network` in daily CI.
 * [x] Test `repo.process` in daily CI.
