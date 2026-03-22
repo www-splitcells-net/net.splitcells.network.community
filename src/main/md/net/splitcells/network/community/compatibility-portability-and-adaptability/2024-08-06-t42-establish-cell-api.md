@@ -118,6 +118,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                             * [x] Remove initViaCells flag, as none cell init is removed by now.
                         * [ ] DevDistroCell
                     * [ ] `net.splitcells.martins.avots.website`
+                    * [ ] Simplify `net.splitcells.network.distro.*`.
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                 This will clean up all existing cells.
                   * [ ] `net.splitcells.network.system.SystemCell`
