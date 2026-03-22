@@ -109,15 +109,15 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                                     * [x] Deploy and test legacy live distro fix.
                                     * [x] Fix code editor.
                                 * [x] Test DevDistroCell.
-                    * [ ] Simplify `net.splitcells.martins.avots.distro.*`.
+                    * [x] Simplify `net.splitcells.martins.avots.distro.*`.
                         * [x] LiveCryptoSetupCell
-                        * [ ] DistroCell
-                            * [ ] Avoid config method, as such does not seem to be really required. Move their content to the Cell's accept method.
-                            * [ ] Cells should call other cell's optional methods not by creating these, but retrieving these from the current config.
-                        * [ ] LiveDistroCell
+                        * [x] DistroCell
+                            * [x] Avoid config method, as such does not seem to be really required. Move their content to the Cell's accept method.
+                            * [o] Cells should call other cell's optional methods not by creating these, but retrieving these from the current config. -> There are no such optional methods anymore.
+                        * [x] LiveDistroCell
                             * [x] Remove initViaCells flag, as none cell init is removed by now.
-                        * [ ] DevDistroCell
-                    * [ ] `net.splitcells.martins.avots.website`
+                        * [x] DevDistroCell
+                    * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md).
                     * [ ] Simplify `net.splitcells.network.distro.*`.
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                 This will clean up all existing cells.
