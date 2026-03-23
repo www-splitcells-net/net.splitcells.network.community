@@ -25,9 +25,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [o] Simplify set factories. -> It is not the best, but OK.
         * [x] Document HashSet removal.
         * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
-            * [ ] UnifiedSet may support faster removal of any element, by using internal methods.
+            * [x] UnifiedSet may support faster removal of any element, by using internal methods. -> I think, that this is not that useful for now.
             * [ ] Test table format.
-            * [ ] Execute JMH test in daily CI.
+            * [ ] Consider avoiding using sets in table.
+                * [ ] lines attribute
+                * [ ] indexesOfFree
+                * [ ] beforeRemovalSubscriber vs. afterRemovalSubscriber
+            * [x] Execute JMH test in daily CI.
+            * [ ] Check performance without runtime checks.
     * [ ] Check modification counts.
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
 * [ ] Support complex problems with the default optimization.
