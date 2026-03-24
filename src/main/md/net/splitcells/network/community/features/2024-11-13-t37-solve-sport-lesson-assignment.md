@@ -30,7 +30,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Consider avoiding using sets in table.
                 * [ ] lines attribute
                 * [ ] indexesOfFree
-                * [ ] beforeRemovalSubscriber vs. afterRemovalSubscriber
+            * [ ] beforeRemovalSubscriber vs. afterRemovalSubscriber -> afterRemovalSubscriber is deprecated and should be removed.
+                * [ ] Remove usage of afterRemovalSubscriber and subscribeToAfterRemoval.
+                * [ ] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
+            * [ ] Note why beforeRemovalSubscriber is used.
             * [x] Execute JMH test in daily CI.
             * [ ] Check performance without runtime checks.
     * [ ] Check modification counts.
