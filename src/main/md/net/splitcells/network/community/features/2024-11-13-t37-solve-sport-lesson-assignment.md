@@ -26,18 +26,21 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Document HashSet removal.
         * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
             * [x] UnifiedSet may support faster removal of any element, by using internal methods. -> I think, that this is not that useful for now.
-            * [ ] Test table format.
-            * [ ] Consider avoiding using sets in table and reason in source code why these stay, if these stay.
-                * [ ] lines attribute
-                * [ ] indexesOfFree
+            * [x] Test table format.
+            * [x] Consider avoiding using sets in table and reason in source code why these stay, if these stay.
+                * [x] lines attribute
+                * [x] indexesOfFree
             * [x] beforeRemovalSubscriber vs. afterRemovalSubscriber -> afterRemovalSubscriber is deprecated and should be removed.
                 * [x] Remove usage of afterRemovalSubscriber and subscribeToAfterRemoval.
                 * [x] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
-            * [ ] Note why beforeRemovalSubscriber is used.
+            * [x] Note why beforeRemovalSubscriber is used.
             * [x] Execute JMH test in daily CI.
             * [ ] Check performance without runtime checks.
+            * [ ] Show warning in editor, if runtime checks are enabled.
+            * [ ] Consider fast alternative runtime checks for checks that have very little effect. 
     * [ ] Check modification counts.
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
+* [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
