@@ -24,7 +24,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Try out Eclipse collections, as this project is still active.
         * [o] Simplify set factories. -> It is not the best, but OK.
         * [x] Document HashSet removal.
-        * [ ] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
+        * [x] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
             * [x] UnifiedSet may support faster removal of any element, by using internal methods. -> I think, that this is not that useful for now.
             * [x] Test table format.
             * [x] Consider avoiding using sets in table and reason in source code why these stay, if these stay.
@@ -35,11 +35,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
             * [x] Note why beforeRemovalSubscriber is used.
             * [x] Execute JMH test in daily CI.
-            * [ ] Check performance without runtime checks.
-            * [ ] Show warning in editor, if runtime checks are enabled.
-            * [ ] Consider fast alternative runtime checks for checks that have very little effect. 
+            * [x] Check performance without runtime checks. -> This is already the case via the current IDE config. 
     * [ ] Check modification counts.
+    * [ ] INLINE_STANDARD_FACTORIES does not seem to be active.
+    * [ ] A table's removeAny of the first then constraint node majorly worsens the runtime performance. 
+    * [ ] The lookup system is crazy.
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
+    * [ ] Do bulk adds between problems of the composed problem.
+        * [ ] Are the problems inside an editor connected at all yet?
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
@@ -143,6 +146,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
 * [ ] Consider nesting main editor menu for fields with the same prefix as the solution.
 * [ ] When submitting an optimization with a solution in the editor, this solution should be used as a starting point.
+* [ ] Manage runtime checks in production more effectively.
+    * [ ] Show warning in editor, if runtime checks are enabled.
+    * [ ] Consider fast alternative runtime checks for checks that have very little effect.
 # Done Tasks
 * [x] Load test data, when the sport lesson example is chosen. -> This is already done.
 * [x] Double check test data by hand.
