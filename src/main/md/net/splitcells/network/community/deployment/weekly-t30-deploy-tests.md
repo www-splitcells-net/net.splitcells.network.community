@@ -63,8 +63,8 @@ Some tests are executed on servers in order to ensure, that the software works o
             * [x] Write results to network log repo.
             * [x] Log failed test runs at `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
             * [ ] Check build status via the new `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
-                * [ ] Write this via Logger class.
-                * [ ] Read this via NetworkStatusRenderExtension.
+                * [x] Write this via Logger class.
+                * [ ] Read this via `Logger#reportPath` at NetworkStatusRenderExtension.
                 * [ ] Remove obsolete `net/splitcells/network/logger/builder/runtime`.
     * [x] Create log of skipped execution in local network log, caused by not reachable servers. -> This not needed/useful for now.
     * [x] Create and commit runtime results to network log. 

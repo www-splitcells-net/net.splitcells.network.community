@@ -14,14 +14,11 @@ This does not apply for statuses, that show progress.
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: FileSystemWriteTest, FileSystemViaMemoryTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemViaMemory.html
+    * Currently working on: FileSystemUnionView and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemUnionView.html
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Fix benchmark tests of DataTest.
-    * [ ] test_runtime_performance_difference_of_assignments_and_tables
-    * [ ] test_performance_difference_of_assignments_and_tables
 * [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
@@ -68,6 +65,9 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Fix benchmark tests of DataTest.
+    * [x] test_runtime_performance_difference_of_assignments_and_tables -> This test does not make sense to me.
+    * [x] test_performance_difference_of_assignments_and_tables
 * [x] Fix `CommitmentAdherenceTest#test`.
 * [x] Fix `ConstraintTest#testArgumentation`.
 * [x] Test with the help flag project commands of `net.splitcells.network` in daily CI.

@@ -11,6 +11,7 @@ The network traffic is included in the fixed package price of Hetzner and no add
 as long as no additional network expansions are bought for the package.
 ## Service
 * The server is publicly available at http://live.splitcells.net
+* Check server logs via `journalctl -f`.
 * Update server.
     * Upgrade major version of OS when available.
     * Update deployed software.
@@ -23,12 +24,8 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Create dedicated logging services.
-    * [ ] Fix Pyroscope errors in the logs by disabling telemetry.
-         * [x] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
-         * [x] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
-         * [x] Disable analytics: https://grafana.com/docs/pyroscope/latest/configure-server/reference-configuration-parameters/
-         * [ ] Deploy changes.
     * [ ] Fix errors in systemd logs.
+        * [ ] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
     * [x] Start Podman compose on server startup via a systemd user service.
@@ -159,6 +156,11 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Fix Pyroscope errors in the logs by disabling telemetry.
+    * [x] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
+    * [x] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
+    * [x] Disable analytics: https://grafana.com/docs/pyroscope/latest/configure-server/reference-configuration-parameters/
+    * [x] Deploy changes.
 * [x] Check acme4j error on service restart. -> This error does not seem to happen anymore. Maybe this was a network error.
 * [x] Upgrade Debian.
 * [x] Require authorization for `net/splitcells/website/layout/build.html`

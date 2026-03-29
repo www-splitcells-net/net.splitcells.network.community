@@ -8,9 +8,13 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 # Tasks
 * [ ] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
+    * [ ] Update Java in container.
+    * [ ] Update Java in Maven.
+    * [ ] Note that Java 25 features can now be used.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic dependency updates for distro repo as well. 
 # Done Tasks
+* [ ] Update of dependencies and Maven plugins does not seem to work, if the version is determined by a property.
 * [x] Note why automatic update is only updating by one version increment for each dependency.
 * [x] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html` and create a daily workflow for that.
   That daily workflow updates the dependencies, does an extensive test and if everything was successfully,

@@ -20,6 +20,10 @@ this is an opportunity to consider this aspect.
 # Tasks
 
 * [ ] JavaScript is not working on iPhone and Safari.
+    * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.
+    * [ ] Maybe there is a developer mode/console on iPhone's Safari? -> Yes, via USB.
+        * [ ] Google iphone safari developer console with Linux.
+        * [ ] Install https://github.com/google/ios-webkit-debug-proxy
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct.
   See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .

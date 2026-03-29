@@ -52,18 +52,18 @@ We also need full accounting for it.
               Currently, there is no supported metadata inside binary files and `REUSE.toml` is required by the REUSE tool.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every HTML file.
-            * [ ] Only provide access to metadata, to which the user has access to.
-                * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
-                    * [x] Create new method with empty default.
-                    * [ ] Use new and old method.
-                    * [ ] Migrate all old implementations to new methods.
-                    * [ ] Remove old method.
             * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
                 * [ ] A write method is not needed for this, as there is currently no use case for that.
                 * [ ] The default implementation should return empty metadata.
                 * [ ] Implement this for FileSystemViaClassResourcesImpl.
                 * [ ] Implement this for the DevDistroCell.
-            * [ ]
+            * [ ] Only provide access to metadata, to which the user has access to.
+                * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
+                    * [x] Create new method with empty default.
+                    * [ ] Implement new method for one class. -> XmlProjectRendererExtension is used for this.
+                    * [ ] Use new method in ProjectsRendererI. The old metaData method is used via the new default version. If the new metaData method is implemented, there should not be an old variant at the same class or the new one should use the old one as well.
+                    * [ ] Migrate all old implementations to new methods.
+                    * [ ] Remove old method.
             * [ ] Render the metadata in HTML layout.
             * [ ] Go over all extensions and implement this.
     * [ ] Show license of every page on every page.
