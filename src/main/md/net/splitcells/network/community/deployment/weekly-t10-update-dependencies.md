@@ -8,7 +8,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 # Tasks
 * [ ] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
-    * [ ] Update Java in container.
+    * [x] Update Java in container.
     * [ ] Update Java in Maven.
     * [ ] Note that Java 25 features can now be used.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)

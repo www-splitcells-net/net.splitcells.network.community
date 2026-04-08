@@ -14,7 +14,7 @@ This does not apply for statuses, that show progress.
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: FileSystemUnionView and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FileSystemUnionView.html
+    * Currently working on: FilesTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FilesTest.html
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
@@ -29,7 +29,7 @@ This does not apply for statuses, that show progress.
                 * [x] Download suitable Java versions.
                 * [x] Add assembly XML.
                 * [x] Apply assembly plugin.
-    * [ ] Remove `net.splitcells.network.distro.javafx`.
+    * [x] Remove `net.splitcells.network.distro.javafx`.
     * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
         * [ ] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
         * [ ] Create task to create desktop app with [JCEF Maven and Conveyor](https://www.hydraulic.dev/).

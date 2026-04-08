@@ -18,8 +18,9 @@
 # Tasks
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
-    * [ ] Render weekly projects as such and not as project proposals.
-    * [ ] Only show explicitly started projects.
+    * [o] Render weekly projects as such and not as project proposals. -> This is already done.
+    * [x] Only show explicitly started projects.
+    * [ ] The notification queue is not sorted by the notifications' date.
     * [ ] Show project completions and cancellations.
 * [ ] Create new guidelines, that point to the importance of the root projects.
 * [ ] The level of chapter titles in documents should be easier to recognize.

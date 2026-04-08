@@ -53,8 +53,8 @@ We also need full accounting for it.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every HTML file.
             * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
-                * [ ] A write method is not needed for this, as there is currently no use case for that.
-                * [ ] The default implementation should return empty metadata.
+              A write method is not needed for this, as there is currently no use case for that.
+                * [x] The default implementation should return empty metadata.
                 * [ ] Implement this for FileSystemViaClassResourcesImpl.
                 * [ ] Implement this for the DevDistroCell.
             * [ ] Only provide access to metadata, to which the user has access to.

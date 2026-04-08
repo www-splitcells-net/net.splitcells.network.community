@@ -15,7 +15,8 @@ therefore the focus is on the community and code reviews.
 This task is canceled for now, as supporting/contributing to an external project regarding errors,
 that do not happen locally as well takes too much time.
 # Tasks
-* [ ] https://github.com/apache/maven-resolver/issues/1800
+# Done Tasks
+* [o] https://github.com/apache/maven-resolver/issues/1800
 * [o] A smallish implementation task: https://github.com/apache/maven-resolver/issues/1521 -> There is already another pull request for that.
     * [x] Create one minimal pull request as a test: https://github.com/apache/maven-resolver/pull/1686
     * [x] Submitting [Apache Individual Contributor License Agreement](https://www.apache.org/licenses/icla.pdf).

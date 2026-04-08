@@ -24,12 +24,12 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Create dedicated logging services.
-    * [ ] Fix errors in systemd logs.
-        * [ ] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`
+    * [x] Fix errors in systemd logs.
+        * [x] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`
     * [x] Move from Dockerfile to Podman compose. -> Create dedicated docker compose for additional optional infrastructure.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
     * [x] Start Podman compose on server startup via a systemd user service.
-    * [ ] Get access to server via SSH port-forwarding scripts.
+    * [x] Get access to server via SSH port-forwarding scripts.
     * [ ] Setup visualisation server based on Grafana:
     * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
         * [ ] Create own telemetry log API.

@@ -9,7 +9,8 @@
 # Tasks
 * [ ] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
-    * [ ] Create a config to enable this functionality on static website. This functionality is disabled by default.
+    * [x] Create a config to enable this functionality on static website. This functionality is disabled by default.
+      -> The existing `Config#isRenderingStaticWebsite` is used in combination with the new `Config#interactiveServer`.
     * [ ] Enable this config in the website project.
     * [ ] Implement new config interpretation.
 * [ ] Do not allow static website deployment with invalid links.
