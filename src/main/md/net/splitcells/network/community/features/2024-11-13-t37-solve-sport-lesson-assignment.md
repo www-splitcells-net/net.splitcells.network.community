@@ -36,11 +36,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Note why beforeRemovalSubscriber is used.
             * [x] Execute JMH test in daily CI.
             * [x] Check performance without runtime checks. -> This is already the case via the current IDE config. 
-    * [ ] Check modification counts.
-        * [ ] Create a faster version of ThenAtLeastRater, which rating is slightly incorrect on an individual line level, but is correct on the GroupId level.
+    * [x] Check modification counts.
+        * [x] Create a faster version of ThenAtLeastRater, which rating is slightly incorrect on an individual line level, but is correct on the GroupId level.
           -> It is called ThenAtLeastFastRater.
+        * [x] Create a faster Version of hasSize. -> It is called HasSizeFast.
     * [ ] INLINE_STANDARD_FACTORIES does not seem to be active.
-    * [ ] A table's removeAny of the first then constraint node majorly worsens the runtime performance. 
+    * [ ] Find hotpaths via VisualVM sampler and `sports-course-planning.txt`.
+    * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance. 
     * [ ] The lookup system is crazy.
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Do bulk adds between problems of the composed problem.
