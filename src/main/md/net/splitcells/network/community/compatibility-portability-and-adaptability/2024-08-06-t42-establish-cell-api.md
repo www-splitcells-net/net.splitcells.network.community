@@ -119,7 +119,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                         * [x] DevDistroCell
                     * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md).
                     * [ ] Simplify `net.splitcells.network.distro.*`.
-                        * [ ] `net.splitcells.network.distro.DistroCell`
+                        * [x] `net.splitcells.network.distro.DistroCell`
                         * [ ] `net.splitcells.network.distro.java.DistroCell` 
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                 This will clean up all existing cells.
