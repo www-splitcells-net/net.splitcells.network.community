@@ -30,11 +30,11 @@ This does not apply for statuses, that show progress.
                 * [x] Add assembly XML.
                 * [x] Apply assembly plugin.
     * [x] Remove `net.splitcells.network.distro.javafx`.
-    * [ ] Document the reasoning in `net.splitcells.network.distro.java`.
-        * [ ] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
-        * [ ] Create task to create desktop app with [JCEF Maven and Conveyor](https://www.hydraulic.dev/).
+    * [x] Document the reasoning in `net.splitcells.network.distro.java`.
+        * [x] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
     * [x] Do not provide distro build for desktop use for now, as there are currently no users.
       Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
+    * [ ] Provide download of Swing based GUI launcher.
 * [ ] Try to make `net.splitcells.network.distro.swt` work and consider it an alternative to the current app.
 * [ ] Build complete static website and upload it to Hetzner via daily CI.
 * [ ] Record and upload test runtime performance via network log repo.

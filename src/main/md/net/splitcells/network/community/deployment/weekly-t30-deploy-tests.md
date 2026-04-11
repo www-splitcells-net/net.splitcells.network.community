@@ -68,6 +68,7 @@ Some tests are executed on servers in order to ensure, that the software works o
                 * [ ] Remove obsolete `net/splitcells/network/logger/builder/runtime`.
     * [x] Create log of skipped execution in local network log, caused by not reachable servers. -> This not needed/useful for now.
     * [x] Create and commit runtime results to network log. 
+* [ ] On live server create a status report for UI tests. Create a warning a UI test failed and create a histogram of failed tests.
 * [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.
