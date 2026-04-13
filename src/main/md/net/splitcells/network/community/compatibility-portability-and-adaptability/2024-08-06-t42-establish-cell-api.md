@@ -117,15 +117,13 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                         * [x] LiveDistroCell
                             * [x] Remove initViaCells flag, as none cell init is removed by now.
                         * [x] DevDistroCell
-                    * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md).
-                    * [ ] Simplify `net.splitcells.network.distro.*`.
-                        * [x] `net.splitcells.network.distro.DistroCell`
-                        * [ ] `net.splitcells.network.distro.java.DistroCell` 
+                    * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md). 
               * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
                 This will clean up all existing cells.
+                  * [ ] Create helper methods to call methods of cell instances.
                   * [ ] `net.splitcells.network.system.SystemCell`
-                  * [ ] `net.splitcells.network.distro.DistroCell.`
-                  * [ ] `net.splitcells.network.distro.java.DistroCell`
+                  * [x] `net.splitcells.network.distro.DistroCell.`
+                  * [ ] `net.splitcells.network.distro.java.DistroCell` CURRENT
                   * [ ] `net.splitcells.martins.avots.distro.DistroCell`
               * [ ] Deploy on live server.
               * [ ] Why does LiveDistroCells do not contain a dependency to SystemCell?
@@ -159,4 +157,4 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
     * [ ] Split all options into options and side effect options by creating an option inheritance tree.
 * [ ] Support managing side effects with Cells effectively and efficiently.
 * [ ] Remove file system options, as these are handled by the cells.
-* [ ] Check visualization of cell dependencies.
+* [ ] Check visualization of cell dependencies. 

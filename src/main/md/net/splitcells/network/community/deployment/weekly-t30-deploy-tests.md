@@ -62,10 +62,14 @@ Some tests are executed on servers in order to ensure, that the software works o
             * [x] Add this test command to `repos.test.sh`.
             * [x] Write results to network log repo.
             * [x] Log failed test runs at `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
+            * [ ] Log execution times in `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution` as well.
+            * [ ] Clean up number formating, that is saved in the CSV logs.
             * [ ] Check build status via the new `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
                 * [x] Write this via Logger class.
-                * [ ] Read this via `Logger#reportPath` at NetworkStatusRenderExtension.
+                * [x] Read this via `Logger#reportPath` at NetworkStatusRenderExtension.
                 * [ ] Remove obsolete `net/splitcells/network/logger/builder/runtime`.
+                * [ ] Check last execution time as well and create a dedicated error message, when there was no successful execution in the last 30 days,
+                  even though the last execution was successful. In other words, the last successful execution has to have happend in the last 30 days.
     * [x] Create log of skipped execution in local network log, caused by not reachable servers. -> This not needed/useful for now.
     * [x] Create and commit runtime results to network log. 
 * [ ] On live server create a status report for UI tests. Create a warning a UI test failed and create a histogram of failed tests.
