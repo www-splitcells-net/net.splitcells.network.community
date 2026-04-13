@@ -22,8 +22,9 @@ This needs to be immediately fixed and the keys need to be immediately replaced.
 * [x] Recreate SSH keys.
     * [x] ssh-codeberg-worker
     * [x] ssh-ci
-* [ ] Test everything:
-    * [ ] Live server deployment.
+* [x] Test everything:
+    * [x] Live server deployment.
     * [x] Daily CI
     * [x] Push based CI
 * [ ] During this I noticed, that Codeberg's runner are active in my workflows, which should not be the case: https://codeberg.org/Codeberg-e.V./requests/issues/1729
+  -> Codeberg's runners are not really active according to Codeberg's team.

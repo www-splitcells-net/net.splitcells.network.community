@@ -19,26 +19,7 @@ This does not apply for statuses, that show progress.
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 # Tasks.
-* [ ] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
-  The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
-  RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
-    * [x] Use `net.splitcells.network.distro.java`.
-        * [x] Build app like the JavaFX version. Build only for Linux, as this is most easily tested.
-            * [x] pom.xml
-                * [x] Copy dependencies.
-                * [x] Download suitable Java versions.
-                * [x] Add assembly XML.
-                * [x] Apply assembly plugin.
-    * [x] Remove `net.splitcells.network.distro.javafx`.
-    * [x] Document the reasoning in `net.splitcells.network.distro.java`.
-        * [x] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
-    * [x] Do not provide distro build for desktop use for now, as there are currently no users.
-      Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
-    * [ ] Provide download of Swing based app.
-* [ ] Try to make `net.splitcells.network.distro.swt` work and consider it an alternative to the current app.
-* [ ] Build complete static website and upload it to Hetzner via daily CI.
-* [ ] Record and upload test runtime performance via network log repo.
-* [ ] Record warnings, that should be fixed, like warnings during XSL rendering in the network logs.
+* [ ] Check warnings during build and provide these to the website. 
 * [ ] Let Tester test capability tests as well. 
 * [ ] Check validity of all links.
 * [ ] Test if Linux application is runnable.
@@ -65,6 +46,23 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
+  The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
+  RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
+    * [x] Use `net.splitcells.network.distro.java`.
+        * [x] Build app like the JavaFX version. Build only for Linux, as this is most easily tested.
+            * [x] pom.xml
+                * [x] Copy dependencies.
+                * [x] Download suitable Java versions.
+                * [x] Add assembly XML.
+                * [x] Apply assembly plugin.
+    * [x] Remove `net.splitcells.network.distro.javafx`.
+    * [x] Document the reasoning in `net.splitcells.network.distro.java`.
+        * [x] The browser in JavaFX is strange and too old and therefore `net.splitcells.network.distro.javafx` is avoided.
+    * [x] Do not provide distro build for desktop use for now, as there are currently no users.
+      Just write, that a distro could be provided again in the future and not tasks relevant for a future distro build.
+    * [x] Provide download of Swing based app.
+* [o] Try to make `net.splitcells.network.distro.swt` work and consider it an alternative to the current app. -> This does not need to be done right now.
 * [x] Fix benchmark tests of DataTest.
     * [x] test_runtime_performance_difference_of_assignments_and_tables -> This test does not make sense to me.
     * [x] test_performance_difference_of_assignments_and_tables
