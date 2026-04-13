@@ -26,5 +26,5 @@ This needs to be immediately fixed and the keys need to be immediately replaced.
     * [x] Live server deployment.
     * [x] Daily CI
     * [x] Push based CI
-* [ ] During this I noticed, that Codeberg's runner are active in my workflows, which should not be the case: https://codeberg.org/Codeberg-e.V./requests/issues/1729
+* [x] During this I noticed, that Codeberg's runner are active in my workflows, which should not be the case: https://codeberg.org/Codeberg-e.V./requests/issues/1729
   -> Codeberg's runners are not really active according to Codeberg's team.
