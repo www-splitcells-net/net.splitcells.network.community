@@ -30,13 +30,15 @@ as long as no additional network expansions are bought for the package.
     * [x] Setup metrics server: https://prometheus.io/docs/prometheus/latest/installation/
     * [x] Start Podman compose on server startup via a systemd user service.
     * [x] Get access to server via SSH port-forwarding scripts.
-    * [ ] Setup visualisation server based on Grafana:
+    * [x] Setup visualization server based on Grafana:
     * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
+        * [ ] Loki has to be installed and connected with Grafana.
+        * [ ] Find correct library for this.
         * [ ] Create own telemetry log API.
         * [ ] Forward own API calls to OpenTelemetry.
-        * [ ] Forward Telemetry to Log library, if Prometheus server is not reachable.
-        * [ ] Forward Telemetry to Log library, if logging to via OpenTelemetry to Prometheus server stops working at any time (i.e. caused by a connection issue).
+        * [ ] Detect Prometheus server is not reachable anymore, when it is configured. Maybe the used lib does this already.
     * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
+        * [ ] Consider using the push model, in order to simplify open ports: https://prometheus.github.io/client_java/exporters/pushgateway/
         * [ ] CPU usage
         * [ ] Memory usage
         * [ ] JVM Garbage Collector Metrics
