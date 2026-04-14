@@ -14,7 +14,7 @@ For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
 * [ ] Improve performance, as otherwise one cannot test optimizing this problem.
-    * [ ] Improve set performance.
+    * [x] Improve set performance.
         * [x] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
         * [x] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
             * [x] Declare factory interface. -> LegacySetFactory
@@ -46,7 +46,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] The lookup system is crazy.
     * [ ] Do bulk adds between problems of the composed problem.
         * [ ] Are the problems inside an editor connected at all yet?
-    * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables. 
+    * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
+* [ ] The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
+    * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
+    * [x] Define a life cycle id for a user session.
+    * [x] Make life cycle id alphanumeric, so it's easy to copy and use in URLs as path parameters.
+    * [ ] Create an Object holder for user session specific state.
+    * [ ] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
+    * [ ] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
