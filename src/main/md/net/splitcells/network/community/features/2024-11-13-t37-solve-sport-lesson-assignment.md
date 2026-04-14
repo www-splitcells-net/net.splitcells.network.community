@@ -35,25 +35,33 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
             * [x] Note why beforeRemovalSubscriber is used.
             * [x] Execute JMH test in daily CI.
-            * [x] Check performance without runtime checks. -> This is already the case via the current IDE config. 
+            * [x] Check performance without runtime checks. -> This is already the case via the current IDE config.
     * [x] Check modification counts.
         * [x] Create a faster version of ThenAtLeastRater, which rating is slightly incorrect on an individual line level, but is correct on the GroupId level.
           -> It is called ThenAtLeastFastRater.
         * [x] Create a faster Version of hasSize. -> It is called HasSizeFast.
     * [x] INLINE_STANDARD_FACTORIES does not seem to be active. -> This was just an incorrect setting in the debug configuration of the IDE: in Java system properties are set via -D parameters and not via environment variables.
     * [ ] Find hotpaths via VisualVM sampler and `sports-course-planning.txt`.
-    * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance. 
+    * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance.
     * [ ] The lookup system is crazy.
     * [ ] Do bulk adds between problems of the composed problem.
         * [ ] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
-* [ ] The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
+* [ ] CURRENT The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
     * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
     * [x] Define a life cycle id for a user session.
     * [x] Make life cycle id alphanumeric, so it's easy to copy and use in URLs as path parameters.
-    * [ ] Create an Object holder for user session specific state.
-    * [ ] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
-    * [ ] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
+    * [x] Create an Object holder for user session specific state. -> The holder is AcccessContainer.
+    * [x] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
+    * [x] Correctly, determine user session.
+    * [x] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
+    * [ ] Request async optimization in editor.
+        * [ ] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
+        * [ ] The server has to signal in the async response, when the optimization is done.
+        * [ ] Delete user session, when last response was retrieved.
+        * [ ] Use domain object for EditorProcessor with an appropriate serialization method via the existing mini framework.
+    * [ ] Create a test for multiple requests by anonymous with different live cycles,
+      where cross life cycles talk is tested.
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.

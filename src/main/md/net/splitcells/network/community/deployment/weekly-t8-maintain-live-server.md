@@ -77,7 +77,7 @@ as long as no additional network expansions are bought for the package.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
     * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality.
-* [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up.
+* [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up, as it can monitor such.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
 * [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
