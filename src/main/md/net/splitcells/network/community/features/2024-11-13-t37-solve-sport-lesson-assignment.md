@@ -47,6 +47,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Do bulk adds between problems of the composed problem.
         * [ ] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
+    * [ ] Consider disabling solution history.
 * [ ] CURRENT The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
     * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
     * [x] Define a life cycle id for a user session.
@@ -54,14 +55,20 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] Create an Object holder for user session specific state. -> The holder is AcccessContainer.
     * [x] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
     * [x] Correctly, determine user session.
-    * [ ] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
+    * [x] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
     * [ ] Request async optimization in editor.
-        * [ ] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
-        * [ ] The server has to signal in the async response, when the optimization is done.
-        * [ ] Delete user session, when last response was retrieved.
-        * [ ] Show optimization status in editor.
+        * [x] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
+        * [x] The server has to signal in the async response, when the optimization is done.
+        * [x] Delete user session, when last response was retrieved.
+        * [x] Show optimization status in editor.
+        * [ ] Adjust editor GUI test, so it waits until is-optimizing is set to false.
+        * [x] Ensure that the `Calculate solution` button has correct state ofter the optimization is complete.
+    * [ ] Check why EditorProcessorTest is so slow.
+    * [ ] Create pause button.
+    * [ ] Test DefaultEditorOptimization regarding indexes.
     * [ ] Create a test for multiple requests by anonymous with different live cycles,
       where cross life cycles talk is tested.
+    * [ ] Clean up security interfaces.
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
