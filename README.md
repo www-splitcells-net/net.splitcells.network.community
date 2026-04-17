@@ -1,6 +1,6 @@
 # Splitcells Network Community
 * Currently, the largest ticket ID created and managed by this repo is 71.
-  Note, that some ticket ID are from Codeberg and GitHub and therefore duplicate IDs exist.
+  Note, that some ticket IDs are from Codeberg or GitHub and therefore duplicate IDs exist.
   Use the dates of the tickets, issues and commits.
 ## Goals
 This project stores, organizes and develops tasks and ideas for the Splitcells Network. 
