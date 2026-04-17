@@ -101,7 +101,7 @@ Projects that are being worked cyclically, and probably will never be finished:
 ```
 # Weekly deploy static website.
 * Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/51)
-* If there is no link to an issue, the following can be used:
+* If there is no link to an issue, the following can be used and implies that the issue number domain is managed by this repo:
 * Issue number: \#32
 * Start Date: 2025-04-05
 * End Date: 2025-04-06
