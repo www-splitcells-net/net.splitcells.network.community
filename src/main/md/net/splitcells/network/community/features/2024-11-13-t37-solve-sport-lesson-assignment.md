@@ -56,19 +56,22 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
     * [x] Correctly, determine user session.
     * [x] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
-    * [ ] Request async optimization in editor.
+    * [x] Request async optimization in editor.
         * [x] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
         * [x] The server has to signal in the async response, when the optimization is done.
         * [x] Delete user session, when last response was retrieved.
         * [x] Show optimization status in editor.
-        * [ ] Adjust editor GUI test, so it waits until is-optimizing is set to false.
         * [x] Ensure that the `Calculate solution` button has correct state ofter the optimization is complete.
-    * [ ] Check why EditorProcessorTest is so slow.
-    * [ ] Create pause button.
-    * [ ] Test DefaultEditorOptimization regarding indexes.
+    * [x] Check why EditorProcessorTest is so slow. -> This unit test is in fact a capability test. The test annotation was adjusted accordingly, so it is only tested during the daily CI.
+    * [o] Create pause button. -> The IDEs debugger is enough for pausing the program for now.
+    * [x] Test DefaultEditorOptimization regarding indexes.
+    * [ ] Clean up security interfaces.
+        * [x] AccessControl vs AccessProvider -> Only AccessControl is needed.
+        * [ ] Concept of user is required and not just user sessions, because it's otherwise hard to link to in JavaDoc.
+          Furthermore, this will be required, wenn user creation and managment is introduced.
+        * [ ] Currently, what is a  username in code is the in fact the user id.
     * [ ] Create a test for multiple requests by anonymous with different live cycles,
       where cross life cycles talk is tested.
-    * [ ] Clean up security interfaces.
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
