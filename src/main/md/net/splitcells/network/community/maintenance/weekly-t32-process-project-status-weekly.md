@@ -18,9 +18,8 @@ This does not apply for statuses, that show progress.
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
-# Tasks.
-* [ ] Check warnings during build and provide these to the website. 
-* [ ] Let Tester test capability tests as well. 
+* Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+# Tasks.  
 * [ ] Check validity of all links.
 * [ ] Test if Linux application is runnable.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
@@ -46,6 +45,8 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Let Tester test capability tests as well. -> This is already the case.
+* [x] Check warnings during build and provide these to the website. -> The check is regularly done via the daily CI logs.
 * [x] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
   The reason for that is, that JavaFX's browser is lacking of quality and using SWT as a browser is complicated on Linux, because of binding issues.
   RCP does not seem to have the same problem, even though it also uses SWT, but RCP is too hard to program for.
