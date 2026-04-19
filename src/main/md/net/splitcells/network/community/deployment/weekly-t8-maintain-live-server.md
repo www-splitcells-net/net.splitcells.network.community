@@ -32,11 +32,12 @@ as long as no additional network expansions are bought for the package.
     * [x] Get access to server via SSH port-forwarding scripts.
     * [x] Setup visualization server based on Grafana:
     * [ ] Adapt logging to Prometheus via vendor-agnostic OpenTelemetry: use Prometheus server, if it is found via config or convention and otherwise store logs to file as it already is.
-        * [ ] Loki has to be installed and connected with Grafana.
+        * [x] Loki has to be installed and connected with Grafana.
         * [ ] Find correct library for this.
         * [ ] Create own telemetry log API.
         * [ ] Forward own API calls to OpenTelemetry.
         * [ ] Detect Prometheus server is not reachable anymore, when it is configured. Maybe the used lib does this already.
+        * [ ] Ensure that Loki deletes all logs older than 7 days.
     * [ ] Log JVM metrics: https://prometheus.github.io/client_java/instrumentation/jvm/
         * [ ] Consider using the push model, in order to simplify open ports: https://prometheus.github.io/client_java/exporters/pushgateway/
         * [ ] CPU usage

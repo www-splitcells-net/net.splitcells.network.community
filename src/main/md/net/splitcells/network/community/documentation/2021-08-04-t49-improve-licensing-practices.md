@@ -55,7 +55,8 @@ We also need full accounting for it.
             * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
               A write method is not needed for this, as there is currently no use case for that.
                 * [x] The default implementation should return empty metadata.
-                * [ ] Implement this for FileSystemViaClassResourcesImpl.
+                * [x] Implement this for FileSystemViaClassResourcesImpl.
+                * [ ] Test this for FileSystemViaClassResourcesImpl.
                 * [ ] Implement this for the DevDistroCell.
             * [ ] Only provide access to metadata, to which the user has access to.
                 * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.

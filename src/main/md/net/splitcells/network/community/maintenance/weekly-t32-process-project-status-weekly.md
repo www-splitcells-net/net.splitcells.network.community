@@ -19,9 +19,12 @@ This does not apply for statuses, that show progress.
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
-# Tasks.  
-* [ ] Check validity of all links.
+# Tasks.
 * [ ] Test if Linux application is runnable.
+    * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
+      as `net.splitcells.network.distro.java.jar` is required by the GUI app.
+* [ ] Check validity of all links.
+
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
