@@ -108,7 +108,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Solve sport lesson assignment.
     * [ ] Extend optimization guidelines and
     * [ ] Link optimization guidelines from the main Gel documentation at https://splitcells.net/net/splitcells/gel/index.html in order to make it more discoverable.
-    * [ ] Check why current optimization cannot solve the problem.
+    * [ ] Check why current optimization cannot solve the problem by testing it via a smaller than user demand set.
+        * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
