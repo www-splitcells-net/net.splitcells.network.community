@@ -48,30 +48,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Consider disabling solution history.
-* [ ] CURRENT The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
-    * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
-    * [x] Define a life cycle id for a user session.
-    * [x] Make life cycle id alphanumeric, so it's easy to copy and use in URLs as path parameters.
-    * [x] Create an Object holder for user session specific state. -> The holder is AcccessContainer.
-    * [x] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
-    * [x] Correctly, determine user session.
-    * [x] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
-    * [x] Request async optimization in editor.
-        * [x] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
-        * [x] The server has to signal in the async response, when the optimization is done.
-        * [x] Delete user session, when last response was retrieved.
-        * [x] Show optimization status in editor.
-        * [x] Ensure that the `Calculate solution` button has correct state ofter the optimization is complete.
-    * [x] Check why EditorProcessorTest is so slow. -> This unit test is in fact a capability test. The test annotation was adjusted accordingly, so it is only tested during the daily CI.
-    * [o] Create pause button. -> The IDEs debugger is enough for pausing the program for now.
-    * [x] Test DefaultEditorOptimization regarding indexes.
-    * [x] Clean up security interfaces.
-        * [x] AccessControl vs AccessProvider -> Only AccessControl is needed.
-        * [o] Concept of user is required and not just user sessions, because it's otherwise hard to link to in JavaDoc.
-          Furthermore, this will be required, wenn user creation and management is introduced. -> It will be introduced, when its actually required.
-        * [x] Currently, what is a  username in code is the in fact the user id.
-    * [ ] Create a test for multiple requests by anonymous with different live cycles,
-      where cross life cycles talk is tested.
 * [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
@@ -179,6 +155,30 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Show warning in editor, if runtime checks are enabled.
     * [ ] Consider fast alternative runtime checks for checks that have very little effect.
 # Done Tasks
+* [x] The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
+    * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
+    * [x] Define a life cycle id for a user session.
+    * [x] Make life cycle id alphanumeric, so it's easy to copy and use in URLs as path parameters.
+    * [x] Create an Object holder for user session specific state. -> The holder is AcccessContainer.
+    * [x] Every time an async flag is sent, the EditorProcess should create an intermediate editor update and simultaneously run the editor optimization in the background with the user session's life cycle id.
+    * [x] Correctly, determine user session.
+    * [x] The editor in the background can be accessed via a new user session and the previous user session's life cycle id.
+    * [x] Request async optimization in editor.
+        * [x] If there is an `async-user-session-life-cycle-id`, then query the server regularly for async update after getting the first response.
+        * [x] The server has to signal in the async response, when the optimization is done.
+        * [x] Delete user session, when last response was retrieved.
+        * [x] Show optimization status in editor.
+        * [x] Ensure that the `Calculate solution` button has correct state ofter the optimization is complete.
+    * [x] Check why EditorProcessorTest is so slow. -> This unit test is in fact a capability test. The test annotation was adjusted accordingly, so it is only tested during the daily CI.
+    * [o] Create pause button. -> The IDEs debugger is enough for pausing the program for now.
+    * [x] Test DefaultEditorOptimization regarding indexes.
+    * [x] Clean up security interfaces.
+        * [x] AccessControl vs AccessProvider -> Only AccessControl is needed.
+        * [o] Concept of user is required and not just user sessions, because it's otherwise hard to link to in JavaDoc.
+          Furthermore, this will be required, wenn user creation and management is introduced. -> It will be introduced, when its actually required.
+        * [x] Currently, what is a  username in code is the in fact the user id.
+    * [x] Create a test for multiple requests by anonymous with different live cycles,
+      where cross life cycles talk is tested.
 * [x] Load test data, when the sport lesson example is chosen. -> This is already done.
 * [x] Double check test data by hand.
     * [x] Use generated names for students instead of numbers, as to make the example more real world likish by styling.
