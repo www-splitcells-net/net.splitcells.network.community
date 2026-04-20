@@ -65,11 +65,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] Check why EditorProcessorTest is so slow. -> This unit test is in fact a capability test. The test annotation was adjusted accordingly, so it is only tested during the daily CI.
     * [o] Create pause button. -> The IDEs debugger is enough for pausing the program for now.
     * [x] Test DefaultEditorOptimization regarding indexes.
-    * [ ] Clean up security interfaces.
+    * [x] Clean up security interfaces.
         * [x] AccessControl vs AccessProvider -> Only AccessControl is needed.
-        * [ ] Concept of user is required and not just user sessions, because it's otherwise hard to link to in JavaDoc.
-          Furthermore, this will be required, wenn user creation and managment is introduced.
-        * [ ] Currently, what is a  username in code is the in fact the user id.
+        * [o] Concept of user is required and not just user sessions, because it's otherwise hard to link to in JavaDoc.
+          Furthermore, this will be required, wenn user creation and management is introduced. -> It will be introduced, when its actually required.
+        * [x] Currently, what is a  username in code is the in fact the user id.
     * [ ] Create a test for multiple requests by anonymous with different live cycles,
       where cross life cycles talk is tested.
 * [ ] The Gel editor CSV import and output is not working.

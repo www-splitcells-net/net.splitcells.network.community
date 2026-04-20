@@ -23,6 +23,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
 * [ ] Create dedicated logging services.
     * [x] Fix errors in systemd logs.
         * [x] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`
