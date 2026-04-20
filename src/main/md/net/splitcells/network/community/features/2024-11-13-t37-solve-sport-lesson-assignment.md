@@ -48,67 +48,67 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Consider disabling solution history.
-* [ ] The Gel editor CSV import and output is not working.
 * [ ] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
     * [ ] When executing `Calculate solution`, clear the error input field,
       so that old errors are not visible.
-    * [ ] Note in rating report, is complete and state whether the solution is known to be optimal.
+    * [x] Note in rating report, is complete and state whether the solution is known to be optimal.
     * [ ] Implement DefaultEditorOptimization.
         * [x] Draft version running version.
-        * [ ] Solve problem with DefaultEditorOptimization.
-            * [ ] Validate solutions by hand.
-                * [x] Create a mini framework for problem definition testing.
-                  One would just state the link to the problem definition, the content of the solution table and the resulting rating.
-                  This probably could be implemented as additional test methods at the editor class.
-                  -> `Editor#importSolutionCsvData` is enough for now.
-                * [ ] Make it easier to look up table constraints for debugging via DevDistroCell.
-                    * [x] Add solution name as prefix to constraint paths, as otherwise it gets hard to find the constraints of just on solution in a problem. 
-                    * [x] Remove duplicate modification counters. -> There were none.
-                    * [x] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
-                        * [x] Then
-                        * [x] ForAll
-                        * [x] ForAlls
-                        * [x] Provide path name for all raters. -> Some shortcuts/workarounds were done for some raters. 
-                            * [x] equals of Geal -> RaterBasedOnLineValue
-                            * [x] ForAllWithCondition
-                            * [x] AllDifferent
-                            * [x] ConstantRater
-                            * [x] HasMaximalSize
-                            * [x] HasMinimalSize
-                            * [x] HasSize
-                            * [x] LineGroupRater
-                                * [x] GroupingRater
-                            * [x] MinimalDistance
-                            * [x] MinimalDistanceBasedOnDiffs
-                            * [x] Not
-                            * [x] RaterBasedOnLineGroup
-                                * [x] SimpleDescriptor
-                                * [x] GroupRater
-                                * [x] GroupRouter
-                            * [x] RaterBasedOnLineValue
-                                * [x] lineValueRater
-                            * [x] ForAllAttributeValues
-                            * [x] ForAllValueCombinations
-                            * [x] GroupMultiplier
-                            * [x] Propagation
-                            * [x] RaterBasedOnGrouping
-                            * [x] ThenAtLeastRater
-                            * [x] TimeSteps
-                            * [x] CommitmentAdherence
-                            * [x] TemplateAdherence
-                            * [x] FundamentalWorldRules
-                            * [x] CommitmentAdherence
-                            * [x] Loneliness
-                            * [x] PositionClusters
-                        * [x] Check all editor examples.
-                    * [x] Make `Rater#descriptiveName` a required implementation without a default one.
-                    * [ ] The propagation of the Not rater does not seem to work.
-                        * [x] Add propagation test to NotTest.
-                        * [ ] Fix the propagation.
-                    * [ ] The rendering of lineProcessing does not show the ratings.
+        * [x] Create a mini framework for problem definition testing.
+          One would just state the link to the problem definition, the content of the solution table and the resulting rating.
+          This probably could be implemented as additional test methods at the editor class.
+          -> `Editor#importSolutionCsvData` is enough for now.
+        * [x] Make it easier to look up table constraints for debugging via DevDistroCell.
+            * [x] Add solution name as prefix to constraint paths, as otherwise it gets hard to find the constraints of just on solution in a problem. 
+            * [x] Remove duplicate modification counters. -> There were none.
+            * [x] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
+                * [x] Then
+                * [x] ForAll
+                * [x] ForAlls
+                * [x] Provide path name for all raters. -> Some shortcuts/workarounds were done for some raters. 
+                    * [x] equals of Geal -> RaterBasedOnLineValue
+                    * [x] ForAllWithCondition
+                    * [x] AllDifferent
+                    * [x] ConstantRater
+                    * [x] HasMaximalSize
+                    * [x] HasMinimalSize
+                    * [x] HasSize
+                    * [x] LineGroupRater
+                        * [x] GroupingRater
+                    * [x] MinimalDistance
+                    * [x] MinimalDistanceBasedOnDiffs
+                    * [x] Not
+                    * [x] RaterBasedOnLineGroup
+                        * [x] SimpleDescriptor
+                        * [x] GroupRater
+                        * [x] GroupRouter
+                    * [x] RaterBasedOnLineValue
+                        * [x] lineValueRater
+                    * [x] ForAllAttributeValues
+                    * [x] ForAllValueCombinations
+                    * [x] GroupMultiplier
+                    * [x] Propagation
+                    * [x] RaterBasedOnGrouping
+                    * [x] ThenAtLeastRater
+                    * [x] TimeSteps
+                    * [x] CommitmentAdherence
+                    * [x] TemplateAdherence
+                    * [x] FundamentalWorldRules
+                    * [x] CommitmentAdherence
+                    * [x] Loneliness
+                    * [x] PositionClusters
+                * [x] Check all editor examples.
+            * [x] Make `Rater#descriptiveName` a required implementation without a default one.
+            * [ ] The propagation of the Not rater does not seem to work.
+                * [x] Add propagation test to NotTest.
+                * [ ] Fix the propagation.
+            * [ ] The rendering of lineProcessing does not show the ratings.
 * [ ] Solve sport lesson assignment.
+    * [ ] Extend optimization guidelines and
+    * [ ] Link optimization guidelines from the main Gel documentation at https://splitcells.net/net/splitcells/gel/index.html in order to make it more discoverable.
+    * [ ] Check why current optimization cannot solve the problem.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
@@ -117,7 +117,6 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Allow users to define a partial solution, that is the basis for the given problem.
   The optimizer is not allowed to change the allocations given by the user.
 * [ ] Note overhaul changes in changelog.
-* [ ] Delete old Gel editor domain language.
 * [ ] Deprecate Sep project.
     * [ ] Move Sep code into editor project.
     * [ ] Migrate sep usage to editor.
@@ -128,33 +127,35 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
       where a program also represents a GUI for interacting with the world.
 * [ ] Note that initial no-code editor was a feature creep.
-* [ ] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
-  Currently, some span styles are overwritten by the `basic.css`.
-    * [ ] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
-* [ ] Test EditorProcessor via none integration test, that uses less infrastructure.
 * [ ] Preserver no-code editor UI code,
   as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
-* [ ] Consolidate `net.splitcells.gel.editor.lang`.
 * [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
-* [ ] Improve news feed of live server.
 * [ ] Create help command in editor, in order to access function call doc without closing the current editor and thereby loosing its content.
-* [ ] Move ColloquiumPlanningTest of `net.splitcells.gel.ext` to editor project.
-    * [ ] Used editor for testing. 
-    * [ ] Use Geal code for testing.
 * [ ] Ensure that all constraint types and raters are usable in the Geal.
     * [ ] Decide and note on relationship between Query and Editor.
-* [ ] Add background box to section titles in menu.
-* [ ] Improve styling of news.
-* [ ] Consider making distinction between hard and soft constraints.
 * [ ] Add link to editor at `Introduction to the Generic Allocator`.
-* [ ] Delete data fields, that do not exist anymore, because i.e. the argument of a importCsvData call was changed.
-* [ ] Add to `Constraint Rating Report` the info, if the solution is complete or not.
-* [ ] Consider nesting main editor menu for fields with the same prefix as the solution.
-* [ ] When submitting an optimization with a solution in the editor, this solution should be used as a starting point.
 * [ ] Manage runtime checks in production more effectively.
     * [ ] Show warning in editor, if runtime checks are enabled.
     * [ ] Consider fast alternative runtime checks for checks that have very little effect.
+    * [ ] Consider disabling solution history for an additional speed up.
 # Done Tasks
+* [o] When submitting an optimization with a solution in the editor, this solution should be used as a starting point. -> This is feature creep.
+* [o] Consider nesting main editor menu for fields with the same prefix as the solution. -> This is feature creep.
+* [x] Add to `Constraint Rating Report` the info, if the solution is complete or not.
+* [o] Consider making distinction between hard and soft constraints. -> This is feature creep.
+* [o] Improve styling of news. -> This is not a great priority in this task.
+* [x] Add background box to section titles in menu.
+* [x] Move ColloquiumPlanningTest of `net.splitcells.gel.ext` to editor project.
+    * [x] Used editor for testing.
+    * [x] Use Geal code for testing.
+* [x] Improve news feed of live server.
+* [x] Consolidate `net.splitcells.gel.editor.lang`.
+* [x] Test EditorProcessor via none integration test, that uses less infrastructure.
+* [x] Use monospace fonts, in order to have consistent nice formatting in the code editor's default example.
+  Currently, some span styles are overwritten by the `basic.css`. -> `basic.css` was extended and works good enough.
+    * [o] Try adjusting this via a CodeMirror config: https://discuss.codemirror.net/t/changing-the-font-size-of-cm6/2935/5
+* [x] Delete old Gel editor domain language.
+* [x] The Gel editor CSV import and output is not working. -> It seems to be working.
 * [x] The editor needs an optimization progress field, that is updated continuously, as otherwise it is hard for the user understand the situation of long-running optimization.
     * [x] Do not use constant user session for things like anonymous, as it makes things more complicated.
     * [x] Define a life cycle id for a user session.
