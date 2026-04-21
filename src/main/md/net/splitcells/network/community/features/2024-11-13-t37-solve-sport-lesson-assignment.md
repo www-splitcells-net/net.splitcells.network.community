@@ -48,26 +48,61 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Consider disabling solution history.
-* [ ] Support complex problems with the default optimization.
+* [ ] Solve sport lesson assignment.
+    * [ ] Extend optimization guidelines and
+    * [ ] Link optimization guidelines from the main Gel documentation at https://splitcells.net/net/splitcells/gel/index.html in order to make it more discoverable.
+    * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
+        * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
+* [ ] Make it easier to understand the solution.
+    * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
+    * [ ] Store and show positive reason, why a certain supply has not a cost.
+      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
+    * [ ] Color allocations according to their respective ratings.
+* [ ] Allow users to define a partial solution, that is the basis for the given problem.
+  The optimizer is not allowed to change the allocations given by the user.
+* [ ] Note overhaul changes in changelog.
+* [ ] Deprecate Sep project.
+    * [ ] Move Sep code into editor project.
+    * [ ] Migrate sep usage to editor.
+    * [ ] Remove Sep code.
+* [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
+  If mobile support becomes required, then an additional no-code editor might be worth it.
+    * [ ] It seems, that Codemirror 6 has better mobile view.
+    * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
+      where a program also represents a GUI for interacting with the world.
+* [ ] Note that initial no-code editor was a feature creep.
+* [ ] Preserver no-code editor UI code,
+  as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
+* [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
+* [ ] Create help command in editor, in order to access function call doc without closing the current editor and thereby loosing its content.
+* [ ] Ensure that all constraint types and raters are usable in the Geal.
+    * [ ] Decide and note on relationship between Query and Editor.
+* [ ] Add link to editor at `Introduction to the Generic Allocator`.
+* [ ] Manage runtime checks in production more effectively.
+    * [ ] Show warning in editor, if runtime checks are enabled.
+    * [ ] Consider fast alternative runtime checks for checks that have very little effect.
+    * [ ] Consider disabling solution history for an additional speed up.
+# Done Tasks
+* [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
-    * [ ] When executing `Calculate solution`, clear the error input field,
+    * [x] When executing `Calculate solution`, clear the error input field,
       so that old errors are not visible.
     * [x] Note in rating report, is complete and state whether the solution is known to be optimal.
-    * [ ] Implement DefaultEditorOptimization.
+    * [x] Implement DefaultEditorOptimization.
         * [x] Draft version running version.
         * [x] Create a mini framework for problem definition testing.
           One would just state the link to the problem definition, the content of the solution table and the resulting rating.
           This probably could be implemented as additional test methods at the editor class.
           -> `Editor#importSolutionCsvData` is enough for now.
         * [x] Make it easier to look up table constraints for debugging via DevDistroCell.
-            * [x] Add solution name as prefix to constraint paths, as otherwise it gets hard to find the constraints of just on solution in a problem. 
+            * [x] Add solution name as prefix to constraint paths, as otherwise it gets hard to find the constraints of just on solution in a problem.
             * [x] Remove duplicate modification counters. -> There were none.
-            * [x] Make constraint paths more understandable by adjusting the constraints discoverable parent.* 
+            * [x] Make constraint paths more understandable by adjusting the constraints discoverable parent.*
                 * [x] Then
                 * [x] ForAll
                 * [x] ForAlls
-                * [x] Provide path name for all raters. -> Some shortcuts/workarounds were done for some raters. 
+                * [x] Provide path name for all raters. -> Some shortcuts/workarounds were done for some raters.
                     * [x] equals of Geal -> RaterBasedOnLineValue
                     * [x] ForAllWithCondition
                     * [x] AllDifferent
@@ -101,45 +136,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] PositionClusters
                 * [x] Check all editor examples.
             * [x] Make `Rater#descriptiveName` a required implementation without a default one.
-            * [ ] The propagation of the Not rater does not seem to work.
+            * [x] The propagation of the Not rater does not seem to work.
                 * [x] Add propagation test to NotTest.
-                * [ ] Fix the propagation.
-            * [ ] The rendering of lineProcessing does not show the ratings.
-* [ ] Solve sport lesson assignment.
-    * [ ] Extend optimization guidelines and
-    * [ ] Link optimization guidelines from the main Gel documentation at https://splitcells.net/net/splitcells/gel/index.html in order to make it more discoverable.
-    * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
-        * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem.
-* [ ] Make it easier to understand the solution.
-    * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
-    * [ ] Store and show positive reason, why a certain supply has not a cost.
-      In other words, show all longest constraint paths, where the respective allocation was propagated to a then constraint node.
-    * [ ] Color allocations according to their respective ratings.
-* [ ] Allow users to define a partial solution, that is the basis for the given problem.
-  The optimizer is not allowed to change the allocations given by the user.
-* [ ] Note overhaul changes in changelog.
-* [ ] Deprecate Sep project.
-    * [ ] Move Sep code into editor project.
-    * [ ] Migrate sep usage to editor.
-    * [ ] Remove Sep code.
-* [ ] Note in doc, that the code editor does not work great on mobile and that the no-code editor was great there.
-  If mobile support becomes required, then an additional no-code editor might be worth it.
-    * [ ] It seems, that Codemirror 6 has better mobile view.
-    * [ ] A no-code editor would be interesting for something interactive like crisis network (Cin),
-      where a program also represents a GUI for interacting with the world.
-* [ ] Note that initial no-code editor was a feature creep.
-* [ ] Preserver no-code editor UI code,
-  as this may actually be useful in the future for interactive problems or as a general programming language based form UI.
-* [ ] User session management has to be done via `Dem#config` which also basically deprecates AccessControl.
-* [ ] Create help command in editor, in order to access function call doc without closing the current editor and thereby loosing its content.
-* [ ] Ensure that all constraint types and raters are usable in the Geal.
-    * [ ] Decide and note on relationship between Query and Editor.
-* [ ] Add link to editor at `Introduction to the Generic Allocator`.
-* [ ] Manage runtime checks in production more effectively.
-    * [ ] Show warning in editor, if runtime checks are enabled.
-    * [ ] Consider fast alternative runtime checks for checks that have very little effect.
-    * [ ] Consider disabling solution history for an additional speed up.
-# Done Tasks
+                * [x] Fix the propagation.
+            * [x] The rendering of lineProcessing does not show the ratings.
 * [o] When submitting an optimization with a solution in the editor, this solution should be used as a starting point. -> This is feature creep.
 * [o] Consider nesting main editor menu for fields with the same prefix as the solution. -> This is feature creep.
 * [x] Add to `Constraint Rating Report` the info, if the solution is complete or not.
