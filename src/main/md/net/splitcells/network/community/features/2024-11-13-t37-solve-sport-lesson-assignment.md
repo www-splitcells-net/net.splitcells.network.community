@@ -81,7 +81,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Manage runtime checks in production more effectively.
     * [ ] Show warning in editor, if runtime checks are enabled.
     * [ ] Consider fast alternative runtime checks for checks that have very little effect.
-    * [ ] Consider disabling solution history for an additional speed up.
+    * [ ] Consider disabling solution history for an additional speed-up.
+* [ ] Create a capabilities test suite for the DefaultEditorOptimization with all examples up until now.
 # Done Tasks
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
