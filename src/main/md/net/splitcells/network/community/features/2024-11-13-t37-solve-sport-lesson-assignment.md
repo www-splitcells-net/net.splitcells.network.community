@@ -43,9 +43,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] INLINE_STANDARD_FACTORIES does not seem to be active. -> This was just an incorrect setting in the debug configuration of the IDE: in Java system properties are set via -D parameters and not via environment variables.
     * [ ] Find hotpaths via VisualVM sampler and `sports-course-planning.txt`.
     * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance.
-    * [ ] The lookup system is crazy.
-    * [ ] Do bulk adds between problems of the composed problem.
-        * [ ] Are the problems inside an editor connected at all yet?
+    * [x] The lookup system is crazy.
+    * [o] Do bulk adds between problems of the composed problem. -> This is not needed for now.
+        * [o] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Consider disabling solution history.
 * [ ] Solve sport lesson assignment.
