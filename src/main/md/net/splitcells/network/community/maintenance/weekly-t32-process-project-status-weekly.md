@@ -21,11 +21,14 @@ This does not apply for statuses, that show progress.
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
+* [ ] Fix private repo synchronization.
+    * [ ] Repo process does not handle peer repos correctly.
+    * [ ] Create `developer.boostrap.sh`.
+    * [ ] Test everything via the private hub repo, in order to ensure that **everything** works.
 * [ ] Test if Linux application is runnable.
     * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
       as `net.splitcells.network.distro.java.jar` is required by the GUI app.
 * [ ] Check validity of all links.
-
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
 * [ ] Use https://github.com/spotbugs/spotbugs-maven-plugin
