@@ -21,6 +21,9 @@ This does not apply for statuses, that show progress.
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
+* [ ] Fix repo process, as its recursion does not work.
+    * [ ] Replace targetPath with a variable, that has the same content across old child processes of an execution.
+      This way it gets way easier to make the code testable.
 * [ ] Test if Linux application is runnable.
     * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
       as `net.splitcells.network.distro.java.jar` is required by the GUI app.
