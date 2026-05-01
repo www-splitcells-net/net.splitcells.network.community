@@ -22,15 +22,16 @@ This does not apply for statuses, that show progress.
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
 * [ ] Fix private repo synchronization.
-    * [ ] Repo process does not handle peer repos correctly.
+    * [x] Repo process does not handle peer repos correctly.
     * [ ] Create `developer.boostrap.sh`.
         * [ ] Boostrap personal desktop.
-    * [ ] Test everything via the private hub repo, in order to ensure that **everything** works.
-        * [ ] repos.remote.set
-        * [ ] repos.push.at.all
-        * [ ] repos.push.at
-        * [ ] repos.repair
-        * [ ] repos.synchronize.with
+    * [x] Test everything via the private hub repo, in order to ensure that **everything** works.
+        * [x] repos.remote.set
+        * [x] repos.push.at.all
+        * [x] repos.push.at
+        * [x] repos.repair
+        * [x] repo.copy
+        * [x] repos.synchronize.with
     * [x] Fix repo process, as its recursion does not work.
         * [x] Replace targetPath with a variable, that has the same content across old child processes of an execution.
           This way it gets way easier to make the code testable.
