@@ -24,9 +24,15 @@ This does not apply for statuses, that show progress.
 * [ ] Fix private repo synchronization.
     * [ ] Repo process does not handle peer repos correctly.
     * [ ] Create `developer.boostrap.sh`.
+        * [ ] Boostrap personal desktop.
     * [ ] Test everything via the private hub repo, in order to ensure that **everything** works.
-    * [ ] Fix repo process, as its recursion does not work.
-        * [ ] Replace targetPath with a variable, that has the same content across old child processes of an execution.
+        * [ ] repos.remote.set
+        * [ ] repos.push.at.all
+        * [ ] repos.push.at
+        * [ ] repos.repair
+        * [ ] repos.synchronize.with
+    * [x] Fix repo process, as its recursion does not work.
+        * [x] Replace targetPath with a variable, that has the same content across old child processes of an execution.
           This way it gets way easier to make the code testable.
 * [ ] Test if Linux application is runnable.
     * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
