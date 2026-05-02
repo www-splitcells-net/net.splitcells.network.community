@@ -21,13 +21,6 @@ This does not apply for statuses, that show progress.
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
-* [ ] Fix private repo synchronization.
-    * [ ] Repo process does not handle peer repos correctly.
-    * [ ] Create `developer.boostrap.sh`.
-    * [ ] Test everything via the private hub repo, in order to ensure that **everything** works.
-    * [ ] Fix repo process, as its recursion does not work.
-        * [ ] Replace targetPath with a variable, that has the same content across old child processes of an execution.
-          This way it gets way easier to make the code testable.
 * [ ] Test if Linux application is runnable.
     * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
       as `net.splitcells.network.distro.java.jar` is required by the GUI app.
@@ -55,6 +48,13 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Fix private repo synchronization.
+    * [x] Repo process does not handle peer repos correctly.
+    * [x] Create `developer.boostrap.sh`.
+    * [x] Test everything via the private hub repo, in order to ensure that **everything** works.
+    * [x] Fix repo process, as its recursion does not work.
+        * [x] Replace targetPath with a variable, that has the same content across old child processes of an execution.
+          This way it gets way easier to make the code testable.
 * [x] Let Tester test capability tests as well. -> This is already the case.
 * [x] Check warnings during build and provide these to the website. -> The check is regularly done via the daily CI logs.
 * [x] Make local app only provide a launcher and manager for the program and access the programm via the OS's native browser instead.
