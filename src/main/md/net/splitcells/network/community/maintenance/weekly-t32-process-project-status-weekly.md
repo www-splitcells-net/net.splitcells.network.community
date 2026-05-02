@@ -51,7 +51,14 @@ This does not apply for statuses, that show progress.
 * [x] Fix private repo synchronization.
     * [x] Repo process does not handle peer repos correctly.
     * [x] Create `developer.boostrap.sh`.
+        * [x] Boostrap personal desktop.
     * [x] Test everything via the private hub repo, in order to ensure that **everything** works.
+        * [x] repos.remote.set
+        * [x] repos.push.at.all
+        * [x] repos.push.at
+        * [x] repos.repair
+        * [x] repo.copy
+        * [x] repos.synchronize.with
     * [x] Fix repo process, as its recursion does not work.
         * [x] Replace targetPath with a variable, that has the same content across old child processes of an execution.
           This way it gets way easier to make the code testable.
