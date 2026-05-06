@@ -24,6 +24,8 @@ This does not apply for statuses, that show progress.
 * [ ] Test if Linux application is runnable.
     * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
       as `net.splitcells.network.distro.java.jar` is required by the GUI app.
+* [ ] Daily test repo process.
+* [ ] Also execute the shell project's test suite.
 * [ ] Check validity of all links.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
