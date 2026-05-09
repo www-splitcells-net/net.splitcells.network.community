@@ -50,7 +50,7 @@ We also need full accounting for it.
             * [x] Merge results of `REUSE.toml` parsing and individual file parsing.
             * [x] Process binary files with MetaData class. -> This is only supported via `**` matching in `REUSE.toml`.
               Currently, there is no supported metadata inside binary files and `REUSE.toml` is required by the REUSE tool.
-        * [ ] Implement `FileSystemViaClassResourcesImpl#license`.
+        * [x] Implement `FileSystemViaClassResourcesImpl#license`.
         * [ ] Implement `PathFileSystem#license`.
         * [ ] Consider implementing a default license method.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.

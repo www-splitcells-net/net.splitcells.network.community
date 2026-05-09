@@ -24,6 +24,8 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
+    * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
+      This avoids calls to projectsPaths.
 * [ ] Create dedicated logging services.
     * [x] Fix errors in systemd logs.
         * [x] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`

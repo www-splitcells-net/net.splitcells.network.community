@@ -21,9 +21,6 @@ This does not apply for statuses, that show progress.
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
-* [ ] Test if Linux application is runnable.
-    * [ ] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
-      as `net.splitcells.network.distro.java.jar` is required by the GUI app.
 * [ ] Daily test repo process.
 * [ ] Also execute the shell project's test suite.
 * [ ] Check validity of all links.
@@ -50,6 +47,10 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Test if Linux application is runnable.
+    * [x] The application has to be built via `net.splitcells.network.distro` instead of `net.splitcells.network.distro.java`,
+      as `net.splitcells.network.distro.java.jar` is required by the GUI app.
+        * [x] Delete `net.splitcells.network.distro.java`'s app files after the migration.
 * [x] Fix private repo synchronization.
     * [x] Repo process does not handle peer repos correctly.
     * [x] Create `developer.boostrap.sh`.

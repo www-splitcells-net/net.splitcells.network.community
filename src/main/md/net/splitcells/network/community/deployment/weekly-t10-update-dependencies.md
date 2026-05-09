@@ -13,7 +13,13 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] Note that Java 25 features can now be used.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
+    * [ ] `net.splitcells.pom.java.defaults`
+    * [ ] `net.splitcells.pom.java.minimal`
+    * [ ] `net.splitcells.network.distro`
+    * [ ] `net.splitcells.network.distro.java`
+    * [ ] `net.splitcells.network.distro.swt`
 * [ ] Add automatic dependency updates for distro repo as well.
+* [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
 * [x] Update of dependencies and Maven plugins does not seem to work, if the version is determined by a property.
 * [x] Note why automatic update is only updating by one version increment for each dependency.
