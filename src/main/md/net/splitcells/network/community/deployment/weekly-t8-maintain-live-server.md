@@ -26,6 +26,7 @@ as long as no additional network expansions are bought for the package.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
       This avoids calls to projectsPaths.
+        * [ ] The problem is, that the Java based HTTP server does not open its ports fully.
         * [ ] Disable link validation in live distro config.
         * [ ] Fix SSL certificate update.
 * [ ] Create dedicated logging services.
