@@ -26,6 +26,8 @@ as long as no additional network expansions are bought for the package.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
       This avoids calls to projectsPaths.
+        * [ ] Disable link validation in live distro config.
+        * [ ] Fix SSL certificate update.
 * [ ] Create dedicated logging services.
     * [x] Fix errors in systemd logs.
         * [x] Fix `2026-03-28 22:12:15.771 [ERROR] Error uploading snapshot: Failed to connect to host.docker.internal/10.0.2.2:4040`
@@ -81,6 +83,7 @@ as long as no additional network expansions are bought for the package.
     * [ ] Check for better log viewers in bash as an alternative to a full-blown prometheus, as this would simplify the deployment.
       -> Java Profiling is important enough in order to set up this stack. Note this.
     * [ ] Consider https://last9.io/blog/prometheus-with-docker-compose/ for advanced functionality.
+* [ ] Log complete Dem configuration at start of program. Consider a dedicated log method for Options.
 * [ ] Host CPU/Memory Utilization page does not work. -> Delete these pages, when Prometheus and Grafana is set up, as it can monitor such.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/cpu/utilization.csv.html
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
