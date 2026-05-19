@@ -22,11 +22,7 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 * Update Prometheus based Podman deployment.
-## Open Tasks
-* [ ] Fix SSL certificate update.
-    * [x] Enable HTTP server during certificate update.
-    * [ ] What is causing `Caused by: java.nio.channels.UnresolvedAddressException`?
-        * [x] Curl to https://acme-v02.api.letsencrypt.org/directory from inside the container is working without issues. 
+## Open Tasks 
 * [ ] Check whether authorization and co. is disabled during the certificate update.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
@@ -170,6 +166,11 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Fix SSL certificate update.
+    * [x] Enable HTTP server during certificate update.
+    * [x] What is causing `Caused by: java.nio.channels.UnresolvedAddressException`?
+        * [x] Curl to https://acme-v02.api.letsencrypt.org/directory from inside the container is working without issues.
+        * [x] Make server available again via HTTP during ACME. -> This was disabled by developer error during the migration to the Cell API.
 * [x] Fix Pyroscope errors in the logs by disabling telemetry.
     * [x] Note that this is done because of legal obligation to keep data safe and lacking of data leak prevention guarantees.
     * [x] Use Pyroscope YAML config file via [-config.file=/etc/pyroscope/config.yaml](https://oneuptime.com/blog/post/2026-02-09-grafana-pyroscope-profiling/view)
