@@ -24,7 +24,9 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Fix SSL certificate update.
-    * [ ] Enable HTTP server during certificate update. 
+    * [x] Enable HTTP server during certificate update.
+    * [ ] What is causing `Caused by: java.nio.channels.UnresolvedAddressException`?
+        * [x] Curl to https://acme-v02.api.letsencrypt.org/directory from inside the container is working without issues. 
 * [ ] Check whether authorization and co. is disabled during the certificate update.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.

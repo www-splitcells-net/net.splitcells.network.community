@@ -16,6 +16,7 @@
     * Consider mobile vs desktop view.
     * JavaDoc
 # Tasks
+* [ ] Clean up blog posts.
 * [ ] Update and improve https://splitcells.net/net/splitcells/gel/index.html
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
