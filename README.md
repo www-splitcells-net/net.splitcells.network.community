@@ -3,7 +3,7 @@
 > This project stores, organizes and develops tasks and ideas for the Splitcells Network.
 
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
-* Currently, the largest ticket ID created and managed by this repo is 71.
+* Currently, the largest ticket ID created and managed by this repo is 72.
   Note, that some ticket IDs are from Codeberg or GitHub and therefore duplicate IDs exist.
   Use the dates of the tickets, issues and commits, in order to find out which belongs to which.
 ## Standard Projects

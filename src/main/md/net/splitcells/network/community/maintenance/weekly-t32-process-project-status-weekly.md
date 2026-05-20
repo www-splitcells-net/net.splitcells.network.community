@@ -11,6 +11,7 @@ as otherwise it is hard to judge the status,
 when it is stating failure all the time.
 This does not apply for statuses, that show progress.
 # Service
+* Remove usage of Deprecations and afterward delete the unused deprecations. 
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
