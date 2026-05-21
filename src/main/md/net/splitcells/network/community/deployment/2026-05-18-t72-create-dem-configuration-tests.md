@@ -4,6 +4,12 @@ Create a Dem configuration string serialization, in order to test the configurat
 This way incorrectly refactored or migrated Dem configuration are not deployed to production.
 This happened among others during the migration to the Cell API. 
 # Tasks
+* [ ] Note this functionality in changelog.
+* [ ] Document this feature and its idea in `Dem#testSerializeConfiguration`'s JavaDoc.
+# Done Tasks
+* [x] Test LiveCryptoSetupCell.
+* [x] Test LiveDistroCell.
+* [x] Create a nice diff, if the test fails like git. -> The draft diff implementation is good enough, but probably will have to be improved in the future.
 * [x] Create Dem configuration serialization.
     * [x] Add optional serialization method to Option API.
     * [x] Add serialization for Cells. This is the test subject.
@@ -13,8 +19,3 @@ This happened among others during the migration to the Cell API.
     * [x] Implement optional serialization for all OptionImpls, where it makes sense. Currently working on X.
     * [x] Require all Options to implement the optional serialization, so none is overlooked.
 * [x] Test SystemCell.
-* [ ] Create a nice diff, if the test fails like git.
-* [ ] Test LiveCryptoSetupCell.
-* [ ] Test LiveDistroCell.
-* [ ] Note this functionality in changelog.
-* [ ] Document this feature and its idea in `Dem#testSerializeConfiguration`'s JavaDoc.
