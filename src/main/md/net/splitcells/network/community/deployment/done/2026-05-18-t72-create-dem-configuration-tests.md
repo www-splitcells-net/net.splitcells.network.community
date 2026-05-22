@@ -2,11 +2,10 @@
 # Task Description
 Create a Dem configuration string serialization, in order to test the configuration results in build tests.
 This way incorrectly refactored or migrated Dem configuration are not deployed to production.
-This happened among others during the migration to the Cell API. 
-# Tasks
-* [ ] Note this functionality in changelog.
-* [ ] Document this feature and its idea in `Dem#testSerializeConfiguration`'s JavaDoc.
+This happened among others during the migration to the Cell API.
 # Done Tasks
+* [x] Document this feature and its idea in `Dem#testSerializeConfiguration`'s JavaDoc.
+* [x] Note this functionality in changelog.
 * [x] Test LiveCryptoSetupCell.
 * [x] Test LiveDistroCell.
 * [x] Create a nice diff, if the test fails like git. -> The draft diff implementation is good enough, but probably will have to be improved in the future.
