@@ -17,7 +17,12 @@
     * JavaDoc
 # Tasks
 * [ ] Clean up blog posts.
-* [ ] Update and improve https://splitcells.net/net/splitcells/gel/index.html
+    * [x] Avoid showing metadata of CommonMark documents at the start of the document. Move it to the end instead.
+      See this [post](../blog/articles/2021-07-07-Creating-The-First-Public-Release.md).
+        * [x] All blog article's meta header have to adjusted to list style.
+        * [x] The CommonMark renderer has to detect the meta header and place it at the end of document.
+    * [ ] Currently working on this [post](../blog/articles/2021-07-07-Creating-The-First-Public-Release.md).
+* [ ] Update and improve https://splitcells.net/net/splitcells/gel/index.html via http://localhost:8443/net/splitcells/gel/index.html
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
     * [o] Render weekly projects as such and not as project proposals. -> This is already done.

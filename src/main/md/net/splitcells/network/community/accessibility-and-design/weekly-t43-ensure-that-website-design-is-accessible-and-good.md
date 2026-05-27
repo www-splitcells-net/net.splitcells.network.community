@@ -22,9 +22,9 @@ this is an opportunity to consider this aspect.
 * [ ] JavaScript is not working on iPhone and Safari.
     * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.
     * [ ] Maybe there is a developer mode/console on iPhone's Safari? -> Yes, via USB, but `Web Inspector` and `window.onerror` is better.
-        * [ ] Use `Web Inspector` from App store in iPhone instead.
+        * [x] Render error messages in meta column, via a hidden chapter, which can be viewed via a click on the error button.
+        * [ ] Use `Web Inspector` from App store in iPhone instead, but maybe `window.onerror` is enough. -> `window.onerror` is not enough, as the errors are not visible in Safari. 
         * [ ] Document `Web Inspector` usage and `window.onerror` extension for this weekly task.
-        * [ ] Render error messages in meta column, via a hidden chapter, which can be viewed via a click on the error button.
 * [ ] Add grain effect to background color.
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct.

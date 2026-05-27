@@ -83,9 +83,9 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                     * [x] GelDev
                     * [X] `net.splitcells.martins.avots.distro.DevDistroCell` -> `net.splitcells.martins.avots.distro.DevDistroCell`
                     * [x] `net.splitcells.martins.avots.distro.LiveDistro` -> `net.splitcells.martins.avots.distro.LiveDistroCell`
-                * [ ] Store Cells in Dem config and thereby make it possible to call its member methods.
+                * [x] Store Cells in Dem config and thereby make it possible to call its member methods.
                   This way, one can convert the static config methods to members of cells and prevent static config chaining which caused a lot of hard to understand complexity.
-                * [ ] Replace main methods based on static methods with cell based main methods and test these.
+                * [x] Replace main methods based on static methods with cell based main methods and test these.
                     * [x] `net.splitcells.network.system.SystemCell`
                     * [x] `net.splitcells.network.distro.DistroCell.`
                     * [x] `net.splitcells.network.distro.java.DistroCell`
