@@ -22,8 +22,7 @@ as long as no additional network expansions are bought for the package.
 * Check via browser, if there are client side errors.
 * Check htop.
 * Update Prometheus based Podman deployment.
-## Open Tasks 
-* [ ] Check whether authorization and co. is disabled during the certificate update.
+## Open Tasks
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
       This avoids calls to projectsPaths.
@@ -166,6 +165,7 @@ as long as no additional network expansions are bought for the package.
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
 ## Done Tasks
+* [x] Check whether authorization and co. is disabled during the certificate update. -> Yes, this is the case and this requirement is now explicitly noted in the source code.
 * [x] Fix SSL certificate update.
     * [x] Enable HTTP server during certificate update.
     * [x] What is causing `Caused by: java.nio.channels.UnresolvedAddressException`?

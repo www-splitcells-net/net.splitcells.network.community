@@ -7,21 +7,28 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] Let all interactive pages be a redirect to the live server instead.
-  Use a special domain for that, that is a placeholder and is used for nothing else.
-    * [x] Create a config to enable this functionality on static website. This functionality is disabled by default.
-      -> The existing `Config#isRenderingStaticWebsite` is used in combination with the new `Config#interactiveServer`.
-    * [x] Enable this config in the website project.
-    * [ ] Implement new config interpretation in extension.
+* [ ] Do not allow static website deployment with invalid links.
+    * [ ] Create strict rendering command, in order to final invalid links errors.
+    * [ ] Fix all invalid links.
+    * [ ] Stop deployment on first invalid link.
+* [ ] Fix all rendering warnings of the static website.
+* [ ] Disallow any XSL warnings and errors by default.
+    * [ ] Remove all XSL warnings and errors.
+* [ ] The websites logo does not work on iPhone. 
 * [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
   First [Publish public website source code](../compatibility-portability-and-adaptability/9999-2021-03-21-publish-public-website-source-code.md) has to be done.
     * [ ] Enable Javadoc rendering in workflow. It was disabled, as it takes a lot of time on the local computer.
     * [ ] At daily task to check the logs for warnings during the static site generation with fitting search terms.
-* [ ] Do not allow static website deployment with invalid links.
-* [ ] Disallow any XSL warnings and errors by default.
-    * [ ] Remove all XSL warnings and errors.
-* [ ] The websites logo does not work on iPhone.
 # Done Tasks
+* [x] Let all interactive pages be a redirect to the live server instead.
+  Use a special domain for that, that is a placeholder and is used for nothing else.
+    * [x] Create a config to enable this functionality on static website. This functionality is disabled by default.
+      -> The existing `Config#isRenderingStaticWebsite` is used in combination with the new `Config#interactiveServer`.
+    * [x] Enable this config in the website project.
+    * [x] Implement new config interpretation in extension.
+        * [x] TestExtension
+        * [x] UserProfilePageExtension
+        * [x] In Server for the editor.
 * [o] Invalid links are incorrectly counted. See https://splitcells.net/net/splitcells/website/server/project/validator/RenderingValidatorForHtmlLinks/build/splitcells-XPS-15-9570.csv.html
   -> This count is not stored anymore.
 * [x] GitHub's SVGs in the README attempt to set cookies. This should not even be attempted.
