@@ -50,9 +50,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Consider disabling solution history.
     * [ ] `Calculate solution` button cannot be clicked after the form processing.
 * [ ] Solve sport lesson assignment.
-    * [x] The editor has to store all intermediate optimization status, that were returned by the server.
+    * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
       Instead, only the last terminating step is visible, which also is a step, that does nothing.
+    * [x] Add optimization status history to editor that lists all intermediate optimization status.
+      Otherwise, there it is unreasonable expensive to understand the optimizer's approach.
     * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
