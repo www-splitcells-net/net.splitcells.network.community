@@ -50,14 +50,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Consider disabling solution history.
     * [ ] `Calculate solution` button cannot be clicked after the form processing.
 * [ ] Solve sport lesson assignment.
-    * [ ] Extend optimization guidelines and
-    * [ ] Link optimization guidelines from the main Gel documentation at https://splitcells.net/net/splitcells/gel/index.html in order to make it more discoverable.
+    * [x] The editor has to store all intermediate optimization status, that were returned by the server.
+      Otherwise, one does not see any optimization steps.
+      Instead, only the last terminating step is visible, which also is a step, that does nothing.
     * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
           This leads to an empty solution.
         * [ ] Render history table like other table on webserver for local development.
-    * [ ] Create new meta optimization based on escalation tree.* 
+    * [ ] Use new optimization tree. 
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
