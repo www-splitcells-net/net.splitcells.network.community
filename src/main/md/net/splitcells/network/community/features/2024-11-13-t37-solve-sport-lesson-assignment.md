@@ -54,12 +54,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
       Otherwise, one does not see any optimization steps.
       Instead, only the last terminating step is visible, which also is a step, that does nothing.
     * [x] Add optimization status history to editor that lists all intermediate optimization status.
+    * [ ] Make optimization status more detailed.
       Otherwise, there it is unreasonable expensive to understand the optimizer's approach.
     * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
           This leads to an empty solution.
-        * [ ] Render history table like other table on webserver for local development.
+        * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible?
+            * [x] Render tables with no-context path as well.
+            * [ ] Assignment are not registered or rendered.
+            * [ ] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
+            * [ ] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example.
     * [ ] Use new optimization tree. 
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -378,7 +383,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                                 * [x] Ensure, that the runners' subject is set correctly.
                             * [x] Make duplicate variable check complete.
                             * [x] Remove code duplicate in central parser.
-                        * [x] Test AST parsing and AST interpretation by example. CURRENT
+                        * [x] Test AST parsing and AST interpretation by example.
                           -> Test this at `EditorTest#testGealParsing`.
                             * [x] Remove concept of name expressions, as it is already covered by function calls without arguments and the parser is already mixing up these two.
                               The distinction has currently no practical use and introducing names later on will probably be easier,

@@ -22,6 +22,10 @@ This does not apply for statuses, that show progress.
 * Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
+* [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
+    * [ ] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo.
+    * [ ] Implement, test and add Javadoc to custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
+    * [ ] Only allow custom Semaphor interface in core code.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
