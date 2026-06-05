@@ -23,7 +23,7 @@ This does not apply for statuses, that show progress.
 * Update Java knowledge: https://javaevolved.github.io/de/
 # Tasks.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
-    * [ ] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo.
+    * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
     * [ ] Implement, test and add Javadoc to custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
     * [ ] Only allow custom Semaphor interface in core code.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
