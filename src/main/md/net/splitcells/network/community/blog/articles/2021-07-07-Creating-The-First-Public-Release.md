@@ -18,7 +18,6 @@ Nap was probably badly coded, as it was my first complex program.
 Nap did its job and that is the most important part of it:
 it solved optimization challenges and I learned to code.
 
-In hindsight, I noticed an emerging harmful pattern of mine during the development of Nap:
 I searched for a good way, how to implement, organize and document program options in Java, which was used for Nap.
 I did not find any, and frankly I probably did not know where to look.
 In Nap, there is no special configuration framework used.

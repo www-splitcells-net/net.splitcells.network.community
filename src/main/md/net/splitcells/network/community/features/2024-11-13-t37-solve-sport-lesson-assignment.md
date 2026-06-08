@@ -48,7 +48,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [o] Are the problems inside an editor connected at all yet?
     * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
     * [ ] Consider disabling solution history.
-    * [ ] `Calculate solution` button cannot be clicked after the form processing.
+    * [x] `Calculate solution` button cannot be clicked after the form processing.
+      -> This is caused by the fact, that net_splitcells_webserver_form_submit is called twice for one run.
+      The additional run is caused by the answer containing the current optimization status.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.

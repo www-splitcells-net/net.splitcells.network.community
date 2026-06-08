@@ -52,11 +52,6 @@ Projects that are being worked cyclically, and probably will never be finished:
   * [Link](./src/main/md/net/splitcells/network/community/security/index.md)
 * The Symbiosis Project
 ## Notes
-* In order to mark tasks in `task-archives` with a high priority,
-  add `9999-` as the file name prefix.
-  Do this with at most 1 task, as otherwise there will be a creep towards many such tasks.
-  Change the documents date in its file name back to its original,
-  when the task is started.
 * `very low priority` means, that the related thing is currently not being worked on, on a regular basis.
   So, it is also highly likely, that the related project is not up to date.
   In other words, there is no person regularly working on the related thing.
