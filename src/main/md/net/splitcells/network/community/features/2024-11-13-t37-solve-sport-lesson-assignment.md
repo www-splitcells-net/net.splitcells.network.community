@@ -62,11 +62,17 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
           This leads to an empty solution.
-        * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible?
+        * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible? 
             * [x] Render tables with no-context path as well.
-            * [ ] Assignment are not registered or rendered.
+            * [x] These are visible. Their paths with `history/event/history/mirror` which is irritating. It should be something like `history/event/assignment/mirror` instead.
+        * [ ] Improve history. 
+            * [ ] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable.
             * [ ] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
-            * [ ] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example.
+            * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
+            * [ ] Rename ALLOCATION_ID to EVENT_ID.
+            * [ ] Simplify ALLOCATION_EVENT.
+            * [ ] Fix HistoryI. Some changes done in this task were done incorrectly. 
+        * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
     * [ ] Use new optimization tree. 
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 

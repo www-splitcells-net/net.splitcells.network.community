@@ -1,4 +1,4 @@
-# Process project status badges weekly
+# Process project status weekly
 * The issue number is [\#32](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/32).
 # Task Description
 Here automated tests are maintained and their results processed.
