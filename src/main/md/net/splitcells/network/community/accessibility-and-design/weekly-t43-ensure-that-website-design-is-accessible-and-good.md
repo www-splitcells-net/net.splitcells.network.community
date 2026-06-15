@@ -18,7 +18,7 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 
 # Tasks
-
+* [ ] Ask ChatGPT how my website looks like. What could be improved? WHat is good or bad?
 * [ ] JavaScript is not working on iPhone and Safari.
     * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.
     * [ ] Maybe there is a developer mode/console on iPhone's Safari? -> Yes, via USB, but `Web Inspector` and `window.onerror` is better.

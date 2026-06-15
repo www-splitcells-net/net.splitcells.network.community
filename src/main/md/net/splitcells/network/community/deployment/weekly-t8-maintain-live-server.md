@@ -23,6 +23,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Very low priority: Consider moving to self-hosted server.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
       This avoids calls to projectsPaths.
@@ -89,6 +90,7 @@ as long as no additional network expansions are bought for the package.
     * [ ] https://live.splitcells.net/net/splitcells/host/resource/memory/utilization.csv.html
 * [ ] Create error reporter page, that lists all errors without duplicates and not the complete log.
     * [ ] Status of UI tests and tester
+* [ ] Consider testing live server availability via local raspberry pi or even automatic laptop script.
 * [ ] Provide debug port for Java service over SSH based port forwarding.
 * [ ] Safe user credentials as salted hashes.
 * [ ] If external ACME server is not available, but the certificate is still valid, that service should be able to start successfully and not crash at start.
@@ -164,6 +166,7 @@ as long as no additional network expansions are bought for the package.
 * [ ] Consider Nix for package management: [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022 ](https://www.youtube.com/watch?v=0uixRE8xlbY)
 * [ ] Speed up deployment via parallel module builds with mvnd.
 * [ ] Log public server availability via dedicated hardware.
+* [ ] Consider self-hosting SonarQube on the live server, as this allows one to get independent of GitHub.
 ## Done Tasks
 * [x] Check whether authorization and co. is disabled during the certificate update. -> Yes, this is the case and this requirement is now explicitly noted in the source code.
 * [x] Fix SSL certificate update.

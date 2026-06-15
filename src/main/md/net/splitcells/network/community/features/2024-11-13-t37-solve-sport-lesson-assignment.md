@@ -66,8 +66,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Render tables with no-context path as well.
             * [x] These are visible. Their paths with `history/event/history/mirror` which is irritating. It should be something like `history/event/assignment/mirror` instead.
         * [ ] Improve history. 
-            * [ ] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable.
-            * [ ] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
+            * [x] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable. -> See http://localhost:8443/no-context/editor-data-query/exams/solution-assignment/history/mirror
+            * [x] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
             * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
             * [ ] Rename ALLOCATION_ID to EVENT_ID.
             * [ ] Simplify ALLOCATION_EVENT.
