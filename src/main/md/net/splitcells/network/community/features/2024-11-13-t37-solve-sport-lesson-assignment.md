@@ -69,8 +69,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable. -> See http://localhost:8443/no-context/editor-data-query/exams/solution-assignment/history/mirror
             * [x] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
             * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
-            * [ ] Rename ALLOCATION_ID to EVENT_ID.
-            * [ ] Simplify ALLOCATION_EVENT.
+            * [x] Rename ALLOCATION_ID to EVENT_ID.
+            * [ ] Simplify ALLOCATION_EVENT. -> Removing it is better, as the value columns provide the same info in a more usable format.
+            * [ ] Instead of ALLOCATION_EVENT use DATABASE_EVENT_TYPE, in order to signal if the entry represents a removal or and addition.
+                * [x] Add all demand and supply columns to history table.
+                * [ ] Use new demand and supply columns, instead of ALLOCATION_EVENT.
+                * [ ] Remove ALLOCATION_EVENT.
             * [ ] Fix HistoryI. Some changes done in this task were done incorrectly. 
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
     * [ ] Use new optimization tree. 
