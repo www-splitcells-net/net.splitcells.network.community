@@ -74,6 +74,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [ ] Instead of ALLOCATION_EVENT use DATABASE_EVENT_TYPE, in order to signal if the entry represents a removal or and addition.
                 * [x] Add all demand and supply columns to history table.
                 * [ ] Use new demand and supply columns, instead of ALLOCATION_EVENT.
+                * [ ] Remova usage of ALLOCATION_EVENT constant.
                 * [ ] Remove ALLOCATION_EVENT.
             * [ ] Fix HistoryI. Some changes done in this task were done incorrectly. 
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
