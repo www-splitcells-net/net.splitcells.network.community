@@ -50,6 +50,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Test developer bootstrapping.
 * [x] Daily test repo process. -> This is already the case.
 * [x] Also execute the shell project's test suite. -> This is already the case.
 * [x] Test if Linux application is runnable.
