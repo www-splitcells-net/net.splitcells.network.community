@@ -70,13 +70,13 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
             * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
             * [x] Rename ALLOCATION_ID to EVENT_ID.
-            * [ ] Simplify ALLOCATION_EVENT. -> Removing it is better, as the value columns provide the same info in a more usable format.
-            * [ ] Instead of ALLOCATION_EVENT use DATABASE_EVENT_TYPE, in order to signal if the entry represents a removal or and addition.
+            * [x] Simplify ALLOCATION_EVENT. -> Removing it is better, as the value columns provide the same info in a more usable format.
+            * [x] Instead of ALLOCATION_EVENT use DATABASE_EVENT_TYPE, in order to signal if the entry represents a removal or and addition.
                 * [x] Add all demand and supply columns to history table.
-                * [ ] Use new demand and supply columns, instead of ALLOCATION_EVENT.
-                * [ ] Remova usage of ALLOCATION_EVENT constant.
-                * [ ] Remove ALLOCATION_EVENT.
-            * [ ] Fix HistoryI. Some changes done in this task were done incorrectly. 
+                * [x] Use new demand and supply columns, instead of ALLOCATION_EVENT.
+                * [x] Remove usage of ALLOCATION_EVENT constant.
+                * [x] Remove ALLOCATION_EVENT.
+            * [ ] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
     * [ ] Use new optimization tree. 
 * [ ] Make it easier to understand the solution.
