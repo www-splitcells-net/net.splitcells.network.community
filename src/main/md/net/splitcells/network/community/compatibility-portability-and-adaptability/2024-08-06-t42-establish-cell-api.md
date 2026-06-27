@@ -118,43 +118,50 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                             * [x] Remove initViaCells flag, as none cell init is removed by now.
                         * [x] DevDistroCell
                     * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md). 
-              * [ ] Remove static functions inside cells for process configuration or replace them with instance methods.
+              * [x] Remove static functions inside cells for process configuration or replace them with instance methods and make these hidden.
                 This will clean up all existing cells.
-                  * [ ] Create helper methods to call methods of cell instances.
-                  * [ ] `net.splitcells.network.system.SystemCell`
+                  * [x] Create helper methods to call methods of cell instances. -> Use concept of SubCells instead, so it is preferred to init Cells instead of calling member methods,
+                    if no parameters are required. In other words, view Cells more like a feature flag for providing simple and complex config.
+                  * [x] `net.splitcells.network.system.SystemCell`
                   * [x] `net.splitcells.network.distro.DistroCell.`
-                  * [ ] `net.splitcells.network.distro.java.DistroCell` CURRENT
-                  * [ ] `net.splitcells.martins.avots.distro.DistroCell`
-              * [ ] Deploy on live server.
-              * [ ] Why does LiveDistroCells do not contain a dependency to SystemCell?
-              * [ ] Ensure, that the dependency recorder is really recording Cell dependencies.
-    * [ ] Create launcher class for execution or configuration of the game.
-        * [ ] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
+                  * [x] `net.splitcells.network.distro.java.DistroCell`
+                  * [x] `net.splitcells.martins.avots.distro.DistroCell`
+                  * [x] `net.splitcells.martins.avots.distro.LiveDistroCell`
+                  * [x] `net.splitcells.martins.avots.distro.DevDistroCell`
+                  * [x] `net.splitcells.martins.avots.distro.LiveCryptoSetupCell`
+              * [ ] Deploy on live server. CURRENT
+              * [x] Why does LiveDistroCells do not contain a dependency to SystemCell? -> It does now according to the dependency recorder.
+              * [x] Ensure, that the dependency recorder is really recording Cell dependencies.
+    * [o] Create launcher class for execution or configuration of the game. -> This is not required for now. The game code will be greatly overhauled, when the game project is resumed.
+        * [o] Create proof of concept launcher class at `net.splitcells.network.distro.DistroCell`, in order to ease the
           start.
-        * [ ] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the
+        * [o] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the
           start. -> The class CinDevDistro is used for that.
-        * [ ] Only use web server as resource option.
+        * [o] Only use web server as resource option.
             * [ ] See `GelDev#configureForWebserver`.
-        * [ ] Clean up existing configs.
-            * [ ] What is `net.splitcells.website.Projects` used for?
-            * [ ] Consider `net.splitcells.cin.WorldService`, which contains former working code.
-            * [ ] Consider `net.splitcells.martins.avots.distro.DevDistroCell`, which contains currently working code.
-        * [ ] Use GelDev as basis.
-        * [ ] Do not block web server start via game.
-* [ ] Remove configuration code of any other way.
+        * [o] Clean up existing configs.
+            * [o] What is `net.splitcells.website.Projects` used for?
+            * [o] Consider `net.splitcells.cin.WorldService`, which contains former working code.
+            * [o] Consider `net.splitcells.martins.avots.distro.DevDistroCell`, which contains currently working code.
+        * [o] Use GelDev as basis.
+        * [o] Do not block web server start via game.
+* [x] Remove configuration code of any other way. -> I the code, that I remembered. Maybe I overlooked something, but this would be something tiny.
 * [ ] Webserver instance should be contained inside `Dem#value` as a service and
   by default be limited to given set of instances.
   Otherwise, webserver instances cannot be configured, created and run declaratively.
   This makes working with these essential resources unnecessary hard.
   For instance, replacing or adapting the webserver becomes harder.
-* [ ] Document that cells are better, than simple config function,
+    * [ ] Create a Cell version of HttpServer. -> It is called WebsiteCell. 
+    * [ ] Basically make the static functions of ServerService private and use Options to configure the ServerService only.
+    * [ ] Fix static website. XML documents like the about-this-site are not rendered anymore.
+* [x] Document that cells are better, than simple config function,
   as cells allow for better control of config application functions,
   whereas simple config functions without helper functions do not allow for such.
-* [ ] Create configuration framework guidelines.
-    * [ ] The default config is a full config with no side effects, except for optional default ones.
+* [x] Create configuration framework guidelines.
+    * [x] The default config is a full config with no side effects, except for optional default ones.
       The optional default ones are enabled, if the environment has certain variables defined.
-    * [ ] The default config is a valid test config or a valid production config with no side effects.
-    * [ ] Split all options into options and side effect options by creating an option inheritance tree.
-* [ ] Support managing side effects with Cells effectively and efficiently.
-* [ ] Remove file system options, as these are handled by the cells.
-* [ ] Check visualization of cell dependencies. 
+    * [x] The default config is a valid test config or a valid production config with no side effects.
+    * [x] Split all options into options and side effect options by creating an option inheritance tree. -> This will be done, when this gets relevant.
+* [o] Support managing side effects with Cells effectively and efficiently. -> A TODO was added.
+* [x] Remove file system options, as these are handled by the cells. -> This is not important for now.
+* [x] Check visualization of cell dependencies.  
