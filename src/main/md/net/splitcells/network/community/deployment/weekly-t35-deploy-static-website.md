@@ -16,7 +16,7 @@
     * [ ] Remove all XSL warnings and errors.
 * [ ] The websites logo does not work on iPhone. 
 * [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
-  First [Publish public website source code](../compatibility-portability-and-adaptability/9999-2021-03-21-publish-public-website-source-code.md) has to be done.
+  First [Publish public website source code](../compatibility-portability-and-adaptability/2021-03-21-publish-public-website-source-code.md) has to be done.
     * [ ] Enable Javadoc rendering in workflow. It was disabled, as it takes a lot of time on the local computer.
     * [ ] At daily task to check the logs for warnings during the static site generation with fitting search terms.
 # Done Tasks

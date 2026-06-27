@@ -14,9 +14,9 @@ At the end, this avoids creating complex configurations by chaining multiple con
 Lately, this has proven to be not working and
 created severe configuration costs.
 
-This is needed for [the issue "Publish public website source code"](9999-2021-03-21-publish-public-website-source-code.md).
+This is needed for [the issue "Publish public website source code"](../2021-03-21-publish-public-website-source-code.md).
 # Tasks
-* [x] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
+* [x] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../../features/archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
     * [o] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data. -> The service option CinSerive was used instead.
         * [o] Create `net.splitcells.network.connect`.
             * [o] Its main purposes is to connect multiple `Dem#process`. 
@@ -78,7 +78,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                     * [x] `net.splitcells.network.distro.Distro` -> `net.splitcells.network.distro.DistroCell`
                     * [x] `net.splitcells.network.distro.java.Distro` -> `net.splitcells.network.distro.java.DistroCell`
                     * [x] `net.splitcells.martins.avots.distro.Distro` -> `net.splitcells.martins.avots.distro.DistroCell`
-                    * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](9999-2021-03-21-publish-public-website-source-code.md) project.
+                    * [o] `net.splitcells.martins.avots.website` -> This will be done with the [publish website source code](../2021-03-21-publish-public-website-source-code.md) project.
                     * [x] GelEnv
                     * [x] GelDev
                     * [X] `net.splitcells.martins.avots.distro.DevDistroCell` -> `net.splitcells.martins.avots.distro.DevDistroCell`
@@ -117,7 +117,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                         * [x] LiveDistroCell
                             * [x] Remove initViaCells flag, as none cell init is removed by now.
                         * [x] DevDistroCell
-                    * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](./9999-2021-03-21-publish-public-website-source-code.md). 
+                    * [o] `net.splitcells.martins.avots.website` -> This will be done later via [9999-2021-03-21-publish-public-website-source-code.md](../2021-03-21-publish-public-website-source-code.md). 
               * [x] Remove static functions inside cells for process configuration or replace them with instance methods and make these hidden.
                 This will clean up all existing cells.
                   * [x] Create helper methods to call methods of cell instances. -> Use concept of SubCells instead, so it is preferred to init Cells instead of calling member methods,
