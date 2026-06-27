@@ -23,6 +23,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Create error with exit code 1 if remote SSH script exits with 1 in `worker.execute`.
 * [ ] Very low priority: Consider moving to self-hosted server.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.

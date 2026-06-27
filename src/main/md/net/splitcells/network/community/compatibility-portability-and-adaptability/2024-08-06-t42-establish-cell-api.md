@@ -16,12 +16,12 @@ created severe configuration costs.
 
 This is needed for [the issue "Publish public website source code"](9999-2021-03-21-publish-public-website-source-code.md).
 # Tasks
-* [ ] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
+* [x] Extract Cell API tasks from [the issue "Create game based on optimization networks"](../features/archive/2022-12-21-1-create-game-based-on-optimization-networks.md).
     * [o] Isolate Cin `Dem#process` from currently main `Dem#process`, in order to isolate data. -> The service option CinSerive was used instead.
         * [o] Create `net.splitcells.network.connect`.
             * [o] Its main purposes is to connect multiple `Dem#process`. 
             * [o] Provides single point of entry for HTTP requests. -> This was done via ObjectsRenderer instead.
-    * [ ] Define service builder interface in order to run and coordinate multiple Dem processes.
+    * [x] Define service builder interface in order to run and coordinate multiple Dem processes.
         * [o] Move this task to dedicated ticket, as this is a big task, with its own distinct goals.
           Link from this ticket to this new ticket instead.
         * [x] Discourage starting program via Dem process with a given runnable,
@@ -32,7 +32,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
               Note, that such a method is needed for non-service things,
               like executing a test. -> `Dem#process` is needed in order to calculate something with a given config. So
               it is not deprecated.
-        * [ ] Enable all services etc. of a module via one single point of entry like a method,
+        * [x] Enable all services etc. of a module via one single point of entry like a method,
           where no extra arguments are required for the service to be working with a sane configuration.
           Maybe a general module class/interface is needed.
             * [x] Create entrypoint base. -> The interface `net.splitcells.dem.environment.Cell` is the basis for this.
@@ -70,7 +70,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                     * [X] Record `Environment#withCell`.
                     * [x] Record `Configuration#withInitedOption`. Is this really needed or is this covered via `Configuration#withConfigValue`? --> Yes
                     * [x] Add `mermaid.min.js` to website instead of linking it at an external CDN server.
-            * [ ] CURRENT Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
+            * [x] Create Cell based launcher at `net.splitcells.martins.avots.distro.LiveDistroCell` and
               when it works remove `net.splitcells.martins.avots.distro.LiveDistro`.
                 * [X] First move all `Distro*` code into `*Cell` classes, so that cell `Distro*` do not exist and provide non-static wrappers,
                   so that these can be used in the Consumer of `Environment#withCell(Class, Consumer)`.
@@ -129,7 +129,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
                   * [x] `net.splitcells.martins.avots.distro.LiveDistroCell`
                   * [x] `net.splitcells.martins.avots.distro.DevDistroCell`
                   * [x] `net.splitcells.martins.avots.distro.LiveCryptoSetupCell`
-              * [ ] Deploy on live server. CURRENT
+              * [x] Deploy on live server.
               * [x] Why does LiveDistroCells do not contain a dependency to SystemCell? -> It does now according to the dependency recorder.
               * [x] Ensure, that the dependency recorder is really recording Cell dependencies.
     * [o] Create launcher class for execution or configuration of the game. -> This is not required for now. The game code will be greatly overhauled, when the game project is resumed.
@@ -146,14 +146,14 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
         * [o] Use GelDev as basis.
         * [o] Do not block web server start via game.
 * [x] Remove configuration code of any other way. -> I the code, that I remembered. Maybe I overlooked something, but this would be something tiny.
-* [ ] Webserver instance should be contained inside `Dem#value` as a service and
+* [x] Webserver instance should be contained inside `Dem#value` as a service and
   by default be limited to given set of instances.
   Otherwise, webserver instances cannot be configured, created and run declaratively.
   This makes working with these essential resources unnecessary hard.
   For instance, replacing or adapting the webserver becomes harder.
-    * [ ] Create a Cell version of HttpServer. -> It is called WebsiteCell. 
-    * [ ] Basically make the static functions of ServerService private and use Options to configure the ServerService only.
-    * [ ] Fix static website. XML documents like the about-this-site are not rendered anymore.
+    * [x] Create a Cell version of HttpServer. -> It is called WebsiteCell. 
+    * [x] Basically make the static functions of ServerService private and use Options to configure the ServerService only.
+    * [x] Fix static website. XML documents like the about-this-site are not rendered anymore.
 * [x] Document that cells are better, than simple config function,
   as cells allow for better control of config application functions,
   whereas simple config functions without helper functions do not allow for such.
