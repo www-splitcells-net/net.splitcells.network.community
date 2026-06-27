@@ -51,6 +51,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] `Calculate solution` button cannot be clicked after the form processing.
       -> This is caused by the fact, that net_splitcells_webserver_form_submit is called twice for one run.
       The additional run is caused by the answer containing the current optimization status.
+    * [ ] Fully support net-splitcells-website-visually-replaceable via Tabulator. 
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
@@ -65,7 +66,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible? 
             * [x] Render tables with no-context path as well.
             * [x] These are visible. Their paths with `history/event/history/mirror` which is irritating. It should be something like `history/event/assignment/mirror` instead.
-        * [ ] Improve history. 
+        * [x] Improve history. 
             * [x] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable. -> See http://localhost:8443/no-context/editor-data-query/exams/solution-assignment/history/mirror
             * [x] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
             * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
@@ -76,7 +77,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Use new demand and supply columns, instead of ALLOCATION_EVENT.
                 * [x] Remove usage of ALLOCATION_EVENT constant.
                 * [x] Remove ALLOCATION_EVENT.
-            * [ ] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
+            * [x] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
     * [ ] Use new optimization tree. 
 * [ ] Make it easier to understand the solution.
@@ -109,6 +110,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Consider fast alternative runtime checks for checks that have very little effect.
     * [ ] Consider disabling solution history for an additional speed-up.
 * [ ] Create a capabilities test suite for the DefaultEditorOptimization with all examples up until now.
+* [ ] After execute `calculate solution` in editor one can not edit the input.
 # Done Tasks
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.

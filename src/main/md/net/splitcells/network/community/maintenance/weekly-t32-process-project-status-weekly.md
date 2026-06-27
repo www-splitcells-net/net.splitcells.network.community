@@ -24,13 +24,14 @@ This does not apply for statuses, that show progress.
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
 # Tasks.
-* [ ] Improve developer bootstrap. 
-    * [ ] Create a semi-automatic reset test for the developer bootstrap.
-    * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to the DevDistroCell.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
     * [ ] Implement, test and add Javadoc to custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
-    * [ ] Only allow custom Semaphor interface in core code.
+    * [ ] Only allow custom Semaphore interface in core code.
+* [ ] Improve developer bootstrap.
+    * [ ] Create a semi-automatic reset test for the developer bootstrap.
+    * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to the DevDistroCell.
+    * [x] Setup SSH cache.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
