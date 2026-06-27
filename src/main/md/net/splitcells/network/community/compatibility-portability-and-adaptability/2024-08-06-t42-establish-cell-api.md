@@ -138,7 +138,7 @@ This is needed for [the issue "Publish public website source code"](9999-2021-03
         * [o] Create proof of concept launcher class at `net.splitcells.martins.avots.distro`, in order to ease the
           start. -> The class CinDevDistro is used for that.
         * [o] Only use web server as resource option.
-            * [ ] See `GelDev#configureForWebserver`.
+            * [o] See `GelDev#configureForWebserver`.
         * [o] Clean up existing configs.
             * [o] What is `net.splitcells.website.Projects` used for?
             * [o] Consider `net.splitcells.cin.WorldService`, which contains former working code.
