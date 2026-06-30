@@ -79,8 +79,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Remove ALLOCATION_EVENT.
             * [x] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
+        * [ ] Profile linear optimization as it is a lot slower, than the repair.
         * [ ] The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
-            * [ ] Use a hill climber with limited tries.
+            * [ ] Use a hill climber with limited tries. -> This is probably faster but not enough.
+            * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
+        * [ ] Fix bug in DemandSelector.
+        * [ ] Use proposal in SupplySelector.
+        * [ ] Check if proposal is working in DemandSelector.
+        * [ ] Consider starting default optimization with repair and without any allocations, as the likelihood to be useful is probably low. 
     * [x] Use new optimization tree for better optimization status info in editor. -> This is now named EditorOptimization. 
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
@@ -116,6 +122,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create more complex GUI tests.
     * [ ] Submit 2 solution calculations.
         * [ ] Change and check inputs of for all 3 states (init, first solution, second solution).
+* [ ] `database-modification-counter.csv` should have more human-readable time axis.
+* [ ] Create an integration test for sport lesson assignment.
 # Done Tasks
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
