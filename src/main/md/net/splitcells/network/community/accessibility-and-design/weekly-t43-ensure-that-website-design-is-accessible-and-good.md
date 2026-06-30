@@ -18,6 +18,7 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 
 # Tasks
+* [ ] Rename `Front Menu` to `Intro Page`, as otherwise it is too hard to understand the difference to `Main Menu`.
 * [ ] Ask ChatGPT how my website looks like. What could be improved? WHat is good or bad?
 * [ ] JavaScript is not working on iPhone and Safari.
     * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.

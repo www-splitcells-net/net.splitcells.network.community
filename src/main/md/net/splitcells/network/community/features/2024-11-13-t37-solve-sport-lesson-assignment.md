@@ -61,12 +61,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
       Otherwise, there it is unreasonable expensive to understand the optimizer's approach.
     * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
-        * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
-          This leads to an empty solution.
-        * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible? 
+        * [x] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
+          This leads to an empty solution. -> This is not the case anymore.
+        * [x] Render history table like other table on webserver for local development. Why is it not visible? 
             * [x] Render tables with no-context path as well.
             * [x] These are visible. Their paths with `history/event/history/mirror` which is irritating. It should be something like `history/event/assignment/mirror` instead.
-        * [x] Improve history. 
+        * [x] Improve history, in order to better debug the optimizer. 
             * [x] Show values in history table in dedicated columns for each column, to make it more easily readable and queryable. -> See http://localhost:8443/no-context/editor-data-query/exams/solution-assignment/history/mirror
             * [x] Create a dedicated option class for enabling table rendering, in order to standardize such a config.
             * [x] It does not make sense, that HistoryI is an assignment table. This is harder to managed and slower.
@@ -79,7 +79,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Remove ALLOCATION_EVENT.
             * [x] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
-    * [ ] Use new optimization tree. 
+        * [ ] The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
+            * [ ] Use a hill climber with limited tries.
+    * [x] Use new optimization tree for better optimization status info in editor. -> This is now named EditorOptimization. 
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
@@ -111,6 +113,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Consider disabling solution history for an additional speed-up.
 * [ ] Create a capabilities test suite for the DefaultEditorOptimization with all examples up until now.
 * [ ] After execute `calculate solution` in editor one can not edit the input.
+* [ ] Create more complex GUI tests.
+    * [ ] Submit 2 solution calculations.
+        * [ ] Change and check inputs of for all 3 states (init, first solution, second solution).
 # Done Tasks
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
