@@ -82,6 +82,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Profile linear optimization as it is a lot slower, than the repair.
         * [ ] The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
             * [ ] Use a hill climber with limited tries. -> This is probably faster but not enough.
+                * [ ] Create better error message, when one supply is tried to be assigned multiple time.
+                * [ ] Do not allocate the same supply multiple times.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
