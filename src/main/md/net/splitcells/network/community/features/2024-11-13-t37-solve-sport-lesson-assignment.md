@@ -83,9 +83,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
             * [ ] Use a hill climber with limited tries. -> This is probably faster but not enough.
                 * [o] Create better error message, when one supply is tried to be assigned multiple times. -> For now this is not possible, as the assignment method is used and not the allocation method, which makes this fix more complicated.
-                * [ ] Do not allocate the same supply multiple times.
-                * [ ] Only have one hill climber implementation for the SupplySelector.
-                * [ ] Create a test for the hill climber.
+                * [x] Do not allocate the same supply multiple times.
+                * [x] Only have one hill climber implementation for the SupplySelector.
+                * [ ] Create a test for the hill climber via SupplySelectorsTest.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
