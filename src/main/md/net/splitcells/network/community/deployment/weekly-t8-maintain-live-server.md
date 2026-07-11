@@ -23,7 +23,15 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
-* [ ] Create error with exit code 1 if remote SSH script exits with 1 in `worker.execute`.
+* [ ] Fix this warning in the program on the live server.
+
+````
+Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: A restricted method in java.lang.System has been called
+Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: java.lang.System::load has been called by io.pyroscope.vendor.one.profiler.AsyncProfiler in an unnamed module (file:/root/opt/net.splitcells.martins.avots.distro.livedistrocell/jars/agent-2.4.0.jar)
+Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+````
+
 * [ ] Very low priority: Consider moving to self-hosted server.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
@@ -169,6 +177,7 @@ as long as no additional network expansions are bought for the package.
 * [ ] Log public server availability via dedicated hardware.
 * [ ] Consider self-hosting SonarQube on the live server, as this allows one to get independent of GitHub.
 ## Done Tasks
+* [x] Create error with exit code 1 if remote SSH script exits with 1 in `worker.execute`.
 * [x] Check whether authorization and co. is disabled during the certificate update. -> Yes, this is the case and this requirement is now explicitly noted in the source code.
 * [x] Fix SSL certificate update.
     * [x] Enable HTTP server during certificate update.

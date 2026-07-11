@@ -15,7 +15,7 @@ This does not apply for statuses, that show progress.
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: FilesTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.resource/FilesTest.html
+    * Currently working on: FilesTest and https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.lang.tree/Tree.html
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
@@ -23,20 +23,22 @@ This does not apply for statuses, that show progress.
 * Update Java knowledge: https://javaevolved.github.io/de/
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
+    * [ ] Execute the test with a reset script.
 # Tasks.
 * [ ] Benchmarks and lambdas of require Throws are not covered in test coverage.
     * [ ] Try excluding test classes from JaCoCo report.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
-    * [ ] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
+    * [x] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
         * [x] Implement.
-        * [ ] Check if own Semaphore interface really fits the current usage.
-        * [ ] Test.
-        * [ ] Add Javadoc.
+        * [x] Check if own Semaphore interface really fits the current usage.
+        * [x] Test.
+        * [x] Add Javadoc.
+    * [ ] Remove direct usage of Java's Semaphore in core code. 
     * [ ] Only allow custom Semaphore interface in core code.
 * [ ] Improve developer bootstrap.
     * [ ] Create a semi-automatic reset test for the developer bootstrap.
-    * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to the DevDistroCell.
+    * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell.
     * [x] Setup SSH cache.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
