@@ -128,6 +128,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Change and check inputs of for all 3 states (init, first solution, second solution).
 * [ ] `database-modification-counter.csv` should have more human-readable time axis.
 * [ ] Create an integration test for sport lesson assignment.
+* [ ] Status updates during the optimization steps do not show intermediate solution.
 # Done Tasks
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
