@@ -23,6 +23,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Not all `worker.execute.py` tests are executed. Only 2 are.
 * [ ] Fix this warning in the program on the live server.
 
 ````
