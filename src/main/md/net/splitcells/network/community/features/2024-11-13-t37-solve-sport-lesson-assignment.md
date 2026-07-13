@@ -20,6 +20,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] Add optimization status history to editor that lists all intermediate optimization status.
     * [ ] Make optimization status more detailed.
       Otherwise, there it is unreasonable expensive to understand the optimizer's approach.
+        * [ ] Explain the config of the `Constraint Group Based Repair`.
     * [ ] Check why current optimization cannot solve the problem by testing it via a smaller demand set.
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [x] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
@@ -41,12 +42,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
             * [x] Use alternative toString for DEMAND and SUPPLY column, in order to make the table more compact.
         * [o] There are some excessive modification counters per table. See `/no-context/proposed-supplies/mirror/database-modification-counter.csv.*` for example. -> This is ok for now, because there is no easy way to enforce unique paths. In order to implement this, [2024-08-27-t56-ensure-local-unique-discoverability.md](../maintenance/next/2024-08-27-t56-ensure-local-unique-discoverability.md) needs to be done first.
         * [ ] Profile linear optimization as it is a lot slower, than the repair.
-        * [ ] The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
+        * [ ] CURRENT_TASK The SupplySelector for the ConstraintBasedRepair does seem to ignore the chosen sport type constraints.
             * [ ] Use a hill climber with limited tries. -> This is probably faster but not enough.
                 * [o] Create better error message, when one supply is tried to be assigned multiple times. -> For now this is not possible, as the assignment method is used and not the allocation method, which makes this fix more complicated.
                 * [x] Do not allocate the same supply multiple times.
                 * [x] Only have one hill climber implementation for the SupplySelector.
-                * [ ] Create a test for the hill climber via SupplySelectorsTest.
+                * [ ] Create a test for the hill climber via SupplySelectorsTest. Check via history and a deterministic randomness, if the supplies are chosen correctly.
+                    * [ ] Create deterministic randomness via list a values. -> RandomnessViaList
+                    * [ ] Test RandomnessViaList.
+                    * [ ] SupplySelectorsTest
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
