@@ -13,45 +13,6 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
-* [ ] Improve performance, as otherwise one cannot test optimizing this problem.
-    * [x] Improve set performance.
-        * [x] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
-        * [x] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
-            * [x] Declare factory interface. -> LegacySetFactory
-            * [x] Declare factory singleton. -> LegacySets
-            * [x] Create HashSet legacy factory.
-            * [x] Create THashSet legacy factory.
-        * [x] Try out Eclipse collections, as this project is still active.
-        * [o] Simplify set factories. -> It is not the best, but OK.
-        * [x] Document HashSet removal.
-        * [x] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
-            * [x] UnifiedSet may support faster removal of any element, by using internal methods. -> I think, that this is not that useful for now.
-            * [x] Test table format.
-            * [x] Consider avoiding using sets in table and reason in source code why these stay, if these stay.
-                * [x] lines attribute
-                * [x] indexesOfFree
-            * [x] beforeRemovalSubscriber vs. afterRemovalSubscriber -> afterRemovalSubscriber is deprecated and should be removed.
-                * [x] Remove usage of afterRemovalSubscriber and subscribeToAfterRemoval.
-                * [x] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
-            * [x] Note why beforeRemovalSubscriber is used.
-            * [x] Execute JMH test in daily CI.
-            * [x] Check performance without runtime checks. -> This is already the case via the current IDE config.
-    * [x] Check modification counts.
-        * [x] Create a faster version of ThenAtLeastRater, which rating is slightly incorrect on an individual line level, but is correct on the GroupId level.
-          -> It is called ThenAtLeastFastRater.
-        * [x] Create a faster Version of hasSize. -> It is called HasSizeFast.
-    * [x] INLINE_STANDARD_FACTORIES does not seem to be active. -> This was just an incorrect setting in the debug configuration of the IDE: in Java system properties are set via -D parameters and not via environment variables.
-    * [ ] Find hotpaths via VisualVM sampler and `sports-course-planning.txt`.
-    * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance.
-    * [x] The lookup system is crazy.
-    * [o] Do bulk adds between problems of the composed problem. -> This is not needed for now.
-        * [o] Are the problems inside an editor connected at all yet?
-    * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
-    * [ ] Consider disabling solution history.
-    * [x] `Calculate solution` button cannot be clicked after the form processing.
-      -> This is caused by the fact, that net_splitcells_webserver_form_submit is called twice for one run.
-      The additional run is caused by the answer containing the current optimization status.
-    * [ ] Fully support net-splitcells-website-visually-replaceable via Tabulator. 
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
@@ -92,6 +53,45 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Check if proposal is working in DemandSelector.
         * [ ] Consider starting default optimization with repair and without any allocations, as the likelihood to be useful is probably low. 
     * [x] Use new optimization tree for better optimization status info in editor. -> This is now named EditorOptimization. 
+* [ ] Improve runtime performance, as otherwise one cannot test optimizing this problem.
+    * [x] Improve set performance.
+        * [x] Replace HashSet with trove4js THashSet, as Java's HashSet iterator can be extremely slow.
+        * [x] Move legacy hashset creation to dedicated interface class, in order to make it easily replaceable.
+            * [x] Declare factory interface. -> LegacySetFactory
+            * [x] Declare factory singleton. -> LegacySets
+            * [x] Create HashSet legacy factory.
+            * [x] Create THashSet legacy factory.
+        * [x] Try out Eclipse collections, as this project is still active.
+        * [o] Simplify set factories. -> It is not the best, but OK.
+        * [x] Document HashSet removal.
+        * [x] Try out JMH: https://www.bobulous.org.uk/coding/jmh/String-split.html
+            * [x] UnifiedSet may support faster removal of any element, by using internal methods. -> I think, that this is not that useful for now.
+            * [x] Test table format.
+            * [x] Consider avoiding using sets in table and reason in source code why these stay, if these stay.
+                * [x] lines attribute
+                * [x] indexesOfFree
+            * [x] beforeRemovalSubscriber vs. afterRemovalSubscriber -> afterRemovalSubscriber is deprecated and should be removed.
+                * [x] Remove usage of afterRemovalSubscriber and subscribeToAfterRemoval.
+                * [x] Remove afterRemovalSubscriber and subscribeToAfterRemoval.
+            * [x] Note why beforeRemovalSubscriber is used.
+            * [x] Execute JMH test in daily CI.
+            * [x] Check performance without runtime checks. -> This is already the case via the current IDE config.
+    * [x] Check modification counts.
+        * [x] Create a faster version of ThenAtLeastRater, which rating is slightly incorrect on an individual line level, but is correct on the GroupId level.
+          -> It is called ThenAtLeastFastRater.
+        * [x] Create a faster Version of hasSize. -> It is called HasSizeFast.
+    * [x] INLINE_STANDARD_FACTORIES does not seem to be active. -> This was just an incorrect setting in the debug configuration of the IDE: in Java system properties are set via -D parameters and not via environment variables.
+    * [ ] Find hotpaths via VisualVM sampler and `sports-course-planning.txt`.
+    * [x] A table's removeAny of the first then constraint node majorly worsens the runtime performance.
+    * [x] The lookup system is crazy.
+    * [o] Do bulk adds between problems of the composed problem. -> This is not needed for now.
+        * [o] Are the problems inside an editor connected at all yet?
+    * [ ] If necessary, consider bulk adds and removes for constraint nodes and tables.
+    * [ ] Consider disabling solution history.
+    * [x] `Calculate solution` button cannot be clicked after the form processing.
+      -> This is caused by the fact, that net_splitcells_webserver_form_submit is called twice for one run.
+      The additional run is caused by the answer containing the current optimization status.
+    * [ ] Fully support net-splitcells-website-visually-replaceable via Tabulator.
 * [ ] Make it easier to understand the solution.
     * [ ] Add comments via optimizers to allocations, so that the user knows why a certain allocation was created by the optimizer. Consider adding this to the history table or as meta column to the solution table. 
     * [ ] Store and show positive reason, why a certain supply has not a cost.
