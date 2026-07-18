@@ -51,7 +51,7 @@ We also need full accounting for it.
             * [x] Process binary files with MetaData class. -> This is only supported via `**` matching in `REUSE.toml`.
               Currently, there is no supported metadata inside binary files and `REUSE.toml` is required by the REUSE tool.
         * [x] Implement `FileSystemViaClassResourcesImpl#license`.
-        * [ ] Implement `PathFileSystem#license`.
+        * [ ] Implement `PathFileSystem#license` and test this via `PathFileSystemTest#testLicense`.
         * [ ] Consider implementing a default license method.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every HTML file.

@@ -25,8 +25,6 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
-* [ ] Benchmarks and lambdas of require Throws are not covered in test coverage.
-    * [ ] Try excluding test classes from JaCoCo report.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
     * [x] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
@@ -64,6 +62,8 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Benchmarks and lambdas of require Throws are not covered in test coverage.
+    * [x] Try excluding test classes from JaCoCo report.
 * [x] Test developer bootstrapping.
 * [x] Daily test repo process. -> This is already the case.
 * [x] Also execute the shell project's test suite. -> This is already the case.
