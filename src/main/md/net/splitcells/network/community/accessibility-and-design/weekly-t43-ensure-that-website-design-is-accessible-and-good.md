@@ -21,6 +21,7 @@ this is an opportunity to consider this aspect.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on IPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.
+* [ ] Rename `Front Menu` to `Intro Page`, as otherwise it is too hard to understand the difference to `Main Menu`.
 * [ ] Ask ChatGPT how my website looks like. What could be improved? WHat is good or bad?
 * [ ] JavaScript is not working on iPhone and Safari.
     * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.

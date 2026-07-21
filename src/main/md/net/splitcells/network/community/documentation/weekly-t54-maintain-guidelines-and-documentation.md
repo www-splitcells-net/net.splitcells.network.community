@@ -15,6 +15,7 @@
     * Consider Documentation from point of a product owner.
     * Consider mobile vs desktop view.
     * JavaDoc
+* Use AI to generate doc in small steps and review every step.
 # Tasks
 * [ ] Clean up blog posts.
     * [x] Avoid showing metadata of CommonMark documents at the start of the document. Move it to the end instead.
