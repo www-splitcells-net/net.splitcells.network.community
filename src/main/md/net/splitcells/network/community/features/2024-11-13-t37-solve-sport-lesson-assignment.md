@@ -63,6 +63,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [ ] Proposals are not used or do not work at all. Maybe this is the not propagation problem. -> Proposals are not used at all.
         * [ ] ConstraintGroupBasedRepair does somehow not apply repair on all demandGroupings, but removes all assignments of demandGroupings.
           This leads to an empty solution.
+            * [ ] When the solution becomes empty, then the repair does create new assignments.
         * [ ] CURRENT Render history table like other table on webserver for local development. Why is it not visible? 
             * [x] Render tables with no-context path as well.
             * [x] These are visible. Their paths with `history/event/history/mirror` which is irritating. It should be something like `history/event/assignment/mirror` instead.

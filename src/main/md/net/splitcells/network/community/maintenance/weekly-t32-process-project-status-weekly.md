@@ -24,6 +24,7 @@ This does not apply for statuses, that show progress.
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
 # Tasks.
+* [ ] Consider creating unit tests with Claud code.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
     * [ ] Implement, test and add Javadoc to custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.

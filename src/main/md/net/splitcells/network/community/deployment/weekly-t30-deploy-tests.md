@@ -134,6 +134,7 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [ ] Maven repo binaries.
     * [ ] Do not keep its history. Only use 1 commit for this repo.
 * [ ] Consider caching Maven dependencies in a dedicated git repo.
+* [ ] Test public server availability with permanent Raspberry Pi test.
 # Done Tasks
 * [x] Execute test for each cluster node in parallel and write each output to a file for easy debugging.
 * [x] `%H` is sometimes written into the network log repo. If this is not caused by `worker.test.at`

@@ -7,10 +7,11 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
+* [ ] Remove symbiosis project from website, as it is of too low quality.
 * [ ] Do not allow static website deployment with invalid links.
-    * [ ] Create strict rendering command, in order to final invalid links errors.
-    * [ ] Fix all invalid links.
-    * [ ] Stop deployment on first invalid link.
+   * [ ] Create strict rendering command, in order to final invalid links errors.
+   * [ ] Fix all invalid links.
+   * [ ] Stop deployment on first invalid link.
 * [ ] Fix all rendering warnings of the static website.
 * [ ] Disallow any XSL warnings and errors by default.
     * [ ] Remove all XSL warnings and errors.
