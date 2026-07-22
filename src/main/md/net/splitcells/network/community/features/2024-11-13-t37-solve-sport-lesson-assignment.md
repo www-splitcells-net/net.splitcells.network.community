@@ -48,8 +48,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [x] Do not allocate the same supply multiple times.
                 * [x] Only have one hill climber implementation for the SupplySelector.
                 * [ ] Create a test for the hill climber via SupplySelectorsTest. Check via history and a deterministic randomness, if the supplies are chosen correctly.
-                    * [ ] Create deterministic randomness via list a values. -> RandomnessViaList
-                    * [ ] Test RandomnessViaList.
+                    * [x] Create deterministic randomness via list a values. -> RandomnessViaList
+                    * [x] Test RandomnessViaList.
                     * [ ] SupplySelectorsTest
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
