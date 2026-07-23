@@ -47,10 +47,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                 * [o] Create better error message, when one supply is tried to be assigned multiple times. -> For now this is not possible, as the assignment method is used and not the allocation method, which makes this fix more complicated.
                 * [x] Do not allocate the same supply multiple times.
                 * [x] Only have one hill climber implementation for the SupplySelector.
-                * [ ] Create a test for the hill climber via SupplySelectorsTest. Check via history and a deterministic randomness, if the supplies are chosen correctly.
+                * [x] Create a test for the hill climber via SupplySelectorsTest. Check via history and a deterministic randomness, if the supplies are chosen correctly.
                     * [x] Create deterministic randomness via list a values. -> RandomnessViaList
                     * [x] Test RandomnessViaList.
-                    * [ ] SupplySelectorsTest
+                    * [x] SupplySelectorsTest
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
