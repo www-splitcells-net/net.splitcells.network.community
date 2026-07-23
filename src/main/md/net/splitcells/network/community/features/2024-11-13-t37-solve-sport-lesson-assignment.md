@@ -51,6 +51,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Create deterministic randomness via list a values. -> RandomnessViaList
                     * [x] Test RandomnessViaList.
                     * [x] SupplySelectorsTest
+                * [ ] Check the created assignments.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
