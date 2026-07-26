@@ -39,6 +39,7 @@ This does not apply for statuses, that show progress.
     * [ ] Create a semi-automatic reset test for the developer bootstrap.
     * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell.
     * [x] Setup SSH cache.
+* [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.
