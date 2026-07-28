@@ -53,7 +53,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] SupplySelectorsTest
                 * [ ] Check the created assignments.
                     * [ ] Provide links to roots of all relevant tables during optimization.
-                        * [ ] Query links of relevant Discoverables via ObjectsRenderer.
+                        * [ ] Provide query API for links of relevant Discoverables via ObjectsRenderer.
                         * [ ] Provide links to root for all constraint tables.
                         * [ ] Provide links to root of all solution tables.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
