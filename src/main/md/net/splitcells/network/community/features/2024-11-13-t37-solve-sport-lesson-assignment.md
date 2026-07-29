@@ -53,7 +53,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] SupplySelectorsTest
                 * [ ] Check the created assignments.
                     * [ ] Provide links to roots of all relevant tables during optimization.
-                        * [ ] Provide query API for links of relevant Discoverables via ObjectsRenderer.
+                        * [x] Provide query API for links of relevant Discoverables via ObjectsRenderer.
+                        * [ ] Add Discoverables lookup at ObjectsRenderer via subjects, so that the path is really correct.
+                          The current heuristics used RepairOptimizationStep does not work, as the mirror suffix is missing for tables.
+                        * [ ] Provide correct domain in links.
+                        * [ ] Avoid duplicate slashes in links.
                         * [ ] Provide links to root for all constraint tables.
                         * [ ] Provide links to root of all solution tables.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
