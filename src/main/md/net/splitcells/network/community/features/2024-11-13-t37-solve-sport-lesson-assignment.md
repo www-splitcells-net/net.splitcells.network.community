@@ -175,6 +175,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create an integration test for sport lesson assignment.
 * [ ] Status updates during the optimization steps do not show intermediate solution.
 # Done Tasks
+* [x] Rename availableHalfYears to semester.
 * [x] Support complex problems with the default optimization.
     * [x] Define EditorOptimization interface.
     * [x] Editor needs to provide a method, to query all solutions, that are no demands or supplies of other solutions.
