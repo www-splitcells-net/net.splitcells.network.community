@@ -25,6 +25,10 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
+* [ ] Remove .build and .codecov.yml from net.splitcells.network repo, as these are not used anymore.
+* [ ] Create project build, that copies the project somewhere and builds it.
+  This allows the developer to submit a build and then to immediately continue the code editing with a smaller pause,
+  than classic builds. Classic build require a wait until the compilation is done and only after that the code can be edited.
 * [ ] Fix `repos.pull.from Codeberg`.
 * [ ] Consider creating unit tests with Claud code.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.

@@ -17,6 +17,8 @@
     * JavaDoc
 * Use AI to generate doc in small steps and review every step.
 # Tasks
+* [ ] Update DEVELOPMENT.md.
+* [ ] Remove link to symbiosis project from main guidelines and create code specific perspective guidelines. 
 * [ ] Clean up blog posts.
     * [x] Avoid showing metadata of CommonMark documents at the start of the document. Move it to the end instead.
       See this [post](../blog/articles/2021-07-07-Creating-The-First-Public-Release.md).
