@@ -58,8 +58,12 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                           The current heuristics used RepairOptimizationStep does not work, as the mirror suffix is missing for tables.
                         * [x] Create unit test for subject parameter.
                         * [x] Provide sassignmentsubject to ObjectsRenderer for table and assignments mirrors.
-                        * [ ] The editor does not work anymore.
-                        * [ ] Use the  table of solution instead of the solution itself, in order to query the link of the solution.
+                        * [x] The editor does not work anymore. -> Maintenance work on the Tree class caused this.
+                        * [ ] Use the table of solution instead of the solution itself, in order to query the link of the solution.
+                            * [ ] Actually the same mirror as registered in ObjectsRenderer has to be used. Therefore, the mirror has to be cached for every table implementation.
+                                * [x] Table
+                                * [x] Assignment -> Its renderer method is delegating from the Table's one.
+                                * [ ] The mirror's renderer is not found.
                         * [ ] Provide correct domain in links.
                         * [ ] Avoid duplicate slashes in links.
                         * [ ] Provide links to root for all constraint tables.
