@@ -57,7 +57,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] Add Discoverables lookup at ObjectsRenderer via subjects, so that the path is really correct.
                           The current heuristics used RepairOptimizationStep does not work, as the mirror suffix is missing for tables.
                         * [x] Create unit test for subject parameter.
-                        * [x] Provide sassignmentsubject to ObjectsRenderer for table and assignments mirrors.
+                        * [x] Provide assignment subject to ObjectsRenderer for table and assignments mirrors.
                         * [x] The editor does not work anymore. -> Maintenance work on the Tree class caused this.
                         * [ ] Use the table of solution instead of the solution itself, in order to query the link of the solution.
                             * [ ] Actually the same mirror as registered in ObjectsRenderer has to be used. Therefore, the mirror has to be cached for every table implementation.

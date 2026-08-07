@@ -17,7 +17,6 @@
     * JavaDoc
 * Use AI to generate doc in small steps and review every step.
 # Tasks
-* [ ] Update DEVELOPMENT.md.
 * [ ] Remove link to symbiosis project from main guidelines and create code specific perspective guidelines. 
 * [ ] Clean up blog posts.
     * [x] Avoid showing metadata of CommonMark documents at the start of the document. Move it to the end instead.
@@ -70,6 +69,7 @@
 * [ ] Consider integrating AI to check commits according to the guidelines.
 * [ ] Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
 # Done Tasks
+* [x] Update DEVELOPMENT.md.
 * [o] Do not show project proposals in news, as this just clutters things too much for none technical users.
   * [o] Project proposal parsing was removed completely, because it was horribly wrong.
     Even blog articles have a project proposal entry.

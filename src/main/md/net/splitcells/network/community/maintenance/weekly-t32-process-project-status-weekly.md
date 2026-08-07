@@ -25,10 +25,6 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
-* [ ] Remove .build and .codecov.yml from net.splitcells.network repo, as these are not used anymore.
-* [ ] Create project build, that copies the project somewhere and builds it.
-  This allows the developer to submit a build and then to immediately continue the code editing with a smaller pause,
-  than classic builds. Classic build require a wait until the compilation is done and only after that the code can be edited.
 * [ ] Fix `repos.pull.from Codeberg`.
 * [ ] Consider creating unit tests with Claud code.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
@@ -69,6 +65,10 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Create project build, that copies the project somewhere and builds it.
+  This allows the developer to submit a build and then to immediately continue the code editing with a smaller pause,
+  than classic builds. Classic build require a wait until the compilation is done and only after that the code can be edited.
+* [x] Remove .build and .codecov.yml from net.splitcells.network repo, as these are not used anymore.
 * [x] Benchmarks and lambdas of require Throws are not covered in test coverage.
     * [x] Try excluding test classes from JaCoCo report.
 * [x] Test developer bootstrapping.
