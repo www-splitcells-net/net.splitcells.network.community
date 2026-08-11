@@ -63,7 +63,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [ ] Actually the same mirror as registered in ObjectsRenderer has to be used. Therefore, the mirror has to be cached for every table implementation.
                                 * [x] Table
                                 * [x] Assignment -> Its renderer method is delegating from the Table's one.
-                                * [ ] The mirror's renderer is not found.
+                                * [ ] When the first optimization request fails with an exception, then further optimization requests fail automatically.
+                                * [ ] The mirror's renderer is not found. -> The assignment table are not present as a subject in the ObjectsRenderer.
+                                    * [ ] The generated link returned public domain for dev config.
+                                * [ ] Add history objects as subjects to the ObjectsRenderer. -> Allow multiple subjects per DiscoverableRenderer after the DiscoverableRenderer is already registered in ObjectsRender. 
                         * [ ] Provide correct domain in links.
                         * [ ] Avoid duplicate slashes in links.
                         * [ ] Provide links to root for all constraint tables.
