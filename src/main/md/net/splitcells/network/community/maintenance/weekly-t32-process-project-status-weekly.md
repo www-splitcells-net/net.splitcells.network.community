@@ -25,6 +25,7 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
+* [ ] Add helper method to combine Cell and config methods inside a Cell's accept method.
 * [ ] Fix `repos.pull.from Codeberg`.
 * [ ] Consider creating unit tests with Claud code.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
