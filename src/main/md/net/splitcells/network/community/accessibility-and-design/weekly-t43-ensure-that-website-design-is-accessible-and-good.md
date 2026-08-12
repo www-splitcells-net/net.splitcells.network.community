@@ -18,6 +18,7 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 
 # Tasks
+* [ ] Make error button in header a link to the error log.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on IPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.
