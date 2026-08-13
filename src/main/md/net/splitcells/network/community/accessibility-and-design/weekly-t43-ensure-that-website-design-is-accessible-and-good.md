@@ -20,7 +20,7 @@ this is an opportunity to consider this aspect.
 # Tasks
 * [ ] Make error button in header a link to the error log.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
-* [ ] Privacy pop up does not work on IPhone at all.
+* [ ] Privacy pop up does not work on iPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.
 * [ ] Rename `Front Menu` to `Intro Page`, as otherwise it is too hard to understand the difference to `Main Menu`.
 * [ ] Ask ChatGPT how my website looks like. What could be improved? WHat is good or bad?

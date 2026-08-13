@@ -59,16 +59,14 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [x] Create unit test for subject parameter.
                         * [x] Provide assignment subject to ObjectsRenderer for table and assignments mirrors.
                         * [x] The editor does not work anymore. -> Maintenance work on the Tree class caused this.
-                        * [ ] Use the table of solution instead of the solution itself, in order to query the link of the solution.
-                            * [ ] Actually the same mirror as registered in ObjectsRenderer has to be used. Therefore, the mirror has to be cached for every table implementation.
-                                * [x] Table
-                                * [x] Assignment -> Its renderer method is delegating from the Table's one.
-                                * [x] When the first optimization request fails with an exception, then further optimization requests fail automatically.
-                                * [x] The mirror's renderer is not found. -> The assignment table are not present as a subject in the ObjectsRenderer.
-                                    * [x] The generated link returned public domain for dev config.
-                                * [ ] Add history objects as subjects to the ObjectsRenderer. -> Allow multiple subjects per DiscoverableRenderer after the DiscoverableRenderer is already registered in ObjectsRender.
-                                * [ ] Also provide link to the solution's history and not just to the solution's allocations. 
-                        * [ ] Provide correct domain in links.
+                        * [x] Link solution history in editor.
+                            * [x] Assignment -> Its renderer method is delegating from the Table's one.
+                            * [x] When the first optimization request fails with an exception, then further optimization requests fail automatically.
+                            * [x] The mirror's renderer is not found. -> The assignment table are not present as a subject in the ObjectsRenderer.
+                                * [x] The generated link returned public domain for dev config.
+                            * [x] Add history objects as subjects to the ObjectsRenderer. -> Allow multiple subjects per DiscoverableRenderer after the DiscoverableRenderer is already registered in ObjectsRender.
+                            * [x] Also provide link to the solution's history and not just to the solution's allocations. 
+                        * [x] Provide correct domain in links.
                         * [ ] Avoid duplicate slashes in links.
                         * [ ] Provide links to root for all constraint tables.
                         * [ ] Provide links to root of all solution tables.
