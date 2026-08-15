@@ -26,7 +26,6 @@ This does not apply for statuses, that show progress.
     * [ ] Execute the test with a reset script.
 # Tasks.
 * [ ] Add helper method to combine Cell and config methods inside a Cell's accept method.
-* [ ] Fix `repos.pull.from Codeberg`.
 * [ ] Consider creating unit tests with Claud code.
 * [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
@@ -66,6 +65,7 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Fix `repos.pull.from Codeberg`.
 * [x] Create project build, that copies the project somewhere and builds it.
   This allows the developer to submit a build and then to immediately continue the code editing with a smaller pause,
   than classic builds. Classic build require a wait until the compilation is done and only after that the code can be edited.
