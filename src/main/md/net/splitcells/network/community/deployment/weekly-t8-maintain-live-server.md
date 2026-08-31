@@ -11,7 +11,8 @@ The network traffic is included in the fixed package price of Hetzner and no add
 as long as no additional network expansions are bought for the package.
 ## Service
 * The server is publicly available at http://live.splitcells.net
-* Check server logs via `journalctl -f`.
+* Check server logs via `journalctl -r` and minimize this logs.
+* Check server logs via Grafana.
 * Update server.
     * Upgrade major version of OS when available.
     * Update deployed software.
@@ -23,6 +24,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Playwright cannot start Firefox for full stack tests.
 * [ ] Remove symbiosis project from website, as it is of too low quality.
 * [ ] Fix this warning in the program on the live server.
 
@@ -31,7 +33,7 @@ Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: A restricted metho
 Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: java.lang.System::load has been called by io.pyroscope.vendor.one.profiler.AsyncProfiler in an unnamed module (file:/root/opt/net.splitcells.martins.avots.distro.livedistrocell/jars/agent-2.4.0.jar)
 Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
 Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Restricted methods will be blocked in a future release unless native access is enabled
-````
+```` 
 * [ ] Very low priority: Consider moving to self-hosted server.
 * [ ] The pages of the live server are loading too slowly. Check this with Pyroscope.
     * [ ] ProjectsRendererI should not use validateRenderingResult on live server, as this only relevant during builds, tests and static website.
@@ -177,6 +179,7 @@ Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Restricted methods
 * [ ] Log public server availability via dedicated hardware.
 * [ ] Consider self-hosting SonarQube on the live server, as this allows one to get independent of GitHub.
 ## Done Tasks
+* [x] Service was not running and could not start during nightly restart:  Could not generate account for ACME. Caused by: java.nio.channels.UnresolvedAddressException. -> Restarting the service fixed it.
 * [x] Create error with exit code 1 if remote SSH script exits with 1 in `worker.execute`.
 * [x] Check whether authorization and co. is disabled during the certificate update. -> Yes, this is the case and this requirement is now explicitly noted in the source code.
 * [x] Fix SSL certificate update.
