@@ -25,6 +25,8 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
+* [ ] Link for deletable does not work: https://splitcells.net/net/splitcells/network/guidelines/index.html
+    * [ ] Consider creating a test for XML rendering like Dem#config tests. 
 * [ ] Add helper method to combine Cell and config methods inside a Cell's accept method.
 * [ ] Fix `repos.pull.from Codeberg`.
 * [ ] Consider creating unit tests with Claud code.
