@@ -18,6 +18,10 @@ this is an opportunity to consider this aspect.
 * Check static website with an analyzer: find public analyzer
 
 # Tasks
+* [ ] Alternating line and list elements color is independent of priority level.
+  The alternating color of lower priority items is too bright. 
+* [ ] Consider Latvian style decorations for things like the footer bar.
+* [ ] Create in line action button style, that is not intrusive. We will probably use the same style as inline links. 
 * [ ] Make error button in header a link to the error log.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.

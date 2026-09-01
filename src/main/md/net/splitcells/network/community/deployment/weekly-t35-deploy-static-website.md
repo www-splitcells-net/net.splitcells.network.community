@@ -7,7 +7,7 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] Remove symbiosis project from website, as it is of too low quality.
+* [ ] Remove symbiosis project from website, as it is of too low quality and incomplete.
 * [ ] Do not allow static website deployment with invalid links.
    * [ ] Create strict rendering command, in order to final invalid links errors.
    * [ ] Fix all invalid links.
