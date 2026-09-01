@@ -19,7 +19,7 @@ This does not apply for statuses, that show progress.
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
-* Check warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
+* Check warnings like Maven warnings during `Build Reports` in Daily CI: https://codeberg.org/splitcells-net/net.splitcells.network.hub/actions
 * Update Java knowledge: https://javaevolved.github.io/de/
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
