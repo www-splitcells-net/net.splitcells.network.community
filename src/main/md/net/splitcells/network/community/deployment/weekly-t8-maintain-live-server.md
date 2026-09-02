@@ -11,7 +11,7 @@ The network traffic is included in the fixed package price of Hetzner and no add
 as long as no additional network expansions are bought for the package.
 ## Service
 * The server is publicly available at http://live.splitcells.net
-* Check server logs via `journalctl -r` and minimize these logs.
+* Check server logs via `journalctl -r` and `journalctl --user -u net.splitcells.martins.avots.distro.livedistrocell.daemon.service` and minimize these logs.
 * Check server logs via Grafana and `net.splitcells.martins.avots.distro.download.log.sh` (as long the logs are not fully migrated to Grafana).
 * Update server.
     * Upgrade major version of OS when available.
@@ -25,7 +25,8 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Nightly service restart does not work. The service crashes during the start.
-    * [ ] Maybe the Playwright installation in the container image is faulty.
+    * [ ] Maybe the Playwright installation in the container image is faulty. 
+    * [ ] Podman does not log Playwright installation.
 * [ ] Playwright cannot start Firefox for full stack tests.
 * [ ] The logging of the loki container has to be reduced.
 * [ ] Fix this warning in the program on the live server.
