@@ -25,7 +25,8 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] Nightly service restart does not work. The service crashes during the start.
-    * [ ] Maybe the Playwright installation in the container image is faulty. 
+    * [ ] Maybe the Playwright installation in the container image is faulty.
+    * [ ] Start container and try to install Playwright manually, in order to get better logging.
     * [ ] Podman does not log Playwright installation.
 * [ ] Playwright cannot start Firefox for full stack tests.
 * [ ] The logging of the loki container has to be reduced.
