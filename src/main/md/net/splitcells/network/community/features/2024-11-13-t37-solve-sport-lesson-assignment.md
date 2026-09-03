@@ -67,10 +67,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] Add history objects as subjects to the ObjectsRenderer. -> Allow multiple subjects per DiscoverableRenderer after the DiscoverableRenderer is already registered in ObjectsRender.
                             * [x] Also provide link to the solution's history and not just to the solution's allocations. 
                         * [x] Provide correct domain in links.
-                        * [ ] Avoid duplicate slashes in links.
+                        * [x] Avoid duplicate slashes in links.
                         * [ ] Provide links to root for all constraint tables.
                         * [ ] Provide links to root of all solution tables.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
+            * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
         * [ ] Check if proposal is working in DemandSelector.

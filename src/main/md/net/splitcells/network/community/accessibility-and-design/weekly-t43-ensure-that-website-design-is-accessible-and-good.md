@@ -1,25 +1,13 @@
 # Ensure that the website design is accessible and good
-
 * Issue number: [\#43](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/43)
-
 # Task Description
-
 Improve the design, accessibility and usability of the software.
-
-Starting
-with [2025](https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655.html)
-public website should be barrierefrei.
-Although, this law does not seem to apply to `splitcells.net`,
-this is an opportunity to consider this aspect.
-
+Starting with [2025](https://www.golem.de/news/barrierefreiheit-deutsche-webseiten-sind-versetzungsgefaehrdet-2409-188655.html) public website should be barrierefrei.
+Although, this law does not seem to apply to `splitcells.net`, this is an opportunity to consider this aspect.
 # Service Tasks
-
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
-
-# Tasks
-* [ ] Alternating line and list elements color is independent of priority level.
-  The alternating color of lower priority items is too bright. 
+# Tasks 
 * [ ] Consider Latvian style decorations for things like the footer bar.
 * [ ] Create in line action button style, that is not intrusive. We will probably use the same style as inline links. 
 * [ ] Make error button in header a link to the error log.
@@ -54,11 +42,11 @@ this is an opportunity to consider this aspect.
 * [ ] Consider a more distinct look of link buttons and action buttons:
   The first one get additional drawn edges at the bottom left and top right.
   The second one get additional drawn edges at the top left and bottom right.
-* [ ] Add an background effect to interactive elements, where the background around the mouse is highlighted by color or
+* [ ] Add a background effect to interactive elements, where the background around the mouse is highlighted by color or
   light.
-
 # Completed Tasks
-
+* [x] Alternating line and list elements color is independent of priority level.
+  The alternating color of lower priority items is too bright.
 * [x] Make website more presentable.
     * [x] Check and fix links of both main READMEs.
     * [o] The download of the program does not work on the static site. -> In the future, there will be no application.
