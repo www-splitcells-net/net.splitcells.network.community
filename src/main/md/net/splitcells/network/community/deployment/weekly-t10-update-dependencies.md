@@ -9,7 +9,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 # Tasks
 * [ ] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
     * [x] Update Java in container.
-    * [ ] Update Java in Maven. -> Do this starting with July 2026, as otherwise this new JDK version is harder to get by on personal computers.
+    * [x] Update Java in Maven. -> Do this starting with July 2026, as otherwise this new JDK version is harder to get by on personal computers.
     * [ ] Note that Java 25 features can now be used.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.

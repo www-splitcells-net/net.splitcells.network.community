@@ -55,12 +55,12 @@ We also need full accounting for it.
         * [x] Consider implementing a default license method.
         * [ ] Provide license metadata for page via `ProjectsRenderer#metaData(String)`.
           Use this to list the licensing of every HTML file.
-            * [ ] Extended the filesystem API, where an additional method returns a metadata for a given file.
+            * [x] Extended the filesystem API, where an additional method returns a metadata for a given file.
               A write method is not needed for this, as there is currently no use case for that.
                 * [x] The default implementation should return empty metadata.
                 * [x] Implement this for FileSystemViaClassResourcesImpl.
-                * [ ] Test this for FileSystemViaClassResourcesImpl.
-                * [ ] Implement this for the DevDistroCell.
+                * [x] Test this for FileSystemViaClassResourcesImpl.
+                * [o] Implement this for the DevDistroCell. -> FileSystemViaClassResourcesTest already tests actual class resource case. 
             * [ ] Only provide access to metadata, to which the user has access to.
                 * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
                     * [x] Create new method with empty default.

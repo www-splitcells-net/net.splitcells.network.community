@@ -25,19 +25,7 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
-* [ ] Link for deletable does not work: https://splitcells.net/net/splitcells/network/guidelines/index.html
-    * [ ] Consider creating a test for XML rendering like Dem#config tests. 
-* [ ] Add helper method to combine Cell and config methods inside a Cell's accept method.
 * [ ] Consider creating unit tests with Claud code.
-* [ ] Disallow `import java.util.concurrent.Semaphore;` in core code.
-    * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
-    * [x] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
-        * [x] Implement.
-        * [x] Check if own Semaphore interface really fits the current usage.
-        * [x] Test.
-        * [x] Add Javadoc.
-    * [ ] Remove direct usage of Java's Semaphore in core code. 
-    * [ ] Only allow custom Semaphore interface in core code.
 * [ ] Improve developer bootstrap.
     * [ ] Create a semi-automatic reset test for the developer bootstrap.
     * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell.
@@ -67,6 +55,17 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Disallow `import java.util.concurrent.Semaphore;` in core code.
+    * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
+    * [x] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
+        * [x] Implement.
+        * [x] Check if own Semaphore interface really fits the current usage.
+        * [x] Test.
+        * [x] Add Javadoc.
+    * [x] Remove direct usage of Java's Semaphore in core code.
+    * [x] Only allow custom Semaphore interface in core code.
+* [o] Add helper method to combine Cell and config methods inside a Cell's accept method. -> This will be done, when such a use case is implemented.
+* [x] Link for deletable does not work: https://splitcells.net/net/splitcells/network/guidelines/index.html
 * [x] Fix `repos.pull.from Codeberg`.
 * [x] Create project build, that copies the project somewhere and builds it.
   This allows the developer to submit a build and then to immediately continue the code editing with a smaller pause,

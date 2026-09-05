@@ -24,13 +24,6 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
-* [ ] Nightly service restart does not work. The service crashes during the start.
-    * [ ] Maybe the Playwright installation in the container image is faulty. -> Deleting the persisted `/root/.cache/ms-playwright/` fixed the problem. This needs to be documented.
-    * [ ] Start container and try to install Playwright manually, in order to get better logging.
-    * [ ] Podman does not log Playwright installation.
-    * [ ] Clean up Playwright instance, if there is an DriverException at any situation, in order to close bad Playwright threads and processes.
-      -> Cleaning up the instance, when this error happens, worked. Now this has to be done in every situation.
-* [ ] Playwright cannot start Firefox for full stack tests.
 * [ ] The logging of the loki container has to be reduced.
 * [ ] Fix this warning in the program on the live server.
 
@@ -185,6 +178,13 @@ Jul 11 18:29:15 net-splitcells-live podman[2933101]: WARNING: Restricted methods
 * [ ] Log public server availability via dedicated hardware.
 * [ ] Consider self-hosting SonarQube on the live server, as this allows one to get independent of GitHub.
 ## Done Tasks
+* [x] Nightly service restart does not work. The service crashes during the start.
+    * [x] Maybe the Playwright installation in the container image is faulty. -> Deleting the persisted `/root/.cache/ms-playwright/` fixed the problem. This needs to be documented.
+    * [o] Start container and try to install Playwright manually, in order to get better logging.
+    * [o] Podman does not log Playwright installation.
+    * [x] Clean up Playwright instance, if there is an DriverException at any situation, in order to close bad Playwright threads and processes.
+      -> Cleaning up the instance, when this error happens, worked. Now this has to be done in every situation.
+    * [x] Playwright cannot start Firefox for full stack tests.
 * [x] Service was not running and could not start during nightly restart:  Could not generate account for ACME. Caused by: java.nio.channels.UnresolvedAddressException. -> Restarting the service fixed it.
 * [x] Create error with exit code 1 if remote SSH script exits with 1 in `worker.execute`.
 * [x] Check whether authorization and co. is disabled during the certificate update. -> Yes, this is the case and this requirement is now explicitly noted in the source code.
