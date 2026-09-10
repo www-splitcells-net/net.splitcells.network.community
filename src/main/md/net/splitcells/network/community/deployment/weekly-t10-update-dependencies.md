@@ -7,10 +7,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 # Tasks
-* [ ] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
-    * [x] Update Java in container.
-    * [x] Update Java in Maven. -> Do this starting with July 2026, as otherwise this new JDK version is harder to get by on personal computers.
-    * [ ] Note that Java 25 features can now be used.
+* [ ] Auto update via the daily CI is not working. -> The git change detector after the Maven update did not work correctly. 
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
@@ -21,6 +18,10 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Add automatic dependency updates for distro repo as well.
 * [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
+* [x] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
+    * [x] Update Java in container.
+    * [x] Update Java in Maven. -> Do this starting with July 2026, as otherwise this new JDK version is harder to get by on personal computers.
+    * [o] Note that Java 25 features can now be used. -> There is no explicit note needed for this.
 * [x] Update of dependencies and Maven plugins does not seem to work, if the version is determined by a property.
 * [x] Note why automatic update is only updating by one version increment for each dependency.
 * [x] Create automatic command via `https://www.mojohaus.org/versions/versions-maven-plugin/index.html` and create a daily workflow for that.

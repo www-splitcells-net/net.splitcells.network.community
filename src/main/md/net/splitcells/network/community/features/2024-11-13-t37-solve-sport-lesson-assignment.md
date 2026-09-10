@@ -52,7 +52,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [x] Test RandomnessViaList.
                     * [x] SupplySelectorsTest
                 * [ ] Check the created assignments.
-                    * [ ] Provide links to roots of all relevant tables during optimization.
+                    * [x] Provide links to roots of all relevant tables during optimization.
                         * [x] Provide query API for links of relevant Discoverables via ObjectsRenderer.
                         * [x] Add Discoverables lookup at ObjectsRenderer via subjects, so that the path is really correct.
                           The current heuristics used RepairOptimizationStep does not work, as the mirror suffix is missing for tables.
@@ -68,8 +68,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [x] Also provide link to the solution's history and not just to the solution's allocations. 
                         * [x] Provide correct domain in links.
                         * [x] Avoid duplicate slashes in links.
-                        * [ ] Provide links to root for all constraint tables.
-                        * [ ] Provide links to root of all solution tables.
+                        * [x] Provide links to root for all constraint tables.
+                        * [o] Provide links to root of all solution tables. -> Listing more or less the links of all optimized tables should be enough for now.
+                    * [ ] Check why the solution is sometimes empty.
+                        * [ ] Optimizers should note in the history, if present, why a certain step was done and what the source is.
+                            * [ ] Add optional metadata provider argument to `Assignments#assign`, that notes it in the history, if it is present.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
         * [ ] Fix bug in DemandSelector.
