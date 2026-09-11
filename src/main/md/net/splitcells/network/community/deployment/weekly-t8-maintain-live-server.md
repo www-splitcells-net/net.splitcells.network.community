@@ -25,6 +25,8 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] The logging of the loki container has to be reduced.
+    * [ ] Set log level to warn.
+    * [ ] Check the results in journald.
 * [ ] Fix this warning in the program on the live server.
 
 ````

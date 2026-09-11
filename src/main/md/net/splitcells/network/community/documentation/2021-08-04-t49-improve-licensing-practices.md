@@ -64,11 +64,13 @@ We also need full accounting for it.
             * [ ] Only provide access to metadata, to which the user has access to.
                 * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
                     * [x] Create new method with empty default.
-                    * [ ] CURRENT_TASK Implement new method for one class. -> XmlProjectRendererExtension is used for this.
+                    * [x] Implement new method for one class. -> XmlProjectRendererExtension is used for this.
                     * [ ] Use new method in ProjectsRendererI. The old metaData method is used via the new default version. If the new metaData method is implemented, there should not be an old variant at the same class or the new one should use the old one as well.
                     * [ ] Migrate all old implementations to new methods.
                     * [ ] Remove old method.
-            * [ ] Render the metadata in HTML layout.
+            * [ ] CURRENT_TASK Render the metadata in HTML layout for XML files at least. -> A dedicated license layout page is created.
+                * [ ] Somehow the correct file system is not queried for this and therefore the license of XML files is not found.
+            * [ ] Integrate layout license page into licensing meta document. 
             * [ ] Go over all extensions and implement this.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.

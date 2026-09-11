@@ -6,8 +6,9 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update `net.splitcells.network.bom` via `bin/repos.dependencies.update` (this is done via the daily CI atm).
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
-# Tasks
-* [ ] Auto update via the daily CI is not working. -> The git change detector after the Maven update did not work correctly. 
+# Tasks 
+* [ ] Provide repos synchronization command.
+    * [ ] Ignore unreachable remotes
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
@@ -18,6 +19,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Add automatic dependency updates for distro repo as well.
 * [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
+* [x] Auto update via the daily CI is not working. -> The git change detector after the Maven update did not work correctly.
 * [x] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
     * [x] Update Java in container.
     * [x] Update Java in Maven. -> Do this starting with July 2026, as otherwise this new JDK version is harder to get by on personal computers.

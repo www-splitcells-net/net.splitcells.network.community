@@ -25,11 +25,6 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
-* [ ] Consider creating unit tests with Claud code.
-* [ ] Improve developer bootstrap.
-    * [ ] Create a semi-automatic reset test for the developer bootstrap.
-    * [ ] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell.
-    * [x] Setup SSH cache.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
@@ -55,6 +50,10 @@ This does not apply for statuses, that show progress.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
 # Done Tasks
+* [x] Improve developer bootstrap.
+    * [o] Create a semi-automatic reset test for the developer bootstrap. -> This already done completely automatically in the daily CI.
+    * [o] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell. -> This is not relevant for now.
+    * [x] Setup SSH cache.
 * [x] Disallow `import java.util.concurrent.Semaphore;` in core code.
     * [x] Review the use of Keyword_JavaLegacy in Java grammar. consider removing it, as Java files containing this string should already be not checked by SourceCodeCheckMojo. -> One obsolete use was removed.
     * [x] Develop custom Semaphore interface via `net.splitcells.dem.resource.Semaphore`.
