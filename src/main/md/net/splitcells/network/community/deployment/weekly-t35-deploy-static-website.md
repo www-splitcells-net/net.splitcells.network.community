@@ -7,7 +7,10 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] Remove symbiosis project from website, as it is of too low quality and incomplete.
+* [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
+  First [Publish public website source code](../compatibility-portability-and-adaptability/2021-03-21-publish-public-website-source-code.md) has to be done.
+    * [ ] Enable Javadoc rendering in workflow. It was disabled, as it takes a lot of time on the local computer.
+    * [ ] At daily task to check the logs for warnings during the static site generation with fitting search terms.
 * [ ] Do not allow static website deployment with invalid links.
    * [ ] Create strict rendering command, in order to final invalid links errors.
    * [ ] Fix all invalid links.
@@ -15,12 +18,8 @@
 * [ ] Fix all rendering warnings of the static website.
 * [ ] Disallow any XSL warnings and errors by default.
     * [ ] Remove all XSL warnings and errors.
-* [ ] The websites logo does not work on iPhone. 
-* [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
-  First [Publish public website source code](../compatibility-portability-and-adaptability/2021-03-21-publish-public-website-source-code.md) has to be done.
-    * [ ] Enable Javadoc rendering in workflow. It was disabled, as it takes a lot of time on the local computer.
-    * [ ] At daily task to check the logs for warnings during the static site generation with fitting search terms.
 # Done Tasks
+* [o] Remove symbiosis project from website, as it is of too low quality and incomplete. -> It is ok for now.
 * [x] Let all interactive pages be a redirect to the live server instead.
   Use a special domain for that, that is a placeholder and is used for nothing else.
     * [x] Create a config to enable this functionality on static website. This functionality is disabled by default.

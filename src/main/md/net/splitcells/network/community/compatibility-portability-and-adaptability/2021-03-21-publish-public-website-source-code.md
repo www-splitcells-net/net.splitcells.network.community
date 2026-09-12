@@ -1,11 +1,10 @@
 # Publish public website source code
 * Issue number: [\#70](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/70)
 # Tasks
-* [ ] [Establish Cell API first](2024-08-06-establish-cell-api.md).
-* [ ] Make website cell based.
-* [ ] Make this ticket nice and note the difference to https://github.com/www-splitcells-net/net.splitcells.network/issues/199
-* [ ] This repo is used in order to publish the website's source code: https://github.com/www-splitcells-net/net.splitcells.martins.avots.distro
+* [ ] Make website cell based. -> Move static website into martins.avots.distro by creating a cell for the static cell, as there is no need for a dedicated repo.
 # Done Tasks
+* [x] Make this ticket nice and note the difference to https://github.com/www-splitcells-net/net.splitcells.network/issues/199
+* [x] [Establish Cell API first](2024-08-06-establish-cell-api.md).
 * [x] Layout
 * [x] Style
 * [x] Declare licensing info to `net.splitcells.network.media`.

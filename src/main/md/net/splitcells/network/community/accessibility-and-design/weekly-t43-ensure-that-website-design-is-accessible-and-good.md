@@ -7,21 +7,19 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 # Service Tasks
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
-# Tasks 
-* [ ] Consider Latvian style decorations for things like the footer bar.
-* [ ] Create in line action button style, that is not intrusive. We will probably use the same style as inline links. 
-* [ ] Make error button in header a link to the error log.
+# Tasks
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.
 * [ ] Rename `Front Menu` to `Intro Page`, as otherwise it is too hard to understand the difference to `Main Menu`.
-* [ ] Ask ChatGPT how my website looks like. What could be improved? WHat is good or bad?
+* [ ] Ask ChatGPT how my website looks like. What could be improved? What is good or bad?
 * [ ] JavaScript is not working on iPhone and Safari.
     * [x] Is it possible to execute Safari on Linux? -> There does not seem to be an easy way.
     * [ ] Maybe there is a developer mode/console on iPhone's Safari? -> Yes, via USB, but `Web Inspector` and `window.onerror` is better.
         * [x] Render error messages in meta column, via a hidden chapter, which can be viewed via a click on the error button.
         * [ ] Use `Web Inspector` from App store in iPhone instead, but maybe `window.onerror` is enough. -> `window.onerror` is not enough, as the errors are not visible in Safari. 
         * [ ] Document `Web Inspector` usage and `window.onerror` extension for this weekly task.
+    * [ ] Make error button in header a link to the error log.
 * [ ] Add grain effect to background color.
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct.
@@ -45,6 +43,8 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * [ ] Add a background effect to interactive elements, where the background around the mouse is highlighted by color or
   light.
 # Completed Tasks
+* [o] Consider Latvian style decorations for things like the footer bar. -> This is not relevant for now.
+* [x] The websites logo does not work on iPhone. -> It now works, but I did not change anything.
 * [x] Alternating line and list elements color is independent of priority level.
   The alternating color of lower priority items is too bright.
 * [x] Make website more presentable.

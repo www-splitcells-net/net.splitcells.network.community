@@ -2,6 +2,7 @@
 * Issue number: [\#65](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/65)
 # Tasks
 * [ ] Maven 4 is not fully released yet: https://maven.apache.org/docs/history.html 
+* [ ] Use `mvnup check` and `mvnup apply` to detect and correct potential issues.
 * [ ] Use [Maven Wrapper](https://maven.apache.org/tools/wrapper/), in order to easily migrate to Maven 4 and
   to make the build more stable and independent of the OS.
 * [ ] Consider using https://maven.apache.org/whatsnewinmaven4.html#maven-upgrade-tool
