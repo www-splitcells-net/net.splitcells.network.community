@@ -72,7 +72,8 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [o] Provide links to root of all solution tables. -> Listing more or less the links of all optimized tables should be enough for now.
                     * [ ] Check why the solution is sometimes empty.
                         * [ ] Optimizers should note in the history, if present, why a certain step was done and what the source is.
-                            * [ ] Add optional metadata provider argument to `Assignments#assign`, that notes it in the history, if it is present.
+                            * [x] Add optional metadata provider argument to `Assignments#assign`, that notes it in the history, if it is present.
+                            * [ ] Add assignment event processing to history.
                         * [ ] Create test for DefaultEditorOptimization.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
