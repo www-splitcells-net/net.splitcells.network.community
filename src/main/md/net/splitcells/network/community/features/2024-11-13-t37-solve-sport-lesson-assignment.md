@@ -73,7 +73,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                     * [ ] Check why the solution is sometimes empty.
                         * [ ] Optimizers should note in the history, if present, why a certain step was done and what the source is.
                             * [x] Add optional metadata provider argument to `Assignments#assign`, that notes it in the history, if it is present.
-                            * [ ] Add assignment event processing to history.
+                            * [ ] Add assignment event processing to history via AssignmentSubscriber.
                         * [ ] Create test for DefaultEditorOptimization.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
