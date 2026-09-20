@@ -7,8 +7,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 # Tasks 
-* [ ] Provide repos synchronization command.
-    * [ ] Ignore unreachable remotes
+* [ ] Update Maven plugins automatically as well.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`

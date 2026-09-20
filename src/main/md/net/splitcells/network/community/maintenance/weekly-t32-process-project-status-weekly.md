@@ -26,6 +26,7 @@ This does not apply for statuses, that show progress.
     * [ ] Execute the test with a reset script.
 # Tasks.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
+    * [ ] Ignore unreachable remotes
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
