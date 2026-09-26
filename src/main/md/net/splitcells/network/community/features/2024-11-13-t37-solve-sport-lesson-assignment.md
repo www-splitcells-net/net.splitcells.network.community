@@ -77,6 +77,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [ ] Create test for DefaultEditorOptimization.
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
+            * [ ] Why was this not catched by daily CI? This error is present since at least a month.
+                * [ ] Check integration tests.
+                * [ ] If needed create a test, that the editor's optimizer creates a none empty solution.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
         * [ ] Check if proposal is working in DemandSelector.
@@ -776,3 +779,4 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create a test framework, that tests a problem definition just like `EditorProcessorTest#TEST_OPTIMIZATION_GUI`,
   but abstracts away the fact, that the full stack is tested.
 * [ ] Real GUI for website's layout tree like GUI programs for file management.
+* [ ] Consider a reasoning log for the solver with references to the history.

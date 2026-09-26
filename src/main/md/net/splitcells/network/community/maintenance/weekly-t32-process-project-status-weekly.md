@@ -15,7 +15,7 @@ This does not apply for statuses, that show progress.
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
     * Current JaCoCo report: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/index.html
-    * Currently working on: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.lang.tree/Tree.html
+    * Currently working on dem.api classes in coverage order: https://splitcells.net/net/splitcells/martins/avots/website/jacoco-aggregate/dem.api/net.splitcells.dem.lang.tree/Tree.html
     * Check test coverage on currently worked features
     * TODO When full coverage: do full UnitTest only test coverage as well.
 * Static server status: http://localhost:8443/net/splitcells/network/status.html
@@ -26,7 +26,12 @@ This does not apply for statuses, that show progress.
     * [ ] Execute the test with a reset script.
 # Tasks.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
-    * [ ] Ignore unreachable remotes
+  Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
+    * [ ] Which remotes does `repos.synchronize` act upon?
+    * [ ] Which branches does `repos.synchronize` act upon?
+    * [ ] Set origin to Codeberg via command: `repos.remote.set ssh://git@codeberg.org/splitcells-net/net.splitcells.network.hub.git`
+    * [ ] Use `repos.synchronize.sh` to synchronize with origin.
+    * [ ] Adapt `repos.synchronize.with.py` to set remotes and to synchronize with such.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
