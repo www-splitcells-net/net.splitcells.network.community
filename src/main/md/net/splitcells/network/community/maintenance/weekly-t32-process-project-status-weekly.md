@@ -56,6 +56,7 @@ This does not apply for statuses, that show progress.
 * [ ] Ensure, that all scripts like Bash scripts are tested as well.
   Consider creating a coverage report for this ,too.
 * [ ] Create distinct code coverage reports for unit tests, integration tests and functionality tests.
+  It could be the case, that dedicated test build runs have to be done for that.
 # Done Tasks
 * [x] Improve developer bootstrap.
     * [o] Create a semi-automatic reset test for the developer bootstrap. -> This already done completely automatically in the daily CI.
