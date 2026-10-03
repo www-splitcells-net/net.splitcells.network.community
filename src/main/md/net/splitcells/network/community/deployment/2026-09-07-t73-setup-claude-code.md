@@ -8,3 +8,8 @@ in order to evaluate the workflow.
 # Acceptance Note
 
 # Tasks
+* [ ] Create prompt templates
+    * [ ] Has the given class multiple methods, that basically do the same?
+    * [ ] Ask if source code corresponds to the projects guidelines or public guidelines.
+    * [ ] Ask if code has bugs.
+    * [ ] Ask if code inspire new ideas.

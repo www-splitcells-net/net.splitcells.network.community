@@ -27,11 +27,14 @@ This does not apply for statuses, that show progress.
 # Tasks.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
-    * [ ] Which remotes does `repos.synchronize` act upon?
-    * [ ] Which branches does `repos.synchronize` act upon?
-    * [ ] Set origin to Codeberg via command: `repos.remote.set ssh://git@codeberg.org/splitcells-net/net.splitcells.network.hub.git`
+    * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
+    * [x] Which branches does `repos.synchronize` act upon? -> The current one is synchronized.
+    * [x] Set origin to Codeberg via command: `repos.remote.set 'ssh://git@codeberg.org/splitcells-net/${childRepo}.git'`
+        * [x] Migrate the command to the new repos process command.
+        * [x] Document variables in repos process command arguments.
     * [ ] Use `repos.synchronize.sh` to synchronize with origin.
-    * [ ] Adapt `repos.synchronize.with.py` to set remotes and to synchronize with such.
+    * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
+        * [ ] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
