@@ -7,9 +7,11 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 # Tasks 
+* [ ] Upgrade vert.x manually as it causes errors in daily CI. Is it really trying to just increment vert.x version?
 * [ ] Update Maven plugins automatically as well.
     * [ ] Plugins can be updated by adding these also to the dependency management while using the same property for the plugin version. Verify this with the daily CI.
     * [ ] Add all plugins to the dependency management and link these to properties.
+    * [ ] Consider updating plugins via https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
@@ -17,7 +19,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] `net.splitcells.network.distro`
     * [ ] `net.splitcells.network.distro.java`
     * [ ] `net.splitcells.network.distro.swt`
-* [ ] Add automatic dependency updates for distro repo as well.
+* [ ] Add automatic dependency updates for distro repo as well.<
 * [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
 * [x] Auto update via the daily CI is not working. -> The git change detector after the Maven update did not work correctly.
