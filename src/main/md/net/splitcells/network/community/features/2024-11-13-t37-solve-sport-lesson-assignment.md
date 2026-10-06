@@ -194,6 +194,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] `database-modification-counter.csv` should have more human-readable time axis.
 * [ ] Create an integration test for sport lesson assignment.
 * [ ] Status updates during the optimization steps do not show intermediate solution.
+* [ ] Create full stuck UI test for both school problems and check concrete rating.
 # Done Tasks
 * [x] Rename availableHalfYears to semester.
 * [x] Support complex problems with the default optimization.

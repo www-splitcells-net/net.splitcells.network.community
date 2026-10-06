@@ -12,6 +12,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] Plugins can be updated by adding these also to the dependency management while using the same property for the plugin version. Verify this with the daily CI.
     * [ ] Add all plugins to the dependency management and link these to properties.
     * [ ] Consider updating plugins via https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
+      This way it could maybe ensure, that properties based versions are updated incrementally as well.
+      Currently, these are updated to the latest version.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
