@@ -8,7 +8,6 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
-* [ ] Links should always be sans serif. This should also be the case for texts.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.
@@ -44,6 +43,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * [ ] Add a background effect to interactive elements, where the background around the mouse is highlighted by color or
   light.
 # Completed Tasks
+* [x] Links should always be sans serif. This should also be the case for texts.
 * [o] Consider Latvian style decorations for things like the footer bar. -> This is not relevant for now.
 * [x] The websites logo does not work on iPhone. -> It now works, but I did not change anything.
 * [x] Alternating line and list elements color is independent of priority level.
