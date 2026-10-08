@@ -3,9 +3,7 @@
 > This project stores, organizes and develops tasks and ideas for the Splitcells Network.
 
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
-* Currently, the largest ticket ID created and managed by this repo is 73.
-  Note, that some ticket IDs are from Codeberg or GitHub and therefore duplicate IDs exist.
-  Use the dates of the tickets, issues and commits, in order to find out which belongs to which.
+* Current last ticket ID: 74
 ## Standard Projects
 Projects that are being worked cyclically, and probably will never be finished:
 * Accessibility and Design: Improve accessibility:
@@ -81,6 +79,8 @@ Projects that are being worked cyclically, and probably will never be finished:
 * Use only project construct on hosters like Codeberg or GitHub,
   if there is a current need for that
   (i.e. issues on those hosts support image attachments, or it is useful for other users.).
+* Note, that some ticket IDs are from Codeberg or GitHub and therefore duplicate IDs exist.
+  Use the dates of the tickets, issues and commits, in order to find out which belongs to which.
 # Format for Tasks
 * The file name format is `[YYYY-MM-DD|daily|weekly|...]-t[ticket number]-[ticket name].md`.
   The ticket number is placed in the file name, because it is faster to look up the ticket number that way,
