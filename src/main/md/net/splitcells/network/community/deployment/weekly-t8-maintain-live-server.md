@@ -25,8 +25,14 @@ as long as no additional network expansions are bought for the package.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
 * [ ] The logging of the loki container has to be reduced.
-    * [ ] Set log level to warn.
-    * [ ] Check the results in journald.
+    * [x] Set log level to warn.
+    * [x] Check the results in journald.
+    * [x] Do the same for Grafana.
+    * [x] Do the same for Prometheus.
+    * [x] Do the same for Pyroscope.
+    * [x] Document how Podman compose config is deployed or do it in the deploy project command.
+    * [ ] Fix Loki config.
+* [ ] Only log warnings or more severe messages to log by splitcells server.
 * [ ] Fix this warning in the program on the live server.
 
 ````

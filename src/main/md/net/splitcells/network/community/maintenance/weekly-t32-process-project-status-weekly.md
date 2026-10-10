@@ -32,9 +32,10 @@ This does not apply for statuses, that show progress.
     * [x] Set origin to Codeberg via command: `repos.remote.set 'ssh://git@codeberg.org/splitcells-net/${childRepo}.git'`
         * [x] Migrate the command to the new repos process command.
         * [x] Document variables in repos process command arguments.
-    * [ ] Use `repos.synchronize.sh` to synchronize with origin.
+    * [x] Use `repos.synchronize.sh` to synchronize with already configured remotes and repos.
     * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
         * [ ] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
+          Just like `repos.push.at.all.py`.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.

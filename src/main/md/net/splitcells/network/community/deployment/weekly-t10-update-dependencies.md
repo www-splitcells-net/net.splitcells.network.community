@@ -6,14 +6,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update `net.splitcells.network.bom` via `bin/repos.dependencies.update` (this is done via the daily CI atm).
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
-# Tasks 
-* [ ] Upgrade vert.x manually as it causes errors in daily CI. Is it really trying to just increment vert.x version?
-* [ ] Update Maven plugins automatically as well.
-    * [ ] Plugins can be updated by adding these also to the dependency management while using the same property for the plugin version. Verify this with the daily CI.
-    * [ ] Add all plugins to the dependency management and link these to properties.
-    * [ ] Consider updating plugins via https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
-      This way it could maybe ensure, that properties based versions are updated incrementally as well.
-      Currently, these are updated to the latest version.
+# Tasks
+* [ ] Try out effective property to find not updated dependencies: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
@@ -24,6 +18,14 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Add automatic dependency updates for distro repo as well.<
 * [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
+* [x] Upgrade vert.x manually as it causes errors in daily CI. Is it really trying to just increment vert.x version?
+* [x] Update Maven plugins automatically as well.
+    * [o] Plugins can be updated by adding these also to the dependency management while using the same property for the plugin version. Verify this with the daily CI.
+    * [o] Add all plugins to the dependency management and link these to properties.
+    * [x] Consider updating plugins via https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
+      This way it could maybe ensure, that properties based versions are updated incrementally as well.
+      Currently, these are updated to the latest version. -> Toolbox does not support incremental updates, but it is easier to update plugin this way,
+      so I am using it.
 * [x] Auto update via the daily CI is not working. -> The git change detector after the Maven update did not work correctly.
 * [x] [Migrate to Java 25](https://openjdk.org/projects/jdk/25/)
     * [x] Update Java in container.

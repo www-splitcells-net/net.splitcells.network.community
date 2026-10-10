@@ -62,8 +62,10 @@ Some tests are executed on servers in order to ensure, that the software works o
             * [x] Add this test command to `repos.test.sh`.
             * [x] Write results to network log repo.
             * [x] Log failed test runs at `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
-            * [ ] Log execution times in `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution` as well.
-              -> A draft is implemented. Test this via `bin/worker.test.at martins-avots@live.splitcells.net`, when SSH to Codeberg is working again. 
+            * [x] Log execution times in `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution` as well.
+              -> A draft is implemented. Test this via `bin/worker.test.at martins-avots@live.splitcells.net`, when SSH to Codeberg is working again.
+            * [ ] Pulling and pushing is not working. Check this via dry running the last command in `bin/worker.test.at`.
+            * [ ] Create a specific commit message for the log.
             * [ ] Clean up number formating, that is saved in the CSV logs.
             * [ ] Check build status via the new `src/main/csv/net/splitcells/network/worker/via/java/Tester/execution`.
                 * [x] Write this via Logger class.

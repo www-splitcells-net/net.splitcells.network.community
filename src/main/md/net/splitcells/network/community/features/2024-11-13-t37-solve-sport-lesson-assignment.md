@@ -79,6 +79,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                             * [ ] Check history results. Are they complete? Are there duplicate entries?
                             * [ ] Remove AssignmentSubscribers as there is no concrete use for them.
                         * [ ] Create test for DefaultEditorOptimization.
+                        * [ ] The constraint based repair starts a new cycle by deleting defying, but than does no repair attempt. 
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
             * [ ] Why was this not catched by daily CI? This error is present since at least a month.

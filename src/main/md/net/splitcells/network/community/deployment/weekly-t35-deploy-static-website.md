@@ -7,10 +7,10 @@
     * Check via browser, if there are client side errors.
     * Check via browser, if really no cookies are set.
 # Tasks
-* [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
   First [Publish public website source code](../compatibility-portability-and-adaptability/2021-03-21-publish-public-website-source-code.md) has to be done.
     * [ ] Enable Javadoc rendering in workflow. It was disabled, as it takes a lot of time on the local computer.
     * [ ] At daily task to check the logs for warnings during the static site generation with fitting search terms.
+* [ ] [Deploy static website via daily Codeberg CI](../maintenance/weekly-t32-process-project-status-weekly.md).
 * [ ] Do not allow static website deployment with invalid links.
    * [ ] Create strict rendering command, in order to final invalid links errors.
    * [ ] Fix all invalid links.
