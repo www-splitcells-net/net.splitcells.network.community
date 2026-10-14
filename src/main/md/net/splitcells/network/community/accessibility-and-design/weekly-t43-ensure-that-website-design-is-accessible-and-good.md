@@ -8,6 +8,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
+* [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
 * [ ] Consider buying the cheapest Apple laptop, in order to test GUI via Safari.

@@ -82,9 +82,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
                         * [ ] The constraint based repair starts a new cycle by deleting defying, but than does no repair attempt. 
             * [ ] The constraints have to be weighted, as the isSecondaryChoice rule is not as important as the fitting sport type rule.
             * [ ] Constraint repair sometimes just tries allocations, but does not decide to commit to one. This can be triggered with a small problem, that has only 1 demand.
-            * [ ] Why was this not catched by daily CI? This error is present since at least a month.
+            * [ ] Why was this not caught by daily CI? This error is present since at least a month.
                 * [ ] Check integration tests.
-                * [ ] If needed create a test, that the editor's optimizer creates a none empty solution.
+                * [ ] If needed, create a test, that the editor's optimizer creates a none empty solution.
         * [ ] Fix bug in DemandSelector.
         * [ ] Use proposal in SupplySelector.
         * [ ] Check if proposal is working in DemandSelector.
@@ -196,6 +196,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create an integration test for sport lesson assignment.
 * [ ] Status updates during the optimization steps do not show intermediate solution.
 * [ ] Create full stuck UI test for both school problems and check concrete rating.
+* [ ] Ensure, that both school problems are solved.
 # Done Tasks
 * [x] Rename availableHalfYears to semester.
 * [x] Support complex problems with the default optimization.
