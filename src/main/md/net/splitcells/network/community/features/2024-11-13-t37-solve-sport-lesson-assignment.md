@@ -13,6 +13,12 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] CURRENT_TASK The new default editor optimization does not solve the Colloquium with default data anymore.
+  Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
+    * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`
+      The reason for that ObjectsRendererI does not consider EXPLICIT_NO_CONTEXT.
+    * [ ] Cannot find the link to the solution's history.
+    * [ ] Some demands are not assigned at the end.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
@@ -127,7 +133,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [ ] Consider disabling solution history.
     * [x] `Calculate solution` button cannot be clicked after the form processing.
       -> This is caused by the fact, that net_splitcells_webserver_form_submit is called twice for one run.
-      The additional run is caused by the answer containing the current optimization status. 
+      The additional run is caused by the answer containing the current optimization status.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
@@ -787,3 +793,110 @@ to only provide server CPU and RAM usage in real time to the administrator of th
   but abstracts away the fact, that the full stack is tested.
 * [ ] Real GUI for website's layout tree like GUI programs for file management.
 * [ ] Consider a reasoning log for the solver with references to the history.
+# Duplicate Discovery Paths
+```
+* 18:06:45.170063499: Discoverable path is already registered. Using alternative path for rendering instead.
+    * object: net.splitcells.gel.data.table.TableI$2@25d49be8
+    * path: /no-context/proposed-assignments/mirror.2001
+    * alternative path: /no-context/proposed-assignments/mirror.2001
+    * throwable:
+        * message: Discoverable path is already registered.
+        * stack-trace: net.splitcells.dem.utils.ExecutionException: Discoverable path is already registered.
+	at net.splitcells.dem.utils.ExecutionException.execException(ExecutionException.java:35)
+	at net.splitcells.website.server.project.renderer.ObjectsRendererI.withObject(ObjectsRendererI.java:106)
+	at net.splitcells.website.server.project.renderer.ObjectsRenderer.registerObject(ObjectsRenderer.java:23)
+	at net.splitcells.gel.data.RenderCell.lambda$accept$0(RenderCell.java:36)
+	at net.splitcells.dem.resource.ConnectingConstructorI.lambda$connect$0(ConnectingConstructorI.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at net.splitcells.dem.resource.ConnectingConstructorI.connect(ConnectingConstructorI.java:33)
+	at net.splitcells.gel.data.table.TableIFactory.table(TableIFactory.java:80)
+	at net.splitcells.gel.data.table.Tables.table(Tables.java:71)
+	at net.splitcells.gel.proposal.Proposals.<init>(Proposals.java:177)
+	at net.splitcells.gel.proposal.Proposals.proposal(Proposals.java:152)
+	at net.splitcells.gel.proposal.Proposals.propose(Proposals.java:196)
+	at net.splitcells.gel.solution.optimization.primitive.repair.DemandSelectors.lambda$demandSelector$10(DemandSelectors.java:156)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at net.splitcells.dem.data.Flows.forEach(Flows.java:125)
+	at net.splitcells.gel.solution.optimization.primitive.repair.DemandSelectors.lambda$demandSelector$6(DemandSelectors.java:167)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.lambda$optimize$1(ConstraintGroupBasedRepair.java:99)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.lambda$optimize$0(ConstraintGroupBasedRepair.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.optimize(ConstraintGroupBasedRepair.java:97)
+	at net.splitcells.gel.editor.optimization.RepairOptimizationStep.lambda$new$1(RepairOptimizationStep.java:44)
+	at net.splitcells.gel.solution.optimization.meta.Deescalation.optimize(Deescalation.java:35)
+	at net.splitcells.gel.editor.optimization.RepairOptimizationStep.runAndProvideNextStep(RepairOptimizationStep.java:56)
+	at net.splitcells.gel.editor.optimization.DefaultEditorOptimization.runAndProvideNextStep(DefaultEditorOptimization.java:52)
+	at net.splitcells.gel.editor.Editor.lambda$optimize$2(Editor.java:183)
+	at net.splitcells.dem.resource.Lock.supply(Lock.java:36)
+	at net.splitcells.gel.editor.Editor.optimize(Editor.java:181)
+	at net.splitcells.gel.ui.editor.geal.EditorProcessor.lambda$process$5(EditorProcessor.java:165)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+```
+
+```
+* 18:06:45.165942710: Discoverable path is already registered. Using alternative path for rendering instead.
+    * object: net.splitcells.gel.data.table.TableModificationCounterAspect$1@17a2614b
+    * path: /no-context/proposed-assignments/mirror/database-modification-counter.csv.2001
+    * alternative path: /no-context/proposed-assignments/mirror/database-modification-counter.csv.2001
+    * throwable:
+        * message: Discoverable path is already registered.
+        * stack-trace: net.splitcells.dem.utils.ExecutionException: Discoverable path is already registered.
+	at net.splitcells.dem.utils.ExecutionException.execException(ExecutionException.java:35)
+	at net.splitcells.website.server.project.renderer.ObjectsRendererI.withObject(ObjectsRendererI.java:126)
+	at net.splitcells.website.server.project.renderer.ObjectsRenderer.registerObject(ObjectsRenderer.java:27)
+	at net.splitcells.gel.data.table.TableModificationCounterAspect.<init>(TableModificationCounterAspect.java:34)
+	at net.splitcells.gel.data.table.TableModificationCounterAspect.tableModificationCounterAspect(TableModificationCounterAspect.java:26)
+	at net.splitcells.dem.resource.AspectOrientedConstructorBase.joinAspects(AspectOrientedConstructorBase.java:32)
+	at net.splitcells.gel.data.table.TableIFactory.joinAspects(TableIFactory.java:100)
+	at net.splitcells.gel.data.table.TableIFactory.table2(TableIFactory.java:62)
+	at net.splitcells.gel.data.table.Tables.table2(Tables.java:101)
+	at net.splitcells.gel.data.table.TableI.discoverableRenderer(TableI.java:468)
+	at net.splitcells.gel.data.table.TableModificationCounterAspect.discoverableRenderer(TableModificationCounterAspect.java:156)
+	at net.splitcells.gel.data.RenderCell.lambda$accept$0(RenderCell.java:36)
+	at net.splitcells.dem.resource.ConnectingConstructorI.lambda$connect$0(ConnectingConstructorI.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at net.splitcells.dem.resource.ConnectingConstructorI.connect(ConnectingConstructorI.java:33)
+	at net.splitcells.gel.data.table.TableIFactory.table(TableIFactory.java:80)
+	at net.splitcells.gel.data.table.Tables.table(Tables.java:71)
+	at net.splitcells.gel.proposal.Proposals.<init>(Proposals.java:177)
+	at net.splitcells.gel.proposal.Proposals.proposal(Proposals.java:152)
+	at net.splitcells.gel.proposal.Proposals.propose(Proposals.java:196)
+	at net.splitcells.gel.solution.optimization.primitive.repair.DemandSelectors.lambda$demandSelector$10(DemandSelectors.java:156)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:196)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at net.splitcells.dem.data.Flows.forEach(Flows.java:125)
+	at net.splitcells.gel.solution.optimization.primitive.repair.DemandSelectors.lambda$demandSelector$6(DemandSelectors.java:167)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.lambda$optimize$1(ConstraintGroupBasedRepair.java:99)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.lambda$optimize$0(ConstraintGroupBasedRepair.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at net.splitcells.gel.solution.optimization.primitive.repair.ConstraintGroupBasedRepair.optimize(ConstraintGroupBasedRepair.java:97)
+	at net.splitcells.gel.editor.optimization.RepairOptimizationStep.lambda$new$1(RepairOptimizationStep.java:44)
+	at net.splitcells.gel.solution.optimization.meta.Deescalation.optimize(Deescalation.java:35)
+	at net.splitcells.gel.editor.optimization.RepairOptimizationStep.runAndProvideNextStep(RepairOptimizationStep.java:56)
+	at net.splitcells.gel.editor.optimization.DefaultEditorOptimization.runAndProvideNextStep(DefaultEditorOptimization.java:52)
+	at net.splitcells.gel.editor.Editor.lambda$optimize$2(Editor.java:183)
+	at net.splitcells.dem.resource.Lock.supply(Lock.java:36)
+	at net.splitcells.gel.editor.Editor.optimize(Editor.java:181)
+	at net.splitcells.gel.ui.editor.geal.EditorProcessor.lambda$process$5(EditorProcessor.java:165)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+```
+

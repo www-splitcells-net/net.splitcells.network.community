@@ -25,6 +25,7 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 # Tasks.
+* [ ] Fix `ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.2`. 
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
     * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
@@ -63,7 +64,7 @@ This does not apply for statuses, that show progress.
   It could be the case, that dedicated test build runs have to be done for that.
 * [ ] Create and publish m2 snapshot builds to m2 packages in Codeberg or git repo.
     * [ ] Test generated artifacts.
-    * [ ] Note, that this ensures, that artifacts are usable as well.
+    * [ ] Note, that this ensures, that artifacts are usable as well and thereby indirectly improves overhaul software quality.
 # Done Tasks
 * [x] Improve developer bootstrap.
     * [o] Create a semi-automatic reset test for the developer bootstrap. -> This already done completely automatically in the daily CI.
