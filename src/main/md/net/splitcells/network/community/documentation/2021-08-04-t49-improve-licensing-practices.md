@@ -25,7 +25,7 @@ We also need full accounting for it.
             * [x] net.splitcells.martins.avots.distro -> Does not have relevant license files.
             * [x] net.splitcells.martins.avots.website -> Does not have relevant license files.
         * [x] Add license overview page to menu.
-    * [ ] List license of every page centrally.
+    * [ ] List license of every page centrally at http://localhost:8443/net/splitcells/website/layout-license.html via LayoutLicenseExtension.
         * [x] Create empty page for listing all files. -> ResourceLicensingExtension
         * [x] `net.splitcells.maven.plugin.resource.list` has also to create and bundle a directory containing the metadata into the jar.
           The directory contains a file tree, where any file corresponds to a resource managed by the resource list.
@@ -65,7 +65,8 @@ We also need full accounting for it.
                 * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
                     * [x] Create new method with empty default.
                     * [x] Implement new method for one class. -> XmlProjectRendererExtension is used for this.
-                    * [ ] Use new method in ProjectsRendererI. The old metaData method is used via the new default version. If the new metaData method is implemented, there should not be an old variant at the same class or the new one should use the old one as well.
+                    * [x] Link license layout from the licensing page.
+                    * [ ] Use new method in ProjectsRendererI.
                     * [ ] Migrate all old implementations to new methods.
                     * [ ] Remove old method.
             * [ ] CURRENT_TASK Render the metadata in HTML layout for XML files at least. -> A dedicated license layout page is created.

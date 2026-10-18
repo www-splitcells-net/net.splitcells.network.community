@@ -24,8 +24,7 @@ This does not apply for statuses, that show progress.
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
-# Tasks.
-* [ ] Fix `ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.2`. 
+# Tasks. 
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
     * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
@@ -66,6 +65,7 @@ This does not apply for statuses, that show progress.
     * [ ] Test generated artifacts.
     * [ ] Note, that this ensures, that artifacts are usable as well and thereby indirectly improves overhaul software quality.
 # Done Tasks
+* [x] Fix `ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.2`.
 * [x] Improve developer bootstrap.
     * [o] Create a semi-automatic reset test for the developer bootstrap. -> This already done completely automatically in the daily CI.
     * [o] Temporary move or delete /home/mavo-stream/.local/state/net.splitcells.* in order to test the DevDistroCell. -> This is not relevant for now.

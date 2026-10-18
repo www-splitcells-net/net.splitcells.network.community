@@ -6,9 +6,10 @@
 # Service Tasks
 * Check documentation and their links.
     * The starting point of the guidelines is:
-    * https://splitcells.net/net/splitcells/network/guidelines/index.html
-    * http://localhost:8443/net/splitcells/network/guidelines/index.html
+        * https://splitcells.net/net/splitcells/network/guidelines/index.html
+        * http://localhost:8443/net/splitcells/network/guidelines/index.html
     * Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
+    * Update the project's [about page](https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html)
     * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network.hub
     * Consider Documentation from point of a user
     * Consider Documentation from point of a developer
@@ -16,13 +17,14 @@
     * Consider mobile vs desktop view.
     * JavaDoc
 * Use AI to generate doc in small steps and review every step.
-# Tasks 
+# Tasks
 * [ ] Clean up blog posts.
     * [x] Avoid showing metadata of CommonMark documents at the start of the document. Move it to the end instead.
       See this [post](../blog/articles/2021-07-07-Creating-The-First-Public-Release.md).
         * [x] All blog article's meta header have to adjusted to list style.
         * [x] The CommonMark renderer has to detect the meta header and place it at the end of document.
     * [ ] Currently working on this [post](../blog/articles/2021-07-07-Creating-The-First-Public-Release.md).
+* [ ] Create a documentation standard the states the meaning and format of a notes documents.
 * [ ] Update and improve https://splitcells.net/net/splitcells/gel/index.html via http://localhost:8443/net/splitcells/gel/index.html
 * [ ] Make News more practible.
     * [x] Show community blog entries as such and not as project proposals.
