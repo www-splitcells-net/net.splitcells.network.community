@@ -18,6 +18,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
     * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`
       The reason for that ObjectsRendererI does not consider EXPLICIT_NO_CONTEXT.
     * [ ] Cannot find the link to the solution's history.
+        * [ ] The history table is not connected to ObjectsRendererI.
+          -> The reason for that, is the fact, that every root table is created with EXPLICIT_NO_CONTEXT_ROOT.
+          EXPLICIT_NO_CONTEXT_ROOT is ignored in the rendering of the discoverable tree.
+          Use NO_CONTEXT instead.
+        * [ ] Create a test, that checks if factory aspects and connections are present in DevDistroCell. 
     * [ ] Some demands are not assigned at the end.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.

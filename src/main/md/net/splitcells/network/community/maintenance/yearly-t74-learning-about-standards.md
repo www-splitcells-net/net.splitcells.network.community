@@ -1,7 +1,9 @@
 # Learning
 # Service Tasks
-* [ ] Ask Claude code or ChatGPT (that has access to the public source code).
-* [ ] Follow Java users and communities.
+* [ ] Ask Claude code or ChatGPT (that has access to the public source code),
+  if something is done an old way or if something could be done better.
+* [ ] Follow Java blogs and communities.
+* [ ] Look up news of dependencies.
 # Tasks
 * [ ] Use Portainer to manager the docker config in martins.avots.distro.
   The advantage of Portainer is the fact, the UI provides easy configs for things like log level,
