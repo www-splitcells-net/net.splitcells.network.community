@@ -17,13 +17,18 @@ to only provide server CPU and RAM usage in real time to the administrator of th
   Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
     * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`
       The reason for that ObjectsRendererI does not consider EXPLICIT_NO_CONTEXT.
-    * [ ] Cannot find the link to the solution's history.
-        * [ ] The history table is not connected to ObjectsRendererI.
+    * [x] Cannot find the link to the solution's history.
+        * [x] The history table is not connected to ObjectsRendererI.
           -> The reason for that, is the fact, that every root table is created with EXPLICIT_NO_CONTEXT_ROOT.
           EXPLICIT_NO_CONTEXT_ROOT is ignored in the rendering of the discoverable tree.
           Use NO_CONTEXT instead.
-        * [ ] Create a test, that checks if factory aspects and connections are present in DevDistroCell. 
+        * [o] Create a test, that checks if factory aspects and connections are present in DevDistroCell. -> This was not the issue.
+        * [x] Improve the performance of rendering the history table by improving `Tree#toHtmlString`. -> Using String builder improved the runtime.
     * [ ] Some demands are not assigned at the end.
+        * [o] Config of the constraint based repair in RepairOptimizationStep seems to be the problem.
+        * [x] Maybe something is still of with the handling of additionally freed demands.
+          -> The `SupplySelectors#hillClimber` has trouble finding any supplies sometimes. It discards a supply if it was tried once and was not the best supply for a given demand. This leads to a situation where the hill climber has no free supplies for the lastly processed free demands with a certain probability.
+        * [ ] It is a good idea in general to select all free demands in the demand selector. This avoids requiring initially complete solutions as well.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
