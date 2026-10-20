@@ -29,6 +29,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
         * [x] Maybe something is still of with the handling of additionally freed demands.
           -> The `SupplySelectors#hillClimber` has trouble finding any supplies sometimes. It discards a supply if it was tried once and was not the best supply for a given demand. This leads to a situation where the hill climber has no free supplies for the lastly processed free demands with a certain probability.
     * [ ] It is a good idea in general to select all free demands in the demand selector. This avoids requiring initially complete solutions as well.
+    * [ ] Create a test, that requires the solution to be complete, when the default is used in the editor.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
