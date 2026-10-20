@@ -24,11 +24,11 @@ to only provide server CPU and RAM usage in real time to the administrator of th
           Use NO_CONTEXT instead.
         * [o] Create a test, that checks if factory aspects and connections are present in DevDistroCell. -> This was not the issue.
         * [x] Improve the performance of rendering the history table by improving `Tree#toHtmlString`. -> Using String builder improved the runtime.
-    * [ ] Some demands are not assigned at the end.
+    * [x] Some demands are not assigned at the end.
         * [o] Config of the constraint based repair in RepairOptimizationStep seems to be the problem.
         * [x] Maybe something is still of with the handling of additionally freed demands.
           -> The `SupplySelectors#hillClimber` has trouble finding any supplies sometimes. It discards a supply if it was tried once and was not the best supply for a given demand. This leads to a situation where the hill climber has no free supplies for the lastly processed free demands with a certain probability.
-        * [ ] It is a good idea in general to select all free demands in the demand selector. This avoids requiring initially complete solutions as well.
+    * [ ] It is a good idea in general to select all free demands in the demand selector. This avoids requiring initially complete solutions as well.
 * [ ] Solve sport lesson assignment.
     * [x] The editor has to store all intermediate optimization status, that were present during the for update/refresh requests.
       Otherwise, one does not see any optimization steps.
