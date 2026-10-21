@@ -13,3 +13,5 @@ in order to evaluate the workflow.
     * [ ] Ask if source code corresponds to the projects guidelines or public guidelines.
     * [ ] Ask if code has bugs.
     * [ ] Ask if code inspire new ideas.
+* [ ] Create code guidelines and let AI check these against code.
+  Minimize cost by  
