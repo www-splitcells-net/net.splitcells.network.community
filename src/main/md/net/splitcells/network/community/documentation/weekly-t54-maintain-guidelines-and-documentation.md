@@ -5,14 +5,14 @@
 # Task Description
 # Service Tasks
 * Check documentation and their links.
+    * Consider Documentation from point of a user
+    * Consider Documentation from point of a developer 
     * The starting point of the guidelines is:
         * https://splitcells.net/net/splitcells/network/guidelines/index.html
         * http://localhost:8443/net/splitcells/network/guidelines/index.html
     * Update the project's [history page](https://splitcells.net/net/splitcells/network/history/index.html).
     * Update the project's [about page](https://splitcells.net/net/splitcells/martins/avots/website/info/about-this-site.html)
     * Start of documentation: https://github.com/www-splitcells-net/net.splitcells.network.hub
-    * Consider Documentation from point of a user
-    * Consider Documentation from point of a developer
     * Consider Documentation from point of a product owner.
     * Consider mobile vs desktop view.
     * JavaDoc
