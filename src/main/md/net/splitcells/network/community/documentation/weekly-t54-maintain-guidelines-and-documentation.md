@@ -4,7 +4,7 @@
 
 # Task Description
 # Service Tasks
-* Check documentation and their links.
+* Check documentation and their links. Current Document: http://localhost:8443/net/splitcells/dem/history.html
     * Consider Documentation from point of a user
     * Consider Documentation from point of a developer 
     * The starting point of the guidelines is:
@@ -69,6 +69,7 @@
 * [ ] Place link for running the software in Hub Readme. The doc for running the software and not just building has to be created as well.
 * [ ] Consider integrating AI to check commits according to the guidelines.
 * [ ] Give Chat AI a piece of documentation and ask what is described by it. Also, ask what is incorrect. This may help to find errors or problems with text.
+* [ ] In documents like BUILD automatically check if the stated commands like `bin/repos.build` still exists.
 # Done Tasks
 * [x] Remove link to symbiosis project from main guidelines and create code specific perspective guidelines.
 * [x] Update DEVELOPMENT.md.

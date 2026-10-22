@@ -6,6 +6,7 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Update `net.splitcells.network.bom` via `bin/repos.dependencies.update` (this is done via the daily CI atm).
 * Check for new Java versions and update to it about 3 month after the official release date: https://www.java.com/releases/ and https://jdk.java.net/
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
+* Test desktop application.
 # Tasks
 * [ ] Try out effective property to find not updated dependencies: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
