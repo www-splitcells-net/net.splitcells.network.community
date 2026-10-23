@@ -8,6 +8,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
+* [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
@@ -22,7 +23,6 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
         * [ ] Document `Web Inspector` usage and `window.onerror` extension for this weekly task.
     * [ ] Make error button in header a link to the error log.
 * [ ] Add grain effect to background color.
-* [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The parent pages are not correct.
   See http://localhost:8443/net/splitcells/network/guidelines/inherently-broken-and-rotten-by-design.html .
 * [ ] All rendered READMEs have the same content on the website.
