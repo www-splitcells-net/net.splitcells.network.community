@@ -8,8 +8,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 * Test desktop application.
 # Tasks
-* [ ] Try out effective property to find not updated dependencies: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
+* [ ] Make incremental updates work: https://github.com/maveniverse/toolbox/issues/442
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
     * [ ] `net.splitcells.pom.java.defaults`
     * [ ] `net.splitcells.pom.java.minimal`
@@ -19,6 +19,10 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * [ ] Add automatic dependency updates for distro repo as well.<
 * [ ] Check if no versions are present in POM-XMLs.
 # Done Tasks
+* [x] Try out toolbox to update all dependencies and plugins: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
+  -> Toolbox is adapted.
+    * [x] It does not work: https://fosstodon.org/@splitcells/117496062417701589
+    * [x] Using the default selector fixes it.
 * [x] Upgrade vert.x manually as it causes errors in daily CI. Is it really trying to just increment vert.x version?
 * [x] Update Maven plugins automatically as well.
     * [o] Plugins can be updated by adding these also to the dependency management while using the same property for the plugin version. Verify this with the daily CI.
