@@ -36,6 +36,7 @@ This does not apply for statuses, that show progress.
     * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
         * [ ] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
           Just like `repos.push.at.all.py`.
+          Create a dedicated repos.remote.set.py command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.

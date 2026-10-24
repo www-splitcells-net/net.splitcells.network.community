@@ -7,6 +7,7 @@ in order to evaluate the workflow.
 # Acceptance Note
 
 # Tasks
+* [ ] Consider this more important when coding AI gets cheaper. This could be the case in 2027 see https://chatjimmy.ai/ .
 * [ ] Create prompt templates
     * [ ] Has the given class multiple methods, that basically do the same?
     * [ ] Ask if source code corresponds to the projects guidelines or public guidelines.
