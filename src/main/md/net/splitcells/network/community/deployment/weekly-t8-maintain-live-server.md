@@ -24,6 +24,12 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Make local distro app download work again.
+    * [x] Make the run runnable again. 
+    * [ ] Stop app if local port is not available to start the HTTP server.
+    * [ ] Reduce the logging during the optimization with the editor.
+    * [ ] Do not write `target/generated/*.xml` to file system.
+    * [ ] Add testing network distro to daily CI.
 * [ ] Fix this warning in the program on the live server.
 
 ````

@@ -9,6 +9,14 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * Check static website with an analyzer: find public analyzer
 # Tasks
 * [ ] Lists in texts does not look good compared to lists in the meta column.
+* [ ] The main page and main menu things are irritating.
+    * [ ] Rename it to front page and main menu.
+    * [ ] Arrange this 2 points right next to each other, as the distance makes these more irritating as well.
+    * [ ] Detailed menu in martins.avots.distro.
+    * [ ] Detailed section menu in martins.avots.distro.
+    * [ ] Main menu
+    * [ ] `detailed-menu.xsl` are not actually used.
+    * [ ] `window-menu.xsl` are not actually used.
 * [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
