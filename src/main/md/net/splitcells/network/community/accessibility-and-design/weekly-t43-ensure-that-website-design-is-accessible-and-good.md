@@ -8,15 +8,18 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
 * Check warnings and errors in the browser.
 * Check static website with an analyzer: find public analyzer
 # Tasks
-* [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] The main page and main menu things are irritating.
-    * [ ] Rename it to front page and main menu.
-    * [ ] Arrange this 2 points right next to each other, as the distance makes these more irritating as well.
-    * [ ] Detailed menu in martins.avots.distro.
-    * [ ] Detailed section menu in martins.avots.distro.
-    * [ ] Main menu
-    * [ ] `detailed-menu.xsl` are not actually used.
-    * [ ] `window-menu.xsl` are not actually used.
+    * [x] Rename it to front page and main menu.
+    * [x] Arrange this 2 points right next to each other, as the distance makes these more irritating as well.
+        * [x] net-splitcells-website-server-config-menu-detailed
+        * [x] Detailed menu in martins.avots.distro.
+        * [x] Detailed section menu in martins.avots.distro.
+        * [x] Main menu
+        * [x] Use new file system API for custom files.
+    * [x] `detailed-menu.xsl` are not actually used. -> It is used. There was just some cache issue.
+    * [x] `window-menu.xsl` are not actually used. -> It is used. There was just some cache issue.
+    * [ ] Deploy changes.
+* [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
 * [ ] Privacy pop up does not work on iPhone at all.
