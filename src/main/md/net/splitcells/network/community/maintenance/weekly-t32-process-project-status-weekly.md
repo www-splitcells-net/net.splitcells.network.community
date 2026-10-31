@@ -10,7 +10,7 @@ Alternatively, these should be executed by hand,
 as otherwise it is hard to judge the status,
 when it is stating failure all the time.
 This does not apply for statuses, that show progress.
-# Service
+# Service Tasks
 * Remove usage of Deprecations and afterward delete the unused deprecations. 
 * Process status badges: https://codeberg.org/splitcells-net/net.splitcells.network.hub
 * Improve test coverage.
@@ -24,6 +24,7 @@ This does not apply for statuses, that show progress.
 * Set up project on fresh computer or at least user, to find bootstrapping issues, that cannot be found via CI.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
+* Check random source code file for problems with AI.
 # Tasks. 
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
@@ -36,7 +37,8 @@ This does not apply for statuses, that show progress.
     * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
         * [ ] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
           Just like `repos.push.at.all.py`.
-          Create a dedicated repos.remote.set.py command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
+          Create a dedicated `repo.remote.set2.py` command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
+          -> The command is created.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.

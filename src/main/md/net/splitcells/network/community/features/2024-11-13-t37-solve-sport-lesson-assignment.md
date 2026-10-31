@@ -13,6 +13,9 @@ basic support for authentication and authorization is to be added to the server.
 For testing purposes the authentication and authorization system is used,
 to only provide server CPU and RAM usage in real time to the administrator of the server.
 # Tasks
+* [ ] The server has a lot of lag.
+* [ ] Add new data field via the editor does not work anymore.
+    * [ ] Start making full stack tests for any action.
 * [ ] CURRENT_TASK The new default editor optimization does not solve the Colloquium with default data anymore.
   Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
     * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`

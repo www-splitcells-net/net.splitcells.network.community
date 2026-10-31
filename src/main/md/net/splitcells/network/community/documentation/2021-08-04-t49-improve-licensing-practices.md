@@ -61,18 +61,21 @@ We also need full accounting for it.
                 * [x] Implement this for FileSystemViaClassResourcesImpl.
                 * [x] Test this for FileSystemViaClassResourcesImpl.
                 * [o] Implement this for the DevDistroCell. -> FileSystemViaClassResourcesTest already tests actual class resource case. 
-            * [ ] Only provide access to metadata, to which the user has access to.
-                * [ ] Use RenderRequest for `ProjectRendererExtension#metaData`.
+            * [x] Only provide access to metadata, to which the user has access to.
+                * [x] Use RenderRequest for `ProjectRendererExtension#metaData`.
                     * [x] Create new method with empty default.
                     * [x] Implement new method for one class. -> XmlProjectRendererExtension is used for this.
                     * [x] Link license layout from the licensing page.
-                    * [ ] Use new method in ProjectsRendererI.
-                    * [ ] Migrate all old implementations to new methods.
-                    * [ ] Remove old method.
+                    * [x] Use new method in ProjectsRendererI.
+                        * [x] Set metaRootPath for class resources. -> This is already working.
+                        * [x] Set metaRootPath for local file system. -> This causes problems in DevDistroCell. -> This is fixed.
             * [ ] CURRENT_TASK Render the metadata in HTML layout for XML files at least. -> A dedicated license layout page is created.
-                * [ ] Somehow the correct file system is not queried for this and therefore the license of XML files is not found.
-            * [ ] Integrate layout license page into licensing meta document. 
-            * [ ] Go over all extensions and implement this.
+                * [x] Somehow the correct file system is not queried for this and therefore the license of XML files is not found.
+                * [ ] Migrate all old `ProjectRendererExtension#metaData` implementations to the new request based variant.
+                * [ ] Deprecate and remove old method.
+                * [ ] Fix all `unknown license` entries.
+                * [ ] Add integration test, that checks all licenses are known.
+            * [x] Integrate layout license page into licensing meta document.
     * [ ] Show license of every page on every page.
     * [x] Link to `NOTICE.md` and `LICENSE.md`.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.

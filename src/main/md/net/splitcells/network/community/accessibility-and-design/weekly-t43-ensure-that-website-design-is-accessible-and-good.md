@@ -19,6 +19,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
     * [x] `detailed-menu.xsl` are not actually used. -> It is used. There was just some cache issue.
     * [x] `window-menu.xsl` are not actually used. -> It is used. There was just some cache issue.
     * [ ] Deploy changes.
+    * [ ] Adjust this on static website as well.
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
