@@ -7,6 +7,9 @@ Spend at most 20 Euros per month for this, but try free model first,
 in order to evaluate the workflow.
 # Service Tasks
 * Ensure that `Help improve Claude` is disabled.
+* Check changelogs.
+* Check commits of the last 7 days.
+* Check random source code.
 # Tasks
 * [ ] Learn via complete material how to use Claude Code.
     * [x] https://claude.com/resources/articles/skills-explained
@@ -15,7 +18,8 @@ in order to evaluate the workflow.
     * [ ] Improve texts like the ones in the Symbiosis Project.
     * [ ] Log real live server error logs in private network log repo and let it analyze by Claude Code.
     * [ ] Consider searching performance problems with Claude Code.
-    * [ ] Check if changelogs are complete according to git commits. 
+    * [ ] Check if changelogs are complete according to git commits.
+    * [ ] Clean up Tree class.
 * [ ] Document setup.
     * [ ] Always use Community Project as context.
     * [ ] Create prompt templates -> Use skills instead. Maybe no skills are needed for now. I create a default one and will add things to it, that the AI had problems with.
@@ -30,6 +34,7 @@ in order to evaluate the workflow.
         * [ ] How to ensure, that skills are used during a Claude session?
         * [ ] Check if code is intuitive.
         * [ ] Check for a source code file, if anything is wrong with it.
+        * [ ] Create a skill for each service task.
     * [ ] Create code guidelines and let AI check these against code.
 * [ ] Consider using local hardware.
     * [ ] Maybe wait for https://chatjimmy.ai/ hardware for consumers.
