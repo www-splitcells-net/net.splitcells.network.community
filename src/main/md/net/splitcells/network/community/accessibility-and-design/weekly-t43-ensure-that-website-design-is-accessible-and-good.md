@@ -20,6 +20,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
     * [x] `window-menu.xsl` are not actually used. -> It is used. There was just some cache issue.
     * [ ] Deploy changes.
     * [ ] Adjust this on static website as well.
+* [ ] Fix content of `https://splitcells.net/net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt`.
 * [ ] Lists in texts does not look good compared to lists in the meta column.
 * [ ] Fix JavaScript error regarding Fancytree in website.
 * [ ] Privacy pop up does not work nicely with multiple lines of text and small display.
@@ -55,6 +56,7 @@ Although, this law does not seem to apply to `splitcells.net`, this is an opport
   The second one get additional drawn edges at the top left and bottom right.
 * [ ] Add a background effect to interactive elements, where the background around the mouse is highlighted by color or
   light.
+* [ ] Ensure that all links are valid on source code level as well.
 # Completed Tasks
 * [x] Links should always be sans serif. This should also be the case for texts.
 * [o] Consider Latvian style decorations for things like the footer bar. -> This is not relevant for now.

@@ -25,7 +25,7 @@ This does not apply for statuses, that show progress.
     * [ ] Correct project registration for net.splitcells.network.hub and net.splitcells.network.
     * [ ] Execute the test with a reset script.
 * Check random source code file for problems with AI.
-# Tasks. 
+# Tasks.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
     * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
@@ -39,6 +39,7 @@ This does not apply for statuses, that show progress.
           Just like `repos.push.at.all.py`.
           Create a dedicated `repo.remote.set2.py` command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
           -> The command is created.
+* [ ] `src/main/resources` should process any kind of file without the HTML prefix folder. The split into multiple folders has no advantage by default, but makes document organization a lot harder.
 * [ ] Move gel.ext into gel.core, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.

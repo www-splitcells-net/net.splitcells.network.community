@@ -5,6 +5,8 @@
 * [ ] Follow Java blogs and communities.
 * [ ] Look up news of dependencies.
 # Tasks
+* [ ] How to use JFR CPU-Time profiling and cooperative sampling (509 & 518)?
+  I never got it working with the JFR GUI, as I didn't find any option for that.
 * [ ] Use Portainer to manager the docker config in martins.avots.distro.
   The advantage of Portainer is the fact, the UI provides easy configs for things like log level,
   which depending on the images doc can be none trivial.

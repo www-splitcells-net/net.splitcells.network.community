@@ -81,7 +81,7 @@ We also need full accounting for it.
     * [x] `net/splitcells/network/legal/Developer_Certificate_of_Origin.v1.1.txt` is not correctly rendered.
 * [ ] Images are licensed under the `CC BY-SA 4.0`.
     * [ ] Update licensing guidelines.
-    * [ ] Consider add licensing metadata in images itself. See German court cases (to be refound),
+    * [ ] Consider add licensing metadata in images itself. See German court cases (to be found again),
       why no license metadata in `CC BY-SA 4.0` can be a problem for other distributors.
     * [ ] Consider https://creativecommons.org/licenses/by-sa/4.0/deed.en
 * [x] Ensure, that every repo has proper licensing data. -> This is done via the daily CI workflow at Codeberg.
@@ -92,7 +92,8 @@ We also need full accounting for it.
 * [ ] Remove big license header from Java code as this only wastes resources.
 * [ ] Check and/or generate license NOTICE file, in order to ensure its correctness.
 * [ ] Ensure via Maven plugin, that all files have license info.
-* [ ] Use license element instead of comment for POMs.
+* [ ] Use license element instead of comment for POMs: https://maven.apache.org/pom.html#licenses
+* [ ] Use as a YAML header instead of the currently custom one.
 # Done Tasks
 * [x] `test.everything` should verify license data as well. -> This is done via `repos.test.sh` instead.
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm
