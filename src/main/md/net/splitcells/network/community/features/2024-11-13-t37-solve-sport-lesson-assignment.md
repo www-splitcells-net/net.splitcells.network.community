@@ -221,7 +221,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Status updates during the optimization steps do not show intermediate solution.
 * [ ] Create full stuck UI test for both school problems and check concrete rating.
 * [ ] Ensure, that both school problems are solved.
-* [ ] Make full stack tests for most complex actions in editor like changing the importCsvData argument after the first solution calculation.
+* [ ] Make full stack tests for a set of complex actions in editor like changing the importCsvData argument after the first solution calculation.
 # Done Tasks
 * [x] Rename availableHalfYears to semester.
 * [x] Support complex problems with the default optimization.
