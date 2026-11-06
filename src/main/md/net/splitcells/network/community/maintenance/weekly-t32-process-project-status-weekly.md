@@ -35,12 +35,16 @@ This does not apply for statuses, that show progress.
         * [x] Document variables in repos process command arguments.
     * [x] Use `repos.synchronize.sh` to synchronize with already configured remotes and repos.
     * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
-        * [ ] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
+        * [x] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
           Just like `repos.push.at.all.py`.
           Create a dedicated `repo.remote.set2.py` command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
           -> The command is created.
+        * [ ] Adjust `repos.repair` to new repo.process.
+        * [ ] Test new command via `bin/repos.synchronize.sh` for Codeberg and GitHub.
+        * [ ] Use `repos.synchronize.with.py` for private computers. See `cluster.nodes.sh`
+* [ ] README links of hub to live.splitcells.net should be transformed to localhost in DevDistro.
 * [ ] `src/main/resources` should process any kind of file without the HTML prefix folder. The split into multiple folders has no advantage by default, but makes document organization a lot harder.
-* [ ] Move gel.ext into gel.core, in order to simplify the projects.
+* [ ] Move `gel.ext` and `gel.doc` into `gel.core`, in order to simplify the projects.
 * [ ] Test and thereby enforce validity of all links via SystemCellTest.
 * [ ] Use https://github.com/CodeIntelligenceTesting/jazzer to test website server.
     * [ ] Use fuzzy miner on tables, allocations and lookups, as nesting these can have and had subtle errors.

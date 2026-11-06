@@ -10,14 +10,17 @@ Ensure that the Claude code setup works and maintain the code with it.
 # Tasks
 * [ ] Learn via complete material how to use Claude Code.
     * [x] https://claude.com/resources/articles/skills-explained
+    * [x] https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf
 * [ ] Find good tasks for first test.
-    * [ ] Creating unit tests.
-    * [ ] Check if changelogs are complete according to git commits.
-    * [ ] Improve texts like the ones in the Symbiosis Project.
+    * [ ] Creating unit tests, in order to improve code coverage.
+        * [ ] Use JaCoCo reports to guide AI.
+            * [ ] Create unique names for all jacoco.exec files.
+            * [ ] During CI copy these exec file into one folder and upload this to the static website
+            * [ ] Download these files and use it via the AI.
+    * [x] Check if changelogs are complete according to git commits.
+    * [x] Improve texts like the ones in the Symbiosis Project. -> Use this only for the `net.splitcells.network` repo for now.
     * [o] Log real live server error logs in private network log repo and let it analyze by Claude Code. -> There are not enough use cases for that, right now.
-    * [ ] Consider searching performance problems with Claude Code.
-    * [ ] Clean up Tree class.
-    * [ ] Check a random source code file.
+    * [ ] Check a random source code file for inconsistency and other problems.
     * [x] Create a single command for all tasks. -> maintain.via.claude.code.sh
     * [ ] Wait between tasks, until there are no uncommited changes. 
     * [] Consider creating weekly CI workflows for that. Let these create pull requests.
@@ -45,7 +48,7 @@ Ensure that the Claude code setup works and maintain the code with it.
         * [ ] Check for a source code file, if anything is wrong with it.
         * [ ] Create a skill for each service task.
     * [ ] Create code guidelines and let AI check these against code.
-* [ ] Improve code coverage with Claude Code. Execute test and use JaCoCo report as AI input.
+* [ ] Consider searching performance problems with Claude Code.
 * [ ] Consider using local hardware.
     * [ ] Maybe wait for https://chatjimmy.ai/ hardware for consumers.
     * [ ] Check if local AMD card could be used.

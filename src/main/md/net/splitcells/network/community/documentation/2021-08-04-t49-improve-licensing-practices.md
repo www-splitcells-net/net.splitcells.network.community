@@ -93,7 +93,7 @@ We also need full accounting for it.
 * [ ] Check and/or generate license NOTICE file, in order to ensure its correctness.
 * [ ] Ensure via Maven plugin, that all files have license info.
 * [ ] Use license element instead of comment for POMs: https://maven.apache.org/pom.html#licenses
-* [ ] Use as a YAML header instead of the currently custom one.
+* [ ] Use as a YAML frontmatter instead of the currently custom one.
 # Done Tasks
 * [x] `test.everything` should verify license data as well. -> This is done via `repos.test.sh` instead.
 * [x] https://www.it-cisq.org/software-bill-of-materials/index.htm

@@ -16,6 +16,7 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Add new data field via the editor does not work anymore.
     * [ ] Start making full stack tests for any action in the future. Start with this issue.
     * [ ] This happens, when the problem is optimized first, a importCsvData argument is changed afterwards and another solution is calculated.
+* [ ] Solution calculation in editor got extremely slow.
 * [ ] CURRENT_TASK The new default editor optimization does not solve the Colloquium with default data anymore.
   Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
     * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`
