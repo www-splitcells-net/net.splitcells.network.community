@@ -26,6 +26,7 @@ This does not apply for statuses, that show progress.
     * [ ] Execute the test with a reset script.
 * Check random source code file for problems with AI.
 # Tasks.
+* [ ] Use fixed runner id for daily CI, in order to not pollute the `network.log` with arbitrary runner ids.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
     * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
