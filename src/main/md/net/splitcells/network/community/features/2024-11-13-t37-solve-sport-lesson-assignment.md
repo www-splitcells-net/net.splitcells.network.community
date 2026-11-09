@@ -15,7 +15,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Add new data field via the editor does not work anymore.
     * [ ] Start making full stack tests for any action in the future. Start with this issue.
-    * [ ] This happens, when the problem is optimized first, a importCsvData argument is changed afterwards and another solution is calculated.
+        * [ ] Test where the solution is present at the first async check, becaue the input is so small.
+        * [ ] Test where the solution is so big, that multiple async  checks are required.
+        * [ ] Thereby check that async-user-session-li is empty.
+    * [ ] This happens, when the problem is optimized first, a importCsvData argument is changed afterward and another solution is calculated.
 * [ ] Solution calculation in editor got extremely slow.
 * [ ] CURRENT_TASK The new default editor optimization does not solve the Colloquium with default data anymore.
   Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
