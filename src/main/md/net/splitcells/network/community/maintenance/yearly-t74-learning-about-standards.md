@@ -5,6 +5,8 @@
 * [ ] Follow Java blogs and communities.
 * [ ] Look up news of dependencies.
 # Tasks
+* [ ] https://foojay.io/today/beyond-mvn-install-maven-practices/
+* [ ] https://inside.java/2026/11/09/inside-java-ticker-value-class/
 * [ ] How to use JFR CPU-Time profiling and cooperative sampling (509 & 518)?
   I never got it working with the JFR GUI, as I didn't find any option for that.
 * [ ] Use Portainer to manager the docker config in martins.avots.distro.

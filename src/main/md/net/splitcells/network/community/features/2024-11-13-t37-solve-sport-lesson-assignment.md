@@ -15,12 +15,16 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Add new data field via the editor does not work anymore.
     * [ ] Start making full stack tests for any action in the future. Start with this issue.
-        * [ ] Test where the solution is present at the first async check, becaue the input is so small.
-        * [ ] Test where the solution is so big, that multiple async  checks are required.
-        * [ ] Thereby check that async-user-session-li is empty.
-    * [ ] This happens, when the problem is optimized first, a importCsvData argument is changed afterward and another solution is calculated.
+        * [ ] Test a case where the solution is present when the first async check, because the input is so small.
+            * [ ] Requesting `net/splitcells/gel/ui/editor/geal/form` does not work.
+        * [ ] Test a case where the solution is so big, that multiple async checks are required, until the complete solution is present.
+        * [ ] Standardize waiting time for GUI results.
+        * [ ] Thereby check that async-user-session is empty at the end of the calculation.
+        * [ ] Execute GUI tests in daily CI as well, as otherwise these new tests will not be executed and checked regularly.
+    * [x] This happens, when the problem is optimized first, a importCsvData argument is changed afterward and another solution is calculated.
+      -> Presence of async flag and its id was done incorrectly.
 * [ ] Solution calculation in editor got extremely slow.
-* [ ] CURRENT_TASK The new default editor optimization does not solve the Colloquium with default data anymore.
+* [ ] The new default editor optimization does not solve the Colloquium with default data anymore.
   Solve this first as otherwise solving the sport lesson assignment will be a lot harder.
     * [x] There seem to be too many tables with an identical discovery paths. See chapter `Duplicate Discovery Paths`
       The reason for that ObjectsRendererI does not consider EXPLICIT_NO_CONTEXT.
@@ -226,6 +230,9 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 * [ ] Create full stuck UI test for both school problems and check concrete rating.
 * [ ] Ensure, that both school problems are solved.
 * [ ] Make full stack tests for a set of complex actions in editor like changing the importCsvData argument after the first solution calculation.
+* [ ] Mark `Calculate solution` green after the work is done, as otherwise it is sometimes hard to understand, that the calculation is done.
+* [ ] When `Calculate solution` runs never completely remove the orange color.
+* [ ] When `Calculate solution` replace the text with `Calculating...` during the run and restore the original text afterward.
 # Done Tasks
 * [x] Rename availableHalfYears to semester.
 * [x] Support complex problems with the default optimization.
