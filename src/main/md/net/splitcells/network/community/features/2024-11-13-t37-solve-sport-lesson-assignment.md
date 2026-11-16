@@ -15,8 +15,10 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Add new data field via the editor does not work anymore.
     * [ ] Start making full stack tests for any action in the future. Start with this issue.
-        * [ ] Test a case where the solution is present when the first async check, because the input is so small.
-            * [ ] Requesting `net/splitcells/gel/ui/editor/geal/form` does not work.
+        * [ ] CURRENT_TASK Test a case via EditorProcessorTest and `mvn clean install -Dtest.groups=testing_integration` where the solution is present when the first async check, because the input is so small.
+            * [ ] Requesting `net/splitcells/gel/ui/editor/geal/form` does not work on local laptop, when the integration test is run.
+                * [ ]  Execute test in shell and check all JavaScript errors in browser, when the [editor](http://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html) is loaded.
+                * [ ] Optional JavaScript dependencies are treated like required dependencies.
         * [ ] Test a case where the solution is so big, that multiple async checks are required, until the complete solution is present.
         * [ ] Standardize waiting time for GUI results.
         * [ ] Thereby check that async-user-session is empty at the end of the calculation.

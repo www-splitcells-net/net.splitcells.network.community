@@ -27,6 +27,8 @@ This does not apply for statuses, that show progress.
 * Check random source code file for problems with AI.
 # Tasks.
 * [ ] Use fixed runner id for daily CI, in order to not pollute the `network.log` with arbitrary runner ids.
+    * [x] Use daily-test as a runner test for Codeberg's daily CI.
+    * [ ] Delete all performance records, that are not from splitcells-XPS-15-9570, raspberrypi-v2, net-splitcells-live and daily-test.
 * [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
   Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
     * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
