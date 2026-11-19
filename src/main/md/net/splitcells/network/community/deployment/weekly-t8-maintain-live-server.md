@@ -24,6 +24,7 @@ as long as no additional network expansions are bought for the package.
 * Check htop.
 * Update Prometheus based Podman deployment.
 ## Open Tasks
+* [ ] Regularly update deployed JVM version in build image on live server.
 * [ ] Make local distro app download work again.
     * [x] Make the run runnable again. 
     * [ ] Stop app if local port is not available to start the HTTP server.

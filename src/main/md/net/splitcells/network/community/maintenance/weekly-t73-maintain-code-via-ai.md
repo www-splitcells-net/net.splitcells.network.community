@@ -15,6 +15,9 @@ Data between tools, workflows an AI is shared via `net.splitcells.network.log` a
             * [x] Create unique names for all jacoco.exec files.
             * [ ] During CI copy these exec file into one folder and upload this to network.log
             * [ ] Download these files and use it via the AI.
+    * [ ] Generalize command naming of `maintain.via.claude.code.sh` and `claude.code.prompt.sh`, as its arguments are not agent specific.
+    * [ ] Ask AI how it likes the design/architecture of the software.
+    * [ ] Search for security vulnerability in source code.
     * [x] Check if changelogs are complete according to git commits.
     * [x] Improve texts like the ones in the Symbiosis Project. -> Use this only for the `net.splitcells.network` repo for now.
     * [o] Log real live server error logs in private network log repo and let it analyze by Claude Code. -> There are not enough use cases for that, right now.

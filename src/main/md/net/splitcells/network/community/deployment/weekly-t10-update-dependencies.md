@@ -8,6 +8,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 * Test desktop application.
 # Tasks
+* [ ] Update JVM version on live server, because of Java4shell.
+* [ ] Analyze image with AI for security vulnerability.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Make incremental updates work: https://github.com/maveniverse/toolbox/issues/442
 * [ ] Add automatic updates for all Maven plugins by adding the plugins to the bom.
@@ -18,6 +20,8 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] `net.splitcells.network.distro.swt`
 * [ ] Add automatic dependency updates for distro repo as well.<
 * [ ] Check if no versions are present in POM-XMLs.
+* [ ] Backup binaries of dependencies, in order to have fall backs in case of
+  internet or security problems.
 # Done Tasks
 * [x] Try out toolbox to update all dependencies and plugins: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
   -> Toolbox is adapted.
