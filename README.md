@@ -3,7 +3,7 @@
 > This project stores, organizes and develops tasks and ideas for the Splitcells Network.
 
 * [splitcells.net Status](https://splitcells.net/net/splitcells/network/status.html)
-* Current last ticket ID: 74
+* Current last ticket ID: 75
 ## Standard Projects
 Projects that are being worked cyclically, and probably will never be finished:
 * Accessibility and Design: Improve accessibility:
@@ -94,6 +94,7 @@ Projects that are being worked cyclically, and probably will never be finished:
 ```
 # Weekly deploy static website.
 * Issue number: [\#51](https://codeberg.org/splitcells-net/net.splitcells.network.community/issues/51)
+* This issue is done with AI.
 * If there is no link to an issue, the following can be used and implies that the issue number domain is managed by this repo:
 * Issue number: \#32
 * Start Date: 2025-04-05
