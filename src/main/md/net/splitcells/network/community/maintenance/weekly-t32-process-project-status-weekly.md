@@ -26,25 +26,6 @@ This does not apply for statuses, that show progress.
     * [ ] Execute the test with a reset script.
 * Check random source code file for problems with AI.
 # Tasks.
-* [ ] Use fixed runner id for daily CI, in order to not pollute the `network.log` with arbitrary runner ids.
-    * [x] Use daily-test as a runner test for Codeberg's daily CI.
-    * [ ] Delete all performance records, that are not from splitcells-XPS-15-9570, raspberrypi-v2, net-splitcells-live and daily-test.
-* [ ] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
-  Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
-    * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
-    * [x] Which branches does `repos.synchronize` act upon? -> The current one is synchronized.
-    * [x] Set origin to Codeberg via command: `repos.remote.set 'ssh://git@codeberg.org/splitcells-net/${childRepo}.git'`
-        * [x] Migrate the command to the new repos process command.
-        * [x] Document variables in repos process command arguments.
-    * [x] Use `repos.synchronize.sh` to synchronize with already configured remotes and repos.
-    * [ ] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
-        * [x] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
-          Just like `repos.push.at.all.py`.
-          Create a dedicated `repo.remote.set2.py` command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
-          -> The command is created.
-        * [ ] Adjust `repos.repair` to new repo.process.
-        * [ ] Test new command via `bin/repos.synchronize.sh` for Codeberg and GitHub.
-        * [ ] Use `repos.synchronize.with.py` for private computers. See `cluster.nodes.sh`
 * [ ] README links of hub to live.splitcells.net should be transformed to localhost in DevDistro.
 * [ ] `src/main/resources` should process any kind of file without the HTML prefix folder. The split into multiple folders has no advantage by default, but makes document organization a lot harder.
 * [ ] Move `gel.ext` and `gel.doc` into `gel.core`, in order to simplify the projects.
@@ -76,6 +57,26 @@ This does not apply for statuses, that show progress.
     * [ ] Test generated artifacts.
     * [ ] Note, that this ensures, that artifacts are usable as well and thereby indirectly improves overhaul software quality.
 # Done Tasks
+* [x] Synchronize repos with Codeberg via one command. `repos.synchronize` should be the best, but a project command would be enough.
+  Currently, `repos.pull.from.codeberg.sh && repos.push.at.all` is used.
+    * [x] Which remotes does `repos.synchronize` act upon? -> The origin is synchonrized.
+    * [x] Which branches does `repos.synchronize` act upon? -> The current one is synchronized.
+    * [x] Set origin to Codeberg via command: `repos.remote.set 'ssh://git@codeberg.org/splitcells-net/${childRepo}.git'`
+        * [x] Migrate the command to the new repos process command.
+        * [x] Document variables in repos process command arguments.
+    * [x] Use `repos.synchronize.sh` to synchronize with already configured remotes and repos.
+    * [x] Adapt `repos.synchronize.with.py` to synchronize with all remotes.
+        * [x] Use dedicate remote name for each, as this is much nicer and easier to understand. Furthermore, this avoids overriding the origin again and again.
+          Just like `repos.push.at.all.py`.
+          Create a dedicated `repo.remote.set2.py` command with 2 arguments based on `git remote set-url --push origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git || git remote add origin git@codeberg.org:splitcells-net/net.splitcells.network.hub.git`.
+          -> The command is created.
+        * [x] Adjust `repos.repair` to new repo.process.
+        * [x] Test new command via `bin/repos.synchronize.sh` for Codeberg and GitHub and thereby finish repos.synchronize.with.
+        * [o] Use `repos.synchronize.with.py` for private computers. See `cluster.nodes.sh` -> This will be done, when needed.
+
+* [x] Use fixed runner id for daily CI, in order to not pollute the `network.log` with arbitrary runner ids.
+    * [x] Use daily-test as a runner test for Codeberg's daily CI.
+    * [x] Delete all performance records, that are not from splitcells-XPS-15-9570, raspberrypi-v2, net-splitcells-live and daily-test.
 * [x] Fix `ANTLR Runtime version 4.11.1 used for parser compilation does not match the current runtime version 4.13.2`.
 * [x] Improve developer bootstrap.
     * [o] Create a semi-automatic reset test for the developer bootstrap. -> This already done completely automatically in the daily CI.
