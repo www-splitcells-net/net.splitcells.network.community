@@ -13,7 +13,7 @@ Data between tools, workflows an AI is shared via `net.splitcells.network.log` a
     * [ ] Creating unit tests, in order to improve code coverage.
         * [ ] Use JaCoCo reports to guide AI.
             * [x] Create unique names for all jacoco.exec files.
-            * [ ] During CI copy these exec file into one folder and upload this to network.log
+            * [ ] During CI copy these exec file into one folder and upload this to network.log -> There is a bug. The files are somehow never copied into network.log.
             * [ ] Download these files and use it via the AI.
     * [x] Generalize command naming of `ai.maintain.project.sh` and `ai.prompt.sh`, as its arguments are not agent specific.
     * [x] Ask AI how it likes the design/architecture of the software.
