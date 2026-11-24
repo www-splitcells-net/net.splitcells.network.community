@@ -18,8 +18,11 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] `net.splitcells.network.distro`
     * [ ] `net.splitcells.network.distro.java`
     * [ ] `net.splitcells.network.distro.swt`
-* [ ] Add automatic dependency updates for distro repo as well.<
+* [ ] Add automatic dependency updates for distro repo as well.
 * [ ] Check if no versions are present in POM-XMLs.
+* [ ] Check in program if Java version is new enough. This is relevant, in order to detect vulnerable JVM version.
+    * [ ] Establish single source of minimal required JVM version. Provide this version in to Java program.
+    * [ ] Check currently used JVM version to the required one.
 * [ ] Backup binaries of dependencies, in order to have fall backs in case of
   internet or security problems.
 # Done Tasks

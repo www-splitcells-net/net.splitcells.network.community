@@ -77,7 +77,6 @@ Some tests are executed on servers in order to ensure, that the software works o
     * [x] Create and commit runtime results to network log.
     * [ ] Execute `bin/worker.test.at` in daily CI, in order to log is results in the network log repo.
 * [ ] On live server create a status report for UI tests. Create a warning a UI test failed and create a histogram of failed tests.
-* [ ] Deploy UI test in daily CI.
 * [ ] Migrate Codeberg workflow to `repos.test`.
 * [ ] Migrate GitHub workflow to `repos.test`.
 * [ ] Use ExtensiveTester on capable platforms.

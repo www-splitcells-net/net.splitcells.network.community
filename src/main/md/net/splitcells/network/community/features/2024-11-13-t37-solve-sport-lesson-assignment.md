@@ -15,13 +15,15 @@ to only provide server CPU and RAM usage in real time to the administrator of th
 # Tasks
 * [ ] Add new data field via the editor does not work anymore.
     * [ ] Start making full stack tests for any action in the future. Start with this issue.
-        * [ ] CURRENT_TASK Test a case via EditorProcessorTest and `mvn clean install -Dtest.groups=testing_integration` where the solution is present when the first async check, because the input is so small.
-            * [ ] Requesting `net/splitcells/gel/ui/editor/geal/form` does not work on local laptop, when the integration test is run.
-                * [ ]  xecute test in shell and check all JavaScript errors in browser, when the [editor](http://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html) is loaded.
-                * [ ] Optional JavaScript dependencies are treated like required dependencies.
-        * [ ] Test a case where the solution is so big, that multiple async checks are required, until the complete solution is present.
-        * [ ] Standardize waiting time for GUI results.
-        * [ ] Thereby check that async-user-session is empty at the end of the calculation.
+        * [ ] Deploy UI test in daily CI. 
+        * [x] Test a case via EditorProcessorTest and `mvn clean install -Dtest.groups=testing_integration` where the solution is present when the first async check, because the input is so small.
+            * [x] Requesting `net/splitcells/gel/ui/editor/geal/form` does not work on local laptop, when the integration test is run.
+                * [x] Execute test in shell and check all JavaScript errors in browser, when the [editor](http://localhost:8443/net/splitcells/gel/ui/editor/geal/index.html) is loaded.
+                * [x] Optional JavaScript dependencies are treated like required dependencies. As these are not available in the gel.ui tests, the test fails.
+                * [x] Answer to `net/splitcells/gel/ui/editor/geal/form` is the empty string.
+        * [x] Test a case where the solution is so big, that multiple async checks are required, until the complete solution is present.
+        * [x] Standardize waiting time for GUI results.
+        * [x] Thereby check that async-user-session is empty at the end of the calculation.
         * [ ] Execute GUI tests in daily CI as well, as otherwise these new tests will not be executed and checked regularly.
     * [x] This happens, when the problem is optimized first, a importCsvData argument is changed afterward and another solution is calculated.
       -> Presence of async flag and its id was done incorrectly.
