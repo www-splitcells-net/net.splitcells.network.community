@@ -45,6 +45,7 @@ Data between tools, workflows an AI is shared via `net.splitcells.network.log` a
     * [ ] AI's primary goal for now, is to make things consistent.
     * [ ] Check like double book accounting for all skills, prompts, issues, docs, commits and source code,
       if they are consistent to each other.
+    * [ ] In this context, double book accounting is also a balancer regarding all concerns.
     * [ ] Check if double book accounting check is complete.
 * [ ] Use net.splitcells.network.community repo.
 * [ ] Execute workflow in container, in order to manage permissions for local executions?
