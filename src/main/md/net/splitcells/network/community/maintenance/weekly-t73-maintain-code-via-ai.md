@@ -39,6 +39,13 @@ Data between tools, workflows an AI is shared via `net.splitcells.network.log` a
         * [ ] How to ensure, that Claude Code does not copy secrets?
         * [ ] How to best trigger/organize work? That's what agents are probably for. Are there any programs for this, that can be used for workflows?
           Consider integrating this into `ai.prompt.sh`.
+* [ ] Create guidelines for all languages, data formats and project structure. Let them use these by skills.
+* [ ] Create prompt to this issue, that checks, whether the code guidelines fit to the source code and vice versa.
+* [ ] Create AI guidelines.
+    * [ ] AI's primary goal for now, is to make things consistent.
+    * [ ] Check like double book accounting for all skills, prompts, issues, docs, commits and source code,
+      if they are consistent to each other.
+    * [ ] Check if double book accounting check is complete.
 * [ ] Use net.splitcells.network.community repo.
 * [ ] Execute workflow in container, in order to manage permissions for local executions?
 * [ ] Execute AI workflows on local computer in parallel in a separate copy of the repos, if needed.
