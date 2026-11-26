@@ -8,7 +8,6 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
 * Check for new Maven versions: https://maven.apache.org/docs/history.html
 * Test desktop application.
 # Tasks
-* [ ] Update JVM version on live server, because of Java4shell.
 * [ ] Analyze image with AI for security vulnerability.
 * [ ] [Migrate to Maven 4](./2025-09-03-t65-migrate-to-maven-4.md)
 * [ ] Make incremental updates work: https://github.com/maveniverse/toolbox/issues/442
@@ -24,8 +23,9 @@ Ensure, that the dependencies of all program code (i.e. Java) is up to date.
     * [ ] Establish single source of minimal required JVM version. Provide this version in to Java program.
     * [ ] Check currently used JVM version to the required one.
 * [ ] Backup binaries of dependencies, in order to have fall backs in case of
-  internet or security problems.
+  internet or security problems. For instance, check if version is affected by Java4shell. 
 # Done Tasks
+* [x] Update JVM version on live server, because of Java4shell.
 * [x] Try out toolbox to update all dependencies and plugins: https://maveniverse.eu/docs/toolbox/plugin-documentation/versions-mojo.html
   -> Toolbox is adapted.
     * [x] It does not work: https://fosstodon.org/@splitcells/117496062417701589
